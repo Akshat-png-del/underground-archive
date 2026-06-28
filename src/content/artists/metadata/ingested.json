@@ -1,0 +1,4228 @@
+{
+  "999999999": {
+    "slug": "999999999",
+    "name": "999999999",
+    "updatedAt": "2026-06-28T19:19:41.250Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:19:41.250Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:58.161Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "6uD2LjPHUjxrpax0se17Nc",
+      "name": "999999999",
+      "url": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc"
+    },
+    "youtube": {
+      "channelId": "UC1L_w9gaofcG733fvx12XEQ",
+      "channelTitle": "ACR 999",
+      "channelUrl": "https://www.youtube.com/@acr-x-999",
+      "customUrl": "@acr-x-999",
+      "thumbnailUrl": "https://yt3.ggpht.com/az3syxnyXli9YnNzLRPPLIH120Q4g5QXRDsAlm7FLdipFIsW6eOTvJ-OFaIsseRVCkwEJsIHxhM=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "adam-x": {
+    "slug": "adam-x",
+    "name": "Adam X",
+    "updatedAt": "2026-06-28T19:30:12.181Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:46.060Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.181Z",
+        "status": "ok"
+      },
+      "residentAdvisor": {
+        "syncedAt": "2026-06-28T19:30:12.181Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCjidjWX76LR1g5yx18NSrLA",
+      "channelTitle": "Adamx",
+      "channelUrl": "https://www.youtube.com/@adamxyt",
+      "customUrl": "@adamxyt",
+      "thumbnailUrl": "https://yt3.ggpht.com/_bitUT_ftFtX7DN5AOB7jgEgNrF1p-9dkft51nKoYIRB6FFXG6mRKG5uoiTz-qFB3KmWqzjPCdE=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/adam-x.jpg",
+      "source": "resident-advisor",
+      "sourceUrl": "https://ra.co/dj/adamx"
+    },
+    "spotify": {
+      "artistId": "4puKiwP3DNIzEaxPCheUbj",
+      "name": "Adam X",
+      "url": "https://open.spotify.com/artist/4puKiwP3DNIzEaxPCheUbj",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/adam-x.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/adam-x.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "alarico": {
+    "slug": "alarico",
+    "name": "Alarico",
+    "updatedAt": "2026-06-28T01:38:18.296Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:01.415Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCgv0lNj2bP4UMPFC-Q66pNw",
+      "channelTitle": "Alarico - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCgv0lNj2bP4UMPFC-Q66pNw",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCgv0lNj2bP4UMPFC-Q66pNw"
+    }
+  },
+  "alex-bau": {
+    "slug": "alex-bau",
+    "name": "Alex Bau",
+    "updatedAt": "2026-06-28T19:30:15.122Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:56.141Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:15.122Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/alex-bau.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0NepOrVsrboBKYECeSmwak"
+    },
+    "spotify": {
+      "artistId": "0NepOrVsrboBKYECeSmwak",
+      "name": "Alex Bau",
+      "url": "https://open.spotify.com/artist/0NepOrVsrboBKYECeSmwak",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/alex-bau.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/alex-bau.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "alignment": {
+    "slug": "alignment",
+    "name": "Alignment",
+    "updatedAt": "2026-06-28T01:38:14.445Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:57.496Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC2jdXdEL_og64xNxqr9FMoA",
+      "channelTitle": "Alignment - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UC2jdXdEL_og64xNxqr9FMoA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/q7WiBQNEx2-aoy35A6dX1SjLjqyPSkJQ3sekognOzvi42Qv7r-21Lq-b4aL5EoYuG2XJ9e9l=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/q7WiBQNEx2-aoy35A6dX1SjLjqyPSkJQ3sekognOzvi42Qv7r-21Lq-b4aL5EoYuG2XJ9e9l=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UC2jdXdEL_og64xNxqr9FMoA"
+    }
+  },
+  "amelie-lens": {
+    "slug": "amelie-lens",
+    "name": "Amelie Lens",
+    "updatedAt": "2026-06-28T19:17:48.992Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:48.992Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:37.012Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "5Ho1vKl1Uz8bJlk4vbmvmf",
+      "name": "Amelie Lens",
+      "url": "https://open.spotify.com/artist/5Ho1vKl1Uz8bJlk4vbmvmf",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174033a4201ccdb09df6f7168ea",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174033a4201ccdb09df6f7168ea"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174033a4201ccdb09df6f7168ea",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/5Ho1vKl1Uz8bJlk4vbmvmf"
+    },
+    "youtube": {
+      "channelId": "UCg2JFUP67ZdKzehy8TWMUmw",
+      "channelTitle": "Amelie Lens",
+      "channelUrl": "https://www.youtube.com/@amelielens",
+      "customUrl": "@amelielens",
+      "thumbnailUrl": "https://yt3.ggpht.com/SIRZRPHgORHq9jwZoLYQQTha9wQCESyehGHzohW_ImI6jfryxwKhr8x0D35hVQC5gE11Nes-dw=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "amelior": {
+    "slug": "amelior",
+    "name": "Amelior",
+    "updatedAt": "2026-06-28T01:38:18.318Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:32.188Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCJ7c1Nfwgnv_am856GZTJRA",
+      "channelTitle": "Amelior",
+      "channelUrl": "https://www.youtube.com/@amelior_",
+      "customUrl": "@amelior_",
+      "thumbnailUrl": "https://yt3.ggpht.com/i1x_vIhcbBS1RYyMtHwKZ-DHeMISuygoKVbwlt5T1xyKxogcZNDOyPTRnaS1_Ydq-4LvAEJukA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/i1x_vIhcbBS1RYyMtHwKZ-DHeMISuygoKVbwlt5T1xyKxogcZNDOyPTRnaS1_Ydq-4LvAEJukA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@amelior_"
+    }
+  },
+  "ancient-methods": {
+    "slug": "ancient-methods",
+    "name": "Ancient Methods",
+    "updatedAt": "2026-06-28T19:30:12.181Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:44.800Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.181Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCblHka0brGiAjCe-JQOpIcg",
+      "channelTitle": "Ancient Methods - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCblHka0brGiAjCe-JQOpIcg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/h0AIoy-YC-05ZcC6xLeqD9KJs3tmBUaXLuTlNtq20BBIQy_8EQ3DEJ6t7GFpqIuYJuEp3avO=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/ancient-methods.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/2kWRgcJHbgSEAIgewkJ1g2"
+    },
+    "spotify": {
+      "artistId": "2kWRgcJHbgSEAIgewkJ1g2",
+      "name": "Ancient Methods",
+      "url": "https://open.spotify.com/artist/2kWRgcJHbgSEAIgewkJ1g2",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/ancient-methods.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/ancient-methods.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "anetha": {
+    "slug": "anetha",
+    "name": "Anetha",
+    "updatedAt": "2026-06-28T19:18:03.870Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:18:03.870Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:39.120Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "7sJ3ngSMvvXGdVLnODPqXa",
+      "name": "Anetha",
+      "url": "https://open.spotify.com/artist/7sJ3ngSMvvXGdVLnODPqXa",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/7sJ3ngSMvvXGdVLnODPqXa"
+    },
+    "youtube": {
+      "channelId": "UCWEWKB6t3Ki7i9Da8K32SSg",
+      "channelTitle": "Anetha - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCWEWKB6t3Ki7i9Da8K32SSg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/ruPnCFcaY2yzpXXcY6P4opCpuLAlD44Uo7tsmE7ay6rNytFSr9e51rllzgS3cG_2_AoNuc-8=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "anfisa-letyago": {
+    "slug": "anfisa-letyago",
+    "name": "Anfisa Letyago",
+    "updatedAt": "2026-06-28T01:38:18.302Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:12.606Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCJuAd47ONxiIg3Gl5ZJSjow",
+      "channelTitle": "Anfisa Letyago",
+      "channelUrl": "https://www.youtube.com/@anfisaletyago",
+      "customUrl": "@anfisaletyago",
+      "thumbnailUrl": "https://yt3.ggpht.com/B8XhqOX3k1174bwS6iz62bntGJmnu0ub2uszmeEc7jQ8v5bcWaeX1hYd9mKEWeuTZnOu6lCrog=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/B8XhqOX3k1174bwS6iz62bntGJmnu0ub2uszmeEc7jQ8v5bcWaeX1hYd9mKEWeuTZnOu6lCrog=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@anfisaletyago"
+    }
+  },
+  "ansome": {
+    "slug": "ansome",
+    "name": "Ansome",
+    "updatedAt": "2026-06-28T19:30:14.498Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:53.371Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:14.498Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/ansome.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/14gRo11WOeTXBDcgFr8Ejb"
+    },
+    "spotify": {
+      "artistId": "14gRo11WOeTXBDcgFr8Ejb",
+      "name": "Ansome",
+      "url": "https://open.spotify.com/artist/14gRo11WOeTXBDcgFr8Ejb",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/ansome.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/ansome.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "arkus-p": {
+    "slug": "arkus-p",
+    "name": "Arkus P",
+    "updatedAt": "2026-06-28T19:18:20.051Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:18:20.051Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:42.264Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "2QX0SpKMsDrLa2qM15KcDf",
+      "name": "Arkus P",
+      "url": "https://open.spotify.com/artist/2QX0SpKMsDrLa2qM15KcDf",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/2QX0SpKMsDrLa2qM15KcDf"
+    },
+    "youtube": {
+      "channelId": "UCLyxs3crPvoPC5QbaTK6T2w",
+      "channelTitle": "ARKUS liga",
+      "channelUrl": "https://www.youtube.com/@arkusliga",
+      "customUrl": "@arkusliga",
+      "thumbnailUrl": "https://yt3.ggpht.com/2jVnTzj9a5hYIeoiSryQyvDVoRXibX7Q5uBnBAeRqLvUk5STtHSBK2wlkZuRyTeIIjl8OYLCWg=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "ash-code": {
+    "slug": "ash-code",
+    "name": "Ash Code",
+    "updatedAt": "2026-06-28T01:38:18.329Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:45.780Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC4HP4lxPZuG11NnJXyynPpw",
+      "channelTitle": "Ash Code",
+      "channelUrl": "https://www.youtube.com/@ashcode",
+      "customUrl": "@ashcode",
+      "thumbnailUrl": "https://yt3.ggpht.com/VMKK0nRPSg0u1KeXcQGJJbjcUlzLrkGu4nhJ6cZwt7A3Ub-TgSIo4VyOsV5ff_jEVSrk8iny=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/VMKK0nRPSg0u1KeXcQGJJbjcUlzLrkGu4nhJ6cZwt7A3Ub-TgSIo4VyOsV5ff_jEVSrk8iny=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@ashcode"
+    }
+  },
+  "assemblage-23": {
+    "slug": "assemblage-23",
+    "name": "Assemblage 23",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:43.271Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/assemblage-23.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx"
+    },
+    "spotify": {
+      "artistId": "7pwThElmrxl0pjTwXMojCx",
+      "name": "Assemblage 23",
+      "url": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/assemblage-23.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/assemblage-23.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "azyr": {
+    "slug": "azyr",
+    "name": "Azyr",
+    "updatedAt": "2026-06-28T01:38:17.660Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:59.569Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC1F1HCRH239HB5J3Dk66jkw",
+      "channelTitle": "Azyr",
+      "channelUrl": "https://www.youtube.com/@azyrmusic",
+      "customUrl": "@azyrmusic",
+      "thumbnailUrl": "https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@azyrmusic"
+    }
+  },
+  "basswell": {
+    "slug": "basswell",
+    "name": "Basswell",
+    "updatedAt": "2026-06-28T01:38:18.310Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:21.054Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCdayCU036-09n9IBPdRBrhw",
+      "channelTitle": "Basswell - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCdayCU036-09n9IBPdRBrhw",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_nyBNNx649zw58IZ9s93ed_iZcTs_W0V_ZkG9WJ2uGYTkg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_nyBNNx649zw58IZ9s93ed_iZcTs_W0V_ZkG9WJ2uGYTkg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCdayCU036-09n9IBPdRBrhw"
+    }
+  },
+  "ben-spencer": {
+    "slug": "ben-spencer",
+    "name": "Ben Spencer",
+    "updatedAt": "2026-06-28T01:38:18.299Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:06.458Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCu499VerbO5Km3h9FBycArQ",
+      "channelTitle": "Benz Spencer Hoky",
+      "channelUrl": "https://www.youtube.com/@benzspencerhoky",
+      "customUrl": "@benzspencerhoky",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_l6nw0EeeAhHxJ7eFnGAtkN_ANbkbjx3iXHD016O_DKVLM=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_l6nw0EeeAhHxJ7eFnGAtkN_ANbkbjx3iXHD016O_DKVLM=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@benzspencerhoky"
+    }
+  },
+  "berkan": {
+    "slug": "berkan",
+    "name": "Berkan",
+    "updatedAt": "2026-06-28T01:38:18.321Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:35.873Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCEGY1DARlz2kj7r4GbHhSBw",
+      "channelTitle": "Berkan Challenges تحديات بيركان",
+      "channelUrl": "https://www.youtube.com/@berkan.challenges",
+      "customUrl": "@berkan.challenges",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_mS3D_spGkcBXZ5uNlQ_PJXnp7wdSxZVZbQ8vgx-NIdeQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mS3D_spGkcBXZ5uNlQ_PJXnp7wdSxZVZbQ8vgx-NIdeQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@berkan.challenges"
+    }
+  },
+  "berlyn": {
+    "slug": "berlyn",
+    "name": "Berlyn",
+    "updatedAt": "2026-06-28T01:38:18.322Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:36.573Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCAI4y1O3BhUJrYp2FJg6cMw",
+      "channelTitle": "ASMR Berlin",
+      "channelUrl": "https://www.youtube.com/@asmrberlinn",
+      "customUrl": "@asmrberlinn",
+      "thumbnailUrl": "https://yt3.ggpht.com/8w0OTc2uYczsj8ksGS1jGm_Ac_JtmrfEA7nnnUWP6V7ndFVkxvaYkfkW6cBuWNEgF7QH2bNy5Q=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/8w0OTc2uYczsj8ksGS1jGm_Ac_JtmrfEA7nnnUWP6V7ndFVkxvaYkfkW6cBuWNEgF7QH2bNy5Q=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@asmrberlinn"
+    }
+  },
+  "bianca-obyn": {
+    "slug": "bianca-obyn",
+    "name": "Bianca Oblivion",
+    "updatedAt": "2026-06-28T01:38:18.322Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:37.269Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC175MYVc1HZqVz-STotzQZQ",
+      "channelTitle": "Bianca Oblivion",
+      "channelUrl": "https://www.youtube.com/@biancaoblivion",
+      "customUrl": "@biancaoblivion",
+      "thumbnailUrl": "https://yt3.ggpht.com/XTYWrRMNKrN_jiqFIWU4c43ouv98YUS9TmyWlP5tTNuOFL9VUB0nb0Ahx4Ncp6HNeunc5QcTeQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/XTYWrRMNKrN_jiqFIWU4c43ouv98YUS9TmyWlP5tTNuOFL9VUB0nb0Ahx4Ncp6HNeunc5QcTeQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@biancaoblivion"
+    }
+  },
+  "blasha-allatt": {
+    "slug": "blasha-allatt",
+    "name": "Blasha & Allatt",
+    "updatedAt": "2026-06-28T01:38:18.307Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:17.432Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCNNA60VHSrkw7ByIMnqJGYw",
+      "channelTitle": "Blasha Allatt",
+      "channelUrl": "https://www.youtube.com/@blashaallatt8565",
+      "customUrl": "@blashaallatt8565",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_kuFglfN8mFshPQ_YxxX-5TxbNg5-MCGRCBZk8qHpN_Mss=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_kuFglfN8mFshPQ_YxxX-5TxbNg5-MCGRCBZk8qHpN_Mss=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@blashaallatt8565"
+    }
+  },
+  "blawan": {
+    "slug": "blawan",
+    "name": "Blawan",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:49.035Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/blawan.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/64kN9EkSTHYhda2FupL0KI"
+    },
+    "spotify": {
+      "artistId": "64kN9EkSTHYhda2FupL0KI",
+      "name": "Blawan",
+      "url": "https://open.spotify.com/artist/64kN9EkSTHYhda2FupL0KI",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/blawan.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/blawan.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "blicz": {
+    "slug": "blicz",
+    "name": "Blicz",
+    "updatedAt": "2026-06-28T01:38:18.309Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:20.445Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCXywHzt8rD7h9cIkLc8CKdg",
+      "channelTitle": "Blicz - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCXywHzt8rD7h9cIkLc8CKdg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/VXfYnF4bKqnUOAoOIGLUzpDlMHzHjU-5bNw-uKWU1JFsGlY-x5eaqcyNVfa6Q15dPCb9pV6iY-E=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/VXfYnF4bKqnUOAoOIGLUzpDlMHzHjU-5bNw-uKWU1JFsGlY-x5eaqcyNVfa6Q15dPCb9pV6iY-E=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCXywHzt8rD7h9cIkLc8CKdg"
+    }
+  },
+  "boris-s": {
+    "slug": "boris-s",
+    "name": "Boris S.",
+    "updatedAt": "2026-06-28T19:18:23.540Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:18:23.540Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:42.916Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "21444lX8gpmOX36icLmbFI",
+      "name": "Boris S.",
+      "url": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "imageUrls": [
+        "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+    },
+    "youtube": {
+      "channelId": "UConj5z_OOR-6vx8ynZ-DfpA",
+      "channelTitle": "Boris S. - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UConj5z_OOR-6vx8ynZ-DfpA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/nuy8Gz_FEVT6bBYCA0o02aO0QuhE34H7iH0xiBIZGmPDmTzly2w1XhmFG3hNiafCCtcuAw_LCw=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "boy-harsher": {
+    "slug": "boy-harsher",
+    "name": "Boy Harsher",
+    "updatedAt": "2026-06-28T19:17:43.955Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:43.955Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:36.332Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "4iom7VVRU6AHRIu1JUXpLG",
+      "name": "Boy Harsher",
+      "url": "https://open.spotify.com/artist/4iom7VVRU6AHRIu1JUXpLG",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6",
+      "imageUrls": [
+        "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/4iom7VVRU6AHRIu1JUXpLG"
+    },
+    "youtube": {
+      "channelId": "UCcwLVJ0hC4YnSfMRlolkVDw",
+      "channelTitle": "Boy Harsher / Nude Club",
+      "channelUrl": "https://www.youtube.com/@boyharsher",
+      "customUrl": "@boyharsher",
+      "thumbnailUrl": "https://yt3.ggpht.com/n0WcAGl3IH3Fark4mQ-g8jrxbZjJ0gRr2IZEi1gfg3lt5rSW4RFTYY1nu-k4mi88nVhXLrdTUnw=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "charlie-sparks": {
+    "slug": "charlie-sparks",
+    "name": "Charlie Sparks",
+    "updatedAt": "2026-06-28T19:19:09.094Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:53.104Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:19:09.094Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC9ZQKzAs4bKUhRKMaGbWoDw",
+      "channelTitle": "Charlie Sparks - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UC9ZQKzAs4bKUhRKMaGbWoDw",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/Nn5UXeJrZ_X2txcGcDOsoWFc_IOj7QJz5T86rM59XOpS3EcjpcZHkFDZfm9K9kr6jgECdyzQEkE=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a7d68de3c6f64cf109d20bd8",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/1lsjQdGrRe2D1nmvCVB7JZ"
+    },
+    "spotify": {
+      "artistId": "1lsjQdGrRe2D1nmvCVB7JZ",
+      "name": "Charlie Sparks",
+      "url": "https://open.spotify.com/artist/1lsjQdGrRe2D1nmvCVB7JZ",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a7d68de3c6f64cf109d20bd8",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a7d68de3c6f64cf109d20bd8"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "charlotte-de-witte": {
+    "slug": "charlotte-de-witte",
+    "name": "Charlotte de Witte",
+    "updatedAt": "2026-06-28T19:17:53.420Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:53.420Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:37.695Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "1lJhME1ZpzsEa5M0wW6Mso",
+      "name": "Charlotte de Witte",
+      "url": "https://open.spotify.com/artist/1lJhME1ZpzsEa5M0wW6Mso",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/1lJhME1ZpzsEa5M0wW6Mso"
+    },
+    "youtube": {
+      "channelId": "UC-yOW3e6zBSo1JwLXq46Suw",
+      "channelTitle": "Charlotte de Witte",
+      "channelUrl": "https://www.youtube.com/@charlottedewittemusic",
+      "customUrl": "@charlottedewittemusic",
+      "thumbnailUrl": "https://yt3.ggpht.com/G3cN5pANmTK1YsEzH_cq5g6osU9SJElkz_WwKi8n94ZE4U1z5XOUvQZwyXpJBZOs3ky4fWdj-w=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "chlar": {
+    "slug": "chlar",
+    "name": "Chlar",
+    "updatedAt": "2026-06-28T01:38:18.301Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:10.128Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCKlJyQROL4dXXFNbrXrdKFw",
+      "channelTitle": "Chlar",
+      "channelUrl": "https://www.youtube.com/@chlarchive",
+      "customUrl": "@chlarchive",
+      "thumbnailUrl": "https://yt3.ggpht.com/ApORc_lEbG1zi_gjCl7R7Lzh5gOUAJpGJN1BKN1qGoFQTm7FLDT6iKLPG3nd8Xif0gCKY0PREw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ApORc_lEbG1zi_gjCl7R7Lzh5gOUAJpGJN1BKN1qGoFQTm7FLDT6iKLPG3nd8Xif0gCKY0PREw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@chlarchive"
+    }
+  },
+  "chris-liebing": {
+    "slug": "chris-liebing",
+    "name": "Chris Liebing",
+    "updatedAt": "2026-06-28T19:18:07.828Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:18:07.828Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:39.757Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "21444lX8gpmOX36icLmbFI",
+      "name": "Chris Liebing",
+      "url": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+    },
+    "youtube": {
+      "channelId": "UCeaIigwbXbgiTV2Ks1gs32g",
+      "channelTitle": "Chris Liebing",
+      "channelUrl": "https://www.youtube.com/@chrisliebingofficial",
+      "customUrl": "@chrisliebingofficial",
+      "thumbnailUrl": "https://yt3.ggpht.com/e1bpQFx-66RoyFch28kYy-td1zUHrRA-jmg6P7ZO4G0DdimPc0jMnosg44ExkgqCPI4TvFLmLpk=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "cleric": {
+    "slug": "cleric",
+    "name": "Cleric",
+    "updatedAt": "2026-06-28T01:38:18.317Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:30.920Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC-lk08hcRNv_UgGFTTnvNIQ",
+      "channelTitle": "The Cleric Corner",
+      "channelUrl": "https://www.youtube.com/@theclericcorner",
+      "customUrl": "@theclericcorner",
+      "thumbnailUrl": "https://yt3.ggpht.com/3bpvrlM2QoMPMI90_vLdxbZzdLYnaqmeGOtmavZIcMwjlLSVUpCjA-XVc8qR-iDHYiq3QSezww=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/3bpvrlM2QoMPMI90_vLdxbZzdLYnaqmeGOtmavZIcMwjlLSVUpCjA-XVc8qR-iDHYiq3QSezww=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@theclericcorner"
+    }
+  },
+  "clouds": {
+    "slug": "clouds",
+    "name": "Clouds",
+    "updatedAt": "2026-06-28T01:38:18.332Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:49.383Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCKZbgzsJ_XsgGevLAKI1DwA",
+      "channelTitle": "Anime Cloud",
+      "channelUrl": "https://www.youtube.com/@animecloud9",
+      "customUrl": "@animecloud9",
+      "thumbnailUrl": "https://yt3.ggpht.com/-uf0kIkG_P31S3MN90VEQZHi4S4Q3LUlgCLtQD0pqK564F04z0F_0pExQ_Hv0DqxJVXlWwV7=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/-uf0kIkG_P31S3MN90VEQZHi4S4Q3LUlgCLtQD0pqK564F04z0F_0pExQ_Hv0DqxJVXlWwV7=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@animecloud9"
+    }
+  },
+  "cltx": {
+    "slug": "cltx",
+    "name": "CLTX",
+    "updatedAt": "2026-06-28T01:38:18.303Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:13.237Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCpWTMY_l1EOK68o2NFWdEdQ",
+      "channelTitle": "CLTX - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCpWTMY_l1EOK68o2NFWdEdQ",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/KDCSuvgV8OBGa6GA54Dnk6OqYeR-Gq_f9aufOgYSF47ZkEVF_k7TWiaM4cPOOmSM2MGswaEt=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/KDCSuvgV8OBGa6GA54Dnk6OqYeR-Gq_f9aufOgYSF47ZkEVF_k7TWiaM4cPOOmSM2MGswaEt=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCpWTMY_l1EOK68o2NFWdEdQ"
+    }
+  },
+  "codex-empire": {
+    "slug": "codex-empire",
+    "name": "Codex Empire",
+    "updatedAt": "2026-06-28T01:38:04.488Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:49.236Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCn8BAYeKkafU3HZxmt9__NA",
+      "channelTitle": "Empire Codex",
+      "channelUrl": "https://www.youtube.com/@empire_codex1",
+      "customUrl": "@empire_codex1",
+      "thumbnailUrl": "https://yt3.ggpht.com/I5RAfzqFOqLsMz7RZx977EDTPFW7P_5OFS3KoOUMU9OGQZADKG-KKLa6qaRAQiC-IU5gCwEf=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/I5RAfzqFOqLsMz7RZx977EDTPFW7P_5OFS3KoOUMU9OGQZADKG-KKLa6qaRAQiC-IU5gCwEf=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@empire_codex1"
+    }
+  },
+  "cravet": {
+    "slug": "cravet",
+    "name": "CRAVET",
+    "updatedAt": "2026-06-28T01:38:18.297Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:02.054Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCSTDFU49nq62DuuWMMJoOHQ",
+      "channelTitle": "Cravet Media ",
+      "channelUrl": "https://www.youtube.com/@cravetmedia",
+      "customUrl": "@cravetmedia",
+      "thumbnailUrl": "https://yt3.ggpht.com/-GmAnyjHkg6InDB6i4IpUQFwiaEyCrjH5uUdMkIzaqeC8_zhmkZsWMJIgMIJb9m--eu9zjGv2g=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/-GmAnyjHkg6InDB6i4IpUQFwiaEyCrjH5uUdMkIzaqeC8_zhmkZsWMJIgMIJb9m--eu9zjGv2g=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@cravetmedia"
+    }
+  },
+  "crystal-distortion": {
+    "slug": "crystal-distortion",
+    "name": "Crystal Distortion",
+    "updatedAt": "2026-06-28T01:38:18.324Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:40.131Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCEk5ccLTVfzOValIoSJ1GcA",
+      "channelTitle": "Crystal Distortion - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCEk5ccLTVfzOValIoSJ1GcA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/TM7h2_enN7NMJGAqJ-El83mjzjNcnOxqcQYvaycNKaQn1LAmB8s2W4uSUdZckPqNAu2dtIrslZk=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/TM7h2_enN7NMJGAqJ-El83mjzjNcnOxqcQYvaycNKaQn1LAmB8s2W4uSUdZckPqNAu2dtIrslZk=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCEk5ccLTVfzOValIoSJ1GcA"
+    }
+  },
+  "dave-the-drummer": {
+    "slug": "dave-the-drummer",
+    "name": "D.A.V.E. The Drummer",
+    "updatedAt": "2026-06-28T19:30:12.183Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:53.729Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.183Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/dave-the-drummer.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/4ulxN8QnUlk3bX6IopQO7C"
+    },
+    "spotify": {
+      "artistId": "4ulxN8QnUlk3bX6IopQO7C",
+      "name": "D.A.V.E. The Drummer",
+      "url": "https://open.spotify.com/artist/4ulxN8QnUlk3bX6IopQO7C",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/dave-the-drummer.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/dave-the-drummer.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "daxson": {
+    "slug": "daxson",
+    "name": "Daxson",
+    "updatedAt": "2026-06-28T01:38:18.300Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:08.294Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCyMY1VHLXM8UtHqtXfKL01A",
+      "channelTitle": "Daxson",
+      "channelUrl": "https://www.youtube.com/@daxsonmusic",
+      "customUrl": "@daxsonmusic",
+      "thumbnailUrl": "https://yt3.ggpht.com/CilR7C4-ZXUX-KGZB5Lg0cu_2W7mKh0Z7qRRdG-5lwrbkMcHNR9L5W_9J6pC43AdRMm7OhLl3O0=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/CilR7C4-ZXUX-KGZB5Lg0cu_2W7mKh0Z7qRRdG-5lwrbkMcHNR9L5W_9J6pC43AdRMm7OhLl3O0=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@daxsonmusic"
+    }
+  },
+  "debora-alessio": {
+    "slug": "debora-alessio",
+    "name": "Debora Alessio",
+    "updatedAt": "2026-06-28T01:38:18.337Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:52.055Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      }
+    }
+  },
+  "deepbass": {
+    "slug": "deepbass",
+    "name": "Deepbass",
+    "updatedAt": "2026-06-28T19:30:16.257Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:57.530Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:16.257Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/deepbass.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/4JBXPj21sTqOZvgQurUJoP"
+    },
+    "spotify": {
+      "artistId": "4JBXPj21sTqOZvgQurUJoP",
+      "name": "Deepbass",
+      "url": "https://open.spotify.com/artist/4JBXPj21sTqOZvgQurUJoP",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/deepbass.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/deepbass.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "dj-pierre": {
+    "slug": "dj-pierre",
+    "name": "DJ Pierre",
+    "updatedAt": "2026-06-28T01:38:18.339Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:54.434Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCm0to1SLyxIK5jlIj9rdYwQ",
+      "channelTitle": "Pierre Thibault",
+      "channelUrl": "https://www.youtube.com/@pierrethibaultmusic",
+      "customUrl": "@pierrethibaultmusic",
+      "thumbnailUrl": "https://yt3.ggpht.com/wBY2PxRpxjaPiSXXoDMXtMYxpmQyZS3p4wM6jjaNZFV6gBft1N4ZmNiLGod5smXOCjIb_-_Vqw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/wBY2PxRpxjaPiSXXoDMXtMYxpmQyZS3p4wM6jjaNZFV6gBft1N4ZmNiLGod5smXOCjIb_-_Vqw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@pierrethibaultmusic"
+    }
+  },
+  "dj-rush": {
+    "slug": "dj-rush",
+    "name": "DJ Rush",
+    "updatedAt": "2026-06-28T01:37:53.861Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:40.396Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCHyGTk8Gl-sTbBIiUxGloMg",
+      "channelTitle": "Dj Rush SL",
+      "channelUrl": "https://www.youtube.com/@djrushsl7994",
+      "customUrl": "@djrushsl7994",
+      "thumbnailUrl": "https://yt3.ggpht.com/ZdVzt68dKyxHHa10WrBKP5L8MJSSqfmyrV07IvtFcSqtmFNaC0hWrDQQpaPSuj3JMyfr1DWeJ1c=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ZdVzt68dKyxHHa10WrBKP5L8MJSSqfmyrV07IvtFcSqtmFNaC0hWrDQQpaPSuj3JMyfr1DWeJ1c=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@djrushsl7994"
+    }
+  },
+  "drab-majesty": {
+    "slug": "drab-majesty",
+    "name": "Drab Majesty",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:44.794Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/drab-majesty.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/2CSEKlTT9empsZ8vZWsrKO"
+    },
+    "spotify": {
+      "artistId": "2CSEKlTT9empsZ8vZWsrKO",
+      "name": "Drab Majesty",
+      "url": "https://open.spotify.com/artist/2CSEKlTT9empsZ8vZWsrKO",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/drab-majesty.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/drab-majesty.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "dyen": {
+    "slug": "dyen",
+    "name": "DYEN",
+    "updatedAt": "2026-06-28T01:38:07.438Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:51.760Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC2cQgZ7mT7s0oSTMPP-KKCA",
+      "channelTitle": "DYEN - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UC2cQgZ7mT7s0oSTMPP-KKCA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/Ck5B3BDio8eOFwqtNY5d0smi1M2aa914q1lpzNFMsweCWSD24-58yO01z_-CV6xaYhNfPlc_=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/Ck5B3BDio8eOFwqtNY5d0smi1M2aa914q1lpzNFMsweCWSD24-58yO01z_-CV6xaYhNfPlc_=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UC2cQgZ7mT7s0oSTMPP-KKCA"
+    }
+  },
+  "eric-sneo": {
+    "slug": "eric-sneo",
+    "name": "Eric Sneo",
+    "updatedAt": "2026-06-28T01:38:18.323Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:37.943Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UChHkp5FDF4hc58jpl_MNitA",
+      "channelTitle": "Eric Sneo",
+      "channelUrl": "https://www.youtube.com/@ericsneo",
+      "customUrl": "@ericsneo",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_nHrtTvoEnVLX-xAw1tpTNY-ZIbDWR9WMeDln3dfqv6ddE=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_nHrtTvoEnVLX-xAw1tpTNY-ZIbDWR9WMeDln3dfqv6ddE=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@ericsneo"
+    }
+  },
+  "fantasm": {
+    "slug": "fantasm",
+    "name": "Fantasm",
+    "updatedAt": "2026-06-28T19:19:32.656Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:19:32.656Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:56.855Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "0copVQkrcbfv5CzOyXuLKy",
+      "name": "Fantasm",
+      "url": "https://open.spotify.com/artist/0copVQkrcbfv5CzOyXuLKy",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0copVQkrcbfv5CzOyXuLKy"
+    },
+    "youtube": {
+      "channelId": "UC1Imo6FpXFeaBjH6_wj9r2g",
+      "channelTitle": "Fantasm",
+      "channelUrl": "https://www.youtube.com/@fantasm_techno",
+      "customUrl": "@fantasm_techno",
+      "thumbnailUrl": "https://yt3.ggpht.com/_853LpAhbO2CW_dJZxSpGx_COa_yeFi1BUlthmktV3GTDx77ZX6t5LbgJ8r3N0LjRZ9aptdXhg=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "francois-x": {
+    "slug": "francois-x",
+    "name": "François X",
+    "updatedAt": "2026-06-28T01:38:18.337Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:52.405Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCxsUjjIOmViLDvrCykms_aQ",
+      "channelTitle": "François X",
+      "channelUrl": "https://www.youtube.com/@francoisx",
+      "customUrl": "@francoisx",
+      "thumbnailUrl": "https://yt3.ggpht.com/3D-oeYgozyHY5VcLRoU36xd784kLiCt5XwnCKhwVQN3Lm7xgGa3VEvP-QwAyhsQi4xkh3tBa-Q=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/3D-oeYgozyHY5VcLRoU36xd784kLiCt5XwnCKhwVQN3Lm7xgGa3VEvP-QwAyhsQi4xkh3tBa-Q=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@francoisx"
+    }
+  },
+  "frank-nitzinsky": {
+    "slug": "frank-nitzinsky",
+    "name": "Frank Nitzinsky",
+    "updatedAt": "2026-06-28T01:38:18.324Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:39.514Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCvK48aClWTZgHhZyEouxtFg",
+      "channelTitle": "Eye-D - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCvK48aClWTZgHhZyEouxtFg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/lD-iY4vjewBNDT6OdQM_ausiSyAvabHWkr9jdoFJ_KvpAN5-bsWjuRIwnmuLQXMorrpGWsVj=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/lD-iY4vjewBNDT6OdQM_ausiSyAvabHWkr9jdoFJ_KvpAN5-bsWjuRIwnmuLQXMorrpGWsVj=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCvK48aClWTZgHhZyEouxtFg"
+    }
+  },
+  "front-242": {
+    "slug": "front-242",
+    "name": "Front 242",
+    "updatedAt": "2026-06-28T19:30:12.183Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:57.184Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.183Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/front-242.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX"
+    },
+    "spotify": {
+      "artistId": "2tyMOS8xKREgpEwHnLc6EX",
+      "name": "Front 242",
+      "url": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/front-242.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/front-242.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "front-line-assembly": {
+    "slug": "front-line-assembly",
+    "name": "Front Line Assembly",
+    "updatedAt": "2026-06-28T01:38:18.325Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:41.394Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCR_i_uoOq_j1Kmys_BUW1Qg",
+      "channelTitle": "Front Line Assembly - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCR_i_uoOq_j1Kmys_BUW1Qg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/CJtM9S5om3HhPcTxyeC-fqbSTPQLArjqXF9WWNvTHmbp-xQ_P9sxs_vODZsRYr0x7o1MjKT6=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/CJtM9S5om3HhPcTxyeC-fqbSTPQLArjqXF9WWNvTHmbp-xQ_P9sxs_vODZsRYr0x7o1MjKT6=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCR_i_uoOq_j1Kmys_BUW1Qg"
+    }
+  },
+  "funk-tribu": {
+    "slug": "funk-tribu",
+    "name": "Funk Tribu",
+    "updatedAt": "2026-06-28T01:38:11.093Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:54.365Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCHHbn0fgp2P2XkC9W1mu6iQ",
+      "channelTitle": "Funk Tribu - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCHHbn0fgp2P2XkC9W1mu6iQ",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCHHbn0fgp2P2XkC9W1mu6iQ"
+    }
+  },
+  "ghost-in-the-machine": {
+    "slug": "ghost-in-the-machine",
+    "name": "Ghost in the Machine",
+    "updatedAt": "2026-06-28T19:18:42.150Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:18:42.150Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:48.576Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "5opfVCjYF7B4DIKULygJ84",
+      "name": "Ghost in the Machine",
+      "url": "https://open.spotify.com/artist/5opfVCjYF7B4DIKULygJ84",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/5opfVCjYF7B4DIKULygJ84"
+    },
+    "youtube": {
+      "channelId": "UCQjSlC2nstNd_xPr1iBGdow",
+      "channelTitle": "Ghost in the Machine",
+      "channelUrl": "https://www.youtube.com/@gitmmusic",
+      "customUrl": "@gitmmusic",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_lkXvPeeO8qY3y-GUpeMdTVZjzOfvjDvdwYp-OYfwjpCco=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "ha-cay": {
+    "slug": "ha-cay",
+    "name": "Ha CAY",
+    "updatedAt": "2026-06-28T01:38:18.309Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:19.805Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCPKNKldggioffXPkSmjs5lQ",
+      "channelTitle": "[햄지]Hamzy",
+      "channelUrl": "https://www.youtube.com/@hamzymukbang",
+      "customUrl": "@hamzymukbang",
+      "thumbnailUrl": "https://yt3.ggpht.com/iLXgJAWo5zn0fBY0RgKXkxgTtkzTcDXjgeriRAElnqNm9Zsf7VySgOVq7WNPCJEIxXm266XupQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/iLXgJAWo5zn0fBY0RgKXkxgTtkzTcDXjgeriRAElnqNm9Zsf7VySgOVq7WNPCJEIxXm266XupQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@hamzymukbang"
+    }
+  },
+  "hadone": {
+    "slug": "hadone",
+    "name": "Hadone",
+    "updatedAt": "2026-06-28T19:17:59.877Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:59.877Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:38.439Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "4aSlYJptLO5PXv3jGueMkD",
+      "name": "Hadone",
+      "url": "https://open.spotify.com/artist/4aSlYJptLO5PXv3jGueMkD",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/4aSlYJptLO5PXv3jGueMkD"
+    },
+    "youtube": {
+      "channelId": "UCVaa8jqvVpKdufNo8KiAF3w",
+      "channelTitle": "Hadone - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCVaa8jqvVpKdufNo8KiAF3w",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/pf4OnAW8ZqZZInm_fsf8mjpjjRJirUs_5cHaIBhwR2X3tsigTFfE4j-a1ZDI-bdVdUPjoC-AcR4=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "hante": {
+    "slug": "hante",
+    "name": "Hante",
+    "updatedAt": "2026-06-28T19:30:19.606Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:43.621Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:19.606Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/hante.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/5PhSiNjHZevtfAj9zmvVkU"
+    },
+    "spotify": {
+      "artistId": "5PhSiNjHZevtfAj9zmvVkU",
+      "name": "Hante",
+      "url": "https://open.spotify.com/artist/5PhSiNjHZevtfAj9zmvVkU",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/hante.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/hante.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "hardfloor": {
+    "slug": "hardfloor",
+    "name": "Hardfloor",
+    "updatedAt": "2026-06-28T01:38:18.324Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:40.781Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCzfLJqFAIF_zC1SPzu7spxQ",
+      "channelTitle": "HRDFLR",
+      "channelUrl": "https://www.youtube.com/@hrdflr_303_official",
+      "customUrl": "@hrdflr_303_official",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_kkbheHWTqauFa_3P99gLyiG_iGXcb34gEIlDHe7sxb_Q=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_kkbheHWTqauFa_3P99gLyiG_iGXcb34gEIlDHe7sxb_Q=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@hrdflr_303_official"
+    }
+  },
+  "hausman": {
+    "slug": "hausman",
+    "name": "Hausman",
+    "updatedAt": "2026-06-28T01:38:18.316Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:29.715Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCxrvlwhRvT6oSI5sjLrQMGw",
+      "channelTitle": "Hausman",
+      "channelUrl": "https://www.youtube.com/@hausmanmusic",
+      "customUrl": "@hausmanmusic",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_n5hOY9TuTcYPg8UL3x5RPIeGXqa5DdkHcPTEZzxReFOg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_n5hOY9TuTcYPg8UL3x5RPIeGXqa5DdkHcPTEZzxReFOg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@hausmanmusic"
+    }
+  },
+  "hector-oaks": {
+    "slug": "hector-oaks",
+    "name": "Héctor Oaks",
+    "updatedAt": "2026-06-28T19:30:14.111Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:55.425Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:14.111Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/hector-oaks.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/2FZAQdFEANNv5Gi29PI10x"
+    },
+    "spotify": {
+      "artistId": "2FZAQdFEANNv5Gi29PI10x",
+      "name": "Héctor Oaks",
+      "url": "https://open.spotify.com/artist/2FZAQdFEANNv5Gi29PI10x",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/hector-oaks.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/hector-oaks.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "helena-hauff": {
+    "slug": "helena-hauff",
+    "name": "Helena Hauff",
+    "updatedAt": "2026-06-28T01:38:02.191Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:47.285Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCvyn_w7CUWKpW3LRCy3M0LA",
+      "channelTitle": "Helena Hauff - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCvyn_w7CUWKpW3LRCy3M0LA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/CcYZyoEhoahY6EHFT7yi8SDgkIQwO9PIo2Mh3HZX-zwrjggRex9bvKGbnpH_v-TqCe2U4-8e=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/CcYZyoEhoahY6EHFT7yi8SDgkIQwO9PIo2Mh3HZX-zwrjggRex9bvKGbnpH_v-TqCe2U4-8e=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCvyn_w7CUWKpW3LRCy3M0LA"
+    }
+  },
+  "hemka": {
+    "slug": "hemka",
+    "name": "Hemka",
+    "updatedAt": "2026-06-28T01:38:18.314Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:27.206Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCou1n-0I7i30BYsmO_RU2fA",
+      "channelTitle": "Hemka",
+      "channelUrl": "https://www.youtube.com/@hemka",
+      "customUrl": "@hemka",
+      "thumbnailUrl": "https://yt3.ggpht.com/7aD6ut-4mdd51eiqiepvhxwzFMZ5_PwIaFdayihp7AznG-WnEmIdxoPUDhHLESe092IkMlti7tU=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/7aD6ut-4mdd51eiqiepvhxwzFMZ5_PwIaFdayihp7AznG-WnEmIdxoPUDhHLESe092IkMlti7tU=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@hemka"
+    }
+  },
+  "hiccup": {
+    "slug": "hiccup",
+    "name": "Hiccup",
+    "updatedAt": "2026-06-28T01:38:18.319Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:34.023Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCxMB5np5PJFogPLE-IZs92A",
+      "channelTitle": "Hiccup",
+      "channelUrl": "https://www.youtube.com/@never_hiccups",
+      "customUrl": "@never_hiccups",
+      "thumbnailUrl": "https://yt3.ggpht.com/WOsBgyze_NxxEHDEt2XEj-MICldb51cTIxxAMRdrq7kpH1P9CoYUyVsBE9kdpZaA9o8DzS2Zcv0=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/WOsBgyze_NxxEHDEt2XEj-MICldb51cTIxxAMRdrq7kpH1P9CoYUyVsBE9kdpZaA9o8DzS2Zcv0=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@never_hiccups"
+    }
+  },
+  "holy-priest": {
+    "slug": "holy-priest",
+    "name": "Holy Priest",
+    "updatedAt": "2026-06-28T01:38:11.872Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:55.011Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCIEIce5wzzEp44k90IpQymw",
+      "channelTitle": "HOLY PRIEST",
+      "channelUrl": "https://www.youtube.com/@holypriest_music",
+      "customUrl": "@holypriest_music",
+      "thumbnailUrl": "https://yt3.ggpht.com/eK148TLK2AefCDJdwGBVXBDCvqOGTYoYwyeb4wACIU2f0bmwdYXZEk_yOXbr9E_4aLR7XNwFIA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/eK148TLK2AefCDJdwGBVXBDCvqOGTYoYwyeb4wACIU2f0bmwdYXZEk_yOXbr9E_4aLR7XNwFIA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@holypriest_music"
+    }
+  },
+  "i-hate-models": {
+    "slug": "i-hate-models",
+    "name": "I Hate Models",
+    "updatedAt": "2026-06-28T19:17:25.618Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:25.618Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:33.718Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "0KqSULB80ft2H3aFg6kJmN",
+      "name": "I Hate Models",
+      "url": "https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN"
+    },
+    "youtube": {
+      "channelId": "UCQJUmY7sHc-M1sCJE8zOZwQ",
+      "channelTitle": "I HATE MODELS",
+      "channelUrl": "https://www.youtube.com/@ihatemodels1",
+      "customUrl": "@ihatemodels1",
+      "thumbnailUrl": "https://yt3.ggpht.com/TLJ1AWaQv4UXIwM3VY73TEnjxdRIwHzo49Fn_M2xfu3bDLqVBMdco4ahVfXJYoJGho3GI8xc=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "ignacio": {
+    "slug": "ignacio",
+    "name": "Ignacio",
+    "updatedAt": "2026-06-28T01:38:18.301Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:09.559Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCDxmPtNBomnmB4g4cbaHZHg",
+      "channelTitle": "Jurino Ignacio",
+      "channelUrl": "https://www.youtube.com/@jurino",
+      "customUrl": "@jurino",
+      "thumbnailUrl": "https://yt3.ggpht.com/3LjXrlsU5pMLHFBJyca1a10sa5QxClmpLITtsc-J_XFcc4z9aHyKFy_OPw5IbDqZtNFvFg4Wgw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/3LjXrlsU5pMLHFBJyca1a10sa5QxClmpLITtsc-J_XFcc4z9aHyKFy_OPw5IbDqZtNFvFg4Wgw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@jurino"
+    }
+  },
+  "igor-r": {
+    "slug": "igor-r",
+    "name": "Igor R",
+    "updatedAt": "2026-06-28T01:38:18.319Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:34.651Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCSVyLAIAJ1uR3hxbAXCnU3A",
+      "channelTitle": "Igor R",
+      "channelUrl": "https://www.youtube.com/@megaigor777",
+      "customUrl": "@megaigor777",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_mG568Rs6429Jq2fKGGYllKhVU2wyAfM0EWgsSBOas=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mG568Rs6429Jq2fKGGYllKhVU2wyAfM0EWgsSBOas=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@megaigor777"
+    }
+  },
+  "iochan": {
+    "slug": "iochan",
+    "name": "Iochan",
+    "updatedAt": "2026-06-28T01:38:18.315Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:27.828Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCGbLiqrpUlnW4aIldlzUkuw",
+      "channelTitle": "iochan",
+      "channelUrl": "https://www.youtube.com/@iolif-3",
+      "customUrl": "@iolif-3",
+      "thumbnailUrl": "https://yt3.ggpht.com/4GAmrd-_wGvivEwB_D4GtCbuTENp8TnRSTOFDE4w7c4edS0Iv5BJhFJyFo5xgb15XUZ3CgKqo-U=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/4GAmrd-_wGvivEwB_D4GtCbuTENp8TnRSTOFDE4w7c4edS0Iv5BJhFJyFo5xgb15XUZ3CgKqo-U=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@iolif-3"
+    }
+  },
+  "jacidorex": {
+    "slug": "jacidorex",
+    "name": "Jacidorex",
+    "updatedAt": "2026-06-28T01:38:18.309Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:19.208Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCIrRkuYprnnfZ1_F4Rrawkg",
+      "channelTitle": "Jacidorex",
+      "channelUrl": "https://www.youtube.com/@jacidorex",
+      "customUrl": "@jacidorex",
+      "thumbnailUrl": "https://yt3.ggpht.com/ZJn7wKKG6Dv2YbbTbg_nQGwp_nwqkxSdLXXD6ydN1T6BoOxVtzbu0iofpDpWcU-jrLARtD3D=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ZJn7wKKG6Dv2YbbTbg_nQGwp_nwqkxSdLXXD6ydN1T6BoOxVtzbu0iofpDpWcU-jrLARtD3D=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@jacidorex"
+    }
+  },
+  "jks": {
+    "slug": "jks",
+    "name": "JKS",
+    "updatedAt": "2026-06-28T01:38:18.297Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:03.356Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCU7J5it4ZR_hPQvpZuPkhjg",
+      "channelTitle": "J.K.S.",
+      "channelUrl": "https://www.youtube.com/@j.k.s.6982",
+      "customUrl": "@j.k.s.6982",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_n5CE76MVQkMhu6a4iK8az9kQPv_kPr-iuQ5nXhdG29qrENWaHeBnsbgnZdiKIuS-Wfkw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_n5CE76MVQkMhu6a4iK8az9kQPv_kPr-iuQ5nXhdG29qrENWaHeBnsbgnZdiKIuS-Wfkw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@j.k.s.6982"
+    }
+  },
+  "josh-wink": {
+    "slug": "josh-wink",
+    "name": "Josh Wink",
+    "updatedAt": "2026-06-28T19:30:12.183Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:53.011Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.183Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/josh-wink.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/6DQLkRykAsF6paJnlIMX4H"
+    },
+    "spotify": {
+      "artistId": "6DQLkRykAsF6paJnlIMX4H",
+      "name": "Josh Wink",
+      "url": "https://open.spotify.com/artist/6DQLkRykAsF6paJnlIMX4H",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/josh-wink.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/josh-wink.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "kaiser": {
+    "slug": "kaiser",
+    "name": "Kaiser",
+    "updatedAt": "2026-06-28T01:38:18.307Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:16.809Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCku-D8Wh6aaFdj4xMvjaE3w",
+      "channelTitle": "Kaiser",
+      "channelUrl": "https://www.youtube.com/@kaiseredits",
+      "customUrl": "@kaiseredits",
+      "thumbnailUrl": "https://yt3.ggpht.com/2C6PuMfFcXXh8Ejgzkksp8D2qNdfxatCnVzz61DNMgUIild0nNYjb7HvYNWjZ-Qb-VZ3XoGu6w=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/2C6PuMfFcXXh8Ejgzkksp8D2qNdfxatCnVzz61DNMgUIild0nNYjb7HvYNWjZ-Qb-VZ3XoGu6w=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@kaiseredits"
+    }
+  },
+  "kangding-ray": {
+    "slug": "kangding-ray",
+    "name": "Kangding Ray",
+    "updatedAt": "2026-06-28T01:38:18.335Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:51.078Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCo1bXnTygp6OtA2Rp-R3OkQ",
+      "channelTitle": "Kangding Ray",
+      "channelUrl": "https://www.youtube.com/@elcyano",
+      "customUrl": "@elcyano",
+      "thumbnailUrl": "https://yt3.ggpht.com/5zWwLgLjwSYmGrG51F3ni_65rBYpk4NkaOYz7tw60puAmcDgDQ3vNJEwiiqzX2vAQzBv3vXT=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/5zWwLgLjwSYmGrG51F3ni_65rBYpk4NkaOYz7tw60puAmcDgDQ3vNJEwiiqzX2vAQzBv3vXT=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@elcyano"
+    }
+  },
+  "klangkuenstler": {
+    "slug": "klangkuenstler",
+    "name": "Klangkuenstler",
+    "updatedAt": "2026-06-28T01:38:06.681Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:51.143Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCiKYs9p3BdEO44ZBeNCkJWA",
+      "channelTitle": "Klangkuenstler - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCiKYs9p3BdEO44ZBeNCkJWA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/WPnzwBQ8UQYxLPxWHmdcN1Me6UO9rpn7zHt3q463AU1vb4mjVTtOM2lLGQz6tXXYwiWWZMxDAqE=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/WPnzwBQ8UQYxLPxWHmdcN1Me6UO9rpn7zHt3q463AU1vb4mjVTtOM2lLGQz6tXXYwiWWZMxDAqE=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCiKYs9p3BdEO44ZBeNCkJWA"
+    }
+  },
+  "klaps": {
+    "slug": "klaps",
+    "name": "Klaps (BE)",
+    "updatedAt": "2026-06-28T01:38:18.301Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:10.751Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCDy7fzHA0mple7Mst0TKVFQ",
+      "channelTitle": "Klaps (BE) - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCDy7fzHA0mple7Mst0TKVFQ",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/sBfuUSfx6h_GiwhqUB-dK1c3yOa1cLLs9Yjaq0UFQK7wAhYV-HQ5nzdb7I2Wkoo65zw_6_KP=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/sBfuUSfx6h_GiwhqUB-dK1c3yOa1cLLs9Yjaq0UFQK7wAhYV-HQ5nzdb7I2Wkoo65zw_6_KP=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCDy7fzHA0mple7Mst0TKVFQ"
+    }
+  },
+  "klonne": {
+    "slug": "klonne",
+    "name": "Klonne",
+    "updatedAt": "2026-06-28T01:38:18.318Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:33.438Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCeLp8LEGiNb28FWmqrAt1dA",
+      "channelTitle": "kloNNe",
+      "channelUrl": "https://www.youtube.com/@klonne1111",
+      "customUrl": "@klonne1111",
+      "thumbnailUrl": "https://yt3.ggpht.com/eENRyTs-OzoxBDpxrLbLomvQIHNyMa8ipRVC_1CoZ1ys02e37qhCU7Dsyk5ZYwHv9k-x1NLkhA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/eENRyTs-OzoxBDpxrLbLomvQIHNyMa8ipRVC_1CoZ1ys02e37qhCU7Dsyk5ZYwHv9k-x1NLkhA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@klonne1111"
+    }
+  },
+  "kobosil": {
+    "slug": "kobosil",
+    "name": "Kobosil",
+    "updatedAt": "2026-06-28T19:17:29.898Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:29.898Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:34.416Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "2ZvIFwl0BuQgHqWvDE80hC",
+      "name": "Kobosil",
+      "url": "https://open.spotify.com/artist/2ZvIFwl0BuQgHqWvDE80hC",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/2ZvIFwl0BuQgHqWvDE80hC"
+    },
+    "youtube": {
+      "channelId": "UCDD5rtak_685aAlK7TLGgZg",
+      "channelTitle": "Kobosil",
+      "channelUrl": "https://www.youtube.com/@kobosil44",
+      "customUrl": "@kobosil44",
+      "thumbnailUrl": "https://yt3.ggpht.com/kPlpON4IcDJVe8HbAi1VgzH2F4EFc03B9IXv4mwwwHcfttpSycRu66N91bwK0iQrvcsP7kMy=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "krow": {
+    "slug": "krow",
+    "name": "Krow",
+    "updatedAt": "2026-06-28T01:38:18.303Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:13.905Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCjSHA9z5URuLIZ2yP2nNHFQ",
+      "channelTitle": "Krow",
+      "channelUrl": "https://www.youtube.com/@krows.",
+      "customUrl": "@krows.",
+      "thumbnailUrl": "https://yt3.ggpht.com/9uvs4WjDu5RXLXQiqC-7zV92xlb41meOULjzPjahsVgQX6MKBRyb4Rcmv2VFGFgvF_7AHyHUaw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/9uvs4WjDu5RXLXQiqC-7zV92xlb41meOULjzPjahsVgQX6MKBRyb4Rcmv2VFGFgvF_7AHyHUaw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@krows."
+    }
+  },
+  "lars-huismann": {
+    "slug": "lars-huismann",
+    "name": "Lars Huismann",
+    "updatedAt": "2026-06-28T01:38:18.305Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:15.558Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCbuRbRl8afqJtR3ePgv9jAA",
+      "channelTitle": "Lars Huismann - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCbuRbRl8afqJtR3ePgv9jAA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/8eBKxoKRAVNj_82lI2b2UJN3A0hU-FRhAsLU88DAOcyZhDGYhxa04OMvQ00Y8cce1rdHVMKysQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/8eBKxoKRAVNj_82lI2b2UJN3A0hU-FRhAsLU88DAOcyZhDGYhxa04OMvQ00Y8cce1rdHVMKysQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCbuRbRl8afqJtR3ePgv9jAA"
+    }
+  },
+  "laven": {
+    "slug": "laven",
+    "name": "LAVEN",
+    "updatedAt": "2026-06-28T19:18:53.487Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:18:53.487Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:50.486Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "5YWZmwPZ8PpWfnCS8lSfAX",
+      "name": "LAVEN",
+      "url": "https://open.spotify.com/artist/5YWZmwPZ8PpWfnCS8lSfAX",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/5YWZmwPZ8PpWfnCS8lSfAX"
+    },
+    "youtube": {
+      "channelId": "UCUJVwg7Kcr_wOwrwsMHQpkA",
+      "channelTitle": "Laven Lokesh",
+      "channelUrl": "https://www.youtube.com/@lavenlokeshbarani",
+      "customUrl": "@lavenlokeshbarani",
+      "thumbnailUrl": "https://yt3.ggpht.com/xLAGFAir4ZFzmJMgv4fgKeoM5ZSUQGbeg_b_7bjAqq7sMKLrj6ylutwv9ZqwQ-DunAOchFKZcw=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "leather-strip": {
+    "slug": "leather-strip",
+    "name": "Leather Strip",
+    "updatedAt": "2026-06-28T01:38:18.326Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:42.623Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCn2Q-E8dAZvvIuJI_8xrAng",
+      "channelTitle": "Leæther Strip - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCn2Q-E8dAZvvIuJI_8xrAng",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/D27F1mwKU9bBHxuruQOa3pIFmP_xJ5NxwhA6-r3JQ-27vFpLsK7eP_qHQJSMyDuutEQnQ2abGw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/D27F1mwKU9bBHxuruQOa3pIFmP_xJ5NxwhA6-r3JQ-27vFpLsK7eP_qHQJSMyDuutEQnQ2abGw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCn2Q-E8dAZvvIuJI_8xrAng"
+    }
+  },
+  "lebanon-hanover": {
+    "slug": "lebanon-hanover",
+    "name": "Lebanon Hanover",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:44.344Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/lebanon-hanover.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7"
+    },
+    "spotify": {
+      "artistId": "6w8h2uD28BEdg7bX4k3Lh7",
+      "name": "Lebanon Hanover",
+      "url": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/lebanon-hanover.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/lebanon-hanover.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "len-d": {
+    "slug": "len-d",
+    "name": "Len D",
+    "updatedAt": "2026-06-28T01:38:18.340Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:55.773Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      }
+    }
+  },
+  "lft": {
+    "slug": "lft",
+    "name": "L.F.T.",
+    "updatedAt": "2026-06-28T19:30:19.001Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:58.244Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:19.001Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/lft.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0CxkG7EdCzA4QJoDeiODFP"
+    },
+    "spotify": {
+      "artistId": "0CxkG7EdCzA4QJoDeiODFP",
+      "name": "L.F.T.",
+      "url": "https://open.spotify.com/artist/0CxkG7EdCzA4QJoDeiODFP",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/lft.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/lft.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "linea-aspera": {
+    "slug": "linea-aspera",
+    "name": "Linea Aspera",
+    "updatedAt": "2026-06-28T01:38:18.328Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:45.133Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCTqDGXX4qz_AuG4iwticufg",
+      "channelTitle": "Linea Aspera - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCTqDGXX4qz_AuG4iwticufg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/B3dJks8Ld4x9ObCypnEBWeZ-GuRPkeVrZQpwl2oTqDWygLIXnW_VUijeAGRwZCEPfihFjqz6=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/B3dJks8Ld4x9ObCypnEBWeZ-GuRPkeVrZQpwl2oTqDWygLIXnW_VUijeAGRwZCEPfihFjqz6=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCTqDGXX4qz_AuG4iwticufg"
+    }
+  },
+  "lsdxoxo": {
+    "slug": "lsdxoxo",
+    "name": "LSDXOXO",
+    "updatedAt": "2026-06-28T01:38:18.302Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:11.397Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCKzpfz_RGh5I0U6MIgyodlA",
+      "channelTitle": "lsdxoxo",
+      "channelUrl": "https://www.youtube.com/@lsdxoxo",
+      "customUrl": "@lsdxoxo",
+      "thumbnailUrl": "https://yt3.ggpht.com/K5OeVRJKF-s4fMBVfH6T8Ay5EyfM8-f_1EMIEB8RB4oq39qC5zxa1xHw9aQnvq5kEuSZbN-5ftE=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/K5OeVRJKF-s4fMBVfH6T8Ay5EyfM8-f_1EMIEB8RB4oq39qC5zxa1xHw9aQnvq5kEuSZbN-5ftE=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@lsdxoxo"
+    }
+  },
+  "lucy": {
+    "slug": "lucy",
+    "name": "Lucy",
+    "updatedAt": "2026-06-28T19:30:12.183Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:50.733Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.183Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/lucy.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0BlPI3UKzTcN2jf0gCa0b9"
+    },
+    "spotify": {
+      "artistId": "0BlPI3UKzTcN2jf0gCa0b9",
+      "name": "Lucy",
+      "url": "https://open.spotify.com/artist/0BlPI3UKzTcN2jf0gCa0b9",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/lucy.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/lucy.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "matrakk": {
+    "slug": "matrakk",
+    "name": "Matrakk",
+    "updatedAt": "2026-06-28T01:38:18.310Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:21.673Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCXsdXRWByGcrLBRVNoXi5TA",
+      "channelTitle": "MATRAKK",
+      "channelUrl": "https://www.youtube.com/@matrakk.techno",
+      "customUrl": "@matrakk.techno",
+      "thumbnailUrl": "https://yt3.ggpht.com/JQZFBJ2WsDDLadt4ps30rd615Zt3C6x6PtoLPHR-t1TziyKOvR6dXLo3vY8Tqf6iQpa0FGQQHA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/JQZFBJ2WsDDLadt4ps30rd615Zt3C6x6PtoLPHR-t1TziyKOvR6dXLo3vY8Tqf6iQpa0FGQQHA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@matrakk.techno"
+    }
+  },
+  "mcmlxxxv": {
+    "slug": "mcmlxxxv",
+    "name": "MCMLXXXV",
+    "updatedAt": "2026-06-28T01:38:18.313Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:24.168Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCyQ9QKVoUedI3rUty5FmWPw",
+      "channelTitle": "MCMLXXXV",
+      "channelUrl": "https://www.youtube.com/@gta-mcmlxxxv",
+      "customUrl": "@gta-mcmlxxxv",
+      "thumbnailUrl": "https://yt3.ggpht.com/tpPOGHrYJwXbKWQO_44VnFa9LgSmPSA7v---bLLPKNwJJt6mqJOSaq6gpj7aVIaNugnG_Gcjv_c=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/tpPOGHrYJwXbKWQO_44VnFa9LgSmPSA7v---bLLPKNwJJt6mqJOSaq6gpj7aVIaNugnG_Gcjv_c=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@gta-mcmlxxxv"
+    }
+  },
+  "mcr-t": {
+    "slug": "mcr-t",
+    "name": "MCR-T",
+    "updatedAt": "2026-06-28T19:30:12.184Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:58.588Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.184Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/mcr-t.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/4m7q9onIm2bqhwHy9utqmw"
+    },
+    "spotify": {
+      "artistId": "4m7q9onIm2bqhwHy9utqmw",
+      "name": "MCR-T",
+      "url": "https://open.spotify.com/artist/4m7q9onIm2bqhwHy9utqmw",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/mcr-t.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/mcr-t.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "moia": {
+    "slug": "moia",
+    "name": "Moia",
+    "updatedAt": "2026-06-28T01:38:18.300Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:07.658Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCJ1VjB90LMhJ_ykObew5bRA",
+      "channelTitle": "MOIA",
+      "channelUrl": "https://www.youtube.com/@moia_mobility",
+      "customUrl": "@moia_mobility",
+      "thumbnailUrl": "https://yt3.ggpht.com/0EpnWbXIMS-_SSP0XRJUhz0amFgqKX6eQtYKGFNrRpOxE97XyUnNDSLRxTHStjRwRMq3Pf-z=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/0EpnWbXIMS-_SSP0XRJUhz0amFgqKX6eQtYKGFNrRpOxE97XyUnNDSLRxTHStjRwRMq3Pf-z=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@moia_mobility"
+    }
+  },
+  "mrd": {
+    "slug": "mrd",
+    "name": "MRD",
+    "updatedAt": "2026-06-28T01:38:17.661Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:00.182Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC0JAnCX8_2vp1aq3q8rVU4w",
+      "channelTitle": "MRD Cars",
+      "channelUrl": "https://www.youtube.com/@mrdcars9303",
+      "customUrl": "@mrdcars9303",
+      "thumbnailUrl": "https://yt3.ggpht.com/b5d8qu6FWwhHCODQJzDdPFLQohlAup91n5GZhGEIOlqfpzQdbRAGnQqMR9B8UrvuAHS8IRRH=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/b5d8qu6FWwhHCODQJzDdPFLQohlAup91n5GZhGEIOlqfpzQdbRAGnQqMR9B8UrvuAHS8IRRH=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@mrdcars9303"
+    }
+  },
+  "nico-moreno": {
+    "slug": "nico-moreno",
+    "name": "Nico Moreno",
+    "updatedAt": "2026-06-28T19:19:55.337Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:00.794Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:19:55.337Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCPmj4-tukkX9_1aocKiL95g",
+      "channelTitle": "Nico Moreno - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCPmj4-tukkX9_1aocKiL95g",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/bPtM2SjpVgR8uVDjtwGCr_szkyccMfTZeSc7HzgMEGy_wBML27u3p5v87VUPzMK0cNlbrBRAQA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S"
+    },
+    "spotify": {
+      "artistId": "6fjhNhp9IoeiZpEXq9AT2S",
+      "name": "Nico Moreno",
+      "url": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "nikolina": {
+    "slug": "nikolina",
+    "name": "Nikolina",
+    "updatedAt": "2026-06-28T19:19:28.441Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:19:28.441Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:56.265Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "3d0OOhNi5k69JBZ5BVV8bc",
+      "name": "Nikolina",
+      "url": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+      "imageUrls": [
+        "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc"
+    },
+    "youtube": {
+      "channelId": "UC1t-hFvdIZn5PgsPZ-weKwg",
+      "channelTitle": "NIKOLINA",
+      "channelUrl": "https://www.youtube.com/@djnikolina",
+      "customUrl": "@djnikolina",
+      "thumbnailUrl": "https://yt3.ggpht.com/SfEUy7uoLK0QWlA4L4J6rWYcrYivLv7Jj4bicFMHvCuJRNP9Z8z89v_72kKcgAA9NSQESddb=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "nitzer-ebb": {
+    "slug": "nitzer-ebb",
+    "name": "Nitzer Ebb",
+    "updatedAt": "2026-06-28T01:38:18.325Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:42.018Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCU6QcFiMefrSApwQrdBnAPQ",
+      "channelTitle": "Nitzer Ebb - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCU6QcFiMefrSApwQrdBnAPQ",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/y9z_Py6dG_b3Nn9X9DEt7OubNs5qN6Ts-Qb-9EQAqImuVU1bbD2zzVr5v92ur5P9TXEiAxlKbQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/y9z_Py6dG_b3Nn9X9DEt7OubNs5qN6Ts-Qb-9EQAqImuVU1bbD2zzVr5v92ur5P9TXEiAxlKbQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCU6QcFiMefrSApwQrdBnAPQ"
+    }
+  },
+  "norbak": {
+    "slug": "norbak",
+    "name": "Nørbak",
+    "updatedAt": "2026-06-28T19:30:12.184Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:57.885Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.184Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/norbak.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0TwXWZcwzGVVOa1Vdu3UEj"
+    },
+    "spotify": {
+      "artistId": "0TwXWZcwzGVVOa1Vdu3UEj",
+      "name": "Nørbak",
+      "url": "https://open.spotify.com/artist/0TwXWZcwzGVVOa1Vdu3UEj",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/norbak.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/norbak.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "novah": {
+    "slug": "novah",
+    "name": "Novah",
+    "updatedAt": "2026-06-28T01:38:18.308Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:18.601Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCT0cO2e4DDFirc5x5LtFNnQ",
+      "channelTitle": "Novah",
+      "channelUrl": "https://www.youtube.com/@novah_music",
+      "customUrl": "@novah_music",
+      "thumbnailUrl": "https://yt3.ggpht.com/Z9r7bYM8AyVsBMuYcMLSeN5wdhjvkdKxLhuYsoI7zC9ltUIoFjc0VhYEh-ptk8wy_guqB0Pm=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/Z9r7bYM8AyVsBMuYcMLSeN5wdhjvkdKxLhuYsoI7zC9ltUIoFjc0VhYEh-ptk8wy_guqB0Pm=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@novah_music"
+    }
+  },
+  "obscure-shape": {
+    "slug": "obscure-shape",
+    "name": "Obscure Shape",
+    "updatedAt": "2026-06-28T01:38:18.330Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:48.063Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCxejXz0qs5RdWXj0CdYnwJQ",
+      "channelTitle": "Obscure Shape - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCxejXz0qs5RdWXj0CdYnwJQ",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/yx37Cmw8FmxVk427IWdmUZI35DnPELvE9VpcXYGtI-41rUquZnQiJOpTM1BkubQciitIO33yPg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/yx37Cmw8FmxVk427IWdmUZI35DnPELvE9VpcXYGtI-41rUquZnQiJOpTM1BkubQciitIO33yPg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCxejXz0qs5RdWXj0CdYnwJQ"
+    }
+  },
+  "ogian": {
+    "slug": "ogian",
+    "name": "Ogian",
+    "updatedAt": "2026-06-28T01:38:18.300Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:07.063Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCJK8G-KxyAE-iOQAGBfp5Dw",
+      "channelTitle": "OGian",
+      "channelUrl": "https://www.youtube.com/@ogian-l2w",
+      "customUrl": "@ogian-l2w",
+      "thumbnailUrl": "https://yt3.ggpht.com/mjryFJ6LWte109X785zTKHQTxSWPjhr_zuCN2FFQUofs8i0cfFQThuIpFw3sKQoIdENSZyo3=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/mjryFJ6LWte109X785zTKHQTxSWPjhr_zuCN2FFQUofs8i0cfFQThuIpFw3sKQoIdENSZyo3=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@ogian-l2w"
+    }
+  },
+  "ogive": {
+    "slug": "ogive",
+    "name": "Ogive",
+    "updatedAt": "2026-06-28T01:38:18.302Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:12.011Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCMnepbdtYdbYHDfIZFFyrQg",
+      "channelTitle": "OGIVE podcast",
+      "channelUrl": "https://www.youtube.com/@ogivepodcast",
+      "customUrl": "@ogivepodcast",
+      "thumbnailUrl": "https://yt3.ggpht.com/gajCbMwPJzuPZHHgLKzPWKvG3QSMwG6_D2Hcno-rFzmMKslld9AY0075jNm9bFCZM_LyKrMCzFA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/gajCbMwPJzuPZHHgLKzPWKvG3QSMwG6_D2Hcno-rFzmMKslld9AY0075jNm9bFCZM_LyKrMCzFA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@ogivepodcast"
+    }
+  },
+  "oguz": {
+    "slug": "oguz",
+    "name": "Oguz",
+    "updatedAt": "2026-06-28T01:38:18.316Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:29.019Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCH-v9YXOWT6DR6C7PcEqGtQ",
+      "channelTitle": "Oğuz Yenihayat",
+      "channelUrl": "https://www.youtube.com/@oguz.yenihayat",
+      "customUrl": "@oguz.yenihayat",
+      "thumbnailUrl": "https://yt3.ggpht.com/IIOEFUi8pxQYvuvrx70GW1zQxfAZXV3MXYiFVeyCnZnqWji9--SR8t_D2M2lVgNB-PwDAFFrvg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/IIOEFUi8pxQYvuvrx70GW1zQxfAZXV3MXYiFVeyCnZnqWji9--SR8t_D2M2lVgNB-PwDAFFrvg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@oguz.yenihayat"
+    }
+  },
+  "orphx": {
+    "slug": "orphx",
+    "name": "Orphx",
+    "updatedAt": "2026-06-28T01:38:05.340Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:49.840Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCfDmC5MNMuH4owykBcoDCSw",
+      "channelTitle": "Orphx - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCfDmC5MNMuH4owykBcoDCSw",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/0W0APBqfHdCKUL1oIe1HsaEKqTSg21EM6Gdq-GVTVkysM15UCA3lnHiUY2DdO_1ZSga0lnkBOg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/0W0APBqfHdCKUL1oIe1HsaEKqTSg21EM6Gdq-GVTVkysM15UCA3lnHiUY2DdO_1ZSga0lnkBOg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCfDmC5MNMuH4owykBcoDCSw"
+    }
+  },
+  "paranoid-london": {
+    "slug": "paranoid-london",
+    "name": "Paranoid London",
+    "updatedAt": "2026-06-28T19:30:12.183Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:54.084Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.183Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/paranoid-london.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0KyUH5WmspOhuIQAnw42Fb"
+    },
+    "spotify": {
+      "artistId": "0KyUH5WmspOhuIQAnw42Fb",
+      "name": "Paranoid London",
+      "url": "https://open.spotify.com/artist/0KyUH5WmspOhuIQAnw42Fb",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/paranoid-london.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/paranoid-london.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "parfait": {
+    "slug": "parfait",
+    "name": "Parfait",
+    "updatedAt": "2026-06-28T01:38:10.293Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:53.739Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCx2MzF0Qcae0OeySXCwWStw",
+      "channelTitle": "Parfait by Prachi",
+      "channelUrl": "https://www.youtube.com/@parfaitbyprachi",
+      "customUrl": "@parfaitbyprachi",
+      "thumbnailUrl": "https://yt3.ggpht.com/IfKFvKLVhv7qUkC1OC0AkenYD3JjV8EYsPMAiyvE2qM5RwELdl8owNjCw2R0phkju-Lozjr0=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/IfKFvKLVhv7qUkC1OC0AkenYD3JjV8EYsPMAiyvE2qM5RwELdl8owNjCw2R0phkju-Lozjr0=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@parfaitbyprachi"
+    }
+  },
+  "part-time-killer": {
+    "slug": "part-time-killer",
+    "name": "Part Time Killer",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:50.352Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/part-time-killer.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/1PDjdSn9YCXz1reA1PUcC0"
+    },
+    "spotify": {
+      "artistId": "1PDjdSn9YCXz1reA1PUcC0",
+      "name": "Part Time Killer",
+      "url": "https://open.spotify.com/artist/1PDjdSn9YCXz1reA1PUcC0",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/part-time-killer.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/part-time-killer.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "paula-temple": {
+    "slug": "paula-temple",
+    "name": "Paula Temple",
+    "updatedAt": "2026-06-28T19:30:12.180Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:43.558Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.180Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCemkhCjypDOeoE_Fka8jSVg",
+      "channelTitle": "Paula Temple - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCemkhCjypDOeoE_Fka8jSVg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/qT2WNk8GCQGTFu8jwYRwEFR4cDn10Mct7DXbjCsEcda8lPM0HSxCpJLDCZsGD80zbol0jHWJcQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/paula-temple.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/4iy2RFU8gIpXF5yaK0l8ZT"
+    },
+    "spotify": {
+      "artistId": "4iy2RFU8gIpXF5yaK0l8ZT",
+      "name": "Paula Temple",
+      "url": "https://open.spotify.com/artist/4iy2RFU8gIpXF5yaK0l8ZT",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/paula-temple.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/paula-temple.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "per-sona": {
+    "slug": "per-sona",
+    "name": "Per-sona",
+    "updatedAt": "2026-06-28T19:30:24.308Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:46.763Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/per-sona.jpg",
+      "source": "official-website",
+      "sourceUrl": "https://persona0101.bandcamp.com"
+    }
+  },
+  "perc": {
+    "slug": "perc",
+    "name": "Perc",
+    "updatedAt": "2026-06-28T19:30:12.181Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:44.195Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.181Z",
+        "status": "ok"
+      },
+      "residentAdvisor": {
+        "syncedAt": "2026-06-28T19:30:12.181Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCJnDllveSuLCbF85f95ZvVw",
+      "channelTitle": "perc",
+      "channelUrl": "https://www.youtube.com/@weak",
+      "customUrl": "@weak",
+      "thumbnailUrl": "https://yt3.ggpht.com/uOeSB5WL-F9UYO2OyU-JC0mGqr-BZGznpNcySeOJxh2w6Pbx2qqRti2DFWLTRamZSBNoKVZS7Q=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/perc.jpg",
+      "source": "resident-advisor",
+      "sourceUrl": "https://ra.co/dj/perc"
+    },
+    "spotify": {
+      "artistId": "4iyqyvWXO734GUNLTTnrPQ",
+      "name": "Perc",
+      "url": "https://open.spotify.com/artist/4iyqyvWXO734GUNLTTnrPQ",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/perc.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/perc.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "petduo": {
+    "slug": "petduo",
+    "name": "Petduo",
+    "updatedAt": "2026-06-28T19:30:17.128Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:38.557Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:17.128Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/petduo.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/5SEUYqumyvmrkgWpOco1lo"
+    },
+    "spotify": {
+      "artistId": "5SEUYqumyvmrkgWpOco1lo",
+      "name": "Petduo",
+      "url": "https://open.spotify.com/artist/5SEUYqumyvmrkgWpOco1lo",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/petduo.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/petduo.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "petra-flurr": {
+    "slug": "petra-flurr",
+    "name": "Petra Flurr",
+    "updatedAt": "2026-06-28T19:30:22.372Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:56.835Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:22.372Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/petra-flurr.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/51exL0KZS30QQSJd9osmig"
+    },
+    "spotify": {
+      "artistId": "51exL0KZS30QQSJd9osmig",
+      "name": "Petra Flurr",
+      "url": "https://open.spotify.com/artist/51exL0KZS30QQSJd9osmig",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/petra-flurr.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/petra-flurr.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "ph87": {
+    "slug": "ph87",
+    "name": "PH87",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:50.000Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/ph87.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/6w8j7obDDze1ovIL3lXGZf"
+    },
+    "spotify": {
+      "artistId": "6w8j7obDDze1ovIL3lXGZf",
+      "name": "PH87",
+      "url": "https://open.spotify.com/artist/6w8j7obDDze1ovIL3lXGZf",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/ph87.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/ph87.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "phase-fatale": {
+    "slug": "phase-fatale",
+    "name": "Phase Fatale",
+    "updatedAt": "2026-06-28T01:38:01.011Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:46.706Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCRw-q7lOA359WBk8j2w0Bmg",
+      "channelTitle": "Phase Fatale - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCRw-q7lOA359WBk8j2w0Bmg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCRw-q7lOA359WBk8j2w0Bmg"
+    }
+  },
+  "phuture-corp": {
+    "slug": "phuture-corp",
+    "name": "Phuture Corp",
+    "updatedAt": "2026-06-28T01:38:18.330Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:47.453Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC4p0VFIHy888vo6LwoV4kpA",
+      "channelTitle": "Phuture Republic",
+      "channelUrl": "https://www.youtube.com/@phuturerepublic2535",
+      "customUrl": "@phuturerepublic2535",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_mFfzCvysm1DIe5hMjwINAJoCZ-3f9sSuWVVT3kYxC6tg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mFfzCvysm1DIe5hMjwINAJoCZ-3f9sSuWVVT3kYxC6tg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@phuturerepublic2535"
+    }
+  },
+  "pinion": {
+    "slug": "pinion",
+    "name": "Pinion",
+    "updatedAt": "2026-06-28T01:38:18.306Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:16.172Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC22LoXZisr7_c43USvolBfw",
+      "channelTitle": "Pinion",
+      "channelUrl": "https://www.youtube.com/@pinionchannel",
+      "customUrl": "@pinionchannel",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_k1choAd_x6EYLxHav3C5AAKn4WZktwEZcwn5UM6KdJJbo=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_k1choAd_x6EYLxHav3C5AAKn4WZktwEZcwn5UM6KdJJbo=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@pinionchannel"
+    }
+  },
+  "psyk32": {
+    "slug": "psyk32",
+    "name": "Psyk32",
+    "updatedAt": "2026-06-28T01:38:18.303Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:14.521Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": null,
+      "channelTitle": null,
+      "channelUrl": null,
+      "customUrl": null,
+      "thumbnailUrl": null
+    }
+  },
+  "pulsar": {
+    "slug": "pulsar",
+    "name": "Pulsar",
+    "updatedAt": "2026-06-28T01:38:18.318Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:31.576Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCyjsBkQ3rWlARQb9_UWqM5Q",
+      "channelTitle": "Bajaj Pulsar",
+      "channelUrl": "https://www.youtube.com/@bajajpulsarofficial",
+      "customUrl": "@bajajpulsarofficial",
+      "thumbnailUrl": "https://yt3.ggpht.com/UBeXwvnw4Vqhr967QA3kquPQhkVW0XLKd23kUKW934tYmyOeoNbr5VfG_wrrEG5aUX_Jh99J=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/UBeXwvnw4Vqhr967QA3kquPQhkVW0XLKd23kUKW934tYmyOeoNbr5VfG_wrrEG5aUX_Jh99J=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@bajajpulsarofficial"
+    }
+  },
+  "randall": {
+    "slug": "randall",
+    "name": "Randall",
+    "updatedAt": "2026-06-28T01:38:18.316Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:28.438Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCYCmal9NJFAJqPzJXkPkcpQ",
+      "channelTitle": "Randall's Relaxation",
+      "channelUrl": "https://www.youtube.com/@randallsrestrelaxation",
+      "customUrl": "@randallsrestrelaxation",
+      "thumbnailUrl": "https://yt3.ggpht.com/74hLlNGBl2jjfsFAeCFc7szGCX09lqz8qVq_PugCeGeYDB44iDyPp2XfL2AoAqn-J7mP1zMm3Q=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/74hLlNGBl2jjfsFAeCFc7szGCX09lqz8qVq_PugCeGeYDB44iDyPp2XfL2AoAqn-J7mP1zMm3Q=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@randallsrestrelaxation"
+    }
+  },
+  "randomer": {
+    "slug": "randomer",
+    "name": "Randomer",
+    "updatedAt": "2026-06-28T19:30:12.183Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:55.078Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.183Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/randomer.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/7K0WJzyqUNRhraNcsvJp1h"
+    },
+    "spotify": {
+      "artistId": "7K0WJzyqUNRhraNcsvJp1h",
+      "name": "Randomer",
+      "url": "https://open.spotify.com/artist/7K0WJzyqUNRhraNcsvJp1h",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/randomer.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/randomer.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "raw-distort": {
+    "slug": "raw-distort",
+    "name": "Raw Distort",
+    "updatedAt": "2026-06-28T01:38:18.319Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:35.251Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCxYwJltuOLwM_12BlWOu7Fg",
+      "channelTitle": "RAW SOUND DISTORTION",
+      "channelUrl": "https://www.youtube.com/@raw.sound.distortion-musicai",
+      "customUrl": "@raw.sound.distortion-musicai",
+      "thumbnailUrl": "https://yt3.ggpht.com/jq-c0uHUb_QcMIwKkZV-6qORQ1kJmOWQYbWZdgIEXUwpLLJdFXdC4mh2sXJx0SaF0o1rHvm2KQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/jq-c0uHUb_QcMIwKkZV-6qORQ1kJmOWQYbWZdgIEXUwpLLJdFXdC4mh2sXJx0SaF0o1rHvm2KQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@raw.sound.distortion-musicai"
+    }
+  },
+  "raxyor": {
+    "slug": "raxyor",
+    "name": "Raxyor",
+    "updatedAt": "2026-06-28T01:38:18.313Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:25.419Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCAhZf89GaDykb-_vtLQuThw",
+      "channelTitle": "rAXYOr - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCAhZf89GaDykb-_vtLQuThw",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/Y408fvCvvvrCiB-2pVaKZksiX8jP6VANJ_s_8gRiLFn-6-0g46CrZgili2m9jpA-digd6z6l=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/Y408fvCvvvrCiB-2pVaKZksiX8jP6VANJ_s_8gRiLFn-6-0g46CrZgili2m9jpA-digd6z6l=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCAhZf89GaDykb-_vtLQuThw"
+    }
+  },
+  "rebekah": {
+    "slug": "rebekah",
+    "name": "Rebekah",
+    "updatedAt": "2026-06-28T01:38:03.006Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:47.935Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCKEhvaeUUxxdmRAn02F1HgA",
+      "channelTitle": "Rebecca Ghaderi",
+      "channelUrl": "https://www.youtube.com/@rebeccaghaderi",
+      "customUrl": "@rebeccaghaderi",
+      "thumbnailUrl": "https://yt3.ggpht.com/2jr7AUI_bKQva-dzlNEfRwo5uf3xu6swR40E9o7XPg-OamFm879_HPVuwCmV8y_olxLlKXSxYQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/2jr7AUI_bKQva-dzlNEfRwo5uf3xu6swR40E9o7XPg-OamFm879_HPVuwCmV8y_olxLlKXSxYQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@rebeccaghaderi"
+    }
+  },
+  "regal": {
+    "slug": "regal",
+    "name": "Regal",
+    "updatedAt": "2026-06-28T19:17:38.695Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:38.695Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:35.683Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "10RlWd6mCUDiRpQ30bGL2E",
+      "name": "Regal",
+      "url": "https://open.spotify.com/artist/10RlWd6mCUDiRpQ30bGL2E",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
+      "imageUrls": [
+        "https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/10RlWd6mCUDiRpQ30bGL2E"
+    },
+    "youtube": {
+      "channelId": "UC69I8egELqWywoX5wrh2KxQ",
+      "channelTitle": "Regal Entertainment, Inc.",
+      "channelUrl": "https://www.youtube.com/@regalentertainmentinc",
+      "customUrl": "@regalentertainmentinc",
+      "thumbnailUrl": "https://yt3.ggpht.com/9cVKxhHGO3hgXyjQGJqeqWusLzp2cogKFYKvpChnrggnHJfp5_1p3zxJd5TyZhRUlUjI37rELos=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "rikhter": {
+    "slug": "rikhter",
+    "name": "Rikhter",
+    "updatedAt": "2026-06-28T01:38:18.298Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:03.974Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCjQrI4CQ1VUlLgqGCYAavYw",
+      "channelTitle": "Rikhter - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCjQrI4CQ1VUlLgqGCYAavYw",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/GWgg1IuY7LwmOWeGBGESMBX8JWv5UBfCk_HCQ5uROwFrszoAXG8IJsk2O2CAVD67FmdPWJdv=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/GWgg1IuY7LwmOWeGBGESMBX8JWv5UBfCk_HCQ5uROwFrszoAXG8IJsk2O2CAVD67FmdPWJdv=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCjQrI4CQ1VUlLgqGCYAavYw"
+    }
+  },
+  "robert-natus": {
+    "slug": "robert-natus",
+    "name": "Robert Natus",
+    "updatedAt": "2026-06-28T19:18:16.285Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:18:16.285Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:41.642Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "3zCZyqet8mJHJ9RJgUO8Mt",
+      "name": "Robert Natus",
+      "url": "https://open.spotify.com/artist/3zCZyqet8mJHJ9RJgUO8Mt",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/3zCZyqet8mJHJ9RJgUO8Mt"
+    },
+    "youtube": {
+      "channelId": "UCsJCjVfGL1xvVhCjNFjYamg",
+      "channelTitle": "Robert Natus - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCsJCjVfGL1xvVhCjNFjYamg",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/9vOILl6fuOwpjVHv0gwjAKoFExA88RM_OcM8lWDOPsjGilVMU9JBQAl6OpbLfC1TXAImhq6VcA=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "rosati": {
+    "slug": "rosati",
+    "name": "Rosati",
+    "updatedAt": "2026-06-28T01:38:18.308Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:18.002Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCsE77OSgNoyszM7a2UxUbcA",
+      "channelTitle": "Rosati",
+      "channelUrl": "https://www.youtube.com/@rosati_99",
+      "customUrl": "@rosati_99",
+      "thumbnailUrl": "https://yt3.ggpht.com/sB6kEgyd5e5cRckmWxqQIPACr8dlABwXfUN2c6FjnbdwRYHNl29ZM1yaOR2OEyyrVjcdnRK53g=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/sB6kEgyd5e5cRckmWxqQIPACr8dlABwXfUN2c6FjnbdwRYHNl29ZM1yaOR2OEyyrVjcdnRK53g=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@rosati_99"
+    }
+  },
+  "rrose": {
+    "slug": "rrose",
+    "name": "Rrose",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:48.679Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/rrose.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/5naKaYAyzzuPDsh4H2dwyT"
+    },
+    "spotify": {
+      "artistId": "5naKaYAyzzuPDsh4H2dwyT",
+      "name": "Rrose",
+      "url": "https://open.spotify.com/artist/5naKaYAyzzuPDsh4H2dwyT",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/rrose.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/rrose.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "rumina": {
+    "slug": "rumina",
+    "name": "Rumina",
+    "updatedAt": "2026-06-28T19:30:22.991Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:46.411Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:22.991Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/rumina.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/7IDiYtKojSbRAaf2b2Mpew"
+    },
+    "spotify": {
+      "artistId": "7IDiYtKojSbRAaf2b2Mpew",
+      "name": "Rumina",
+      "url": "https://open.spotify.com/artist/7IDiYtKojSbRAaf2b2Mpew",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/rumina.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/rumina.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "sara-landry": {
+    "slug": "sara-landry",
+    "name": "Sara Landry",
+    "updatedAt": "2026-06-28T19:17:20.910Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:20.910Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:32.937Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "7eILArMiTFTQf8SEh5fFHK",
+      "name": "Sara Landry",
+      "url": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK"
+    },
+    "youtube": {
+      "channelId": "UC3l1zkKI2-_aAqlUNTDO9Lw",
+      "channelTitle": "Sara Landry",
+      "channelUrl": "https://www.youtube.com/@saralandry922",
+      "customUrl": "@saralandry922",
+      "thumbnailUrl": "https://yt3.ggpht.com/RQ3aW4mdTqKl82_BWVjp51wk9VraGdBEsyW3oHSq4rm_SntBfag2tP5hIiE6RJ7VaP-V13bzRw=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "she-past-away": {
+    "slug": "she-past-away",
+    "name": "She Past Away",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:43.975Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/she-past-away.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR"
+    },
+    "spotify": {
+      "artistId": "6paE8ghTau4qwwNzVRSgjR",
+      "name": "She Past Away",
+      "url": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/she-past-away.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/she-past-away.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "shlomo": {
+    "slug": "shlomo",
+    "name": "Shlømo",
+    "updatedAt": "2026-06-28T01:38:16.870Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:58.917Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC3u_SM-ij5laIIG0GshbyPQ",
+      "channelTitle": "Shlømo ",
+      "channelUrl": "https://www.youtube.com/@shlomo-dj",
+      "customUrl": "@shlomo-dj",
+      "thumbnailUrl": "https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@shlomo-dj"
+    }
+  },
+  "somewhen": {
+    "slug": "somewhen",
+    "name": "Somewhen",
+    "updatedAt": "2026-06-28T01:38:18.298Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:04.581Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCpqwbQKe0xXj2y8arGm8gSA",
+      "channelTitle": "SOMEWHEN",
+      "channelUrl": "https://www.youtube.com/@somewhensrx",
+      "customUrl": "@somewhensrx",
+      "thumbnailUrl": "https://yt3.ggpht.com/SZ3h0f2P7wpXUULVQDE8xw6i8AiaIOJJJxTTyequgq8zUMrqwbN8OoG5Q5WOWFJUh-IJcqBe=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/SZ3h0f2P7wpXUULVQDE8xw6i8AiaIOJJJxTTyequgq8zUMrqwbN8OoG5Q5WOWFJUh-IJcqBe=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@somewhensrx"
+    }
+  },
+  "spd": {
+    "slug": "spd",
+    "name": "SPD",
+    "updatedAt": "2026-06-28T01:38:18.324Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:38.908Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCiHQ5AywCFKF6q-C5dIguVQ",
+      "channelTitle": "SpriteDer SPD",
+      "channelUrl": "https://www.youtube.com/@spdnoo1",
+      "customUrl": "@spdnoo1",
+      "thumbnailUrl": "https://yt3.ggpht.com/2S06OSPB_2deNmkFYYgTq_3LDSeq3e0ikow-aZBZbPwjyqIWsYq4vvRSeL9S3Vc1uml44SUAhg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/2S06OSPB_2deNmkFYYgTq_3LDSeq3e0ikow-aZBZbPwjyqIWsYq4vvRSeL9S3Vc1uml44SUAhg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@spdnoo1"
+    }
+  },
+  "spektre": {
+    "slug": "spektre",
+    "name": "Spektre",
+    "updatedAt": "2026-06-28T01:38:18.299Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:05.812Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC2a76eKyW4iKxXBgAgUy9rg",
+      "channelTitle": "SPEKTRE",
+      "channelUrl": "https://www.youtube.com/@spektregrup",
+      "customUrl": "@spektregrup",
+      "thumbnailUrl": "https://yt3.ggpht.com/acAlZfvcM0pOjl5nk7NSyLSq887JnFEvHOb-F0EUViU_9DfJRSE7dp83mnU9SsMy5vZOlvO_uA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/acAlZfvcM0pOjl5nk7NSyLSq887JnFEvHOb-F0EUViU_9DfJRSE7dp83mnU9SsMy5vZOlvO_uA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@spektregrup"
+    }
+  },
+  "stranger": {
+    "slug": "stranger",
+    "name": "Stranger",
+    "updatedAt": "2026-06-28T01:38:18.298Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:05.192Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UC1ZnQUqU96YeVPTmfvbkM8A",
+      "channelTitle": "Stranger ",
+      "channelUrl": "https://www.youtube.com/@stranger_freefire",
+      "customUrl": "@stranger_freefire",
+      "thumbnailUrl": "https://yt3.ggpht.com/0Is03qu0_E1SL141CyglFFBQ6GCsBGA_3YPtyG4k1Q9Bf-B_TL39qO4Hv2pkO1JACuRu63ygMw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/0Is03qu0_E1SL141CyglFFBQ6GCsBGA_3YPtyG4k1Q9Bf-B_TL39qO4Hv2pkO1JACuRu63ygMw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@stranger_freefire"
+    }
+  },
+  "surgeon": {
+    "slug": "surgeon",
+    "name": "Surgeon",
+    "updatedAt": "2026-06-28T19:30:12.181Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:45.445Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.181Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCrF4-hkEJsSZMu0QS_UjxeQ",
+      "channelTitle": "Surgeon - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCrF4-hkEJsSZMu0QS_UjxeQ",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/Z1hJd3n1WqJZkynEU4oBhu9cwtzp9y34wfAR8svQA7JbzJB6YmLsJq_AO-avGzrm9IW7FtvtDQ=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/surgeon.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/1PSylklb2w06BAAHEtepqM"
+    },
+    "spotify": {
+      "artistId": "1PSylklb2w06BAAHEtepqM",
+      "name": "Surgeon",
+      "url": "https://open.spotify.com/artist/1PSylklb2w06BAAHEtepqM",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/surgeon.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/surgeon.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "sven-wittekind": {
+    "slug": "sven-wittekind",
+    "name": "Sven Wittekind",
+    "updatedAt": "2026-06-28T19:30:12.181Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:41.023Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.181Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCC_87W7J134_IC3iT02gnkw",
+      "channelTitle": "Sven Wittekind",
+      "channelUrl": "https://www.youtube.com/@wittekindsven",
+      "customUrl": "@wittekindsven",
+      "thumbnailUrl": "https://yt3.ggpht.com/cHKXSG0_lIkG9q_T8nYLXjmxjDRyg7NGqTGujtGr_ZqiJpLV-HWzMkf6Al8oK7dNZm4WF2G4tq8=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/sven-wittekind.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/1Xoao0EbCROD5MzC3iyyAD"
+    },
+    "spotify": {
+      "artistId": "1Xoao0EbCROD5MzC3iyyAD",
+      "name": "Sven Wittekind",
+      "url": "https://open.spotify.com/artist/1Xoao0EbCROD5MzC3iyyAD",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/sven-wittekind.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/sven-wittekind.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "tafkamp": {
+    "slug": "tafkamp",
+    "name": "TAFKAMP",
+    "updatedAt": "2026-06-28T01:38:18.304Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:14.965Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCxU1uqilwUT4ZdmuYb-KTMQ",
+      "channelTitle": "Tafkamp - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCxU1uqilwUT4ZdmuYb-KTMQ",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/x7ACMF5FYjWoFcC9YWZranrQ6eahb66zTySJU386qEcbWgl0XL3-d0ht8eWcc7Kv46hjdGZK=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/x7ACMF5FYjWoFcC9YWZranrQ6eahb66zTySJU386qEcbWgl0XL3-d0ht8eWcc7Kv46hjdGZK=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCxU1uqilwUT4ZdmuYb-KTMQ"
+    }
+  },
+  "temo": {
+    "slug": "temo",
+    "name": "Temo",
+    "updatedAt": "2026-06-28T01:38:18.313Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:24.776Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCASyFAS0rys2xg5ofINOFOA",
+      "channelTitle": "Futbolcontemo",
+      "channelUrl": "https://www.youtube.com/@futbolcontemo",
+      "customUrl": "@futbolcontemo",
+      "thumbnailUrl": "https://yt3.ggpht.com/q-g-0lXScMpewA5pEL6AV56xEKUpHJrMlTrgTnDmDhq_wH6y_EiKYgBLHRzBJMJwxfdLzfRLfA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/q-g-0lXScMpewA5pEL6AV56xEKUpHJrMlTrgTnDmDhq_wH6y_EiKYgBLHRzBJMJwxfdLzfRLfA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@futbolcontemo"
+    }
+  },
+  "the-soft-moon": {
+    "slug": "the-soft-moon",
+    "name": "The Soft Moon",
+    "updatedAt": "2026-06-28T19:30:12.182Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:47.114Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.182Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/the-soft-moon.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/40HeNm05FEAxGx8gUOV4my"
+    },
+    "spotify": {
+      "artistId": "40HeNm05FEAxGx8gUOV4my",
+      "name": "The Soft Moon",
+      "url": "https://open.spotify.com/artist/40HeNm05FEAxGx8gUOV4my",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/the-soft-moon.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/the-soft-moon.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "trym": {
+    "slug": "trym",
+    "name": "Trym",
+    "updatedAt": "2026-06-28T19:19:05.165Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:52.458Z",
+        "status": "ok"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:19:05.165Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCnYB3OPrgYCRY3VlbfS6X4g",
+      "channelTitle": "Trym",
+      "channelUrl": "https://www.youtube.com/@trymofficial",
+      "customUrl": "@trymofficial",
+      "thumbnailUrl": "https://yt3.ggpht.com/vIe6uPxO-xxUhUcVvp_xs1S-IrnSEXdMdlo85kDwv0N_b-JnudWm30Fic2m5mUERc1xko3ys7w=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/5Nd385K2g3s0828W8Ab70z"
+    },
+    "spotify": {
+      "artistId": "5Nd385K2g3s0828W8Ab70z",
+      "name": "Trym",
+      "url": "https://open.spotify.com/artist/5Nd385K2g3s0828W8Ab70z",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
+      "imageUrls": [
+        "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "vendex": {
+    "slug": "vendex",
+    "name": "Vendex",
+    "updatedAt": "2026-06-28T19:19:24.786Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:19:24.786Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:55.630Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "2kqP3BXfLgo74OpfoC9cf7",
+      "name": "Vendex",
+      "url": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7"
+    },
+    "youtube": {
+      "channelId": "UCn7Y6gF7J-VIzqD53gOZVFQ",
+      "channelTitle": "VENDEX ",
+      "channelUrl": "https://www.youtube.com/@vend3xx",
+      "customUrl": "@vend3xx",
+      "thumbnailUrl": "https://yt3.ggpht.com/CuwLecmUlSkUAkVLCacZHRsAMp6weq8wB9skiwM7j9x1AB67OeOUCwqrKRmlq5KEI5DiMAfz4A=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "victor-ruiz": {
+    "slug": "victor-ruiz",
+    "name": "Victor Ruiz",
+    "updatedAt": "2026-06-28T19:30:12.183Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:51.693Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:12.183Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/victor-ruiz.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z"
+    },
+    "spotify": {
+      "artistId": "0xgdNNa5mIbnJKp8AG8S4z",
+      "name": "Victor Ruiz",
+      "url": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/victor-ruiz.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/victor-ruiz.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "vil": {
+    "slug": "vil",
+    "name": "VIL",
+    "updatedAt": "2026-06-28T01:38:18.314Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:26.000Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCz8-Sdiw4g9aqCbJJK-yNpA",
+      "channelTitle": "ViL",
+      "channelUrl": "https://www.youtube.com/@defnotvil",
+      "customUrl": "@defnotvil",
+      "thumbnailUrl": "https://yt3.ggpht.com/_7QZgEUwKAbVI_7GyuK7D8Q4yMY-a5WNe3Bwz9fPgDMTstBbiXdIjXzGCuB2p8sbn-1m5xGvXXA=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/_7QZgEUwKAbVI_7GyuK7D8Q4yMY-a5WNe3Bwz9fPgDMTstBbiXdIjXzGCuB2p8sbn-1m5xGvXXA=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@defnotvil"
+    }
+  },
+  "vilchezz": {
+    "slug": "vilchezz",
+    "name": "VILCHEZZ",
+    "updatedAt": "2026-06-28T01:38:18.314Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:26.595Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCfJkd-N35B11hFvslniLJOA",
+      "channelTitle": "Vilchezz - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCfJkd-N35B11hFvslniLJOA",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/BiVAS_5vIM6sHdTpauvLV6zDWImkSjpGQ-OqVyOWTNbtaZmmhlDk0Y7GpKsIv9ZZlij4kFnT=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/BiVAS_5vIM6sHdTpauvLV6zDWImkSjpGQ-OqVyOWTNbtaZmmhlDk0Y7GpKsIv9ZZlij4kFnT=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCfJkd-N35B11hFvslniLJOA"
+    }
+  },
+  "vklf": {
+    "slug": "vklf",
+    "name": "VKLF",
+    "updatedAt": "2026-06-28T01:38:18.317Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:30.320Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCR7DrV2e4iy_5YRzTf7l8Tg",
+      "channelTitle": "vklf",
+      "channelUrl": "https://www.youtube.com/@vklf",
+      "customUrl": "@vklf",
+      "thumbnailUrl": "https://yt3.ggpht.com/y821PYYlSo_UTye85qxC4NGarrq_lrhSqGvNCiRW_JXkMrWDx0AvBrVOdL0dpj6WsY7V8DhVGoE=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/y821PYYlSo_UTye85qxC4NGarrq_lrhSqGvNCiRW_JXkMrWDx0AvBrVOdL0dpj6WsY7V8DhVGoE=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@vklf"
+    }
+  },
+  "vntm": {
+    "slug": "vntm",
+    "name": "VNTM",
+    "updatedAt": "2026-06-28T01:38:18.297Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:02.705Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCCZ0W8XRbGhx1suQ6CScR_g",
+      "channelTitle": "VNTM Official",
+      "channelUrl": "https://www.youtube.com/@vntm",
+      "customUrl": "@vntm",
+      "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_nMplGHlnSbTPNaM_OI_JYiM8mS8F68m1zbBg9qHKtDZuw=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_nMplGHlnSbTPNaM_OI_JYiM8mS8F68m1zbBg9qHKtDZuw=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@vntm"
+    }
+  },
+  "vrtx": {
+    "slug": "vrtx",
+    "name": "VRTX",
+    "updatedAt": "2026-06-28T01:38:18.318Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:32.800Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCXSdoOX5nMZvo92iUPWT7yg",
+      "channelTitle": "VRTX BAND チューブトレーニングスタジオ",
+      "channelUrl": "https://www.youtube.com/@vrtxjapan",
+      "customUrl": "@vrtxjapan",
+      "thumbnailUrl": "https://yt3.ggpht.com/FkXPpnk0xJvdjdtnKxkZsW5FMlixD5nPJh30A2bgg1mKlqlKbnnhU-kzUF5L3FdwrobdL1GNfgU=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/FkXPpnk0xJvdjdtnKxkZsW5FMlixD5nPJh30A2bgg1mKlqlKbnnhU-kzUF5L3FdwrobdL1GNfgU=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@vrtxjapan"
+    }
+  },
+  "vtss": {
+    "slug": "vtss",
+    "name": "VTSS",
+    "updatedAt": "2026-06-28T19:17:34.332Z",
+    "sources": {
+      "spotify": {
+        "syncedAt": "2026-06-28T19:17:34.332Z",
+        "status": "ok"
+      },
+      "youtube": {
+        "syncedAt": "2026-06-28T01:34:35.045Z",
+        "status": "ok"
+      }
+    },
+    "spotify": {
+      "artistId": "0zo109NM3S7CqHpvlXwqEN",
+      "name": "VTSS",
+      "url": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+      "imageUrls": [
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539"
+      ],
+      "relatedArtists": []
+    },
+    "resolvedImage": {
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN"
+    },
+    "youtube": {
+      "channelId": "UC1hS4zcYjl9n7ODh29bVsAA",
+      "channelTitle": "VTSS",
+      "channelUrl": "https://www.youtube.com/@vtsspl",
+      "customUrl": "@vtsspl",
+      "thumbnailUrl": "https://yt3.ggpht.com/PFvVzd_BBz9g6cGGa8JPerPmpYZi2Mk5WkjCql8ATcUUbkjQ-AFD2Ex9yuNJ9u9qUOKsa_XoNw=s800-c-k-c0x00ffffff-no-rj"
+    }
+  },
+  "warface": {
+    "slug": "warface",
+    "name": "Warface",
+    "updatedAt": "2026-06-28T01:38:18.312Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:23.506Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCLfISex2d92tzfLKAOFPxeA",
+      "channelTitle": "Warface",
+      "channelUrl": "https://www.youtube.com/@warface_ru",
+      "customUrl": "@warface_ru",
+      "thumbnailUrl": "https://yt3.ggpht.com/1263t0EqUoa7tUIxYiWyF1AP8jJw7gKpRdmpg5pe5C-iOvESAvdXPP1fivuPG8-Ydu-YjavO=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/1263t0EqUoa7tUIxYiWyF1AP8jJw7gKpRdmpg5pe5C-iOvESAvdXPP1fivuPG8-Ydu-YjavO=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@warface_ru"
+    }
+  },
+  "weichentechnikk": {
+    "slug": "weichentechnikk",
+    "name": "Weichentechnikk",
+    "updatedAt": "2026-06-28T19:30:20.566Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:56.487Z",
+        "status": "error",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+      },
+      "spotify": {
+        "syncedAt": "2026-06-28T19:30:20.566Z",
+        "status": "ok"
+      }
+    },
+    "resolvedImage": {
+      "url": "/images/portraits/researched/weichentechnikk.jpg",
+      "source": "spotify",
+      "sourceUrl": "https://open.spotify.com/artist/3sIkF6FOnvaaA9nLCnITrh"
+    },
+    "spotify": {
+      "artistId": "3sIkF6FOnvaaA9nLCnITrh",
+      "name": "Weichentechnikk",
+      "url": "https://open.spotify.com/artist/3sIkF6FOnvaaA9nLCnITrh",
+      "genres": [],
+      "followers": 0,
+      "popularity": 0,
+      "imageUrl": "/images/portraits/researched/weichentechnikk.jpg",
+      "imageUrls": [
+        "/images/portraits/researched/weichentechnikk.jpg"
+      ],
+      "relatedArtists": []
+    }
+  },
+  "yanamaste": {
+    "slug": "yanamaste",
+    "name": "Yanamaste",
+    "updatedAt": "2026-06-28T01:38:18.312Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:22.900Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCsmh1W5e52Hzk3GI251KTUA",
+      "channelTitle": "Yanamaste",
+      "channelUrl": "https://www.youtube.com/@yanamaste",
+      "customUrl": "@yanamaste",
+      "thumbnailUrl": "https://yt3.ggpht.com/SUwdmTew5xT0h185pd5F7S1OgketPUbYDLPGPyb3yGpjBAL5XwuIl__UdpXpZtaHvdjQJIza=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/SUwdmTew5xT0h185pd5F7S1OgketPUbYDLPGPyb3yGpjBAL5XwuIl__UdpXpZtaHvdjQJIza=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@yanamaste"
+    }
+  },
+  "yant": {
+    "slug": "yant",
+    "name": "Yant",
+    "updatedAt": "2026-06-28T01:38:18.300Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:08.945Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCLOEiQOT0UcKHGEZEOtHl5Q",
+      "channelTitle": "Sak Yant Chiang Mai",
+      "channelUrl": "https://www.youtube.com/@sakyantchiangmai",
+      "customUrl": "@sakyantchiangmai",
+      "thumbnailUrl": "https://yt3.ggpht.com/nqOf9vDuGUxiR9MtJx151Vw-a-wtYNSsZCY6UqScXGZIfZV0O4K3pGk2AXwmw_RQe2tpzvlihg=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/nqOf9vDuGUxiR9MtJx151Vw-a-wtYNSsZCY6UqScXGZIfZV0O4K3pGk2AXwmw_RQe2tpzvlihg=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/@sakyantchiangmai"
+    }
+  },
+  "yazzus": {
+    "slug": "yazzus",
+    "name": "Yazzus",
+    "updatedAt": "2026-06-28T01:38:18.311Z",
+    "sources": {
+      "youtube": {
+        "syncedAt": "2026-06-28T01:35:22.297Z",
+        "status": "ok"
+      }
+    },
+    "youtube": {
+      "channelId": "UCrnKJan8mfvDpaISVIRVY1Q",
+      "channelTitle": "Yazzus - Topic",
+      "channelUrl": "https://www.youtube.com/channel/UCrnKJan8mfvDpaISVIRVY1Q",
+      "customUrl": null,
+      "thumbnailUrl": "https://yt3.ggpht.com/IuujE6JyTVznke4d2vHBTUwcE_gr6EJP-khzpoH3rburL5yVSYYw4tTcsBIRJLARGGYZnnNy6A=s800-c-k-c0x00ffffff-no-rj"
+    },
+    "resolvedImage": {
+      "url": "https://yt3.ggpht.com/IuujE6JyTVznke4d2vHBTUwcE_gr6EJP-khzpoH3rburL5yVSYYw4tTcsBIRJLARGGYZnnNy6A=s800-c-k-c0x00ffffff-no-rj",
+      "source": "youtube",
+      "sourceUrl": "https://www.youtube.com/channel/UCrnKJan8mfvDpaISVIRVY1Q"
+    }
+  }
+}

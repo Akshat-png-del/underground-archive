@@ -1,0 +1,40 @@
+{
+  "slug": "surgeon",
+  "name": "Surgeon",
+  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:45.445Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCrF4-hkEJsSZMu0QS_UjxeQ",
+    "channelTitle": "Surgeon - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCrF4-hkEJsSZMu0QS_UjxeQ",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/Z1hJd3n1WqJZkynEU4oBhu9cwtzp9y34wfAR8svQA7JbzJB6YmLsJq_AO-avGzrm9IW7FtvtDQ=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/surgeon.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1PSylklb2w06BAAHEtepqM"
+  },
+  "spotify": {
+    "artistId": "1PSylklb2w06BAAHEtepqM",
+    "name": "Surgeon",
+    "url": "https://open.spotify.com/artist/1PSylklb2w06BAAHEtepqM",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/surgeon.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/surgeon.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

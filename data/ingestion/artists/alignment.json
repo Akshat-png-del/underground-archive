@@ -1,0 +1,23 @@
+{
+  "slug": "alignment",
+  "name": "Alignment",
+  "updatedAt": "2026-06-28T01:38:14.445Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:57.496Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UC2jdXdEL_og64xNxqr9FMoA",
+    "channelTitle": "Alignment - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UC2jdXdEL_og64xNxqr9FMoA",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/q7WiBQNEx2-aoy35A6dX1SjLjqyPSkJQ3sekognOzvi42Qv7r-21Lq-b4aL5EoYuG2XJ9e9l=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/q7WiBQNEx2-aoy35A6dX1SjLjqyPSkJQ3sekognOzvi42Qv7r-21Lq-b4aL5EoYuG2XJ9e9l=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UC2jdXdEL_og64xNxqr9FMoA"
+  }
+}

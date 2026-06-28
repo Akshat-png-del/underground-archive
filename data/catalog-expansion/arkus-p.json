@@ -1,0 +1,62 @@
+{
+  "slug": "arkus-p",
+  "tracks": [
+    {
+      "title": "Der Gral",
+      "spotifyTrackId": "4BZwuEHCG2JxBTw5RG55dE",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Hermoso - Tribal Version",
+      "spotifyTrackId": "3EcZhPKhaKHZB9jEGpg2E9",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Hardcore Salsa - Original Radio Edit",
+      "spotifyTrackId": "3GjTUY6Fzt28vQMCTUy9MN",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Waiting for the Sun - Trigger Mix",
+      "spotifyTrackId": "119NayYAMsaygchTBsO24I",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Visions",
+      "spotifyTrackId": "7szp9iWXsIGQwbd3J0GEQ4",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Robert Natus & Arkus P. -  Hörtest (1)",
+      "venue": "HÖR Berlin",
+      "year": 2026,
+      "youtubeId": "skqiE_1tuwY"
+    },
+    {
+      "title": "Triple Religion (Arkus P, Boris S & Robert Natus) LIVE @ Awakenings Hard Techno Special 29-12-2012",
+      "venue": "Awakenings",
+      "year": 2012,
+      "youtubeId": "igilseYYdyQ"
+    },
+    {
+      "title": "Triple Religion Live (Boris S. & Arkus P & Robert Natus) @ Awakenings Festival 2013",
+      "venue": "Awakenings",
+      "year": 2013,
+      "youtubeId": "Vw-NAxUYzIU"
+    },
+    {
+      "title": "Robert Natus & Arkus P. - Hardcore Salsa ( DJ Rush Timewarp remix )",
+      "venue": "Time Warp",
+      "year": 2026,
+      "youtubeId": "ucW9AcfbaIM"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:25:00.244Z"
+}

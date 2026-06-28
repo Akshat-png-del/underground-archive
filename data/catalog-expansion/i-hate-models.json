@@ -1,0 +1,62 @@
+{
+  "slug": "i-hate-models",
+  "tracks": [
+    {
+      "title": "Daydream",
+      "spotifyTrackId": "0WsROU8CJrMWBukK5IMs4y",
+      "year": 2024,
+      "duration": "6:00"
+    },
+    {
+      "title": "Forever Melancholia",
+      "spotifyTrackId": "6ZWYsvOTYigBYoHMpFOyoA",
+      "year": 2023,
+      "duration": "6:30"
+    },
+    {
+      "title": "Werewolf Disco Club",
+      "spotifyTrackId": "6iUHeJeetiHa2olRVvtNXE",
+      "year": 2023,
+      "duration": "5:45"
+    },
+    {
+      "title": "Slave to the Rithm - I Hate Models Remix",
+      "spotifyTrackId": "4fAzikA2ID06WSfqd0pYDm",
+      "year": 2022,
+      "duration": "7:00"
+    },
+    {
+      "title": "Toro - Speed Up Revival Edit",
+      "spotifyTrackId": "7KnVy00zIJyFcsAIV1KWBT",
+      "year": 2022,
+      "duration": "5:30"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Awakenings ADE 2018",
+      "venue": "Awakenings",
+      "year": 2018,
+      "youtubeId": "v4XiZkpqEIU"
+    },
+    {
+      "title": "Glitch Festival — Possession 2022",
+      "venue": "Possession",
+      "year": 2022,
+      "youtubeId": "3Xb2gnAZMb8"
+    },
+    {
+      "title": "I Hate Models at Boiler Room: Montréal",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "rkX34tlAKXg"
+    },
+    {
+      "title": "I Hate Models at Boiler Room: London⁠",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "IfU_CCY03XA"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:28.176Z"
+}

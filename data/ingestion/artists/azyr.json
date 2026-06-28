@@ -1,0 +1,23 @@
+{
+  "slug": "azyr",
+  "name": "Azyr",
+  "updatedAt": "2026-06-28T01:38:17.660Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:59.569Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UC1F1HCRH239HB5J3Dk66jkw",
+    "channelTitle": "Azyr",
+    "channelUrl": "https://www.youtube.com/@azyrmusic",
+    "customUrl": "@azyrmusic",
+    "thumbnailUrl": "https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@azyrmusic"
+  }
+}

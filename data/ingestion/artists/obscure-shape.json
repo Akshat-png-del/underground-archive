@@ -1,0 +1,23 @@
+{
+  "slug": "obscure-shape",
+  "name": "Obscure Shape",
+  "updatedAt": "2026-06-28T01:38:18.330Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:48.063Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCxejXz0qs5RdWXj0CdYnwJQ",
+    "channelTitle": "Obscure Shape - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCxejXz0qs5RdWXj0CdYnwJQ",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/yx37Cmw8FmxVk427IWdmUZI35DnPELvE9VpcXYGtI-41rUquZnQiJOpTM1BkubQciitIO33yPg=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/yx37Cmw8FmxVk427IWdmUZI35DnPELvE9VpcXYGtI-41rUquZnQiJOpTM1BkubQciitIO33yPg=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCxejXz0qs5RdWXj0CdYnwJQ"
+  }
+}

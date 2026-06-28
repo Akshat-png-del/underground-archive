@@ -1,0 +1,23 @@
+{
+  "slug": "phuture-corp",
+  "name": "Phuture Corp",
+  "updatedAt": "2026-06-28T01:38:18.330Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:47.453Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UC4p0VFIHy888vo6LwoV4kpA",
+    "channelTitle": "Phuture Republic",
+    "channelUrl": "https://www.youtube.com/@phuturerepublic2535",
+    "customUrl": "@phuturerepublic2535",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_mFfzCvysm1DIe5hMjwINAJoCZ-3f9sSuWVVT3kYxC6tg=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_mFfzCvysm1DIe5hMjwINAJoCZ-3f9sSuWVVT3kYxC6tg=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@phuturerepublic2535"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "arkus-p",
+  "name": "Arkus P",
+  "updatedAt": "2026-06-28T19:18:20.051Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:18:20.051Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:42.264Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "2QX0SpKMsDrLa2qM15KcDf",
+    "name": "Arkus P",
+    "url": "https://open.spotify.com/artist/2QX0SpKMsDrLa2qM15KcDf",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2QX0SpKMsDrLa2qM15KcDf"
+  },
+  "youtube": {
+    "channelId": "UCLyxs3crPvoPC5QbaTK6T2w",
+    "channelTitle": "ARKUS liga",
+    "channelUrl": "https://www.youtube.com/@arkusliga",
+    "customUrl": "@arkusliga",
+    "thumbnailUrl": "https://yt3.ggpht.com/2jVnTzj9a5hYIeoiSryQyvDVoRXibX7Q5uBnBAeRqLvUk5STtHSBK2wlkZuRyTeIIjl8OYLCWg=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

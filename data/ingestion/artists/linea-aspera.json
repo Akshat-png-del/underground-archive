@@ -1,0 +1,23 @@
+{
+  "slug": "linea-aspera",
+  "name": "Linea Aspera",
+  "updatedAt": "2026-06-28T01:38:18.328Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:45.133Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCTqDGXX4qz_AuG4iwticufg",
+    "channelTitle": "Linea Aspera - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCTqDGXX4qz_AuG4iwticufg",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/B3dJks8Ld4x9ObCypnEBWeZ-GuRPkeVrZQpwl2oTqDWygLIXnW_VUijeAGRwZCEPfihFjqz6=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/B3dJks8Ld4x9ObCypnEBWeZ-GuRPkeVrZQpwl2oTqDWygLIXnW_VUijeAGRwZCEPfihFjqz6=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCTqDGXX4qz_AuG4iwticufg"
+  }
+}

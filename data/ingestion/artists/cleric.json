@@ -1,0 +1,23 @@
+{
+  "slug": "cleric",
+  "name": "Cleric",
+  "updatedAt": "2026-06-28T01:38:18.317Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:30.920Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UC-lk08hcRNv_UgGFTTnvNIQ",
+    "channelTitle": "The Cleric Corner",
+    "channelUrl": "https://www.youtube.com/@theclericcorner",
+    "customUrl": "@theclericcorner",
+    "thumbnailUrl": "https://yt3.ggpht.com/3bpvrlM2QoMPMI90_vLdxbZzdLYnaqmeGOtmavZIcMwjlLSVUpCjA-XVc8qR-iDHYiq3QSezww=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/3bpvrlM2QoMPMI90_vLdxbZzdLYnaqmeGOtmavZIcMwjlLSVUpCjA-XVc8qR-iDHYiq3QSezww=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@theclericcorner"
+  }
+}

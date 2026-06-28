@@ -1,0 +1,23 @@
+{
+  "slug": "frank-nitzinsky",
+  "name": "Frank Nitzinsky",
+  "updatedAt": "2026-06-28T01:38:18.324Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:39.514Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCvK48aClWTZgHhZyEouxtFg",
+    "channelTitle": "Eye-D - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCvK48aClWTZgHhZyEouxtFg",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/lD-iY4vjewBNDT6OdQM_ausiSyAvabHWkr9jdoFJ_KvpAN5-bsWjuRIwnmuLQXMorrpGWsVj=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/lD-iY4vjewBNDT6OdQM_ausiSyAvabHWkr9jdoFJ_KvpAN5-bsWjuRIwnmuLQXMorrpGWsVj=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCvK48aClWTZgHhZyEouxtFg"
+  }
+}

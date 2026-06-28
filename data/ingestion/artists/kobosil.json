@@ -1,0 +1,40 @@
+{
+  "slug": "kobosil",
+  "name": "Kobosil",
+  "updatedAt": "2026-06-28T19:30:52.496Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:52.496Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:34.416Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "2ZvIFwl0BuQgHqWvDE80hC",
+    "name": "Kobosil",
+    "url": "https://open.spotify.com/artist/2ZvIFwl0BuQgHqWvDE80hC",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2ZvIFwl0BuQgHqWvDE80hC"
+  },
+  "youtube": {
+    "channelId": "UCDD5rtak_685aAlK7TLGgZg",
+    "channelTitle": "Kobosil",
+    "channelUrl": "https://www.youtube.com/@kobosil44",
+    "customUrl": "@kobosil44",
+    "thumbnailUrl": "https://yt3.ggpht.com/kPlpON4IcDJVe8HbAi1VgzH2F4EFc03B9IXv4mwwwHcfttpSycRu66N91bwK0iQrvcsP7kMy=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

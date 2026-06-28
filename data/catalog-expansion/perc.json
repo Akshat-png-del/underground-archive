@@ -1,0 +1,37 @@
+{
+  "slug": "perc",
+  "tracks": [],
+  "sets": [
+    {
+      "title": "Perc | Boiler Room Toronto",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "uEXaRSzYxX4"
+    },
+    {
+      "title": "Perc | Boiler Room Paris: Possession",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "vMifim5ZL4g"
+    },
+    {
+      "title": "Perc Boiler Room London DJ Set",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "8s86Z9aVhjM"
+    },
+    {
+      "title": "Perc - Awakenings Easter Festival 2022",
+      "venue": "Awakenings",
+      "year": 2022,
+      "youtubeId": "lfAkIC9hrd8"
+    },
+    {
+      "title": "Perc | HÖR - Jul 8 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "eRqSFkenzs0"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:26:01.585Z"
+}

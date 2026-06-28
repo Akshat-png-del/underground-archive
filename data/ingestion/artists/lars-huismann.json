@@ -1,0 +1,23 @@
+{
+  "slug": "lars-huismann",
+  "name": "Lars Huismann",
+  "updatedAt": "2026-06-28T01:38:18.305Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:15.558Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCbuRbRl8afqJtR3ePgv9jAA",
+    "channelTitle": "Lars Huismann - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCbuRbRl8afqJtR3ePgv9jAA",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/8eBKxoKRAVNj_82lI2b2UJN3A0hU-FRhAsLU88DAOcyZhDGYhxa04OMvQ00Y8cce1rdHVMKysQ=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/8eBKxoKRAVNj_82lI2b2UJN3A0hU-FRhAsLU88DAOcyZhDGYhxa04OMvQ00Y8cce1rdHVMKysQ=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCbuRbRl8afqJtR3ePgv9jAA"
+  }
+}

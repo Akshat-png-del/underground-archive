@@ -1,0 +1,27 @@
+{
+  "slug": "randomer",
+  "name": "Randomer",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/7K0WJzyqUNRhraNcsvJp1h",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174f30c7a227faf6b037537f157",
+    "confidence": "high",
+    "matchedName": "Randomer",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/7K0WJzyqUNRhraNcsvJp1h",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174f30c7a227faf6b037537f157",
+      "confidence": "high",
+      "matchedName": "Randomer",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/randomer.jpg",
+  "downloadedAt": "2026-06-28T16:50:03.099Z"
+}

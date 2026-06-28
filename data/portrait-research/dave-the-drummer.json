@@ -1,0 +1,27 @@
+{
+  "slug": "dave-the-drummer",
+  "name": "D.A.V.E. The Drummer",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/4ulxN8QnUlk3bX6IopQO7C",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174fb3ccdaeef1f5dcdd2e62767",
+    "confidence": "high",
+    "matchedName": "D.A.V.E. The Drummer",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/4ulxN8QnUlk3bX6IopQO7C",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174fb3ccdaeef1f5dcdd2e62767",
+      "confidence": "high",
+      "matchedName": "D.A.V.E. The Drummer",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/dave-the-drummer.jpg",
+  "downloadedAt": "2026-06-28T16:49:58.363Z"
+}

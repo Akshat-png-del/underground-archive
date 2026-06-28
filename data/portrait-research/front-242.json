@@ -1,0 +1,27 @@
+{
+  "slug": "front-242",
+  "name": "Front 242",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e6b49a9d34a3feeba0e2aac1",
+    "confidence": "high",
+    "matchedName": "Front 242",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e6b49a9d34a3feeba0e2aac1",
+      "confidence": "high",
+      "matchedName": "Front 242",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/front-242.jpg",
+  "downloadedAt": "2026-06-28T16:50:13.693Z"
+}

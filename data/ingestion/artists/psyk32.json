@@ -1,0 +1,18 @@
+{
+  "slug": "psyk32",
+  "name": "Psyk32",
+  "updatedAt": "2026-06-28T01:38:18.303Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:14.521Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": null,
+    "channelTitle": null,
+    "channelUrl": null,
+    "customUrl": null,
+    "thumbnailUrl": null
+  }
+}

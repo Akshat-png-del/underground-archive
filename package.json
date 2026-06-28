@@ -1,0 +1,48 @@
+{
+  "name": "underground-archive",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "audit:archive": "npx tsx scripts/audit-archive.ts",
+    "audit:images": "npx tsx scripts/audit-images.ts",
+    "sync:spotify": "npx tsx scripts/sync/spotify.ts",
+    "sync:youtube": "npx tsx scripts/sync/youtube.ts",
+    "sync:musicbrainz": "npx tsx scripts/sync/musicbrainz.ts",
+    "sync:discogs": "npx tsx scripts/sync/discogs.ts",
+    "sync:artist": "npx tsx scripts/sync/artist.ts",
+    "sync:portraits": "npx tsx scripts/sync/portraits.ts",
+    "sync:bundle": "npx tsx scripts/build-metadata-bundle.ts",
+    "sync": "npm run sync:portraits && npm run sync:bundle",
+    "expand:catalog": "npx tsx scripts/expand-catalog.ts",
+    "expand:bundle": "npx tsx scripts/build-expansion-bundle.ts",
+    "prebuild": "npm run audit:archive && npm run audit:images",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.4.0",
+    "dotenv": "^17.4.2",
+    "firebase": "^12.15.0",
+    "firebase-admin": "^14.1.0",
+    "lucide-react": "^1.21.0",
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

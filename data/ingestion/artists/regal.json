@@ -1,0 +1,40 @@
+{
+  "slug": "regal",
+  "name": "Regal",
+  "updatedAt": "2026-06-28T19:30:59.248Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:59.248Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:35.683Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "10RlWd6mCUDiRpQ30bGL2E",
+    "name": "Regal",
+    "url": "https://open.spotify.com/artist/10RlWd6mCUDiRpQ30bGL2E",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/10RlWd6mCUDiRpQ30bGL2E"
+  },
+  "youtube": {
+    "channelId": "UC69I8egELqWywoX5wrh2KxQ",
+    "channelTitle": "Regal Entertainment, Inc.",
+    "channelUrl": "https://www.youtube.com/@regalentertainmentinc",
+    "customUrl": "@regalentertainmentinc",
+    "thumbnailUrl": "https://yt3.ggpht.com/9cVKxhHGO3hgXyjQGJqeqWusLzp2cogKFYKvpChnrggnHJfp5_1p3zxJd5TyZhRUlUjI37rELos=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

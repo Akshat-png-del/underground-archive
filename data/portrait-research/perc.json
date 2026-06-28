@@ -1,0 +1,48 @@
+{
+  "slug": "perc",
+  "name": "Perc",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "resident-advisor",
+    "sourceUrl": "https://ra.co/dj/perc",
+    "imageUrl": "https://static.ra.co/images/profiles/perc.jpg?dateUpdated=1599782400000",
+    "confidence": "high",
+    "matchedName": "Perc"
+  },
+  "candidates": [
+    {
+      "source": "resident-advisor",
+      "sourceUrl": "https://ra.co/dj/perc",
+      "imageUrl": "https://static.ra.co/images/profiles/perc.jpg?dateUpdated=1599782400000",
+      "confidence": "high",
+      "matchedName": "Perc"
+    },
+    {
+      "source": "facebook",
+      "sourceUrl": "https://www.facebook.com/PercTrax",
+      "imageUrl": "https://scontent.fixc1-12.fna.fbcdn.net/v/t39.30808-1/514268760_1337045627773604_978903414832101488_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1304x1304&amp;ctp=s720x720&amp;_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=3ab345&amp;_nc_ohc=UIWKxE_bNWMQ7kNvwFPqBY3&amp;_nc_oc=Adr_PemtZNM9ceZMLOSSulnL9fNVjDinqRt4hTCQhf4cCbuCEzBtqkRyJeV_6YkS2vARS1VdJkjAcVsfE4d5A0zQ&amp;_nc_zt=24&amp;_nc_ht=scontent.fixc1-12.fna&amp;_nc_gid=cFm44bI9MkT7uUQqJWSMvQ&amp;_nc_ss=7f289&amp;oh=00_Af9MZp3dTfJuklEDAXreV4FivK7HyxXPLDRGGQVLhyx5rA&amp;oe=6A472D14",
+      "confidence": "medium",
+      "matchedName": "Perc",
+      "notes": "Page title: Perc"
+    },
+    {
+      "source": "official-website",
+      "sourceUrl": "https://perctrax.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0041099053_23.jpg",
+      "confidence": "low",
+      "matchedName": "Music",
+      "notes": "Page title: Music | Perc Trax"
+    },
+    {
+      "source": "soundcloud",
+      "sourceUrl": "https://soundcloud.com/perc",
+      "imageUrl": "https://i1.sndcdn.com/avatars-8HP8MnVgOxvkkB7z-gC9ZTA-t500x500.jpg",
+      "confidence": "low",
+      "matchedName": "Stream Perc music",
+      "notes": "Page title: Stream Perc music | Listen to songs, albums, playlists for free on SoundCloud"
+    }
+  ],
+  "manualDeepResearch": true,
+  "downloadedAt": "2026-06-28T16:52:30.917Z"
+}

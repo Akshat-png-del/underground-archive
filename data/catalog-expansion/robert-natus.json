@@ -1,0 +1,62 @@
+{
+  "slug": "robert-natus",
+  "tracks": [
+    {
+      "title": "Hermoso - Tribal Version",
+      "spotifyTrackId": "3EcZhPKhaKHZB9jEGpg2E9",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Grooverider",
+      "spotifyTrackId": "1u3JDrB6aWtckipUyTN2Cz",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Hardcore Salsa - Original Radio Edit",
+      "spotifyTrackId": "3GjTUY6Fzt28vQMCTUy9MN",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Truant",
+      "spotifyTrackId": "5gtxF7gLUw1Rfuo5GmDlXv",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Pain",
+      "spotifyTrackId": "2ehJ8d97NWWIwYo67H8PIx",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Robert Natus & Arkus P. -  Hörtest (1)",
+      "venue": "HÖR Berlin",
+      "year": 2026,
+      "youtubeId": "skqiE_1tuwY"
+    },
+    {
+      "title": "Triple Religion (Arkus P, Boris S & Robert Natus) LIVE @ Awakenings Hard Techno Special 29-12-2012",
+      "venue": "Awakenings",
+      "year": 2012,
+      "youtubeId": "igilseYYdyQ"
+    },
+    {
+      "title": "Triple Religion Live (Boris S. & Arkus P & Robert Natus) @ Awakenings Festival 2013",
+      "venue": "Awakenings",
+      "year": 2013,
+      "youtubeId": "Vw-NAxUYzIU"
+    },
+    {
+      "title": "Triple Religion (Arkus P, Boris S & Robert Natus) LIVE @ Awakenings hardtechno Special  29-12-2012",
+      "venue": "Awakenings",
+      "year": 2012,
+      "youtubeId": "nucJABinbgA"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:24:04.768Z"
+}

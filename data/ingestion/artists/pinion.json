@@ -1,0 +1,23 @@
+{
+  "slug": "pinion",
+  "name": "Pinion",
+  "updatedAt": "2026-06-28T01:38:18.306Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:16.172Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UC22LoXZisr7_c43USvolBfw",
+    "channelTitle": "Pinion",
+    "channelUrl": "https://www.youtube.com/@pinionchannel",
+    "customUrl": "@pinionchannel",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_k1choAd_x6EYLxHav3C5AAKn4WZktwEZcwn5UM6KdJJbo=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_k1choAd_x6EYLxHav3C5AAKn4WZktwEZcwn5UM6KdJJbo=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@pinionchannel"
+  }
+}

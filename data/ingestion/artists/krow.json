@@ -1,0 +1,23 @@
+{
+  "slug": "krow",
+  "name": "Krow",
+  "updatedAt": "2026-06-28T01:38:18.303Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:13.905Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCjSHA9z5URuLIZ2yP2nNHFQ",
+    "channelTitle": "Krow",
+    "channelUrl": "https://www.youtube.com/@krows.",
+    "customUrl": "@krows.",
+    "thumbnailUrl": "https://yt3.ggpht.com/9uvs4WjDu5RXLXQiqC-7zV92xlb41meOULjzPjahsVgQX6MKBRyb4Rcmv2VFGFgvF_7AHyHUaw=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/9uvs4WjDu5RXLXQiqC-7zV92xlb41meOULjzPjahsVgQX6MKBRyb4Rcmv2VFGFgvF_7AHyHUaw=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@krows."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "front-242",
+  "name": "Front 242",
+  "updatedAt": "2026-06-28T19:30:12.183Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:57.184Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.183Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/front-242.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX"
+  },
+  "spotify": {
+    "artistId": "2tyMOS8xKREgpEwHnLc6EX",
+    "name": "Front 242",
+    "url": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/front-242.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/front-242.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

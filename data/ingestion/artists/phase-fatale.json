@@ -1,0 +1,23 @@
+{
+  "slug": "phase-fatale",
+  "name": "Phase Fatale",
+  "updatedAt": "2026-06-28T01:38:01.011Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:46.706Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCRw-q7lOA359WBk8j2w0Bmg",
+    "channelTitle": "Phase Fatale - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCRw-q7lOA359WBk8j2w0Bmg",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCRw-q7lOA359WBk8j2w0Bmg"
+  }
+}

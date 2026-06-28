@@ -1,0 +1,40 @@
+{
+  "slug": "chris-liebing",
+  "name": "Chris Liebing",
+  "updatedAt": "2026-06-28T19:18:07.828Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:18:07.828Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:39.757Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "21444lX8gpmOX36icLmbFI",
+    "name": "Chris Liebing",
+    "url": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+  },
+  "youtube": {
+    "channelId": "UCeaIigwbXbgiTV2Ks1gs32g",
+    "channelTitle": "Chris Liebing",
+    "channelUrl": "https://www.youtube.com/@chrisliebingofficial",
+    "customUrl": "@chrisliebingofficial",
+    "thumbnailUrl": "https://yt3.ggpht.com/e1bpQFx-66RoyFch28kYy-td1zUHrRA-jmg6P7ZO4G0DdimPc0jMnosg44ExkgqCPI4TvFLmLpk=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

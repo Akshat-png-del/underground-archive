@@ -1,0 +1,23 @@
+{
+  "slug": "temo",
+  "name": "Temo",
+  "updatedAt": "2026-06-28T01:38:18.313Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:24.776Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCASyFAS0rys2xg5ofINOFOA",
+    "channelTitle": "Futbolcontemo",
+    "channelUrl": "https://www.youtube.com/@futbolcontemo",
+    "customUrl": "@futbolcontemo",
+    "thumbnailUrl": "https://yt3.ggpht.com/q-g-0lXScMpewA5pEL6AV56xEKUpHJrMlTrgTnDmDhq_wH6y_EiKYgBLHRzBJMJwxfdLzfRLfA=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/q-g-0lXScMpewA5pEL6AV56xEKUpHJrMlTrgTnDmDhq_wH6y_EiKYgBLHRzBJMJwxfdLzfRLfA=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@futbolcontemo"
+  }
+}

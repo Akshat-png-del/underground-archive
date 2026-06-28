@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#0c0c0c"/>
+  <rect x="1" y="1" width="398" height="398" stroke="#2f2f2f" stroke-width="2"/>
+  <path d="M80 280 L120 120 L160 280 Z" stroke="#e0e0e0" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M180 280 L220 100 L260 280 Z" stroke="#e0e0e0" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M280 280 L320 140 L360 280 Z" stroke="#e0e0e0" stroke-width="1.5" fill="none" opacity="0.35"/>
+  <text x="200" y="340" text-anchor="middle" fill="#5a5a5a" font-family="monospace" font-size="10" letter-spacing="3">EBM</text>
+</svg>

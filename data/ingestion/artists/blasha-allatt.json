@@ -1,0 +1,23 @@
+{
+  "slug": "blasha-allatt",
+  "name": "Blasha & Allatt",
+  "updatedAt": "2026-06-28T01:38:18.307Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:17.432Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCNNA60VHSrkw7ByIMnqJGYw",
+    "channelTitle": "Blasha Allatt",
+    "channelUrl": "https://www.youtube.com/@blashaallatt8565",
+    "customUrl": "@blashaallatt8565",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_kuFglfN8mFshPQ_YxxX-5TxbNg5-MCGRCBZk8qHpN_Mss=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_kuFglfN8mFshPQ_YxxX-5TxbNg5-MCGRCBZk8qHpN_Mss=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@blashaallatt8565"
+  }
+}

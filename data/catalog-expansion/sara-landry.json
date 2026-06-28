@@ -1,0 +1,56 @@
+{
+  "slug": "sara-landry",
+  "tracks": [
+    {
+      "title": "GIRLBOSS",
+      "spotifyTrackId": "04WxwL4ZRewLveO2qjej54",
+      "year": 2024,
+      "duration": "5:00"
+    },
+    {
+      "title": "Reality Check",
+      "spotifyTrackId": "4RB7S3C5A6ziH6Jni0Jlxv",
+      "year": 2024,
+      "duration": "5:15"
+    },
+    {
+      "title": "Heaven",
+      "spotifyTrackId": "5Hh09KHzQ9NRjRd6HIes5R",
+      "year": 2024,
+      "duration": "5:30"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Awakenings Festival 2025",
+      "venue": "Awakenings",
+      "year": 2025,
+      "youtubeId": "b-PupDxC-ik"
+    },
+    {
+      "title": "Verknipt Events",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "0m_RS2Y2S6A"
+    },
+    {
+      "title": "Verknipt Arena",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "61TtukNICZU"
+    },
+    {
+      "title": "Verknipt Festival 2023",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "XUdq1G8FrHo"
+    },
+    {
+      "title": "Time Warp NYC",
+      "venue": "Time Warp",
+      "year": 2024,
+      "youtubeId": "8lE59Shdod0"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:24.623Z"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "rikhter",
+  "name": "Rikhter",
+  "updatedAt": "2026-06-28T01:38:18.298Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:03.974Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCjQrI4CQ1VUlLgqGCYAavYw",
+    "channelTitle": "Rikhter - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCjQrI4CQ1VUlLgqGCYAavYw",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/GWgg1IuY7LwmOWeGBGESMBX8JWv5UBfCk_HCQ5uROwFrszoAXG8IJsk2O2CAVD67FmdPWJdv=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/GWgg1IuY7LwmOWeGBGESMBX8JWv5UBfCk_HCQ5uROwFrszoAXG8IJsk2O2CAVD67FmdPWJdv=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCjQrI4CQ1VUlLgqGCYAavYw"
+  }
+}

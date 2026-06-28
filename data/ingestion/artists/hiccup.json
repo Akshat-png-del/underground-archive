@@ -1,0 +1,23 @@
+{
+  "slug": "hiccup",
+  "name": "Hiccup",
+  "updatedAt": "2026-06-28T01:38:18.319Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:34.023Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCxMB5np5PJFogPLE-IZs92A",
+    "channelTitle": "Hiccup",
+    "channelUrl": "https://www.youtube.com/@never_hiccups",
+    "customUrl": "@never_hiccups",
+    "thumbnailUrl": "https://yt3.ggpht.com/WOsBgyze_NxxEHDEt2XEj-MICldb51cTIxxAMRdrq7kpH1P9CoYUyVsBE9kdpZaA9o8DzS2Zcv0=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/WOsBgyze_NxxEHDEt2XEj-MICldb51cTIxxAMRdrq7kpH1P9CoYUyVsBE9kdpZaA9o8DzS2Zcv0=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@never_hiccups"
+  }
+}

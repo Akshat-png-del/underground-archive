@@ -1,0 +1,40 @@
+{
+  "slug": "laven",
+  "name": "LAVEN",
+  "updatedAt": "2026-06-28T19:18:53.487Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:18:53.487Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:50.486Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "5YWZmwPZ8PpWfnCS8lSfAX",
+    "name": "LAVEN",
+    "url": "https://open.spotify.com/artist/5YWZmwPZ8PpWfnCS8lSfAX",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/5YWZmwPZ8PpWfnCS8lSfAX"
+  },
+  "youtube": {
+    "channelId": "UCUJVwg7Kcr_wOwrwsMHQpkA",
+    "channelTitle": "Laven Lokesh",
+    "channelUrl": "https://www.youtube.com/@lavenlokeshbarani",
+    "customUrl": "@lavenlokeshbarani",
+    "thumbnailUrl": "https://yt3.ggpht.com/xLAGFAir4ZFzmJMgv4fgKeoM5ZSUQGbeg_b_7bjAqq7sMKLrj6ylutwv9ZqwQ-DunAOchFKZcw=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

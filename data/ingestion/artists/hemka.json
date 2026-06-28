@@ -1,0 +1,23 @@
+{
+  "slug": "hemka",
+  "name": "Hemka",
+  "updatedAt": "2026-06-28T01:38:18.314Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:27.206Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCou1n-0I7i30BYsmO_RU2fA",
+    "channelTitle": "Hemka",
+    "channelUrl": "https://www.youtube.com/@hemka",
+    "customUrl": "@hemka",
+    "thumbnailUrl": "https://yt3.ggpht.com/7aD6ut-4mdd51eiqiepvhxwzFMZ5_PwIaFdayihp7AznG-WnEmIdxoPUDhHLESe092IkMlti7tU=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/7aD6ut-4mdd51eiqiepvhxwzFMZ5_PwIaFdayihp7AznG-WnEmIdxoPUDhHLESe092IkMlti7tU=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@hemka"
+  }
+}

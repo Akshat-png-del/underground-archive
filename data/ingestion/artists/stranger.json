@@ -1,0 +1,23 @@
+{
+  "slug": "stranger",
+  "name": "Stranger",
+  "updatedAt": "2026-06-28T01:38:18.298Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:05.192Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UC1ZnQUqU96YeVPTmfvbkM8A",
+    "channelTitle": "Stranger ",
+    "channelUrl": "https://www.youtube.com/@stranger_freefire",
+    "customUrl": "@stranger_freefire",
+    "thumbnailUrl": "https://yt3.ggpht.com/0Is03qu0_E1SL141CyglFFBQ6GCsBGA_3YPtyG4k1Q9Bf-B_TL39qO4Hv2pkO1JACuRu63ygMw=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/0Is03qu0_E1SL141CyglFFBQ6GCsBGA_3YPtyG4k1Q9Bf-B_TL39qO4Hv2pkO1JACuRu63ygMw=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@stranger_freefire"
+  }
+}

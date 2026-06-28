@@ -1,0 +1,165 @@
+# Generated migration for The Underground Archive
+
+from django.conf import settings
+from django.db import migrations, models
+import django.db.models.deletion
+
+
+class Migration(migrations.Migration):
+
+    initial = True
+
+    dependencies = [
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    ]
+
+    operations = [
+        migrations.CreateModel(
+            name="Artist",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("slug", models.SlugField(max_length=120, unique=True)),
+                ("name", models.CharField(max_length=200)),
+                ("portrait", models.URLField(blank=True)),
+                ("hero_image", models.URLField(blank=True)),
+                ("country", models.CharField(max_length=100)),
+                ("city", models.CharField(max_length=100)),
+                ("active_since", models.PositiveIntegerField()),
+                ("genres", models.JSONField(default=list)),
+                ("labels", models.JSONField(default=list)),
+                ("collectives", models.JSONField(default=list)),
+                ("website", models.URLField(blank=True)),
+                ("socials", models.JSONField(default=list)),
+                ("bio", models.TextField()),
+                ("signature_sound", models.JSONField(default=dict)),
+                ("essential_listening", models.JSONField(default=dict)),
+                ("essential_sets", models.JSONField(default=list)),
+                ("similar_artists", models.JSONField(default=list)),
+                ("aesthetic_profile", models.JSONField(default=dict)),
+                ("timeline", models.JSONField(default=list)),
+                ("featured", models.BooleanField(default=False)),
+                ("trending", models.BooleanField(default=False)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+            ],
+            options={"ordering": ["name"]},
+        ),
+        migrations.CreateModel(
+            name="City",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("slug", models.SlugField(max_length=80, unique=True)),
+                ("name", models.CharField(max_length=100)),
+                ("country", models.CharField(max_length=100)),
+                ("hero_image", models.URLField(blank=True)),
+                ("tagline", models.CharField(max_length=200)),
+                ("scene_history", models.TextField()),
+                ("venues_data", models.JSONField(default=list)),
+                ("record_stores", models.JSONField(default=list)),
+                ("vintage_stores", models.JSONField(default=list)),
+                ("tattoo_studios", models.JSONField(default=list)),
+                ("cafes", models.JSONField(default=list)),
+                ("districts", models.JSONField(default=list)),
+                ("etiquette", models.JSONField(default=list)),
+                ("dress_culture", models.TextField()),
+                ("safety_tips", models.JSONField(default=list)),
+                ("legends", models.JSONField(default=list)),
+                ("weekend_guide", models.JSONField(default=list)),
+                ("coordinates", models.JSONField(default=dict)),
+            ],
+        ),
+        migrations.CreateModel(
+            name="FashionCategory",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("slug", models.SlugField(max_length=80, unique=True)),
+                ("name", models.CharField(max_length=100)),
+                ("hero_image", models.URLField(blank=True)),
+                ("introduction", models.TextField()),
+                ("origins", models.TextField()),
+                ("evolution", models.TextField()),
+                ("designers", models.JSONField(default=list)),
+                ("creators", models.JSONField(default=list)),
+                ("brands", models.JSONField(default=list)),
+                ("essential_pieces", models.JSONField(default=list)),
+                ("styling_tips", models.JSONField(default=list)),
+            ],
+        ),
+        migrations.CreateModel(
+            name="EditorialArticle",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                ("title", models.CharField(max_length=300)),
+                ("excerpt", models.TextField()),
+                ("category", models.CharField(max_length=40)),
+                ("hero_image", models.URLField(blank=True)),
+                ("author", models.CharField(max_length=100)),
+                ("published_at", models.DateField()),
+                ("read_time", models.PositiveIntegerField(default=10)),
+                ("content", models.TextField()),
+                ("featured", models.BooleanField(default=False)),
+            ],
+            options={"ordering": ["-published_at"]},
+        ),
+        migrations.CreateModel(
+            name="Venue",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("slug", models.SlugField(max_length=120, unique=True)),
+                ("name", models.CharField(max_length=200)),
+                ("hero_image", models.URLField(blank=True)),
+                ("history", models.TextField()),
+                ("music_styles", models.JSONField(default=list)),
+                ("crowd_profile", models.TextField()),
+                ("dress_code", models.TextField()),
+                ("entry_difficulty", models.CharField(default="moderate", max_length=20)),
+                ("sound_system", models.TextField()),
+                ("photo_policy", models.TextField()),
+                ("reviews", models.JSONField(default=list)),
+                ("city", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="venue_list", to="archive.city")),
+            ],
+        ),
+        migrations.CreateModel(
+            name="UserProfile",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("bio", models.TextField(blank=True)),
+                ("reputation", models.PositiveIntegerField(default=0)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("followed_aesthetics", models.ManyToManyField(blank=True, to="archive.fashioncategory")),
+                ("saved_artists", models.ManyToManyField(blank=True, related_name="saved_by", to="archive.artist")),
+                ("user", models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, related_name="archive_profile", to=settings.AUTH_USER_MODEL)),
+            ],
+        ),
+        migrations.CreateModel(
+            name="ArtistRating",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("energy", models.FloatField()),
+                ("darkness", models.FloatField()),
+                ("intensity", models.FloatField()),
+                ("innovation", models.FloatField()),
+                ("dancefloor_impact", models.FloatField()),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("artist", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="ratings", to="archive.artist")),
+                ("user", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+            ],
+            options={"unique_together": {("artist", "user")}},
+        ),
+        migrations.CreateModel(
+            name="VenueRating",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("underground_feel", models.FloatField()),
+                ("crowd_quality", models.FloatField()),
+                ("sound_quality", models.FloatField()),
+                ("inclusivity", models.FloatField()),
+                ("intensity", models.FloatField()),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("user", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ("venue", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="ratings", to="archive.venue")),
+            ],
+            options={"unique_together": {("venue", "user")}},
+        ),
+    ]

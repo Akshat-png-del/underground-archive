@@ -1,0 +1,40 @@
+{
+  "slug": "i-hate-models",
+  "name": "I Hate Models",
+  "updatedAt": "2026-06-28T19:30:48.436Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:48.436Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:33.718Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "0KqSULB80ft2H3aFg6kJmN",
+    "name": "I Hate Models",
+    "url": "https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN"
+  },
+  "youtube": {
+    "channelId": "UCQJUmY7sHc-M1sCJE8zOZwQ",
+    "channelTitle": "I HATE MODELS",
+    "channelUrl": "https://www.youtube.com/@ihatemodels1",
+    "customUrl": "@ihatemodels1",
+    "thumbnailUrl": "https://yt3.ggpht.com/TLJ1AWaQv4UXIwM3VY73TEnjxdRIwHzo49Fn_M2xfu3bDLqVBMdco4ahVfXJYoJGho3GI8xc=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

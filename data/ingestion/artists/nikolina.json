@@ -1,0 +1,40 @@
+{
+  "slug": "nikolina",
+  "name": "Nikolina",
+  "updatedAt": "2026-06-28T19:19:28.441Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:19:28.441Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:56.265Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "3d0OOhNi5k69JBZ5BVV8bc",
+    "name": "Nikolina",
+    "url": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+    "imageUrls": [
+      "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc"
+  },
+  "youtube": {
+    "channelId": "UC1t-hFvdIZn5PgsPZ-weKwg",
+    "channelTitle": "NIKOLINA",
+    "channelUrl": "https://www.youtube.com/@djnikolina",
+    "customUrl": "@djnikolina",
+    "thumbnailUrl": "https://yt3.ggpht.com/SfEUy7uoLK0QWlA4L4J6rWYcrYivLv7Jj4bicFMHvCuJRNP9Z8z89v_72kKcgAA9NSQESddb=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

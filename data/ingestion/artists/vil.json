@@ -1,0 +1,23 @@
+{
+  "slug": "vil",
+  "name": "VIL",
+  "updatedAt": "2026-06-28T01:38:18.314Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:26.000Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCz8-Sdiw4g9aqCbJJK-yNpA",
+    "channelTitle": "ViL",
+    "channelUrl": "https://www.youtube.com/@defnotvil",
+    "customUrl": "@defnotvil",
+    "thumbnailUrl": "https://yt3.ggpht.com/_7QZgEUwKAbVI_7GyuK7D8Q4yMY-a5WNe3Bwz9fPgDMTstBbiXdIjXzGCuB2p8sbn-1m5xGvXXA=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/_7QZgEUwKAbVI_7GyuK7D8Q4yMY-a5WNe3Bwz9fPgDMTstBbiXdIjXzGCuB2p8sbn-1m5xGvXXA=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@defnotvil"
+  }
+}

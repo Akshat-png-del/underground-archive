@@ -1,0 +1,23 @@
+{
+  "slug": "vrtx",
+  "name": "VRTX",
+  "updatedAt": "2026-06-28T01:38:18.318Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:32.800Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCXSdoOX5nMZvo92iUPWT7yg",
+    "channelTitle": "VRTX BAND チューブトレーニングスタジオ",
+    "channelUrl": "https://www.youtube.com/@vrtxjapan",
+    "customUrl": "@vrtxjapan",
+    "thumbnailUrl": "https://yt3.ggpht.com/FkXPpnk0xJvdjdtnKxkZsW5FMlixD5nPJh30A2bgg1mKlqlKbnnhU-kzUF5L3FdwrobdL1GNfgU=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/FkXPpnk0xJvdjdtnKxkZsW5FMlixD5nPJh30A2bgg1mKlqlKbnnhU-kzUF5L3FdwrobdL1GNfgU=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@vrtxjapan"
+  }
+}

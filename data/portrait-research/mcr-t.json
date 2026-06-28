@@ -1,0 +1,27 @@
+{
+  "slug": "mcr-t",
+  "name": "MCR-T",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/4m7q9onIm2bqhwHy9utqmw",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517413c354bf032479d1c2437f88",
+    "confidence": "high",
+    "matchedName": "MCR-T",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/4m7q9onIm2bqhwHy9utqmw",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517413c354bf032479d1c2437f88",
+      "confidence": "high",
+      "matchedName": "MCR-T",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/mcr-t.jpg",
+  "downloadedAt": "2026-06-28T16:50:22.226Z"
+}

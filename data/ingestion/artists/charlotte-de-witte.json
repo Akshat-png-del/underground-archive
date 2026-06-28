@@ -1,0 +1,40 @@
+{
+  "slug": "charlotte-de-witte",
+  "name": "Charlotte de Witte",
+  "updatedAt": "2026-06-28T19:17:53.420Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:17:53.420Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:37.695Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "1lJhME1ZpzsEa5M0wW6Mso",
+    "name": "Charlotte de Witte",
+    "url": "https://open.spotify.com/artist/1lJhME1ZpzsEa5M0wW6Mso",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1lJhME1ZpzsEa5M0wW6Mso"
+  },
+  "youtube": {
+    "channelId": "UC-yOW3e6zBSo1JwLXq46Suw",
+    "channelTitle": "Charlotte de Witte",
+    "channelUrl": "https://www.youtube.com/@charlottedewittemusic",
+    "customUrl": "@charlottedewittemusic",
+    "thumbnailUrl": "https://yt3.ggpht.com/G3cN5pANmTK1YsEzH_cq5g6osU9SJElkz_WwKi8n94ZE4U1z5XOUvQZwyXpJBZOs3ky4fWdj-w=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "cravet",
+  "name": "CRAVET",
+  "updatedAt": "2026-06-28T01:38:18.297Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:02.054Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCSTDFU49nq62DuuWMMJoOHQ",
+    "channelTitle": "Cravet Media ",
+    "channelUrl": "https://www.youtube.com/@cravetmedia",
+    "customUrl": "@cravetmedia",
+    "thumbnailUrl": "https://yt3.ggpht.com/-GmAnyjHkg6InDB6i4IpUQFwiaEyCrjH5uUdMkIzaqeC8_zhmkZsWMJIgMIJb9m--eu9zjGv2g=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/-GmAnyjHkg6InDB6i4IpUQFwiaEyCrjH5uUdMkIzaqeC8_zhmkZsWMJIgMIJb9m--eu9zjGv2g=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@cravetmedia"
+  }
+}

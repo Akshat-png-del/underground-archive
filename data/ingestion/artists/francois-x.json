@@ -1,0 +1,23 @@
+{
+  "slug": "francois-x",
+  "name": "François X",
+  "updatedAt": "2026-06-28T01:38:18.337Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:52.405Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCxsUjjIOmViLDvrCykms_aQ",
+    "channelTitle": "François X",
+    "channelUrl": "https://www.youtube.com/@francoisx",
+    "customUrl": "@francoisx",
+    "thumbnailUrl": "https://yt3.ggpht.com/3D-oeYgozyHY5VcLRoU36xd784kLiCt5XwnCKhwVQN3Lm7xgGa3VEvP-QwAyhsQi4xkh3tBa-Q=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/3D-oeYgozyHY5VcLRoU36xd784kLiCt5XwnCKhwVQN3Lm7xgGa3VEvP-QwAyhsQi4xkh3tBa-Q=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@francoisx"
+  }
+}

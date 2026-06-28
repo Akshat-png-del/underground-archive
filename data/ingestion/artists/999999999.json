@@ -1,0 +1,40 @@
+{
+  "slug": "999999999",
+  "name": "999999999",
+  "updatedAt": "2026-06-28T19:19:41.250Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:19:41.250Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:58.161Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "6uD2LjPHUjxrpax0se17Nc",
+    "name": "999999999",
+    "url": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc"
+  },
+  "youtube": {
+    "channelId": "UC1L_w9gaofcG733fvx12XEQ",
+    "channelTitle": "ACR 999",
+    "channelUrl": "https://www.youtube.com/@acr-x-999",
+    "customUrl": "@acr-x-999",
+    "thumbnailUrl": "https://yt3.ggpht.com/az3syxnyXli9YnNzLRPPLIH120Q4g5QXRDsAlm7FLdipFIsW6eOTvJ-OFaIsseRVCkwEJsIHxhM=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

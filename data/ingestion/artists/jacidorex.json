@@ -1,0 +1,23 @@
+{
+  "slug": "jacidorex",
+  "name": "Jacidorex",
+  "updatedAt": "2026-06-28T01:38:18.309Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:19.208Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCIrRkuYprnnfZ1_F4Rrawkg",
+    "channelTitle": "Jacidorex",
+    "channelUrl": "https://www.youtube.com/@jacidorex",
+    "customUrl": "@jacidorex",
+    "thumbnailUrl": "https://yt3.ggpht.com/ZJn7wKKG6Dv2YbbTbg_nQGwp_nwqkxSdLXXD6ydN1T6BoOxVtzbu0iofpDpWcU-jrLARtD3D=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ZJn7wKKG6Dv2YbbTbg_nQGwp_nwqkxSdLXXD6ydN1T6BoOxVtzbu0iofpDpWcU-jrLARtD3D=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@jacidorex"
+  }
+}

@@ -1,0 +1,10 @@
+Django>=5.1,<5.2
+djangorestframework>=3.15,<4
+django-cors-headers>=4.4,<5
+psycopg[binary]>=3.2,<4
+python-dotenv>=1.0,<2
+meilisearch>=0.31,<1
+djangorestframework-simplejwt>=5.3,<6
+django-allauth>=65.0,<66
+Pillow>=10.4,<12
+gunicorn>=23.0,<24

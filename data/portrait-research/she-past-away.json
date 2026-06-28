@@ -1,0 +1,27 @@
+{
+  "slug": "she-past-away",
+  "name": "She Past Away",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517442bd540d91bbfb19c56dcc51",
+    "confidence": "high",
+    "matchedName": "She Past Away",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517442bd540d91bbfb19c56dcc51",
+      "confidence": "high",
+      "matchedName": "She Past Away",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/she-past-away.jpg",
+  "downloadedAt": "2026-06-28T16:49:26.550Z"
+}

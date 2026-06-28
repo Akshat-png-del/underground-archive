@@ -1,0 +1,23 @@
+{
+  "slug": "raxyor",
+  "name": "Raxyor",
+  "updatedAt": "2026-06-28T01:38:18.313Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:25.419Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCAhZf89GaDykb-_vtLQuThw",
+    "channelTitle": "rAXYOr - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCAhZf89GaDykb-_vtLQuThw",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/Y408fvCvvvrCiB-2pVaKZksiX8jP6VANJ_s_8gRiLFn-6-0g46CrZgili2m9jpA-digd6z6l=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/Y408fvCvvvrCiB-2pVaKZksiX8jP6VANJ_s_8gRiLFn-6-0g46CrZgili2m9jpA-digd6z6l=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCAhZf89GaDykb-_vtLQuThw"
+  }
+}

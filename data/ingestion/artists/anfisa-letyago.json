@@ -1,0 +1,23 @@
+{
+  "slug": "anfisa-letyago",
+  "name": "Anfisa Letyago",
+  "updatedAt": "2026-06-28T01:38:18.302Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:12.606Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCJuAd47ONxiIg3Gl5ZJSjow",
+    "channelTitle": "Anfisa Letyago",
+    "channelUrl": "https://www.youtube.com/@anfisaletyago",
+    "customUrl": "@anfisaletyago",
+    "thumbnailUrl": "https://yt3.ggpht.com/B8XhqOX3k1174bwS6iz62bntGJmnu0ub2uszmeEc7jQ8v5bcWaeX1hYd9mKEWeuTZnOu6lCrog=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/B8XhqOX3k1174bwS6iz62bntGJmnu0ub2uszmeEc7jQ8v5bcWaeX1hYd9mKEWeuTZnOu6lCrog=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@anfisaletyago"
+  }
+}

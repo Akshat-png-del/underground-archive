@@ -1,0 +1,23 @@
+{
+  "slug": "yant",
+  "name": "Yant",
+  "updatedAt": "2026-06-28T01:38:18.300Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:08.945Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCLOEiQOT0UcKHGEZEOtHl5Q",
+    "channelTitle": "Sak Yant Chiang Mai",
+    "channelUrl": "https://www.youtube.com/@sakyantchiangmai",
+    "customUrl": "@sakyantchiangmai",
+    "thumbnailUrl": "https://yt3.ggpht.com/nqOf9vDuGUxiR9MtJx151Vw-a-wtYNSsZCY6UqScXGZIfZV0O4K3pGk2AXwmw_RQe2tpzvlihg=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/nqOf9vDuGUxiR9MtJx151Vw-a-wtYNSsZCY6UqScXGZIfZV0O4K3pGk2AXwmw_RQe2tpzvlihg=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@sakyantchiangmai"
+  }
+}

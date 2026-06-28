@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-06-29",
+  "description": "Artists where exhaustive automated portrait research could not verify identity. Do not assign portraits until a curator confirms the correct person.",
+  "artists": [
+    {
+      "slug": "len-d",
+      "name": "Len D",
+      "tier": 2,
+      "reason": "No verified Spotify, RA, Discogs, or Beatport artist profile matches this catalog entry. Name collides with Len Faki, Lenny Dee, and other Len-* artists.",
+      "sourcesSearched": [
+        "spotify",
+        "musicbrainz",
+        "discogs",
+        "resident-advisor",
+        "beatport",
+        "wikimedia-commons"
+      ],
+      "catalogContext": {
+        "country": "Germany",
+        "city": "Frankfurt",
+        "labels": ["CLR"],
+        "genres": ["schranz", "hard-techno", "peak-time-techno"]
+      },
+      "confidence": "none",
+      "lastResearchedAt": "2026-06-29"
+    },
+    {
+      "slug": "debora-alessio",
+      "name": "Debora Alessio",
+      "tier": 2,
+      "reason": "No DJ or producer named Debora Alessio found in Milan hard-techno scene. Debora Savasto is a different artist (melodic/tech house) and must not be used.",
+      "sourcesSearched": [
+        "spotify",
+        "musicbrainz",
+        "discogs",
+        "resident-advisor",
+        "beatport",
+        "google-images-manual"
+      ],
+      "catalogContext": {
+        "country": "Italy",
+        "city": "Milan",
+        "genres": ["peak-time-techno", "hard-techno"]
+      },
+      "confidence": "none",
+      "lastResearchedAt": "2026-06-29"
+    },
+    {
+      "slug": "psyk32",
+      "name": "Psyk32",
+      "tier": 3,
+      "reason": "No verified official profile for Psyk32 (Paris). Psiko (Frenchcore) and Psyk (Spanish techno) are distinct artists and must not be conflated.",
+      "sourcesSearched": [
+        "spotify",
+        "musicbrainz",
+        "discogs",
+        "resident-advisor",
+        "beatport",
+        "soundcloud",
+        "instagram"
+      ],
+      "catalogContext": {
+        "country": "France",
+        "city": "Paris",
+        "genres": ["hard-techno", "industrial-techno"]
+      },
+      "confidence": "none",
+      "lastResearchedAt": "2026-06-29"
+    }
+  ]
+}

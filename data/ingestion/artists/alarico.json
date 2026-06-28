@@ -1,0 +1,23 @@
+{
+  "slug": "alarico",
+  "name": "Alarico",
+  "updatedAt": "2026-06-28T01:38:18.296Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:01.415Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCgv0lNj2bP4UMPFC-Q66pNw",
+    "channelTitle": "Alarico - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCgv0lNj2bP4UMPFC-Q66pNw",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCgv0lNj2bP4UMPFC-Q66pNw"
+  }
+}

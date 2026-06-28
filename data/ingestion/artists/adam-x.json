@@ -1,0 +1,44 @@
+{
+  "slug": "adam-x",
+  "name": "Adam X",
+  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:46.060Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "status": "ok"
+    },
+    "residentAdvisor": {
+      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCjidjWX76LR1g5yx18NSrLA",
+    "channelTitle": "Adamx",
+    "channelUrl": "https://www.youtube.com/@adamxyt",
+    "customUrl": "@adamxyt",
+    "thumbnailUrl": "https://yt3.ggpht.com/_bitUT_ftFtX7DN5AOB7jgEgNrF1p-9dkft51nKoYIRB6FFXG6mRKG5uoiTz-qFB3KmWqzjPCdE=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/adam-x.jpg",
+    "source": "resident-advisor",
+    "sourceUrl": "https://ra.co/dj/adamx"
+  },
+  "spotify": {
+    "artistId": "4puKiwP3DNIzEaxPCheUbj",
+    "name": "Adam X",
+    "url": "https://open.spotify.com/artist/4puKiwP3DNIzEaxPCheUbj",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/adam-x.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/adam-x.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

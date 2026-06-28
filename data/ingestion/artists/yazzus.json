@@ -1,0 +1,23 @@
+{
+  "slug": "yazzus",
+  "name": "Yazzus",
+  "updatedAt": "2026-06-28T01:38:18.311Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:22.297Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCrnKJan8mfvDpaISVIRVY1Q",
+    "channelTitle": "Yazzus - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCrnKJan8mfvDpaISVIRVY1Q",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/IuujE6JyTVznke4d2vHBTUwcE_gr6EJP-khzpoH3rburL5yVSYYw4tTcsBIRJLARGGYZnnNy6A=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/IuujE6JyTVznke4d2vHBTUwcE_gr6EJP-khzpoH3rburL5yVSYYw4tTcsBIRJLARGGYZnnNy6A=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCrnKJan8mfvDpaISVIRVY1Q"
+  }
+}

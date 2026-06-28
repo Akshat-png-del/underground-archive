@@ -1,0 +1,23 @@
+{
+  "slug": "vilchezz",
+  "name": "VILCHEZZ",
+  "updatedAt": "2026-06-28T01:38:18.314Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:26.595Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCfJkd-N35B11hFvslniLJOA",
+    "channelTitle": "Vilchezz - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCfJkd-N35B11hFvslniLJOA",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/BiVAS_5vIM6sHdTpauvLV6zDWImkSjpGQ-OqVyOWTNbtaZmmhlDk0Y7GpKsIv9ZZlij4kFnT=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/BiVAS_5vIM6sHdTpauvLV6zDWImkSjpGQ-OqVyOWTNbtaZmmhlDk0Y7GpKsIv9ZZlij4kFnT=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCfJkd-N35B11hFvslniLJOA"
+  }
+}

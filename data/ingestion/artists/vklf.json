@@ -1,0 +1,23 @@
+{
+  "slug": "vklf",
+  "name": "VKLF",
+  "updatedAt": "2026-06-28T01:38:18.317Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:30.320Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCR7DrV2e4iy_5YRzTf7l8Tg",
+    "channelTitle": "vklf",
+    "channelUrl": "https://www.youtube.com/@vklf",
+    "customUrl": "@vklf",
+    "thumbnailUrl": "https://yt3.ggpht.com/y821PYYlSo_UTye85qxC4NGarrq_lrhSqGvNCiRW_JXkMrWDx0AvBrVOdL0dpj6WsY7V8DhVGoE=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/y821PYYlSo_UTye85qxC4NGarrq_lrhSqGvNCiRW_JXkMrWDx0AvBrVOdL0dpj6WsY7V8DhVGoE=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@vklf"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "the-soft-moon",
+  "name": "The Soft Moon",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/40HeNm05FEAxGx8gUOV4my",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051745047df9c06ce685a46e1d37b",
+    "confidence": "high",
+    "matchedName": "The Soft Moon",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/40HeNm05FEAxGx8gUOV4my",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051745047df9c06ce685a46e1d37b",
+      "confidence": "high",
+      "matchedName": "The Soft Moon",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/the-soft-moon.jpg",
+  "downloadedAt": "2026-06-28T16:49:36.250Z"
+}

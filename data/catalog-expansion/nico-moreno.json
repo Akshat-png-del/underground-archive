@@ -1,0 +1,56 @@
+{
+  "slug": "nico-moreno",
+  "tracks": [
+    {
+      "title": "Overdose",
+      "spotifyTrackId": "0N0Tu1hKIoHZPEZ9vHCYLh",
+      "year": 2024,
+      "duration": "5:30"
+    },
+    {
+      "title": "2 Be High",
+      "spotifyTrackId": "2bmy7s8VuHTyWQB2cbansD",
+      "year": 2023,
+      "duration": "5:45"
+    },
+    {
+      "title": "See Me Coming",
+      "spotifyTrackId": "2h7C1TrUOKCqI5DTM3XW3m",
+      "year": 2024,
+      "duration": "5:15"
+    },
+    {
+      "title": "You Make Me Horny",
+      "spotifyTrackId": "3aTOR9GP22TN2YVvmKbk8e",
+      "year": 2023,
+      "duration": "5:00"
+    },
+    {
+      "title": "Dance In The Light",
+      "spotifyTrackId": "7hFfVcwHyNWVTbLCdT4wnz",
+      "year": 2024,
+      "duration": "5:20"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Boiler Room x Teletech Festival 2023",
+      "venue": "Teletech",
+      "year": 2023,
+      "youtubeId": "6nhPuJIjnWI"
+    },
+    {
+      "title": "Nico Moreno | Boiler Room: Denver",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "UyqBSncE7LQ"
+    },
+    {
+      "title": "NICO MORENO @ \"BOILER ROOM\"",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "H9InjufBxdQ"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:34:19.947Z"
+}

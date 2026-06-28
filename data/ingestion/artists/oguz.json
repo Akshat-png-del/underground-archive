@@ -1,0 +1,23 @@
+{
+  "slug": "oguz",
+  "name": "Oguz",
+  "updatedAt": "2026-06-28T01:38:18.316Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:29.019Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCH-v9YXOWT6DR6C7PcEqGtQ",
+    "channelTitle": "Oğuz Yenihayat",
+    "channelUrl": "https://www.youtube.com/@oguz.yenihayat",
+    "customUrl": "@oguz.yenihayat",
+    "thumbnailUrl": "https://yt3.ggpht.com/IIOEFUi8pxQYvuvrx70GW1zQxfAZXV3MXYiFVeyCnZnqWji9--SR8t_D2M2lVgNB-PwDAFFrvg=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/IIOEFUi8pxQYvuvrx70GW1zQxfAZXV3MXYiFVeyCnZnqWji9--SR8t_D2M2lVgNB-PwDAFFrvg=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@oguz.yenihayat"
+  }
+}

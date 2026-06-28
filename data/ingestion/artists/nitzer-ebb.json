@@ -1,0 +1,23 @@
+{
+  "slug": "nitzer-ebb",
+  "name": "Nitzer Ebb",
+  "updatedAt": "2026-06-28T01:38:18.325Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:42.018Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCU6QcFiMefrSApwQrdBnAPQ",
+    "channelTitle": "Nitzer Ebb - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCU6QcFiMefrSApwQrdBnAPQ",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/y9z_Py6dG_b3Nn9X9DEt7OubNs5qN6Ts-Qb-9EQAqImuVU1bbD2zzVr5v92ur5P9TXEiAxlKbQ=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/y9z_Py6dG_b3Nn9X9DEt7OubNs5qN6Ts-Qb-9EQAqImuVU1bbD2zzVr5v92ur5P9TXEiAxlKbQ=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCU6QcFiMefrSApwQrdBnAPQ"
+  }
+}

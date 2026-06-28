@@ -1,0 +1,27 @@
+{
+  "slug": "norbak",
+  "name": "Nørbak",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/0TwXWZcwzGVVOa1Vdu3UEj",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e79c313239d9a3df8c9aabac",
+    "confidence": "high",
+    "matchedName": "Nørbak",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/0TwXWZcwzGVVOa1Vdu3UEj",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e79c313239d9a3df8c9aabac",
+      "confidence": "high",
+      "matchedName": "Nørbak",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/norbak.jpg",
+  "downloadedAt": "2026-06-28T16:50:18.530Z"
+}

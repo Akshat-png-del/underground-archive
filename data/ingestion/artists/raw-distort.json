@@ -1,0 +1,23 @@
+{
+  "slug": "raw-distort",
+  "name": "Raw Distort",
+  "updatedAt": "2026-06-28T01:38:18.319Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:35.251Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCxYwJltuOLwM_12BlWOu7Fg",
+    "channelTitle": "RAW SOUND DISTORTION",
+    "channelUrl": "https://www.youtube.com/@raw.sound.distortion-musicai",
+    "customUrl": "@raw.sound.distortion-musicai",
+    "thumbnailUrl": "https://yt3.ggpht.com/jq-c0uHUb_QcMIwKkZV-6qORQ1kJmOWQYbWZdgIEXUwpLLJdFXdC4mh2sXJx0SaF0o1rHvm2KQ=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/jq-c0uHUb_QcMIwKkZV-6qORQ1kJmOWQYbWZdgIEXUwpLLJdFXdC4mh2sXJx0SaF0o1rHvm2KQ=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@raw.sound.distortion-musicai"
+  }
+}

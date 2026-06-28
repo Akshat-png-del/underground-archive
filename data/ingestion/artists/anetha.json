@@ -1,0 +1,40 @@
+{
+  "slug": "anetha",
+  "name": "Anetha",
+  "updatedAt": "2026-06-28T19:18:03.870Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:18:03.870Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:39.120Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "7sJ3ngSMvvXGdVLnODPqXa",
+    "name": "Anetha",
+    "url": "https://open.spotify.com/artist/7sJ3ngSMvvXGdVLnODPqXa",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7sJ3ngSMvvXGdVLnODPqXa"
+  },
+  "youtube": {
+    "channelId": "UCWEWKB6t3Ki7i9Da8K32SSg",
+    "channelTitle": "Anetha - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCWEWKB6t3Ki7i9Da8K32SSg",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/ruPnCFcaY2yzpXXcY6P4opCpuLAlD44Uo7tsmE7ay6rNytFSr9e51rllzgS3cG_2_AoNuc-8=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

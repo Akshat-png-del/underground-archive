@@ -1,0 +1,23 @@
+{
+  "slug": "funk-tribu",
+  "name": "Funk Tribu",
+  "updatedAt": "2026-06-28T01:38:11.093Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:54.365Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCHHbn0fgp2P2XkC9W1mu6iQ",
+    "channelTitle": "Funk Tribu - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCHHbn0fgp2P2XkC9W1mu6iQ",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCHHbn0fgp2P2XkC9W1mu6iQ"
+  }
+}

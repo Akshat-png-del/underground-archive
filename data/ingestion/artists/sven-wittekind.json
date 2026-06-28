@@ -1,0 +1,40 @@
+{
+  "slug": "sven-wittekind",
+  "name": "Sven Wittekind",
+  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:41.023Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCC_87W7J134_IC3iT02gnkw",
+    "channelTitle": "Sven Wittekind",
+    "channelUrl": "https://www.youtube.com/@wittekindsven",
+    "customUrl": "@wittekindsven",
+    "thumbnailUrl": "https://yt3.ggpht.com/cHKXSG0_lIkG9q_T8nYLXjmxjDRyg7NGqTGujtGr_ZqiJpLV-HWzMkf6Al8oK7dNZm4WF2G4tq8=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/sven-wittekind.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1Xoao0EbCROD5MzC3iyyAD"
+  },
+  "spotify": {
+    "artistId": "1Xoao0EbCROD5MzC3iyyAD",
+    "name": "Sven Wittekind",
+    "url": "https://open.spotify.com/artist/1Xoao0EbCROD5MzC3iyyAD",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/sven-wittekind.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/sven-wittekind.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

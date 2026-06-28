@@ -1,0 +1,23 @@
+{
+  "slug": "klonne",
+  "name": "Klonne",
+  "updatedAt": "2026-06-28T01:38:18.318Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:33.438Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCeLp8LEGiNb28FWmqrAt1dA",
+    "channelTitle": "kloNNe",
+    "channelUrl": "https://www.youtube.com/@klonne1111",
+    "customUrl": "@klonne1111",
+    "thumbnailUrl": "https://yt3.ggpht.com/eENRyTs-OzoxBDpxrLbLomvQIHNyMa8ipRVC_1CoZ1ys02e37qhCU7Dsyk5ZYwHv9k-x1NLkhA=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/eENRyTs-OzoxBDpxrLbLomvQIHNyMa8ipRVC_1CoZ1ys02e37qhCU7Dsyk5ZYwHv9k-x1NLkhA=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@klonne1111"
+  }
+}

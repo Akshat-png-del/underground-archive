@@ -1,0 +1,74 @@
+{
+  "slug": "kobosil",
+  "tracks": [
+    {
+      "title": "BR3ATH3",
+      "spotifyTrackId": "55mBen1aWkKJC9W3Mzjo5J",
+      "year": 2024,
+      "duration": "5:30"
+    },
+    {
+      "title": "300G",
+      "spotifyTrackId": "1bEEcI2bUAmKsFom25RLhC",
+      "year": 2024,
+      "duration": "5:45"
+    },
+    {
+      "title": "Rigid - Kobosil 44 Rush Mix",
+      "spotifyTrackId": "2IxG8LCarP7r1HQtCwBLhU",
+      "year": 2023,
+      "duration": "5:10"
+    },
+    {
+      "title": "You Need The Drugs - Kobosil Kartell Mix",
+      "spotifyTrackId": "4z4iPMgajQ2ZTQWpFyG6kE",
+      "year": 2023,
+      "duration": "6:00"
+    },
+    {
+      "title": "Cryptic - Kobosil Hart Mix",
+      "spotifyTrackId": "7fXK4nSADxslMaAHshrkZI",
+      "year": 2022,
+      "duration": "5:10"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Boiler Room Berlin 5th Birthday",
+      "venue": "Boiler Room",
+      "year": 2016,
+      "youtubeId": "C93Fb4PC4fo"
+    },
+    {
+      "title": "Awakenings Festival 2017 — Area X",
+      "venue": "Awakenings",
+      "year": 2017,
+      "youtubeId": "1V_Yxqx5_BM"
+    },
+    {
+      "title": "Rikhter [live] at Intercell x Kobosil pres. R - Label Group",
+      "venue": "Intercell",
+      "year": 2026,
+      "youtubeId": "c_1gJiVS7rs"
+    },
+    {
+      "title": "Kobosil play at Intercell, Ade 💣🔥",
+      "venue": "Intercell",
+      "year": 2026,
+      "youtubeId": "28--TqRW_K8"
+    },
+    {
+      "title": "Kobosil @ Awakenings 2024 CRAZY VISUALS",
+      "venue": "Awakenings",
+      "year": 2024,
+      "youtubeId": "HMsarxyA64c"
+    },
+    {
+      "title": "Kobosil at Awakenings Festival",
+      "venue": "Awakenings",
+      "year": 2026,
+      "youtubeId": "U9LSmLTVUxk"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:31.470Z"
+}

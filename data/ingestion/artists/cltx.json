@@ -1,0 +1,23 @@
+{
+  "slug": "cltx",
+  "name": "CLTX",
+  "updatedAt": "2026-06-28T01:38:18.303Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:13.237Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCpWTMY_l1EOK68o2NFWdEdQ",
+    "channelTitle": "CLTX - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCpWTMY_l1EOK68o2NFWdEdQ",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/KDCSuvgV8OBGa6GA54Dnk6OqYeR-Gq_f9aufOgYSF47ZkEVF_k7TWiaM4cPOOmSM2MGswaEt=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/KDCSuvgV8OBGa6GA54Dnk6OqYeR-Gq_f9aufOgYSF47ZkEVF_k7TWiaM4cPOOmSM2MGswaEt=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCpWTMY_l1EOK68o2NFWdEdQ"
+  }
+}

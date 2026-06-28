@@ -1,0 +1,40 @@
+{
+  "slug": "ancient-methods",
+  "name": "Ancient Methods",
+  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:44.800Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCblHka0brGiAjCe-JQOpIcg",
+    "channelTitle": "Ancient Methods - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCblHka0brGiAjCe-JQOpIcg",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/h0AIoy-YC-05ZcC6xLeqD9KJs3tmBUaXLuTlNtq20BBIQy_8EQ3DEJ6t7GFpqIuYJuEp3avO=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/ancient-methods.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2kWRgcJHbgSEAIgewkJ1g2"
+  },
+  "spotify": {
+    "artistId": "2kWRgcJHbgSEAIgewkJ1g2",
+    "name": "Ancient Methods",
+    "url": "https://open.spotify.com/artist/2kWRgcJHbgSEAIgewkJ1g2",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/ancient-methods.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/ancient-methods.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

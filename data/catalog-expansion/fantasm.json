@@ -1,0 +1,86 @@
+{
+  "slug": "fantasm",
+  "tracks": [
+    {
+      "title": "Shake That Bunda",
+      "spotifyTrackId": "2zVfPMOeQsZEd3F1dt4SPJ",
+      "year": 2026,
+      "duration": "2:40"
+    },
+    {
+      "title": "Buttercup With An Axe",
+      "spotifyTrackId": "4aJc3SaidQLKDSu7GII8gt",
+      "year": 2024,
+      "duration": "3:04"
+    },
+    {
+      "title": "SCANDAL ANTHEM",
+      "spotifyTrackId": "08DchrgnFXBD6H142l4tvY",
+      "year": 2025,
+      "duration": "4:04"
+    },
+    {
+      "title": "BABY BOY",
+      "spotifyTrackId": "73ulY9SFb91K2QQSMv9DIt",
+      "year": 2026,
+      "duration": "3:41"
+    },
+    {
+      "title": "You Like This B*tch - Choke Mix",
+      "spotifyTrackId": "7fQJA4Amp6mcN7ftLmSgVc",
+      "year": 2024,
+      "duration": "4:24"
+    },
+    {
+      "title": "RED SPIDER LILY",
+      "spotifyTrackId": "7tjHeW8VLUoGPOp4L2w14c",
+      "year": 2024,
+      "duration": "4:48"
+    },
+    {
+      "title": "Rebels",
+      "spotifyTrackId": "5Z6rUz9YZepgz4ArMYpqUY",
+      "year": 2024,
+      "duration": "4:45"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Gotec Club — 2h Hard Techno Set",
+      "venue": "Gotec Club",
+      "year": 2025,
+      "youtubeId": "NQNn7HGfMSk"
+    },
+    {
+      "title": "Rotterdam Rave Festival 2025",
+      "venue": "Rotterdam Rave",
+      "year": 2025,
+      "youtubeId": "GLMUDJGxwJc"
+    },
+    {
+      "title": "Verknipt ArenA Amsterdam",
+      "venue": "Verknipt",
+      "year": 2025,
+      "youtubeId": "mQY5D0lNuJ4"
+    },
+    {
+      "title": "DYEN b2b FANTASM @ Verknipt ArenA",
+      "venue": "Verknipt",
+      "year": 2025,
+      "youtubeId": "1_P5LzX5vwE"
+    },
+    {
+      "title": "Rotterdam Rave — All Night Long",
+      "venue": "Rotterdam Rave",
+      "year": 2025,
+      "youtubeId": "20s7ynn0izo"
+    },
+    {
+      "title": "Unreal Germany",
+      "venue": "Unreal",
+      "year": 2025,
+      "youtubeId": "-r1jD4jnhA0"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:33:00.573Z"
+}

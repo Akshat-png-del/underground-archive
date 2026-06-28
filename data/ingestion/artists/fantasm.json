@@ -1,0 +1,40 @@
+{
+  "slug": "fantasm",
+  "name": "Fantasm",
+  "updatedAt": "2026-06-28T19:19:32.656Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:19:32.656Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:56.855Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "0copVQkrcbfv5CzOyXuLKy",
+    "name": "Fantasm",
+    "url": "https://open.spotify.com/artist/0copVQkrcbfv5CzOyXuLKy",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0copVQkrcbfv5CzOyXuLKy"
+  },
+  "youtube": {
+    "channelId": "UC1Imo6FpXFeaBjH6_wj9r2g",
+    "channelTitle": "Fantasm",
+    "channelUrl": "https://www.youtube.com/@fantasm_techno",
+    "customUrl": "@fantasm_techno",
+    "thumbnailUrl": "https://yt3.ggpht.com/_853LpAhbO2CW_dJZxSpGx_COa_yeFi1BUlthmktV3GTDx77ZX6t5LbgJ8r3N0LjRZ9aptdXhg=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

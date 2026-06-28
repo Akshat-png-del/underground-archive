@@ -1,0 +1,56 @@
+{
+  "slug": "anetha",
+  "tracks": [
+    {
+      "title": "Voicetrack Generation",
+      "spotifyTrackId": "41gmO7kWreWhpNxlHWHODa",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Sorry For Being So Sexy",
+      "spotifyTrackId": "1waZfiVyVvpQ8IxWED3FSA",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Free Britney",
+      "spotifyTrackId": "4cZXujsgwcqot9oMpfa0no",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "On / Offline",
+      "spotifyTrackId": "628qJyGUO6nlfkax4GcqM7",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "One More Cartoon, Please",
+      "spotifyTrackId": "3EKREjUxGtH4wENykFPJ4V",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Anetha | Boiler Room Festival London 2021 | Possession",
+      "venue": "Boiler Room",
+      "year": 2021,
+      "youtubeId": "qVRj8-t4PwI"
+    },
+    {
+      "title": "Anetha | Boiler Room Barcelona: Mama Told Ya",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "-rEfUwsBKFI"
+    },
+    {
+      "title": "Anetha - Stone Techno 2023 - ARTE Concert",
+      "venue": "Stone Techno",
+      "year": 2023,
+      "youtubeId": "kVMqMlmZmLQ"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:55.680Z"
+}

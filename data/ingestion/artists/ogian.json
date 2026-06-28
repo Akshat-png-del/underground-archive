@@ -1,0 +1,23 @@
+{
+  "slug": "ogian",
+  "name": "Ogian",
+  "updatedAt": "2026-06-28T01:38:18.300Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:07.063Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCJK8G-KxyAE-iOQAGBfp5Dw",
+    "channelTitle": "OGian",
+    "channelUrl": "https://www.youtube.com/@ogian-l2w",
+    "customUrl": "@ogian-l2w",
+    "thumbnailUrl": "https://yt3.ggpht.com/mjryFJ6LWte109X785zTKHQTxSWPjhr_zuCN2FFQUofs8i0cfFQThuIpFw3sKQoIdENSZyo3=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/mjryFJ6LWte109X785zTKHQTxSWPjhr_zuCN2FFQUofs8i0cfFQThuIpFw3sKQoIdENSZyo3=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@ogian-l2w"
+  }
+}

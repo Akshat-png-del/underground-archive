@@ -1,0 +1,140 @@
+# Artist image authenticity audit
+Generated: 2026-06-28T01:39:15.180Z
+
+## Summary
+- Artists: 150
+- Verified photography: 0
+- Editorial / genre portraits (display-ready): 150
+- Suspicious assignments: 0
+- Broken URLs: 0
+- Duplicate verified URLs: 0
+- Visual coverage: 100%
+
+## Verified images (0)
+
+## Editorial portraits (unverified) (150)
+- Sara Landry (sara-landry) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f
+  - Source: spotify
+- I Hate Models (i-hate-models) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b
+  - Source: spotify
+- Kobosil (kobosil) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c
+  - Source: spotify
+- VTSS (vtss) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539
+  - Source: spotify
+- Regal (regal) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683
+  - Source: spotify
+- Boy Harsher (boy-harsher) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6
+  - Source: spotify
+- Amelie Lens (amelie-lens) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174033a4201ccdb09df6f7168ea
+  - Source: spotify
+- Charlotte de Witte (charlotte-de-witte) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05
+  - Source: spotify
+- Hadone (hadone) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1
+  - Source: spotify
+- Anetha (anetha) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2
+  - Source: spotify
+- Chris Liebing (chris-liebing) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de
+  - Source: spotify
+- DJ Rush (dj-rush) [Tier 1]
+  - URL: https://yt3.ggpht.com/ZdVzt68dKyxHHa10WrBKP5L8MJSSqfmyrV07IvtFcSqtmFNaC0hWrDQQpaPSuj3JMyfr1DWeJ1c=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Sven Wittekind (sven-wittekind) [Tier 1]
+  - URL: https://yt3.ggpht.com/cHKXSG0_lIkG9q_T8nYLXjmxjDRyg7NGqTGujtGr_ZqiJpLV-HWzMkf6Al8oK7dNZm4WF2G4tq8=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Robert Natus (robert-natus) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614
+  - Source: spotify
+- Arkus P (arkus-p) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e
+  - Source: spotify
+- Boris S. (boris-s) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de
+  - Source: spotify
+- Paula Temple (paula-temple) [Tier 1]
+  - URL: https://yt3.ggpht.com/qT2WNk8GCQGTFu8jwYRwEFR4cDn10Mct7DXbjCsEcda8lPM0HSxCpJLDCZsGD80zbol0jHWJcQ=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Perc (perc) [Tier 1]
+  - URL: https://yt3.ggpht.com/uOeSB5WL-F9UYO2OyU-JC0mGqr-BZGznpNcySeOJxh2w6Pbx2qqRti2DFWLTRamZSBNoKVZS7Q=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Ancient Methods (ancient-methods) [Tier 1]
+  - URL: https://yt3.ggpht.com/h0AIoy-YC-05ZcC6xLeqD9KJs3tmBUaXLuTlNtq20BBIQy_8EQ3DEJ6t7GFpqIuYJuEp3avO=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Surgeon (surgeon) [Tier 1]
+  - URL: https://yt3.ggpht.com/Z1hJd3n1WqJZkynEU4oBhu9cwtzp9y34wfAR8svQA7JbzJB6YmLsJq_AO-avGzrm9IW7FtvtDQ=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Adam X (adam-x) [Tier 1]
+  - URL: https://yt3.ggpht.com/_bitUT_ftFtX7DN5AOB7jgEgNrF1p-9dkft51nKoYIRB6FFXG6mRKG5uoiTz-qFB3KmWqzjPCdE=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Phase Fatale (phase-fatale) [Tier 1]
+  - URL: https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Helena Hauff (helena-hauff) [Tier 1]
+  - URL: https://yt3.ggpht.com/CcYZyoEhoahY6EHFT7yi8SDgkIQwO9PIo2Mh3HZX-zwrjggRex9bvKGbnpH_v-TqCe2U4-8e=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Rebekah (rebekah) [Tier 1]
+  - URL: https://yt3.ggpht.com/2jr7AUI_bKQva-dzlNEfRwo5uf3xu6swR40E9o7XPg-OamFm879_HPVuwCmV8y_olxLlKXSxYQ=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Ghost in the Machine (ghost-in-the-machine) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402
+  - Source: spotify
+- Codex Empire (codex-empire) [Tier 1]
+  - URL: https://yt3.ggpht.com/I5RAfzqFOqLsMz7RZx977EDTPFW7P_5OFS3KoOUMU9OGQZADKG-KKLa6qaRAQiC-IU5gCwEf=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Orphx (orphx) [Tier 1]
+  - URL: https://yt3.ggpht.com/0W0APBqfHdCKUL1oIe1HsaEKqTSg21EM6Gdq-GVTVkysM15UCA3lnHiUY2DdO_1ZSga0lnkBOg=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- LAVEN (laven) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a
+  - Source: spotify
+- Klangkuenstler (klangkuenstler) [Tier 1]
+  - URL: https://yt3.ggpht.com/WPnzwBQ8UQYxLPxWHmdcN1Me6UO9rpn7zHt3q463AU1vb4mjVTtOM2lLGQz6tXXYwiWWZMxDAqE=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- DYEN (dyen) [Tier 1]
+  - URL: https://yt3.ggpht.com/Ck5B3BDio8eOFwqtNY5d0smi1M2aa914q1lpzNFMsweCWSD24-58yO01z_-CV6xaYhNfPlc_=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Trym (trym) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1
+  - Source: spotify
+- Charlie Sparks (charlie-sparks) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174a7d68de3c6f64cf109d20bd8
+  - Source: spotify
+- Parfait (parfait) [Tier 1]
+  - URL: https://yt3.ggpht.com/IfKFvKLVhv7qUkC1OC0AkenYD3JjV8EYsPMAiyvE2qM5RwELdl8owNjCw2R0phkju-Lozjr0=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Funk Tribu (funk-tribu) [Tier 1]
+  - URL: https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Holy Priest (holy-priest) [Tier 1]
+  - URL: https://yt3.ggpht.com/eK148TLK2AefCDJdwGBVXBDCvqOGTYoYwyeb4wACIU2f0bmwdYXZEk_yOXbr9E_4aLR7XNwFIA=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Vendex (vendex) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69
+  - Source: spotify
+- Nikolina (nikolina) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2
+  - Source: spotify
+- Fantasm (fantasm) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd
+  - Source: spotify
+- Alignment (alignment) [Tier 1]
+  - URL: https://yt3.ggpht.com/q7WiBQNEx2-aoy35A6dX1SjLjqyPSkJQ3sekognOzvi42Qv7r-21Lq-b4aL5EoYuG2XJ9e9l=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- 999999999 (999999999) [Tier 1]
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96
+  - Source: spotify
+  … and 110 more
+
+## Suspicious assignments (0)
+
+## Broken URLs (0)

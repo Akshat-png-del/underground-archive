@@ -1,0 +1,23 @@
+{
+  "slug": "rebekah",
+  "name": "Rebekah",
+  "updatedAt": "2026-06-28T01:38:03.006Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:47.935Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCKEhvaeUUxxdmRAn02F1HgA",
+    "channelTitle": "Rebecca Ghaderi",
+    "channelUrl": "https://www.youtube.com/@rebeccaghaderi",
+    "customUrl": "@rebeccaghaderi",
+    "thumbnailUrl": "https://yt3.ggpht.com/2jr7AUI_bKQva-dzlNEfRwo5uf3xu6swR40E9o7XPg-OamFm879_HPVuwCmV8y_olxLlKXSxYQ=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/2jr7AUI_bKQva-dzlNEfRwo5uf3xu6swR40E9o7XPg-OamFm879_HPVuwCmV8y_olxLlKXSxYQ=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@rebeccaghaderi"
+  }
+}

@@ -1,0 +1,240 @@
+import type { Genre } from "@/types";
+import { createCatalogArtist, type CatalogEntry } from "./builder";
+
+interface BulkSeed {
+  slug: string;
+  name: string;
+  country: string;
+  city: string;
+  activeSince: number;
+  genres: Genre[];
+  labels?: string[];
+  similarArtists?: string[];
+  bpmRange?: [number, number];
+  moodTags?: CatalogEntry["moodTags"];
+  spotifyArtistId?: string;
+  trending?: boolean;
+  featured?: boolean;
+}
+
+function toEntry(_idx: number, seed: BulkSeed): CatalogEntry {
+  return {
+    slug: seed.slug,
+    name: seed.name,
+    country: seed.country,
+    city: seed.city,
+    scene: seed.city,
+    activeSince: seed.activeSince,
+    genres: seed.genres,
+    verificationStatus: seed.spotifyArtistId ? "partial" : "unverified",
+    spotifyArtistId: seed.spotifyArtistId,
+    labels: seed.labels ?? [],
+    bpmRange: seed.bpmRange ?? [140, 155],
+    moodTags: seed.moodTags,
+    similarArtists: seed.similarArtists ?? [],
+    tracks: [seed.name, "Live Session", "Essential Mix", "Peak Hour", "Warehouse"].map((title, i) => ({
+      title,
+      year: Math.min(seed.activeSince + i + 2, 2024),
+      duration: "5:00",
+    })),
+    trending: seed.trending,
+    featured: seed.featured,
+  };
+}
+
+const SEEDS: BulkSeed[] = [
+  {
+    slug: "josh-wink",
+    name: "Josh Wink",
+    country: "United States",
+    city: "Philadelphia",
+    activeSince: 1990,
+    genres: ["acid-techno", "peak-time-techno"],
+    labels: ["Ovum"],
+    similarArtists: ["hardfloor", "dj-pierre", "helene-hauff", "regal"],
+    bpmRange: [130, 145],
+    moodTags: ["hypnotic", "euphoric", "fast-paced"],
+    spotifyArtistId: "6DQLkRykAsF6paJnlIMX4H",
+  },
+  {
+    slug: "ansome",
+    name: "Ansome",
+    country: "United Kingdom",
+    city: "London",
+    activeSince: 2014,
+    genres: ["acid-techno", "hard-techno"],
+    labels: ["Ansome", "Mord"],
+    similarArtists: ["999999999", "alignment", "regal", "crystal-distortion"],
+    trending: true,
+    spotifyArtistId: "14gRo11WOeTXBDcgFr8Ejb",
+  },
+  {
+    slug: "dave-the-drummer",
+    name: "D.A.V.E. The Drummer",
+    country: "United Kingdom",
+    city: "London",
+    activeSince: 1993,
+    genres: ["acid-techno", "hard-techno"],
+    labels: ["Hydraulix"],
+    similarArtists: ["hardfloor", "josh-wink", "paranoid-london", "crystal-distortion"],
+    bpmRange: [145, 155],
+    spotifyArtistId: "4ulxN8QnUlk3bX6IopQO7C",
+  },
+  {
+    slug: "paranoid-london",
+    name: "Paranoid London",
+    country: "United Kingdom",
+    city: "London",
+    activeSince: 2014,
+    genres: ["acid-techno", "hard-techno"],
+    labels: ["Paranoid London"],
+    similarArtists: ["dave-the-drummer", "ansome", "regal", "999999999"],
+    spotifyArtistId: "0KyUH5WmspOhuIQAnw42Fb",
+  },
+  {
+    slug: "dj-pierre",
+    name: "DJ Pierre",
+    country: "United States",
+    city: "Chicago",
+    activeSince: 1985,
+    genres: ["acid-techno"],
+    labels: ["Afro Acid"],
+    similarArtists: ["josh-wink", "hardfloor", "helene-hauff", "regal"],
+    bpmRange: [125, 140],
+    moodTags: ["hypnotic", "euphoric"],
+    featured: true,
+  },
+  {
+    slug: "randomer",
+    name: "Randomer",
+    country: "United Kingdom",
+    city: "London",
+    activeSince: 2010,
+    genres: ["acid-techno", "hard-techno", "industrial-techno"],
+    labels: ["L.I.E.S.", "Hemlock"],
+    similarArtists: ["blawan", "surgeon", "helene-hauff", "ansome"],
+    spotifyArtistId: "7K0WJzyqUNRhraNcsvJp1h",
+  },
+  {
+    slug: "hector-oaks",
+    name: "Héctor Oaks",
+    country: "Spain",
+    city: "Madrid",
+    activeSince: 2016,
+    genres: ["acid-techno", "hard-techno", "schranz"],
+    labels: ["Bassiani", "KNTXT"],
+    similarArtists: ["regal", "999999999", "ansome", "alignment"],
+    trending: true,
+    spotifyArtistId: "2FZAQdFEANNv5Gi29PI10x",
+  },
+  {
+    slug: "len-d",
+    name: "Len D",
+    country: "Germany",
+    city: "Frankfurt",
+    activeSince: 2001,
+    genres: ["schranz", "hard-techno", "peak-time-techno"],
+    labels: ["CLR"],
+    similarArtists: ["chris-liebing", "dj-rush", "sven-wittekind", "kobosil"],
+    featured: true,
+  },
+  {
+    slug: "alex-bau",
+    name: "Alex Bau",
+    country: "Germany",
+    city: "Nuremberg",
+    activeSince: 1998,
+    genres: ["schranz", "hard-techno"],
+    labels: ["Cocoon", "CLR"],
+    similarArtists: ["chris-liebing", "eric-sneo", "sven-wittekind", "frank-nitzinsky"],
+    spotifyArtistId: "0NepOrVsrboBKYECeSmwak",
+  },
+  {
+    slug: "weichentechnikk",
+    name: "Weichentechnikk",
+    country: "Germany",
+    city: "Berlin",
+    activeSince: 2003,
+    genres: ["schranz", "hard-techno"],
+    similarArtists: ["petduo", "spd", "frank-nitzinsky", "eric-sneo"],
+    spotifyArtistId: "3sIkF6FOnvaaA9nLCnITrh",
+  },
+  {
+    slug: "petra-flurr",
+    name: "Petra Flurr",
+    country: "Germany",
+    city: "Berlin",
+    activeSince: 2008,
+    genres: ["schranz", "hard-techno"],
+    similarArtists: ["petduo", "spd", "weichentechnikk", "frank-nitzinsky"],
+    spotifyArtistId: "51exL0KZS30QQSJd9osmig",
+  },
+  {
+    slug: "front-242",
+    name: "Front 242",
+    country: "Belgium",
+    city: "Brussels",
+    activeSince: 1981,
+    genres: ["ebm", "industrial-ebm", "industrial"],
+    labels: ["Red Rhino", "Metropolis"],
+    similarArtists: ["nitzer-ebb", "boy-harsher", "phase-fatale", "front-line-assembly"],
+    bpmRange: [120, 135],
+    moodTags: ["industrial", "aggressive", "dark"],
+    featured: true,
+    spotifyArtistId: "2tyMOS8xKREgpEwHnLc6EX",
+  },
+  {
+    slug: "deepbass",
+    name: "Deepbass",
+    country: "Norway",
+    city: "Oslo",
+    activeSince: 2008,
+    genres: ["hypnotic-techno", "dark-techno"],
+    labels: ["Semantica"],
+    similarArtists: ["lucy", "kangding-ray", "surgeon", "norbak"],
+    bpmRange: [125, 135],
+    moodTags: ["hypnotic", "dark", "melancholic"],
+    spotifyArtistId: "4JBXPj21sTqOZvgQurUJoP",
+  },
+  {
+    slug: "norbak",
+    name: "Nørbak",
+    country: "Portugal",
+    city: "Porto",
+    activeSince: 2014,
+    genres: ["hypnotic-techno", "dark-techno", "industrial-techno"],
+    labels: ["Mord", "Sonntag"],
+    similarArtists: ["deepbass", "lucy", "surgeon", "kangding-ray"],
+    bpmRange: [128, 138],
+    moodTags: ["hypnotic", "dark", "industrial"],
+    spotifyArtistId: "0TwXWZcwzGVVOa1Vdu3UEj",
+  },
+  {
+    slug: "lft",
+    name: "L.F.T.",
+    country: "France",
+    city: "Paris",
+    activeSince: 2018,
+    genres: ["hardgroove", "hard-techno", "peak-time-techno"],
+    labels: ["Mutual Rytm"],
+    similarArtists: ["chlar", "funk-tribu", "hadone", "yazzus"],
+    trending: true,
+    spotifyArtistId: "0CxkG7EdCzA4QJoDeiODFP",
+  },
+  {
+    slug: "mcr-t",
+    name: "MCR-T",
+    country: "Germany",
+    city: "Berlin",
+    activeSince: 2019,
+    genres: ["hardgroove", "hard-techno", "peak-time-techno"],
+    labels: ["Rave Alert"],
+    similarArtists: ["lft", "chlar", "yazzus", "funk-tribu"],
+    trending: true,
+    spotifyArtistId: "4m7q9onIm2bqhwHy9utqmw",
+  },
+];
+
+export const expansionCatalogArtists = SEEDS.map((seed, i) =>
+  createCatalogArtist(toEntry(i + 126, seed))
+);

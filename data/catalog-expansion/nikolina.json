@@ -1,0 +1,50 @@
+{
+  "slug": "nikolina",
+  "tracks": [
+    {
+      "title": "No More Lies",
+      "spotifyTrackId": "7KkCp4bClCsnrdqBLhCUFg",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Dizzy",
+      "spotifyTrackId": "0AWic9aw9jUqDq4cwJb0fy",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Nikolina | Boiler Room x Teletech: London",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "BZPONFOlNoQ"
+    },
+    {
+      "title": "NIKOLINA | Main Floor - Gotec Club | 1 1/2H Schranz Set",
+      "venue": "Gotec Club",
+      "year": 2026,
+      "youtubeId": "u5QGNgeh_dM"
+    },
+    {
+      "title": "TBA - Nikolina | HÖR - September 11 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "6gRXToZhO1A"
+    },
+    {
+      "title": "Nikolina at Boiler Room x Teletech: London",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "m_H0u8eCJow"
+    },
+    {
+      "title": "Nikolina play at Teletech 🔥💣",
+      "venue": "Teletech",
+      "year": 2026,
+      "youtubeId": "CLfqWu7Aics"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:32:57.203Z"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "boris-s",
+  "name": "Boris S.",
+  "updatedAt": "2026-06-28T19:18:23.540Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:18:23.540Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:42.916Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "21444lX8gpmOX36icLmbFI",
+    "name": "Boris S.",
+    "url": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "imageUrls": [
+      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+  },
+  "youtube": {
+    "channelId": "UConj5z_OOR-6vx8ynZ-DfpA",
+    "channelTitle": "Boris S. - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UConj5z_OOR-6vx8ynZ-DfpA",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/nuy8Gz_FEVT6bBYCA0o02aO0QuhE34H7iH0xiBIZGmPDmTzly2w1XhmFG3hNiafCCtcuAw_LCw=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

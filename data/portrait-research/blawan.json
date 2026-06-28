@@ -1,0 +1,27 @@
+{
+  "slug": "blawan",
+  "name": "Blawan",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/64kN9EkSTHYhda2FupL0KI",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517457e2509b54b2d8273fecdeac",
+    "confidence": "high",
+    "matchedName": "Blawan",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/64kN9EkSTHYhda2FupL0KI",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517457e2509b54b2d8273fecdeac",
+      "confidence": "high",
+      "matchedName": "Blawan",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/blawan.jpg",
+  "downloadedAt": "2026-06-28T16:49:40.138Z"
+}

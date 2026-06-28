@@ -1,0 +1,23 @@
+{
+  "slug": "igor-r",
+  "name": "Igor R",
+  "updatedAt": "2026-06-28T01:38:18.319Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:34.651Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCSVyLAIAJ1uR3hxbAXCnU3A",
+    "channelTitle": "Igor R",
+    "channelUrl": "https://www.youtube.com/@megaigor777",
+    "customUrl": "@megaigor777",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_mG568Rs6429Jq2fKGGYllKhVU2wyAfM0EWgsSBOas=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_mG568Rs6429Jq2fKGGYllKhVU2wyAfM0EWgsSBOas=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@megaigor777"
+  }
+}

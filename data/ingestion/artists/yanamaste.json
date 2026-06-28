@@ -1,0 +1,23 @@
+{
+  "slug": "yanamaste",
+  "name": "Yanamaste",
+  "updatedAt": "2026-06-28T01:38:18.312Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:22.900Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCsmh1W5e52Hzk3GI251KTUA",
+    "channelTitle": "Yanamaste",
+    "channelUrl": "https://www.youtube.com/@yanamaste",
+    "customUrl": "@yanamaste",
+    "thumbnailUrl": "https://yt3.ggpht.com/SUwdmTew5xT0h185pd5F7S1OgketPUbYDLPGPyb3yGpjBAL5XwuIl__UdpXpZtaHvdjQJIza=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/SUwdmTew5xT0h185pd5F7S1OgketPUbYDLPGPyb3yGpjBAL5XwuIl__UdpXpZtaHvdjQJIza=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@yanamaste"
+  }
+}

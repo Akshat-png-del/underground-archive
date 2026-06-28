@@ -1,0 +1,23 @@
+{
+  "slug": "shlomo",
+  "name": "Shlømo",
+  "updatedAt": "2026-06-28T01:38:16.870Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:58.917Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UC3u_SM-ij5laIIG0GshbyPQ",
+    "channelTitle": "Shlømo ",
+    "channelUrl": "https://www.youtube.com/@shlomo-dj",
+    "customUrl": "@shlomo-dj",
+    "thumbnailUrl": "https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@shlomo-dj"
+  }
+}

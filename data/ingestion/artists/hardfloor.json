@@ -1,0 +1,23 @@
+{
+  "slug": "hardfloor",
+  "name": "Hardfloor",
+  "updatedAt": "2026-06-28T01:38:18.324Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:40.781Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCzfLJqFAIF_zC1SPzu7spxQ",
+    "channelTitle": "HRDFLR",
+    "channelUrl": "https://www.youtube.com/@hrdflr_303_official",
+    "customUrl": "@hrdflr_303_official",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_kkbheHWTqauFa_3P99gLyiG_iGXcb34gEIlDHe7sxb_Q=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_kkbheHWTqauFa_3P99gLyiG_iGXcb34gEIlDHe7sxb_Q=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@hrdflr_303_official"
+  }
+}

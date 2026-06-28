@@ -1,0 +1,34 @@
+{
+  "slug": "deepbass",
+  "name": "Deepbass",
+  "updatedAt": "2026-06-28T19:30:16.257Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:57.530Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:16.257Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/deepbass.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4JBXPj21sTqOZvgQurUJoP"
+  },
+  "spotify": {
+    "artistId": "4JBXPj21sTqOZvgQurUJoP",
+    "name": "Deepbass",
+    "url": "https://open.spotify.com/artist/4JBXPj21sTqOZvgQurUJoP",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/deepbass.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/deepbass.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

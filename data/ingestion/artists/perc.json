@@ -1,0 +1,44 @@
+{
+  "slug": "perc",
+  "name": "Perc",
+  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:44.195Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "status": "ok"
+    },
+    "residentAdvisor": {
+      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCJnDllveSuLCbF85f95ZvVw",
+    "channelTitle": "perc",
+    "channelUrl": "https://www.youtube.com/@weak",
+    "customUrl": "@weak",
+    "thumbnailUrl": "https://yt3.ggpht.com/uOeSB5WL-F9UYO2OyU-JC0mGqr-BZGznpNcySeOJxh2w6Pbx2qqRti2DFWLTRamZSBNoKVZS7Q=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/perc.jpg",
+    "source": "resident-advisor",
+    "sourceUrl": "https://ra.co/dj/perc"
+  },
+  "spotify": {
+    "artistId": "4iyqyvWXO734GUNLTTnrPQ",
+    "name": "Perc",
+    "url": "https://open.spotify.com/artist/4iyqyvWXO734GUNLTTnrPQ",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/perc.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/perc.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

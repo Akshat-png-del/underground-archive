@@ -1,0 +1,40 @@
+{
+  "slug": "paula-temple",
+  "name": "Paula Temple",
+  "updatedAt": "2026-06-28T19:30:12.180Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:43.558Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.180Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCemkhCjypDOeoE_Fka8jSVg",
+    "channelTitle": "Paula Temple - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCemkhCjypDOeoE_Fka8jSVg",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/qT2WNk8GCQGTFu8jwYRwEFR4cDn10Mct7DXbjCsEcda8lPM0HSxCpJLDCZsGD80zbol0jHWJcQ=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/paula-temple.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4iy2RFU8gIpXF5yaK0l8ZT"
+  },
+  "spotify": {
+    "artistId": "4iy2RFU8gIpXF5yaK0l8ZT",
+    "name": "Paula Temple",
+    "url": "https://open.spotify.com/artist/4iy2RFU8gIpXF5yaK0l8ZT",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/paula-temple.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/paula-temple.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

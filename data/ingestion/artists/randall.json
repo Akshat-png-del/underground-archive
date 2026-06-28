@@ -1,0 +1,23 @@
+{
+  "slug": "randall",
+  "name": "Randall",
+  "updatedAt": "2026-06-28T01:38:18.316Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:28.438Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCYCmal9NJFAJqPzJXkPkcpQ",
+    "channelTitle": "Randall's Relaxation",
+    "channelUrl": "https://www.youtube.com/@randallsrestrelaxation",
+    "customUrl": "@randallsrestrelaxation",
+    "thumbnailUrl": "https://yt3.ggpht.com/74hLlNGBl2jjfsFAeCFc7szGCX09lqz8qVq_PugCeGeYDB44iDyPp2XfL2AoAqn-J7mP1zMm3Q=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/74hLlNGBl2jjfsFAeCFc7szGCX09lqz8qVq_PugCeGeYDB44iDyPp2XfL2AoAqn-J7mP1zMm3Q=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@randallsrestrelaxation"
+  }
+}

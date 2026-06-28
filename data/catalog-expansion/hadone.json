@@ -1,0 +1,68 @@
+{
+  "slug": "hadone",
+  "tracks": [
+    {
+      "title": "Hope Reminds Me Of Her",
+      "spotifyTrackId": "3MeSC2yKxENtA2xbVsWj61",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "On The Edge Of Adhesion - Original",
+      "spotifyTrackId": "2EPFNgckNrQMgpORGZBa1u",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Kaledra",
+      "spotifyTrackId": "0bhkoSG87IhXbiPt4hmaUl",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "How To Fake Success",
+      "spotifyTrackId": "1gGjvDQ4ezE2Lc5w2Gbg6A",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Bite the Hand That Feeds You",
+      "spotifyTrackId": "0eZ2nfNNzWW1T7T3wPbkHC",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Hadone | HÖR - Sep 20 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "MF6b5JzFq3E"
+    },
+    {
+      "title": "Hadone at Intercell Outdoor: Hadone Invites 2022",
+      "venue": "Intercell",
+      "year": 2022,
+      "youtubeId": "k6Q_deTwguo"
+    },
+    {
+      "title": "MRD at Intercell Outdoor: Hadone Invites 2022",
+      "venue": "Intercell",
+      "year": 2022,
+      "youtubeId": "glQnNDWcgXM"
+    },
+    {
+      "title": "Hadone at Intercell Indoor 2022",
+      "venue": "Intercell",
+      "year": 2022,
+      "youtubeId": "X-CRmExDPzA"
+    },
+    {
+      "title": "TRED b2b DINA at Intercell Outdoor: Hadone Invites 2022",
+      "venue": "Intercell",
+      "year": 2022,
+      "youtubeId": "sFBeDyXsAIg"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:52.319Z"
+}

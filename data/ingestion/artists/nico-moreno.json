@@ -1,0 +1,40 @@
+{
+  "slug": "nico-moreno",
+  "name": "Nico Moreno",
+  "updatedAt": "2026-06-28T19:19:55.337Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:00.794Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:19:55.337Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCPmj4-tukkX9_1aocKiL95g",
+    "channelTitle": "Nico Moreno - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCPmj4-tukkX9_1aocKiL95g",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/bPtM2SjpVgR8uVDjtwGCr_szkyccMfTZeSc7HzgMEGy_wBML27u3p5v87VUPzMK0cNlbrBRAQA=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S"
+  },
+  "spotify": {
+    "artistId": "6fjhNhp9IoeiZpEXq9AT2S",
+    "name": "Nico Moreno",
+    "url": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849"
+    ],
+    "relatedArtists": []
+  }
+}

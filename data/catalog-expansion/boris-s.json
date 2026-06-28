@@ -1,0 +1,68 @@
+{
+  "slug": "boris-s",
+  "tracks": [
+    {
+      "title": "Symphonie des Seins",
+      "spotifyTrackId": "4FdtavdZA6NTfmJWXiXqWZ",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Higher Things - FJAAK Remix",
+      "spotifyTrackId": "4bakznhqCKWR9FHiGuk0n6",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Turkish Bazar - Chris Liebing Remake",
+      "spotifyTrackId": "12pjGZHDyQxuROgK2gZ4My",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Brooks Ave",
+      "spotifyTrackId": "0ccyXEKie4wSZ9ymCpZ1Iy",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Liquid Slow",
+      "spotifyTrackId": "5W4NmQtT2934fQYOqFwzBM",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Boris & Merzbow Boiler Room Tokyo Live Set",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "xJSMf8hRWtA"
+    },
+    {
+      "title": "Gradient - Boris | HÖR - October 10 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "ZEaqqk8V1bY"
+    },
+    {
+      "title": "boris & davy | HÖR @ Kunstfestival Begehungen - 26 July / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "UUuNuYs3ZyA"
+    },
+    {
+      "title": "Videoset Boris S. @ Awakenings Festival '15 Amsterdam/NL 28.06.15",
+      "venue": "Awakenings",
+      "year": 2026,
+      "youtubeId": "28IeGuAOrWA"
+    },
+    {
+      "title": "Boris Kleine im Exhale Hardcore Gym",
+      "venue": "Exhale",
+      "year": 2026,
+      "youtubeId": "OgRPJNY-aWo"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:25:46.048Z"
+}

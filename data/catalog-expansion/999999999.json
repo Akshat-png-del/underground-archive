@@ -1,0 +1,68 @@
+{
+  "slug": "999999999",
+  "tracks": [
+    {
+      "title": "No Limit",
+      "spotifyTrackId": "1eUkZEhwbZkkhNfgA1qVyA",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Acid Blood",
+      "spotifyTrackId": "1ivhs5EQc8eAw5rcB9SEQz",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Rave 4 love",
+      "spotifyTrackId": "4sGzJs8jikSDbnpN0vXsuO",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Acid World",
+      "spotifyTrackId": "3Dnz6RCYRybCh9liOFWYp8",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "300000003",
+      "spotifyTrackId": "3BiEL2MiPGsw6imQiNAHUZ",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "999999999 (Live) | Boiler Room Paris: Possession",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "a5Lb5vBIa9Y"
+    },
+    {
+      "title": "999999999 | Awakenings Festival 2025",
+      "venue": "Awakenings",
+      "year": 2025,
+      "youtubeId": "4ayP8pfGMoc"
+    },
+    {
+      "title": "999999999 at Intercell x 999999999 [All Night Long]",
+      "venue": "Intercell",
+      "year": 2026,
+      "youtubeId": "S7xipFV26js"
+    },
+    {
+      "title": "999999999 at Intercell x SNTS Invites | ADE 2021 - FULL VIDEO SET",
+      "venue": "Intercell",
+      "year": 2021,
+      "youtubeId": "FG02ONL7cBg"
+    },
+    {
+      "title": "999999999 - Awakenings Easter Festival 2022",
+      "venue": "Awakenings",
+      "year": 2022,
+      "youtubeId": "MF7k7dFaZ04"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:33:14.411Z"
+}

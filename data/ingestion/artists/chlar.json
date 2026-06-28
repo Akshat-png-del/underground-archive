@@ -1,0 +1,23 @@
+{
+  "slug": "chlar",
+  "name": "Chlar",
+  "updatedAt": "2026-06-28T01:38:18.301Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:10.128Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCKlJyQROL4dXXFNbrXrdKFw",
+    "channelTitle": "Chlar",
+    "channelUrl": "https://www.youtube.com/@chlarchive",
+    "customUrl": "@chlarchive",
+    "thumbnailUrl": "https://yt3.ggpht.com/ApORc_lEbG1zi_gjCl7R7Lzh5gOUAJpGJN1BKN1qGoFQTm7FLDT6iKLPG3nd8Xif0gCKY0PREw=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ApORc_lEbG1zi_gjCl7R7Lzh5gOUAJpGJN1BKN1qGoFQTm7FLDT6iKLPG3nd8Xif0gCKY0PREw=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@chlarchive"
+  }
+}

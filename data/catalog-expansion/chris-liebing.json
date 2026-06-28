@@ -1,0 +1,68 @@
+{
+  "slug": "chris-liebing",
+  "tracks": [
+    {
+      "title": "Brooks Ave",
+      "spotifyTrackId": "0ccyXEKie4wSZ9ymCpZ1Iy",
+      "year": 2020,
+      "duration": "6:30"
+    },
+    {
+      "title": "Turkish Bazar - Chris Liebing Remake",
+      "spotifyTrackId": "12pjGZHDyQxuROgK2gZ4My",
+      "year": 2019,
+      "duration": "7:00"
+    },
+    {
+      "title": "Symphonie des Seins",
+      "spotifyTrackId": "4FdtavdZA6NTfmJWXiXqWZ",
+      "year": 2018,
+      "duration": "6:45"
+    },
+    {
+      "title": "Higher Things - FJAAK Remix",
+      "spotifyTrackId": "4bakznhqCKWR9FHiGuk0n6",
+      "year": 2021,
+      "duration": "6:15"
+    },
+    {
+      "title": "Liquid Slow",
+      "spotifyTrackId": "5W4NmQtT2934fQYOqFwzBM",
+      "year": 2022,
+      "duration": "5:50"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Boiler Room Warsaw — B2B Luke Slater",
+      "venue": "Boiler Room",
+      "year": 2019,
+      "youtubeId": "5NuRC714fv8"
+    },
+    {
+      "title": "Awakenings Festival 2017 — Area Y",
+      "venue": "Awakenings",
+      "year": 2017,
+      "youtubeId": "iozfIRB34gM"
+    },
+    {
+      "title": "Chris Liebing Boiler Room & Ballantine's True Music Russia DJ Set",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "jyOHvAaxZ-M"
+    },
+    {
+      "title": "PLAYdifferently: Chris Liebing Boiler Room DJ Set",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "aS9qKXb04q0"
+    },
+    {
+      "title": "Chris Liebing – Time Warp 2018 (Full Set HiRes) – ARTE Concert",
+      "venue": "Time Warp",
+      "year": 2018,
+      "youtubeId": "pNHi5Pz6YUw"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:58.689Z"
+}

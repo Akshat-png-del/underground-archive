@@ -1,0 +1,40 @@
+{
+  "slug": "vtss",
+  "name": "VTSS",
+  "updatedAt": "2026-06-28T19:30:56.199Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:56.199Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:35.045Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "0zo109NM3S7CqHpvlXwqEN",
+    "name": "VTSS",
+    "url": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN"
+  },
+  "youtube": {
+    "channelId": "UC1hS4zcYjl9n7ODh29bVsAA",
+    "channelTitle": "VTSS",
+    "channelUrl": "https://www.youtube.com/@vtsspl",
+    "customUrl": "@vtsspl",
+    "thumbnailUrl": "https://yt3.ggpht.com/PFvVzd_BBz9g6cGGa8JPerPmpYZi2Mk5WkjCql8ATcUUbkjQ-AFD2Ex9yuNJ9u9qUOKsa_XoNw=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

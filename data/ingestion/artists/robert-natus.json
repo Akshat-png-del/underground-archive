@@ -1,0 +1,40 @@
+{
+  "slug": "robert-natus",
+  "name": "Robert Natus",
+  "updatedAt": "2026-06-28T19:18:16.285Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:18:16.285Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:41.642Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "3zCZyqet8mJHJ9RJgUO8Mt",
+    "name": "Robert Natus",
+    "url": "https://open.spotify.com/artist/3zCZyqet8mJHJ9RJgUO8Mt",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3zCZyqet8mJHJ9RJgUO8Mt"
+  },
+  "youtube": {
+    "channelId": "UCsJCjVfGL1xvVhCjNFjYamg",
+    "channelTitle": "Robert Natus - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCsJCjVfGL1xvVhCjNFjYamg",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/9vOILl6fuOwpjVHv0gwjAKoFExA88RM_OcM8lWDOPsjGilVMU9JBQAl6OpbLfC1TXAImhq6VcA=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

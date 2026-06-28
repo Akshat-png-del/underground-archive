@@ -1,0 +1,40 @@
+{
+  "slug": "amelie-lens",
+  "name": "Amelie Lens",
+  "updatedAt": "2026-06-28T19:31:07.720Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:31:07.720Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:37.012Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "5Ho1vKl1Uz8bJlk4vbmvmf",
+    "name": "Amelie Lens",
+    "url": "https://open.spotify.com/artist/5Ho1vKl1Uz8bJlk4vbmvmf",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174033a4201ccdb09df6f7168ea",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174033a4201ccdb09df6f7168ea"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174033a4201ccdb09df6f7168ea",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/5Ho1vKl1Uz8bJlk4vbmvmf"
+  },
+  "youtube": {
+    "channelId": "UCg2JFUP67ZdKzehy8TWMUmw",
+    "channelTitle": "Amelie Lens",
+    "channelUrl": "https://www.youtube.com/@amelielens",
+    "customUrl": "@amelielens",
+    "thumbnailUrl": "https://yt3.ggpht.com/SIRZRPHgORHq9jwZoLYQQTha9wQCESyehGHzohW_ImI6jfryxwKhr8x0D35hVQC5gE11Nes-dw=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

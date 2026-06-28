@@ -1,0 +1,23 @@
+{
+  "slug": "dj-pierre",
+  "name": "DJ Pierre",
+  "updatedAt": "2026-06-28T01:38:18.339Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:54.434Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCm0to1SLyxIK5jlIj9rdYwQ",
+    "channelTitle": "Pierre Thibault",
+    "channelUrl": "https://www.youtube.com/@pierrethibaultmusic",
+    "customUrl": "@pierrethibaultmusic",
+    "thumbnailUrl": "https://yt3.ggpht.com/wBY2PxRpxjaPiSXXoDMXtMYxpmQyZS3p4wM6jjaNZFV6gBft1N4ZmNiLGod5smXOCjIb_-_Vqw=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/wBY2PxRpxjaPiSXXoDMXtMYxpmQyZS3p4wM6jjaNZFV6gBft1N4ZmNiLGod5smXOCjIb_-_Vqw=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@pierrethibaultmusic"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "victor-ruiz",
+  "name": "Victor Ruiz",
+  "updatedAt": "2026-06-28T19:30:12.183Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:51.693Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.183Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/victor-ruiz.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z"
+  },
+  "spotify": {
+    "artistId": "0xgdNNa5mIbnJKp8AG8S4z",
+    "name": "Victor Ruiz",
+    "url": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/victor-ruiz.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/victor-ruiz.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

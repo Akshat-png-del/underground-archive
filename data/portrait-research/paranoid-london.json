@@ -1,0 +1,27 @@
+{
+  "slug": "paranoid-london",
+  "name": "Paranoid London",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/0KyUH5WmspOhuIQAnw42Fb",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051745974e92b915a79b58b5a2c7c",
+    "confidence": "high",
+    "matchedName": "Paranoid London",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/0KyUH5WmspOhuIQAnw42Fb",
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051745974e92b915a79b58b5a2c7c",
+      "confidence": "high",
+      "matchedName": "Paranoid London",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/paranoid-london.jpg",
+  "downloadedAt": "2026-06-28T16:50:00.562Z"
+}

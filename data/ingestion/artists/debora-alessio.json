@@ -1,0 +1,12 @@
+{
+  "slug": "debora-alessio",
+  "name": "Debora Alessio",
+  "updatedAt": "2026-06-28T01:38:18.337Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:52.055Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    }
+  }
+}

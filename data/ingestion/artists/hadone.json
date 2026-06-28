@@ -1,0 +1,40 @@
+{
+  "slug": "hadone",
+  "name": "Hadone",
+  "updatedAt": "2026-06-28T19:17:59.877Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:17:59.877Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:38.439Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "4aSlYJptLO5PXv3jGueMkD",
+    "name": "Hadone",
+    "url": "https://open.spotify.com/artist/4aSlYJptLO5PXv3jGueMkD",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4aSlYJptLO5PXv3jGueMkD"
+  },
+  "youtube": {
+    "channelId": "UCVaa8jqvVpKdufNo8KiAF3w",
+    "channelTitle": "Hadone - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCVaa8jqvVpKdufNo8KiAF3w",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/pf4OnAW8ZqZZInm_fsf8mjpjjRJirUs_5cHaIBhwR2X3tsigTFfE4j-a1ZDI-bdVdUPjoC-AcR4=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

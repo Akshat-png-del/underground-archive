@@ -1,0 +1,27 @@
+{
+  "slug": "victor-ruiz",
+  "name": "Victor Ruiz",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051741b3b3c22b256a60d5ce265e5",
+    "confidence": "high",
+    "matchedName": "Victor Ruiz",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z",
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051741b3b3c22b256a60d5ce265e5",
+      "confidence": "high",
+      "matchedName": "Victor Ruiz",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/victor-ruiz.jpg",
+  "downloadedAt": "2026-06-28T16:49:49.213Z"
+}

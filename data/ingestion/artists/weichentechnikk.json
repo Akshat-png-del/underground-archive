@@ -1,0 +1,34 @@
+{
+  "slug": "weichentechnikk",
+  "name": "Weichentechnikk",
+  "updatedAt": "2026-06-28T19:30:20.566Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:56.487Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:20.566Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/weichentechnikk.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3sIkF6FOnvaaA9nLCnITrh"
+  },
+  "spotify": {
+    "artistId": "3sIkF6FOnvaaA9nLCnITrh",
+    "name": "Weichentechnikk",
+    "url": "https://open.spotify.com/artist/3sIkF6FOnvaaA9nLCnITrh",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/weichentechnikk.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/weichentechnikk.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

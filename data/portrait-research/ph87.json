@@ -1,0 +1,27 @@
+{
+  "slug": "ph87",
+  "name": "PH87",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/6w8j7obDDze1ovIL3lXGZf",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02078497068b829fc86f5b9829",
+    "confidence": "high",
+    "matchedName": "PH87",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/6w8j7obDDze1ovIL3lXGZf",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02078497068b829fc86f5b9829",
+      "confidence": "high",
+      "matchedName": "PH87",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/ph87.jpg",
+  "downloadedAt": "2026-06-28T16:49:42.445Z"
+}

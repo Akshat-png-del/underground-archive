@@ -1,0 +1,27 @@
+{
+  "slug": "assemblage-23",
+  "name": "Assemblage 23",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx",
+    "imageUrl": "https://i.scdn.co/image/7b091446f673930b56242b82861edfc90f7724a6",
+    "confidence": "high",
+    "matchedName": "Assemblage 23",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx",
+      "imageUrl": "https://i.scdn.co/image/7b091446f673930b56242b82861edfc90f7724a6",
+      "confidence": "high",
+      "matchedName": "Assemblage 23",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/assemblage-23.jpg",
+  "downloadedAt": "2026-06-28T16:49:22.730Z"
+}

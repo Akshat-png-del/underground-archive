@@ -1,0 +1,68 @@
+{
+  "slug": "vendex",
+  "tracks": [
+    {
+      "title": "Sanguine Fountain",
+      "spotifyTrackId": "07kd3tNgESIZHSt5kI0Ze9",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Herz In Flammen",
+      "spotifyTrackId": "5UU4ByMK3kTSD4TFfVgPDB",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "M.L.A.",
+      "spotifyTrackId": "2epABeRo0Xhvqi8vi6CF5j",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Emotional Khaos",
+      "spotifyTrackId": "6mzPAhuqFFAazXP4mFAgHn",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Blutgesichter",
+      "spotifyTrackId": "5n6wtZap1OIsziNOrGTv7N",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Vendex | Main floor - Gotec Club | 2 H Schranz Set",
+      "venue": "Gotec Club",
+      "year": 2026,
+      "youtubeId": "UI5l0VHs_6U"
+    },
+    {
+      "title": "VENDEX @ MONEGROS DESERT FESTIVAL 2025 - UNREAL - AV SHOW",
+      "venue": "Unreal",
+      "year": 2025,
+      "youtubeId": "x_QfePjfCHQ"
+    },
+    {
+      "title": "VENDEX | HÖR @ MONEGROS - 26 July / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "x-3TPNw3bKA"
+    },
+    {
+      "title": "Vendex @ Verknipt Germany Day 1 | Turbinenhalle, Oberhausen",
+      "venue": "Verknipt",
+      "year": 2026,
+      "youtubeId": "FEKCQfIaUtA"
+    },
+    {
+      "title": "Vendex @ Verknipt x Blackworks ADE 2023 | Saturday",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "-IOnLTFeib8"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:32:44.546Z"
+}

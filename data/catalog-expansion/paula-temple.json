@@ -1,0 +1,74 @@
+{
+  "slug": "paula-temple",
+  "tracks": [
+    {
+      "title": "I Thought You Were Real",
+      "spotifyTrackId": "0nXcNs4tCvDW17kzwdu4ML",
+      "year": 2023,
+      "duration": "6:00"
+    },
+    {
+      "title": "All Is Temporary",
+      "spotifyTrackId": "40OOIaXgyGSQv2ef7Nknyl",
+      "year": 2022,
+      "duration": "5:45"
+    },
+    {
+      "title": "We Were Never Really Here",
+      "spotifyTrackId": "4zNcnHkulTRTXqiBzEbFgs",
+      "year": 2022,
+      "duration": "6:15"
+    },
+    {
+      "title": "2094",
+      "spotifyTrackId": "5Ih8kMx63U3j4srsR5UjfU",
+      "year": 2021,
+      "duration": "5:30"
+    },
+    {
+      "title": "Selfscape Dream",
+      "spotifyTrackId": "5zCYvgUXLPCxGPWyaMpslc",
+      "year": 2020,
+      "duration": "6:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Awakenings ADE 2017",
+      "venue": "Awakenings",
+      "year": 2017,
+      "youtubeId": "faUGU6Z9qSU"
+    },
+    {
+      "title": "Paula Temple – Time Warp 2018 (Full Set HiRes) – ARTE Concert",
+      "venue": "Time Warp",
+      "year": 2018,
+      "youtubeId": "L7PrP_6dPcw"
+    },
+    {
+      "title": "Paula Temple | Awakenings Spring Festival 2023 (audio recording)",
+      "venue": "Awakenings",
+      "year": 2023,
+      "youtubeId": "SBxgpZsexV0"
+    },
+    {
+      "title": "Awakenings ADE 2018 | Rebekah & Paula Temple",
+      "venue": "Awakenings",
+      "year": 2018,
+      "youtubeId": "Q7csy2ZlU_0"
+    },
+    {
+      "title": "Ghost in the Machine at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019 Closing - FULL SET",
+      "venue": "Intercell",
+      "year": 2019,
+      "youtubeId": "vq8mf2uliq8"
+    },
+    {
+      "title": "Paula Temple b2b SNTS at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019",
+      "venue": "Intercell",
+      "year": 2019,
+      "youtubeId": "Tqn_S1Sz8s0"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:25:57.036Z"
+}

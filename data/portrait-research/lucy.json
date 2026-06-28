@@ -1,0 +1,27 @@
+{
+  "slug": "lucy",
+  "name": "Lucy",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/0BlPI3UKzTcN2jf0gCa0b9",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e8e30f8e8310f37a02228a1a",
+    "confidence": "high",
+    "matchedName": "Lucy",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/0BlPI3UKzTcN2jf0gCa0b9",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e8e30f8e8310f37a02228a1a",
+      "confidence": "high",
+      "matchedName": "Lucy",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/lucy.jpg",
+  "downloadedAt": "2026-06-28T16:49:46.912Z"
+}

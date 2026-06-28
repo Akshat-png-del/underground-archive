@@ -1,0 +1,68 @@
+{
+  "slug": "ghost-in-the-machine",
+  "tracks": [
+    {
+      "title": "Pile Driver",
+      "spotifyTrackId": "1Ey8lyoXrAxxSftVt8R5Qz",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Implant - Ghost In The Machine Remix",
+      "spotifyTrackId": "0emTLxK5Rx6j43MWCq5VXC",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "A Night at the Opera - Ghost In The Machine Remix",
+      "spotifyTrackId": "3eX14koOVxrdJnRx2KluTW",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Zero",
+      "spotifyTrackId": "75mzFZvlOsNeTpYIj1jGgZ",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Grill Trouble",
+      "spotifyTrackId": "2UgfKBEpiQ4s8GNZlQyQx5",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Ghost in the Machine - Boiler Room Hard Dance 193",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "BbNlke-2gm0"
+    },
+    {
+      "title": "Ghost in the Machine at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019 Closing - FULL SET",
+      "venue": "Intercell",
+      "year": 2019,
+      "youtubeId": "vq8mf2uliq8"
+    },
+    {
+      "title": "Ghost In The Machine 7/5 Boiler Room",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "usKUkBlJ2Lc"
+    },
+    {
+      "title": "Ghost in the Machine at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019 Closing",
+      "venue": "Intercell",
+      "year": 2019,
+      "youtubeId": "mHWzbacL3AU"
+    },
+    {
+      "title": "Ghost In The Machine dropping a hard banger at Intercell ADE x Perc Trax",
+      "venue": "Intercell",
+      "year": 2026,
+      "youtubeId": "85EDVE9Dih0"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:26:55.158Z"
+}

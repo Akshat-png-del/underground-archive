@@ -1,0 +1,23 @@
+{
+  "slug": "rosati",
+  "name": "Rosati",
+  "updatedAt": "2026-06-28T01:38:18.308Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:18.002Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCsE77OSgNoyszM7a2UxUbcA",
+    "channelTitle": "Rosati",
+    "channelUrl": "https://www.youtube.com/@rosati_99",
+    "customUrl": "@rosati_99",
+    "thumbnailUrl": "https://yt3.ggpht.com/sB6kEgyd5e5cRckmWxqQIPACr8dlABwXfUN2c6FjnbdwRYHNl29ZM1yaOR2OEyyrVjcdnRK53g=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/sB6kEgyd5e5cRckmWxqQIPACr8dlABwXfUN2c6FjnbdwRYHNl29ZM1yaOR2OEyyrVjcdnRK53g=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@rosati_99"
+  }
+}

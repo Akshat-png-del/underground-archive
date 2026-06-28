@@ -1,0 +1,23 @@
+{
+  "slug": "vntm",
+  "name": "VNTM",
+  "updatedAt": "2026-06-28T01:38:18.297Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:02.705Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCCZ0W8XRbGhx1suQ6CScR_g",
+    "channelTitle": "VNTM Official",
+    "channelUrl": "https://www.youtube.com/@vntm",
+    "customUrl": "@vntm",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_nMplGHlnSbTPNaM_OI_JYiM8mS8F68m1zbBg9qHKtDZuw=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_nMplGHlnSbTPNaM_OI_JYiM8mS8F68m1zbBg9qHKtDZuw=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@vntm"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "charlotte-de-witte",
+  "tracks": [
+    {
+      "title": "Amor (feat. CERES)",
+      "spotifyTrackId": "4UhxekskWFXSv9ik933yBv",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "One Mind",
+      "spotifyTrackId": "2Y2Ydnk6XPTe4IpOTNs5Xh",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "A Prayer for the Dancefloor (feat. Conduit)",
+      "spotifyTrackId": "1tBbAzbOg9qZJrSZBlHlXT",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Charlotte de Witte at Pukkelpop 2018 (Boiler Room)",
+      "venue": "Boiler Room",
+      "year": 2018,
+      "youtubeId": "er2lzvlfPCE"
+    },
+    {
+      "title": "Charlotte de Witte Boiler Room x Eristoff DJ Set",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "sq2MsyiBfDQ"
+    },
+    {
+      "title": "Charlotte de Witte | Awakenings Festival 2025",
+      "venue": "Awakenings",
+      "year": 2025,
+      "youtubeId": "m1SvbXLYEEc"
+    },
+    {
+      "title": "Awakenings ADE 2019 - Charlotte de Witte",
+      "venue": "Awakenings",
+      "year": 2019,
+      "youtubeId": "2c4PRA59TD4"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:49.220Z"
+}

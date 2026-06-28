@@ -1,0 +1,34 @@
+{
+  "slug": "she-past-away",
+  "name": "She Past Away",
+  "updatedAt": "2026-06-28T19:30:12.182Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:43.975Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.182Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/she-past-away.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR"
+  },
+  "spotify": {
+    "artistId": "6paE8ghTau4qwwNzVRSgjR",
+    "name": "She Past Away",
+    "url": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/she-past-away.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/she-past-away.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "lebanon-hanover",
+  "name": "Lebanon Hanover",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "spotify-official",
+    "sourceUrl": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174051313a495b4a4de4620e3cb",
+    "confidence": "high",
+    "matchedName": "Lebanon Hanover",
+    "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+  },
+  "candidates": [
+    {
+      "source": "spotify-official",
+      "sourceUrl": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174051313a495b4a4de4620e3cb",
+      "confidence": "high",
+      "matchedName": "Lebanon Hanover",
+      "notes": "Spotify oEmbed artist photo with catalog ID + name match"
+    }
+  ],
+  "manualDeepResearch": false,
+  "localPath": "/images/portraits/researched/lebanon-hanover.jpg",
+  "downloadedAt": "2026-06-28T16:49:28.595Z"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "klangkuenstler",
+  "tracks": [
+    { "title": "Armageddon", "spotifyTrackId": "57Z7OOlDvNhseKxhbYTsve", "year": 2020, "duration": "6:24" },
+    { "title": "Weltschmerz", "spotifyTrackId": "5dV8v9sGqh0qt4eGdoJzKg", "year": 2021, "duration": "5:59" },
+    { "title": "Das Ende Der Isolation", "spotifyTrackId": "7BB5gcz4C28nsRblTF79oS", "year": 2022, "duration": "6:31" },
+    { "title": "Toter Schmetterling", "spotifyTrackId": "4LsYdWDeumtYjMndQVcA94", "year": 2021, "duration": "2:44" }
+  ],
+  "sets": [
+    { "title": "Boiler Room Manchester — Teletech", "venue": "Teletech", "year": 2024, "youtubeId": "RMLBjvvtXyk" }
+  ],
+  "updatedAt": "2026-06-28T01:50:00.000Z"
+}

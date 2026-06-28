@@ -1,0 +1,68 @@
+{
+  "slug": "regal",
+  "tracks": [
+    {
+      "title": "Ruido",
+      "spotifyTrackId": "0CC1OTd1zrA3k7NyOqyYN1",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Still Raving",
+      "spotifyTrackId": "6wP7R5nWR4Zv5xiqWmGnea",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Before I Die",
+      "spotifyTrackId": "6CLAo9qBOeuVkyjeLRTewt",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Looking 4 Balance",
+      "spotifyTrackId": "4hiSM6rPD1vv2c4Td9ShFS",
+      "year": 2026,
+      "duration": "5:00"
+    },
+    {
+      "title": "Interference - Regal Remix",
+      "spotifyTrackId": "1fPgFYKjOmuOU4wqdYBuLr",
+      "year": 2026,
+      "duration": "5:00"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Regal | Boiler Room Tbilisi: KHIDI",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "wdSKl92tRNg"
+    },
+    {
+      "title": "Regal86 | Boiler Room: Mexico City",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "LVG4-NU0D0Y"
+    },
+    {
+      "title": "Regal | Boiler Room Tbilisi -   Bird 1 | Underworld",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "ToOFNT1DvGc"
+    },
+    {
+      "title": "REGAL | HÖR ON TOUR Hyderabad - 7 September  / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "hKU99jGE4XY"
+    },
+    {
+      "title": "Nasty Enterprises - Regal86 | HÖR - Jul 29 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "ch0x5RwDU_g"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:23:38.623Z"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "vendex",
+  "name": "Vendex",
+  "updatedAt": "2026-06-28T19:19:24.786Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:19:24.786Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:55.630Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "2kqP3BXfLgo74OpfoC9cf7",
+    "name": "Vendex",
+    "url": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7"
+  },
+  "youtube": {
+    "channelId": "UCn7Y6gF7J-VIzqD53gOZVFQ",
+    "channelTitle": "VENDEX ",
+    "channelUrl": "https://www.youtube.com/@vend3xx",
+    "customUrl": "@vend3xx",
+    "thumbnailUrl": "https://yt3.ggpht.com/CuwLecmUlSkUAkVLCacZHRsAMp6weq8wB9skiwM7j9x1AB67OeOUCwqrKRmlq5KEI5DiMAfz4A=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

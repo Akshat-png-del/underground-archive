@@ -1,0 +1,23 @@
+{
+  "slug": "hausman",
+  "name": "Hausman",
+  "updatedAt": "2026-06-28T01:38:18.316Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:29.715Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCxrvlwhRvT6oSI5sjLrQMGw",
+    "channelTitle": "Hausman",
+    "channelUrl": "https://www.youtube.com/@hausmanmusic",
+    "customUrl": "@hausmanmusic",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_n5hOY9TuTcYPg8UL3x5RPIeGXqa5DdkHcPTEZzxReFOg=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_n5hOY9TuTcYPg8UL3x5RPIeGXqa5DdkHcPTEZzxReFOg=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@hausmanmusic"
+  }
+}

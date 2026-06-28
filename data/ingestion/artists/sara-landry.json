@@ -1,0 +1,40 @@
+{
+  "slug": "sara-landry",
+  "name": "Sara Landry",
+  "updatedAt": "2026-06-28T19:30:43.770Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:43.770Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:32.937Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "7eILArMiTFTQf8SEh5fFHK",
+    "name": "Sara Landry",
+    "url": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
+    "imageUrls": [
+      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK"
+  },
+  "youtube": {
+    "channelId": "UC3l1zkKI2-_aAqlUNTDO9Lw",
+    "channelTitle": "Sara Landry",
+    "channelUrl": "https://www.youtube.com/@saralandry922",
+    "customUrl": "@saralandry922",
+    "thumbnailUrl": "https://yt3.ggpht.com/RQ3aW4mdTqKl82_BWVjp51wk9VraGdBEsyW3oHSq4rm_SntBfag2tP5hIiE6RJ7VaP-V13bzRw=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

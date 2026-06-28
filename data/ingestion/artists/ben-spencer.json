@@ -1,0 +1,23 @@
+{
+  "slug": "ben-spencer",
+  "name": "Ben Spencer",
+  "updatedAt": "2026-06-28T01:38:18.299Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:06.458Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCu499VerbO5Km3h9FBycArQ",
+    "channelTitle": "Benz Spencer Hoky",
+    "channelUrl": "https://www.youtube.com/@benzspencerhoky",
+    "customUrl": "@benzspencerhoky",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_l6nw0EeeAhHxJ7eFnGAtkN_ANbkbjx3iXHD016O_DKVLM=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_l6nw0EeeAhHxJ7eFnGAtkN_ANbkbjx3iXHD016O_DKVLM=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@benzspencerhoky"
+  }
+}

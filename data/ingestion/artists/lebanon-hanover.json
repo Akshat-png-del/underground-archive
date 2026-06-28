@@ -1,0 +1,34 @@
+{
+  "slug": "lebanon-hanover",
+  "name": "Lebanon Hanover",
+  "updatedAt": "2026-06-28T19:30:12.182Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:44.344Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.182Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/lebanon-hanover.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7"
+  },
+  "spotify": {
+    "artistId": "6w8h2uD28BEdg7bX4k3Lh7",
+    "name": "Lebanon Hanover",
+    "url": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/lebanon-hanover.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/lebanon-hanover.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

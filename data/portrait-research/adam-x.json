@@ -1,0 +1,40 @@
+{
+  "slug": "adam-x",
+  "name": "Adam X",
+  "found": true,
+  "accepted": true,
+  "candidate": {
+    "source": "resident-advisor",
+    "sourceUrl": "https://ra.co/dj/adamx",
+    "imageUrl": "https://static.ra.co/images/profiles/square/adamx.jpg?dateUpdated=1471598741000",
+    "confidence": "high",
+    "matchedName": "Adam X"
+  },
+  "candidates": [
+    {
+      "source": "resident-advisor",
+      "sourceUrl": "https://ra.co/dj/adamx",
+      "imageUrl": "https://static.ra.co/images/profiles/square/adamx.jpg?dateUpdated=1471598741000",
+      "confidence": "high",
+      "matchedName": "Adam X"
+    },
+    {
+      "source": "official-website",
+      "sourceUrl": "https://www.traag.com",
+      "imageUrl": "https://static.hugedomains.com/images/hdv3-img/og_hugedomains.png",
+      "confidence": "low",
+      "matchedName": "Traag.com is for sale",
+      "notes": "Page title: Traag.com is for sale | HugeDomains"
+    },
+    {
+      "source": "bandcamp",
+      "sourceUrl": "https://adamx.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0030749268_23.jpg",
+      "confidence": "low",
+      "matchedName": "Music",
+      "notes": "Page title: Music | Adam X"
+    }
+  ],
+  "manualDeepResearch": true,
+  "downloadedAt": "2026-06-28T16:53:09.865Z"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "assemblage-23",
+  "name": "Assemblage 23",
+  "updatedAt": "2026-06-28T19:30:12.182Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:43.271Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:12.182Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/assemblage-23.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx"
+  },
+  "spotify": {
+    "artistId": "7pwThElmrxl0pjTwXMojCx",
+    "name": "Assemblage 23",
+    "url": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/assemblage-23.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/assemblage-23.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

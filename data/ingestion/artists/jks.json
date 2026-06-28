@@ -1,0 +1,23 @@
+{
+  "slug": "jks",
+  "name": "JKS",
+  "updatedAt": "2026-06-28T01:38:18.297Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:03.356Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCU7J5it4ZR_hPQvpZuPkhjg",
+    "channelTitle": "J.K.S.",
+    "channelUrl": "https://www.youtube.com/@j.k.s.6982",
+    "customUrl": "@j.k.s.6982",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_n5CE76MVQkMhu6a4iK8az9kQPv_kPr-iuQ5nXhdG29qrENWaHeBnsbgnZdiKIuS-Wfkw=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ytc/AIdro_n5CE76MVQkMhu6a4iK8az9kQPv_kPr-iuQ5nXhdG29qrENWaHeBnsbgnZdiKIuS-Wfkw=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@j.k.s.6982"
+  }
+}

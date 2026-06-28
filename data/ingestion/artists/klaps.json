@@ -1,0 +1,23 @@
+{
+  "slug": "klaps",
+  "name": "Klaps (BE)",
+  "updatedAt": "2026-06-28T01:38:18.301Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:10.751Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCDy7fzHA0mple7Mst0TKVFQ",
+    "channelTitle": "Klaps (BE) - Topic",
+    "channelUrl": "https://www.youtube.com/channel/UCDy7fzHA0mple7Mst0TKVFQ",
+    "customUrl": null,
+    "thumbnailUrl": "https://yt3.ggpht.com/sBfuUSfx6h_GiwhqUB-dK1c3yOa1cLLs9Yjaq0UFQK7wAhYV-HQ5nzdb7I2Wkoo65zw_6_KP=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/sBfuUSfx6h_GiwhqUB-dK1c3yOa1cLLs9Yjaq0UFQK7wAhYV-HQ5nzdb7I2Wkoo65zw_6_KP=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/channel/UCDy7fzHA0mple7Mst0TKVFQ"
+  }
+}

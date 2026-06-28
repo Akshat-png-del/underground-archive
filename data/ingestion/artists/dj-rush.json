@@ -1,0 +1,23 @@
+{
+  "slug": "dj-rush",
+  "name": "DJ Rush",
+  "updatedAt": "2026-06-28T01:37:53.861Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:40.396Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCHyGTk8Gl-sTbBIiUxGloMg",
+    "channelTitle": "Dj Rush SL",
+    "channelUrl": "https://www.youtube.com/@djrushsl7994",
+    "customUrl": "@djrushsl7994",
+    "thumbnailUrl": "https://yt3.ggpht.com/ZdVzt68dKyxHHa10WrBKP5L8MJSSqfmyrV07IvtFcSqtmFNaC0hWrDQQpaPSuj3JMyfr1DWeJ1c=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://yt3.ggpht.com/ZdVzt68dKyxHHa10WrBKP5L8MJSSqfmyrV07IvtFcSqtmFNaC0hWrDQQpaPSuj3JMyfr1DWeJ1c=s800-c-k-c0x00ffffff-no-rj",
+    "source": "youtube",
+    "sourceUrl": "https://www.youtube.com/@djrushsl7994"
+  }
+}

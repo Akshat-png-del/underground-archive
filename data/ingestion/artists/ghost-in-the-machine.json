@@ -1,0 +1,40 @@
+{
+  "slug": "ghost-in-the-machine",
+  "name": "Ghost in the Machine",
+  "updatedAt": "2026-06-28T19:18:42.150Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-06-28T19:18:42.150Z",
+      "status": "ok"
+    },
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:48.576Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "5opfVCjYF7B4DIKULygJ84",
+    "name": "Ghost in the Machine",
+    "url": "https://open.spotify.com/artist/5opfVCjYF7B4DIKULygJ84",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/5opfVCjYF7B4DIKULygJ84"
+  },
+  "youtube": {
+    "channelId": "UCQjSlC2nstNd_xPr1iBGdow",
+    "channelTitle": "Ghost in the Machine",
+    "channelUrl": "https://www.youtube.com/@gitmmusic",
+    "customUrl": "@gitmmusic",
+    "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_lkXvPeeO8qY3y-GUpeMdTVZjzOfvjDvdwYp-OYfwjpCco=s800-c-k-c0x00ffffff-no-rj"
+  }
+}

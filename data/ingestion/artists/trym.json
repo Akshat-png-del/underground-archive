@@ -1,0 +1,40 @@
+{
+  "slug": "trym",
+  "name": "Trym",
+  "updatedAt": "2026-06-28T19:19:05.165Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:34:52.458Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:19:05.165Z",
+      "status": "ok"
+    }
+  },
+  "youtube": {
+    "channelId": "UCnYB3OPrgYCRY3VlbfS6X4g",
+    "channelTitle": "Trym",
+    "channelUrl": "https://www.youtube.com/@trymofficial",
+    "customUrl": "@trymofficial",
+    "thumbnailUrl": "https://yt3.ggpht.com/vIe6uPxO-xxUhUcVvp_xs1S-IrnSEXdMdlo85kDwv0N_b-JnudWm30Fic2m5mUERc1xko3ys7w=s800-c-k-c0x00ffffff-no-rj"
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/5Nd385K2g3s0828W8Ab70z"
+  },
+  "spotify": {
+    "artistId": "5Nd385K2g3s0828W8Ab70z",
+    "name": "Trym",
+    "url": "https://open.spotify.com/artist/5Nd385K2g3s0828W8Ab70z",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
+    "imageUrls": [
+      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1"
+    ],
+    "relatedArtists": []
+  }
+}

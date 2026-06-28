@@ -1,0 +1,34 @@
+{
+  "slug": "rumina",
+  "name": "Rumina",
+  "updatedAt": "2026-06-28T19:30:22.991Z",
+  "sources": {
+    "youtube": {
+      "syncedAt": "2026-06-28T01:35:46.411Z",
+      "status": "error",
+      "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
+    },
+    "spotify": {
+      "syncedAt": "2026-06-28T19:30:22.991Z",
+      "status": "ok"
+    }
+  },
+  "resolvedImage": {
+    "url": "/images/portraits/researched/rumina.jpg",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7IDiYtKojSbRAaf2b2Mpew"
+  },
+  "spotify": {
+    "artistId": "7IDiYtKojSbRAaf2b2Mpew",
+    "name": "Rumina",
+    "url": "https://open.spotify.com/artist/7IDiYtKojSbRAaf2b2Mpew",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "/images/portraits/researched/rumina.jpg",
+    "imageUrls": [
+      "/images/portraits/researched/rumina.jpg"
+    ],
+    "relatedArtists": []
+  }
+}

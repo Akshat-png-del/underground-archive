@@ -1,0 +1,86 @@
+{
+  "slug": "trym",
+  "tracks": [
+    {
+      "title": "BLEEDING GODS",
+      "spotifyTrackId": "2ksOtA1vxR8Z6CipP5B5XF",
+      "year": 2024,
+      "duration": "5:30"
+    },
+    {
+      "title": "OW I KNOW",
+      "spotifyTrackId": "4t8s49ALwddkY5ML4jubgO",
+      "year": 2025,
+      "duration": "4:30"
+    },
+    {
+      "title": "R-301",
+      "spotifyTrackId": "10AH8YLYFX2uUZR5N7ZGsc",
+      "year": 2023,
+      "duration": "5:00"
+    },
+    {
+      "title": "Transition",
+      "spotifyTrackId": "7MC2ZDjvreeUGGvMpz5IhU",
+      "year": 2023,
+      "duration": "5:15"
+    },
+    {
+      "title": "In My Mind",
+      "spotifyTrackId": "7k6ds2BvraCzxPW95vSOwd",
+      "year": 2024,
+      "duration": "5:45"
+    },
+    {
+      "title": "Requiem For A Rave",
+      "spotifyTrackId": "4PCTlqlAaGzRbSPQguejWR",
+      "year": 2025,
+      "duration": "4:01"
+    },
+    {
+      "title": "Trinity - Amelie Lens Remix",
+      "spotifyTrackId": "1zgkuQAjwHz9dpy1ty7bX7",
+      "year": 2023,
+      "duration": "7:23"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Boiler Room Manchester — Teletech",
+      "venue": "Teletech",
+      "year": 2024,
+      "youtubeId": "8SCM_YeNOos"
+    },
+    {
+      "title": "TRYM | @UnrealGermany x BOOTSHAUS 2024",
+      "venue": "Unreal",
+      "year": 2024,
+      "youtubeId": "Xxg_PSPrNNU"
+    },
+    {
+      "title": "Trym at Boiler room",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "cIb4oh9VruI"
+    },
+    {
+      "title": "Trym at Teletech, Boiler Room 2022",
+      "venue": "Boiler Room",
+      "year": 2022,
+      "youtubeId": "yC9TjuqKbxo"
+    },
+    {
+      "title": "TRYM dropping and 1995 classic “Golden Raver” at his Boiler Room in Manchester #rave #techno",
+      "venue": "Boiler Room",
+      "year": 2026,
+      "youtubeId": "3mQXAoISRYU"
+    },
+    {
+      "title": "Trym using the “DIET COKE” vocal at TELETECH before sending an absolutely brutal hard techno drop 🔥",
+      "venue": "Teletech",
+      "year": 2026,
+      "youtubeId": "pzCK1nWaO6g"
+    }
+  ],
+  "updatedAt": "2026-06-28T01:30:29.105Z"
+}
