@@ -1,10 +1,10 @@
 {
   "slug": "charlotte-de-witte",
   "name": "Charlotte de Witte",
-  "updatedAt": "2026-06-28T19:17:53.420Z",
+  "updatedAt": "2026-06-28T19:31:10.917Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:17:53.420Z",
+      "syncedAt": "2026-06-28T19:31:10.917Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05"
+      "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/1lJhME1ZpzsEa5M0wW6Mso"
   },

@@ -1,10 +1,10 @@
 {
   "slug": "999999999",
   "name": "999999999",
-  "updatedAt": "2026-06-28T19:19:41.250Z",
+  "updatedAt": "2026-06-28T19:32:36.179Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:19:41.250Z",
+      "syncedAt": "2026-06-28T19:32:36.179Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96"
+      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc"
   },
