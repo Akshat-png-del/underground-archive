@@ -5,30 +5,32 @@ import type { Artist } from "@/types";
 import { artists } from "@/content/artists";
 import { archiveSets } from "@/content/sets";
 import { articles } from "@/content/editorial";
-import { resolvePortrait, resolvePortraitFallbacks } from "@/lib/archive/verification";
+import { resolveHeroImage, resolveHeroFallbacks } from "@/lib/archive/verification";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { Button } from "@/components/ui/Button";
 import { genreLabels } from "@/content/artists";
 
 export function ArtistOfWeekHero({ artist }: { artist: Artist }) {
-  const heroSrc = resolvePortrait(artist);
-  const heroFallbacks = resolvePortraitFallbacks(artist).slice(1);
+  const heroSrc = resolveHeroImage(artist);
+  const heroFallbacks = resolveHeroFallbacks(artist);
   return (
     <section className="relative overflow-hidden border-b border-border">
       <div className="absolute inset-0">
-        <SafeImage
-          src={heroSrc}
-          fallbacks={heroFallbacks}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="opacity-40"
-        />
+        <Link href={`/artists/${artist.slug}`} className="block h-full w-full" aria-label={`View ${artist.name}`}>
+          <SafeImage
+            src={heroSrc}
+            fallbacks={heroFallbacks}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="opacity-40 transition-opacity duration-500 hover:opacity-50"
+          />
+        </Link>
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/30" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(200,255,0,0.12),transparent_55%)]" />
       </div>
-      <div className="relative mx-auto max-w-6xl px-4 py-16 sm:py-20">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:py-20">
         <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent">
           Artist of the Week · {artist.city}
         </p>

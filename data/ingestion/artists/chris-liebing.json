@@ -1,10 +1,10 @@
 {
   "slug": "chris-liebing",
   "name": "Chris Liebing",
-  "updatedAt": "2026-06-28T19:31:19.937Z",
+  "updatedAt": "2026-06-28T19:51:02.552Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:31:19.937Z",
+      "syncedAt": "2026-06-28T19:51:02.552Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
   },

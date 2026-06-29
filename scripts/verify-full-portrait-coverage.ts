@@ -117,6 +117,12 @@ function main() {
     return !isGenrePortraitUrl(portrait);
   }).length;
 
+  const withoutPortrait = sorted.filter((artist) => {
+    if (getVerifiedImageRecord(artist.slug)) return false;
+    const { portrait } = resolveArtistImage(artist, artist.image);
+    return isGenrePortraitUrl(portrait) || portrait === "/images/artist-fallback.svg";
+  });
+
   const report = [
     "# Portrait Coverage Report (Full Catalog)",
     "",
@@ -133,13 +139,37 @@ function main() {
     `- Tier 2 coverage: **${tier2Ok}/${tier2.length}** (${Math.round((tier2Ok / tier2.length) * 100)}%)`,
     `- Catalog coverage: **${artists.length - genreFallback}/${artists.length}** (${Math.round(((artists.length - genreFallback) / artists.length) * 100)}%)`,
     "",
+    "## Artists without portraits",
+    "",
+    "_No verified portrait; showing genre-specific placeholder in production._",
+    "",
+  ];
+
+  if (withoutPortrait.length === 0) {
+    report.push("_None — all catalog artists have a verified or editorial portrait._", "");
+  } else {
+    report.push(
+      "| Artist | Slug | Tier | Placeholder | Manual review |",
+      "| --- | --- | --- | --- | --- |"
+    );
+    for (const artist of withoutPortrait) {
+      const tier = getCurationTier(artist.slug);
+      const { portrait } = resolveArtistImage(artist, artist.image);
+      report.push(
+        `| ${artist.name} | ${artist.slug} | ${tier} | ${portrait} | ${MANUAL_SLUGS.has(artist.slug) ? "Yes" : "No"} |`
+      );
+    }
+    report.push("");
+  }
+
+  report.push(
     "## Artist | Source | Confidence | In Production | Needs Manual Review",
     "",
     "| Artist | Source | Confidence | In Production | Needs Manual Review |",
     "| --- | --- | --- | --- | --- |",
     ...rows,
-    "",
-  ];
+    ""
+  );
 
   if (issues.length) {
     report.push("## Issues", "", ...issues.map((i) => `- ${i}`), "");

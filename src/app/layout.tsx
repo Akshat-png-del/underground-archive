@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GrainOverlay } from "@/components/ui/ArchivePrimitives";
 import { AppProviders } from "@/components/providers/AppProviders";
+import { PlaybackRoot } from "@/components/music/PlaybackRoot";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { organizationSchema, websiteSchema } from "@/lib/seo/jsonld";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <PlaybackRoot />
         </AppProviders>
       </body>
     </html>

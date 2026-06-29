@@ -1,4 +1,7 @@
-import { IMAGE_FALLBACK, ytThumb } from "@/lib/images";
+import type { Genre } from "@/types";
+import { getGenreArtwork } from "@/lib/archive/genre-artwork";
+import { ytThumb } from "@/lib/images";
+import syncedHashes from "./track-cover-hashes.json";
 
 /** Spotify track/album ID → i.scdn.co image hash */
 const COVER_HASHES: Record<string, string> = {
@@ -32,6 +35,17 @@ const COVER_HASHES: Record<string, string> = {
   "2Y2Ydnk6XPTe4IpOTNs5Xh": "ab67616d00001e0273c1ca8ad0d925ffad67d9a2",
   "34yR53qn56KlYXmhbuwjaa": "ab67616d00001e02960aad521ba3873752bd016f",
   "2tpfPi4qSamU9EX5Q8FnNi": "ab67616d00001e020c470be4b22b8a8a75223a01",
+  "07hEohgiVinYT72t39dcz0": "ab67616d00001e02a001210062d4d95230e581be",
+  "2BQovyZk74uQuusPBRdWEa": "ab67616d00001e02a001210062d4d95230e581be",
+  "2GMgA4N5IwoE4aXMkFxKoA": "ab67616d00001e02a001210062d4d95230e581be",
+  "3GjTUY6Fzt28vQMCTUy9MN": "ab67616d00001e027ef2134f17c7f8b12153f528",
+  "1u3JDrB6aWtckipUyTN2Cz": "ab67616d00001e02fc8a889d961481d840d0d7bb",
+  "3EcZhPKhaKHZB9jEGpg2E9": "ab67616d00001e023f06ebb8151d84a1d4e53b42",
+  "03qSprDdxsPGSrMFpWPAva": "ab67616d00001e02f476c4f00b305f7d7d9b3746",
+  "3bEOnR00T29CCcZDNn8LSv": "ab67616d00001e023378b1ad8546369e67399a11",
+  "7KkCp4bClCsnrdqBLhCUFg": "ab67616d00001e02e31f7b60c66b2e1b153e25cd",
+  "0AWic9aw9jUqDq4cwJb0fy": "ab67616d00001e0212727a71ba87f743b34c39d3",
+  ...syncedHashes,
 };
 
 function spotifyId(url: string): string | null {
@@ -43,14 +57,18 @@ export function scdn(hash: string): string {
   return `https://i.scdn.co/image/${hash}`;
 }
 
-/** Release artwork from Spotify; unique YouTube still or hash as fallback. */
+export function spotifyCoverHash(id: string): string | undefined {
+  return COVER_HASHES[id];
+}
+
+/** Release artwork from Spotify; YouTube still, synced hash, or genre placeholder. */
 export function trackCover(
   spotifyUrl: string,
-  options?: { youtubeId?: string; hash?: string }
+  options?: { youtubeId?: string; hash?: string; genre?: Genre }
 ): string {
   if (options?.hash) return scdn(options.hash);
   const id = spotifyId(spotifyUrl);
   if (id && COVER_HASHES[id]) return scdn(COVER_HASHES[id]);
   if (options?.youtubeId) return ytThumb(options.youtubeId, "hq");
-  return IMAGE_FALLBACK;
+  return options?.genre ? getGenreArtwork(options.genre) : "/images/genres/techno.svg";
 }

@@ -5,6 +5,7 @@ import { archiveSets, getSet, setCategoryLabels } from "@/content/sets";
 import { SetDetail } from "@/components/sets/SetDetail";
 import { RecordView } from "@/components/library/RecordView";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { formatDisplayDate } from "@/lib/format";
 
 export function generateStaticParams() {
   return archiveSets.map((s) => ({ slug: s.slug }));
@@ -46,7 +47,7 @@ export default async function SetPage({
         </p>
       </div>
       <RecordView type="set" refId={set.id} />
-      <SetDetail set={set} />
+      <SetDetail set={set} displayDate={formatDisplayDate(set.date)} />
     </div>
   );
 }

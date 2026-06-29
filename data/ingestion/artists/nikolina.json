@@ -1,10 +1,10 @@
 {
   "slug": "nikolina",
   "name": "Nikolina",
-  "updatedAt": "2026-06-28T19:32:26.853Z",
+  "updatedAt": "2026-06-28T19:52:15.618Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:32:26.853Z",
+      "syncedAt": "2026-06-28T19:52:15.618Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
     "imageUrls": [
-      "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2"
+      "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc"
   },

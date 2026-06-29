@@ -6,7 +6,7 @@ import {
   attachTrackVerification,
   youtubeIdAllowedForArtist,
 } from "@/lib/archive/verification";
-import { getGenreArtwork } from "@/lib/archive/genre-artwork";
+import { getGenreArtwork, getGenreHeroArtwork } from "@/lib/archive/genre-artwork";
 import { ytThumb } from "@/lib/images";
 import { scdn, trackCover } from "@/content/artists/track-covers";
 
@@ -54,6 +54,11 @@ export function buildArtist(seed: ArtistSeed): Artist {
     image = { url: portrait, source: "festival-press", sourceType: "festival-press", verified: false };
   }
 
+  const heroImage =
+    essentialSets[0]?.youtubeId && youtubeIdAllowedForArtist(essentialSets[0].youtubeId, seed.slug)
+      ? ytThumb(essentialSets[0].youtubeId, "max")
+      : getGenreHeroArtwork(seed.genres[0]);
+
   return {
     ...seed,
     id,
@@ -61,7 +66,7 @@ export function buildArtist(seed: ArtistSeed): Artist {
     topTracks,
     essentialSets,
     portrait,
-    heroImage: portrait,
+    heroImage,
     image,
     imageSource: "fallback",
   };
@@ -152,7 +157,9 @@ export function createCatalogArtist(entry: CatalogEntry): Artist {
                 coverArt: t.coverHash
                   ? scdn(t.coverHash)
                   : t.spotifyTrackId
-                    ? trackCover(`https://open.spotify.com/track/${t.spotifyTrackId}`)
+                    ? trackCover(`https://open.spotify.com/track/${t.spotifyTrackId}`, {
+                        genre: entry.genres[0],
+                      })
                     : getGenreArtwork(entry.genres[0]),
                 spotifyUrl: t.spotifyTrackId
                   ? `https://open.spotify.com/track/${t.spotifyTrackId}`

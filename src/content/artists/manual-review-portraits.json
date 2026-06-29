@@ -22,7 +22,7 @@
         "genres": ["schranz", "hard-techno", "peak-time-techno"]
       },
       "confidence": "none",
-      "lastResearchedAt": "2026-06-29"
+      "lastResearchedAt": "2026-06-28"
     },
     {
       "slug": "debora-alessio",
@@ -43,7 +43,7 @@
         "genres": ["peak-time-techno", "hard-techno"]
       },
       "confidence": "none",
-      "lastResearchedAt": "2026-06-29"
+      "lastResearchedAt": "2026-06-28"
     },
     {
       "slug": "psyk32",
@@ -65,7 +65,7 @@
         "genres": ["hard-techno", "industrial-techno"]
       },
       "confidence": "none",
-      "lastResearchedAt": "2026-06-29"
+      "lastResearchedAt": "2026-06-28"
     }
   ]
 }

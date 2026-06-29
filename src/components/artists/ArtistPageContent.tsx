@@ -1,9 +1,8 @@
 import Link from "next/link";
 import type { Artist } from "@/types";
 import { genreLabels, getArtist } from "@/content/artists";
-import { resolvePortrait, resolvePortraitFallbacks } from "@/lib/archive/verification";
+import { resolvePortrait, resolvePortraitFallbacksForDisplay, resolveHeroImage, resolveHeroFallbacks } from "@/lib/archive/verification";
 import { SafeImage } from "@/components/ui/SafeImage";
-import { Tag } from "@/components/ui/ArchivePrimitives";
 import { Button } from "@/components/ui/Button";
 import { CareerTimeline } from "./CareerTimeline";
 import { ArtistCard } from "./ArtistCard";
@@ -12,6 +11,8 @@ import { ArtistSaveButton } from "./ArtistSaveButton";
 import { ArtistFollowButton } from "./ArtistFollowButton";
 import { getRecommendationsForArtist, getArtistRecommendationLabel } from "@/lib/preferences/recommendations";
 import { RecommendationStrip } from "@/components/discovery/RecommendationStrip";
+import { ListeningPath } from "./ListeningPath";
+import { ArtistProfilePortrait } from "./ArtistProfilePortrait";
 
 interface Props {
   artist: Artist;
@@ -35,8 +36,9 @@ export function ArtistPageContent({ artist }: Props) {
 
   const { externalLinks: links } = artist;
   const portraitSrc = resolvePortrait(artist);
-  const portraitFallbacks = resolvePortraitFallbacks(artist).slice(1);
-  const heroSrc = portraitSrc;
+  const portraitFallbacks = resolvePortraitFallbacksForDisplay(artist);
+  const heroSrc = resolveHeroImage(artist);
+  const heroFallbacks = resolveHeroFallbacks(artist);
 
   return (
     <>
@@ -45,7 +47,7 @@ export function ArtistPageContent({ artist }: Props) {
         <div className="relative h-64 sm:h-80">
           <SafeImage
             src={heroSrc}
-            fallbacks={portraitFallbacks}
+            fallbacks={heroFallbacks}
             alt=""
             fill
             priority
@@ -56,21 +58,24 @@ export function ArtistPageContent({ artist }: Props) {
         </div>
         <div className="mx-auto max-w-6xl px-4 pb-10">
           <div className="relative -mt-16 flex flex-col gap-6 sm:flex-row sm:items-end">
-            <div className="relative h-28 w-28 shrink-0 border border-border sm:h-36 sm:w-36">
-              <SafeImage
-                src={portraitSrc}
-                fallbacks={portraitFallbacks}
-                alt={artist.name}
-                fill
-                sizes="144px"
-              />
-            </div>
+            <ArtistProfilePortrait
+              src={portraitSrc}
+              fallbacks={portraitFallbacks}
+              name={artist.name}
+              className="h-28 w-28 shrink-0 sm:h-36 sm:w-36"
+            />
             <div className="flex-1">
               <h1 className="font-serif text-4xl text-foreground sm:text-5xl">{artist.name}</h1>
               <p className="mt-2 text-muted">{artist.city}, {artist.country} · Since {artist.activeSince}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {artist.genres.map((g) => (
-                  <Tag key={g}>{genreLabels[g]}</Tag>
+                  <Link
+                    key={g}
+                    href={`/genres/${g}`}
+                    className="chip-selectable inline-block border border-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted-light hover:text-accent"
+                  >
+                    {genreLabels[g]}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -127,18 +132,7 @@ export function ArtistPageContent({ artist }: Props) {
 
             <Section title="New here? Start here">
               {artist.listeningPath.length > 0 ? (
-                <ol className="space-y-4">
-                  {artist.listeningPath.map((step, i) => (
-                    <li key={step.title} className="flex gap-4">
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center border border-accent text-sm text-accent">{i + 1}</span>
-                      <div>
-                        <p className="text-xs uppercase text-muted">{step.type}</p>
-                        <p className="font-medium text-foreground">{step.title}</p>
-                        {step.note && <p className="text-sm text-muted">{step.note}</p>}
-                      </div>
-                    </li>
-                  ))}
-                </ol>
+                <ListeningPath artist={artist} />
               ) : (
                 <p className="text-muted-light">
                   Start with top tracks above
@@ -151,7 +145,7 @@ export function ArtistPageContent({ artist }: Props) {
               {similar.length > 0 ? (
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
                   {similar.map((a) => (
-                    <ArtistCard key={a.slug} slug={a.slug} name={a.name} portrait={a.portrait} genres={a.genres} city={a.city} />
+                    <ArtistCard key={a.slug} artist={a} />
                   ))}
                 </div>
               ) : (

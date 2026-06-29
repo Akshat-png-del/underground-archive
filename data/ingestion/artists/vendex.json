@@ -1,10 +1,10 @@
 {
   "slug": "vendex",
   "name": "Vendex",
-  "updatedAt": "2026-06-28T19:32:23.776Z",
+  "updatedAt": "2026-06-28T19:52:12.612Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:32:23.776Z",
+      "syncedAt": "2026-06-28T19:52:12.612Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69"
+      "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7"
   },

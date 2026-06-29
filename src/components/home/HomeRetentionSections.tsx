@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useLibrary, getBecauseYouListened } from "@/context/LibraryContext";
 import { getRecommendedTracks } from "@/content/tracks";
 import { archiveSets } from "@/content/sets";
+import { SetRow } from "@/components/music/SetRow";
+import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { TrackRow } from "@/components/music/TrackRow";
 import { ArtistCard } from "@/components/artists/ArtistCard";
@@ -27,14 +29,8 @@ export function HomeRetentionSections() {
             <h2 className="font-serif text-2xl text-foreground sm:text-3xl">Continue listening</h2>
             <ul className="mt-6 space-y-2">
               {continueItems.map((h) => (
-                <li key={h.id} className="flex items-center gap-3 border border-border p-3">
-                  <div className="relative h-10 w-10 shrink-0">
-                    <SafeImage src={h.coverArt} alt="" fill sizes="40px" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">{h.title}</p>
-                    <p className="text-xs text-muted">{h.subtitle}</p>
-                  </div>
+                <li key={h.id}>
+                  <HistoryPlayRow entry={h} className="card-editorial" />
                 </li>
               ))}
             </ul>
@@ -50,7 +46,7 @@ export function HomeRetentionSections() {
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {trendingPlaylists.map((p) => (
-              <Link key={p.id} href={`/playlists/${p.id}`} className="border border-border p-4 hover:border-accent">
+              <Link key={p.id} href={`/playlists/${p.id}`} className="interactive-row border border-border p-4">
                 <div className="relative mb-3 aspect-square w-full">
                   <SafeImage src={p.coverImage} alt="" fill sizes="25vw" />
                 </div>
@@ -67,15 +63,7 @@ export function HomeRetentionSections() {
           <h2 className="font-serif text-2xl text-foreground sm:text-3xl">Editor&apos;s picks — essential sets</h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {mostSaved.map((set) => (
-              <Link key={set.id} href={`/sets/${set.slug}`} className="flex gap-4 border border-border p-4 hover:border-accent">
-                <div className="relative h-20 w-32 shrink-0">
-                  <SafeImage src={set.thumbnail} alt="" fill sizes="128px" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">{set.title}</p>
-                  <p className="text-sm text-muted">{set.artistName} · {set.event}</p>
-                </div>
-              </Link>
+              <SetRow key={set.id} set={set} variant="row" meta={`${set.artistName} · ${set.event}`} />
             ))}
           </div>
         </div>
@@ -100,14 +88,7 @@ export function HomeRetentionSections() {
             <h2 className="font-serif text-2xl text-foreground sm:text-3xl">Because you listened recently</h2>
             <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
               {becauseYou.map((a) => a && (
-                <ArtistCard
-                  key={a.slug}
-                  slug={a.slug}
-                  name={a.name}
-                  portrait={a.portrait}
-                  genres={a.genres}
-                  city={a.city}
-                />
+                <ArtistCard key={a.slug} artist={a} />
               ))}
             </div>
           </div>

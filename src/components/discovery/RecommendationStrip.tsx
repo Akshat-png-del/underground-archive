@@ -26,13 +26,7 @@ export function RecommendationStrip({ title, artists, href }: Props) {
         <HomeCarousel>
           {artists.map((a) => (
             <CarouselItem key={a.slug}>
-              <ArtistCard
-                slug={a.slug}
-                name={a.name}
-                portrait={a.portrait}
-                genres={a.genres}
-                city={a.city}
-              />
+              <ArtistCard artist={a} />
             </CarouselItem>
           ))}
         </HomeCarousel>

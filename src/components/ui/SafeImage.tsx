@@ -19,6 +19,18 @@ function isSvgOrLocal(src: string): boolean {
   return src.startsWith("/") || src.startsWith("data:") || src.endsWith(".svg");
 }
 
+function isUnoptimizedRemote(src: string): boolean {
+  return (
+    src.includes("scdn.co") ||
+    src.includes("spotifycdn.com") ||
+    src.includes("ggpht.com") ||
+    src.includes("ytimg.com") ||
+    src.includes("youtube.com") ||
+    src.includes("discogs.com") ||
+    src.includes("ra.co")
+  );
+}
+
 export function SafeImage({
   src,
   alt,
@@ -91,12 +103,7 @@ export function SafeImage({
           sizes={sizes}
           src={imgSrc}
           alt={alt}
-          unoptimized={
-            typeof imgSrc === "string" &&
-            (imgSrc.includes("scdn.co") ||
-              imgSrc.includes("spotifycdn.com") ||
-              imgSrc.includes("ggpht.com"))
-          }
+          unoptimized={typeof imgSrc === "string" && (isSvgOrLocal(imgSrc) || isUnoptimizedRemote(imgSrc))}
           placeholder={typeof imgSrc === "string" && imgSrc.startsWith("http") ? "blur" : undefined}
           blurDataURL={typeof imgSrc === "string" && imgSrc.startsWith("http") ? BLUR_DATA_URL : undefined}
           className={imgClassName}

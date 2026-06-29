@@ -15,7 +15,7 @@ import {
 } from "@/lib/preferences/recommendations";
 import { RecommendationStrip } from "@/components/discovery/RecommendationStrip";
 import { ArtistGrid } from "@/components/artists/ArtistGrid";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { SetRow } from "@/components/music/SetRow";
 import { TrackRow } from "@/components/music/TrackRow";
 
 interface Props {
@@ -118,7 +118,7 @@ export function GenrePageContent({ slug }: Props) {
                   <Link
                     key={g}
                     href={`/genres/${g}`}
-                    className="border border-border px-4 py-2 text-sm text-muted-light transition-colors hover:border-accent hover:text-accent"
+                    className="chip-selectable border border-border px-4 py-2 text-sm text-muted-light"
                   >
                     {genreLabels[g]} →
                   </Link>
@@ -171,16 +171,7 @@ export function GenrePageContent({ slug }: Props) {
           <h2 className="font-serif text-2xl text-foreground">Essential sets</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {sets.map((set) => (
-              <Link key={set.id} href={`/sets/${set.slug}`} className="group flex gap-4 border border-border p-4 hover:border-accent">
-                <div className="relative h-20 w-32 shrink-0">
-                  <SafeImage src={set.thumbnail} alt="" fill sizes="128px" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground group-hover:text-accent">{set.title}</p>
-                  <p className="text-sm text-muted">{set.artistName}</p>
-                  <p className="text-xs text-muted-light">{set.event} · {set.bpm ?? "—"} BPM</p>
-                </div>
-              </Link>
+              <SetRow key={set.id} set={set} variant="row" meta={`${set.artistName} · ${set.event}`} />
             ))}
           </div>
         </section>
@@ -191,7 +182,7 @@ export function GenrePageContent({ slug }: Props) {
           <h2 className="font-serif text-2xl text-foreground">Archive guides</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {articles.map((a) => (
-              <Link key={a.slug} href={`/editorial/${a.slug}`} className="group border border-border p-4 hover:border-accent">
+              <Link key={a.slug} href={`/editorial/${a.slug}`} className="interactive-row group border border-border p-4">
                 <p className="text-xs uppercase tracking-wider text-accent">{a.category.replace(/-/g, " ")}</p>
                 <p className="mt-2 font-serif text-lg text-foreground group-hover:text-accent">{a.title}</p>
                 <p className="mt-2 text-sm text-muted-light line-clamp-2">{a.excerpt}</p>

@@ -1,7 +1,13 @@
 import type { Artist, ArtistImage, EssentialSet, Track, VerificationStatus } from "@/types";
 import type { ArchiveSet, CatalogTrack } from "@/types/library";
 import { getVerifiedYoutubeByArtist } from "@/content/artists/research";
-import { resolveDisplayPortrait, resolvePortraitFallbacks } from "@/lib/archive/images/apply";
+import { resolveDisplayPortrait, resolveArtistImage, resolvePortraitFallbacks } from "@/lib/archive/images/apply";
+import {
+  resolveHeroDisplayUrl,
+  resolveHeroDisplayFallbacks,
+  preferRenderablePortraitUrl,
+  buildPortraitDisplayFallbacks,
+} from "@/lib/archive/images/display";
 import { artistId } from "@/lib/archive/ids";
 import { isAllowedSetVenue } from "@/lib/archive/pipeline/validate";
 import { trackId as buildTrackId, setId as buildSetId } from "@/lib/music";
@@ -29,11 +35,37 @@ export function isPartialArtist(artist: Pick<Artist, "verificationStatus">): boo
 
 /** Portrait for display — verified, editorial, genre artwork, or neutral fallback. */
 export function resolvePortrait(
-  artist: Pick<Artist, "portrait" | "heroImage" | "genres" | "slug"> & {
+  artist: Pick<Artist, "portrait" | "heroImage" | "genres" | "slug" | "spotifyArtistId"> & {
     image?: ArtistImage;
   }
 ): string {
   return resolveDisplayPortrait(artist);
+}
+
+export function resolveHeroImage(artist: Artist): string {
+  const { portrait } = resolveArtistImage(artist, artist.image);
+  const portraitUrl = preferRenderablePortraitUrl(artist, portrait);
+  return resolveHeroDisplayUrl(artist, portraitUrl);
+}
+
+export function resolveHeroFallbacks(artist: Artist): string[] {
+  const { portrait } = resolveArtistImage(artist, artist.image);
+  const portraitUrl = preferRenderablePortraitUrl(artist, portrait);
+  return resolveHeroDisplayFallbacks(artist, portraitUrl).slice(1);
+}
+
+export function resolvePortraitFallbacksForDisplay(
+  artist: Pick<Artist, "portrait" | "heroImage" | "genres" | "slug" | "spotifyArtistId"> & {
+    image?: ArtistImage;
+  }
+): string[] {
+  const { portrait } = resolveArtistImage(artist as Artist, artist.image);
+  const portraitUrl = preferRenderablePortraitUrl(artist as Artist, portrait);
+  return buildPortraitDisplayFallbacks(
+    artist as Artist,
+    portraitUrl,
+    resolvePortraitFallbacks(artist),
+  ).slice(1);
 }
 
 export { resolvePortraitFallbacks };

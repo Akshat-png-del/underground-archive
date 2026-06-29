@@ -5,6 +5,7 @@ import { getCommunityPlaylists } from "@/content/home/feed";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection, HomeCarousel, CarouselItem } from "@/components/home/HomeSection";
+import { formatLocaleNumber } from "@/lib/format";
 
 export function CommunityPlaylistsSection() {
   const playlists = getCommunityPlaylists();
@@ -30,7 +31,7 @@ export function CommunityPlaylistsSection() {
                 <p className="font-serif text-lg text-foreground group-hover:text-accent">{p.title}</p>
                 <p className="mt-1 text-sm text-muted">{p.creatorName}</p>
                 <p className="mt-2 font-mono text-xs text-muted-light">
-                  {p.items.length} tracks · {p.likeCount.toLocaleString()} likes
+                  {p.items.length} tracks · {formatLocaleNumber(p.likeCount)} likes
                 </p>
               </Link>
             </CarouselItem>

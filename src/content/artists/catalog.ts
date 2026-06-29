@@ -114,9 +114,9 @@ const catalogEntries: CatalogEntry[] = [
     labels: ["Compressed", "Bitshift"],
     similarArtists: ["arkus-p", "sven-wittekind", "dj-rush"],
     trackSpecs: [
-      { title: "Hardcore Salsa", trackId: "2L6iML8RAAq2Csyd5mA6Ya", year: 2004 },
-      { title: "Techno Boogie", trackId: "6h6qKddRvl9i5YUmvNcHfN", year: 2007 },
-      { title: "Hermosa", trackId: "7fXK4nSADxslMaAHshrkZI", year: 2005 },
+      { title: "Hardcore Salsa", trackId: "3GjTUY6Fzt28vQMCTUy9MN", year: 2004 },
+      { title: "Grooverider", trackId: "1u3JDrB6aWtckipUyTN2Cz", year: 2007 },
+      { title: "Hermoso", trackId: "3EcZhPKhaKHZB9jEGpg2E9", year: 2005 },
     ],
   }),
   entry(4, {
@@ -144,7 +144,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Berlin",
     activeSince: 1995,
     genres: ["industrial-techno", "hard-techno"],
-    spotifyArtistId: "21444lX8gpmOX36icLmbFI",
+    spotifyArtistId: "1YtebzJsPHni4DwAoMumGs",
     labels: ["Ostgut Ton"],
     similarArtists: ["chris-liebing", "surgeon", "paula-temple"],
     trackSpecs: [
@@ -185,9 +185,9 @@ const catalogEntries: CatalogEntry[] = [
     labels: ["Perc Trax"],
     similarArtists: ["paula-temple", "ancient-methods", "surgeon"],
     trackSpecs: [
-      { title: "Look What Your Love Has Done", trackId: "7fXK4nSADxslMaAHshrkZI", year: 2018 },
-      { title: "Unelected Tyrant", trackId: "5jt1fxz71bodmjOzvtqEV4", year: 2019 },
-      { title: "Machine A", trackId: "5kcWoHzVA1h6w8Uu4TgmzC", year: 2020 },
+      { title: "Look What Your Love Has Done To Me", trackId: "07hEohgiVinYT72t39dcz0", year: 2017 },
+      { title: "Unelected", trackId: "2BQovyZk74uQuusPBRdWEa", year: 2017 },
+      { title: "Wax Apple", trackId: "2GMgA4N5IwoE4aXMkFxKoA", year: 2017 },
     ],
     featured: true,
   }),
@@ -457,13 +457,12 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Paris",
     activeSince: 2016,
     genres: ["hard-techno", "schranz"],
-    spotifyArtistId: "0iQvnC5zY6yP4v8SHkDI4N",
+    spotifyArtistId: "3tFRzplldDxib5z3YjQb6n",
     labels: ["Mama Told Ya"],
     similarArtists: ["anetha", "regal", "nikolina"],
     trackSpecs: [
-      { title: "Sunset", trackId: "5kcWoHzVA1h6w8Uu4TgmzC", year: 2021 },
-      { title: "Free For All", trackId: "6R84ZlQF7gGkPB6o3GLZXB", year: 2022 },
-      { title: "Schranz", trackId: "2Y2Ydnk6XPTe4IpOTNs5Xh", year: 2023 },
+      { title: "Posh & Scary", trackId: "03qSprDdxsPGSrMFpWPAva", year: 2022 },
+      { title: "Clean", trackId: "3bEOnR00T29CCcZDNn8LSv", year: 2022 },
     ],
   }),
   entry(23, {
@@ -532,9 +531,8 @@ const catalogEntries: CatalogEntry[] = [
     labels: ["NAKT"],
     similarArtists: ["parfait", "anetha", "regal"],
     trackSpecs: [
-      { title: "Schroove", trackId: "5kcWoHzVA1h6w8Uu4TgmzC", year: 2023 },
-      { title: "Verknipt", trackId: "5anpt5Mt1bT5c6wk6cwmu9", year: 2024 },
-      { title: "Rave Tool", trackId: "3eKCphLVlWBovVgh7veu2l", year: 2024 },
+      { title: "No More Lies", trackId: "7KkCp4bClCsnrdqBLhCUFg", year: 2024 },
+      { title: "Dizzy", trackId: "0AWic9aw9jUqDq4cwJb0fy", year: 2024 },
     ],
     trending: true,
   }),

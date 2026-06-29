@@ -10,6 +10,7 @@ import type {
 import { filterQARows, imageStatusLabel } from "@/lib/archive/qa-dashboard-types";
 import { Button } from "@/components/ui/Button";
 import { SafeImage } from "@/components/ui/SafeImage";
+import { formatDisplayDateTime } from "@/lib/format";
 
 interface Props {
   initialData: QADashboardData;
@@ -92,7 +93,7 @@ export function ArchiveAuditDashboard({ initialData }: Props) {
           <p className="font-mono text-xs uppercase tracking-widest text-accent">Archive QA</p>
           <h1 className="mt-1 font-serif text-3xl text-foreground sm:text-4xl">Quality dashboard</h1>
           <p className="mt-2 text-sm text-muted-light">
-            Generated {new Date(initialData.generatedAt).toLocaleString()}
+            Generated {formatDisplayDateTime(initialData.generatedAt)}
           </p>
         </div>
         <div className="flex items-center gap-3">
@@ -142,9 +143,9 @@ export function ArchiveAuditDashboard({ initialData }: Props) {
               key={f.id}
               type="button"
               onClick={() => setFilter(f.id)}
-              className={`border px-3 py-1.5 text-sm transition-colors ${
+              className={`chip-selectable border px-3 py-1.5 text-sm transition-colors ${
                 filter === f.id
-                  ? "border-accent bg-accent/10 text-accent"
+                  ? "is-selected border-accent bg-accent/10 text-accent"
                   : "border-border text-muted-light hover:border-muted"
               }`}
             >

@@ -3,30 +3,41 @@ import { articles } from "@/content/editorial";
 import { catalogTracks } from "@/content/tracks";
 import { archiveSets } from "@/content/sets";
 import type { SearchResult } from "@/types/library";
+import { artistSearchFields, artistSuggestFields, artistToSearchResult } from "@/lib/search/artists";
+import { bestFuzzyScore } from "@/lib/search/fuzzy";
+
+export { suggestArtists, groupArtistsAlphabetically, getArtistSortLetter } from "@/lib/search/artists";
+export type { ArtistLetterGroup } from "@/lib/search/artists";
+
+const MIN_RESULT_SCORE = 800;
+
+type ScoredResult = SearchResult & { score: number };
+
+function rankResults(items: ScoredResult[], limit: number): SearchResult[] {
+  return items
+    .filter((item) => item.score >= MIN_RESULT_SCORE)
+    .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, "en", { sensitivity: "base" }))
+    .slice(0, limit)
+    .map(({ score: _score, ...result }) => result);
+}
 
 export function searchAll(query: string, limit = 24): SearchResult[] {
-  const q = query.trim().toLowerCase();
+  const q = query.trim();
   if (!q) return [];
 
-  const results: SearchResult[] = [];
+  const results: ScoredResult[] = [];
 
   for (const artist of artists) {
-    const hay = `${artist.name} ${artist.city} ${artist.country} ${artist.genres.join(" ")} ${artist.labels.join(" ")}`.toLowerCase();
-    if (hay.includes(q)) {
-      results.push({
-        type: "artist",
-        id: artist.slug,
-        title: artist.name,
-        subtitle: `${artist.city} · ${artist.genres.map((g) => genreLabels[g]).join(", ")}`,
-        href: `/artists/${artist.slug}`,
-        image: artist.portrait,
-      });
+    const fields = artistSuggestFields(artist, q);
+    const score = bestFuzzyScore(q, fields);
+    if (score > 0) {
+      results.push({ ...artistToSearchResult(artist), score });
     }
   }
 
   for (const track of catalogTracks) {
-    const hay = `${track.title} ${track.artist}`.toLowerCase();
-    if (hay.includes(q)) {
+    const score = bestFuzzyScore(q, [track.title, track.artist]);
+    if (score > 0) {
       results.push({
         type: "track",
         id: track.id,
@@ -34,13 +45,14 @@ export function searchAll(query: string, limit = 24): SearchResult[] {
         subtitle: track.artist,
         href: `/artists/${track.artistSlug}`,
         image: track.coverArt,
+        score,
       });
     }
   }
 
   for (const set of archiveSets) {
-    const hay = `${set.title} ${set.artistName} ${set.event} ${set.location}`.toLowerCase();
-    if (hay.includes(q)) {
+    const score = bestFuzzyScore(q, [set.title, set.artistName, set.event, set.location]);
+    if (score > 0) {
       results.push({
         type: "set",
         id: set.id,
@@ -48,25 +60,28 @@ export function searchAll(query: string, limit = 24): SearchResult[] {
         subtitle: `${set.artistName} · ${set.event}`,
         href: `/sets/${set.slug}`,
         image: set.thumbnail,
+        score,
       });
     }
   }
 
   for (const [slug, label] of Object.entries(genreLabels)) {
-    if (label.toLowerCase().includes(q) || slug.replace(/-/g, " ").includes(q)) {
+    const score = bestFuzzyScore(q, [label, slug.replace(/-/g, " ")]);
+    if (score > 0) {
       results.push({
         type: "genre",
         id: slug,
         title: label,
         subtitle: "Genre",
         href: `/genres/${slug}`,
+        score,
       });
     }
   }
 
   for (const article of articles) {
-    const hay = `${article.title} ${article.excerpt}`.toLowerCase();
-    if (hay.includes(q)) {
+    const score = bestFuzzyScore(q, [article.title, article.excerpt]);
+    if (score > 0) {
       results.push({
         type: "editorial",
         id: article.slug,
@@ -74,9 +89,10 @@ export function searchAll(query: string, limit = 24): SearchResult[] {
         subtitle: article.excerpt.slice(0, 80),
         href: `/editorial/${article.slug}`,
         image: article.heroImage,
+        score,
       });
     }
   }
 
-  return results.slice(0, limit);
+  return rankResults(results, limit);
 }

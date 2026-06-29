@@ -4,7 +4,7 @@ import {
   getTrendingArtists,
 } from "@/content/artists";
 import { getDisplaySets } from "@/content/sets";
-import { getDisplayTracks } from "@/content/tracks";
+import { getDisplayTracks, sortCatalogTracksDeterministic } from "@/content/tracks";
 import { getPublicPlaylists } from "@/lib/library/store";
 import { getEmergingArtists } from "@/lib/preferences/recommendations";
 import type { Artist } from "@/types";
@@ -22,12 +22,26 @@ export function getArtistOfWeek(): Artist {
   return getArtist(slug) ?? artists[0];
 }
 
+/** Deterministic SSR / first-paint snapshot — no time-based rotation. */
+export function getArtistOfWeekStatic(): Artist {
+  const slug = ARTIST_OF_WEEK_POOL[0];
+  return getArtist(slug) ?? artists[0];
+}
+
 export function getMostViewedArtistsThisWeek(): Artist[] {
   const pool = artists.filter((a) => a.curationTier <= 2 || a.trending);
   return [...pool]
     .sort((a, b) => (b.ratings?.dancefloorImpact ?? 0) - (a.ratings?.dancefloorImpact ?? 0))
     .slice(weekIndex() % 3)
     .concat(pool)
+    .slice(0, 8);
+}
+
+/** Deterministic SSR / first-paint snapshot — no weekIndex rotation. */
+export function getMostViewedArtistsThisWeekStatic(): Artist[] {
+  const pool = artists.filter((a) => a.curationTier <= 2 || a.trending);
+  return [...pool]
+    .sort((a, b) => (b.ratings?.dancefloorImpact ?? 0) - (a.ratings?.dancefloorImpact ?? 0))
     .slice(0, 8);
 }
 
@@ -47,6 +61,11 @@ export function getTrendingGenresThisWeek() {
     .slice(weekIndex() % 2)
     .concat(trendingGenres)
     .slice(0, 6);
+}
+
+/** Deterministic SSR / first-paint snapshot — no weekIndex rotation. */
+export function getTrendingGenresThisWeekStatic() {
+  return [...trendingGenres].sort((a, b) => b.count - a.count).slice(0, 6);
 }
 
 export function getWeeklyDiscoveries(): Artist[] {
@@ -70,10 +89,26 @@ export function getWeeklyDiscoveriesEditorial(): WeeklyDiscoveriesEditorial {
   };
 }
 
+/** Deterministic SSR/first-paint fallback — no Date.now / weekIndex during initial render. */
+export function getWeeklyDiscoveriesEditorialStatic(): WeeklyDiscoveriesEditorial {
+  return {
+    artists: artists.filter((a) => a.featured).slice(0, 5),
+    tracks: sortCatalogTracksDeterministic(getDisplayTracks()).slice(0, 3),
+    sets: getDisplaySets().slice(0, 2),
+  };
+}
+
 export function getEssentialSetOfDay(): ArchiveSet {
   const sets = getDisplaySets().sort((a, b) => b.date.localeCompare(a.date));
   if (sets.length === 0) throw new Error("No sets in archive");
   return sets[halfDayIndex() % sets.length];
+}
+
+/** Deterministic SSR / first-paint snapshot — newest set, no rotation. */
+export function getEssentialSetOfDayStatic(): ArchiveSet {
+  const sets = getDisplaySets().sort((a, b) => b.date.localeCompare(a.date));
+  if (sets.length === 0) throw new Error("No sets in archive");
+  return sets[0];
 }
 
 export function getRecentlyAddedSets(): ArchiveSet[] {
@@ -144,8 +179,14 @@ export function getEditorsPicks(): Artist[] {
 }
 
 export function getRecentlyAddedTracks(limit = 6) {
-  return getDisplayTracks()
-    .sort((a, b) => b.releaseYear - a.releaseYear)
+  return sortCatalogTracksDeterministic(getDisplayTracks())
+    .sort((a, b) => {
+      const byYear = b.releaseYear - a.releaseYear;
+      if (byYear !== 0) return byYear;
+      const byTitle = a.title.localeCompare(b.title, "en", { sensitivity: "base" });
+      if (byTitle !== 0) return byTitle;
+      return a.id.localeCompare(b.id, "en", { sensitivity: "base" });
+    })
     .slice(0, limit);
 }
 

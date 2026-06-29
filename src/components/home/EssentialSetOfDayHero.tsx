@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/Button";
 import { MusicActions } from "@/components/music/MusicActions";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
+import { playbackItemFromSet } from "@/lib/music/playback";
+import { useCardPlayback, youtubeDisplayEmbedUrl } from "@/lib/music/use-card-playback";
 
 interface Props {
   set: ArchiveSet;
@@ -15,6 +17,12 @@ interface Props {
 
 export function EssentialSetOfDayHero({ set }: Props) {
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
+  const item = playbackItemFromSet(set);
+  const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
+    item,
+    "set",
+    set.id,
+  );
 
   return (
     <FadeInSection>
@@ -26,14 +34,33 @@ export function EssentialSetOfDayHero({ set }: Props) {
         linkLabel="Full set page"
         variant="surface"
       >
-        <div className="card-editorial overflow-hidden border border-border bg-surface-elevated lg:grid lg:grid-cols-5">
-          <div className="relative aspect-video lg:col-span-3 lg:aspect-auto lg:min-h-[320px]">
-            <SafeImage src={set.thumbnail} alt="" fill sizes="(max-width:1024px) 100vw, 60vw" className="image-zoom" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent lg:bg-gradient-to-r" />
+        <div
+          onPointerDown={handleCardPointerDown}
+          className={`card-editorial cursor-pointer touch-manipulation overflow-hidden border border-border bg-surface-elevated lg:grid lg:grid-cols-5 ${
+            active ? "ring-2 ring-accent" : ""
+          }`}
+          role="button"
+          tabIndex={0}
+          aria-label={playing ? `Pause ${set.title}` : `Play ${set.title}`}
+        >
+          <div className="group relative aspect-video w-full lg:col-span-3 lg:aspect-auto lg:min-h-[320px]">
+            {set.youtubeId ? (
+              <iframe
+                src={youtubeDisplayEmbedUrl(set.youtubeId)}
+                title={set.title}
+                className="pointer-events-none absolute inset-0 h-full w-full border-0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                loading="lazy"
+                tabIndex={-1}
+              />
+            ) : (
+              <SafeImage src={set.thumbnail} alt="" fill sizes="(max-width:1024px) 100vw, 60vw" className="image-zoom" />
+            )}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent lg:bg-gradient-to-r" />
           </div>
           <div className="flex flex-col justify-center p-6 sm:p-8 lg:col-span-2">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">{set.event}</p>
-            <h3 className="mt-3 font-serif text-3xl leading-tight text-foreground sm:text-4xl">{set.artistName}</h3>
+            <p className="mt-3 font-serif text-3xl leading-tight text-foreground sm:text-4xl">{set.artistName}</p>
             <p className="mt-2 text-lg text-muted-light">{set.title}</p>
             <dl className="mt-6 grid grid-cols-2 gap-4 text-sm">
               <div>
@@ -53,7 +80,7 @@ export function EssentialSetOfDayHero({ set }: Props) {
                 <dd className="mt-1 text-accent">{set.energy ?? "—"}/10</dd>
               </div>
             </dl>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3" onPointerDown={stopCardPointerDown}>
               <MusicActions
                 type="set"
                 refId={set.id}

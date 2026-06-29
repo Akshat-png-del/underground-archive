@@ -5,11 +5,9 @@ export const DISCOVERY_PRESETS: { id: string; label: string; filters: DiscoveryF
   { id: "90s-industrial", label: "90s Industrial", filters: { era: "1990s", genre: "industrial-techno" } },
   { id: "peak-chaos", label: "Peak-Time Chaos", filters: { preset: "peak-chaos", genre: "peak-time-techno", energy: 8.5 } },
   { id: "warehouse-energy", label: "Warehouse", filters: { preset: "warehouse", mood: "aggressive", bpmMin: 145 } },
-  { id: "peak-time", label: "Peak Time", filters: { genre: "peak-time-techno", mood: "euphoric" } },
   { id: "industrial", label: "Industrial", filters: { genre: "industrial-techno", mood: "industrial" } },
   { id: "dark-atmospheric", label: "Atmospheric", filters: { preset: "dark", genre: "dark-techno", mood: "dark" } },
   { id: "acidic", label: "Acidic", filters: { genre: "acid-techno", mood: "hypnotic" } },
-  { id: "driving", label: "Driving", filters: { bpmMin: 150, mood: "aggressive" } },
   { id: "hypnotic", label: "Hypnotic", filters: { mood: "hypnotic", genre: "hypnotic-techno" } },
   { id: "hardgroove", label: "Hardgroove", filters: { genre: "hardgroove" } },
 ];

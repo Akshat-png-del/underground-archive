@@ -11,6 +11,13 @@ import {
   validateVerifiedImageRecord,
   verifiedRecordToArtistImage,
 } from "./validate";
+import {
+  getRemotePortraitCandidates,
+  isLocalResearchedPortraitPath,
+  preferRenderablePortraitUrl,
+  resolveStoredHeroImage,
+  buildPortraitDisplayFallbacks,
+} from "./display";
 
 function resolveFromRegistry(artist: Artist): ArtistImage | undefined {
   const record = getVerifiedImageRecord(artist.slug);
@@ -118,6 +125,14 @@ export function resolvePortraitFallbacks(
     const ingested = getIngestedMetadata(artist.slug);
     if (ingested?.resolvedImage?.url) urls.push(ingested.resolvedImage.url);
     if (ingested?.spotify?.imageUrl) urls.push(ingested.spotify.imageUrl);
+    for (const remote of ingested?.spotify?.imageUrls ?? []) {
+      urls.push(remote);
+    }
+    if (ingested?.youtube?.thumbnailUrl) urls.push(ingested.youtube.thumbnailUrl);
+  }
+
+  for (const remote of getRemotePortraitCandidates(artist as Artist)) {
+    urls.push(remote);
   }
 
   urls.push(getGenreArtwork(artist.genres[0]));
@@ -127,20 +142,21 @@ export function resolvePortraitFallbacks(
 }
 
 export function resolveDisplayPortrait(
-  artist: Pick<Artist, "portrait" | "heroImage" | "genres" | "slug"> & {
+  artist: Pick<Artist, "portrait" | "heroImage" | "genres" | "slug" | "spotifyArtistId"> & {
     image?: ArtistImage;
   }
 ): string {
-  const chain = resolvePortraitFallbacks(artist);
-  return chain[0] ?? FALLBACK_IMAGE;
+  const { portrait } = resolveArtistImage(artist as Artist, artist.image);
+  return preferRenderablePortraitUrl(artist as Artist, portrait);
 }
 
 export function applyArtistImage(artist: Artist): Artist {
   const { portrait, image } = resolveArtistImage(artist, artist.image);
+  const heroImage = resolveStoredHeroImage(artist, portrait);
   return {
     ...artist,
     portrait,
-    heroImage: portrait,
+    heroImage,
     image,
     imageSource: image.verified ? "editorial" : "fallback",
   };

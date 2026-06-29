@@ -1,14 +1,14 @@
 {
   "slug": "nico-moreno",
   "name": "Nico Moreno",
-  "updatedAt": "2026-06-28T19:32:50.303Z",
+  "updatedAt": "2026-06-28T19:52:40.295Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:00.794Z",
       "status": "ok"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:32:50.303Z",
+      "syncedAt": "2026-06-28T19:52:40.295Z",
       "status": "ok"
     }
   },
@@ -20,7 +20,7 @@
     "thumbnailUrl": "https://yt3.ggpht.com/bPtM2SjpVgR8uVDjtwGCr_szkyccMfTZeSc7HzgMEGy_wBML27u3p5v87VUPzMK0cNlbrBRAQA=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S"
   },
@@ -31,9 +31,9 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849",
     "imageUrls": [
-      "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849"
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849"
     ],
     "relatedArtists": []
   }

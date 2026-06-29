@@ -40,6 +40,34 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+@layer base {
+  a[href]:not([aria-disabled="true"]),
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  label[for],
+  select:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="range"] {
+    cursor: pointer;
+  }
+
+  button,
+  a[href],
+  [role="button"] {
+    touch-action: manipulation;
+  }
+}
+
 ::selection {
   background: var(--accent);
   color: var(--background);
@@ -152,7 +180,7 @@ body {
 }
 
 .card-editorial {
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.25s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.25s ease, opacity 0.25s ease;
 }
 
 .card-editorial:hover {
@@ -165,6 +193,46 @@ body {
 
 .group:hover .image-zoom {
   transform: scale(1.04);
+}
+
+/* Clickable list rows, search hits, library items */
+.interactive-row {
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.interactive-row:hover {
+  border-color: var(--accent);
+  background-color: color-mix(in srgb, var(--surface) 65%, transparent);
+}
+
+/* Filter chips, onboarding toggles, discover presets */
+.chip-selectable {
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chip-selectable:hover {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  color: var(--foreground);
+}
+
+.chip-selectable[aria-pressed="true"],
+.chip-selectable.is-selected {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+/* Icon / ghost control buttons */
+.interactive-ghost {
+  cursor: pointer;
+  transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.interactive-ghost:hover {
+  color: var(--foreground);
+  opacity: 0.9;
 }
 
 @media (prefers-reduced-motion: reduce) {

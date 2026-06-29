@@ -1,10 +1,10 @@
 {
   "slug": "sara-landry",
   "name": "Sara Landry",
-  "updatedAt": "2026-06-28T19:30:43.770Z",
+  "updatedAt": "2026-06-28T19:50:27.228Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:43.770Z",
+      "syncedAt": "2026-06-28T19:50:27.228Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
     "imageUrls": [
-      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f"
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK"
   },

@@ -2,10 +2,10 @@
   "999999999": {
     "slug": "999999999",
     "name": "999999999",
-    "updatedAt": "2026-06-28T19:19:41.250Z",
+    "updatedAt": "2026-06-28T19:52:26.264Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:19:41.250Z",
+        "syncedAt": "2026-06-28T19:52:26.264Z",
         "status": "ok"
       },
       "youtube": {
@@ -20,14 +20,14 @@
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
       "imageUrls": [
-        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96"
+        "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96"
       ],
       "relatedArtists": []
     },
     "resolvedImage": {
-      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96",
       "source": "spotify",
       "sourceUrl": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc"
     },
@@ -166,10 +166,10 @@
   "amelie-lens": {
     "slug": "amelie-lens",
     "name": "Amelie Lens",
-    "updatedAt": "2026-06-28T19:17:48.992Z",
+    "updatedAt": "2026-06-28T19:50:50.371Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:48.992Z",
+        "syncedAt": "2026-06-28T19:50:50.371Z",
         "status": "ok"
       },
       "youtube": {
@@ -269,10 +269,10 @@
   "anetha": {
     "slug": "anetha",
     "name": "Anetha",
-    "updatedAt": "2026-06-28T19:18:03.870Z",
+    "updatedAt": "2026-06-28T19:50:59.511Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:18:03.870Z",
+        "syncedAt": "2026-06-28T19:50:59.511Z",
         "status": "ok"
       },
       "youtube": {
@@ -366,10 +366,10 @@
   "arkus-p": {
     "slug": "arkus-p",
     "name": "Arkus P",
-    "updatedAt": "2026-06-28T19:18:20.051Z",
+    "updatedAt": "2026-06-28T19:51:12.095Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:18:20.051Z",
+        "syncedAt": "2026-06-28T19:51:12.095Z",
         "status": "ok"
       },
       "youtube": {
@@ -681,10 +681,10 @@
   "boris-s": {
     "slug": "boris-s",
     "name": "Boris S.",
-    "updatedAt": "2026-06-28T19:18:23.540Z",
+    "updatedAt": "2026-06-28T19:51:15.961Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:18:23.540Z",
+        "syncedAt": "2026-06-28T19:51:15.961Z",
         "status": "ok"
       },
       "youtube": {
@@ -693,22 +693,22 @@
       }
     },
     "spotify": {
-      "artistId": "21444lX8gpmOX36icLmbFI",
+      "artistId": "1YtebzJsPHni4DwAoMumGs",
       "name": "Boris S.",
-      "url": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI",
+      "url": "https://open.spotify.com/artist/1YtebzJsPHni4DwAoMumGs",
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600",
       "imageUrls": [
-        "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600"
       ],
       "relatedArtists": []
     },
     "resolvedImage": {
-      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600",
       "source": "spotify",
-      "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+      "sourceUrl": "https://open.spotify.com/artist/1YtebzJsPHni4DwAoMumGs"
     },
     "youtube": {
       "channelId": "UConj5z_OOR-6vx8ynZ-DfpA",
@@ -721,10 +721,10 @@
   "boy-harsher": {
     "slug": "boy-harsher",
     "name": "Boy Harsher",
-    "updatedAt": "2026-06-28T19:17:43.955Z",
+    "updatedAt": "2026-06-28T19:50:46.274Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:43.955Z",
+        "syncedAt": "2026-06-28T19:50:46.274Z",
         "status": "ok"
       },
       "youtube": {
@@ -761,14 +761,14 @@
   "charlie-sparks": {
     "slug": "charlie-sparks",
     "name": "Charlie Sparks",
-    "updatedAt": "2026-06-28T19:19:09.094Z",
+    "updatedAt": "2026-06-28T19:51:59.711Z",
     "sources": {
       "youtube": {
         "syncedAt": "2026-06-28T01:34:53.104Z",
         "status": "ok"
       },
       "spotify": {
-        "syncedAt": "2026-06-28T19:19:09.094Z",
+        "syncedAt": "2026-06-28T19:51:59.711Z",
         "status": "ok"
       }
     },
@@ -801,10 +801,10 @@
   "charlotte-de-witte": {
     "slug": "charlotte-de-witte",
     "name": "Charlotte de Witte",
-    "updatedAt": "2026-06-28T19:17:53.420Z",
+    "updatedAt": "2026-06-28T19:50:53.446Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:53.420Z",
+        "syncedAt": "2026-06-28T19:50:53.446Z",
         "status": "ok"
       },
       "youtube": {
@@ -864,10 +864,10 @@
   "chris-liebing": {
     "slug": "chris-liebing",
     "name": "Chris Liebing",
-    "updatedAt": "2026-06-28T19:18:07.828Z",
+    "updatedAt": "2026-06-28T19:51:02.552Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:18:07.828Z",
+        "syncedAt": "2026-06-28T19:51:02.552Z",
         "status": "ok"
       },
       "youtube": {
@@ -882,14 +882,14 @@
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
       "imageUrls": [
-        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+        "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
       ],
       "relatedArtists": []
     },
     "resolvedImage": {
-      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
       "source": "spotify",
       "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
     },
@@ -1271,10 +1271,10 @@
   "fantasm": {
     "slug": "fantasm",
     "name": "Fantasm",
-    "updatedAt": "2026-06-28T19:19:32.656Z",
+    "updatedAt": "2026-06-28T19:52:18.528Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:19:32.656Z",
+        "syncedAt": "2026-06-28T19:52:18.528Z",
         "status": "ok"
       },
       "youtube": {
@@ -1437,10 +1437,10 @@
   "ghost-in-the-machine": {
     "slug": "ghost-in-the-machine",
     "name": "Ghost in the Machine",
-    "updatedAt": "2026-06-28T19:18:42.150Z",
+    "updatedAt": "2026-06-28T19:51:31.546Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:18:42.150Z",
+        "syncedAt": "2026-06-28T19:51:31.546Z",
         "status": "ok"
       },
       "youtube": {
@@ -1500,10 +1500,10 @@
   "hadone": {
     "slug": "hadone",
     "name": "Hadone",
-    "updatedAt": "2026-06-28T19:17:59.877Z",
+    "updatedAt": "2026-06-28T19:50:56.579Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:59.877Z",
+        "syncedAt": "2026-06-28T19:50:56.579Z",
         "status": "ok"
       },
       "youtube": {
@@ -1746,10 +1746,10 @@
   "i-hate-models": {
     "slug": "i-hate-models",
     "name": "I Hate Models",
-    "updatedAt": "2026-06-28T19:17:25.618Z",
+    "updatedAt": "2026-06-28T19:50:31.022Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:25.618Z",
+        "syncedAt": "2026-06-28T19:50:31.022Z",
         "status": "ok"
       },
       "youtube": {
@@ -2050,10 +2050,10 @@
   "kobosil": {
     "slug": "kobosil",
     "name": "Kobosil",
-    "updatedAt": "2026-06-28T19:17:29.898Z",
+    "updatedAt": "2026-06-28T19:50:34.403Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:29.898Z",
+        "syncedAt": "2026-06-28T19:50:34.403Z",
         "status": "ok"
       },
       "youtube": {
@@ -2136,10 +2136,10 @@
   "laven": {
     "slug": "laven",
     "name": "LAVEN",
-    "updatedAt": "2026-06-28T19:18:53.487Z",
+    "updatedAt": "2026-06-28T19:51:47.450Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:18:53.487Z",
+        "syncedAt": "2026-06-28T19:51:47.450Z",
         "status": "ok"
       },
       "youtube": {
@@ -2485,14 +2485,14 @@
   "nico-moreno": {
     "slug": "nico-moreno",
     "name": "Nico Moreno",
-    "updatedAt": "2026-06-28T19:19:55.337Z",
+    "updatedAt": "2026-06-28T19:52:40.295Z",
     "sources": {
       "youtube": {
         "syncedAt": "2026-06-28T01:35:00.794Z",
         "status": "ok"
       },
       "spotify": {
-        "syncedAt": "2026-06-28T19:19:55.337Z",
+        "syncedAt": "2026-06-28T19:52:40.295Z",
         "status": "ok"
       }
     },
@@ -2525,10 +2525,10 @@
   "nikolina": {
     "slug": "nikolina",
     "name": "Nikolina",
-    "updatedAt": "2026-06-28T19:19:28.441Z",
+    "updatedAt": "2026-06-28T19:52:15.618Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:19:28.441Z",
+        "syncedAt": "2026-06-28T19:52:15.618Z",
         "status": "ok"
       },
       "youtube": {
@@ -2543,14 +2543,14 @@
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
       "imageUrls": [
-        "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2"
+        "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2"
       ],
       "relatedArtists": []
     },
     "resolvedImage": {
-      "url": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2",
       "source": "spotify",
       "sourceUrl": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc"
     },
@@ -3290,10 +3290,10 @@
   "regal": {
     "slug": "regal",
     "name": "Regal",
-    "updatedAt": "2026-06-28T19:17:38.695Z",
+    "updatedAt": "2026-06-28T19:50:41.581Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:38.695Z",
+        "syncedAt": "2026-06-28T19:50:41.581Z",
         "status": "ok"
       },
       "youtube": {
@@ -3308,14 +3308,14 @@
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
       "imageUrls": [
-        "https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683"
+        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683"
       ],
       "relatedArtists": []
     },
     "resolvedImage": {
-      "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
       "source": "spotify",
       "sourceUrl": "https://open.spotify.com/artist/10RlWd6mCUDiRpQ30bGL2E"
     },
@@ -3353,10 +3353,10 @@
   "robert-natus": {
     "slug": "robert-natus",
     "name": "Robert Natus",
-    "updatedAt": "2026-06-28T19:18:16.285Z",
+    "updatedAt": "2026-06-28T19:51:09.198Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:18:16.285Z",
+        "syncedAt": "2026-06-28T19:51:09.198Z",
         "status": "ok"
       },
       "youtube": {
@@ -3484,10 +3484,10 @@
   "sara-landry": {
     "slug": "sara-landry",
     "name": "Sara Landry",
-    "updatedAt": "2026-06-28T19:17:20.910Z",
+    "updatedAt": "2026-06-28T19:50:27.228Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:20.910Z",
+        "syncedAt": "2026-06-28T19:50:27.228Z",
         "status": "ok"
       },
       "youtube": {
@@ -3833,14 +3833,14 @@
   "trym": {
     "slug": "trym",
     "name": "Trym",
-    "updatedAt": "2026-06-28T19:19:05.165Z",
+    "updatedAt": "2026-06-28T19:51:56.676Z",
     "sources": {
       "youtube": {
         "syncedAt": "2026-06-28T01:34:52.458Z",
         "status": "ok"
       },
       "spotify": {
-        "syncedAt": "2026-06-28T19:19:05.165Z",
+        "syncedAt": "2026-06-28T19:51:56.676Z",
         "status": "ok"
       }
     },
@@ -3852,7 +3852,7 @@
       "thumbnailUrl": "https://yt3.ggpht.com/vIe6uPxO-xxUhUcVvp_xs1S-IrnSEXdMdlo85kDwv0N_b-JnudWm30Fic2m5mUERc1xko3ys7w=s800-c-k-c0x00ffffff-no-rj"
     },
     "resolvedImage": {
-      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
+      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
       "source": "spotify",
       "sourceUrl": "https://open.spotify.com/artist/5Nd385K2g3s0828W8Ab70z"
     },
@@ -3863,9 +3863,9 @@
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
+      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1",
       "imageUrls": [
-        "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1"
+        "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1"
       ],
       "relatedArtists": []
     }
@@ -3873,10 +3873,10 @@
   "vendex": {
     "slug": "vendex",
     "name": "Vendex",
-    "updatedAt": "2026-06-28T19:19:24.786Z",
+    "updatedAt": "2026-06-28T19:52:12.612Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:19:24.786Z",
+        "syncedAt": "2026-06-28T19:52:12.612Z",
         "status": "ok"
       },
       "youtube": {
@@ -3891,14 +3891,14 @@
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
       "imageUrls": [
-        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69"
+        "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69"
       ],
       "relatedArtists": []
     },
     "resolvedImage": {
-      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69",
       "source": "spotify",
       "sourceUrl": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7"
     },
@@ -4062,10 +4062,10 @@
   "vtss": {
     "slug": "vtss",
     "name": "VTSS",
-    "updatedAt": "2026-06-28T19:17:34.332Z",
+    "updatedAt": "2026-06-28T19:50:37.965Z",
     "sources": {
       "spotify": {
-        "syncedAt": "2026-06-28T19:17:34.332Z",
+        "syncedAt": "2026-06-28T19:50:37.965Z",
         "status": "ok"
       },
       "youtube": {
@@ -4080,14 +4080,14 @@
       "genres": [],
       "followers": 0,
       "popularity": 0,
-      "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+      "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
       "imageUrls": [
-        "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539"
+        "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539"
       ],
       "relatedArtists": []
     },
     "resolvedImage": {
-      "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+      "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
       "source": "spotify",
       "sourceUrl": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN"
     },

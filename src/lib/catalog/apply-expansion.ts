@@ -58,7 +58,8 @@ function dedupeTracks(tracks: Track[]): Track[] {
 function expansionToTrack(
   slug: string,
   t: CatalogExpansion["tracks"][0],
-  status: Artist["verificationStatus"]
+  status: Artist["verificationStatus"],
+  genre: Artist["genres"][0] | undefined
 ): Track {
   const url = spotifyTrackUrl(t.spotifyTrackId);
   return attachTrackVerification(
@@ -67,7 +68,7 @@ function expansionToTrack(
       title: t.title,
       year: t.year,
       duration: t.duration,
-      coverArt: trackCover(url),
+      coverArt: trackCover(url, { genre }),
       spotifyUrl: url,
     },
     status
@@ -99,7 +100,7 @@ export function applyCatalogExpansion(artist: Artist): Artist {
 
   const addedTracks = expansion.tracks
     .filter((t) => t.spotifyTrackId?.length === 22)
-    .map((t) => expansionToTrack(artist.slug, t, status))
+    .map((t) => expansionToTrack(artist.slug, t, status, artist.genres[0]))
     .filter((t) => !existingTrackKeys.has(trackKey(t)));
 
   const addedSets = expansion.sets

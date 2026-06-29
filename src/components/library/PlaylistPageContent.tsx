@@ -11,12 +11,120 @@ import {
   useLibrary,
 } from "@/context/LibraryContext";
 import { parseDuration, formatTotalDuration } from "@/lib/music";
+import { getArtist } from "@/content/artists";
 import { SafeImage } from "@/components/ui/SafeImage";
+import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { Button } from "@/components/ui/Button";
 import { MusicActions } from "@/components/music/MusicActions";
+import { playbackItemFromRef } from "@/lib/music/playback";
+import { useCardPlayback } from "@/lib/music/use-card-playback";
 
 interface Props {
   playlistId: string;
+}
+
+function PlaylistItemRow({
+  item,
+  index,
+  isOwner,
+  playlistId,
+  dragId,
+  setDragId,
+  onDrop,
+  removeFromPlaylist,
+}: {
+  item: NonNullable<ReturnType<typeof resolvePlaylistItem>>;
+  index: number;
+  isOwner: boolean;
+  playlistId: string;
+  dragId: string | null;
+  setDragId: (id: string | null) => void;
+  onDrop: (targetId: string) => void;
+  removeFromPlaylist: (playlistId: string, itemId: string) => void;
+}) {
+  const playbackType = item.type === "release" ? "release" : item.type;
+  const playbackItem = playbackItemFromRef(playbackType, item.refId);
+  const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
+    playbackItem ?? {
+      type: playbackType,
+      refId: item.refId,
+      label: `${item.title} — ${item.artist}`,
+      title: item.title,
+      subtitle: item.artist,
+    },
+    playbackType,
+    item.refId,
+  );
+
+  return (
+    <li
+      draggable={isOwner}
+      onDragStart={() => setDragId(item.id)}
+      onDragOver={(e) => e.preventDefault()}
+      onDrop={() => onDrop(item.id)}
+      onPointerDown={(e) => {
+        if (!playbackItem) return;
+        handleCardPointerDown(e);
+      }}
+      className={`flex cursor-pointer touch-manipulation items-center gap-4 border p-3 ${
+        active ? "border-accent bg-surface" : "border-border"
+      } ${dragId === item.id ? "opacity-50" : ""}`}
+      role="button"
+      tabIndex={0}
+      aria-label={playing ? `Pause ${item.title}` : `Play ${item.title}`}
+    >
+      <span className="w-6 text-sm text-muted">{index + 1}</span>
+      {isOwner && <span className="cursor-grab text-muted">⋮⋮</span>}
+      <div className="relative h-12 w-12 shrink-0 overflow-hidden">
+        <TrackArtwork
+          coverArt={item.coverArt}
+          genres={getArtist(item.artistSlug)?.genres}
+          alt=""
+          fill
+          sizes="48px"
+        />
+      </div>
+      <div className="min-w-0 flex-1">
+        <p className="truncate font-medium text-foreground">{item.title}</p>
+        <Link
+          href={`/artists/${item.artistSlug}`}
+          className="text-xs text-muted hover:text-accent"
+          onPointerDown={stopCardPointerDown}
+        >
+          {item.artist} · {item.duration}
+        </Link>
+      </div>
+      <div className="flex items-center gap-2" onPointerDown={stopCardPointerDown}>
+        <MusicActions
+          type={playbackType}
+          refId={item.refId}
+          label={`${item.title} — ${item.artist}`}
+          spotifyUrl={"spotifyUrl" in item ? item.spotifyUrl : undefined}
+          youtubeId={"youtubeId" in item ? item.youtubeId : undefined}
+          compact
+        />
+        {isOwner && (
+          <Button
+            size="sm"
+            variant="ghost"
+            onClick={() => removeFromPlaylist(playlistId, item.id)}
+          >
+            Remove
+          </Button>
+        )}
+        {"spotifyUrl" in item && item.spotifyUrl && (
+          <a
+            href={item.spotifyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden text-xs text-accent hover:underline sm:inline"
+          >
+            Spotify
+          </a>
+        )}
+      </div>
+    </li>
+  );
 }
 
 export function PlaylistPageContent({ playlistId }: Props) {
@@ -156,50 +264,17 @@ export function PlaylistPageContent({ playlistId }: Props) {
         ) : (
           <ul className="mt-6 space-y-2">
             {resolved.map((item, i) => (
-              <li
+              <PlaylistItemRow
                 key={item.id}
-                draggable={isOwner}
-                onDragStart={() => setDragId(item.id)}
-                onDragOver={(e) => e.preventDefault()}
-                onDrop={() => onDrop(item.id)}
-                className={`flex items-center gap-4 border border-border p-3 ${dragId === item.id ? "opacity-50" : ""}`}
-              >
-                <span className="w-6 text-sm text-muted">{i + 1}</span>
-                {isOwner && <span className="cursor-grab text-muted">⋮⋮</span>}
-                <div className="relative h-12 w-12 shrink-0">
-                  <SafeImage src={item.coverArt} alt="" fill sizes="48px" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <p className="font-medium text-foreground truncate">{item.title}</p>
-                  <Link href={`/artists/${item.artistSlug}`} className="text-xs text-muted hover:text-accent">
-                    {item.artist} · {item.duration}
-                  </Link>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MusicActions
-                    type={item.type === "release" ? "release" : item.type}
-                    refId={item.refId}
-                    label={`${item.title} — ${item.artist}`}
-                    spotifyUrl={"spotifyUrl" in item ? item.spotifyUrl : undefined}
-                    youtubeId={"youtubeId" in item ? item.youtubeId : undefined}
-                    compact
-                  />
-                  {isOwner && (
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      onClick={() => removeFromPlaylist(playlist.id, item.id)}
-                    >
-                      Remove
-                    </Button>
-                  )}
-                  {"spotifyUrl" in item && item.spotifyUrl && (
-                    <a href={item.spotifyUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline hidden sm:inline">
-                      Spotify
-                    </a>
-                  )}
-                </div>
-              </li>
+                item={item}
+                index={i}
+                isOwner={isOwner}
+                playlistId={playlist.id}
+                dragId={dragId}
+                setDragId={setDragId}
+                onDrop={onDrop}
+                removeFromPlaylist={removeFromPlaylist}
+              />
             ))}
           </ul>
         )}

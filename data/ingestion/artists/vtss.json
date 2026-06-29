@@ -1,10 +1,10 @@
 {
   "slug": "vtss",
   "name": "VTSS",
-  "updatedAt": "2026-06-28T19:30:56.199Z",
+  "updatedAt": "2026-06-28T19:50:37.965Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:56.199Z",
+      "syncedAt": "2026-06-28T19:50:37.965Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539"
+      "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN"
   },

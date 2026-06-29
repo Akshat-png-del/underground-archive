@@ -1,21 +1,51 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePreferences } from "@/context/PreferencesContext";
-import { getTodaysDiscovery } from "@/lib/preferences/recommendations";
+import { getTodaysDiscovery, getTodaysDiscoveryStatic, type DailyDiscovery } from "@/lib/preferences/recommendations";
+import { DEFAULT_PREFERENCES } from "@/types/preferences";
 import { genreLabels, moodLabels } from "@/content/artists";
-import { resolvePortrait, resolvePortraitFallbacks } from "@/lib/archive/verification";
+import { resolvePortrait, resolvePortraitFallbacksForDisplay } from "@/lib/archive/verification";
 import { SafeImage } from "@/components/ui/SafeImage";
+import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { MusicActions } from "@/components/music/MusicActions";
+import { playbackItemFromTrack, playbackItemFromSet } from "@/lib/music/playback";
+import { useCardPlayback, youtubeDisplayEmbedUrl } from "@/lib/music/use-card-playback";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 
 interface Props {
   compact?: boolean;
 }
 
-export function TodaysDiscovery({ compact }: Props) {
-  const { preferences } = usePreferences();
-  const { artist, set, track } = getTodaysDiscovery(preferences);
+export function TodaysDiscovery({
+  compact,
+  initialDiscovery,
+}: Props & { initialDiscovery?: DailyDiscovery }) {
+  const { preferences, ready } = usePreferences();
+  const [discovery, setDiscovery] = useState<DailyDiscovery>(
+    () => initialDiscovery ?? getTodaysDiscoveryStatic(DEFAULT_PREFERENCES),
+  );
+
+  useEffect(() => {
+    if (!ready) return;
+    setDiscovery(getTodaysDiscovery(preferences));
+  }, [preferences, ready]);
+
+  const { artist, set, track } = discovery;
+
+  const setItem = playbackItemFromSet(set);
+  const trackItem = playbackItemFromTrack(track);
+  const {
+    handleCardPointerDown: handleSetCard,
+    stopCardPointerDown: stopSetCard,
+    playing: setPlaying,
+  } = useCardPlayback(setItem, "set", set.id);
+  const {
+    handleCardPointerDown: handleTrackCard,
+    stopCardPointerDown: stopTrackCard,
+    playing: trackPlaying,
+  } = useCardPlayback(trackItem, "track", track.id);
 
   if (compact) {
     return (
@@ -47,7 +77,7 @@ export function TodaysDiscovery({ compact }: Props) {
               <div className="relative mt-3 aspect-square w-full max-w-[140px] overflow-hidden">
                 <SafeImage
                   src={resolvePortrait(artist)}
-                  fallbacks={resolvePortraitFallbacks(artist).slice(1)}
+                  fallbacks={resolvePortraitFallbacksForDisplay(artist)}
                   alt=""
                   fill
                   sizes="140px"
@@ -58,23 +88,49 @@ export function TodaysDiscovery({ compact }: Props) {
               <p className="text-xs text-muted">{artist.city} · {genreLabels[artist.genres[0]]}</p>
             </Link>
 
-            <Link href={`/sets/${set.slug}`} className="card-editorial group border border-border bg-background/60 p-5 hover-glow">
+            <div
+              onPointerDown={handleSetCard}
+              className="card-editorial cursor-pointer touch-manipulation border border-border bg-background/60 p-5 hover-glow"
+              role="button"
+              tabIndex={0}
+              aria-label={setPlaying ? `Pause ${set.title}` : `Play ${set.title}`}
+            >
               <p className="font-mono text-[10px] uppercase text-muted">Set</p>
-              <div className="relative mt-3 aspect-video overflow-hidden">
-                <SafeImage src={set.thumbnail} alt="" fill sizes="33vw" className="image-zoom" />
+              <div className="relative mt-3 block aspect-video w-full overflow-hidden">
+                {set.youtubeId ? (
+                  <iframe
+                    src={youtubeDisplayEmbedUrl(set.youtubeId)}
+                    title={set.title}
+                    className="pointer-events-none absolute inset-0 h-full w-full border-0"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    loading="lazy"
+                    tabIndex={-1}
+                  />
+                ) : (
+                  <SafeImage src={set.thumbnail} alt="" fill sizes="33vw" className="image-zoom" />
+                )}
               </div>
-              <p className="mt-4 font-medium text-foreground group-hover:text-accent">{set.title}</p>
+              <p className="mt-4 font-medium text-foreground">{set.title}</p>
               <p className="text-xs text-muted">{set.artistName} · {set.duration}</p>
-            </Link>
+              <div className="mt-4" onPointerDown={stopSetCard}>
+                <MusicActions type="set" refId={set.id} label={`${set.title} — ${set.artistName}`} youtubeId={set.youtubeId} compact />
+              </div>
+            </div>
 
-            <div className="card-editorial border border-border bg-background/60 p-5 hover-glow">
+            <div
+              onPointerDown={handleTrackCard}
+              className="card-editorial cursor-pointer touch-manipulation border border-border bg-background/60 p-5 hover-glow"
+              role="button"
+              tabIndex={0}
+              aria-label={trackPlaying ? `Pause ${track.title}` : `Play ${track.title}`}
+            >
               <p className="font-mono text-[10px] uppercase text-muted">Track</p>
-              <div className="relative mt-3 h-24 w-24 overflow-hidden">
-                <SafeImage src={track.coverArt} alt="" fill sizes="96px" />
+              <div className="relative mt-3 block h-24 w-24 overflow-hidden">
+                <TrackArtwork coverArt={track.coverArt} genres={artist.genres} alt="" fill sizes="96px" />
               </div>
               <p className="mt-4 font-medium text-foreground">{track.title}</p>
               <p className="text-xs text-muted">{track.artist}</p>
-              <div className="mt-4">
+              <div className="mt-4" onPointerDown={stopTrackCard}>
                 <MusicActions type="track" refId={track.id} label={`${track.title} — ${track.artist}`} spotifyUrl={track.spotifyUrl} compact />
               </div>
             </div>

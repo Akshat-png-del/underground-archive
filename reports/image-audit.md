@@ -1,32 +1,137 @@
 # Artist image authenticity audit
-Generated: 2026-06-28T01:39:15.180Z
+Generated: 2026-06-28T20:30:42.143Z
 
 ## Summary
 - Artists: 150
-- Verified photography: 0
-- Editorial / genre portraits (display-ready): 150
+- Verified photography: 35
+- Editorial / genre portraits (display-ready): 115
 - Suspicious assignments: 0
 - Broken URLs: 0
 - Duplicate verified URLs: 0
 - Visual coverage: 100%
 
-## Verified images (0)
+## Verified images (35)
+- Sven Wittekind (sven-wittekind) [Tier 1]
+  - URL: /images/portraits/researched/sven-wittekind.jpg
+  - Source: spotify
+- Paula Temple (paula-temple) [Tier 1]
+  - URL: /images/portraits/researched/paula-temple.jpg
+  - Source: spotify
+- Perc (perc) [Tier 1]
+  - URL: /images/portraits/researched/perc.jpg
+  - Source: resident-advisor
+- Ancient Methods (ancient-methods) [Tier 1]
+  - URL: /images/portraits/researched/ancient-methods.jpg
+  - Source: spotify
+- Surgeon (surgeon) [Tier 1]
+  - URL: /images/portraits/researched/surgeon.jpg
+  - Source: spotify
+- Adam X (adam-x) [Tier 1]
+  - URL: /images/portraits/researched/adam-x.jpg
+  - Source: resident-advisor
+- Petduo (petduo) [Tier 2]
+  - URL: /images/portraits/researched/petduo.jpg
+  - Source: spotify
+- Assemblage 23 (assemblage-23) [Tier 3]
+  - URL: /images/portraits/researched/assemblage-23.jpg
+  - Source: spotify
+- Hante (hante) [Tier 3]
+  - URL: /images/portraits/researched/hante.jpg
+  - Source: spotify
+- She Past Away (she-past-away) [Tier 2]
+  - URL: /images/portraits/researched/she-past-away.jpg
+  - Source: spotify
+- Lebanon Hanover (lebanon-hanover) [Tier 2]
+  - URL: /images/portraits/researched/lebanon-hanover.jpg
+  - Source: spotify
+- Drab Majesty (drab-majesty) [Tier 2]
+  - URL: /images/portraits/researched/drab-majesty.jpg
+  - Source: spotify
+- Rumina (rumina) [Tier 3]
+  - URL: /images/portraits/researched/rumina.jpg
+  - Source: spotify
+- Per-sona (per-sona) [Tier 3]
+  - URL: /images/portraits/researched/per-sona.jpg
+  - Source: official-website
+- The Soft Moon (the-soft-moon) [Tier 2]
+  - URL: /images/portraits/researched/the-soft-moon.jpg
+  - Source: spotify
+- Rrose (rrose) [Tier 2]
+  - URL: /images/portraits/researched/rrose.jpg
+  - Source: spotify
+- Blawan (blawan) [Tier 2]
+  - URL: /images/portraits/researched/blawan.jpg
+  - Source: spotify
+- PH87 (ph87) [Tier 3]
+  - URL: /images/portraits/researched/ph87.jpg
+  - Source: spotify
+- Part Time Killer (part-time-killer) [Tier 3]
+  - URL: /images/portraits/researched/part-time-killer.jpg
+  - Source: spotify
+- Lucy (lucy) [Tier 2]
+  - URL: /images/portraits/researched/lucy.jpg
+  - Source: spotify
+- Victor Ruiz (victor-ruiz) [Tier 2]
+  - URL: /images/portraits/researched/victor-ruiz.jpg
+  - Source: spotify
+- Josh Wink (josh-wink) [Tier 2]
+  - URL: /images/portraits/researched/josh-wink.jpg
+  - Source: spotify
+- Ansome (ansome) [Tier 2]
+  - URL: /images/portraits/researched/ansome.jpg
+  - Source: spotify
+- D.A.V.E. The Drummer (dave-the-drummer) [Tier 2]
+  - URL: /images/portraits/researched/dave-the-drummer.jpg
+  - Source: spotify
+- Paranoid London (paranoid-london) [Tier 2]
+  - URL: /images/portraits/researched/paranoid-london.jpg
+  - Source: spotify
+- Randomer (randomer) [Tier 2]
+  - URL: /images/portraits/researched/randomer.jpg
+  - Source: spotify
+- Héctor Oaks (hector-oaks) [Tier 2]
+  - URL: /images/portraits/researched/hector-oaks.jpg
+  - Source: spotify
+- Alex Bau (alex-bau) [Tier 2]
+  - URL: /images/portraits/researched/alex-bau.jpg
+  - Source: spotify
+- Weichentechnikk (weichentechnikk) [Tier 2]
+  - URL: /images/portraits/researched/weichentechnikk.jpg
+  - Source: spotify
+- Petra Flurr (petra-flurr) [Tier 2]
+  - URL: /images/portraits/researched/petra-flurr.jpg
+  - Source: spotify
+- Front 242 (front-242) [Tier 2]
+  - URL: /images/portraits/researched/front-242.jpg
+  - Source: spotify
+- Deepbass (deepbass) [Tier 2]
+  - URL: /images/portraits/researched/deepbass.jpg
+  - Source: spotify
+- Nørbak (norbak) [Tier 2]
+  - URL: /images/portraits/researched/norbak.jpg
+  - Source: spotify
+- L.F.T. (lft) [Tier 2]
+  - URL: /images/portraits/researched/lft.jpg
+  - Source: spotify
+- MCR-T (mcr-t) [Tier 2]
+  - URL: /images/portraits/researched/mcr-t.jpg
+  - Source: spotify
 
-## Editorial portraits (unverified) (150)
+## Editorial portraits (unverified) (115)
 - Sara Landry (sara-landry) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f
   - Source: spotify
 - I Hate Models (i-hate-models) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b
   - Source: spotify
 - Kobosil (kobosil) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c
   - Source: spotify
 - VTSS (vtss) [Tier 1]
-  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539
   - Source: spotify
 - Regal (regal) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683
   - Source: spotify
 - Boy Harsher (boy-harsher) [Tier 1]
   - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6
@@ -41,41 +146,23 @@ Generated: 2026-06-28T01:39:15.180Z
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1
   - Source: spotify
 - Anetha (anetha) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2
   - Source: spotify
 - Chris Liebing (chris-liebing) [Tier 1]
-  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de
   - Source: spotify
 - DJ Rush (dj-rush) [Tier 1]
   - URL: https://yt3.ggpht.com/ZdVzt68dKyxHHa10WrBKP5L8MJSSqfmyrV07IvtFcSqtmFNaC0hWrDQQpaPSuj3JMyfr1DWeJ1c=s800-c-k-c0x00ffffff-no-rj
   - Source: official-website
-- Sven Wittekind (sven-wittekind) [Tier 1]
-  - URL: https://yt3.ggpht.com/cHKXSG0_lIkG9q_T8nYLXjmxjDRyg7NGqTGujtGr_ZqiJpLV-HWzMkf6Al8oK7dNZm4WF2G4tq8=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
 - Robert Natus (robert-natus) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614
   - Source: spotify
 - Arkus P (arkus-p) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e
   - Source: spotify
 - Boris S. (boris-s) [Tier 1]
-  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600
   - Source: spotify
-- Paula Temple (paula-temple) [Tier 1]
-  - URL: https://yt3.ggpht.com/qT2WNk8GCQGTFu8jwYRwEFR4cDn10Mct7DXbjCsEcda8lPM0HSxCpJLDCZsGD80zbol0jHWJcQ=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Perc (perc) [Tier 1]
-  - URL: https://yt3.ggpht.com/uOeSB5WL-F9UYO2OyU-JC0mGqr-BZGznpNcySeOJxh2w6Pbx2qqRti2DFWLTRamZSBNoKVZS7Q=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Ancient Methods (ancient-methods) [Tier 1]
-  - URL: https://yt3.ggpht.com/h0AIoy-YC-05ZcC6xLeqD9KJs3tmBUaXLuTlNtq20BBIQy_8EQ3DEJ6t7GFpqIuYJuEp3avO=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Surgeon (surgeon) [Tier 1]
-  - URL: https://yt3.ggpht.com/Z1hJd3n1WqJZkynEU4oBhu9cwtzp9y34wfAR8svQA7JbzJB6YmLsJq_AO-avGzrm9IW7FtvtDQ=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Adam X (adam-x) [Tier 1]
-  - URL: https://yt3.ggpht.com/_bitUT_ftFtX7DN5AOB7jgEgNrF1p-9dkft51nKoYIRB6FFXG6mRKG5uoiTz-qFB3KmWqzjPCdE=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
 - Phase Fatale (phase-fatale) [Tier 1]
   - URL: https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj
   - Source: official-website
@@ -104,10 +191,10 @@ Generated: 2026-06-28T01:39:15.180Z
   - URL: https://yt3.ggpht.com/Ck5B3BDio8eOFwqtNY5d0smi1M2aa914q1lpzNFMsweCWSD24-58yO01z_-CV6xaYhNfPlc_=s800-c-k-c0x00ffffff-no-rj
   - Source: official-website
 - Trym (trym) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1
   - Source: spotify
 - Charlie Sparks (charlie-sparks) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174a7d68de3c6f64cf109d20bd8
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a7d68de3c6f64cf109d20bd8
   - Source: spotify
 - Parfait (parfait) [Tier 1]
   - URL: https://yt3.ggpht.com/IfKFvKLVhv7qUkC1OC0AkenYD3JjV8EYsPMAiyvE2qM5RwELdl8owNjCw2R0phkju-Lozjr0=s800-c-k-c0x00ffffff-no-rj
@@ -119,7 +206,7 @@ Generated: 2026-06-28T01:39:15.180Z
   - URL: https://yt3.ggpht.com/eK148TLK2AefCDJdwGBVXBDCvqOGTYoYwyeb4wACIU2f0bmwdYXZEk_yOXbr9E_4aLR7XNwFIA=s800-c-k-c0x00ffffff-no-rj
   - Source: official-website
 - Vendex (vendex) [Tier 1]
-  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69
   - Source: spotify
 - Nikolina (nikolina) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2
@@ -133,7 +220,25 @@ Generated: 2026-06-28T01:39:15.180Z
 - 999999999 (999999999) [Tier 1]
   - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96
   - Source: spotify
-  … and 110 more
+- Shlømo (shlomo) [Tier 2]
+  - URL: https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Azyr (azyr) [Tier 2]
+  - URL: https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- MRD (mrd) [Tier 2]
+  - URL: https://yt3.ggpht.com/b5d8qu6FWwhHCODQJzDdPFLQohlAup91n5GZhGEIOlqfpzQdbRAGnQqMR9B8UrvuAHS8IRRH=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- Nico Moreno (nico-moreno) [Tier 2]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849
+  - Source: spotify
+- Alarico (alarico) [Tier 2]
+  - URL: https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+- CRAVET (cravet) [Tier 2]
+  - URL: https://yt3.ggpht.com/-GmAnyjHkg6InDB6i4IpUQFwiaEyCrjH5uUdMkIzaqeC8_zhmkZsWMJIgMIJb9m--eu9zjGv2g=s800-c-k-c0x00ffffff-no-rj
+  - Source: official-website
+  … and 75 more
 
 ## Suspicious assignments (0)
 

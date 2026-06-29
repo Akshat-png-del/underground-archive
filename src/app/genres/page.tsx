@@ -26,7 +26,7 @@ export default function GenresPage() {
             <Link
               key={slug}
               href={`/genres/${slug}`}
-              className="block border border-border p-6 transition-colors hover:border-accent/50"
+              className="interactive-row block border border-border p-6"
             >
               <h2 className="font-serif text-2xl text-foreground">{genreLabels[slug]}</h2>
               <p className="mt-2 text-sm text-muted-light">{genreDescriptions[slug]}</p>

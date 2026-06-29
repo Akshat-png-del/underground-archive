@@ -1,10 +1,10 @@
 {
   "slug": "arkus-p",
   "name": "Arkus P",
-  "updatedAt": "2026-06-28T19:31:29.981Z",
+  "updatedAt": "2026-06-28T19:51:12.095Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:31:29.981Z",
+      "syncedAt": "2026-06-28T19:51:12.095Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
     "imageUrls": [
-      "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e"
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c11c2369f49118d241fbb0e",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/2QX0SpKMsDrLa2qM15KcDf"
   },

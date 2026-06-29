@@ -1,34 +1,44 @@
 import Link from "next/link";
 import {
-  getArtistOfWeek,
-  getEssentialSetOfDay,
   getNewUndergroundReleases,
   getMostSavedArtists,
+  getArtistOfWeekStatic,
+  getEssentialSetOfDayStatic,
+  getWeeklyDiscoveriesEditorialStatic,
+  getMostViewedArtistsThisWeekStatic,
+  getTrendingGenresThisWeekStatic,
 } from "@/content/home/feed";
+import { getTodaysDiscoveryStatic } from "@/lib/preferences/recommendations";
+import { DEFAULT_PREFERENCES } from "@/types/preferences";
 import { getFeaturedArticles } from "@/content/editorial";
 import { ArtistCard } from "@/components/artists/ArtistCard";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { TrackArtwork } from "@/components/music/TrackArtwork";
+import { getArtist } from "@/content/artists";
 import { Button } from "@/components/ui/Button";
 import { HomeSection, HomeCarousel, CarouselItem } from "@/components/home/HomeSection";
-import { ArtistOfWeekHero, LiveTicker } from "@/components/home/ArtistOfWeekHero";
-import { HomeFollowingStrip } from "@/components/home/HomeFollowingStrip";
-import { TrendingThisWeek } from "@/components/home/TrendingThisWeek";
-import { EssentialSetOfDayHero } from "@/components/home/EssentialSetOfDayHero";
+import { ArtistOfWeekBlock, EssentialSetOfDayBlock } from "@/components/home/HomeRotatingSections";
+import { LiveTicker } from "@/components/home/ArtistOfWeekHero";
 import { WeeklyDiscoveriesMagazine } from "@/components/home/WeeklyDiscoveriesMagazine";
 import { CommunityPlaylistsSection } from "@/components/home/CommunityPlaylistsSection";
 import { CommunityFavoritesHub } from "@/components/home/CommunityFavoritesHub";
 import { TodaysDiscovery } from "@/components/home/TodaysDiscovery";
 import { HomePersonalizedStrip } from "@/components/home/HomePersonalizedStrip";
+import { HomeFollowingStrip } from "@/components/home/HomeFollowingStrip";
+import { TrendingThisWeek } from "@/components/home/TrendingThisWeek";
 import { OnboardingModal } from "@/components/onboarding/OnboardingModal";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { SocialBadge } from "@/components/ui/SocialBadge";
 
 export function HomePage() {
-  const artistOfWeek = getArtistOfWeek();
-  const setOfDay = getEssentialSetOfDay();
   const releases = getNewUndergroundReleases();
   const mostSaved = getMostSavedArtists();
   const editorials = getFeaturedArticles().slice(0, 3);
+  const artistOfWeek = getArtistOfWeekStatic();
+  const essentialSet = getEssentialSetOfDayStatic();
+  const weeklyEditorial = getWeeklyDiscoveriesEditorialStatic();
+  const todaysDiscovery = getTodaysDiscoveryStatic(DEFAULT_PREFERENCES);
+  const trendingViewed = getMostViewedArtistsThisWeekStatic();
+  const trendingGenres = getTrendingGenresThisWeekStatic();
 
   return (
     <>
@@ -52,13 +62,13 @@ export function HomePage() {
       </section>
 
       <LiveTicker />
-      <ArtistOfWeekHero artist={artistOfWeek} />
+      <ArtistOfWeekBlock initialArtist={artistOfWeek} />
       <HomeFollowingStrip />
-      <TodaysDiscovery />
+      <TodaysDiscovery initialDiscovery={todaysDiscovery} />
       <HomePersonalizedStrip />
-      <TrendingThisWeek />
-      <EssentialSetOfDayHero set={setOfDay} />
-      <WeeklyDiscoveriesMagazine />
+      <TrendingThisWeek initialViewed={trendingViewed} initialGenres={trendingGenres} />
+      <EssentialSetOfDayBlock initialSet={essentialSet} />
+      <WeeklyDiscoveriesMagazine initialEditorial={weeklyEditorial} />
       <CommunityPlaylistsSection />
 
       <FadeInSection>
@@ -68,7 +78,14 @@ export function HomePage() {
               <CarouselItem key={`${r.artistSlug}-${r.title}`}>
                 <Link href={`/artists/${r.artistSlug}`} className="card-editorial group block border border-border p-4 hover-glow">
                   <div className="relative mb-4 aspect-square w-full overflow-hidden">
-                    <SafeImage src={r.coverArt} alt="" fill sizes="30vw" className="image-zoom" />
+                    <TrackArtwork
+                      coverArt={r.coverArt}
+                      genres={getArtist(r.artistSlug)?.genres}
+                      alt=""
+                      fill
+                      sizes="30vw"
+                      className="image-zoom"
+                    />
                   </div>
                   <p className="font-serif text-lg text-foreground group-hover:text-accent">{r.title}</p>
                   <p className="text-sm text-muted">{r.artist} · {r.year}</p>
@@ -87,13 +104,7 @@ export function HomePage() {
           <HomeCarousel>
             {mostSaved.slice(0, 6).map((artist) => (
               <CarouselItem key={artist.slug}>
-                <ArtistCard
-                  slug={artist.slug}
-                  name={artist.name}
-                  portrait={artist.portrait}
-                  genres={artist.genres}
-                  city={artist.city}
-                />
+                <ArtistCard artist={artist} />
               </CarouselItem>
             ))}
           </HomeCarousel>

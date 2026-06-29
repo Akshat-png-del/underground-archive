@@ -9,34 +9,86 @@ import {
 import { getSetsByArtist, archiveSetToEssential } from "@/content/sets";
 import { extractSpotifyEmbedUrl } from "@/lib/music";
 import { TrackRow } from "@/components/music/TrackRow";
+import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { SetCardEmbed } from "@/components/artists/SetCard";
 import { MusicActions } from "@/components/music/MusicActions";
 import { ArtistCard } from "@/components/artists/ArtistCard";
-import { SafeImage } from "@/components/ui/SafeImage";
-import Link from "next/link";
+import { playbackItemFromRelease } from "@/lib/music/playback";
+import { useCardPlayback } from "@/lib/music/use-card-playback";
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({
+  title,
+  id,
+  children,
+}: {
+  title: string;
+  id?: string;
+  children: React.ReactNode;
+}) {
   return (
-    <section className="border-t border-border pt-12">
+    <section id={id} className={id ? "scroll-mt-28 border-t border-border pt-12" : "border-t border-border pt-12"}>
       <h2 className="font-serif text-2xl text-foreground sm:text-3xl">{title}</h2>
       <div className="mt-6">{children}</div>
     </section>
   );
 }
 
-function SpotifyListenEmbed({ url }: { url: string }) {
-  const embed = extractSpotifyEmbedUrl(url);
-  if (!embed) return null;
+function SpotifyListenButton({ url, label }: { url: string; label: string }) {
   return (
-    <iframe
-      src={embed}
-      width="100%"
-      height="352"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-      title="Spotify artist"
-      className="border-0"
+    <MusicActions
+      type="release"
+      refId={`spotify-${label}`}
+      label={label}
+      spotifyUrl={url}
     />
+  );
+}
+
+function ReleaseCard({
+  release,
+  genres,
+}: {
+  release: ReturnType<typeof getLatestReleasesByArtist>[number];
+  genres: Artist["genres"];
+}) {
+  const item = playbackItemFromRelease(release);
+  const { handleCardPointerDown, stopCardPointerDown, active } = useCardPlayback(
+    item,
+    "release",
+    release.id,
+  );
+
+  return (
+    <div
+      id={`release-${release.id}`}
+      onPointerDown={handleCardPointerDown}
+      className={`scroll-mt-28 flex cursor-pointer touch-manipulation gap-3 border p-3 transition-colors ${
+        active ? "border-accent bg-surface" : "border-border"
+      }`}
+      role="button"
+      tabIndex={0}
+      aria-label={`Play ${release.title}`}
+    >
+      <div className="relative h-14 w-14 shrink-0 overflow-hidden">
+        <TrackArtwork coverArt={release.coverArt} genres={genres} alt="" fill sizes="56px" />
+      </div>
+      <div className="min-w-0 flex-1">
+        <p className="truncate font-medium text-foreground">{release.title}</p>
+        <p className="text-xs text-muted">
+          {release.type} · {release.year}
+          {release.label ? ` · ${release.label}` : ""}
+        </p>
+        <div className="mt-2" onPointerDown={stopCardPointerDown}>
+          <MusicActions
+            type="release"
+            refId={release.id}
+            label={`${release.title} — ${release.artist}`}
+            spotifyUrl={release.spotifyUrl}
+            compact
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -58,7 +110,7 @@ export function ArtistMusicSection({ artist }: { artist: Artist }) {
 
   return (
     <>
-      <Section title="Top tracks">
+      <Section title="Top tracks" id="top-tracks">
         {hasTracks ? (
           <ol className="space-y-3">
             {topTracks.map((track, i) => (
@@ -70,52 +122,32 @@ export function ArtistMusicSection({ artist }: { artist: Artist }) {
             <p className="text-sm text-muted-light">
               Track listing is being expanded. Explore similar artists below or listen on Spotify.
             </p>
-            {hasSpotify && <SpotifyListenEmbed url={spotifyUrl} />}
+            {hasSpotify && <SpotifyListenButton url={spotifyUrl} label={artist.name} />}
           </div>
         )}
       </Section>
 
       {latestReleases.length > 0 && (
-        <Section title="Latest releases">
+        <Section title="Latest releases" id="releases">
           <div className="grid gap-3 sm:grid-cols-2">
             {latestReleases.map((r) => (
-              <div key={r.id} className="flex gap-3 border border-border p-3">
-                <div className="relative h-14 w-14 shrink-0">
-                  <SafeImage src={r.coverArt} alt="" fill sizes="56px" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <p className="font-medium text-foreground">{r.title}</p>
-                  <p className="text-xs text-muted">
-                    {r.type} · {r.year}{r.label ? ` · ${r.label}` : ""}
-                  </p>
-                  <div className="mt-2">
-                    <MusicActions
-                      type="release"
-                      refId={r.id}
-                      label={`${r.title} — ${r.artist}`}
-                      spotifyUrl={r.spotifyUrl}
-                      compact
-                    />
-                  </div>
-                </div>
-              </div>
+              <ReleaseCard key={r.id} release={r} genres={artist.genres} />
             ))}
           </div>
         </Section>
       )}
 
-      <Section title="Essential sets">
+      <Section title="Essential sets" id="essential-sets">
         {hasSets ? (
           <div className="grid gap-6 sm:grid-cols-2">
             {sets.map((set) => (
               <div key={set.id}>
-                <Link href={`/sets/${set.slug}`} className="mb-2 inline-block text-sm text-accent hover:underline">
-                  {set.event} · {set.location}
-                </Link>
                 <SetCardEmbed
                   set={archiveSetToEssential(set)}
                   artistId={artist.id}
                   artistSlug={artist.slug}
+                  setId={set.id}
+                  setSlug={set.slug}
                 />
                 <div className="mt-2">
                   <MusicActions
@@ -134,7 +166,7 @@ export function ArtistMusicSection({ artist }: { artist: Artist }) {
             {hasSpotify ? (
               <>
                 <p className="text-sm text-muted-light">No archived sets yet — listen on Spotify.</p>
-                <SpotifyListenEmbed url={spotifyUrl} />
+                <SpotifyListenButton url={spotifyUrl} label={artist.name} />
               </>
             ) : (
               <p className="text-sm text-muted-light">No archived sets yet.</p>
@@ -144,14 +176,7 @@ export function ArtistMusicSection({ artist }: { artist: Artist }) {
                 <p className="mb-4 text-xs uppercase tracking-wider text-muted">Similar artists with sets</p>
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
                   {similar.map((a) => (
-                    <ArtistCard
-                      key={a.slug}
-                      slug={a.slug}
-                      name={a.name}
-                      portrait={a.portrait}
-                      genres={a.genres}
-                      city={a.city}
-                    />
+                    <ArtistCard key={a.slug} artist={a} />
                   ))}
                 </div>
               </div>
@@ -160,11 +185,6 @@ export function ArtistMusicSection({ artist }: { artist: Artist }) {
         )}
       </Section>
 
-      {!hasSets && hasTracks && hasSpotify && (
-        <Section title="Listen on Spotify">
-          <SpotifyListenEmbed url={spotifyUrl} />
-        </Section>
-      )}
     </>
   );
 }

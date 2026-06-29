@@ -43,7 +43,7 @@ export function PlaylistModal({ pending, createOnly, onClose }: Props) {
           <h2 className="font-serif text-xl text-foreground">
             {showCreate ? "New playlist" : "Save to playlist"}
           </h2>
-          <button type="button" onClick={onClose} className="text-muted hover:text-foreground" aria-label="Close">
+          <button type="button" onClick={onClose} className="interactive-ghost text-muted" aria-label="Close">
             ✕
           </button>
         </div>
@@ -81,7 +81,7 @@ export function PlaylistModal({ pending, createOnly, onClose }: Props) {
               {pending ? "Create & add" : "Create playlist"}
             </Button>
             {!createOnly && playlists.length > 0 && (
-              <button type="button" className="text-sm text-muted hover:text-foreground" onClick={() => setShowCreate(false)}>
+              <button type="button" className="interactive-ghost text-sm text-muted" onClick={() => setShowCreate(false)}>
                 ← Back to playlists
               </button>
             )}
@@ -93,7 +93,7 @@ export function PlaylistModal({ pending, createOnly, onClose }: Props) {
                 <li key={p.id}>
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between border border-border px-4 py-3 text-left text-sm hover:border-accent"
+                    className="interactive-row flex w-full items-center justify-between border border-border px-4 py-3 text-left text-sm"
                     onClick={() => handleAdd(p.id)}
                   >
                     <span className="font-medium text-foreground">{p.title}</span>

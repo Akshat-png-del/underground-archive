@@ -44,7 +44,7 @@ export default function DiscoverPage() {
               key={p.id}
               type="button"
               onClick={() => applyPreset(p)}
-              className="border border-border px-3 py-1.5 text-sm text-muted-light hover:border-accent hover:text-accent"
+              className="chip-selectable border border-border px-3 py-1.5 text-sm text-muted-light"
             >
               {p.label}
             </button>
@@ -66,9 +66,9 @@ export default function DiscoverPage() {
                 setFilters({});
                 setActiveCollection(activeCollection === slug ? null : slug);
               }}
-              className={`border p-4 text-left transition-colors ${
+              className={`chip-selectable border p-4 text-left transition-colors ${
                 activeCollection === slug
-                  ? "border-accent bg-accent/5"
+                  ? "is-selected border-accent bg-accent/5"
                   : "border-border hover:border-muted"
               }`}
             >
@@ -94,14 +94,7 @@ export default function DiscoverPage() {
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
         {results.map((artist) => (
-          <ArtistCard
-            key={artist.slug}
-            slug={artist.slug}
-            name={artist.name}
-            portrait={artist.portrait}
-            genres={artist.genres}
-            city={artist.city}
-          />
+          <ArtistCard key={artist.slug} artist={artist} />
         ))}
       </div>
 

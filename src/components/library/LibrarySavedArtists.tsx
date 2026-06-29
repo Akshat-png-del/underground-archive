@@ -17,14 +17,7 @@ export function LibrarySavedArtists() {
       ) : (
         <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
           {artists.map((a) => a && (
-            <ArtistCard
-              key={a.slug}
-              slug={a.slug}
-              name={a.name}
-              portrait={a.portrait}
-              genres={a.genres}
-              city={a.city}
-            />
+            <ArtistCard key={a.slug} artist={a} />
           ))}
         </div>
       )}

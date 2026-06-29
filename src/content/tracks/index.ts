@@ -2,13 +2,22 @@ import { artists } from "@/content/artists/all";
 import type { CatalogRelease, CatalogTrack } from "@/types/library";
 import { artistId } from "@/lib/archive/ids";
 import { canDisplayTrack } from "@/lib/archive/verification";
+import { isValidSpotifyTrackId, spotifyTrackUrl } from "@/lib/archive/pipeline/validate";
 import { releaseId, trackId } from "@/lib/music";
+
+function catalogSpotifyUrl(track: { spotifyUrl?: string; spotifyTrackId?: string }): string {
+  const url = track.spotifyUrl?.trim();
+  if (url?.includes("/track/")) return url;
+  const id = track.spotifyTrackId?.trim();
+  if (id && isValidSpotifyTrackId(id)) return spotifyTrackUrl(id);
+  return url ?? "";
+}
 
 function toCatalogTrack(
   artistSlug: string,
   artistName: string,
   soundcloudUrl: string | undefined,
-  track: (typeof artists)[0]["topTracks"][0]
+  track: (typeof artists)[0]["topTracks"][0] & { spotifyTrackId?: string }
 ): CatalogTrack {
   const id = artistId(artistSlug);
   return {
@@ -21,7 +30,7 @@ function toCatalogTrack(
     duration: track.duration,
     releaseYear: track.year,
     coverArt: track.coverArt,
-    spotifyUrl: track.spotifyUrl ?? "",
+    spotifyUrl: catalogSpotifyUrl(track),
     youtubeUrl: track.youtubeUrl,
     soundcloudUrl,
   };
@@ -67,21 +76,42 @@ export function getTrack(id: string): CatalogTrack | undefined {
   return catalogTracks.find((t) => t.id === id);
 }
 
-export function getRelease(id: string): CatalogRelease | undefined {
-  return catalogReleases.find((r) => r.id === id);
+/** Stable ordering for SSR/client parity — title, then year, then id. */
+export function sortCatalogTracksDeterministic(tracks: CatalogTrack[]): CatalogTrack[] {
+  return [...tracks].sort((a, b) => {
+    const byTitle = a.title.localeCompare(b.title, "en", { sensitivity: "base" });
+    if (byTitle !== 0) return byTitle;
+    const byYear = a.releaseYear - b.releaseYear;
+    if (byYear !== 0) return byYear;
+    return a.id.localeCompare(b.id, "en", { sensitivity: "base" });
+  });
 }
 
 export function getTracksByArtist(slug: string): CatalogTrack[] {
   const id = artistId(slug);
-  const fromCatalog = catalogTracks.filter((t) => t.artistId === id);
-  if (fromCatalog.length > 0) return fromCatalog;
-
   const artist = artists.find((a) => a.slug === slug);
   if (!artist) return [];
 
-  return artist.topTracks
-    .filter((t) => canDisplayTrack(t, id))
-    .map((t) => toCatalogTrack(slug, artist.name, artist.externalLinks.soundcloud, t));
+  const byId = new Map(
+    catalogTracks.filter((t) => t.artistId === id).map((t) => [t.id, t] as const),
+  );
+
+  // Preserve canonical editorial order from artist.topTracks (never shuffle/randomize).
+  const ordered: CatalogTrack[] = [];
+  for (const t of artist.topTracks) {
+    const catalog = byId.get(t.id);
+    if (catalog) {
+      ordered.push(catalog);
+      byId.delete(t.id);
+    }
+  }
+
+  const rest = sortCatalogTracksDeterministic([...byId.values()]);
+  return [...ordered, ...rest];
+}
+
+export function getRelease(id: string): CatalogRelease | undefined {
+  return catalogReleases.find((r) => r.id === id);
 }
 
 export function getPopularTracksByArtist(slug: string): CatalogTrack[] {
@@ -97,11 +127,11 @@ export function getLatestReleasesByArtist(slug: string, limit = 6): CatalogRelea
 
 export function getRecommendedTracks(seedArtistSlug: string, limit = 6): CatalogTrack[] {
   const artist = artists.find((a) => a.slug === seedArtistSlug);
-  if (!artist) return catalogTracks.slice(0, limit);
+  if (!artist) return sortCatalogTracksDeterministic(catalogTracks).slice(0, limit);
   const similar = new Set(artist.similarArtists);
-  return catalogTracks
-    .filter((t) => similar.has(t.artistSlug))
-    .slice(0, limit);
+  return sortCatalogTracksDeterministic(
+    catalogTracks.filter((t) => similar.has(t.artistSlug)),
+  ).slice(0, limit);
 }
 
 export function getVerifiedTracks(): CatalogTrack[] {

@@ -87,7 +87,7 @@ function buildResearchTracks(record: ArtistResearchRecord): Track[] {
       title: t.title,
       year: t.year,
       duration: t.duration,
-      coverArt: trackCover(spotifyTrackUrl(t.spotifyTrackId)),
+      coverArt: trackCover(spotifyTrackUrl(t.spotifyTrackId), { genre: record.genres[0] }),
       spotifyUrl: spotifyTrackUrl(t.spotifyTrackId),
     }));
 }
@@ -126,10 +126,24 @@ function mergeSets(primary: EssentialSet[], secondary: EssentialSet[]): Essentia
 }
 
 function mergeTracks(primary: Track[], secondary: Track[]): Track[] {
-  const byId = new Map<string, Track>();
-  for (const t of secondary) byId.set(t.id, t);
-  for (const t of primary) byId.set(t.id, t);
-  return [...byId.values()];
+  const primaryById = new Map(primary.map((t) => [t.id, t] as const));
+  const seen = new Set<string>();
+  const out: Track[] = [];
+
+  for (const t of secondary) {
+    const merged = primaryById.get(t.id) ?? t;
+    out.push(merged);
+    seen.add(t.id);
+  }
+
+  for (const t of primary) {
+    if (!seen.has(t.id)) {
+      out.push(t);
+      seen.add(t.id);
+    }
+  }
+
+  return out;
 }
 
 function buildListeningPath(tracks: Track[], sets: EssentialSet[]): ListeningPathStep[] {

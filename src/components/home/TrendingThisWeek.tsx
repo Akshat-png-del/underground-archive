@@ -1,20 +1,36 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import type { Artist } from "@/types";
 import {
   getMostSavedArtists,
   getMostViewedArtistsThisWeek,
   getTrendingGenresThisWeek,
 } from "@/content/home/feed";
+import { trendingGenres } from "@/content/home/index";
 import { ArtistCard } from "@/components/artists/ArtistCard";
 import { SocialBadge } from "@/components/ui/SocialBadge";
 import { HomeSection, HomeCarousel, CarouselItem } from "@/components/home/HomeSection";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 
-export function TrendingThisWeek() {
-  const viewed = getMostViewedArtistsThisWeek();
+type GenreChip = (typeof trendingGenres)[number];
+
+export function TrendingThisWeek({
+  initialViewed,
+  initialGenres,
+}: {
+  initialViewed: Artist[];
+  initialGenres: GenreChip[];
+}) {
   const saved = getMostSavedArtists();
-  const genres = getTrendingGenresThisWeek();
+  const [viewed, setViewed] = useState<Artist[]>(initialViewed);
+  const [genres, setGenres] = useState<GenreChip[]>(initialGenres);
+
+  useEffect(() => {
+    setViewed(getMostViewedArtistsThisWeek());
+    setGenres(getTrendingGenresThisWeek());
+  }, []);
 
   return (
     <FadeInSection>
@@ -37,13 +53,7 @@ export function TrendingThisWeek() {
                     <span className="absolute left-3 top-3 z-10 font-mono text-2xl text-accent/70">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <ArtistCard
-                      slug={artist.slug}
-                      name={artist.name}
-                      portrait={artist.portrait}
-                      genres={artist.genres}
-                      city={artist.city}
-                    />
+                    <ArtistCard artist={artist} />
                   </div>
                 </CarouselItem>
               ))}
@@ -59,13 +69,7 @@ export function TrendingThisWeek() {
               {saved.slice(0, 6).map((artist) => (
                 <CarouselItem key={`saved-${artist.slug}`}>
                   <div className="card-editorial">
-                    <ArtistCard
-                      slug={artist.slug}
-                      name={artist.name}
-                      portrait={artist.portrait}
-                      genres={artist.genres}
-                      city={artist.city}
-                    />
+                    <ArtistCard artist={artist} />
                   </div>
                 </CarouselItem>
               ))}

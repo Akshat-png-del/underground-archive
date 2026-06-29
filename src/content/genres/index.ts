@@ -1,6 +1,6 @@
 import type { Genre } from "@/types";
 import { artists, genreLabels, moodLabels } from "@/content/artists";
-import { catalogTracks } from "@/content/tracks";
+import { catalogTracks, sortCatalogTracksDeterministic } from "@/content/tracks";
 import { archiveSets } from "@/content/sets";
 import { getArticlesBySlugs } from "@/content/editorial";
 
@@ -384,12 +384,12 @@ export function getGenreEssentialArtists(slug: string, limit?: number) {
 }
 
 export function getGenreEssentialTracks(slug: string, limit = 15) {
-  return catalogTracks
-    .filter((t) => {
+  return sortCatalogTracksDeterministic(
+    catalogTracks.filter((t) => {
       const artist = artists.find((a) => a.slug === t.artistSlug);
       return artist?.genres.includes(slug as Genre);
-    })
-    .slice(0, limit);
+    }),
+  ).slice(0, limit);
 }
 
 export function getGenreEssentialSets(slug: string, limit = 10) {

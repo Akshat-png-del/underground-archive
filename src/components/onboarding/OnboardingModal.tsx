@@ -62,9 +62,9 @@ export function OnboardingModal() {
                   key={a.slug}
                   type="button"
                   onClick={() => toggleArtist(a.slug)}
-                  className={`border px-3 py-1.5 text-sm ${
+                  className={`chip-selectable border px-3 py-1.5 text-sm ${
                     draft.favoriteArtists.includes(a.slug)
-                      ? "border-accent bg-accent/10 text-accent"
+                      ? "is-selected border-accent bg-accent/10 text-accent"
                       : "border-border text-muted-light"
                   }`}
                 >
@@ -85,9 +85,9 @@ export function OnboardingModal() {
                     key={g}
                     type="button"
                     onClick={() => toggleGenre(g)}
-                    className={`border px-3 py-1.5 text-sm ${
+                    className={`chip-selectable border px-3 py-1.5 text-sm ${
                       draft.favoriteGenres.includes(g)
-                        ? "border-accent bg-accent/10 text-accent"
+                        ? "is-selected border-accent bg-accent/10 text-accent"
                         : "border-border text-muted-light"
                     }`}
                   >
@@ -125,9 +125,9 @@ export function OnboardingModal() {
                   key={m}
                   type="button"
                   onClick={() => toggleMood(m)}
-                  className={`border px-3 py-1.5 text-sm ${
+                  className={`chip-selectable border px-3 py-1.5 text-sm ${
                     draft.favoriteMoods.includes(m)
-                      ? "border-accent bg-accent/10 text-accent"
+                      ? "is-selected border-accent bg-accent/10 text-accent"
                       : "border-border text-muted-light"
                   }`}
                 >

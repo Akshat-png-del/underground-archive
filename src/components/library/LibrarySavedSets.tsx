@@ -23,7 +23,7 @@ export function LibrarySavedSets() {
               <Link href={`/sets/${set.slug}`} className="text-sm text-accent hover:underline">
                 {set.artistName}
               </Link>
-              <SetCardEmbed set={archiveSetToEssential(set)} artistId={set.artistId} />
+              <SetCardEmbed set={archiveSetToEssential(set)} artistId={set.artistId} setId={set.id} setSlug={set.slug} />
               <div className="mt-2">
                 <MusicActions
                   type="set"

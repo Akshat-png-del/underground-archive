@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { archiveSets, setCategoryLabels } from "@/content/sets";
 import type { SetCategory } from "@/types/library";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { SetsDirectoryGrid } from "@/components/sets/SetsDirectoryGrid";
 
 export const metadata: Metadata = buildMetadata({
   title: "Essential Sets",
@@ -29,24 +28,7 @@ export default function SetsPage() {
         ))}
       </div>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {archiveSets.map((set) => (
-          <Link
-            key={set.id}
-            href={`/sets/${set.slug}`}
-            className="group border border-border hover:border-accent"
-          >
-            <div className="relative aspect-video">
-              <SafeImage src={set.thumbnail} alt="" fill sizes="33vw" className="opacity-90 group-hover:opacity-100" />
-            </div>
-            <div className="p-4">
-              <p className="text-xs text-accent">{setCategoryLabels[set.category]}</p>
-              <p className="mt-1 font-medium text-foreground group-hover:text-accent">{set.title}</p>
-              <p className="text-sm text-muted">{set.artistName} · {set.event}</p>
-            </div>
-          </Link>
-        ))}
-      </div>
+      <SetsDirectoryGrid sets={archiveSets} />
     </div>
   );
 }

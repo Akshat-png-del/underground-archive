@@ -7,6 +7,7 @@ import {
   getMostSavedSets,
 } from "@/content/home/feed";
 import { ArtistCard } from "@/components/artists/ArtistCard";
+import { SetRow } from "@/components/music/SetRow";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { SocialBadge } from "@/components/ui/SocialBadge";
 import { FadeInSection } from "@/components/ui/FadeInSection";
@@ -53,15 +54,7 @@ export function CommunityFavoritesHub() {
             <ul className="space-y-3">
               {sets.map((set) => (
                 <li key={set.id}>
-                  <Link href={`/sets/${set.slug}`} className="card-editorial flex gap-3 border border-border p-3 hover-glow">
-                    <div className="relative h-14 w-24 shrink-0 overflow-hidden">
-                      <SafeImage src={set.thumbnail} alt="" fill sizes="96px" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-foreground">{set.title}</p>
-                      <p className="text-xs text-muted">{set.artistName}</p>
-                    </div>
-                  </Link>
+                  <SetRow set={set} variant="row" />
                 </li>
               ))}
             </ul>
@@ -74,14 +67,7 @@ export function CommunityFavoritesHub() {
             </div>
             <div className="grid grid-cols-2 gap-3">
               {artists.map((a) => (
-                <ArtistCard
-                  key={a.slug}
-                  slug={a.slug}
-                  name={a.name}
-                  portrait={a.portrait}
-                  genres={a.genres}
-                  city={a.city}
-                />
+                <ArtistCard key={a.slug} artist={a} />
               ))}
             </div>
           </div>

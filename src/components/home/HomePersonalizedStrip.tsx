@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useLibrary } from "@/context/LibraryContext";
 import { getRecentlyAddedTracks } from "@/content/home/feed";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
+import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { TrackRow } from "@/components/music/TrackRow";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
@@ -25,14 +26,8 @@ export function HomePersonalizedStrip() {
               <h3 className="font-mono text-xs uppercase tracking-wider text-muted">Continue listening</h3>
               <ul className="mt-4 space-y-2">
                 {history.slice(0, 4).map((h) => (
-                  <li key={h.id} className="card-editorial flex items-center gap-3 border border-border p-3">
-                    <div className="relative h-10 w-10 shrink-0">
-                      <SafeImage src={h.coverArt} alt="" fill sizes="40px" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-foreground">{h.title}</p>
-                      <p className="text-xs text-muted">{h.subtitle}</p>
-                    </div>
+                  <li key={h.id}>
+                    <HistoryPlayRow entry={h} className="card-editorial" />
                   </li>
                 ))}
               </ul>
@@ -47,7 +42,7 @@ export function HomePersonalizedStrip() {
                   <li key={v.id}>
                     <Link href={v.href} className="card-editorial flex items-center gap-3 border border-border p-3 hover-glow">
                       <div className="relative h-10 w-10 shrink-0">
-                        <SafeImage src={v.coverArt} alt="" fill sizes="40px" />
+                        <TrackArtwork coverArt={v.coverArt} alt="" fill sizes="40px" />
                       </div>
                       <div>
                         <p className="text-sm font-medium text-foreground">{v.title}</p>

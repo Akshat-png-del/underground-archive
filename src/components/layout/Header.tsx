@@ -46,7 +46,7 @@ export function Header() {
           </Link>
           <button
             type="button"
-            className="p-2 text-foreground lg:hidden"
+            className="interactive-ghost p-2 text-foreground hover:text-accent lg:hidden"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Close menu" : "Open menu"}
           >

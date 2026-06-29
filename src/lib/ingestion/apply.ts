@@ -3,6 +3,7 @@ import { getResearchBySlug } from "@/content/artists/research";
 import { fieldVerified } from "@/content/artists/research/types";
 import { getIngestedMetadata } from "@/content/artists/metadata";
 import { mapExternalGenres } from "./genres";
+import { resolveStoredHeroImage } from "@/lib/archive/images/display";
 
 function hasManualSpotify(research: ReturnType<typeof getResearchBySlug>): boolean {
   return !!(research?.spotify && fieldVerified(research.spotify.confidence));
@@ -93,7 +94,7 @@ export function applyIngestedMetadata(artist: Artist): Artist {
     genres,
     similarArtists,
     portrait,
-    heroImage: portrait,
+    heroImage: resolveStoredHeroImage({ ...artist, portrait, image }, portrait),
     image,
     imageSource: image.verified ? "editorial" : "fallback",
   };

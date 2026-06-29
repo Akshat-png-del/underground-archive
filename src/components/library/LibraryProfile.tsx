@@ -5,6 +5,8 @@ import { useLibrary } from "@/context/LibraryContext";
 import { Button } from "@/components/ui/Button";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { SafeImage } from "@/components/ui/SafeImage";
+import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
+import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { TodaysDiscovery, PreferencesSummary } from "@/components/home/TodaysDiscovery";
 
 export function LibraryProfile() {
@@ -62,9 +64,9 @@ export function LibraryProfile() {
           <ul className="mt-4 space-y-2">
             {recentlyViewed.slice(0, 8).map((v) => (
               <li key={v.id}>
-                <Link href={v.href} className="flex items-center gap-3 border border-border p-3 hover:border-accent">
+                <Link href={v.href} className="interactive-row flex items-center gap-3 border border-border p-3">
                   <div className="relative h-10 w-10 shrink-0">
-                    <SafeImage src={v.coverArt} alt="" fill sizes="40px" />
+                    <TrackArtwork coverArt={v.coverArt} alt="" fill sizes="40px" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground">{v.title}</p>
@@ -82,14 +84,8 @@ export function LibraryProfile() {
           <h2 className="font-serif text-xl text-foreground">Continue listening</h2>
           <ul className="mt-4 space-y-2">
             {history.slice(0, 5).map((h) => (
-              <li key={h.id} className="flex items-center gap-3 border border-border p-3">
-                <div className="relative h-10 w-10 shrink-0">
-                  <SafeImage src={h.coverArt} alt="" fill sizes="40px" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-foreground">{h.title}</p>
-                  <p className="text-xs text-muted">{h.subtitle}</p>
-                </div>
+              <li key={h.id}>
+                <HistoryPlayRow entry={h} />
               </li>
             ))}
           </ul>
@@ -100,7 +96,7 @@ export function LibraryProfile() {
         <h2 className="font-serif text-xl text-foreground">Trending public playlists</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {publicPlaylists.slice(0, 4).map((p) => (
-            <Link key={p.id} href={`/playlists/${p.id}`} className="flex gap-3 border border-border p-3 hover:border-accent">
+            <Link key={p.id} href={`/playlists/${p.id}`} className="interactive-row flex gap-3 border border-border p-3">
               <div className="relative h-16 w-16 shrink-0">
                 <SafeImage src={p.coverImage} alt="" fill sizes="64px" />
               </div>

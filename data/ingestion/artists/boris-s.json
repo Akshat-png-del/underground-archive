@@ -1,10 +1,10 @@
 {
   "slug": "boris-s",
   "name": "Boris S.",
-  "updatedAt": "2026-06-28T19:31:33.303Z",
+  "updatedAt": "2026-06-28T19:51:15.961Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:31:33.303Z",
+      "syncedAt": "2026-06-28T19:51:15.961Z",
       "status": "ok"
     },
     "youtube": {
@@ -13,22 +13,22 @@
     }
   },
   "spotify": {
-    "artistId": "21444lX8gpmOX36icLmbFI",
+    "artistId": "1YtebzJsPHni4DwAoMumGs",
     "name": "Boris S.",
-    "url": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI",
+    "url": "https://open.spotify.com/artist/1YtebzJsPHni4DwAoMumGs",
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600",
     "imageUrls": [
-      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de"
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de",
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600",
     "source": "spotify",
-    "sourceUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+    "sourceUrl": "https://open.spotify.com/artist/1YtebzJsPHni4DwAoMumGs"
   },
   "youtube": {
     "channelId": "UConj5z_OOR-6vx8ynZ-DfpA",

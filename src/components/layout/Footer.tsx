@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig, navLinks } from "@/config/site";
+import { formatCurrentYear } from "@/lib/format";
 
 export function Footer() {
   return (
@@ -18,8 +19,8 @@ export function Footer() {
             ))}
           </ul>
         </div>
-        <p className="mt-8 text-xs text-muted">
-          © {new Date().getFullYear()} {siteConfig.name}
+        <p className="mt-8 text-xs text-muted" suppressHydrationWarning>
+          © {formatCurrentYear()} {siteConfig.name}
         </p>
       </div>
     </footer>

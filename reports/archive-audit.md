@@ -1,11 +1,11 @@
 # Archive authenticity audit
-Generated: 2026-06-28T01:39:10.769Z
+Generated: 2026-06-28T20:30:38.129Z
 
 ## Summary
 - Artists: 150 (40 tier 1, 53 tier 2, 57 tier 3)
 - Status: 40 verified, 53 partial, 57 unverified
-- Sets: 207 (185 verified)
-- Tracks: 788 (209 verified)
+- Sets: 241 (185 verified)
+- Tracks: 781 (202 verified)
 - Suspicious profiles: 55
 - Broken profiles: 0
 - Research registry: 11 artists with editorial records
@@ -49,19 +49,14 @@ Generated: 2026-06-28T01:39:10.769Z
 - Lars Huismann (lars-huismann) [Tier 2 — extended]
   - TIER2_NO_SET: Tier 2 missing essential set
 - Yazzus (yazzus) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Oguz (oguz) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Cleric (cleric) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Eric Sneo (eric-sneo) [Tier 2 — extended]
   - TIER2_NO_SET: Tier 2 missing essential set
 - Petduo (petduo) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Hardfloor (hardfloor) [Tier 2 — extended]
   - TIER2_NO_SET: Tier 2 missing essential set
 - Front Line Assembly (front-line-assembly) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Nitzer Ebb (nitzer-ebb) [Tier 2 — extended]
   - TIER2_NO_SET: Tier 2 missing essential set
 - She Past Away (she-past-away) [Tier 2 — extended]

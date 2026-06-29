@@ -6,12 +6,19 @@
     "dev": "next dev",
     "audit:archive": "npx tsx scripts/audit-archive.ts",
     "audit:images": "npx tsx scripts/audit-images.ts",
+    "audit:track-artwork": "npx tsx scripts/audit-track-artwork.ts",
+    "audit:playback": "npx tsx scripts/audit-playback.ts",
+    "stress:playback": "npx tsx scripts/stress-test-playback.ts",
+    "validate:playback": "npx tsx scripts/e2e-playback-validation.ts",
+    "debug:playback": "npx tsx scripts/playback-debug-trace.ts",
+    "audit:audible": "npx tsx scripts/audible-playback-audit.ts",
     "sync:spotify": "npx tsx scripts/sync/spotify.ts",
     "sync:youtube": "npx tsx scripts/sync/youtube.ts",
     "sync:musicbrainz": "npx tsx scripts/sync/musicbrainz.ts",
     "sync:discogs": "npx tsx scripts/sync/discogs.ts",
     "sync:artist": "npx tsx scripts/sync/artist.ts",
     "sync:portraits": "npx tsx scripts/sync/portraits.ts",
+    "sync:track-covers": "npx tsx scripts/sync/track-covers.ts",
     "sync:bundle": "npx tsx scripts/build-metadata-bundle.ts",
     "sync": "npm run sync:portraits && npm run sync:bundle",
     "expand:catalog": "npx tsx scripts/expand-catalog.ts",
@@ -33,7 +40,8 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "tailwind-merge": "^3.6.0",
-    "zod": "^4.4.3"
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -42,6 +50,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "playwright": "^1.61.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

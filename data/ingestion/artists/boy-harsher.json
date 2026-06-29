@@ -1,10 +1,10 @@
 {
   "slug": "boy-harsher",
   "name": "Boy Harsher",
-  "updatedAt": "2026-06-28T19:31:03.601Z",
+  "updatedAt": "2026-06-28T19:50:46.274Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:31:03.601Z",
+      "syncedAt": "2026-06-28T19:50:46.274Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,14 +19,14 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6",
+    "imageUrl": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6"
+      "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6"
     ],
     "relatedArtists": []
   },
   "resolvedImage": {
-    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6",
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c49def2ad602ccd7e2caded6",
     "source": "spotify",
     "sourceUrl": "https://open.spotify.com/artist/4iom7VVRU6AHRIu1JUXpLG"
   },

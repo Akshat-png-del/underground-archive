@@ -7,7 +7,9 @@ import { ArtistCard } from "@/components/artists/ArtistCard";
 import { Button } from "@/components/ui/Button";
 
 export function HomeFollowingStrip() {
-  const { followedArtists, savedArtists } = useLibrary();
+  const { followedArtists, savedArtists, ready } = useLibrary();
+
+  if (!ready) return null;
 
   const followed = followedArtists
     .map((slug) => getArtist(slug))
@@ -31,14 +33,7 @@ export function HomeFollowingStrip() {
         {followed.length > 0 ? (
           <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
             {followed.map((a) => a && (
-              <ArtistCard
-                key={a.slug}
-                slug={a.slug}
-                name={a.name}
-                portrait={a.portrait}
-                genres={a.genres}
-                city={a.city}
-              />
+              <ArtistCard key={a.slug} artist={a} />
             ))}
           </div>
         ) : (
