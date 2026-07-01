@@ -1,0 +1,70 @@
+---
+description: PLAYBACK RELIABILITY PROTOCOL Part 3 — seek, navigation survival, production readiness
+globs:
+  - src/lib/music/**
+  - src/stores/playback-store.ts
+  - src/components/music/**
+  - tests/playback/**/*
+alwaysApply: true
+---
+
+# Playback Reliability Protocol — Part 3
+
+Parts 1–2: `.cursor/rules/playback-reliability-protocol.mdc`, `playback-reliability-protocol-part2.mdc`
+
+## Seek (P0 — visual-only is broken)
+
+Moving the seek slider **must**:
+
+- Change actual playback position (audio / Spotify API / YouTube iframe `start` reload)
+- Update elapsed time
+- Update remaining time
+
+If a UI change breaks seek: **revert the UI change**. Do not redesign playback.
+
+## Navigation survival
+
+Playback must survive:
+
+- artist → artist
+- artist → discover
+- discover → homepage
+- homepage → sets
+
+`PlaybackRoot` must **never** remount. Engine singleton stays alive.
+
+## Fast Refresh (development)
+
+Must never produce:
+
+- duplicate players
+- duplicate listeners
+- duplicate iframes
+- duplicate audio elements
+
+Always clean up listeners on teardown. Store re-binds engine listener with clear-before-set.
+
+## Production-ready bar
+
+- 0 console errors
+- 0 hydration mismatches
+- 0 duplicate players
+- 0 stale playback
+- 0 broken tracks / set videos
+- 0 switching failures
+- 0 click-through bugs
+- 0 playback regressions
+
+**Playback regressions are P0 bugs.**
+
+## If UI breaks playback
+
+**REVERT THE UI CHANGE.** Do not redesign playback.
+
+User must trust: **Play → immediate reliable playback.**
+
+## Deployment
+
+```bash
+npm run verify:playback
+```

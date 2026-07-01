@@ -1,0 +1,79 @@
+---
+description: UI refinement phase — premium UX allowed; playback backend is frozen
+globs:
+  - src/components/**/*
+  - src/app/**/*
+  - src/**/*.css
+---
+
+# UI Refinement Phase
+
+Playback reliability is a **protected system**. UI improvements are encouraged.
+
+Read `docs/playback-architecture.md` before any playback-adjacent UI work.
+
+## Protected files (do not modify)
+
+Unless a **reproducible playback bug** is filed and confirmed:
+
+- `src/lib/music/global-player-engine.ts`
+- `src/lib/music/spotify-embed-api.ts`
+- `src/lib/music/player.ts`
+- `src/lib/music/playback-actions.ts`
+- `src/stores/playback-store.ts`
+- `src/components/music/PlaybackRoot.tsx`
+- `src/lib/music/providers/**`
+
+See `.cursor/rules/playback-reliability-protocol.mdc` (Part 1).
+
+## UI may freely change
+
+- Layouts, cards, modals, typography, spacing
+- Navigation, responsive behavior, animations
+- Global player appearance and positioning
+- Card interactions, hover states, visual hierarchy
+
+## Mandatory UI ↔ playback contract
+
+### READ (selectors only)
+
+```ts
+usePlaybackStore((s) => s.currentTrack)
+usePlaybackStore((s) => s.isPlaying)
+// etc.
+```
+
+Or `useCardPlayback()` for active/playing + click handler.
+
+### DISPATCH (actions only)
+
+```ts
+import {
+  playItem,
+  togglePlayback,
+  seekTo,
+  handlePlaybackSurfaceClick,
+  expandPlaybackSurface,
+  openPlayerSurface,
+  closePlayerSurface,
+  stopPlayback,
+} from "@/lib/music/playback-actions";
+```
+
+### Forbidden in UI
+
+- Import engine or provider modules
+- `document.createElement('audio'|'iframe')` for playback
+- Local `useState` for `isPlaying`, `currentTime`, `duration`, active track
+- Duplicate play/pause/open click policy — use `handlePlaybackSurfaceClick`
+
+## Pre-merge checks (playback-adjacent UI)
+
+```bash
+npm run audit:playback-arch
+npm run test:playback
+```
+
+## Quality bar
+
+The platform should feel **premium**: confident typography, deliberate spacing, smooth micro-interactions, clear hierarchy. Playback behavior must remain unchanged when only visual files differ.

@@ -1,0 +1,56 @@
+---
+description: LOCKED three-domain separation — Audio, Video, Sets must never cross-contaminate
+globs:
+  - src/components/music/**
+  - src/lib/music/**
+  - src/stores/playback-store.ts
+  - src/app/sets/**
+  - src/components/sets/**
+  - src/lib/sets/**
+---
+
+# Architecture Domain Lock — AUDIO | VIDEO | SETS
+
+Read `docs/audio-video-sets-architecture-lock.md` and `docs/sets-video-architecture-freeze.md` before any playback work.
+
+## Three independent domains (non-negotiable)
+
+| Domain | Owns | Must NOT touch |
+|--------|------|----------------|
+| **AUDIO** | `AudioPlayerBar`, Spotify/preview providers, seek/volume/queue | YouTube, set watch UI, set routing |
+| **VIDEO** | `YouTubeProvider`, `SetWatchSurface`, native embed controls | Audio bar, audio transport, queue |
+| **SETS** | `/sets/[slug]` navigation + watch page UI | Audio provider logic, direct `playItem(set)` from browse |
+
+## Data flow (mandatory)
+
+```
+AUDIO:  UI → playback-actions → store → engine → audio providers
+VIDEO:  SetWatchSurface → engine → YouTubeProvider → native controls
+SETS:   browse → set-watch-navigation → SetWatchPage (no transport)
+```
+
+**Never:** `UI → cross-domain system`
+
+## Absolute prohibitions
+
+- Do NOT mix audio logic with video logic
+- Do NOT let AudioPlayerBar control video
+- Do NOT let Sets trigger audio provider transport directly
+- Do NOT import audio components into `src/components/sets/**`
+- Do NOT import set watch components into `AudioPlayerBar`
+- Do NOT change store shape for domain separation
+- Do NOT refactor engine or ProviderRouter architecture without explicit approval
+
+## Regression stop condition
+
+If a change causes Sets behavior change from audio logic, video affected by audio, or audio bar on set pages → **STOP AND REVERT**.
+
+## Pre-change checklist (all YES)
+
+1. Single domain only?
+2. Sets watch unchanged?
+3. Video unchanged?
+4. No cross-imports?
+5. No store shape change?
+
+Dev guards: `src/lib/music/playback-domain-lock.ts`

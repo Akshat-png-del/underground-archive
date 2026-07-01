@@ -6,6 +6,7 @@ import type { WeeklyDiscoveriesEditorial } from "@/content/home/feed";
 import { ArtistCard } from "@/components/artists/ArtistCard";
 import { TrackRow } from "@/components/music/TrackRow";
 import { SetRow } from "@/components/music/SetRow";
+import { playbackItemFromTrack, playbackItemFromSet } from "@/lib/music/playback";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
 
@@ -21,6 +22,8 @@ export function WeeklyDiscoveriesMagazine({
   }, []);
 
   const { artists, tracks, sets } = editorial;
+  const trackBrowseQueue = tracks.map(playbackItemFromTrack);
+  const setBrowseQueue = sets.map(playbackItemFromSet);
 
   return (
     <FadeInSection>
@@ -47,7 +50,7 @@ export function WeeklyDiscoveriesMagazine({
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">3 essential tracks</p>
               <ol className="mt-4 space-y-2">
                 {tracks.map((track, i) => (
-                  <TrackRow key={track.id} track={track} index={i} />
+                  <TrackRow key={track.id} track={track} index={i} browseQueue={trackBrowseQueue} />
                 ))}
               </ol>
             </div>
@@ -55,8 +58,8 @@ export function WeeklyDiscoveriesMagazine({
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">2 recommended sets</p>
               <div className="mt-4 space-y-3">
-                {sets.map((set) => (
-                  <SetRow key={set.id} set={set} />
+                {sets.map((set, i) => (
+                  <SetRow key={set.id} set={set} browseQueue={setBrowseQueue} browseIndex={i} />
                 ))}
               </div>
             </div>

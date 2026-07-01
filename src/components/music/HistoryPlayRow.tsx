@@ -2,16 +2,27 @@
 
 import type { PlayHistoryEntry } from "@/types/library";
 import { TrackArtwork } from "@/components/music/TrackArtwork";
-import { playbackItemFromRef } from "@/lib/music/playback";
+import { PlayingIndicator } from "@/components/music/PlayingIndicator";
+import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
+import { playableSurfaceClass } from "@/lib/music/playable-surface";
 import { useCardPlayback } from "@/lib/music/use-card-playback";
+import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 
 interface HistoryPlayRowProps {
   entry: PlayHistoryEntry;
+  browseQueue?: PlaybackItem[];
+  browseIndex?: number;
   trailing?: React.ReactNode;
   className?: string;
 }
 
-export function HistoryPlayRow({ entry, trailing, className = "" }: HistoryPlayRowProps) {
+export function HistoryPlayRow({
+  entry,
+  browseQueue,
+  browseIndex,
+  trailing,
+  className = "",
+}: HistoryPlayRowProps) {
   const item = playbackItemFromRef(entry.type, entry.refId);
   const fallback = {
     type: entry.type,
@@ -20,10 +31,16 @@ export function HistoryPlayRow({ entry, trailing, className = "" }: HistoryPlayR
     title: entry.title,
     subtitle: entry.subtitle,
   };
+  const playbackItem = item ?? fallback;
+  const browse = browseQueue ? browseContextAt(browseQueue, playbackItem, browseIndex) : undefined;
+  const setSlug =
+    entry.type === "set" ? resolveSetWatchSlug(entry.refId) ?? undefined : undefined;
   const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
-    item ?? fallback,
+    playbackItem,
     entry.type,
     entry.refId,
+    browse,
+    setSlug,
   );
 
   return (
@@ -32,20 +49,20 @@ export function HistoryPlayRow({ entry, trailing, className = "" }: HistoryPlayR
         if (!item) return;
         handleCardPointerDown(e);
       }}
-      className={`flex cursor-pointer touch-manipulation items-center gap-3 border border-border p-3 transition-colors ${
-        active ? "border-accent bg-surface" : ""
-      } ${className}`}
+      className={`playable-surface flex cursor-pointer touch-manipulation items-center gap-3 rounded-sm px-3 py-2.5 ${playableSurfaceClass(active, playing)} ${className}`}
       role="button"
       tabIndex={0}
       aria-label={playing ? `Pause ${entry.title}` : `Play ${entry.title}`}
+      aria-current={active ? "true" : undefined}
     >
-      <div className="relative h-10 w-10 shrink-0 overflow-hidden">
+      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-sm">
         <TrackArtwork coverArt={entry.coverArt} alt="" fill sizes="40px" />
       </div>
       <div className="min-w-0 flex-1">
-        <p className="truncate text-sm font-medium text-foreground">{entry.title}</p>
-        <p className="truncate text-xs text-muted">{entry.subtitle}</p>
+        <p className="truncate text-sm font-medium text-foreground">{entry.subtitle}</p>
+        <p className="truncate text-sm text-foreground/90">{entry.title}</p>
       </div>
+      {active && <PlayingIndicator playing={playing} compact />}
       {trailing && <div onPointerDown={stopCardPointerDown}>{trailing}</div>}
     </div>
   );

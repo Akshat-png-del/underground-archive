@@ -1,0 +1,6 @@
+{
+  "updatedAt": "2026-06-28T00:00:00.000Z",
+  "youtubeIds": [],
+  "spotifyTrackIds": [],
+  "notes": "IDs blocked at playback resolution. Populated by: npm run audit:playback-full -- --live --apply-blocklist"
+}

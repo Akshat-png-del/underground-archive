@@ -6,12 +6,18 @@ import { getRecentlyAddedTracks } from "@/content/home/feed";
 import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
 import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { TrackRow } from "@/components/music/TrackRow";
+import { playbackItemFromRef, playbackItemFromTrack } from "@/lib/music/playback";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
 
 export function HomePersonalizedStrip() {
   const { history, recentlyViewed, savedSets, ready } = useLibrary();
   const recentTracks = getRecentlyAddedTracks(4);
+  const historyBrowseQueue = history
+    .slice(0, 4)
+    .map((h) => playbackItemFromRef(h.type, h.refId))
+    .filter((item): item is NonNullable<typeof item> => !!item);
+  const recentTrackBrowseQueue = recentTracks.map(playbackItemFromTrack);
 
   if (!ready) return null;
   const hasActivity = history.length > 0 || recentlyViewed.length > 0 || savedSets.length > 0;
@@ -25,9 +31,14 @@ export function HomePersonalizedStrip() {
             <div>
               <h3 className="font-mono text-xs uppercase tracking-wider text-muted">Continue listening</h3>
               <ul className="mt-4 space-y-2">
-                {history.slice(0, 4).map((h) => (
+                {history.slice(0, 4).map((h, i) => (
                   <li key={h.id}>
-                    <HistoryPlayRow entry={h} className="card-editorial" />
+                    <HistoryPlayRow
+                      entry={h}
+                      browseQueue={historyBrowseQueue}
+                      browseIndex={i}
+                      className="card-editorial"
+                    />
                   </li>
                 ))}
               </ul>
@@ -70,7 +81,7 @@ export function HomePersonalizedStrip() {
             <h3 className="font-mono text-xs uppercase tracking-wider text-muted">Recently added tracks</h3>
             <ol className="mt-4 space-y-2">
               {recentTracks.slice(0, 3).map((t, i) => (
-                <TrackRow key={t.id} track={t} index={i} />
+                <TrackRow key={t.id} track={t} index={i} browseQueue={recentTrackBrowseQueue} />
               ))}
             </ol>
           </div>

@@ -16,6 +16,9 @@ export type PlaybackDebugStep =
   | "EMBED"
   | "AUDIO"
   | "SPOTIFY"
+  | "PROVIDER"
+  | "SEEK"
+  | "QUEUE"
   | "RACE"
   | "LISTENER";
 
@@ -201,6 +204,10 @@ export function probeEmbedAudibility(): EmbedAudibilityProbe {
   const iframe = root?.querySelector("iframe") as HTMLIFrameElement | null;
   if (!root || !iframe) {
     return { ...empty, audibilityRisk: ["playback root or iframe missing"] };
+  }
+
+  if (typeof getComputedStyle !== "function") {
+    return { ...empty, audibilityRisk: ["getComputedStyle unavailable"] };
   }
 
   const containerCs = getComputedStyle(root);

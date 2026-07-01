@@ -8,10 +8,8 @@ import { DEFAULT_PREFERENCES } from "@/types/preferences";
 import { genreLabels, moodLabels } from "@/content/artists";
 import { resolvePortrait, resolvePortraitFallbacksForDisplay } from "@/lib/archive/verification";
 import { SafeImage } from "@/components/ui/SafeImage";
-import { TrackArtwork } from "@/components/music/TrackArtwork";
-import { MusicActions } from "@/components/music/MusicActions";
-import { playbackItemFromTrack, playbackItemFromSet } from "@/lib/music/playback";
-import { useCardPlayback, youtubeDisplayEmbedUrl } from "@/lib/music/use-card-playback";
+import { TrackRow } from "@/components/music/TrackRow";
+import { SetRow } from "@/components/music/SetRow";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 
 interface Props {
@@ -33,19 +31,6 @@ export function TodaysDiscovery({
   }, [preferences, ready]);
 
   const { artist, set, track } = discovery;
-
-  const setItem = playbackItemFromSet(set);
-  const trackItem = playbackItemFromTrack(track);
-  const {
-    handleCardPointerDown: handleSetCard,
-    stopCardPointerDown: stopSetCard,
-    playing: setPlaying,
-  } = useCardPlayback(setItem, "set", set.id);
-  const {
-    handleCardPointerDown: handleTrackCard,
-    stopCardPointerDown: stopTrackCard,
-    playing: trackPlaying,
-  } = useCardPlayback(trackItem, "track", track.id);
 
   if (compact) {
     return (
@@ -71,69 +56,27 @@ export function TodaysDiscovery({
             {preferences.completedAt ? " · based on your preferences" : " · complete onboarding to personalize"}
           </p>
 
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            <Link href={`/artists/${artist.slug}`} className="card-editorial group border border-border bg-background/60 p-5 hover-glow">
-              <p className="font-mono text-[10px] uppercase text-muted">Artist</p>
-              <div className="relative mt-3 aspect-square w-full max-w-[140px] overflow-hidden">
+          <div className="mt-8 space-y-2">
+            <Link
+              href={`/artists/${artist.slug}`}
+              className="mb-4 inline-flex items-center gap-3 rounded-sm border border-border/60 bg-background/40 px-4 py-3 transition-colors hover:border-accent/40"
+            >
+              <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-sm">
                 <SafeImage
                   src={resolvePortrait(artist)}
                   fallbacks={resolvePortraitFallbacksForDisplay(artist)}
                   alt=""
                   fill
-                  sizes="140px"
-                  className="image-zoom"
+                  sizes="48px"
                 />
               </div>
-              <p className="mt-4 font-serif text-xl text-foreground group-hover:text-accent">{artist.name}</p>
-              <p className="text-xs text-muted">{artist.city} · {genreLabels[artist.genres[0]]}</p>
+              <div>
+                <p className="font-mono text-[10px] uppercase text-muted">Featured artist</p>
+                <p className="font-serif text-lg text-foreground">{artist.name}</p>
+              </div>
             </Link>
-
-            <div
-              onPointerDown={handleSetCard}
-              className="card-editorial cursor-pointer touch-manipulation border border-border bg-background/60 p-5 hover-glow"
-              role="button"
-              tabIndex={0}
-              aria-label={setPlaying ? `Pause ${set.title}` : `Play ${set.title}`}
-            >
-              <p className="font-mono text-[10px] uppercase text-muted">Set</p>
-              <div className="relative mt-3 block aspect-video w-full overflow-hidden">
-                {set.youtubeId ? (
-                  <iframe
-                    src={youtubeDisplayEmbedUrl(set.youtubeId)}
-                    title={set.title}
-                    className="pointer-events-none absolute inset-0 h-full w-full border-0"
-                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                    loading="lazy"
-                    tabIndex={-1}
-                  />
-                ) : (
-                  <SafeImage src={set.thumbnail} alt="" fill sizes="33vw" className="image-zoom" />
-                )}
-              </div>
-              <p className="mt-4 font-medium text-foreground">{set.title}</p>
-              <p className="text-xs text-muted">{set.artistName} · {set.duration}</p>
-              <div className="mt-4" onPointerDown={stopSetCard}>
-                <MusicActions type="set" refId={set.id} label={`${set.title} — ${set.artistName}`} youtubeId={set.youtubeId} compact />
-              </div>
-            </div>
-
-            <div
-              onPointerDown={handleTrackCard}
-              className="card-editorial cursor-pointer touch-manipulation border border-border bg-background/60 p-5 hover-glow"
-              role="button"
-              tabIndex={0}
-              aria-label={trackPlaying ? `Pause ${track.title}` : `Play ${track.title}`}
-            >
-              <p className="font-mono text-[10px] uppercase text-muted">Track</p>
-              <div className="relative mt-3 block h-24 w-24 overflow-hidden">
-                <TrackArtwork coverArt={track.coverArt} genres={artist.genres} alt="" fill sizes="96px" />
-              </div>
-              <p className="mt-4 font-medium text-foreground">{track.title}</p>
-              <p className="text-xs text-muted">{track.artist}</p>
-              <div className="mt-4" onPointerDown={stopTrackCard}>
-                <MusicActions type="track" refId={track.id} label={`${track.title} — ${track.artist}`} spotifyUrl={track.spotifyUrl} compact />
-              </div>
-            </div>
+            <SetRow set={set} />
+            <TrackRow track={track} />
           </div>
         </div>
       </section>

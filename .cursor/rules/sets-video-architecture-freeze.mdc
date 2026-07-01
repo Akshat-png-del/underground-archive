@@ -1,0 +1,45 @@
+---
+description: FROZEN Sets/Video watch architecture — do not modify without explicit Sets/YouTube task
+globs:
+  - src/app/sets/**/*
+  - src/components/sets/**/*
+  - src/lib/sets/**/*
+  - src/lib/music/playback-experience.ts
+  - src/lib/music/use-card-playback.ts
+  - src/components/music/PlaybackEngineMount.tsx
+  - src/components/music/use-persistent-playback-dock.ts
+---
+
+# Sets / Video Architecture — FROZEN
+
+Read `docs/sets-video-architecture-freeze.md` before any playback or Sets work.
+
+## Immutable
+
+- Sets canonical flow: click → `/sets/[slug]` → `SetWatchPage` → `useSetWatchDock` → engine → YouTube → **native controls only**
+- Two independent UI experiences (audio bottom player vs set watch page)
+- No audio player UI while watching a set
+- Audio player never controls video; video never controls audio
+- No merge/refactor/cleanup between audio and video UI
+
+## Unless task explicitly says Video / Sets / YouTube
+
+- Do **not** modify files under `src/app/sets/`, `src/components/sets/`, `src/lib/sets/`
+- Do **not** change set entry routing in `use-card-playback.ts` or set guards in `playback-actions.ts`
+- Do **not** import audio player components into Sets pages or Set components into audio player
+
+## Audio-only work
+
+May modify `AudioPlayerBar`, `TrackRow`, queue/seek/volume — must not touch Sets inventory.
+
+## Pre-change checklist
+
+All must be **yes** before editing shared playback files:
+
+1. Audio only?
+2. Sets watch page unchanged?
+3. No cross-import between experiences?
+4. No set routing change?
+5. No new shared UI?
+
+If any **no** → stop; require explicit approval.

@@ -1,0 +1,78 @@
+---
+description: PLAYBACK RELIABILITY PROTOCOL Part 1 — frozen production infrastructure
+globs:
+  - src/**/*
+  - tests/playback/**/*
+  - scripts/audit-playback-architecture.ts
+alwaysApply: true
+---
+
+# Playback Reliability Protocol — Part 1
+
+Playback is **production infrastructure**. Tracks and sets must always play reliably.
+
+**Playback reliability > Features > UI polish > Refactoring**
+
+## Frozen architecture (never change shape)
+
+```
+UI
+ ↓
+playback-actions
+ ↓
+playback-store
+ ↓
+global-player-engine
+ ↓
+providers
+```
+
+## Protected files
+
+Do **not** redesign, rewrite, replace, or refactor unless a reproducible playback bug exists with logs:
+
+- `src/lib/music/global-player-engine.ts`
+- `src/lib/music/spotify-embed-api.ts`
+- `src/lib/music/player.ts`
+- `src/lib/music/playback-actions.ts`
+- `src/stores/playback-store.ts`
+- `src/components/music/PlaybackRoot.tsx`
+- `src/lib/music/providers/**`
+
+Bug fix requires: failing `npm run test:playback` OR console chain `[CLICK]` → `[STORE]` → `[ENGINE]` → `[SOURCE]`.
+
+## Never
+
+- Create a second playback engine
+- Replace Zustand or PlaybackRoot
+- Rewrite provider contracts
+- Move playback ownership to UI
+- Create duplicate playback state
+- Mount additional hidden players
+- Create `<audio>` or playback `<iframe>` in UI components
+
+## UI contract
+
+**MUST:**
+- Read: `usePlaybackStore()` selectors
+- Dispatch: `playback-actions` (`playItem`, `handlePlaybackSurfaceClick`, `seekTo`, etc.)
+
+**MUST NEVER:**
+- Import providers or engine directly
+- Create audio/iframe elements for playback
+- Own playback state (`useState` for isPlaying, position, duration)
+- Control media directly
+
+## Pre-merge (any PR touching `src/components` or playback-adjacent code)
+
+```bash
+npm run verify:playback
+```
+
+## UI refinement
+
+Visual/UX work on `GlobalPlayer`, cards, modals, navigation is **allowed** — see `.cursor/rules/ui-refinement-phase.mdc`. Backend files above stay frozen.
+
+## Part 2
+
+Bug-fix workflow, manual verification checklist, deployment gate: `.cursor/rules/playback-reliability-protocol-part2.mdc`

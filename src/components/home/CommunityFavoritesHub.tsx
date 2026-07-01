@@ -8,6 +8,7 @@ import {
 } from "@/content/home/feed";
 import { ArtistCard } from "@/components/artists/ArtistCard";
 import { SetRow } from "@/components/music/SetRow";
+import { playbackItemFromSet } from "@/lib/music/playback";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { SocialBadge } from "@/components/ui/SocialBadge";
 import { FadeInSection } from "@/components/ui/FadeInSection";
@@ -16,6 +17,7 @@ import { HomeSection } from "@/components/home/HomeSection";
 export function CommunityFavoritesHub() {
   const playlists = getMostLikedPlaylists(3);
   const sets = getMostSavedSets(3);
+  const setBrowseQueue = sets.map(playbackItemFromSet);
   const artists = getMostDiscussedArtists(4);
 
   return (
@@ -52,9 +54,9 @@ export function CommunityFavoritesHub() {
           <div>
             <h3 className="mb-4 font-mono text-xs uppercase tracking-wider text-muted">Saved sets</h3>
             <ul className="space-y-3">
-              {sets.map((set) => (
+              {sets.map((set, i) => (
                 <li key={set.id}>
-                  <SetRow set={set} variant="row" />
+                  <SetRow set={set} variant="row" browseQueue={setBrowseQueue} browseIndex={i} />
                 </li>
               ))}
             </ul>

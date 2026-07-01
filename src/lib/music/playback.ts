@@ -4,6 +4,7 @@ import { getRelease, getTrack } from "@/content/tracks";
 import { getSet } from "@/content/sets";
 import { trackId } from "@/lib/music";
 import { resolvePlaybackSource } from "@/lib/music/playback-source";
+import { setThumbnailUrl } from "@/lib/music/set-display";
 import {
   enrichTrackItemSources,
   logTrackSourceResolution,
@@ -22,7 +23,6 @@ export interface PlaybackItem {
   youtubeUrl?: string;
   youtubeId?: string;
   previewUrl?: string;
-  detailsHref?: string;
 }
 
 export function playbackItemFromTrack(track: CatalogTrack): PlaybackItem {
@@ -39,7 +39,6 @@ export function playbackItemFromTrack(track: CatalogTrack): PlaybackItem {
     spotifyTrackId: sources.spotifyTrackId,
     youtubeUrl: sources.youtubeUrl,
     previewUrl: sources.previewUrl,
-    detailsHref: `/artists/${track.artistSlug}#track-${id}`,
   };
 }
 
@@ -90,11 +89,12 @@ export function playbackItemFromMusicActions(props: {
       label,
       title: set?.title ?? label,
       subtitle: set?.artistName ?? "",
-      coverArt: set?.thumbnail,
+      coverArt: set?.thumbnail
+        ? set.thumbnail
+        : setThumbnailUrl(undefined, youtubeId ?? set?.youtubeId) || undefined,
       spotifyUrl,
       youtubeUrl,
       youtubeId: youtubeId ?? set?.youtubeId,
-      detailsHref: set ? `/sets/${set.slug}` : undefined,
     };
   }
 
@@ -107,7 +107,6 @@ export function playbackItemFromMusicActions(props: {
     subtitle: release?.artist ?? "",
     coverArt: release?.coverArt,
     spotifyUrl: release?.spotifyUrl ?? spotifyUrl,
-    detailsHref: release ? `/artists/${release.artistSlug}#releases` : undefined,
   };
 }
 
@@ -118,9 +117,8 @@ export function playbackItemFromSet(set: ArchiveSet): PlaybackItem {
     label: `${set.title} — ${set.artistName}`,
     title: set.title,
     subtitle: set.artistName,
-    coverArt: set.thumbnail,
+    coverArt: setThumbnailUrl(set.thumbnail, set.youtubeId) || undefined,
     youtubeId: set.youtubeId,
-    detailsHref: `/sets/${set.slug}`,
   };
 }
 
@@ -133,7 +131,6 @@ export function playbackItemFromRelease(release: CatalogRelease): PlaybackItem {
     subtitle: release.artist,
     coverArt: release.coverArt,
     spotifyUrl: release.spotifyUrl,
-    detailsHref: `/artists/${release.artistSlug}#release-${release.id}`,
   };
 }
 
@@ -157,4 +154,27 @@ export function buildPlaybackEmbedUrl(item: PlaybackItem, autoplay = true): stri
 
 export function isSamePlaybackItem(a: PlaybackItem | null, b: PlaybackItem): boolean {
   return !!a && a.type === b.type && a.refId === b.refId;
+}
+
+/** List the user is browsing — next/previous walk this queue, not play history. */
+export type PlaybackBrowseContext = {
+  queue: PlaybackItem[];
+  queueIndex: number;
+};
+
+export function browseContextAt(
+  queue: PlaybackItem[],
+  item: PlaybackItem,
+  index?: number,
+): PlaybackBrowseContext {
+  if (index !== undefined && index >= 0 && index < queue.length) {
+    return { queue, queueIndex: index };
+  }
+  const queueIndex = queue.findIndex((entry) => isSamePlaybackItem(entry, item));
+  return { queue, queueIndex: queueIndex >= 0 ? queueIndex : 0 };
+}
+
+/** YouTube-backed items — video mode (native embed controls, no GlobalPlayer transport). */
+export function isVideoPlaybackItem(item: PlaybackItem): boolean {
+  return resolvePlaybackSource(item).kind === "youtube";
 }

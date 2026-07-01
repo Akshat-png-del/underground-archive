@@ -82,16 +82,6 @@ export function ArtistPageContent({ artist }: Props) {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            {links.spotify && (
-              <a href={links.spotify} target="_blank" rel="noopener noreferrer">
-                <Button size="sm">Listen on Spotify</Button>
-              </a>
-            )}
-            {links.youtube && (
-              <a href={links.youtube} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="sm">Watch on YouTube</Button>
-              </a>
-            )}
             {links.instagram && (
               <a href={links.instagram} target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="sm">Follow on Instagram</Button>

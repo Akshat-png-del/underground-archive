@@ -1,9 +1,11 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { useLibrary, getBecauseYouListened } from "@/context/LibraryContext";
 import { getRecommendedTracks } from "@/content/tracks";
 import { archiveSets } from "@/content/sets";
+import { playbackItemFromRef, playbackItemFromSet, playbackItemFromTrack } from "@/lib/music/playback";
 import { SetRow } from "@/components/music/SetRow";
 import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
 import { SafeImage } from "@/components/ui/SafeImage";
@@ -20,6 +22,18 @@ export function HomeRetentionSections() {
   const becauseYou = getBecauseYouListened(history);
   const trendingPlaylists = publicPlaylists.slice(0, 4);
   const mostSaved = archiveSets.slice(0, 4);
+  const continueBrowseQueue = useMemo(
+    () =>
+      continueItems
+        .map((h) => playbackItemFromRef(h.type, h.refId))
+        .filter((item): item is NonNullable<typeof item> => !!item),
+    [continueItems],
+  );
+  const recommendedBrowseQueue = useMemo(
+    () => recommended.map(playbackItemFromTrack),
+    [recommended],
+  );
+  const mostSavedBrowseQueue = useMemo(() => mostSaved.map(playbackItemFromSet), [mostSaved]);
 
   return (
     <>
@@ -28,9 +42,14 @@ export function HomeRetentionSections() {
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-2xl text-foreground sm:text-3xl">Continue listening</h2>
             <ul className="mt-6 space-y-2">
-              {continueItems.map((h) => (
+              {continueItems.map((h, i) => (
                 <li key={h.id}>
-                  <HistoryPlayRow entry={h} className="card-editorial" />
+                  <HistoryPlayRow
+                    entry={h}
+                    browseQueue={continueBrowseQueue}
+                    browseIndex={i}
+                    className="card-editorial"
+                  />
                 </li>
               ))}
             </ul>
@@ -62,8 +81,15 @@ export function HomeRetentionSections() {
         <div className="mx-auto max-w-6xl">
           <h2 className="font-serif text-2xl text-foreground sm:text-3xl">Editor&apos;s picks — essential sets</h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            {mostSaved.map((set) => (
-              <SetRow key={set.id} set={set} variant="row" meta={`${set.artistName} · ${set.event}`} />
+            {mostSaved.map((set, i) => (
+              <SetRow
+                key={set.id}
+                set={set}
+                variant="row"
+                meta={`${set.artistName} · ${set.event}`}
+                browseQueue={mostSavedBrowseQueue}
+                browseIndex={i}
+              />
             ))}
           </div>
         </div>
@@ -75,7 +101,7 @@ export function HomeRetentionSections() {
             <h2 className="font-serif text-2xl text-foreground sm:text-3xl">Recommended tracks</h2>
             <ol className="mt-6 space-y-3">
               {recommended.map((t, i) => (
-                <TrackRow key={t.id} track={t} index={i} />
+                <TrackRow key={t.id} track={t} index={i} browseQueue={recommendedBrowseQueue} />
               ))}
             </ol>
           </div>

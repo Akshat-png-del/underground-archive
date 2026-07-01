@@ -1,0 +1,57 @@
+---
+description: Playback architecture boundaries — UI must stay agnostic of media engine
+globs:
+  - src/components/**/*
+  - src/app/**/*
+  - src/stores/playback-store.ts
+  - src/lib/music/**
+---
+
+# Playback Architecture Rules
+
+Read `docs/sets-video-architecture-freeze.md` (FROZEN Sets/Video rules), `docs/playback-architecture.md`, and `.cursor/rules/playback-reliability-protocol.mdc` before any playback work.
+
+**Priority:** Playback reliability > Features > UI polish > Refactoring
+
+## Layer boundaries (mandatory)
+
+```
+UI components → playback-actions → playback-store → global-player-engine → providers
+```
+
+## UI layer (`src/components`, `src/app`)
+
+**Allowed:**
+- `usePlaybackStore` selectors (read-only state)
+- `playback-actions` dispatchers (`playItem`, `handlePlaybackSurfaceClick`, `seekTo`, etc.)
+- `useCardPlayback` hook (thin wrapper over actions)
+
+**Forbidden:**
+- Import `global-player-engine`, `spotify-embed-api`, `youtube-embed-api`
+- `document.createElement('audio'|'iframe')` for playback
+- Local `useState` for `isPlaying`, `currentTime`, `duration`, or active track
+- Duplicate click policy (play/pause/open) — use `handlePlaybackSurfaceClick`
+
+## Store (`playback-store.ts`)
+
+- Sole module that imports `globalPlayerEngine`
+- Engine listener is the **only** writer for transport state (`isPlaying`, `currentTime`, etc.)
+- Store actions set session fields (`currentTrack`, `queue`, `detailsOpen`) and forward commands
+
+## Engine (`global-player-engine.ts`)
+
+- Singleton; mount once; never torn down on route change
+- Only layer that creates/destroys media elements
+
+## Adding new playback UI
+
+1. Read state from `usePlaybackStore`
+2. Dispatch via `playback-actions.ts`
+3. Add contract test in `tests/playback/contract.test.ts`
+4. Run `npm run test:playback` and `npm run audit:playback-arch`
+
+## UI refinement phase
+
+UI redesign is **allowed and expected**. See `.cursor/rules/ui-refinement-phase.mdc`.
+
+Protected backend files must not change without a reproducible playback bug.

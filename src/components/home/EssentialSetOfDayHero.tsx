@@ -5,11 +5,13 @@ import type { ArchiveSet } from "@/types/library";
 import { genreLabels } from "@/content/artists";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { Button } from "@/components/ui/Button";
-import { MusicActions } from "@/components/music/MusicActions";
+import { PlayingIndicator } from "@/components/music/PlayingIndicator";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
 import { playbackItemFromSet } from "@/lib/music/playback";
-import { useCardPlayback, youtubeDisplayEmbedUrl } from "@/lib/music/use-card-playback";
+import { playableSurfaceClass } from "@/lib/music/playable-surface";
+import { setThumbnailUrl } from "@/lib/music/set-display";
+import { useCardPlayback } from "@/lib/music/use-card-playback";
 
 interface Props {
   set: ArchiveSet;
@@ -18,10 +20,12 @@ interface Props {
 export function EssentialSetOfDayHero({ set }: Props) {
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
   const item = playbackItemFromSet(set);
-  const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
+  const { handleCardPointerDown, active, playing } = useCardPlayback(
     item,
     "set",
     set.id,
+    undefined,
+    set.slug,
   );
 
   return (
@@ -36,26 +40,21 @@ export function EssentialSetOfDayHero({ set }: Props) {
       >
         <div
           onPointerDown={handleCardPointerDown}
-          className={`card-editorial cursor-pointer touch-manipulation overflow-hidden border border-border bg-surface-elevated lg:grid lg:grid-cols-5 ${
-            active ? "ring-2 ring-accent" : ""
+          className={`overflow-hidden rounded-sm bg-surface-elevated lg:grid lg:grid-cols-5 ${playableSurfaceClass(active, playing)} ${
+            active ? "ring-1 ring-accent/40" : "border border-border/60"
           }`}
           role="button"
           tabIndex={0}
           aria-label={playing ? `Pause ${set.title}` : `Play ${set.title}`}
         >
           <div className="group relative aspect-video w-full lg:col-span-3 lg:aspect-auto lg:min-h-[320px]">
-            {set.youtubeId ? (
-              <iframe
-                src={youtubeDisplayEmbedUrl(set.youtubeId)}
-                title={set.title}
-                className="pointer-events-none absolute inset-0 h-full w-full border-0"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                loading="lazy"
-                tabIndex={-1}
-              />
-            ) : (
-              <SafeImage src={set.thumbnail} alt="" fill sizes="(max-width:1024px) 100vw, 60vw" className="image-zoom" />
-            )}
+            <SafeImage
+              src={setThumbnailUrl(set.thumbnail, set.youtubeId)}
+              alt=""
+              fill
+              sizes="(max-width:1024px) 100vw, 60vw"
+              className="image-zoom"
+            />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent lg:bg-gradient-to-r" />
           </div>
           <div className="flex flex-col justify-center p-6 sm:p-8 lg:col-span-2">
@@ -80,18 +79,14 @@ export function EssentialSetOfDayHero({ set }: Props) {
                 <dd className="mt-1 text-accent">{set.energy ?? "—"}/10</dd>
               </div>
             </dl>
-            <div className="mt-8 flex flex-wrap gap-3" onPointerDown={stopCardPointerDown}>
-              <MusicActions
-                type="set"
-                refId={set.id}
-                label={`${set.title} — ${set.artistName}`}
-                youtubeId={set.youtubeId}
-              />
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              {active && <PlayingIndicator playing={playing} />}
               <Link href={`/artists/${set.artistSlug}`}>
                 <Button variant="outline" size="sm">
                   View artist
                 </Button>
               </Link>
+              <p className="text-xs text-muted">Tap poster to play in bottom player</p>
             </div>
           </div>
         </div>

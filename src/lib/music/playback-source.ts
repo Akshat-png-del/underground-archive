@@ -6,6 +6,11 @@ import {
   logTrackSourceResolution,
   resolveTrackSpotifyUrl,
 } from "@/lib/music/track-source";
+import {
+  blockedSourceIssue,
+  isBlockedSpotifyTrackId,
+  isBlockedYoutubeId,
+} from "@/lib/music/playback-blocklist";
 
 export type PlaybackSourceKind = "preview" | "spotify" | "youtube" | "none";
 
@@ -47,6 +52,11 @@ type PlaybackSourceInput = Pick<
   "type" | "refId" | "spotifyUrl" | "spotifyTrackId" | "youtubeUrl" | "youtubeId" | "previewUrl"
 >;
 
+function spotifyTrackIdFromUrl(spotifyUrl: string): string | null {
+  const match = spotifyUrl.match(/spotify\.com\/track\/([a-zA-Z0-9]{22})/);
+  return match?.[1] ?? null;
+}
+
 function prepareTrackSourceItem(item: PlaybackSourceInput): PlaybackSourceInput {
   const enriched = enrichTrackItemSources(item.refId, item);
   return {
@@ -86,6 +96,14 @@ export function resolvePlaybackSource(
 
   if (item.type === "set") {
     if (ytId) {
+      if (isBlockedYoutubeId(ytId)) {
+        return {
+          kind: "none",
+          sourceUrl: null,
+          embedUrl: null,
+          issue: blockedSourceIssue("youtube"),
+        };
+      }
       return {
         kind: "youtube",
         sourceUrl: item.youtubeUrl ?? `https://www.youtube.com/watch?v=${ytId}`,
@@ -114,6 +132,10 @@ export function resolvePlaybackSource(
     if (spotifyUrl) {
       const kind = spotifyEmbedKind(spotifyUrl);
       if (kind === "track") {
+        const trackId = spotifyTrackIdFromUrl(spotifyUrl);
+        if (trackId && isBlockedSpotifyTrackId(trackId)) {
+          // Fall through to YouTube or none.
+        } else {
         const embed = spotifyEmbedWithAutoplay(spotifyUrl, autoplay);
         if (embed) {
           const resolved = {
@@ -133,10 +155,17 @@ export function resolvePlaybackSource(
           issue: "Spotify track embed URL could not be built",
           failureLine: "playback-source.ts:spotifyEmbedWithAutoplay(track)",
         });
+        }
       }
     }
 
     if (ytId) {
+      if (isBlockedYoutubeId(ytId)) {
+        logTrackSourceResolution(item, enrichTrackItemSources(item.refId, item), {
+          url: null,
+          issue: blockedSourceIssue("youtube"),
+        });
+      } else {
       const embed = youtubeEmbedUrl(ytId, autoplay);
       logTrackSourceResolution(item, enrichTrackItemSources(item.refId, item), {
         url: embed,
@@ -148,6 +177,7 @@ export function resolvePlaybackSource(
         embedUrl: embed,
         issue: null,
       };
+      }
     }
 
     if (spotifyUrl) {

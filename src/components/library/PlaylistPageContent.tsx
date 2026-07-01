@@ -16,8 +16,9 @@ import { SafeImage } from "@/components/ui/SafeImage";
 import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { Button } from "@/components/ui/Button";
 import { MusicActions } from "@/components/music/MusicActions";
-import { playbackItemFromRef } from "@/lib/music/playback";
+import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { useCardPlayback } from "@/lib/music/use-card-playback";
+import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 
 interface Props {
   playlistId: string;
@@ -26,6 +27,7 @@ interface Props {
 function PlaylistItemRow({
   item,
   index,
+  browseQueue,
   isOwner,
   playlistId,
   dragId,
@@ -35,6 +37,7 @@ function PlaylistItemRow({
 }: {
   item: NonNullable<ReturnType<typeof resolvePlaylistItem>>;
   index: number;
+  browseQueue: PlaybackItem[];
   isOwner: boolean;
   playlistId: string;
   dragId: string | null;
@@ -44,6 +47,9 @@ function PlaylistItemRow({
 }) {
   const playbackType = item.type === "release" ? "release" : item.type;
   const playbackItem = playbackItemFromRef(playbackType, item.refId);
+  const browse = playbackItem ? browseContextAt(browseQueue, playbackItem, index) : undefined;
+  const setSlug =
+    playbackType === "set" ? resolveSetWatchSlug(item.refId) ?? undefined : undefined;
   const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
     playbackItem ?? {
       type: playbackType,
@@ -54,6 +60,8 @@ function PlaylistItemRow({
     },
     playbackType,
     item.refId,
+    browse,
+    setSlug,
   );
 
   return (
@@ -112,16 +120,6 @@ function PlaylistItemRow({
             Remove
           </Button>
         )}
-        {"spotifyUrl" in item && item.spotifyUrl && (
-          <a
-            href={item.spotifyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden text-xs text-accent hover:underline sm:inline"
-          >
-            Spotify
-          </a>
-        )}
       </div>
     </li>
   );
@@ -161,6 +159,9 @@ export function PlaylistPageContent({ playlistId }: Props) {
     .filter((i): i is NonNullable<typeof i> => !!i);
 
   const totalSeconds = resolved.reduce((sum, item) => sum + parseDuration(item.duration), 0);
+  const browseQueue = resolved
+    .map((row) => playbackItemFromRef(row.type === "release" ? "release" : row.type, row.refId))
+    .filter((item): item is PlaybackItem => !!item);
   const liked = isPlaylistLiked(playlist.id);
 
   const saveEdit = () => {
@@ -268,6 +269,7 @@ export function PlaylistPageContent({ playlistId }: Props) {
                 key={item.id}
                 item={item}
                 index={i}
+                browseQueue={browseQueue}
                 isOwner={isOwner}
                 playlistId={playlist.id}
                 dragId={dragId}

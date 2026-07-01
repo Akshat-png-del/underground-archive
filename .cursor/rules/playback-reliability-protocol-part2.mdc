@@ -1,0 +1,82 @@
+---
+description: PLAYBACK RELIABILITY PROTOCOL Part 2 — bug-fix workflow and deployment gate
+globs:
+  - src/lib/music/**
+  - src/stores/playback-store.ts
+  - src/components/music/PlaybackRoot.tsx
+  - tests/playback/**/*
+alwaysApply: true
+---
+
+# Playback Reliability Protocol — Part 2
+
+Read Part 1 first: `.cursor/rules/playback-reliability-protocol.mdc`
+
+## Before changing ANY playback-related code
+
+1. **Reproduce** the bug.
+2. **Determine** the exact failing layer (`UI` | `actions` | `store` | `engine` | `provider`).
+3. **Fix ONLY** that layer.
+4. **Verify manually** (checklist below).
+5. **Run automated tests** (`npm run verify:playback`).
+
+Never blindly refactor. Never rewrite working code.
+
+### Layer diagnosis
+
+| Symptom location | Likely layer |
+|------------------|--------------|
+| Click does nothing | `actions` or `UI` dispatch |
+| UI wrong but engine plays | `store` sync or `UI` read |
+| `[SOURCE]` wrong | `playback-source` (only if source bug) |
+| `[SOURCE]` ok, no audio | `engine` or `provider` |
+| Stale audio after switch | `engine` teardown / generation |
+
+## Manual verification (required after any playback change)
+
+### Tracks (Spotify)
+
+- [ ] Track plays
+- [ ] Pause works
+- [ ] Resume works
+- [ ] Seek works
+- [ ] Duration updates
+- [ ] Progress updates
+
+### Sets (YouTube)
+
+- [ ] Set plays
+- [ ] Video renders in engine embed
+- [ ] Audio is audible
+
+### Switching
+
+- [ ] Track → Track — only latest plays
+- [ ] Track A → B → C — only C plays
+- [ ] Set → Set — previous stops immediately
+- [ ] Track → Set — provider switch clean
+- [ ] Set → Track — provider switch clean
+
+### Singleton invariants (console: `__playbackDebug.dump()`)
+
+- [ ] Exactly 1 `<audio>` in `#vitalforge-playback-root`
+- [ ] Exactly 1 playback `<iframe>`
+- [ ] Exactly 1 active provider
+- [ ] No multiple tracks audible
+- [ ] No stale embeds
+- [ ] No background playback from previous item
+
+## Deployment gate (mandatory)
+
+```bash
+npm run verify:playback
+```
+
+Runs `audit:playback-arch` then `test:playback`. **If either fails, deployment is blocked.**
+
+Optional deeper checks:
+
+```bash
+npm run stress:playback
+npm run validate:playback   # requires dev server
+```

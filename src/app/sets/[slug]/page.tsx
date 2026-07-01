@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { archiveSets, getSet, setCategoryLabels } from "@/content/sets";
-import { SetDetail } from "@/components/sets/SetDetail";
+import { archiveSets, getSet } from "@/content/sets";
+import { SetWatchPage } from "@/components/sets/SetWatchPage";
 import { RecordView } from "@/components/library/RecordView";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { formatDisplayDate } from "@/lib/format";
@@ -36,18 +35,9 @@ export default async function SetPage({
   if (!set) notFound();
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12">
-      <Link href="/sets" className="text-sm text-accent hover:underline">← All sets</Link>
-      <div className="mt-4">
-        <p className="text-sm text-accent">{setCategoryLabels[set.category]}</p>
-        <h1 className="mt-1 font-serif text-3xl text-foreground sm:text-4xl">{set.title}</h1>
-        <p className="mt-2 text-muted">
-          <Link href={`/artists/${set.artistSlug}`} className="hover:text-accent">{set.artistName}</Link>
-          {" · "}{set.event} · {set.location} · {set.duration}
-        </p>
-      </div>
+    <div className="mx-auto w-full max-w-[80rem] px-4 py-8 sm:px-6 sm:py-10 lg:py-12">
       <RecordView type="set" refId={set.id} />
-      <SetDetail set={set} displayDate={formatDisplayDate(set.date)} />
+      <SetWatchPage set={set} displayDate={formatDisplayDate(set.date)} />
     </div>
   );
 }

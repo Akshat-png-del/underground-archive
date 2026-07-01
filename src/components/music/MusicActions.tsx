@@ -1,14 +1,16 @@
 "use client";
 
 import { type MouseEvent } from "react";
+import { useRouter } from "next/navigation";
 import { Heart, ListPlus, Pause, Play, Share2 } from "lucide-react";
 import type { LibraryItemType } from "@/types/library";
 import { useLibrary } from "@/context/LibraryContext";
-import { usePlayback } from "@/context/PlaybackContext";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { Button } from "@/components/ui/Button";
 import { playbackItemFromMusicActions } from "@/lib/music/playback";
-import { playbackDebugLog } from "@/lib/music/playback-debug";
+import { handlePlaybackSurfaceClick } from "@/lib/music/playback-actions";
+import { usePlaybackStore } from "@/stores/playback-store";
+import { resolveSetWatchSlug, setWatchPath } from "@/lib/sets/set-watch-navigation";
 
 interface MusicActionsProps {
   type: LibraryItemType;
@@ -29,30 +31,33 @@ export function MusicActions({
   youtubeId,
   compact,
 }: MusicActionsProps) {
+  const router = useRouter();
   const { openAddToPlaylist } = usePlaylistModal();
   const { toggleLikeTrack, toggleLikeSet, isTrackLiked, isSetLiked } = useLibrary();
-  const { playNow, togglePlayPause, isActive, isPlaying } = usePlayback();
+  const active = usePlaybackStore((s) => s.isActive(type, refId));
+  const playing = usePlaybackStore((s) => s.isActive(type, refId) && s.isPlaying);
 
   const liked = type === "track" ? isTrackLiked(refId) : type === "set" ? isSetLiked(refId) : false;
-  const active = isActive(type, refId);
-  const playing = active && isPlaying;
+
+  const item = playbackItemFromMusicActions({
+    type,
+    refId,
+    label,
+    spotifyUrl,
+    youtubeUrl,
+    youtubeId,
+  });
 
   const handlePlay = (e: MouseEvent) => {
     e.stopPropagation();
-    playbackDebugLog("CLICK", "MusicActions play clicked", { type, refId, label });
-    const item = playbackItemFromMusicActions({
-      type,
-      refId,
-      label,
-      spotifyUrl,
-      youtubeUrl,
-      youtubeId,
-    });
-    if (active && isPlaying) {
-      togglePlayPause();
-    } else {
-      playNow(item);
+    if (type === "set") {
+      const slug = resolveSetWatchSlug(refId);
+      if (slug) {
+        router.push(setWatchPath(slug));
+        return;
+      }
     }
+    handlePlaybackSurfaceClick(item, type, refId);
   };
 
   const handleLike = (e: MouseEvent) => {
@@ -76,6 +81,9 @@ export function MusicActions({
     openAddToPlaylist({ type, refId, label });
   };
 
+  const playLabel = type === "set" ? "Watch" : playing ? "Pause" : "Play";
+  const playAria = type === "set" ? "Watch set" : playing ? "Pause" : "Play";
+
   if (compact) {
     return (
       <div className="flex flex-wrap gap-2">
@@ -87,9 +95,9 @@ export function MusicActions({
             handlePlay(e as unknown as MouseEvent);
           }}
           className="touch-manipulation"
-          aria-label={playing ? "Pause" : "Play"}
+          aria-label={playAria}
         >
-          {playing ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+          {type === "set" ? <Play className="h-4 w-4" /> : playing ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
         </Button>
         <Button size="sm" variant="ghost" onClick={handlePlaylist} aria-label="Save to playlist">
           <ListPlus className="h-4 w-4" />
@@ -113,7 +121,7 @@ export function MusicActions({
           handlePlay(e as unknown as MouseEvent);
         }}
       >
-        {playing ? "Pause" : "Play"}
+        {playLabel}
       </Button>
       <Button size="sm" variant="outline" onClick={handlePlaylist}>
         Save to playlist

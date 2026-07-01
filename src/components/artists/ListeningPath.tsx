@@ -5,16 +5,20 @@ import {
   resolveListeningPathHref,
   resolveListeningPathPlaybackItem,
 } from "@/lib/artists/listening-path";
+import { browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { useCardPlayback } from "@/lib/music/use-card-playback";
+import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 
 function ListeningPathStep({
   artist,
   step,
   index,
+  browseQueue,
 }: {
   artist: Artist;
   step: Artist["listeningPath"][number];
   index: number;
+  browseQueue: PlaybackItem[];
 }) {
   const playbackItem = resolveListeningPathPlaybackItem(artist, step);
   const refId = playbackItem?.refId ?? `${artist.slug}::${step.title}`;
@@ -27,7 +31,9 @@ function ListeningPathStep({
     subtitle: artist.name,
   };
 
-  const { handleCardPointerDown, active } = useCardPlayback(item, type, refId);
+  const browse = browseQueue.length > 0 ? browseContextAt(browseQueue, item, index) : undefined;
+  const setSlug = type === "set" ? resolveSetWatchSlug(refId) ?? undefined : undefined;
+  const { handleCardPointerDown, active } = useCardPlayback(item, type, refId, browse, setSlug);
 
   return (
     <li>
@@ -60,10 +66,20 @@ function ListeningPathStep({
 export function ListeningPath({ artist }: { artist: Artist }) {
   if (artist.listeningPath.length === 0) return null;
 
+  const browseQueue = artist.listeningPath
+    .map((step) => resolveListeningPathPlaybackItem(artist, step))
+    .filter((item): item is NonNullable<typeof item> => !!item);
+
   return (
     <ol className="space-y-3">
       {artist.listeningPath.map((step, i) => (
-        <ListeningPathStep key={`${step.type}-${step.title}-${i}`} artist={artist} step={step} index={i} />
+        <ListeningPathStep
+          key={`${step.type}-${step.title}-${i}`}
+          artist={artist}
+          step={step}
+          index={i}
+          browseQueue={browseQueue}
+        />
       ))}
     </ol>
   );

@@ -17,6 +17,7 @@ import { RecommendationStrip } from "@/components/discovery/RecommendationStrip"
 import { ArtistGrid } from "@/components/artists/ArtistGrid";
 import { SetRow } from "@/components/music/SetRow";
 import { TrackRow } from "@/components/music/TrackRow";
+import { playbackItemFromSet, playbackItemFromTrack } from "@/lib/music/playback";
 
 interface Props {
   slug: string;
@@ -28,6 +29,8 @@ export function GenrePageContent({ slug }: Props) {
   const artists = getGenreEssentialArtists(slug);
   const tracks = getGenreEssentialTracks(slug, 15);
   const sets = getGenreEssentialSets(slug, 10);
+  const trackBrowseQueue = tracks.map(playbackItemFromTrack);
+  const setBrowseQueue = sets.map(playbackItemFromSet);
   const articles = getGenreRelatedArticles(slug);
   const moodLabels = getGenreMoodLabels(slug);
 
@@ -160,7 +163,7 @@ export function GenrePageContent({ slug }: Props) {
           <h2 className="font-serif text-2xl text-foreground">Essential tracks</h2>
           <ol className="mt-6 space-y-3">
             {tracks.map((track, i) => (
-              <TrackRow key={track.id} track={track} index={i} />
+              <TrackRow key={track.id} track={track} index={i} browseQueue={trackBrowseQueue} />
             ))}
           </ol>
         </section>
@@ -170,8 +173,15 @@ export function GenrePageContent({ slug }: Props) {
         <section className="mt-12 border-t border-border pt-10">
           <h2 className="font-serif text-2xl text-foreground">Essential sets</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            {sets.map((set) => (
-              <SetRow key={set.id} set={set} variant="row" meta={`${set.artistName} · ${set.event}`} />
+            {sets.map((set, i) => (
+              <SetRow
+                key={set.id}
+                set={set}
+                variant="row"
+                meta={`${set.artistName} · ${set.event}`}
+                browseQueue={setBrowseQueue}
+                browseIndex={i}
+              />
             ))}
           </div>
         </section>
