@@ -251,8 +251,20 @@ body {
   z-index: 10050;
   display: flex;
   flex-direction: column;
-  --player-bar-chrome: 5.75rem;
+  pointer-events: auto;
+  --player-bar-chrome: 6.75rem;
   --player-bar-height: var(--player-bar-chrome);
+}
+
+/* Visual chrome — still blocks clicks through the bar */
+.spotify-player-bar .spotify-player-chrome {
+  pointer-events: auto;
+}
+
+/* Controls + interactive clusters */
+.spotify-player-bar [data-player-control],
+.spotify-player-bar .spotify-player-interactive {
+  pointer-events: auto;
 }
 
 body:has([data-playback-experience="audio"]) main {
@@ -362,6 +374,269 @@ body:has([data-set-watch-page]) main {
   z-index: 2;
   flex-shrink: 0;
   margin-top: auto;
+  pointer-events: auto;
+}
+
+/* ── Spotify bar layout (sb-*) ───────────────────────────────────────────── */
+
+.spotify-player-bar .spotify-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 5.625rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.spotify-player-bar .sb-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  width: 25%;
+}
+
+.spotify-player-bar .sb-artwork {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #2a2a2a;
+  border: 1px solid var(--border);
+}
+
+.spotify-player-bar .sb-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.spotify-player-bar .sb-artist {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.spotify-player-bar .sb-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.spotify-player-bar .sb-right {
+  width: 25%;
+  flex-shrink: 0;
+}
+
+.spotify-player-bar .sb-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.spotify-player-bar .sb-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  touch-action: manipulation;
+}
+
+.spotify-player-bar .sb-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;
+  pointer-events: none;
+  transition:
+    transform 0.15s ease,
+    fill 0.15s ease;
+}
+
+.spotify-player-bar .sb-btn:hover svg {
+  transform: scale(1.1);
+  fill: var(--accent);
+}
+
+.spotify-player-bar .sb-btn--muted {
+  opacity: 0.4;
+}
+
+.spotify-player-bar .sb-btn.sb-play svg,
+.spotify-player-bar .sb-btn.sb-pause svg {
+  width: 28px;
+  height: 28px;
+}
+
+.spotify-player-bar .sb-seek {
+  width: 100%;
+  max-width: 37.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spotify-player-bar .sb-time {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: #b3b3b3;
+  min-width: 2.5rem;
+  flex-shrink: 0;
+}
+
+.spotify-player-bar .sb-time:last-child {
+  text-align: right;
+}
+
+.spotify-player-bar .sb-slider {
+  flex: 1;
+  appearance: none;
+  height: 4px;
+  min-height: 12px;
+  background: #404040;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.spotify-player-bar .sb-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #404040;
+}
+
+.spotify-player-bar .sb-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  background: var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.spotify-player-bar .sb-slider::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #404040;
+}
+
+.spotify-player-bar .sb-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.spotify-player-bar .hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .spotify-player-bar .spotify-bar {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+    padding: 0.75rem 1rem;
+    gap: 10px;
+  }
+
+  .spotify-player-bar .sb-left,
+  .spotify-player-bar .sb-right {
+    width: 100%;
+  }
+
+  .spotify-player-bar .sb-right {
+    display: none;
+  }
+
+  .spotify-player-bar .sb-center {
+    order: -1;
+    width: 100%;
+  }
+}
+
+.spotify-player-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  align-items: center;
+  min-height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .spotify-player-grid {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 16px;
+    align-items: center;
+  }
+
+  .spotify-player-meta {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .spotify-player-center {
+    grid-column: 2;
+    justify-self: center;
+  }
+}
+
+.player-play-pause-stack {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.player-now-playing-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--accent);
+  animation: player-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes player-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.85);
+  }
+}
+
+.spotify-player-center {
+  order: -1;
+  width: 100%;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .spotify-player-center {
+    order: 0;
+    width: auto;
+    max-width: 28rem;
+  }
+}
+
+.player-seek--scrubbing,
+.player-seek[data-scrubbing="true"] {
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 55%, transparent));
+  pointer-events: auto;
 }
 
 .spotify-player-seek .player-seek {
@@ -375,6 +650,7 @@ body:has([data-set-watch-page]) main {
 
 .spotify-player-transport {
   flex: 0 0 auto;
+  gap: 8px;
 }
 
 @media (min-width: 768px) {
@@ -395,6 +671,36 @@ body:has([data-set-watch-page]) main {
 
 .player-control-btn {
   touch-action: manipulation;
+  position: relative;
+  z-index: 2;
+  transition:
+    transform 0.2s ease-out,
+    opacity 0.2s ease-out,
+    background-color 0.2s ease-out;
+}
+
+/* Clicks hit the button, never the icon glyph */
+.spotify-player-bar button svg,
+.spotify-player-bar .sb-btn svg,
+.player-control-btn svg,
+.spotify-player-toggle svg {
+  pointer-events: none;
+}
+
+.spotify-btn {
+  border: 0;
+  background: transparent;
+}
+
+.spotify-volume-slider {
+  accent-color: var(--accent);
+  height: 4px;
+  cursor: pointer;
+}
+
+.player-volume {
+  position: relative;
+  z-index: 2;
 }
 
 .player-volume-slider {

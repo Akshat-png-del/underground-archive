@@ -147,6 +147,38 @@ export function playbackItemFromRef(type: LibraryItemType, refId: string): Playb
   return release ? playbackItemFromRelease(release) : null;
 }
 
+/**
+ * Merge partial playback items (persisted queue, history rows) with canonical catalog sources.
+ */
+export function hydratePlaybackItem(item: PlaybackItem): PlaybackItem {
+  const canonical = playbackItemFromRef(item.type, item.refId);
+  if (canonical) {
+    return {
+      ...canonical,
+      label: item.label || canonical.label,
+      title: item.title || canonical.title,
+      subtitle: item.subtitle || canonical.subtitle,
+      coverArt: item.coverArt ?? canonical.coverArt,
+    };
+  }
+
+  if (item.type !== "track") return item;
+
+  const sources = enrichTrackItemSources(item.refId, item);
+  return {
+    ...item,
+    spotifyUrl: sources.spotifyUrl ?? item.spotifyUrl,
+    spotifyTrackId: sources.spotifyTrackId ?? item.spotifyTrackId,
+    youtubeUrl: sources.youtubeUrl ?? item.youtubeUrl,
+    youtubeId: sources.youtubeId ?? item.youtubeId,
+    previewUrl: sources.previewUrl ?? item.previewUrl,
+  };
+}
+
+export function hydratePlaybackQueue(queue: PlaybackItem[]): PlaybackItem[] {
+  return queue.map(hydratePlaybackItem);
+}
+
 export function buildPlaybackEmbedUrl(item: PlaybackItem, autoplay = true): string | null {
   const resolved = resolvePlaybackSource(item, autoplay);
   return resolved.embedUrl;

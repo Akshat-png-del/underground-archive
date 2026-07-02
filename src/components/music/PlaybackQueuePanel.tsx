@@ -1,23 +1,18 @@
 "use client";
 
-import { useState, useCallback, type MouseEvent, type PointerEvent } from "react";
+import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { ListMusic } from "lucide-react";
-import { usePlaybackStore } from "@/stores/playback-store";
-import { playItem } from "@/lib/music/playback-actions";
+import { BarIcons } from "@/components/music/PlaybackBarIcons";
+import { mediaSessionController } from "@/lib/music/media-session-controller";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import type { PlaybackItem } from "@/lib/music/playback";
 import { resolveSetWatchSlug, setWatchPath } from "@/lib/sets/set-watch-navigation";
-
-function stopEvent(e: PointerEvent | MouseEvent): void {
-  e.stopPropagation();
-}
 
 export function PlaybackQueuePanel() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
-  const queue = usePlaybackStore((s) => s.queue);
-  const queueIndex = usePlaybackStore((s) => s.queueIndex);
-  const current = usePlaybackStore((s) => s.currentTrack);
+  const snapshot = useFinalPlaybackSnapshot();
+  const { queue, queueIndex, activeTrack: current } = snapshot;
 
   const playQueueItem = useCallback(
     (item: PlaybackItem, index: number) => {
@@ -29,17 +24,17 @@ export function PlaybackQueuePanel() {
           return;
         }
       }
-      const q = usePlaybackStore.getState().queue;
-      playItem(item, { browse: { queue: q, queueIndex: index } });
+      const q = queue;
+      mediaSessionController.play(item, { browse: { queue: q, queueIndex: index } });
       setOpen(false);
     },
-    [router],
+    [router, queue],
   );
 
   if (queue.length === 0) return null;
 
   return (
-    <div className="relative" onPointerDown={stopEvent} onClick={stopEvent}>
+    <div className="player-queue spotify-player-interactive relative" onMouseLeave={() => setOpen(false)}>
       <button
         type="button"
         data-player-control
@@ -51,11 +46,12 @@ export function PlaybackQueuePanel() {
         aria-expanded={open}
         aria-label={`Queue, ${queue.length} items`}
       >
-        <ListMusic className="h-5 w-5" />
+        <BarIcons.Queue />
       </button>
       {open && (
         <div
-          className="player-queue-panel absolute bottom-full right-0 z-10 mb-2 max-h-64 w-72 overflow-y-auto border border-border bg-surface shadow-xl"
+          data-player-control
+          className="player-queue-panel spotify-player-interactive absolute bottom-full right-0 z-20 mb-2 max-h-64 w-72 overflow-y-auto border border-border bg-surface shadow-xl"
           role="listbox"
           aria-label="Playback queue"
         >

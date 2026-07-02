@@ -5,7 +5,7 @@ import { SafeImage } from "@/components/ui/SafeImage";
 import { playItem } from "@/lib/music/playback-actions";
 import { playbackItemFromSet } from "@/lib/music/playback";
 import { setThumbnailUrl, canShowSetVideoEmbed } from "@/lib/music/set-display";
-import { usePlaybackStore } from "@/stores/playback-store";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { useSetWatchDock } from "@/components/sets/use-set-watch-dock";
 
 interface SetWatchSurfaceProps {
@@ -18,9 +18,11 @@ interface SetWatchSurfaceProps {
  */
 export function SetWatchSurface({ set }: SetWatchSurfaceProps) {
   const hostRef = useSetWatchDock(set);
-  const active = usePlaybackStore((s) => s.isActive("set", set.id));
-  const isLoading = usePlaybackStore((s) => s.isActive("set", set.id) && s.isLoading);
-  const error = usePlaybackStore((s) => s.error);
+  const snapshot = useFinalPlaybackSnapshot();
+  const active =
+    snapshot.activeTrack?.type === "set" && snapshot.activeTrack?.refId === set.id;
+  const isLoading = active && (snapshot.isBuffering || snapshot.isInitialLoading);
+  const error = snapshot.error;
   const canShowVideo = canShowSetVideoEmbed(set.youtubeId);
 
   if (!canShowVideo) {

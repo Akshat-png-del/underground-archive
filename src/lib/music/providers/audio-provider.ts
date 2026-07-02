@@ -129,8 +129,8 @@ export class AudioProvider implements PlaybackProvider {
       emit();
     });
     audio.addEventListener("seeked", () => {
-      this.patch({ isLoading: false });
-      emit();
+      this.patch({ isLoading: false, currentTime: this.audio?.currentTime ?? this.state.currentTime });
+      this.pushState();
     });
     audio.addEventListener("error", () => {
       const mediaError = audio.error;
@@ -275,8 +275,11 @@ export class AudioProvider implements PlaybackProvider {
     if (!this.audio?.src) return;
     const max = Number.isFinite(this.audio.duration) ? this.audio.duration : 0;
     const clamped = max > 0 ? Math.min(Math.max(0, positionSeconds), max) : Math.max(0, positionSeconds);
-    this.patch({ currentTime: clamped, isLoading: true });
     this.audio.currentTime = clamped;
+    this.patch({
+      currentTime: Number.isFinite(this.audio.currentTime) ? this.audio.currentTime : clamped,
+      isLoading: true,
+    });
     this.pushState();
   }
 

@@ -11,7 +11,12 @@ import { HomeSection } from "@/components/home/HomeSection";
 import { playbackItemFromSet } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
 import { setThumbnailUrl } from "@/lib/music/set-display";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+  playbackItemPlaying,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 
 interface Props {
   set: ArchiveSet;
@@ -20,7 +25,10 @@ interface Props {
 export function EssentialSetOfDayHero({ set }: Props) {
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
   const item = playbackItemFromSet(set);
-  const { handleCardPointerDown, active, playing } = useCardPlayback(
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, "set", set.id);
+  const playing = playbackItemPlaying(snapshot, "set", set.id);
+  const { handleCardPointerDown } = useCardPlayback(
     item,
     "set",
     set.id,

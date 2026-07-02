@@ -5,7 +5,12 @@ import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+  playbackItemPlaying,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 
 interface HistoryPlayRowProps {
@@ -35,7 +40,10 @@ export function HistoryPlayRow({
   const browse = browseQueue ? browseContextAt(browseQueue, playbackItem, browseIndex) : undefined;
   const setSlug =
     entry.type === "set" ? resolveSetWatchSlug(entry.refId) ?? undefined : undefined;
-  const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, entry.type, entry.refId);
+  const playing = playbackItemPlaying(snapshot, entry.type, entry.refId);
+  const { handleCardPointerDown, stopCardPointerDown } = useCardPlayback(
     playbackItem,
     entry.type,
     entry.refId,

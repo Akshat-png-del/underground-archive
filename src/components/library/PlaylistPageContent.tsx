@@ -17,7 +17,8 @@ import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { Button } from "@/components/ui/Button";
 import { MusicActions } from "@/components/music/MusicActions";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import { useCardPlayback, playbackItemActive, playbackItemPlaying } from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 
 interface Props {
@@ -50,7 +51,10 @@ function PlaylistItemRow({
   const browse = playbackItem ? browseContextAt(browseQueue, playbackItem, index) : undefined;
   const setSlug =
     playbackType === "set" ? resolveSetWatchSlug(item.refId) ?? undefined : undefined;
-  const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, playbackType, item.refId);
+  const playing = playbackItemPlaying(snapshot, playbackType, item.refId);
+  const { handleCardPointerDown, stopCardPointerDown } = useCardPlayback(
     playbackItem ?? {
       type: playbackType,
       refId: item.refId,

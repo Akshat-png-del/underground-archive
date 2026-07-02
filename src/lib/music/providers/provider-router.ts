@@ -190,7 +190,11 @@ export class ProviderRouter {
       await this.teardownActiveAsync();
       const resolved = resolvePlaybackSource(item);
       const issue = resolved.issue ?? `No playback source for "${item.title}"`;
-      playbackDebugError("PROVIDER", `play failed — ${issue}`, item);
+      playbackDebugError("PROVIDER", `play failed — ${issue}`, {
+        refId: item.refId,
+        type: item.type,
+        title: item.title,
+      });
       return { issue };
     }
 

@@ -7,7 +7,12 @@ import { PlayingIndicator } from "@/components/music/PlayingIndicator";
 import { playbackItemFromSet, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { setThumbnailUrl } from "@/lib/music/set-display";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+  playbackItemPlaying,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 
 interface SetRowProps {
   set: ArchiveSet;
@@ -22,7 +27,10 @@ export function SetRow({ set, variant = "row", meta, browseQueue, browseIndex }:
   const browse = browseQueue
     ? browseContextAt(browseQueue, item, browseIndex)
     : undefined;
-  const { handleCardPointerDown, active, playing } = useCardPlayback(item, "set", set.id, browse, set.slug);
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, "set", set.id);
+  const playing = playbackItemPlaying(snapshot, "set", set.id);
+  const { handleCardPointerDown } = useCardPlayback(item, "set", set.id, browse, set.slug);
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
   const subtitle = meta ?? `${set.event} · ${set.date?.slice(0, 4) ?? ""}`.replace(/ · $/, "");
 

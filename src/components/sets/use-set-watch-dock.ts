@@ -14,7 +14,7 @@ import {
   claimSetWatchDock,
   releaseSetWatchDock,
 } from "@/lib/sets/set-watch-dock";
-import { usePlaybackStore } from "@/stores/playback-store";
+import { mediaSessionController } from "@/lib/music/media-session-controller";
 import { playbackDebugLog } from "@/lib/music/playback-debug";
 
 /**
@@ -43,8 +43,7 @@ export function useSetWatchDock(set: ArchiveSet): RefObject<HTMLDivElement | nul
     dock();
     requestAnimationFrame(dock);
 
-    const state = usePlaybackStore.getState();
-    if (!state.isActive("set", set.id)) {
+    if (!mediaSessionController.isActive("set", set.id)) {
       playbackDebugLog("MOUNT", "set watch autoplay", { refId: set.id });
       playItem(item);
     } else {
@@ -52,8 +51,7 @@ export function useSetWatchDock(set: ArchiveSet): RefObject<HTMLDivElement | nul
     }
 
     return () => {
-      const latest = usePlaybackStore.getState();
-      if (latest.isActive("set", set.id)) {
+      if (mediaSessionController.isActive("set", set.id)) {
         playbackDebugLog("MOUNT", "set watch teardown — stopping playback", { refId: set.id });
         stopPlayback();
       }

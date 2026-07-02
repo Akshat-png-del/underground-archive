@@ -4,22 +4,19 @@
  * UI components MUST interact with playback only through this module (or playback-actions).
  * Never import global-player-engine, providers, or dispatch store transport actions directly.
  */
-import { usePlaybackStore } from "@/stores/playback-store";
 import {
   playItem,
   pause,
   resume,
   playNext,
   playPrevious,
-  seekTo,
   togglePlayback,
   openPlayerSurface,
   closePlayerSurface,
   expandPlayerSurface,
-  skipForward,
-  skipBackward,
 } from "@/lib/music/playback-actions";
 import { mediaEngineEvents, type MediaEngineEvent } from "@/lib/music/media-engine-events";
+import { mediaSessionController } from "@/lib/music/media-session-controller";
 
 export type { MediaEngineEvent };
 export { mediaEngineEvents };
@@ -58,14 +55,14 @@ export const playerController = {
   togglePlayPause: togglePlayback,
   next: playNext,
   prev: playPrevious,
-  seek: seekTo,
-  skipForward,
-  skipBackward,
+  seek: (seconds: number) => mediaSessionController.commitSeek(seconds),
+  skipForward: (seconds?: number) => mediaSessionController.skipForward(seconds ?? 10),
+  skipBackward: (seconds?: number) => mediaSessionController.skipBackward(seconds ?? 10),
   setVolume: (volume: number) => {
-    usePlaybackStore.getState().setVolume(volume);
+    mediaSessionController.setVolume(volume);
   },
   toggleMute: () => {
-    usePlaybackStore.getState().toggleMute();
+    mediaSessionController.toggleMute();
   },
   openSurface: openPlayerSurface,
   closeSurface: closePlayerSurface,

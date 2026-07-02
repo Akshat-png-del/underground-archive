@@ -9,6 +9,7 @@ import type { PlaybackItem } from "../../src/lib/music/playback";
 import { playbackItemFromTrack, playbackItemFromSet } from "../../src/lib/music/playback";
 import { catalogTracks } from "../../src/content/tracks";
 import { archiveSets } from "../../src/content/sets";
+import { mediaSessionController } from "../../src/lib/music/media-session-controller";
 import {
   globalPlayerEngine,
 } from "../../src/lib/music/global-player-engine";
@@ -167,11 +168,11 @@ describe("playback regression", () => {
       assert.equal(globalPlayerEngine.getGeneration(), gen1);
     });
 
-    it("store ignores play while load in flight for same item", () => {
+    it("ignores play while load in flight for same item", () => {
       const item = playableSet();
-      usePlaybackStore.setState({ isLoading: true, currentTrack: item, isPlaying: false });
+      mediaSessionController.play(item);
       const gen = globalPlayerEngine.getGeneration();
-      usePlaybackStore.getState().play(item);
+      mediaSessionController.play(item);
       assert.equal(globalPlayerEngine.getGeneration(), gen);
     });
   });

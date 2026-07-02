@@ -6,7 +6,11 @@ import {
   resolveListeningPathPlaybackItem,
 } from "@/lib/artists/listening-path";
 import { browseContextAt, type PlaybackItem } from "@/lib/music/playback";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 
 function ListeningPathStep({
@@ -33,7 +37,9 @@ function ListeningPathStep({
 
   const browse = browseQueue.length > 0 ? browseContextAt(browseQueue, item, index) : undefined;
   const setSlug = type === "set" ? resolveSetWatchSlug(refId) ?? undefined : undefined;
-  const { handleCardPointerDown, active } = useCardPlayback(item, type, refId, browse, setSlug);
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, type, refId);
+  const { handleCardPointerDown } = useCardPlayback(item, type, refId, browse, setSlug);
 
   return (
     <li>

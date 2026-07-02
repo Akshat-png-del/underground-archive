@@ -10,20 +10,14 @@ import {
   closePlayerSurface,
   stopPlayback,
 } from "@/lib/music/playback-actions";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 
 /**
- * @deprecated Prefer usePlaybackStore selectors + playback-actions dispatchers.
- * Thin read-only facade for legacy components.
+ * @deprecated Use useFinalPlaybackSnapshot() for reads and mediaSessionController / playback-actions for writes.
  */
 export function usePlayback() {
-  const currentTrack = usePlaybackStore((s) => s.currentTrack);
-  const isPlaying = usePlaybackStore((s) => s.isPlaying);
-  const isLoading = usePlaybackStore((s) => s.isLoading);
+  const snapshot = useFinalPlaybackSnapshot();
   const detailsOpen = usePlaybackStore((s) => s.detailsOpen);
-  const currentTime = usePlaybackStore((s) => s.currentTime);
-  const queue = usePlaybackStore((s) => s.queue);
-  const error = usePlaybackStore((s) => s.error);
-  const isActive = usePlaybackStore((s) => s.isActive);
 
   const playNow = useCallback((item: PlaybackItem) => playItem(item), []);
   const togglePlayPause = useCallback(() => togglePlayback(), []);
@@ -31,14 +25,18 @@ export function usePlayback() {
   const openDetails = useCallback(() => openPlayerSurface(), []);
   const closeDetails = useCallback(() => closePlayerSurface(), []);
 
+  const isActive = useCallback(
+    (type: PlaybackItem["type"], refId: string) =>
+      snapshot.activeTrack?.type === type && snapshot.activeTrack?.refId === refId,
+    [snapshot.activeTrack],
+  );
+
   return {
-    current: currentTrack,
-    isPlaying,
-    isLoading,
+    ...snapshot,
+    current: snapshot.activeTrack,
+    position: snapshot.currentTime,
     detailsOpen,
-    position: currentTime,
-    queue,
-    playbackError: error,
+    playbackError: snapshot.error,
     playNow,
     togglePlayPause,
     stop,

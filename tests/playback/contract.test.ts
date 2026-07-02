@@ -15,6 +15,7 @@ import {
   globalPlayerEngine,
   __resetGlobalPlayerEngineForTests,
 } from "../../src/lib/music/global-player-engine";
+import { mediaSessionController } from "../../src/lib/music/media-session-controller";
 import { usePlaybackStore } from "../../src/stores/playback-store";
 import { initializePlaybackEngine } from "../../src/stores/playback-store";
 import {
@@ -85,7 +86,7 @@ describe("playback architecture contracts", () => {
   describe("store session state", () => {
     it("play sets single active track and opens player surface", () => {
       const item = playableTrack();
-      usePlaybackStore.getState().play(item);
+      mediaSessionController.play(item);
       const state = usePlaybackStore.getState();
       assert.equal(state.currentTrack?.refId, item.refId);
       assert.equal(state.detailsOpen, true);
@@ -94,15 +95,14 @@ describe("playback architecture contracts", () => {
 
     it("isActive identifies current item only", () => {
       const item = playableTrack();
-      usePlaybackStore.getState().play(item);
-      const { isActive } = usePlaybackStore.getState();
-      assert.equal(isActive(item.type, item.refId), true);
-      assert.equal(isActive("set", "nonexistent"), false);
+      mediaSessionController.play(item);
+      assert.equal(mediaSessionController.isActive(item.type, item.refId), true);
+      assert.equal(mediaSessionController.isActive("set", "nonexistent"), false);
     });
 
     it("closePlayerSurface collapses video stage without stopping session track", () => {
       const item = playableTrack();
-      usePlaybackStore.getState().play(item);
+      mediaSessionController.play(item);
       closePlayerSurface();
       const state = usePlaybackStore.getState();
       assert.equal(state.detailsOpen, false);
@@ -113,10 +113,10 @@ describe("playback architecture contracts", () => {
   describe("transport state (engine-owned)", () => {
     it("track play → pause → resume", () => {
       const item = previewItem();
-      usePlaybackStore.getState().play(item);
-      usePlaybackStore.getState().pause();
+      mediaSessionController.play(item);
+      mediaSessionController.pause();
       assert.equal(usePlaybackStore.getState().isPlaying, false);
-      usePlaybackStore.getState().resume();
+      mediaSessionController.resume();
       const snap = globalPlayerEngine.getSnapshot();
       assert.equal(snap.currentTrack?.refId, item.refId);
     });
@@ -124,8 +124,8 @@ describe("playback architecture contracts", () => {
     it("track A → track B switches active item", () => {
       const a = playableTrack();
       const b = secondPlayableTrack(a);
-      usePlaybackStore.getState().play(a);
-      usePlaybackStore.getState().play(b);
+      mediaSessionController.play(a);
+      mediaSessionController.play(b);
       assert.equal(usePlaybackStore.getState().currentTrack?.refId, b.refId);
       assert.equal(globalPlayerEngine.getSnapshot().currentTrack?.refId, b.refId);
     });
@@ -133,9 +133,9 @@ describe("playback architecture contracts", () => {
     it("track → set switches provider mode", async () => {
       const track = playableTrack();
       const set = playableSet();
-      usePlaybackStore.getState().play(track);
+      mediaSessionController.play(track);
       await new Promise((r) => setTimeout(r, 20));
-      usePlaybackStore.getState().play(set);
+      mediaSessionController.play(set);
       await new Promise((r) => setTimeout(r, 20));
       assert.equal(usePlaybackStore.getState().currentTrack?.type, "set");
       assert.equal(globalPlayerEngine.getSnapshot().mode, "embed");
@@ -144,8 +144,8 @@ describe("playback architecture contracts", () => {
     it("set → track switches provider mode", () => {
       const set = playableSet();
       const track = playableTrack();
-      usePlaybackStore.getState().play(set);
-      usePlaybackStore.getState().play(track);
+      mediaSessionController.play(set);
+      mediaSessionController.play(track);
       assert.equal(usePlaybackStore.getState().currentTrack?.type, "track");
     });
 
@@ -156,7 +156,7 @@ describe("playback architecture contracts", () => {
         secondPlayableTrack(playableTrack()),
       ];
       for (const item of items) {
-        usePlaybackStore.getState().play(item);
+        mediaSessionController.play(item);
       }
       const last = items[items.length - 1];
       assert.equal(usePlaybackStore.getState().currentTrack?.refId, last.refId);
@@ -173,18 +173,18 @@ describe("playback architecture contracts", () => {
 
     it("seek updates currentTime in store", async () => {
       const item = previewItem();
-      usePlaybackStore.getState().play(item);
+      mediaSessionController.play(item);
       await new Promise((r) => setTimeout(r, 20));
-      usePlaybackStore.getState().seek(42);
+      mediaSessionController.commitSeek(42);
       await new Promise((r) => setTimeout(r, 5));
       assert.equal(usePlaybackStore.getState().currentTime, 42);
     });
 
     it("previous restarts when playback past 3 seconds", () => {
       const item = previewItem();
-      usePlaybackStore.getState().play(item);
-      usePlaybackStore.getState().seek(5);
-      usePlaybackStore.getState().previous();
+      mediaSessionController.play(item);
+      mediaSessionController.commitSeek(5);
+      mediaSessionController.prev();
       assert.equal(usePlaybackStore.getState().currentTime, 0);
     });
 
@@ -192,8 +192,8 @@ describe("playback architecture contracts", () => {
       const a = previewItem();
       const b = { ...previewItem(), refId: "contract::preview-2", title: "Contract Preview 2" };
       const queue = [a, b];
-      usePlaybackStore.getState().play(a, { browse: { queue, queueIndex: 0 } });
-      usePlaybackStore.getState().play(b, { browse: { queue, queueIndex: 1 } });
+      mediaSessionController.play(a, { browse: { queue, queueIndex: 0 } });
+      mediaSessionController.play(b, { browse: { queue, queueIndex: 1 } });
       const { queue: storedQueue, queueIndex, currentTrack } = usePlaybackStore.getState();
       assert.equal(currentTrack?.refId, b.refId);
       assert.equal(queueIndex, 1);
@@ -204,19 +204,19 @@ describe("playback architecture contracts", () => {
       const a = previewItem();
       const b = { ...previewItem(), refId: "contract::preview-2", title: "Contract Preview 2" };
       const queue = [a, b];
-      usePlaybackStore.getState().play(a, { browse: { queue, queueIndex: 0 } });
+      mediaSessionController.play(a, { browse: { queue, queueIndex: 0 } });
       await new Promise((r) => setTimeout(r, 25));
-      usePlaybackStore.getState().play(b, { browse: { queue, queueIndex: 1 } });
+      mediaSessionController.play(b, { browse: { queue, queueIndex: 1 } });
       await new Promise((r) => setTimeout(r, 25));
-      usePlaybackStore.getState().previous();
+      mediaSessionController.prev();
       assert.equal(usePlaybackStore.getState().currentTrack?.refId, a.refId);
     });
 
     it("isolated play resets browse queue to single item", () => {
       const a = previewItem();
       const b = { ...previewItem(), refId: "contract::preview-2", title: "Contract Preview 2" };
-      usePlaybackStore.getState().play(a);
-      usePlaybackStore.getState().play(b);
+      mediaSessionController.play(a);
+      mediaSessionController.play(b);
       const { queue, currentTrack } = usePlaybackStore.getState();
       assert.equal(currentTrack?.refId, b.refId);
       assert.equal(queue.length, 1);
@@ -228,25 +228,25 @@ describe("playback architecture contracts", () => {
       const b = { ...previewItem(), refId: "contract::preview-2", title: "Contract Preview 2" };
       const c = { ...previewItem(), refId: "contract::preview-3", title: "Contract Preview 3" };
       const queue = [a, b, c];
-      usePlaybackStore.getState().play(a, { browse: { queue, queueIndex: 0 } });
+      mediaSessionController.play(a, { browse: { queue, queueIndex: 0 } });
       await new Promise((r) => setTimeout(r, 20));
-      usePlaybackStore.getState().play(b, { browse: { queue, queueIndex: 1 } });
+      mediaSessionController.play(b, { browse: { queue, queueIndex: 1 } });
       await new Promise((r) => setTimeout(r, 20));
-      usePlaybackStore.getState().play(c, { browse: { queue, queueIndex: 2 } });
+      mediaSessionController.play(c, { browse: { queue, queueIndex: 2 } });
       await new Promise((r) => setTimeout(r, 20));
       assert.equal(usePlaybackStore.getState().queueIndex, 2);
-      usePlaybackStore.getState().previous();
+      mediaSessionController.prev();
       await new Promise((r) => setTimeout(r, 20));
       assert.equal(usePlaybackStore.getState().currentTrack?.refId, b.refId);
-      usePlaybackStore.getState().next();
+      mediaSessionController.next();
       await new Promise((r) => setTimeout(r, 20));
       assert.equal(usePlaybackStore.getState().currentTrack?.refId, c.refId);
     });
 
     it("stop clears session", () => {
       const item = playableTrack();
-      usePlaybackStore.getState().play(item);
-      usePlaybackStore.getState().stop();
+      mediaSessionController.play(item);
+      mediaSessionController.stop();
       assert.equal(usePlaybackStore.getState().currentTrack, null);
       assert.equal(globalPlayerEngine.getSnapshot().currentTrack, null);
     });
@@ -262,10 +262,10 @@ describe("playback architecture contracts", () => {
 
     it("active audio surface click toggles transport without details gate", async () => {
       const item = previewItem();
-      usePlaybackStore.getState().play(item);
+      mediaSessionController.play(item);
       await new Promise((r) => setTimeout(r, 20));
       closePlayerSurface();
-      usePlaybackStore.getState().pause();
+      mediaSessionController.pause();
       await new Promise((r) => setTimeout(r, 5));
       assert.equal(usePlaybackStore.getState().isPlaying, false);
       assert.equal(usePlaybackStore.getState().detailsOpen, false);

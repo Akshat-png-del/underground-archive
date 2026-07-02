@@ -9,7 +9,7 @@ import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { Button } from "@/components/ui/Button";
 import { playbackItemFromMusicActions } from "@/lib/music/playback";
 import { handlePlaybackSurfaceClick } from "@/lib/music/playback-actions";
-import { usePlaybackStore } from "@/stores/playback-store";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug, setWatchPath } from "@/lib/sets/set-watch-navigation";
 
 interface MusicActionsProps {
@@ -34,8 +34,10 @@ export function MusicActions({
   const router = useRouter();
   const { openAddToPlaylist } = usePlaylistModal();
   const { toggleLikeTrack, toggleLikeSet, isTrackLiked, isSetLiked } = useLibrary();
-  const active = usePlaybackStore((s) => s.isActive(type, refId));
-  const playing = usePlaybackStore((s) => s.isActive(type, refId) && s.isPlaying);
+  const snapshot = useFinalPlaybackSnapshot();
+  const active =
+    snapshot.activeTrack?.type === type && snapshot.activeTrack?.refId === refId;
+  const playing = active && snapshot.isPlaying;
 
   const liked = type === "track" ? isTrackLiked(refId) : type === "set" ? isSetLiked(refId) : false;
 

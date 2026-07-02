@@ -8,7 +8,12 @@ import { getArtist } from "@/content/artists";
 import { trackId } from "@/lib/music";
 import { playbackItemFromTrack, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+  playbackItemPlaying,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 
 interface TrackRowProps {
   track: CatalogTrack;
@@ -21,7 +26,10 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
   const genres = getArtist(track.artistSlug)?.genres;
   const item = playbackItemFromTrack(track);
   const browse = browseQueue ? browseContextAt(browseQueue, item, index) : undefined;
-  const { handleCardPointerDown, stopCardPointerDown, active, playing } = useCardPlayback(
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, "track", id);
+  const playing = playbackItemPlaying(snapshot, "track", id);
+  const { handleCardPointerDown, handleCardActivate, stopCardPointerDown } = useCardPlayback(
     item,
     "track",
     id,
@@ -40,7 +48,7 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          handleCardPointerDown(e as unknown as React.PointerEvent);
+          handleCardActivate();
         }
       }}
     >

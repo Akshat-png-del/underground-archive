@@ -14,7 +14,8 @@ import { MusicActions } from "@/components/music/MusicActions";
 import { SetCardEmbed } from "@/components/artists/SetCard";
 import { ArtistCard } from "@/components/artists/ArtistCard";
 import { playbackItemFromRelease, playbackItemFromTrack, playbackItemFromSet } from "@/lib/music/playback";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import { useCardPlayback, playbackItemActive } from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 
 function Section({
   title,
@@ -41,7 +42,9 @@ function ReleaseCard({
   genres: Artist["genres"];
 }) {
   const item = playbackItemFromRelease(release);
-  const { handleCardPointerDown, stopCardPointerDown, active } = useCardPlayback(
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, "release", release.id);
+  const { handleCardPointerDown, stopCardPointerDown } = useCardPlayback(
     item,
     "release",
     release.id,

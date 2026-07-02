@@ -1,6 +1,8 @@
 import type { PlaybackItem } from "@/lib/music/playback";
 import { resolvePlaybackSource } from "@/lib/music/playback-source";
 import type { ProviderKind } from "@/lib/music/providers/playback-provider";
+import type { ProviderState } from "@/lib/music/providers/playback-provider";
+import { EMPTY_PROVIDER_STATE } from "@/lib/music/providers/playback-provider";
 import { ProviderRouter } from "@/lib/music/providers/provider-router";
 import { mediaEngineEvents } from "@/lib/music/media-engine-events";
 import { logSeekExecuted } from "@/lib/music/media-binding-debug";
@@ -52,6 +54,13 @@ function modeFromKind(kind: ProviderKind | null): PlayerEngineMode {
   return kind;
 }
 
+function idleTransportState(): Pick<
+  PlayerEngineState,
+  "isPlaying" | "isLoading" | "currentTime" | "duration" | "error"
+> {
+  return { ...EMPTY_PROVIDER_STATE };
+}
+
 export type PlayerEngineMode = "idle" | "audio" | "embed" | "spotify";
 
 export interface PlayerEngineState {
@@ -67,8 +76,8 @@ export interface PlayerEngineState {
 type StateListener = (state: PlayerEngineState) => void;
 
 /**
- * Immutable runtime MediaEngine — singleton, lives outside the React tree.
- * Providers execute commands; this layer owns playback truth.
+ * Runtime MediaEngine — singleton executor outside the React tree.
+ * Forwards provider-reported transport to MediaSessionController via setStateListener.
  */
 class GlobalPlayerEngine {
   private container: HTMLDivElement | null = null;
@@ -80,16 +89,12 @@ class GlobalPlayerEngine {
   private generation = 0;
   private activeGeneration = 0;
 
+  /** Execution routing — which item/mode was commanded. */
   private mode: PlayerEngineMode = "idle";
   private currentTrack: PlaybackItem | null = null;
-  private isPlaying = false;
-  private isLoading = false;
-  private currentTime = 0;
-  private duration = 0;
-  private error: string | null = null;
 
-  private prevPlaying = false;
-  private readyEmittedForTrack: string | null = null;
+  /** Prior provider report — event edge detection only, not transport authority. */
+  private lastProviderState: ProviderState | null = null;
 
   setStateListener(listener: StateListener | null): void {
     this.listener = listener;
@@ -110,22 +115,21 @@ class GlobalPlayerEngine {
     this.listener?.(this.getSnapshot());
   }
 
-  private applyProviderState(providerState: {
-    isPlaying: boolean;
-    isLoading: boolean;
-    currentTime: number;
-    duration: number;
-    error: string | null;
-  }): void {
-    const wasPlaying = this.isPlaying;
-    const prevTime = this.currentTime;
+  private publishCommandFailure(issue: string, track: PlaybackItem): void {
+    mediaEngineEvents.emit({ type: "onError", error: issue, track });
+    this.listener?.({
+      mode: "idle",
+      currentTrack: track,
+      ...idleTransportState(),
+      error: issue,
+    });
+  }
 
-    this.isPlaying = providerState.isPlaying;
-    this.isLoading = providerState.isLoading;
-    this.currentTime = providerState.currentTime;
-    this.duration = providerState.duration;
-    this.error = providerState.error;
-    this.mode = modeFromKind(this.router?.getActiveKind() ?? null);
+  private applyProviderState(providerState: ProviderState): void {
+    const wasPlaying = this.lastProviderState?.isPlaying ?? false;
+    const prevTime = this.lastProviderState?.currentTime ?? 0;
+    const activeKind = this.router?.getActiveKind() ?? null;
+    const mode = modeFromKind(activeKind);
 
     if (providerState.isPlaying && !wasPlaying) {
       mediaEngineEvents.emit({ type: "onPlay", track: this.currentTrack });
@@ -149,30 +153,19 @@ class GlobalPlayerEngine {
     }
 
     if (
-      this.mode === "audio" &&
+      mode === "audio" &&
       wasPlaying &&
       !providerState.isPlaying &&
       !providerState.isLoading &&
       !providerState.error &&
       providerState.currentTime === 0 &&
-      this.duration > 0
+      providerState.duration > 0
     ) {
       mediaEngineEvents.emit({ type: "onEnded", track: this.currentTrack });
     }
 
-    const trackKey = this.currentTrack?.refId ?? null;
-    if (
-      !providerState.isLoading &&
-      !providerState.error &&
-      providerState.isPlaying &&
-      trackKey &&
-      this.readyEmittedForTrack !== trackKey
-    ) {
-      this.readyEmittedForTrack = trackKey;
-      mediaEngineEvents.emit({ type: "onReady", track: this.currentTrack });
-    }
-
-    this.prevPlaying = providerState.isPlaying;
+    this.mode = mode;
+    this.lastProviderState = { ...providerState };
     this.publish();
   }
 
@@ -257,18 +250,10 @@ class GlobalPlayerEngine {
     const trackChanged = this.currentTrack?.refId !== item.refId;
     this.currentTrack = item;
     this.mode = modeFromResolvedKind(resolved.kind);
-    this.readyEmittedForTrack = null;
 
     if (trackChanged) {
-      this.currentTime = 0;
-      this.duration = 0;
       mediaEngineEvents.emit({ type: "onTrackChange", track: item });
     }
-
-    this.isLoading = true;
-    this.isPlaying = false;
-    this.error = null;
-    this.publish();
 
     void waitForPlaybackMediaAnchor()
       .then(() => {
@@ -283,22 +268,16 @@ class GlobalPlayerEngine {
         const { issue } = result;
         if (issue) {
           this.mode = "idle";
-          this.isPlaying = false;
-          this.isLoading = false;
-          this.error = issue;
-          mediaEngineEvents.emit({ type: "onError", error: issue, track: item });
-          this.publish();
+          this.lastProviderState = null;
+          this.publishCommandFailure(issue, item);
         }
       })
       .catch((err) => {
         if (this.isStale(generation)) return;
         const issue = err instanceof Error ? err.message : String(err);
         this.mode = "idle";
-        this.isPlaying = false;
-        this.isLoading = false;
-        this.error = issue;
-        mediaEngineEvents.emit({ type: "onError", error: issue, track: item });
-        this.publish();
+        this.lastProviderState = null;
+        this.publishCommandFailure(issue, item);
       });
   }
 
@@ -326,13 +305,7 @@ class GlobalPlayerEngine {
     this.router?.stop();
     this.mode = "idle";
     this.currentTrack = null;
-    this.isPlaying = false;
-    this.isLoading = false;
-    this.currentTime = 0;
-    this.duration = 0;
-    this.error = null;
-    this.prevPlaying = false;
-    this.readyEmittedForTrack = null;
+    this.lastProviderState = null;
     mediaEngineEvents.emit({ type: "onTrackChange", track: null });
     this.publish();
   }
@@ -354,18 +327,24 @@ class GlobalPlayerEngine {
   }
 
   getSnapshot(): PlayerEngineState {
-    const providerState = this.router?.getState();
     const activeKind = this.router?.getActiveKind();
-    const useProviderTransport = !!providerState && !!activeKind;
+    if (activeKind) {
+      const providerState = this.router!.getState();
+      return {
+        mode: modeFromKind(activeKind),
+        currentTrack: this.currentTrack,
+        isPlaying: providerState.isPlaying,
+        isLoading: providerState.isLoading,
+        currentTime: providerState.currentTime,
+        duration: providerState.duration,
+        error: providerState.error,
+      };
+    }
 
     return {
       mode: this.mode,
       currentTrack: this.currentTrack,
-      isPlaying: useProviderTransport ? providerState.isPlaying : this.isPlaying,
-      isLoading: useProviderTransport ? providerState.isLoading : this.isLoading,
-      currentTime: useProviderTransport ? providerState.currentTime : this.currentTime,
-      duration: useProviderTransport ? providerState.duration : this.duration,
-      error: useProviderTransport ? providerState.error : this.error,
+      ...idleTransportState(),
     };
   }
 

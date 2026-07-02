@@ -1,12 +1,13 @@
 /**
  * Playback Actions Layer
  *
- * All user-interaction playback decisions live here.
- * UI components dispatch actions — they never implement playback policy.
+ * Transport commands delegate to MediaSessionController (sole authority).
+ * Chrome-only actions (detailsOpen) use the passive store mirror.
  */
 import type { LibraryItemType } from "@/types/library";
 import type { PlaybackItem, PlaybackBrowseContext } from "@/lib/music/playback";
 import { usePlaybackStore } from "@/stores/playback-store";
+import { mediaSessionController } from "@/lib/music/media-session-controller";
 import { playbackDebugLog } from "@/lib/music/playback-debug";
 import {
   isOnSetWatchPage,
@@ -15,12 +16,8 @@ import {
 } from "@/lib/sets/set-watch-navigation";
 import { warnIfAudioTransportInVideoContext } from "@/lib/music/playback-domain-lock";
 
-function getStore() {
-  return usePlaybackStore.getState();
-}
-
 function guardAudioTransport(action: string): void {
-  warnIfAudioTransportInVideoContext(action, getStore().currentTrack);
+  warnIfAudioTransportInVideoContext(action, mediaSessionController.getState().activeTrack);
 }
 
 let allowSetPlayOutsideWatchPage = false;
@@ -56,115 +53,117 @@ export function playItem(item: PlaybackItem, options?: PlayOptions): void {
   ) {
     return;
   }
-  getStore().play(item, options);
+  mediaSessionController.play(item, options);
 }
 
 /** Pause current playback. */
 export function pause(): void {
   guardAudioTransport("pause");
   playbackDebugLog("CLICK", "pause");
-  getStore().pause();
+  mediaSessionController.pause();
 }
 
 /** Resume current playback. */
 export function resume(): void {
   guardAudioTransport("resume");
   playbackDebugLog("CLICK", "resume");
-  getStore().resume();
+  mediaSessionController.resume();
 }
 
 /** Toggle pause/resume for the current item. */
 export function togglePlayback(): void {
   guardAudioTransport("togglePlayback");
   playbackDebugLog("CLICK", "togglePlayback");
-  getStore().togglePlayPause();
+  mediaSessionController.togglePlayPause();
 }
 
 /** Open the video stage without changing transport. */
 export function openPlayerSurface(): void {
-  getStore().openDetails();
+  usePlaybackStore.getState().openDetails();
 }
 
 /** Hide the video stage without stopping playback. */
 export function closePlayerSurface(): void {
-  getStore().closeDetails();
+  usePlaybackStore.getState().closeDetails();
 }
 
 /** Expand the video stage for the current item. */
 export function expandPlayerSurface(): void {
-  getStore().openDetails();
+  usePlaybackStore.getState().openDetails();
 }
 
 /** Seek forward by seconds (default 10). */
 export function skipForward(seconds = 10): void {
   guardAudioTransport("skipForward");
   playbackDebugLog("CLICK", "skipForward", { seconds });
-  getStore().skipForward(seconds);
+  mediaSessionController.skipForward(seconds);
 }
 
 /** Seek backward by seconds (default 10). */
 export function skipBackward(seconds = 10): void {
   guardAudioTransport("skipBackward");
   playbackDebugLog("CLICK", "skipBackward", { seconds });
-  getStore().skipBackward(seconds);
+  mediaSessionController.skipBackward(seconds);
 }
 
 /** Set volume 0–1 (preview audio). */
 export function setPlaybackVolume(volume: number): void {
   guardAudioTransport("setPlaybackVolume");
-  getStore().setVolume(volume);
+  mediaSessionController.setVolume(volume);
 }
 
-const DEFAULT_RESTORE_VOLUME = 0.8;
-
-/** Toggle mute (preview audio). Restores the last non-zero volume when unmuting. */
+/** Toggle mute (preview audio). */
 export function togglePlaybackMute(): void {
   guardAudioTransport("togglePlaybackMute");
   playbackDebugLog("CLICK", "toggleMute");
-  const store = getStore();
-  if (store.muted) {
-    const restore = store.volume > 0 ? store.volume : DEFAULT_RESTORE_VOLUME;
-    store.setVolume(restore);
-    return;
-  }
-  store.toggleMute();
+  mediaSessionController.toggleMute();
 }
 
 /** Seek to position in seconds. */
 export function seekTo(seconds: number): void {
   guardAudioTransport("seekTo");
   playbackDebugLog("CLICK", "seekTo", { seconds });
-  getStore().seek(seconds);
+  mediaSessionController.commitSeek(seconds);
 }
 
 /** Advance queue. */
 export function playNext(): void {
   guardAudioTransport("playNext");
   playbackDebugLog("CLICK", "playNext");
-  getStore().next();
+  mediaSessionController.next();
 }
 
 /** Go back in queue or restart if near start. */
 export function playPrevious(): void {
   guardAudioTransport("playPrevious");
   playbackDebugLog("CLICK", "playPrevious");
-  getStore().previous();
+  mediaSessionController.prev();
 }
 
 /** Stop playback and clear session. */
 export function stopPlayback(): void {
-  getStore().stop();
+  mediaSessionController.stop();
 }
 
 /** Retry the current item after a transport error. */
 export function retryPlayback(): void {
-  const store = getStore();
-  const item = store.currentTrack;
-  if (!item) return;
-  playbackDebugLog("ACTION", "retryPlayback", { refId: item.refId });
-  const { queue, queueIndex } = store;
-  store.play(item, { browse: { queue, queueIndex } });
+  playbackDebugLog("ACTION", "retryPlayback");
+  mediaSessionController.retry();
 }
+
+/** Thin controller delegates — no store transport logic. */
+export const playbackActions = {
+  play: (item: PlaybackItem, options?: PlayOptions) => mediaSessionController.play(item, options),
+  pause: () => mediaSessionController.pause(),
+  resume: () => mediaSessionController.resume(),
+  seek: (seconds: number) => mediaSessionController.commitSeek(seconds),
+  setVolume: (volume: number) => mediaSessionController.setVolume(volume),
+  toggleMute: () => mediaSessionController.toggleMute(),
+  next: () => mediaSessionController.next(),
+  prev: () => mediaSessionController.prev(),
+  stop: () => mediaSessionController.stop(),
+  togglePlayPause: () => mediaSessionController.togglePlayPause(),
+};
 
 /**
  * Standard card/row click policy:
@@ -181,8 +180,7 @@ export function handlePlaybackSurfaceClick(
     return;
   }
 
-  const store = getStore();
-  const active = store.isActive(type, refId);
+  const active = mediaSessionController.isActive(type, refId);
 
   playbackDebugLog("CLICK", "handlePlaybackSurfaceClick", {
     type,
@@ -191,11 +189,11 @@ export function handlePlaybackSurfaceClick(
   });
 
   if (active) {
-    store.togglePlayPause();
+    mediaSessionController.togglePlayPause();
     return;
   }
 
-  store.play(item, options);
+  mediaSessionController.play(item, options);
 }
 
 /**
@@ -211,9 +209,8 @@ export function expandPlaybackSurface(
     return;
   }
 
-  const store = getStore();
-  if (!store.isActive(type, refId)) {
-    store.play(item, options);
+  if (!mediaSessionController.isActive(type, refId)) {
+    mediaSessionController.play(item, options);
   }
-  store.openDetails();
+  usePlaybackStore.getState().openDetails();
 }

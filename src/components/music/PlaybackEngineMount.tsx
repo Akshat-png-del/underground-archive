@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { usePlaybackStore, reapplyPlaybackEmbedLayout } from "@/stores/playback-store";
+import { reapplyPlaybackEmbedLayout } from "@/stores/playback-store";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { usePersistentPlaybackDock } from "@/components/music/use-persistent-playback-dock";
 import { registerPlaybackMediaAnchor } from "@/lib/music/playback-media-anchor-registry";
 import { logMediaEngineActive } from "@/lib/music/media-binding-debug";
@@ -14,7 +15,7 @@ import { isSetWatchDockActive, subscribeSetWatchDock } from "@/lib/sets/set-watc
  */
 export function PlaybackEngineMount() {
   const canvasRef = useRef<HTMLDivElement>(null);
-  const currentRefId = usePlaybackStore((s) => s.currentTrack?.refId ?? null);
+  const currentRefId = useFinalPlaybackSnapshot().activeTrack?.refId ?? null;
   const experience = usePlaybackExperience();
   const [clientMounted, setClientMounted] = useState(false);
   const [, syncSetWatchDock] = useState(0);

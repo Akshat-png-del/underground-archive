@@ -20,7 +20,6 @@ import {
 import { playbackDebugWarn } from "@/lib/music/playback-debug";
 import {
   clampPlaybackPosition,
-  shouldAcceptPositionAfterSeek,
   spotifyPlaybackFields,
 } from "@/lib/music/audio-transport-sync";
 
@@ -40,8 +39,6 @@ export class SpotifyProvider implements PlaybackProvider {
   private generation = 0;
   private activeGeneration = 0;
   private state: ProviderState = { ...EMPTY_PROVIDER_STATE };
-  private pendingSeekSeconds: number | null = null;
-  private pendingSeekDeadline = 0;
   private onStarted: ((payload?: { data?: Record<string, unknown> }) => void) | null = null;
   private onUpdate: ((payload?: { data?: Record<string, unknown> }) => void) | null = null;
   private activeRefId: string | null = null;
@@ -145,17 +142,7 @@ export class SpotifyProvider implements PlaybackProvider {
       }
 
       if (fields.positionSeconds !== null) {
-        const { accept, clearPending } = shouldAcceptPositionAfterSeek(
-          fields.positionSeconds,
-          this.pendingSeekSeconds,
-          this.pendingSeekDeadline,
-        );
-        if (clearPending) {
-          this.pendingSeekSeconds = null;
-        }
-        if (accept) {
-          partial.currentTime = fields.positionSeconds;
-        }
+        partial.currentTime = fields.positionSeconds;
       }
 
       if (Object.keys(partial).length > 0) {
@@ -379,7 +366,7 @@ export class SpotifyProvider implements PlaybackProvider {
   resume(): void {
     if (!this.isReady) return;
     logProviderPlay(this.kind);
-    this.patch({ isLoading: true, isPlaying: false, error: null });
+    this.patch({ isLoading: true, error: null });
     this.host.resumeIfReady();
   }
 
@@ -388,7 +375,6 @@ export class SpotifyProvider implements PlaybackProvider {
     this.clearListeners();
     this.host.pauseIfReady();
     this.controller = null;
-    this.pendingSeekSeconds = null;
     this.activeRefId = null;
     this.state = { ...EMPTY_PROVIDER_STATE };
     this.listener?.(this.getState());
@@ -400,9 +386,7 @@ export class SpotifyProvider implements PlaybackProvider {
       return;
     }
     const target = clampPlaybackPosition(positionSeconds, this.state.duration);
-    this.pendingSeekSeconds = target;
-    this.pendingSeekDeadline = Date.now() + 3000;
-    this.patch({ currentTime: target, isLoading: true });
+    this.patch({ currentTime: target });
     this.host.seekIfReady(Math.round(target * 1000));
   }
 

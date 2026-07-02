@@ -8,7 +8,12 @@ import { PlayingIndicator } from "@/components/music/PlayingIndicator";
 import { playbackItemFromSet, playbackItemFromMusicActions, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { canShowSetVideoEmbed, setThumbnailUrl } from "@/lib/music/set-display";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+  playbackItemPlaying,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 
 interface SetCardProps {
   set: EssentialSet;
@@ -47,7 +52,10 @@ export function SetCardEmbed({
   })();
 
   const browse = browseQueue ? browseContextAt(browseQueue, playbackItem, browseIndex) : undefined;
-  const { handleCardPointerDown, active, playing } = useCardPlayback(
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, "set", refId);
+  const playing = playbackItemPlaying(snapshot, "set", refId);
+  const { handleCardPointerDown } = useCardPlayback(
     playbackItem,
     "set",
     refId,

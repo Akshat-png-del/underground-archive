@@ -10,7 +10,12 @@ import { SafeImage } from "@/components/ui/SafeImage";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+  playbackItemPlaying,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 import type { SearchResult } from "@/types/library";
 
@@ -45,7 +50,10 @@ function PlayableSearchResultInner({
   const browse = browseContextAt(browseQueue, item, browseIndex);
   const setSlug =
     result.type === "set" ? resolveSetWatchSlug(result.id) ?? undefined : undefined;
-  const { handleCardPointerDown, active, playing } = useCardPlayback(
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, result.type as "track" | "set", result.id);
+  const playing = playbackItemPlaying(snapshot, result.type as "track" | "set", result.id);
+  const { handleCardPointerDown } = useCardPlayback(
     item,
     result.type as "track" | "set",
     result.id,

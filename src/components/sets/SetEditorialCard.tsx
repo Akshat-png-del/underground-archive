@@ -6,7 +6,12 @@ import { genreLabels } from "@/content/artists";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { playbackItemFromSet } from "@/lib/music/playback";
 import { setThumbnailUrl } from "@/lib/music/set-display";
-import { useCardPlayback } from "@/lib/music/use-card-playback";
+import {
+  useCardPlayback,
+  playbackItemActive,
+  playbackItemPlaying,
+} from "@/lib/music/use-card-playback";
+import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import Link from "next/link";
 
 interface SetEditorialCardProps {
@@ -15,7 +20,10 @@ interface SetEditorialCardProps {
 
 export function SetEditorialCard({ set }: SetEditorialCardProps) {
   const item = playbackItemFromSet(set);
-  const { handleCardPointerDown, active, playing } = useCardPlayback(item, "set", set.id, undefined, set.slug);
+  const snapshot = useFinalPlaybackSnapshot();
+  const active = playbackItemActive(snapshot, "set", set.id);
+  const playing = playbackItemPlaying(snapshot, "set", set.id);
+  const { handleCardPointerDown } = useCardPlayback(item, "set", set.id, undefined, set.slug);
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
   const year = set.date?.slice(0, 4) ?? "—";
 
