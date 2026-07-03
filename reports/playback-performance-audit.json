@@ -1,0 +1,201 @@
+{
+  "generated": "2026-07-03T06:12:33.548Z",
+  "startup": {
+    "clickToMscPlay": 2541,
+    "clickToEnginePlay": 2542,
+    "clickToRouterPlay": 2542,
+    "clickToPlaybackConfirmed": 3056,
+    "clickToFirstSdkUpdateMs": 863,
+    "clickToFirstEngineNonZeroMs": 3109,
+    "clickToFirstSnapshotNonZeroMs": 3109,
+    "milestones": [
+      {
+        "tMs": 2541,
+        "kind": "msc-play"
+      },
+      {
+        "tMs": 2542,
+        "kind": "engine-play"
+      },
+      {
+        "tMs": 2542,
+        "kind": "router-play"
+      },
+      {
+        "tMs": 3056,
+        "kind": "playback-confirmed"
+      },
+      {
+        "tMs": 3269,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 3269,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 3269,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 4438,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 4438,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 4438,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 5336,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 5336,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 5336,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 5461,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 5461,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 5462,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 6524,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 6525,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 6525,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 7585,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 7585,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 7585,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 8649,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 8650,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 8651,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 9712,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 9713,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 9713,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 10774,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 10774,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 10779,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 11839,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 11839,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 11839,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 12906,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 12906,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 12906,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 13963,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 13963,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 13963,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 15023,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 15023,
+        "kind": "sdk-update"
+      },
+      {
+        "tMs": 15023,
+        "kind": "sdk-update"
+      }
+    ]
+  },
+  "playback5s": {
+    "snapshotCommits": 0,
+    "mscReconcile": 4,
+    "enginePublish": 4,
+    "providerTick": 4,
+    "storeMirror": 4,
+    "snapshotPerf": {
+      "snapshotCommits": 15,
+      "snapshotSkipped": 25
+    }
+  },
+  "ratios": {
+    "snapshotPerEnginePublish": 0,
+    "mscPerEnginePublish": 1
+  }
+}

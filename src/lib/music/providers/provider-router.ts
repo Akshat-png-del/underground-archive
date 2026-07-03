@@ -19,6 +19,8 @@ import {
   logProviderState,
   logProviderSwitch,
 } from "@/lib/music/providers/provider-debug";
+import { seekPipelineTrace } from "@/lib/music/seek-pipeline-trace";
+import { playPausePipelineTrace, isDuplicateCommand } from "@/lib/music/play-pause-pipeline-trace";
 import {
   logProviderAttached,
   logProviderCreated,
@@ -31,7 +33,9 @@ import {
   getProviderMountNode,
   waitForPlaybackMediaAnchor,
 } from "@/lib/music/playback-media-anchor-registry";
-import { playbackDebugError } from "@/lib/music/playback-debug";
+import { syncAuditRecord } from "@/lib/music/playback-sync-audit";
+import { volumePipelineTrace } from "@/lib/music/volume-pipeline-trace";
+import { queuePipelineTrace } from "@/lib/music/queue-pipeline-trace";
 
 function kindForItem(item: PlaybackItem): ProviderKind | "none" {
   const resolved = resolvePlaybackSource(item);
@@ -50,8 +54,6 @@ export class ProviderRouter {
   private active: PlaybackProvider | null = null;
   private activeKind: ProviderKind | null = null;
   private listener: ProviderStateListener | null = null;
-  private volume = 1;
-  private muted = false;
   private switching = false;
   private commandQueue: QueuedCommand[] = [];
   private latestPlayGeneration = 0;
@@ -67,6 +69,19 @@ export class ProviderRouter {
 
   private emitState(state: ProviderState): void {
     logProviderState(this.activeKind, state);
+    syncAuditRecord({
+      ts: Date.now(),
+      action: "provider-tick",
+      layer: "provider",
+      currentTime: state.currentTime,
+      duration: state.duration,
+      isPlaying: state.isPlaying,
+      volume: null,
+      muted: null,
+      isLoading: state.isLoading,
+      currentTrack: null,
+      extra: { kind: this.activeKind },
+    });
     this.listener?.(state);
   }
 
@@ -131,9 +146,6 @@ export class ProviderRouter {
     this.activeKind = null;
     this.commandQueue = [];
     this.purgeStrayMedia();
-    await new Promise<void>((resolve) => {
-      queueMicrotask(() => resolve());
-    });
   }
 
   private purgeStrayMedia(): void {
@@ -154,7 +166,7 @@ export class ProviderRouter {
   private createProvider(kind: ProviderKind): PlaybackProvider {
     switch (kind) {
       case "audio":
-        return new AudioProvider(this.volume, this.muted);
+        return new AudioProvider();
       case "spotify":
         return new SpotifyProvider();
       case "youtube":
@@ -183,6 +195,13 @@ export class ProviderRouter {
 
   async play(item: PlaybackItem, generation: number): Promise<{ issue: string | null }> {
     this.latestPlayGeneration = generation;
+    queuePipelineTrace({
+      fn: "ProviderRouter.play",
+      phase: "enter",
+      targetActiveTrack: item.refId,
+      providerKind: kindForItem(item),
+      extra: { generation, activeKind: this.activeKind },
+    });
     const isAborted = () => generation !== this.latestPlayGeneration;
 
     const kind = kindForItem(item);
@@ -198,13 +217,15 @@ export class ProviderRouter {
       return { issue };
     }
 
-    let mount: HTMLElement;
-    try {
-      mount = await waitForPlaybackMediaAnchor();
-    } catch {
-      const issue = "Playback media anchor not ready";
-      playbackDebugError("PROVIDER", issue, item);
-      return { issue };
+    let mount = getProviderMountNode();
+    if (!mount) {
+      try {
+        mount = await waitForPlaybackMediaAnchor();
+      } catch {
+        const issue = "Playback media anchor not ready";
+        playbackDebugError("PROVIDER", issue, item);
+        return { issue };
+      }
     }
 
     if (!mount.isConnected) {
@@ -240,12 +261,20 @@ export class ProviderRouter {
       try {
         await provider.load(request);
         if (isAborted()) return { issue: null };
-        await provider.waitUntilReady();
+        if (!provider.isReady) {
+          await provider.waitUntilReady();
+        }
         if (isAborted()) return { issue: null };
         logProviderReady(kind, item.refId);
         await provider.startPlayback();
         if (isAborted()) return { issue: null };
         logPlaybackConfirmed(kind, item.refId);
+        queuePipelineTrace({
+          fn: "ProviderRouter.play",
+          phase: "playback_confirmed",
+          targetActiveTrack: item.refId,
+          providerKind: kind,
+        });
       } finally {
         this.switching = false;
         if (!isAborted()) {
@@ -254,16 +283,6 @@ export class ProviderRouter {
       }
     } catch (err) {
       if (isAborted()) return { issue: null };
-      if (this.active === provider) {
-        const message = err instanceof Error ? err.message : String(err);
-        this.emitState({
-          isPlaying: false,
-          isLoading: false,
-          currentTime: 0,
-          duration: 0,
-          error: message,
-        });
-      }
       return { issue: err instanceof Error ? err.message : String(err) };
     }
 
@@ -271,37 +290,100 @@ export class ProviderRouter {
   }
 
   pause(): void {
+    const providerPlaying = this.active?.getState().isPlaying ?? null;
+    playPausePipelineTrace({
+      fn: "ProviderRouter.pause",
+      phase: "ENTER",
+      event: "pause",
+      duplicateCommand: isDuplicateCommand("router-pause"),
+      providerIsPlaying: providerPlaying,
+      activeTrack: this.activeKind,
+      extra: { commandReady: this.isProviderCommandReady(), switching: this.switching },
+    });
     if (!this.isProviderCommandReady()) {
       this.queueCommand({ type: "pause" });
+      playPausePipelineTrace({
+        fn: "ProviderRouter.pause",
+        phase: "QUEUED",
+        event: "pause",
+        note: "command queued — provider not ready",
+      });
       return;
     }
     this.active?.pause();
     logCommandExecuted("pause");
+    playPausePipelineTrace({
+      fn: "ProviderRouter.pause",
+      phase: "EXIT",
+      event: "pause",
+      providerIsPlaying: this.active?.getState().isPlaying ?? null,
+      activeTrack: this.activeKind,
+    });
   }
 
   resume(): void {
+    const providerPlaying = this.active?.getState().isPlaying ?? null;
+    playPausePipelineTrace({
+      fn: "ProviderRouter.resume",
+      phase: "ENTER",
+      event: "resume",
+      duplicateCommand: isDuplicateCommand("router-resume"),
+      providerIsPlaying: providerPlaying,
+      activeTrack: this.activeKind,
+      extra: { commandReady: this.isProviderCommandReady(), switching: this.switching },
+    });
     if (!this.isProviderCommandReady()) {
       this.queueCommand({ type: "resume" });
+      playPausePipelineTrace({
+        fn: "ProviderRouter.resume",
+        phase: "QUEUED",
+        event: "resume",
+        note: "command queued — provider not ready",
+      });
       return;
     }
     this.active?.resume();
     logCommandExecuted("resume");
+    playPausePipelineTrace({
+      fn: "ProviderRouter.resume",
+      phase: "EXIT",
+      event: "resume",
+      providerIsPlaying: this.active?.getState().isPlaying ?? null,
+      activeTrack: this.activeKind,
+    });
   }
 
   async stop(): Promise<void> {
     this.commandQueue = [];
     await this.teardownActiveAsync();
-    this.emitState({ ...EMPTY_PROVIDER_STATE });
   }
 
   seek(positionSeconds: number): void {
+    seekPipelineTrace("ProviderRouter.seek", "ENTER", {
+      positionSeconds,
+      activeKind: this.activeKind,
+      isReady: this.active?.isReady ?? false,
+      switching: this.switching,
+      commandReady: this.isProviderCommandReady(),
+    });
     if (!this.isProviderCommandReady()) {
+      seekPipelineTrace("ProviderRouter.seek", "EARLY_RETURN", {
+        reason: "!isProviderCommandReady() — queuing command",
+        isReady: this.active?.isReady ?? false,
+        switching: this.switching,
+      });
       this.queueCommand({ type: "seek", positionSeconds });
+      seekPipelineTrace("ProviderRouter.seek", "EXIT", { queued: true });
       return;
     }
+    seekPipelineTrace("ProviderRouter.seek", "INVOKE", {
+      next: `active.seek(${this.activeKind})`,
+      positionSeconds,
+    });
     logProviderSeek(this.activeKind, positionSeconds);
     this.active?.seek(positionSeconds);
     logCommandExecuted("seek", { positionSeconds });
+    seekPipelineTrace("ProviderRouter.seek", "EXIT", { positionSeconds, executed: true });
   }
 
   getState(): ProviderState {
@@ -309,14 +391,33 @@ export class ProviderRouter {
   }
 
   setVolume(volume: number): void {
-    this.volume = Math.max(0, Math.min(1, volume));
+    const clamped = Math.max(0, Math.min(1, volume));
+    const accepted = this.active instanceof AudioProvider;
+    volumePipelineTrace({
+      initiator: "ProviderRouter",
+      fn: "ProviderRouter.setVolume",
+      phase: accepted ? "forward_audio" : "skip_non_audio",
+      newVolume: clamped,
+      activeRouterKind: this.activeKind,
+      providerAccepted: accepted,
+      note: accepted ? undefined : "only AudioProvider receives setVolume",
+    });
     if (this.active instanceof AudioProvider) {
-      this.active.setVolume(this.volume);
+      this.active.setVolume(clamped);
     }
   }
 
   setMuted(muted: boolean): void {
-    this.muted = muted;
+    const accepted = this.active instanceof AudioProvider;
+    volumePipelineTrace({
+      initiator: "ProviderRouter",
+      fn: "ProviderRouter.setMuted",
+      phase: accepted ? "forward_audio" : "skip_non_audio",
+      newMuted: muted,
+      activeRouterKind: this.activeKind,
+      providerAccepted: accepted,
+      note: accepted ? undefined : "only AudioProvider receives setMuted",
+    });
     if (this.active instanceof AudioProvider) {
       this.active.setMuted(muted);
     }

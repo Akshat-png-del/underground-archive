@@ -9,8 +9,6 @@ import {
   Shuffle,
   SkipBack,
   SkipForward,
-  Volume2,
-  VolumeX,
 } from "lucide-react";
 
 /** Unified stroke + sizing for bottom-bar transport icons. */
@@ -52,7 +50,5 @@ export const BarIcons = {
   Next: () => <BarIcon icon={SkipForward} size="md" />,
   Shuffle: () => <BarIcon icon={Shuffle} size="sm" />,
   Repeat: () => <BarIcon icon={Repeat} size="sm" />,
-  Volume: () => <BarIcon icon={Volume2} size="md" />,
-  VolumeMuted: () => <BarIcon icon={VolumeX} size="md" />,
   Queue: () => <BarIcon icon={ListMusic} size="md" />,
 };

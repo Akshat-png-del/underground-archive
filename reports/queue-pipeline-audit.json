@@ -1,0 +1,5503 @@
+{
+  "generatedAt": "2026-07-03T05:17:58.045Z",
+  "entries": [
+    {
+      "tMs": 517,
+      "detail": {
+        "id": 1,
+        "ts": 496.40000000037253,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 549,
+      "detail": {
+        "id": 2,
+        "ts": 535.7999999988824,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "mscQueueIndex": 0,
+        "queueLength": 0
+      }
+    },
+    {
+      "tMs": 549,
+      "detail": {
+        "id": 3,
+        "ts": 537.6999999992549,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 551,
+      "detail": {
+        "id": 4,
+        "ts": 537.9000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": null,
+        "targetActiveTrack": null,
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 628,
+      "detail": {
+        "id": 5,
+        "ts": 544.2999999988824,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 628,
+      "detail": {
+        "id": 6,
+        "ts": 545.9000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 7,
+        "ts": 546.5999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 8,
+        "ts": 547.4000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 9,
+        "ts": 548.0999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 10,
+        "ts": 548.7999999988824,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 11,
+        "ts": 549.5,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 12,
+        "ts": 550.0999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 13,
+        "ts": 550.7999999988824,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 14,
+        "ts": 551.5,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 15,
+        "ts": 552.1999999992549,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 16,
+        "ts": 552.9000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 17,
+        "ts": 553.5999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 18,
+        "ts": 554.2999999988824,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 19,
+        "ts": 555,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 20,
+        "ts": 557.0999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 21,
+        "ts": 557.9000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 22,
+        "ts": 558.5999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 23,
+        "ts": 559.4000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 24,
+        "ts": 560.0999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 25,
+        "ts": 561,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 630,
+      "detail": {
+        "id": 26,
+        "ts": 562.6999999992549,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 631,
+      "detail": {
+        "id": 27,
+        "ts": 563.1999999992549,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 631,
+      "detail": {
+        "id": 28,
+        "ts": 563.7999999988824,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 1957,
+      "detail": {
+        "id": 29,
+        "ts": 1858.199999999255,
+        "fn": "MediaSessionController.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::legacy",
+        "currentActiveTrack": null,
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueLength": 8,
+        "duplicatePlay": false,
+        "pendingPlay": false
+      }
+    },
+    {
+      "tMs": 1957,
+      "detail": {
+        "id": 30,
+        "ts": 1858.699999999255,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "applied",
+        "queueLength": 8,
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0
+      }
+    },
+    {
+      "tMs": 1958,
+      "detail": {
+        "id": 31,
+        "ts": 1858.699999999255,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "via_play",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueLength": 8,
+        "targetActiveTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 1958,
+      "detail": {
+        "id": 32,
+        "ts": 1859.0999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": true
+      }
+    },
+    {
+      "tMs": 1958,
+      "detail": {
+        "id": 33,
+        "ts": 1860,
+        "fn": "GlobalPlayerEngine.play",
+        "phase": "invoke",
+        "targetActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "trackChanged": true,
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 1959,
+      "detail": {
+        "id": 34,
+        "ts": 1879,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 1959,
+      "detail": {
+        "id": 35,
+        "ts": 1880.5999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 1959,
+      "detail": {
+        "id": 36,
+        "ts": 1893.9000000003725,
+        "fn": "ProviderRouter.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::legacy",
+        "providerKind": "spotify",
+        "extra": {
+          "generation": 1,
+          "activeKind": null
+        }
+      }
+    },
+    {
+      "tMs": 1959,
+      "detail": {
+        "id": 37,
+        "ts": 1895.4000000003725,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 1959,
+      "detail": {
+        "id": 38,
+        "ts": 1895.9000000003725,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 1959,
+      "detail": {
+        "id": 39,
+        "ts": 1895.9000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 1960,
+      "detail": {
+        "id": 40,
+        "ts": 1896.2999999988824,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 3728,
+      "detail": {
+        "id": 41,
+        "ts": 3701.699999999255,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 3728,
+      "detail": {
+        "id": 42,
+        "ts": 3702.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 3728,
+      "detail": {
+        "id": 43,
+        "ts": 3702.199999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 3728,
+      "detail": {
+        "id": 44,
+        "ts": 3702.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 3734,
+      "detail": {
+        "id": 45,
+        "ts": 3719,
+        "fn": "ProviderRouter.play",
+        "phase": "playback_confirmed",
+        "targetActiveTrack": "sara-landry::legacy",
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 3960,
+      "detail": {
+        "id": 46,
+        "ts": 3929.0999999996275,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::legacy",
+        "note": "",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 3961,
+      "detail": {
+        "id": 47,
+        "ts": 3929.7999999988824,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 3961,
+      "detail": {
+        "id": 48,
+        "ts": 3930.699999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 3962,
+      "detail": {
+        "id": 49,
+        "ts": 3930.9000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 3962,
+      "detail": {
+        "id": 50,
+        "ts": 3931.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 4710,
+      "detail": {
+        "id": 51,
+        "ts": 4662.799999998882,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::legacy",
+        "note": "spotify:track:0aMonkh8OKgqx1K0viRHRT",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 4711,
+      "detail": {
+        "id": 52,
+        "ts": 4663.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 4711,
+      "detail": {
+        "id": 53,
+        "ts": 4664.299999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 4711,
+      "detail": {
+        "id": 54,
+        "ts": 4664.4000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 4711,
+      "detail": {
+        "id": 55,
+        "ts": 4665.199999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 4723,
+      "detail": {
+        "id": 56,
+        "ts": 4687.0999999996275,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 4723,
+      "detail": {
+        "id": 57,
+        "ts": 4687.699999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 4723,
+      "detail": {
+        "id": 58,
+        "ts": 4687.799999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 4723,
+      "detail": {
+        "id": 59,
+        "ts": 4688.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 5355,
+      "detail": {
+        "id": 60,
+        "ts": 5317.699999999255,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::legacy",
+        "note": "spotify:track:0aMonkh8OKgqx1K0viRHRT",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 5355,
+      "detail": {
+        "id": 61,
+        "ts": 5318.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 5356,
+      "detail": {
+        "id": 62,
+        "ts": 5320.4000000003725,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 5356,
+      "detail": {
+        "id": 63,
+        "ts": 5320.799999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 5356,
+      "detail": {
+        "id": 64,
+        "ts": 5322.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 5745,
+      "detail": {
+        "id": 65,
+        "ts": 5713,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::legacy",
+        "note": "spotify:track:0aMonkh8OKgqx1K0viRHRT",
+        "extra": {
+          "position": 0.8,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 5745,
+      "detail": {
+        "id": 66,
+        "ts": 5713.9000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 5745,
+      "detail": {
+        "id": 67,
+        "ts": 5714.699999999255,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 5745,
+      "detail": {
+        "id": 68,
+        "ts": 5716,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 5745,
+      "detail": {
+        "id": 69,
+        "ts": 5716.0999999996275,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 5745,
+      "detail": {
+        "id": 70,
+        "ts": 5717.0999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 6807,
+      "detail": {
+        "id": 71,
+        "ts": 6777,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::legacy",
+        "note": "spotify:track:0aMonkh8OKgqx1K0viRHRT",
+        "extra": {
+          "position": 1.864,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 6807,
+      "detail": {
+        "id": 72,
+        "ts": 6778.199999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 6807,
+      "detail": {
+        "id": 73,
+        "ts": 6779.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 6807,
+      "detail": {
+        "id": 74,
+        "ts": 6781.699999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 6807,
+      "detail": {
+        "id": 75,
+        "ts": 6782,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::legacy",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 6807,
+      "detail": {
+        "id": 76,
+        "ts": 6783.5999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 7007,
+      "detail": {
+        "id": 77,
+        "ts": 6999.9000000003725,
+        "fn": "__queueTraceSample",
+        "phase": "after-initial-play",
+        "mscActiveTrack": "sara-landry::legacy",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::legacy",
+        "storeActiveTrack": "sara-landry::legacy",
+        "uiActiveTrack": "Sara Landry",
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "storeQueueIndex": 0,
+        "queueLength": 8,
+        "extra": {
+          "label": "after-initial-play",
+          "ts": 1783055848700,
+          "msc": {
+            "activeTrack": "sara-landry::legacy",
+            "queueIndex": 0,
+            "queueLength": 8,
+            "currentTime": 1.864
+          },
+          "engine": {
+            "activeTrack": "sara-landry::legacy",
+            "mode": "spotify"
+          },
+          "store": {
+            "activeTrack": "sara-landry::legacy",
+            "queueIndex": 0,
+            "queueLength": 8
+          },
+          "snapshot": {
+            "activeTrack": "sara-landry::legacy",
+            "queueIndex": 0,
+            "queueLength": 8
+          },
+          "ui": {
+            "title": "Sara Landry"
+          }
+        }
+      }
+    },
+    {
+      "tMs": 7057,
+      "detail": {
+        "id": 78,
+        "ts": 7002.5999999996275,
+        "fn": "MediaSessionController.next",
+        "phase": "enter",
+        "event": "next",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 1,
+        "queueLength": 8,
+        "currentActiveTrack": "sara-landry::legacy",
+        "targetActiveTrack": "sara-landry::pressure"
+      }
+    },
+    {
+      "tMs": 7057,
+      "detail": {
+        "id": 79,
+        "ts": 7003.0999999996275,
+        "fn": "MediaSessionController.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::pressure",
+        "currentActiveTrack": "sara-landry::legacy",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 1,
+        "queueLength": 8,
+        "duplicatePlay": false,
+        "pendingPlay": false
+      }
+    },
+    {
+      "tMs": 7057,
+      "detail": {
+        "id": 80,
+        "ts": 7003.5999999996275,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "applied",
+        "queueLength": 8,
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1
+      }
+    },
+    {
+      "tMs": 7057,
+      "detail": {
+        "id": 81,
+        "ts": 7003.5999999996275,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "via_play",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueLength": 8,
+        "targetActiveTrack": "sara-landry::pressure"
+      }
+    },
+    {
+      "tMs": 7057,
+      "detail": {
+        "id": 82,
+        "ts": 7003.9000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::legacy",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": true
+      }
+    },
+    {
+      "tMs": 7057,
+      "detail": {
+        "id": 83,
+        "ts": 7004.9000000003725,
+        "fn": "GlobalPlayerEngine.play",
+        "phase": "invoke",
+        "targetActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "trackChanged": true,
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 7060,
+      "detail": {
+        "id": 84,
+        "ts": 7023.199999999255,
+        "fn": "ProviderRouter.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::pressure",
+        "providerKind": "spotify",
+        "extra": {
+          "generation": 2,
+          "activeKind": "spotify"
+        }
+      }
+    },
+    {
+      "tMs": 7060,
+      "detail": {
+        "id": 85,
+        "ts": 7027.4000000003725,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 7060,
+      "detail": {
+        "id": 86,
+        "ts": 7031.0999999996275,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 7060,
+      "detail": {
+        "id": 87,
+        "ts": 7031.5999999996275,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 7060,
+      "detail": {
+        "id": 88,
+        "ts": 7031.799999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 7073,
+      "detail": {
+        "id": 89,
+        "ts": 7032.199999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 7646,
+      "detail": {
+        "id": 90,
+        "ts": 7623.5999999996275,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 7648,
+      "detail": {
+        "id": 91,
+        "ts": 7624.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 7648,
+      "detail": {
+        "id": 92,
+        "ts": 7624.199999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 7648,
+      "detail": {
+        "id": 93,
+        "ts": 7624.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 7649,
+      "detail": {
+        "id": 94,
+        "ts": 7637.9000000003725,
+        "fn": "ProviderRouter.play",
+        "phase": "playback_confirmed",
+        "targetActiveTrack": "sara-landry::pressure",
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 7871,
+      "detail": {
+        "id": 95,
+        "ts": 7846.199999999255,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::pressure",
+        "note": "",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 7871,
+      "detail": {
+        "id": 96,
+        "ts": 7847.699999999255,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 7871,
+      "detail": {
+        "id": 97,
+        "ts": 7849.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 7871,
+      "detail": {
+        "id": 98,
+        "ts": 7849.4000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 7871,
+      "detail": {
+        "id": 99,
+        "ts": 7850.5999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 100,
+        "ts": 8181.0999999996275,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::pressure",
+        "note": "spotify:track:3LgA6sFAEZ30TqeTWmGDlV",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 101,
+        "ts": 8182.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 102,
+        "ts": 8183.5,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 103,
+        "ts": 8183.5999999996275,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 104,
+        "ts": 8184.0999999996275,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 105,
+        "ts": 8197.599999999627,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 106,
+        "ts": 8198.099999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 107,
+        "ts": 8198.199999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 8221,
+      "detail": {
+        "id": 108,
+        "ts": 8198.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 8901,
+      "detail": {
+        "id": 109,
+        "ts": 8879.900000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::pressure",
+        "note": "spotify:track:3LgA6sFAEZ30TqeTWmGDlV",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 8902,
+      "detail": {
+        "id": 110,
+        "ts": 8880.400000000373,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 8902,
+      "detail": {
+        "id": 111,
+        "ts": 8880.900000000373,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 8902,
+      "detail": {
+        "id": 112,
+        "ts": 8881,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 8902,
+      "detail": {
+        "id": 113,
+        "ts": 8881.400000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 9310,
+      "detail": {
+        "id": 114,
+        "ts": 9275.900000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::pressure",
+        "note": "spotify:track:3LgA6sFAEZ30TqeTWmGDlV",
+        "extra": {
+          "position": 0.976,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 9310,
+      "detail": {
+        "id": 115,
+        "ts": 9276.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 9310,
+      "detail": {
+        "id": 116,
+        "ts": 9277.400000000373,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 9310,
+      "detail": {
+        "id": 117,
+        "ts": 9278.599999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 9310,
+      "detail": {
+        "id": 118,
+        "ts": 9278.799999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 9310,
+      "detail": {
+        "id": 119,
+        "ts": 9279.900000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 10370,
+      "detail": {
+        "id": 120,
+        "ts": 10338.099999999627,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::pressure",
+        "note": "spotify:track:3LgA6sFAEZ30TqeTWmGDlV",
+        "extra": {
+          "position": 2.04,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 10371,
+      "detail": {
+        "id": 121,
+        "ts": 10338.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 10373,
+      "detail": {
+        "id": 122,
+        "ts": 10339.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 10373,
+      "detail": {
+        "id": 123,
+        "ts": 10340.799999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 10373,
+      "detail": {
+        "id": 124,
+        "ts": 10341,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 10373,
+      "detail": {
+        "id": 125,
+        "ts": 10342,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 11431,
+      "detail": {
+        "id": 126,
+        "ts": 11399.699999999255,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::pressure",
+        "note": "spotify:track:3LgA6sFAEZ30TqeTWmGDlV",
+        "extra": {
+          "position": 3.101,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 11431,
+      "detail": {
+        "id": 127,
+        "ts": 11400.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 11431,
+      "detail": {
+        "id": 128,
+        "ts": 11401,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 11431,
+      "detail": {
+        "id": 129,
+        "ts": 11402.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 11431,
+      "detail": {
+        "id": 130,
+        "ts": 11402.299999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 11431,
+      "detail": {
+        "id": 131,
+        "ts": 11403.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 12498,
+      "detail": {
+        "id": 132,
+        "ts": 12464.5,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::pressure",
+        "note": "spotify:track:3LgA6sFAEZ30TqeTWmGDlV",
+        "extra": {
+          "position": 4.167,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 12498,
+      "detail": {
+        "id": 133,
+        "ts": 12465.400000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 12498,
+      "detail": {
+        "id": 134,
+        "ts": 12466.199999999255,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 12498,
+      "detail": {
+        "id": 135,
+        "ts": 12467.5,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 1,
+        "queueReconciledIndex": 1
+      }
+    },
+    {
+      "tMs": 12498,
+      "detail": {
+        "id": 136,
+        "ts": 12467.699999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 1,
+        "currentQueueIndex": 1,
+        "mscActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::pressure",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 12498,
+      "detail": {
+        "id": 137,
+        "ts": 12468.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 13066,
+      "detail": {
+        "id": 138,
+        "ts": 13057.599999999627,
+        "fn": "__queueTraceSample",
+        "phase": "after-next",
+        "mscActiveTrack": "sara-landry::pressure",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::pressure",
+        "storeActiveTrack": "sara-landry::pressure",
+        "uiActiveTrack": "Sara Landry",
+        "mscQueueIndex": 1,
+        "snapshotQueueIndex": 1,
+        "storeQueueIndex": 1,
+        "queueLength": 8,
+        "extra": {
+          "label": "after-next",
+          "ts": 1783055854758,
+          "msc": {
+            "activeTrack": "sara-landry::pressure",
+            "queueIndex": 1,
+            "queueLength": 8,
+            "currentTime": 4.167
+          },
+          "engine": {
+            "activeTrack": "sara-landry::pressure",
+            "mode": "spotify"
+          },
+          "store": {
+            "activeTrack": "sara-landry::pressure",
+            "queueIndex": 1,
+            "queueLength": 8
+          },
+          "snapshot": {
+            "activeTrack": "sara-landry::pressure",
+            "queueIndex": 1,
+            "queueLength": 8
+          },
+          "ui": {
+            "title": "Sara Landry"
+          }
+        }
+      }
+    },
+    {
+      "tMs": 13117,
+      "detail": {
+        "id": 139,
+        "ts": 13061.299999998882,
+        "fn": "MediaSessionController.next",
+        "phase": "enter",
+        "event": "next",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 2,
+        "queueLength": 8,
+        "currentActiveTrack": "sara-landry::pressure",
+        "targetActiveTrack": "sara-landry::prisoner"
+      }
+    },
+    {
+      "tMs": 13117,
+      "detail": {
+        "id": 140,
+        "ts": 13062.199999999255,
+        "fn": "MediaSessionController.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "currentActiveTrack": "sara-landry::pressure",
+        "currentQueueIndex": 1,
+        "targetQueueIndex": 2,
+        "queueLength": 8,
+        "duplicatePlay": false,
+        "pendingPlay": false
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 141,
+        "ts": 13062.900000000373,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "applied",
+        "queueLength": 8,
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 142,
+        "ts": 13063,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "via_play",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueLength": 8,
+        "targetActiveTrack": "sara-landry::prisoner"
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 143,
+        "ts": 13063.5,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::pressure",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": true
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 144,
+        "ts": 13065.5,
+        "fn": "GlobalPlayerEngine.play",
+        "phase": "invoke",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "trackChanged": true,
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 145,
+        "ts": 13087.699999999255,
+        "fn": "ProviderRouter.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "providerKind": "spotify",
+        "extra": {
+          "generation": 3,
+          "activeKind": "spotify"
+        }
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 146,
+        "ts": 13090.099999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 147,
+        "ts": 13090.599999999627,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 148,
+        "ts": 13091.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 149,
+        "ts": 13091.400000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 13118,
+      "detail": {
+        "id": 150,
+        "ts": 13091.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 13508,
+      "detail": {
+        "id": 151,
+        "ts": 13486,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 13508,
+      "detail": {
+        "id": 152,
+        "ts": 13486.599999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 13508,
+      "detail": {
+        "id": 153,
+        "ts": 13486.599999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 13508,
+      "detail": {
+        "id": 154,
+        "ts": 13487.099999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 13510,
+      "detail": {
+        "id": 155,
+        "ts": 13500,
+        "fn": "ProviderRouter.play",
+        "phase": "playback_confirmed",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 13741,
+      "detail": {
+        "id": 156,
+        "ts": 13707.799999998882,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 13741,
+      "detail": {
+        "id": 157,
+        "ts": 13708.599999999627,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 13741,
+      "detail": {
+        "id": 158,
+        "ts": 13709.900000000373,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 13741,
+      "detail": {
+        "id": 159,
+        "ts": 13710,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 13741,
+      "detail": {
+        "id": 160,
+        "ts": 13711,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 14051,
+      "detail": {
+        "id": 161,
+        "ts": 14019.5,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 14051,
+      "detail": {
+        "id": 162,
+        "ts": 14019.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 14053,
+      "detail": {
+        "id": 163,
+        "ts": 14020.299999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 14053,
+      "detail": {
+        "id": 164,
+        "ts": 14020.400000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 14053,
+      "detail": {
+        "id": 165,
+        "ts": 14020.900000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 14053,
+      "detail": {
+        "id": 166,
+        "ts": 14032.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 14053,
+      "detail": {
+        "id": 167,
+        "ts": 14033.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 14053,
+      "detail": {
+        "id": 168,
+        "ts": 14033.299999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 14053,
+      "detail": {
+        "id": 169,
+        "ts": 14033.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 14711,
+      "detail": {
+        "id": 170,
+        "ts": 14677.400000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 14711,
+      "detail": {
+        "id": 171,
+        "ts": 14678.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 14711,
+      "detail": {
+        "id": 172,
+        "ts": 14679.799999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 14711,
+      "detail": {
+        "id": 173,
+        "ts": 14680,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 14711,
+      "detail": {
+        "id": 174,
+        "ts": 14681.099999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 15104,
+      "detail": {
+        "id": 175,
+        "ts": 15072.099999999627,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 0.992,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 15104,
+      "detail": {
+        "id": 176,
+        "ts": 15073,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 15106,
+      "detail": {
+        "id": 177,
+        "ts": 15073.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 15106,
+      "detail": {
+        "id": 178,
+        "ts": 15075.099999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 15106,
+      "detail": {
+        "id": 179,
+        "ts": 15075.299999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 15106,
+      "detail": {
+        "id": 180,
+        "ts": 15076.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 16167,
+      "detail": {
+        "id": 181,
+        "ts": 16134.5,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 2.054,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 16167,
+      "detail": {
+        "id": 182,
+        "ts": 16135.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 16167,
+      "detail": {
+        "id": 183,
+        "ts": 16136.199999999255,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 16168,
+      "detail": {
+        "id": 184,
+        "ts": 16137.599999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 16168,
+      "detail": {
+        "id": 185,
+        "ts": 16137.799999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 16168,
+      "detail": {
+        "id": 186,
+        "ts": 16138.900000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 17232,
+      "detail": {
+        "id": 187,
+        "ts": 17198.900000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 3.12,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 17232,
+      "detail": {
+        "id": 188,
+        "ts": 17199.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 17232,
+      "detail": {
+        "id": 189,
+        "ts": 17200.299999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 17232,
+      "detail": {
+        "id": 190,
+        "ts": 17201.5,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 17232,
+      "detail": {
+        "id": 191,
+        "ts": 17201.699999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 17232,
+      "detail": {
+        "id": 192,
+        "ts": 17202.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 18296,
+      "detail": {
+        "id": 193,
+        "ts": 18260.900000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 4.171,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 18296,
+      "detail": {
+        "id": 194,
+        "ts": 18261.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 18296,
+      "detail": {
+        "id": 195,
+        "ts": 18262.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 18296,
+      "detail": {
+        "id": 196,
+        "ts": 18263.699999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 18296,
+      "detail": {
+        "id": 197,
+        "ts": 18263.900000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 18296,
+      "detail": {
+        "id": 198,
+        "ts": 18265,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 19114,
+      "detail": {
+        "id": 199,
+        "ts": 19108.299999998882,
+        "fn": "__queueTraceSample",
+        "phase": "after-second-next",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "storeActiveTrack": "sara-landry::prisoner",
+        "uiActiveTrack": "Sara Landry",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "storeQueueIndex": 2,
+        "queueLength": 8,
+        "extra": {
+          "label": "after-second-next",
+          "ts": 1783055860809,
+          "msc": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8,
+            "currentTime": 4.171
+          },
+          "engine": {
+            "activeTrack": "sara-landry::prisoner",
+            "mode": "spotify"
+          },
+          "store": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8
+          },
+          "snapshot": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8
+          },
+          "ui": {
+            "title": "Sara Landry"
+          }
+        }
+      }
+    },
+    {
+      "tMs": 19132,
+      "detail": {
+        "id": 200,
+        "ts": 19109.900000000373,
+        "fn": "MediaSessionController.prev",
+        "phase": "restart_current",
+        "event": "prev",
+        "currentTime": 4.171,
+        "note": "currentTime > 3 → commitSeek(0)"
+      }
+    },
+    {
+      "tMs": 19132,
+      "detail": {
+        "id": 201,
+        "ts": 19110.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 19132,
+      "detail": {
+        "id": 202,
+        "ts": 19112.199999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 19133,
+      "detail": {
+        "id": 203,
+        "ts": 19112.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 19133,
+      "detail": {
+        "id": 204,
+        "ts": 19113.099999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 19133,
+      "detail": {
+        "id": 205,
+        "ts": 19113.099999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 19133,
+      "detail": {
+        "id": 206,
+        "ts": 19113.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 19353,
+      "detail": {
+        "id": 207,
+        "ts": 19322.299999998882,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 5.234,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 19353,
+      "detail": {
+        "id": 208,
+        "ts": 19323.099999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 19355,
+      "detail": {
+        "id": 209,
+        "ts": 19323.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 19355,
+      "detail": {
+        "id": 210,
+        "ts": 19325,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 19355,
+      "detail": {
+        "id": 211,
+        "ts": 19325.099999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 19355,
+      "detail": {
+        "id": 212,
+        "ts": 19326.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 20416,
+      "detail": {
+        "id": 213,
+        "ts": 20384.400000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 6.298,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 20416,
+      "detail": {
+        "id": 214,
+        "ts": 20385.199999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 20416,
+      "detail": {
+        "id": 215,
+        "ts": 20385.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 20416,
+      "detail": {
+        "id": 216,
+        "ts": 20387.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 20416,
+      "detail": {
+        "id": 217,
+        "ts": 20387.400000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 20416,
+      "detail": {
+        "id": 218,
+        "ts": 20388.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 21138,
+      "detail": {
+        "id": 219,
+        "ts": 21129.699999999255,
+        "fn": "__queueTraceSample",
+        "phase": "after-prev",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "storeActiveTrack": "sara-landry::prisoner",
+        "uiActiveTrack": "Sara Landry",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "storeQueueIndex": 2,
+        "queueLength": 8,
+        "extra": {
+          "label": "after-prev",
+          "ts": 1783055862830,
+          "msc": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8,
+            "currentTime": 0
+          },
+          "engine": {
+            "activeTrack": "sara-landry::prisoner",
+            "mode": "spotify"
+          },
+          "store": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8
+          },
+          "snapshot": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8
+          },
+          "ui": {
+            "title": "Sara Landry"
+          }
+        }
+      }
+    },
+    {
+      "tMs": 21167,
+      "detail": {
+        "id": 220,
+        "ts": 21135.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 21167,
+      "detail": {
+        "id": 221,
+        "ts": 21137.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 21168,
+      "detail": {
+        "id": 222,
+        "ts": 21138.299999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 21168,
+      "detail": {
+        "id": 223,
+        "ts": 21139.299999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 21168,
+      "detail": {
+        "id": 224,
+        "ts": 21139.5,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 21168,
+      "detail": {
+        "id": 225,
+        "ts": 21140.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 21480,
+      "detail": {
+        "id": 226,
+        "ts": 21447.799999998882,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 7.361,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 21481,
+      "detail": {
+        "id": 227,
+        "ts": 21448.5,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 21481,
+      "detail": {
+        "id": 228,
+        "ts": 21449.299999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 21481,
+      "detail": {
+        "id": 229,
+        "ts": 21450.699999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 21481,
+      "detail": {
+        "id": 230,
+        "ts": 21450.799999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 21481,
+      "detail": {
+        "id": 231,
+        "ts": 21451.900000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 22002,
+      "detail": {
+        "id": 232,
+        "ts": 21963.299999998882,
+        "fn": "MediaSessionController.prev",
+        "phase": "restart_current",
+        "event": "prev",
+        "currentTime": 7.361,
+        "note": "currentTime > 3 → commitSeek(0)"
+      }
+    },
+    {
+      "tMs": 22002,
+      "detail": {
+        "id": 233,
+        "ts": 21964.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 22002,
+      "detail": {
+        "id": 234,
+        "ts": 21967,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 22004,
+      "detail": {
+        "id": 235,
+        "ts": 21967.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 22004,
+      "detail": {
+        "id": 236,
+        "ts": 21968.599999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 22004,
+      "detail": {
+        "id": 237,
+        "ts": 21968.699999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 22005,
+      "detail": {
+        "id": 238,
+        "ts": 21970,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 22559,
+      "detail": {
+        "id": 239,
+        "ts": 22526,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 8.442,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 22560,
+      "detail": {
+        "id": 240,
+        "ts": 22526.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 22560,
+      "detail": {
+        "id": 241,
+        "ts": 22527.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 22560,
+      "detail": {
+        "id": 242,
+        "ts": 22528.799999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 22560,
+      "detail": {
+        "id": 243,
+        "ts": 22529,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 22560,
+      "detail": {
+        "id": 244,
+        "ts": 22530.199999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 23620,
+      "detail": {
+        "id": 245,
+        "ts": 23588,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 9.506,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 23620,
+      "detail": {
+        "id": 246,
+        "ts": 23588.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 23622,
+      "detail": {
+        "id": 247,
+        "ts": 23589.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 23622,
+      "detail": {
+        "id": 248,
+        "ts": 23590.900000000373,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 23622,
+      "detail": {
+        "id": 249,
+        "ts": 23591.099999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 23622,
+      "detail": {
+        "id": 250,
+        "ts": 23592.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 24684,
+      "detail": {
+        "id": 251,
+        "ts": 24650.799999998882,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 10.57,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 24684,
+      "detail": {
+        "id": 252,
+        "ts": 24651.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 24684,
+      "detail": {
+        "id": 253,
+        "ts": 24652.099999999627,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 24685,
+      "detail": {
+        "id": 254,
+        "ts": 24653.5,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 24685,
+      "detail": {
+        "id": 255,
+        "ts": 24653.699999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 24685,
+      "detail": {
+        "id": 256,
+        "ts": 24654.900000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 25746,
+      "detail": {
+        "id": 257,
+        "ts": 25715.699999999255,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 11.635,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 25747,
+      "detail": {
+        "id": 258,
+        "ts": 25716.400000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 25747,
+      "detail": {
+        "id": 259,
+        "ts": 25717.099999999627,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 25747,
+      "detail": {
+        "id": 260,
+        "ts": 25718.400000000373,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 25747,
+      "detail": {
+        "id": 261,
+        "ts": 25718.599999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 25747,
+      "detail": {
+        "id": 262,
+        "ts": 25719.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 26795,
+      "detail": {
+        "id": 263,
+        "ts": 26775.400000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 12.697,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 26796,
+      "detail": {
+        "id": 264,
+        "ts": 26775.699999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 26796,
+      "detail": {
+        "id": 265,
+        "ts": 26776.099999999627,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 26796,
+      "detail": {
+        "id": 266,
+        "ts": 26776.599999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 26796,
+      "detail": {
+        "id": 267,
+        "ts": 26776.599999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 26796,
+      "detail": {
+        "id": 268,
+        "ts": 26777.199999999255,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 27879,
+      "detail": {
+        "id": 269,
+        "ts": 27840.099999999627,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "note": "spotify:track:2Rb5DcNmRKGmMGB48cY8cy",
+        "extra": {
+          "position": 13.749,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 27880,
+      "detail": {
+        "id": 270,
+        "ts": 27841.299999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 27880,
+      "detail": {
+        "id": 271,
+        "ts": 27842.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 27880,
+      "detail": {
+        "id": 272,
+        "ts": 27844.400000000373,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 2,
+        "queueReconciledIndex": 2
+      }
+    },
+    {
+      "tMs": 27880,
+      "detail": {
+        "id": 273,
+        "ts": 27844.599999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 2,
+        "currentQueueIndex": 2,
+        "mscActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::prisoner",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 27880,
+      "detail": {
+        "id": 274,
+        "ts": 27845.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 28010,
+      "detail": {
+        "id": 275,
+        "ts": 28002.599999999627,
+        "fn": "__queueTraceSample",
+        "phase": "after-prev-from-start",
+        "mscActiveTrack": "sara-landry::prisoner",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::prisoner",
+        "storeActiveTrack": "sara-landry::prisoner",
+        "uiActiveTrack": "Sara Landry",
+        "mscQueueIndex": 2,
+        "snapshotQueueIndex": 2,
+        "storeQueueIndex": 2,
+        "queueLength": 8,
+        "extra": {
+          "label": "after-prev-from-start",
+          "ts": 1783055869703,
+          "msc": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8,
+            "currentTime": 13.749
+          },
+          "engine": {
+            "activeTrack": "sara-landry::prisoner",
+            "mode": "spotify"
+          },
+          "store": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8
+          },
+          "snapshot": {
+            "activeTrack": "sara-landry::prisoner",
+            "queueIndex": 2,
+            "queueLength": 8
+          },
+          "ui": {
+            "title": "Sara Landry"
+          }
+        }
+      }
+    },
+    {
+      "tMs": 28093,
+      "detail": {
+        "id": 276,
+        "ts": 28005.299999998882,
+        "fn": "MediaSessionController.advanceQueueOnEnd",
+        "phase": "enter",
+        "event": "auto_advance",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 3,
+        "queueLength": 8,
+        "currentActiveTrack": "sara-landry::prisoner",
+        "targetActiveTrack": "sara-landry::grief-into-rage"
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 277,
+        "ts": 28006.599999999627,
+        "fn": "MediaSessionController.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "currentActiveTrack": "sara-landry::prisoner",
+        "currentQueueIndex": 2,
+        "targetQueueIndex": 3,
+        "queueLength": 8,
+        "duplicatePlay": false,
+        "pendingPlay": false
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 278,
+        "ts": 28007.299999998882,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "applied",
+        "queueLength": 8,
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 279,
+        "ts": 28007.400000000373,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "via_play",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueLength": 8,
+        "targetActiveTrack": "sara-landry::grief-into-rage"
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 280,
+        "ts": 28007.900000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::prisoner",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": true
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 281,
+        "ts": 28009.400000000373,
+        "fn": "GlobalPlayerEngine.play",
+        "phase": "invoke",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": true,
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 282,
+        "ts": 28031.099999999627,
+        "fn": "ProviderRouter.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "providerKind": "spotify",
+        "extra": {
+          "generation": 4,
+          "activeKind": "spotify"
+        }
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 283,
+        "ts": 28034.099999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 284,
+        "ts": 28034.5,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 285,
+        "ts": 28035.099999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 286,
+        "ts": 28035.299999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 28094,
+      "detail": {
+        "id": 287,
+        "ts": 28035.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 28373,
+      "detail": {
+        "id": 288,
+        "ts": 28352,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 28373,
+      "detail": {
+        "id": 289,
+        "ts": 28352.599999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 28373,
+      "detail": {
+        "id": 290,
+        "ts": 28352.599999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 28373,
+      "detail": {
+        "id": 291,
+        "ts": 28353,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 28375,
+      "detail": {
+        "id": 292,
+        "ts": 28365,
+        "fn": "ProviderRouter.play",
+        "phase": "playback_confirmed",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 28607,
+      "detail": {
+        "id": 293,
+        "ts": 28573.099999999627,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "note": "",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 28609,
+      "detail": {
+        "id": 294,
+        "ts": 28574.099999999627,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 28609,
+      "detail": {
+        "id": 295,
+        "ts": 28575.799999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 28609,
+      "detail": {
+        "id": 296,
+        "ts": 28576,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 28609,
+      "detail": {
+        "id": 297,
+        "ts": 28577.099999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 298,
+        "ts": 28932.699999999255,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "note": "spotify:track:0JmFNORLiAQwtz48DsqeD0",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 299,
+        "ts": 28934,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 300,
+        "ts": 28935.299999998882,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 301,
+        "ts": 28935.5,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 302,
+        "ts": 28936.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 303,
+        "ts": 28951,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 304,
+        "ts": 28951.5,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 305,
+        "ts": 28951.699999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 28974,
+      "detail": {
+        "id": 306,
+        "ts": 28952.099999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 29618,
+      "detail": {
+        "id": 307,
+        "ts": 29583.799999998882,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "note": "spotify:track:0JmFNORLiAQwtz48DsqeD0",
+        "extra": {
+          "position": 0,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 29618,
+      "detail": {
+        "id": 308,
+        "ts": 29584.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 29618,
+      "detail": {
+        "id": 309,
+        "ts": 29586.099999999627,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 29618,
+      "detail": {
+        "id": 310,
+        "ts": 29586.299999998882,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 29618,
+      "detail": {
+        "id": 311,
+        "ts": 29587.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 30019,
+      "detail": {
+        "id": 312,
+        "ts": 29981.400000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "note": "spotify:track:0JmFNORLiAQwtz48DsqeD0",
+        "extra": {
+          "position": 0.981,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 30019,
+      "detail": {
+        "id": 313,
+        "ts": 29982.400000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 30019,
+      "detail": {
+        "id": 314,
+        "ts": 29983.400000000373,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 30019,
+      "detail": {
+        "id": 315,
+        "ts": 29985.400000000373,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 30019,
+      "detail": {
+        "id": 316,
+        "ts": 29985.699999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 30020,
+      "detail": {
+        "id": 317,
+        "ts": 29987,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 31060,
+      "detail": {
+        "id": 318,
+        "ts": 31041.199999999255,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "note": "spotify:track:0JmFNORLiAQwtz48DsqeD0",
+        "extra": {
+          "position": 2.043,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 31060,
+      "detail": {
+        "id": 319,
+        "ts": 31041.400000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 31061,
+      "detail": {
+        "id": 320,
+        "ts": 31041.799999998882,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 31061,
+      "detail": {
+        "id": 321,
+        "ts": 31042.199999999255,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 31061,
+      "detail": {
+        "id": 322,
+        "ts": 31042.199999999255,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 31061,
+      "detail": {
+        "id": 323,
+        "ts": 31042.599999999627,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 32143,
+      "detail": {
+        "id": 324,
+        "ts": 32104,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "note": "spotify:track:0JmFNORLiAQwtz48DsqeD0",
+        "extra": {
+          "position": 3.107,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 32145,
+      "detail": {
+        "id": 325,
+        "ts": 32104.799999998882,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 32145,
+      "detail": {
+        "id": 326,
+        "ts": 32105.699999999255,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 32145,
+      "detail": {
+        "id": 327,
+        "ts": 32107.5,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 32145,
+      "detail": {
+        "id": 328,
+        "ts": 32107.599999999627,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 32145,
+      "detail": {
+        "id": 329,
+        "ts": 32108.900000000373,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 33203,
+      "detail": {
+        "id": 330,
+        "ts": 33167,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "note": "spotify:track:0JmFNORLiAQwtz48DsqeD0",
+        "extra": {
+          "position": 4.169,
+          "staleRisk": false
+        }
+      }
+    },
+    {
+      "tMs": 33203,
+      "detail": {
+        "id": 331,
+        "ts": 33168.29999999888,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 33203,
+      "detail": {
+        "id": 332,
+        "ts": 33169.199999999255,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 33203,
+      "detail": {
+        "id": 333,
+        "ts": 33170.5,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 33203,
+      "detail": {
+        "id": 334,
+        "ts": 33170.59999999963,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 33203,
+      "detail": {
+        "id": 335,
+        "ts": 33171.79999999888,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 34099,
+      "detail": {
+        "id": 336,
+        "ts": 34091.199999999255,
+        "fn": "__queueTraceSample",
+        "phase": "after-auto-advance",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "storeActiveTrack": "sara-landry::grief-into-rage",
+        "uiActiveTrack": "Sara Landry",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "storeQueueIndex": 3,
+        "queueLength": 8,
+        "extra": {
+          "label": "after-auto-advance",
+          "ts": 1783055875792,
+          "msc": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "queueIndex": 3,
+            "queueLength": 8,
+            "currentTime": 4.169
+          },
+          "engine": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "mode": "spotify"
+          },
+          "store": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "queueIndex": 3,
+            "queueLength": 8
+          },
+          "snapshot": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "queueIndex": 3,
+            "queueLength": 8
+          },
+          "ui": {
+            "title": "Sara Landry"
+          }
+        }
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 1,
+        "ts": 383.59999999962747,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "snapshotActiveTrack": null,
+        "mscQueueIndex": 0,
+        "snapshotQueueIndex": 0,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 2,
+        "ts": 392.7999999988824,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": null,
+        "engineActiveTrack": null,
+        "mscQueueIndex": 0,
+        "queueLength": 0
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 3,
+        "ts": 395.2999999988824,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 0,
+        "queueReconciledIndex": 0
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 4,
+        "ts": 395.5,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 0,
+        "currentQueueIndex": 0,
+        "mscActiveTrack": null,
+        "targetActiveTrack": null,
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 5,
+        "ts": 402.19999999925494,
+        "fn": "MediaSessionController.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "currentActiveTrack": null,
+        "currentQueueIndex": 0,
+        "targetQueueIndex": 3,
+        "queueLength": 8,
+        "duplicatePlay": false,
+        "pendingPlay": false
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 6,
+        "ts": 403.69999999925494,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "applied",
+        "queueLength": 8,
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 7,
+        "ts": 403.90000000037253,
+        "fn": "MediaSessionQueueSession.setQueue",
+        "phase": "via_play",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueLength": 8,
+        "targetActiveTrack": "sara-landry::grief-into-rage"
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 8,
+        "ts": 408,
+        "fn": "GlobalPlayerEngine.play",
+        "phase": "invoke",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": true,
+        "providerKind": "spotify"
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 9,
+        "ts": 421.2999999988824,
+        "fn": "ProviderRouter.play",
+        "phase": "enter",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "providerKind": "spotify",
+        "extra": {
+          "generation": 1,
+          "activeKind": null
+        }
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 10,
+        "ts": 422.19999999925494,
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "phase": "enter",
+        "trackChanged": false,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "queueLength": 8
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 11,
+        "ts": 422.7999999988824,
+        "fn": "MediaSessionQueueSession.applyQueueIndex",
+        "phase": "applied",
+        "currentQueueIndex": 3,
+        "targetQueueIndex": 3,
+        "queueReconciledIndex": 3
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 12,
+        "ts": 422.90000000037253,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "queue_index",
+        "queueReconciledIndex": 3,
+        "currentQueueIndex": 3,
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "targetActiveTrack": "sara-landry::grief-into-rage",
+        "trackChanged": false,
+        "transportPatched": true
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 13,
+        "ts": 429.19999999925494,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 14,
+        "ts": 430.7999999988824,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 15,
+        "ts": 431.59999999962747,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 16,
+        "ts": 432.69999999925494,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 34615,
+      "detail": {
+        "id": 17,
+        "ts": 454.5,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 34616,
+      "detail": {
+        "id": 18,
+        "ts": 456.09999999962747,
+        "fn": "useFinalPlaybackSnapshot.toFinalSnapshot",
+        "phase": "commit",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "trackChanged": false
+      }
+    },
+    {
+      "tMs": 36326,
+      "detail": {
+        "id": 19,
+        "ts": 2220.9000000003725,
+        "fn": "__queueTraceSample",
+        "phase": "after-navigate",
+        "mscActiveTrack": "sara-landry::grief-into-rage",
+        "engineActiveTrack": "sara-landry::grief-into-rage",
+        "snapshotActiveTrack": "sara-landry::grief-into-rage",
+        "storeActiveTrack": "sara-landry::grief-into-rage",
+        "uiActiveTrack": "Sara Landry",
+        "mscQueueIndex": 3,
+        "snapshotQueueIndex": 3,
+        "storeQueueIndex": 3,
+        "queueLength": 8,
+        "extra": {
+          "label": "after-navigate",
+          "ts": 1783055878020,
+          "msc": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "queueIndex": 3,
+            "queueLength": 8,
+            "currentTime": 4.169
+          },
+          "engine": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "mode": "spotify"
+          },
+          "store": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "queueIndex": 3,
+            "queueLength": 8
+          },
+          "snapshot": {
+            "activeTrack": "sara-landry::grief-into-rage",
+            "queueIndex": 3,
+            "queueLength": 8
+          },
+          "ui": {
+            "title": "Sara Landry"
+          }
+        }
+      }
+    }
+  ],
+  "samples": [
+    {
+      "label": "after-initial-play",
+      "tMs": 6992,
+      "data": {
+        "label": "after-initial-play",
+        "ts": 1783055848700,
+        "msc": {
+          "activeTrack": "sara-landry::legacy",
+          "queueIndex": 0,
+          "queueLength": 8,
+          "currentTime": 1.864
+        },
+        "engine": {
+          "activeTrack": "sara-landry::legacy",
+          "mode": "spotify"
+        },
+        "store": {
+          "activeTrack": "sara-landry::legacy",
+          "queueIndex": 0,
+          "queueLength": 8
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::legacy",
+          "queueIndex": 0,
+          "queueLength": 8
+        },
+        "ui": {
+          "title": "Sara Landry"
+        }
+      },
+      "divergence": null
+    },
+    {
+      "label": "after-next",
+      "tMs": 13060,
+      "data": {
+        "label": "after-next",
+        "ts": 1783055854758,
+        "msc": {
+          "activeTrack": "sara-landry::pressure",
+          "queueIndex": 1,
+          "queueLength": 8,
+          "currentTime": 4.167
+        },
+        "engine": {
+          "activeTrack": "sara-landry::pressure",
+          "mode": "spotify"
+        },
+        "store": {
+          "activeTrack": "sara-landry::pressure",
+          "queueIndex": 1,
+          "queueLength": 8
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::pressure",
+          "queueIndex": 1,
+          "queueLength": 8
+        },
+        "ui": {
+          "title": "Sara Landry"
+        }
+      },
+      "divergence": null
+    },
+    {
+      "label": "after-second-next",
+      "tMs": 19112,
+      "data": {
+        "label": "after-second-next",
+        "ts": 1783055860809,
+        "msc": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8,
+          "currentTime": 4.171
+        },
+        "engine": {
+          "activeTrack": "sara-landry::prisoner",
+          "mode": "spotify"
+        },
+        "store": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8
+        },
+        "ui": {
+          "title": "Sara Landry"
+        }
+      },
+      "divergence": null
+    },
+    {
+      "label": "after-prev-restart-or-back",
+      "tMs": 21132,
+      "data": {
+        "label": "after-prev",
+        "ts": 1783055862830,
+        "msc": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8,
+          "currentTime": 0
+        },
+        "engine": {
+          "activeTrack": "sara-landry::prisoner",
+          "mode": "spotify"
+        },
+        "store": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8
+        },
+        "ui": {
+          "title": "Sara Landry"
+        }
+      },
+      "divergence": null
+    },
+    {
+      "label": "after-prev-from-start",
+      "tMs": 28006,
+      "data": {
+        "label": "after-prev-from-start",
+        "ts": 1783055869703,
+        "msc": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8,
+          "currentTime": 13.749
+        },
+        "engine": {
+          "activeTrack": "sara-landry::prisoner",
+          "mode": "spotify"
+        },
+        "store": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::prisoner",
+          "queueIndex": 2,
+          "queueLength": 8
+        },
+        "ui": {
+          "title": "Sara Landry"
+        }
+      },
+      "divergence": null
+    },
+    {
+      "label": "after-auto-advance",
+      "tMs": 34094,
+      "data": {
+        "label": "after-auto-advance",
+        "ts": 1783055875792,
+        "msc": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "queueIndex": 3,
+          "queueLength": 8,
+          "currentTime": 4.169
+        },
+        "engine": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "mode": "spotify"
+        },
+        "store": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "queueIndex": 3,
+          "queueLength": 8
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "queueIndex": 3,
+          "queueLength": 8
+        },
+        "ui": {
+          "title": "Sara Landry"
+        }
+      },
+      "divergence": null
+    },
+    {
+      "label": "after-navigate",
+      "tMs": 36323,
+      "data": {
+        "label": "after-navigate",
+        "ts": 1783055878020,
+        "msc": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "queueIndex": 3,
+          "queueLength": 8,
+          "currentTime": 4.169
+        },
+        "engine": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "mode": "spotify"
+        },
+        "store": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "queueIndex": 3,
+          "queueLength": 8
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::grief-into-rage",
+          "queueIndex": 3,
+          "queueLength": 8
+        },
+        "ui": {
+          "title": "Sara Landry"
+        }
+      },
+      "divergence": null
+    }
+  ],
+  "duplicatePlayCount": 0
+}

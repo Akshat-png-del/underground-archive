@@ -1,4 +1,5 @@
 import { playbackDebugLog, playbackDebugError, playbackDebugWarn } from "@/lib/music/playback-debug";
+import { spotifySeekAudit } from "@/lib/music/spotify-seek-audit";
 
 const SPOTIFY_IFRAME_API = "https://open.spotify.com/embed/iframe-api/v1";
 const SCRIPT_ID = "vitalforge-spotify-iframe-api";
@@ -24,7 +25,8 @@ export interface SpotifyEmbedController {
   pause(): void;
   resume(): void;
   togglePlay(): void;
-  seek(positionMs: number): void;
+  /** Spotify IFrame API: integer seconds into loaded content. */
+  seek(seconds: number): void;
   destroy(): void;
   addListener(event: string, callback: (payload?: { data?: Record<string, unknown> }) => void): void;
   removeListener?(event: string, callback: (payload?: { data?: Record<string, unknown> }) => void): void;
@@ -228,6 +230,7 @@ export class SpotifyEmbedHost {
     controller.addListener("ready", () => {
       this.embedReady = true;
       playbackDebugLog("SPOTIFY", "embed iframe ready");
+      spotifySeekAudit("SpotifyEmbedHost", "SDK_CALLBACK", { event: "ready" });
     });
   }
 
@@ -263,12 +266,59 @@ export class SpotifyEmbedHost {
     }
   }
 
-  seekIfReady(positionMs: number): void {
-    if (!this.isEmbedReady() || !this.controller) return;
+  seekIfReady(positionSeconds: number): void {
+    const seekSeconds = Math.max(0, Math.round(positionSeconds));
+    const sdkReady = this.isEmbedReady();
+    const hostExists = !!this.host;
+    const controllerExists = !!this.controller;
+    spotifySeekAudit("SpotifyEmbedHost", "HOST_SEEK", {
+      phase: "enter",
+      positionSeconds,
+      seekSeconds,
+      sdkReady,
+      iframeReady: this.embedReady,
+      controllerReady: this.controllerReady,
+      hostExists,
+      controllerExists,
+    });
+    if (!sdkReady || !this.controller) {
+      spotifySeekAudit("SpotifyEmbedHost", "HOST_SEEK", {
+        phase: "early_return",
+        positionSeconds,
+        seekSeconds,
+        reason: "!isEmbedReady() || !controller",
+        sdkReady,
+        controllerExists,
+      });
+      return;
+    }
     try {
-      this.controller.seek(positionMs);
-    } catch {
-      // ignore
+      spotifySeekAudit("SpotifyEmbedHost", "HOST_SEEK", {
+        phase: "calling_controller_seek",
+        positionSeconds,
+        seekSeconds,
+        iframeApiContractNote: "EmbedController.seek(seconds) — integer seconds",
+        sdkReady,
+        controllerExists,
+      });
+      this.controller.seek(seekSeconds);
+      spotifySeekAudit("SpotifyEmbedHost", "HOST_SEEK", {
+        phase: "controller_seek_returned",
+        positionSeconds,
+        seekSeconds,
+        resolved: true,
+        rejected: false,
+        exception: null,
+      });
+    } catch (err) {
+      spotifySeekAudit("SpotifyEmbedHost", "HOST_SEEK", {
+        phase: "controller_seek_threw",
+        positionSeconds,
+        seekSeconds,
+        resolved: false,
+        rejected: true,
+        exception: err instanceof Error ? err.message : String(err),
+      });
     }
   }
 

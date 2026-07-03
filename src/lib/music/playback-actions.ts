@@ -106,19 +106,6 @@ export function skipBackward(seconds = 10): void {
   mediaSessionController.skipBackward(seconds);
 }
 
-/** Set volume 0–1 (preview audio). */
-export function setPlaybackVolume(volume: number): void {
-  guardAudioTransport("setPlaybackVolume");
-  mediaSessionController.setVolume(volume);
-}
-
-/** Toggle mute (preview audio). */
-export function togglePlaybackMute(): void {
-  guardAudioTransport("togglePlaybackMute");
-  playbackDebugLog("CLICK", "toggleMute");
-  mediaSessionController.toggleMute();
-}
-
 /** Seek to position in seconds. */
 export function seekTo(seconds: number): void {
   guardAudioTransport("seekTo");
@@ -157,8 +144,6 @@ export const playbackActions = {
   pause: () => mediaSessionController.pause(),
   resume: () => mediaSessionController.resume(),
   seek: (seconds: number) => mediaSessionController.commitSeek(seconds),
-  setVolume: (volume: number) => mediaSessionController.setVolume(volume),
-  toggleMute: () => mediaSessionController.toggleMute(),
   next: () => mediaSessionController.next(),
   prev: () => mediaSessionController.prev(),
   stop: () => mediaSessionController.stop(),

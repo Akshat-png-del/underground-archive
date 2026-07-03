@@ -1,0 +1,3190 @@
+{
+  "generatedAt": "2026-07-02T23:17:24.129Z",
+  "baseUrl": "http://localhost:3000",
+  "timeline": [
+    {
+      "tMs": 479,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 1,
+        "ts": 383.1000000005588,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": null,
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 1841,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 2,
+        "ts": 1764.7999999998137,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "play",
+        "mscIsPlaying": true,
+        "storeIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 1842,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 3,
+        "ts": 1765.1000000005588,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "play",
+        "snapshotIsPlaying": true,
+        "mscIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 1843,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 4,
+        "ts": 1786.2000000001863,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 4369,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 5,
+        "ts": 4344.4000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 4603,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 6,
+        "ts": 4568.200000000186,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 0,
+          "buffering": true,
+          "playingURI": ""
+        }
+      }
+    },
+    {
+      "tMs": 4603,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 7,
+        "ts": 4571.5,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 5419,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 8,
+        "ts": 5370.299999999814,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 0,
+          "buffering": true,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 5419,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 9,
+        "ts": 5372.200000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 5430,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 10,
+        "ts": 5396.100000000559,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 6062,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 11,
+        "ts": 6027.700000000186,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 0,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 6062,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 12,
+        "ts": 6029.9000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 6458,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 13,
+        "ts": 6425.299999999814,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 0.791,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 6458,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 14,
+        "ts": 6428.9000000003725,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 7523,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 15,
+        "ts": 7490.799999999814,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 1.855,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 7523,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 16,
+        "ts": 7493.299999999814,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 7868,
+      "fn": "__playPauseTraceSample",
+      "phase": "after-initial-play",
+      "detail": {
+        "id": 17,
+        "ts": 7858.700000000186,
+        "fn": "__playPauseTraceSample",
+        "phase": "after-initial-play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "snapshotIsPlaying": true,
+        "storeIsPlaying": true,
+        "uiPlayVisible": false,
+        "uiPauseVisible": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "label": "after-initial-play",
+          "ts": 1783034229691,
+          "msc": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "engine": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "store": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "snapshot": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "ui": {
+            "playVisible": false,
+            "pauseVisible": true
+          }
+        }
+      }
+    },
+    {
+      "tMs": 8081,
+      "fn": "MediaSessionController.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 18,
+        "ts": 8047,
+        "fn": "MediaSessionController.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 19,
+        "ts": 8047.100000000559,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "transportIntent": "paused",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": true,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 20,
+        "ts": 8047.4000000003725,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "storeIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 21,
+        "ts": 8048,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "pause",
+        "snapshotIsPlaying": false,
+        "mscIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 22,
+        "ts": 8048.299999999814,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "engineIsPlaying": true,
+        "providerIsPlaying": true,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "ProviderRouter.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 23,
+        "ts": 8048.5,
+        "fn": "ProviderRouter.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": true,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "SpotifyProvider.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 24,
+        "ts": 8049,
+        "fn": "SpotifyProvider.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": true,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 25,
+        "ts": 8051.5,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "SpotifyProvider.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 26,
+        "ts": 8052.5,
+        "fn": "SpotifyProvider.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "ProviderRouter.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 27,
+        "ts": 8052.700000000186,
+        "fn": "ProviderRouter.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 28,
+        "ts": 8052.799999999814,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 8082,
+      "fn": "MediaSessionController.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 29,
+        "ts": 8053,
+        "fn": "MediaSessionController.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 8110,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 30,
+        "ts": 8088.200000000186,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": false,
+        "providerIsPaused": true,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 2.448,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 8110,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 31,
+        "ts": 8089.600000000559,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 10104,
+      "fn": "__playPauseTraceSample",
+      "phase": "after-ui-pause",
+      "detail": {
+        "id": 32,
+        "ts": 10089,
+        "fn": "__playPauseTraceSample",
+        "phase": "after-ui-pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "snapshotIsPlaying": false,
+        "storeIsPlaying": false,
+        "uiPlayVisible": true,
+        "uiPauseVisible": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "label": "after-ui-pause",
+          "ts": 1783034231922,
+          "msc": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "engine": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "store": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "snapshot": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "ui": {
+            "playVisible": true,
+            "pauseVisible": false
+          }
+        }
+      }
+    },
+    {
+      "tMs": 10333,
+      "fn": "MediaSessionController.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 33,
+        "ts": 10295.100000000559,
+        "fn": "MediaSessionController.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 34,
+        "ts": 10295.299999999814,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "play",
+        "mscIsPlaying": true,
+        "transportIntent": "playing",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": false,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 35,
+        "ts": 10295.5,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "play",
+        "mscIsPlaying": true,
+        "storeIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 36,
+        "ts": 10296.200000000186,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "play",
+        "snapshotIsPlaying": true,
+        "mscIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 37,
+        "ts": 10296.799999999814,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "ProviderRouter.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 38,
+        "ts": 10297,
+        "fn": "ProviderRouter.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "SpotifyProvider.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 39,
+        "ts": 10297.5,
+        "fn": "SpotifyProvider.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 40,
+        "ts": 10300.100000000559,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "SpotifyProvider.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 41,
+        "ts": 10301.200000000186,
+        "fn": "SpotifyProvider.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "ProviderRouter.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 42,
+        "ts": 10301.400000000373,
+        "fn": "ProviderRouter.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 43,
+        "ts": 10301.5,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 10334,
+      "fn": "MediaSessionController.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 44,
+        "ts": 10301.600000000559,
+        "fn": "MediaSessionController.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 10619,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 45,
+        "ts": 10582,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 2.715,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 10619,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 46,
+        "ts": 10585.299999999814,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 11676,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 47,
+        "ts": 11642.400000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 3.777,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 11676,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 48,
+        "ts": 11645.200000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 12744,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 49,
+        "ts": 12707.600000000559,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 4.842,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 12744,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 50,
+        "ts": 12711.200000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 13353,
+      "fn": "__playPauseTraceSample",
+      "phase": "after-ui-resume",
+      "detail": {
+        "id": 51,
+        "ts": 13341.100000000559,
+        "fn": "__playPauseTraceSample",
+        "phase": "after-ui-resume",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "snapshotIsPlaying": true,
+        "storeIsPlaying": true,
+        "uiPlayVisible": false,
+        "uiPauseVisible": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "label": "after-ui-resume",
+          "ts": 1783034235174,
+          "msc": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "engine": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "store": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "snapshot": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "ui": {
+            "playVisible": false,
+            "pauseVisible": true
+          }
+        }
+      }
+    },
+    {
+      "tMs": 13536,
+      "fn": "MediaSessionController.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 52,
+        "ts": 13499.400000000373,
+        "fn": "MediaSessionController.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 13536,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 53,
+        "ts": 13499.600000000559,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "transportIntent": "paused",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": true,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 13536,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 54,
+        "ts": 13499.700000000186,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "storeIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 13536,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 55,
+        "ts": 13500.400000000373,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "pause",
+        "snapshotIsPlaying": false,
+        "mscIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 56,
+        "ts": 13500.700000000186,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "engineIsPlaying": true,
+        "providerIsPlaying": true,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "ProviderRouter.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 57,
+        "ts": 13500.900000000373,
+        "fn": "ProviderRouter.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": true,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "SpotifyProvider.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 58,
+        "ts": 13501.299999999814,
+        "fn": "SpotifyProvider.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": true,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 59,
+        "ts": 13503.700000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "SpotifyProvider.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 60,
+        "ts": 13504.900000000373,
+        "fn": "SpotifyProvider.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "ProviderRouter.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 61,
+        "ts": 13505.100000000559,
+        "fn": "ProviderRouter.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 62,
+        "ts": 13505.200000000186,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 13537,
+      "fn": "MediaSessionController.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 63,
+        "ts": 13505.299999999814,
+        "fn": "MediaSessionController.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 13562,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 64,
+        "ts": 13539.299999999814,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": false,
+        "providerIsPaused": true,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 5.654,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 13562,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 65,
+        "ts": 13540.700000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 15543,
+      "fn": "__playPauseTraceSample",
+      "phase": "after-msc-pause",
+      "detail": {
+        "id": 66,
+        "ts": 15530.400000000373,
+        "fn": "__playPauseTraceSample",
+        "phase": "after-msc-pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "snapshotIsPlaying": false,
+        "storeIsPlaying": false,
+        "uiPlayVisible": true,
+        "uiPauseVisible": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "label": "after-msc-pause",
+          "ts": 1783034237363,
+          "msc": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "engine": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "store": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "snapshot": {
+            "isPlaying": false,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "ui": {
+            "playVisible": true,
+            "pauseVisible": false
+          }
+        }
+      }
+    },
+    {
+      "tMs": 15733,
+      "fn": "MediaSessionController.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 67,
+        "ts": 15689.600000000559,
+        "fn": "MediaSessionController.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 15733,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 68,
+        "ts": 15689.799999999814,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "play",
+        "mscIsPlaying": true,
+        "transportIntent": "playing",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": false,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 15733,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 69,
+        "ts": 15689.900000000373,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "play",
+        "mscIsPlaying": true,
+        "storeIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 70,
+        "ts": 15691,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "play",
+        "snapshotIsPlaying": true,
+        "mscIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 71,
+        "ts": 15691.400000000373,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "ProviderRouter.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 72,
+        "ts": 15691.600000000559,
+        "fn": "ProviderRouter.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "SpotifyProvider.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 73,
+        "ts": 15691.900000000373,
+        "fn": "SpotifyProvider.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 74,
+        "ts": 15694.400000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "SpotifyProvider.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 75,
+        "ts": 15695.600000000559,
+        "fn": "SpotifyProvider.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "ProviderRouter.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 76,
+        "ts": 15695.799999999814,
+        "fn": "ProviderRouter.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 77,
+        "ts": 15695.900000000373,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 15734,
+      "fn": "MediaSessionController.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 78,
+        "ts": 15696,
+        "fn": "MediaSessionController.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 16016,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 79,
+        "ts": 15992.100000000559,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 5.93,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 16016,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 80,
+        "ts": 15994.900000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 17085,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 81,
+        "ts": 17052,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 6.992,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 17085,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 82,
+        "ts": 17056.400000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 18152,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 83,
+        "ts": 18112.700000000186,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 8.055,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 18152,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 84,
+        "ts": 18117.799999999814,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 18729,
+      "fn": "__playPauseTraceSample",
+      "phase": "after-msc-resume",
+      "detail": {
+        "id": 85,
+        "ts": 18719.400000000373,
+        "fn": "__playPauseTraceSample",
+        "phase": "after-msc-resume",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "snapshotIsPlaying": true,
+        "storeIsPlaying": true,
+        "uiPlayVisible": false,
+        "uiPauseVisible": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "label": "after-msc-resume",
+          "ts": 1783034240552,
+          "msc": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "engine": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "store": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "snapshot": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "ui": {
+            "playVisible": false,
+            "pauseVisible": true
+          }
+        }
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "MediaSessionController.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 86,
+        "ts": 18875.700000000186,
+        "fn": "MediaSessionController.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 87,
+        "ts": 18875.700000000186,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "transportIntent": "paused",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": true,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 88,
+        "ts": 18875.799999999814,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "storeIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 89,
+        "ts": 18876.400000000373,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "pause",
+        "snapshotIsPlaying": false,
+        "mscIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 90,
+        "ts": 18876.700000000186,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "engineIsPlaying": true,
+        "providerIsPlaying": true,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "ProviderRouter.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 91,
+        "ts": 18876.799999999814,
+        "fn": "ProviderRouter.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": true,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "SpotifyProvider.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 92,
+        "ts": 18877.10000000056,
+        "fn": "SpotifyProvider.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": true,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 93,
+        "ts": 18878.900000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "SpotifyProvider.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 94,
+        "ts": 18879.700000000186,
+        "fn": "SpotifyProvider.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "ProviderRouter.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 95,
+        "ts": 18879.799999999814,
+        "fn": "ProviderRouter.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 96,
+        "ts": 18879.900000000373,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 18908,
+      "fn": "MediaSessionController.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 97,
+        "ts": 18880,
+        "fn": "MediaSessionController.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 18932,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 98,
+        "ts": 18910.400000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": false,
+        "providerIsPaused": true,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 8.842,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 18932,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 99,
+        "ts": 18911.799999999814,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19029,
+      "fn": "MediaSessionController.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 100,
+        "ts": 19001.400000000373,
+        "fn": "MediaSessionController.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 101,
+        "ts": 19001.5,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "play",
+        "mscIsPlaying": true,
+        "transportIntent": "playing",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": false,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 102,
+        "ts": 19001.60000000056,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "play",
+        "mscIsPlaying": true,
+        "storeIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 103,
+        "ts": 19002,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "play",
+        "snapshotIsPlaying": true,
+        "mscIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 104,
+        "ts": 19002.200000000186,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "ProviderRouter.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 105,
+        "ts": 19002.200000000186,
+        "fn": "ProviderRouter.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "SpotifyProvider.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 106,
+        "ts": 19002.5,
+        "fn": "SpotifyProvider.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 107,
+        "ts": 19003.700000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "SpotifyProvider.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 108,
+        "ts": 19004.299999999814,
+        "fn": "SpotifyProvider.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "ProviderRouter.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 109,
+        "ts": 19004.400000000373,
+        "fn": "ProviderRouter.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 110,
+        "ts": 19004.5,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19030,
+      "fn": "MediaSessionController.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 111,
+        "ts": 19004.5,
+        "fn": "MediaSessionController.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "MediaSessionController.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 112,
+        "ts": 19127.60000000056,
+        "fn": "MediaSessionController.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 113,
+        "ts": 19127.700000000186,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "transportIntent": "paused",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": true,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 114,
+        "ts": 19127.799999999814,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "storeIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 115,
+        "ts": 19128.200000000186,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "pause",
+        "snapshotIsPlaying": false,
+        "mscIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 116,
+        "ts": 19128.400000000373,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "ProviderRouter.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 117,
+        "ts": 19128.400000000373,
+        "fn": "ProviderRouter.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "SpotifyProvider.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 118,
+        "ts": 19128.700000000186,
+        "fn": "SpotifyProvider.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19155,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 119,
+        "ts": 19130,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19157,
+      "fn": "SpotifyProvider.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 120,
+        "ts": 19130.799999999814,
+        "fn": "SpotifyProvider.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19157,
+      "fn": "ProviderRouter.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 121,
+        "ts": 19130.900000000373,
+        "fn": "ProviderRouter.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 19157,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 122,
+        "ts": 19131,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19157,
+      "fn": "MediaSessionController.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 123,
+        "ts": 19131.10000000056,
+        "fn": "MediaSessionController.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19181,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 124,
+        "ts": 19159.900000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": false,
+        "providerIsPaused": true,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 8.963,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 19182,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 125,
+        "ts": 19161.200000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19277,
+      "fn": "MediaSessionController.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 126,
+        "ts": 19252.400000000373,
+        "fn": "MediaSessionController.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19278,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 127,
+        "ts": 19252.400000000373,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "play",
+        "mscIsPlaying": true,
+        "transportIntent": "playing",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": false,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 19278,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 128,
+        "ts": 19252.5,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "play",
+        "mscIsPlaying": true,
+        "storeIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 19278,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 129,
+        "ts": 19252.799999999814,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "play",
+        "snapshotIsPlaying": true,
+        "mscIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 130,
+        "ts": 19253,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "ProviderRouter.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 131,
+        "ts": 19253.10000000056,
+        "fn": "ProviderRouter.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "SpotifyProvider.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 132,
+        "ts": 19253.400000000373,
+        "fn": "SpotifyProvider.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 133,
+        "ts": 19254.5,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "SpotifyProvider.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 134,
+        "ts": 19255.10000000056,
+        "fn": "SpotifyProvider.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "ProviderRouter.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 135,
+        "ts": 19255.200000000186,
+        "fn": "ProviderRouter.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 136,
+        "ts": 19255.299999999814,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19279,
+      "fn": "MediaSessionController.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 137,
+        "ts": 19255.400000000373,
+        "fn": "MediaSessionController.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19406,
+      "fn": "MediaSessionController.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 138,
+        "ts": 19378.400000000373,
+        "fn": "MediaSessionController.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19407,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 139,
+        "ts": 19378.5,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "transportIntent": "paused",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": true,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 19407,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 140,
+        "ts": 19378.60000000056,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "storeIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 19407,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 141,
+        "ts": 19379.10000000056,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "pause",
+        "snapshotIsPlaying": false,
+        "mscIsPlaying": false,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": true
+        }
+      }
+    },
+    {
+      "tMs": 19407,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 142,
+        "ts": 19379.200000000186,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19409,
+      "fn": "ProviderRouter.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 143,
+        "ts": 19379.299999999814,
+        "fn": "ProviderRouter.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 19409,
+      "fn": "SpotifyProvider.pause",
+      "phase": "ENTER",
+      "detail": {
+        "id": 144,
+        "ts": 19379.5,
+        "fn": "SpotifyProvider.pause",
+        "phase": "ENTER",
+        "event": "pause",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19409,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 145,
+        "ts": 19381.10000000056,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19409,
+      "fn": "SpotifyProvider.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 146,
+        "ts": 19381.799999999814,
+        "fn": "SpotifyProvider.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19409,
+      "fn": "ProviderRouter.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 147,
+        "ts": 19382,
+        "fn": "ProviderRouter.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 19409,
+      "fn": "GlobalPlayerEngine.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 148,
+        "ts": 19382.10000000056,
+        "fn": "GlobalPlayerEngine.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19409,
+      "fn": "MediaSessionController.pause",
+      "phase": "EXIT",
+      "detail": {
+        "id": 149,
+        "ts": 19382.10000000056,
+        "fn": "MediaSessionController.pause",
+        "phase": "EXIT",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19434,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 150,
+        "ts": 19411.900000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": false,
+        "providerIsPaused": true,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 9.098,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 19434,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 151,
+        "ts": 19413.299999999814,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "pause",
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19530,
+      "fn": "MediaSessionController.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 152,
+        "ts": 19504.10000000056,
+        "fn": "MediaSessionController.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "mscIsPlaying": false,
+        "engineIsPlaying": false,
+        "transportIntent": "paused",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "MediaSessionController.patchTransport",
+      "phase": "transport_patch",
+      "detail": {
+        "id": 153,
+        "ts": 19504.10000000056,
+        "fn": "MediaSessionController.patchTransport",
+        "phase": "transport_patch",
+        "event": "play",
+        "mscIsPlaying": true,
+        "transportIntent": "playing",
+        "transportPatched": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorPlaying": false,
+          "mirror": true,
+          "partialKeys": [
+            "isPlaying"
+          ]
+        }
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "MediaSessionPersistence.pushLegacyMirror",
+      "phase": "store_mirror",
+      "detail": {
+        "id": 154,
+        "ts": 19504.200000000186,
+        "fn": "MediaSessionPersistence.pushLegacyMirror",
+        "phase": "store_mirror",
+        "event": "play",
+        "mscIsPlaying": true,
+        "storeIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorStoreIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "useFinalPlaybackSnapshot.commitFrame",
+      "phase": "snapshot_commit",
+      "detail": {
+        "id": 155,
+        "ts": 19504.60000000056,
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "phase": "snapshot_commit",
+        "event": "play",
+        "snapshotIsPlaying": true,
+        "mscIsPlaying": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "priorIsPlaying": false
+        }
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 156,
+        "ts": 19504.700000000186,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "ProviderRouter.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 157,
+        "ts": 19504.799999999814,
+        "fn": "ProviderRouter.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "spotify",
+        "extra": {
+          "commandReady": true,
+          "switching": false
+        }
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "SpotifyProvider.resume",
+      "phase": "ENTER",
+      "detail": {
+        "id": 158,
+        "ts": 19505,
+        "fn": "SpotifyProvider.resume",
+        "phase": "ENTER",
+        "event": "resume",
+        "duplicateCommand": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 159,
+        "ts": 19506.200000000186,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "SpotifyProvider.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 160,
+        "ts": 19506.799999999814,
+        "fn": "SpotifyProvider.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "ProviderRouter.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 161,
+        "ts": 19506.799999999814,
+        "fn": "ProviderRouter.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "providerIsPlaying": false,
+        "activeTrack": "spotify"
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "GlobalPlayerEngine.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 162,
+        "ts": 19506.900000000373,
+        "fn": "GlobalPlayerEngine.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "engineIsPlaying": false,
+        "providerIsPlaying": false,
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 19531,
+      "fn": "MediaSessionController.resume",
+      "phase": "EXIT",
+      "detail": {
+        "id": 163,
+        "ts": 19506.900000000373,
+        "fn": "MediaSessionController.resume",
+        "phase": "EXIT",
+        "event": "resume",
+        "mscIsPlaying": true,
+        "engineIsPlaying": false,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy"
+      }
+    },
+    {
+      "tMs": 20620,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 164,
+        "ts": 20581.799999999814,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 10.185,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 20620,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 165,
+        "ts": 20585.900000000373,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 21674,
+      "fn": "SpotifyProvider.onUpdate",
+      "phase": "playback_update",
+      "detail": {
+        "id": 166,
+        "ts": 21644.400000000373,
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "event": "playback_update",
+        "providerIsPlaying": true,
+        "providerIsPaused": false,
+        "activeTrack": "sara-landry::legacy",
+        "note": "isPaused field present — patching isPlaying",
+        "extra": {
+          "position": 11.238,
+          "buffering": false,
+          "playingURI": "spotify:track:0aMonkh8OKgqx1K0viRHRT"
+        }
+      }
+    },
+    {
+      "tMs": 21674,
+      "fn": "MediaSessionController.applyReconciledTransport",
+      "phase": "reconcile",
+      "detail": {
+        "id": 167,
+        "ts": 21648.799999999814,
+        "fn": "MediaSessionController.applyReconciledTransport",
+        "phase": "reconcile",
+        "event": "play",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "transportIntent": "playing",
+        "activeTrack": "sara-landry::legacy",
+        "note": "reconcileEngineSnapshot applied isPlaying from transportIntent"
+      }
+    },
+    {
+      "tMs": 22150,
+      "fn": "__playPauseTraceSample",
+      "phase": "after-rapid-toggle",
+      "detail": {
+        "id": 168,
+        "ts": 22133.5,
+        "fn": "__playPauseTraceSample",
+        "phase": "after-rapid-toggle",
+        "mscIsPlaying": true,
+        "engineIsPlaying": true,
+        "snapshotIsPlaying": true,
+        "storeIsPlaying": true,
+        "uiPlayVisible": false,
+        "uiPauseVisible": true,
+        "activeTrack": "sara-landry::legacy",
+        "extra": {
+          "label": "after-rapid-toggle",
+          "ts": 1783034243966,
+          "msc": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "engine": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "store": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "snapshot": {
+            "isPlaying": true,
+            "activeTrack": "sara-landry::legacy"
+          },
+          "ui": {
+            "playVisible": false,
+            "pauseVisible": true
+          }
+        }
+      }
+    }
+  ],
+  "samples": [
+    {
+      "label": "after-initial-play",
+      "tMs": 7867,
+      "msc": true,
+      "engine": true,
+      "store": true,
+      "snapshot": true,
+      "uiPlay": false,
+      "uiPause": true,
+      "divergence": null
+    },
+    {
+      "label": "after-ui-pause",
+      "tMs": 10101,
+      "msc": false,
+      "engine": false,
+      "store": false,
+      "snapshot": false,
+      "uiPlay": true,
+      "uiPause": false,
+      "divergence": null
+    },
+    {
+      "label": "after-ui-resume",
+      "tMs": 13352,
+      "msc": true,
+      "engine": true,
+      "store": true,
+      "snapshot": true,
+      "uiPlay": false,
+      "uiPause": true,
+      "divergence": null
+    },
+    {
+      "label": "after-msc-pause",
+      "tMs": 15541,
+      "msc": false,
+      "engine": false,
+      "store": false,
+      "snapshot": false,
+      "uiPlay": true,
+      "uiPause": false,
+      "divergence": null
+    },
+    {
+      "label": "after-msc-resume",
+      "tMs": 18729,
+      "msc": true,
+      "engine": true,
+      "store": true,
+      "snapshot": true,
+      "uiPlay": false,
+      "uiPause": true,
+      "divergence": null
+    },
+    {
+      "label": "after-rapid-toggle",
+      "tMs": 22148,
+      "msc": true,
+      "engine": true,
+      "store": true,
+      "snapshot": true,
+      "uiPlay": false,
+      "uiPause": true,
+      "divergence": null
+    }
+  ],
+  "analysis": {
+    "totalTraceEntries": 168,
+    "playPauseEvents": 162,
+    "duplicateCommands": 0,
+    "duplicateCommandDetails": [],
+    "stalePlaybackUpdatesAfterPause": 1,
+    "stalePlaybackUpdateDetails": [
+      {
+        "tMs": 20620,
+        "providerIsPlaying": true
+      }
+    ],
+    "mscTrueBeforeProviderCount": 5,
+    "mscTrueBeforeProviderDetails": [
+      {
+        "tMs": 10334,
+        "fn": "MediaSessionController.patchTransport"
+      },
+      {
+        "tMs": 15733,
+        "fn": "MediaSessionController.patchTransport"
+      },
+      {
+        "tMs": 19030,
+        "fn": "MediaSessionController.patchTransport"
+      },
+      {
+        "tMs": 19278,
+        "fn": "MediaSessionController.patchTransport"
+      },
+      {
+        "tMs": 19531,
+        "fn": "MediaSessionController.patchTransport"
+      }
+    ],
+    "pauseLagProviderCount": 0,
+    "pauseLagProviderDetails": [],
+    "snapshotLagSamples": 4,
+    "persistentDesyncCount": 0,
+    "firstIncorrect": null,
+    "firstIncorrectLayer": null,
+    "answers": {
+      "q1_firstIncorrectValue": null,
+      "q2_firstIncorrectLayer": null,
+      "q3_playBeforeProvider": true,
+      "q4_pauseLagsProvider": false,
+      "q5_snapshotLagsController": true,
+      "q6_uiLagsSnapshot": false,
+      "q7_duplicatePlay": 0,
+      "q8_duplicatePause": 0,
+      "q9_playbackUpdateOverwritesTransport": true,
+      "q10_rapidToggleRace": false,
+      "q11_stalePlaybackUpdateAfterPause": true,
+      "q12_persistentDesync": false
+    }
+  }
+}

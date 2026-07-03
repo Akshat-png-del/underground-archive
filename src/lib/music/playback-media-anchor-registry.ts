@@ -39,8 +39,12 @@ export function getProviderMountNode(): HTMLElement | null {
   return getPlaybackMediaAnchor();
 }
 
+/** True when the engine root is docked inside the persistent embed host (not body-only). */
 export function isPlaybackMediaAnchorReady(): boolean {
-  return !!getProviderMountNode();
+  const anchor = getPlaybackMediaAnchor();
+  const root = document.getElementById(ROOT_ID);
+  if (!anchor?.isConnected || !root?.isConnected) return false;
+  return anchor === root || anchor.contains(root);
 }
 
 export function waitForPlaybackMediaAnchor(timeoutMs = 5000): Promise<HTMLElement> {

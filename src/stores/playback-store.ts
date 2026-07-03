@@ -11,13 +11,17 @@ import { globalPlayerEngine } from "@/lib/music/global-player-engine";
 import { registerPlaybackMediaAnchor } from "@/lib/music/playback-media-anchor-registry";
 import { bootstrapMediaEngine } from "@/lib/music/media-engine-bootstrap";
 import { mediaEngineEvents } from "@/lib/music/media-engine-events";
-import { resolvePlaybackSource } from "@/lib/music/playback-source";
 import {
   playbackDebugLog,
   playbackDebugWarn,
   probePlaybackDom,
   installPlaybackDebugDump,
 } from "@/lib/music/playback-debug";
+import { syncAuditInstallWindowSample } from "@/lib/music/playback-sync-audit";
+import { volumeTraceInstallWindowSample } from "@/lib/music/volume-pipeline-trace";
+import { queueTraceInstallWindowSample } from "@/lib/music/queue-pipeline-trace";
+import { playPauseTraceInstallWindowSample } from "@/lib/music/play-pause-pipeline-trace";
+import { hydrationTraceInstallWindowSample, hydrationTraceMarkStart, hydrationTraceMarkFinish, hydrationPipelineTrace } from "@/lib/music/hydration-pipeline-trace";
 
 type RecordPlayFn = (type: LibraryItemType, refId: string) => void;
 
@@ -88,8 +92,7 @@ function attachAudioEndedBridge(): void {
   audioEndedBridgeAttached = true;
   mediaEngineEvents.subscribe((event) => {
     if (event.type !== "onEnded" || !event.track) return;
-    const resolved = resolvePlaybackSource(event.track);
-    if (resolved.kind !== "preview") return;
+    if (event.track.type !== "track") return;
     getController().advanceQueueOnEnd();
   });
 }
@@ -157,8 +160,16 @@ export function setPlaybackRecordFn(fn: RecordPlayFn): void {
 
 export function initializePlaybackEngine(): void {
   if (typeof window === "undefined") return;
-  if (engineHydrating) return;
+  if (engineHydrating) {
+    hydrationPipelineTrace({
+      fn: "initializePlaybackEngine",
+      phase: "skipped",
+      note: "engineHydrating guard — duplicate hydration blocked",
+    });
+    return;
+  }
 
+  hydrationTraceMarkStart("initializePlaybackEngine");
   engineHydrating = true;
   try {
     bootstrapMediaEngine();
@@ -167,17 +178,34 @@ export function initializePlaybackEngine(): void {
     if (!engineBound) {
       engineBound = true;
       installPlaybackDebugDump();
+      syncAuditInstallWindowSample();
+      volumeTraceInstallWindowSample();
+      queueTraceInstallWindowSample();
+      playPauseTraceInstallWindowSample();
+      hydrationTraceInstallWindowSample();
       playbackDebugLog("MOUNT", "MediaEngine store bridge attached");
     }
 
     playbackDebugLog("DOM", "post-init probe", probePlaybackDom());
 
     const controller = getController();
+    hydrationPipelineTrace({ fn: "MediaSessionController.initialize", phase: "flushPendingPlay" });
     controller.flushPendingPlay();
 
     const session = globalPlayerEngine.getSnapshot();
     if (session.currentTrack && session.isPlaying) {
+      hydrationPipelineTrace({
+        fn: "initializePlaybackEngine",
+        phase: "early_return_engine_alive",
+        engine: {
+          activeTrack: session.currentTrack?.refId ?? null,
+          isPlaying: session.isPlaying,
+          currentTime: session.currentTime,
+          engineMode: session.mode,
+        },
+      });
       usePlaybackStore.setState({ hydrated: true });
+      hydrationTraceMarkFinish("initializePlaybackEngine", { note: "engine already playing" });
       return;
     }
 
@@ -191,14 +219,42 @@ export function initializePlaybackEngine(): void {
       const queueIndex = found >= 0 ? found : Math.max(0, queue.length - 1);
       if (persisted.isPlaying) {
         playbackDebugLog("MOUNT", "resuming persisted playback", current.refId);
-        controller.play(current, { browse: { queue, queueIndex } });
+        hydrationPipelineTrace({
+          fn: "restorePersistedSession",
+          phase: "resume_play",
+          persisted: {
+            activeTrack: current.refId,
+            queueLength: queue.length,
+            queueIndex,
+            currentTime: persisted.position,
+            isPlaying: true,
+          },
+        });
+        controller.play(current, {
+          browse: { queue, queueIndex },
+          resumePosition: persisted.position,
+        });
+        usePlaybackStore.setState({ hydrated: true });
       } else {
+        hydrationPipelineTrace({
+          fn: "restorePersistedSession",
+          phase: "hydrate_paused",
+          persisted: {
+            activeTrack: current.refId,
+            queueLength: queue.length,
+            queueIndex,
+            currentTime: persisted.position,
+            isPlaying: false,
+          },
+        });
         controller.hydratePausedSession(current, persisted.position, queue, queueIndex);
       }
+      hydrationTraceMarkFinish("initializePlaybackEngine", { note: "restored from persistence" });
       return;
     }
 
     usePlaybackStore.setState({ hydrated: true });
+    hydrationTraceMarkFinish("initializePlaybackEngine", { note: "no persisted session" });
   } finally {
     engineHydrating = false;
   }

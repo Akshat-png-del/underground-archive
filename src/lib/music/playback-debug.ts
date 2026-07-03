@@ -313,7 +313,10 @@ export function probeEmbedAudibility(): EmbedAudibilityProbe {
 
 export function installPlaybackDebugDump(): void {
   if (typeof window === "undefined") return;
-  const w = window as Window & { __playbackDebugDump?: () => Record<string, unknown> };
+  const w = window as Window & {
+    __playbackDebugDump?: () => Record<string, unknown>;
+    __seekReproSample?: () => Record<string, unknown>;
+  };
   w.__playbackDebugDump = () => {
     const probe = probePlaybackDom();
     const audibility = probeEmbedAudibility();
@@ -326,6 +329,8 @@ export function installPlaybackDebugDump(): void {
         currentTrack: s.currentTrack?.refId ?? null,
         isPlaying: s.isPlaying,
         isLoading: s.isLoading,
+        currentTime: s.currentTime,
+        duration: s.duration,
         error: s.error,
         hydrated: s.hydrated,
         engineRootPresent: probe.engineRootPresent,
@@ -337,5 +342,50 @@ export function installPlaybackDebugDump(): void {
     const dump = { dom: probe, audibility, store, ts: Date.now() };
     playbackDebugLog("DOM", "Manual dump requested", dump);
     return dump;
+  };
+
+  w.__seekReproSample = () => {
+    const probe = probePlaybackDom();
+    const audio = document.querySelector("#vitalforge-playback-root audio") as HTMLAudioElement | null;
+    try {
+      const { mediaSessionController, mediaSessionDisplayTime } =
+        require("@/lib/music/media-session-controller") as typeof import("@/lib/music/media-session-controller");
+      const { globalPlayerEngine } =
+        require("@/lib/music/global-player-engine") as typeof import("@/lib/music/global-player-engine");
+      const { usePlaybackStore } =
+        require("@/stores/playback-store") as typeof import("@/stores/playback-store");
+      const session = mediaSessionController.getState();
+      const engine = globalPlayerEngine.getSnapshot();
+      const store = usePlaybackStore.getState();
+      return {
+        ts: Date.now(),
+        controller: {
+          currentTime: session.currentTime,
+          duration: session.duration,
+          isPlaying: session.isPlaying,
+          isSeeking: session.isSeeking,
+          seekPreviewTime: session.seekPreviewTime,
+          hoverPreviewTime: session.hoverPreviewTime,
+          displayTime: mediaSessionDisplayTime(session.currentTime, session),
+        },
+        engine: {
+          currentTime: engine.currentTime,
+          duration: engine.duration,
+          isPlaying: engine.isPlaying,
+          isLoading: engine.isLoading,
+          refId: engine.currentTrack?.refId ?? null,
+        },
+        store: {
+          currentTime: store.currentTime,
+          duration: store.duration,
+          isPlaying: store.isPlaying,
+          isLoading: store.isLoading,
+        },
+        audio: audio ? { currentTime: audio.currentTime, duration: audio.duration, paused: audio.paused } : null,
+        dom: probe,
+      };
+    } catch (e) {
+      return { ts: Date.now(), error: String(e), dom: probe };
+    }
   };
 }

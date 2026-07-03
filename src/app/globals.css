@@ -382,7 +382,8 @@ body:has([data-set-watch-page]) main {
 .spotify-player-bar .spotify-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
   gap: 12px;
   min-height: 5.625rem;
   padding: 0.5rem 1rem;
@@ -390,11 +391,13 @@ body:has([data-set-watch-page]) main {
 }
 
 .spotify-player-bar .sb-left {
+  position: absolute;
+  left: 1rem;
   display: flex;
   align-items: center;
   gap: 12px;
   min-width: 0;
-  width: 25%;
+  width: min(30%, 18rem);
 }
 
 .spotify-player-bar .sb-artwork {
@@ -418,18 +421,15 @@ body:has([data-set-watch-page]) main {
 }
 
 .spotify-player-bar .sb-center {
-  flex: 1;
+  flex: 0 1 40rem;
+  width: 100%;
+  max-width: min(100%, 40rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6px;
   min-width: 0;
-}
-
-.spotify-player-bar .sb-right {
-  width: 25%;
-  flex-shrink: 0;
 }
 
 .spotify-player-bar .sb-controls {
@@ -553,18 +553,16 @@ body:has([data-set-watch-page]) main {
     gap: 10px;
   }
 
-  .spotify-player-bar .sb-left,
-  .spotify-player-bar .sb-right {
+  .spotify-player-bar .sb-left {
+    position: static;
     width: 100%;
-  }
-
-  .spotify-player-bar .sb-right {
-    display: none;
   }
 
   .spotify-player-bar .sb-center {
     order: -1;
     width: 100%;
+    max-width: none;
+    flex: none;
   }
 }
 
@@ -698,18 +696,11 @@ body:has([data-set-watch-page]) main {
   cursor: pointer;
 }
 
-.player-volume {
-  position: relative;
-  z-index: 2;
-}
-
-.player-volume-slider {
-  accent-color: var(--accent);
-  height: 4px;
-  cursor: pointer;
-}
-
 .player-queue-panel {
+  background-color: var(--surface);
+}
+
+.player-control-btn {
   background-color: var(--surface);
 }
 

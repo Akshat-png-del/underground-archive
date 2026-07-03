@@ -1,0 +1,179 @@
+# MSC Reconcile Trace
+
+Captured: 158 lines
+
+## Summary
+
+- PRESERVED non-engine: 1
+- SKIP_PATCH: 11
+- pendingSeekSeconds branch: 0
+- POST-RECONCILE MISMATCH: 1
+
+## First PRESERVED non-engine event
+
+- t+9669ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 134, condition: PRESERVED non-engine time instead of accepting engine.currentTime, engineCurrentTime: 4.38, transportBefore: 15, transportAfter: 15}
+
+## First SKIP_PATCH (engine differs)
+
+- [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 136, reason: reconciled.currentTime unchanged but engine.currentTime differs, transportCurrentTime: 15, reconciledCurrentTime: 15, engineCurrentTime: 4.38}
+
+## Full log
+
+- t+  437ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 1, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: null, pendingSeekSeconds: null}
+- t+  437ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 2, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: null, pendingSeekSeconds: null}
+- t+  437ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 3, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+  438ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 4, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+  438ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 5, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}
+- t+  438ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 6, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}
+- t+  438ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 7, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}
+- t+  439ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 8, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}
+- t+ 1817ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 9, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 1817ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 10, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 1817ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 11, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 1817ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 12, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 1817ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 13, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}
+- t+ 1817ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 14, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}
+- t+ 1817ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 15, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}
+- t+ 1817ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 16, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}
+- t+ 2745ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 17, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 2745ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 18, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 2745ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 19, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 2745ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 20, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 2745ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 21, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}
+- t+ 2745ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 22, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}
+- t+ 2745ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 23, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}
+- t+ 2745ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 24, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}
+- t+ 2969ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 25, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 2969ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 26, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 2969ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 27, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 2969ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 28, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 2969ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 29, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}
+- t+ 2969ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 30, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}
+- t+ 2969ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 31, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}
+- t+ 2970ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 32, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}
+- t+ 3523ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 33, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 3523ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 34, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 3524ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 35, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 3524ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 36, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 3524ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 37, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}
+- t+ 3524ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 38, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}
+- t+ 3524ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 39, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}
+- t+ 3524ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 40, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}
+- t+ 3548ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 41, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 3548ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 42, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 3548ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 43, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 3548ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 44, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 3548ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 45, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}
+- t+ 3548ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 46, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}
+- t+ 3548ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 47, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}
+- t+ 3549ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 48, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}
+- t+ 4179ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 49, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 4179ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 50, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 4179ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 51, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 4179ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 52, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 4179ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 53, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}
+- t+ 4179ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 54, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}
+- t+ 4179ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 55, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}
+- t+ 4180ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 56, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}
+- t+ 4567ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 57, engineCurrentTime: 0.638, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 4567ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 58, engineCurrentTime: 0.638, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 4567ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 59, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 4567ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 60, condition: shouldAcceptPositionAfterSeek, providerTime: 0.638, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 4567ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 61, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0.638, providerTime: 0.638}
+- t+ 4568ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 62, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0.638, engineCurrentTime: 0.638, acceptedEngineTime: true}
+- t+ 4568ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 63, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0.638, engineCurrentTime: 0.638, pendingSeekSeconds: null}
+- t+ 4569ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 64, engineCurrentTime: 0.638, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0.638, pendingSeekSeconds: null}
+- t+ 5634ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 65, engineCurrentTime: 1.701, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 5634ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 66, engineCurrentTime: 1.701, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 5634ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 67, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 5634ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 68, condition: shouldAcceptPositionAfterSeek, providerTime: 1.701, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 5634ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 69, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 1.701, providerTime: 1.701}
+- t+ 5634ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 70, transportCurrentTimeBefore: 0.638, transportCurrentTimeAfter: 1.701, engineCurrentTime: 1.701, acceptedEngineTime: true}
+- t+ 5634ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 71, transportCurrentTimeBefore: 0.638, transportCurrentTimeAfter: 1.701, engineCurrentTime: 1.701, pendingSeekSeconds: null}
+- t+ 5634ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 72, engineCurrentTime: 1.701, transportCurrentTimeBefore: 0.638, transportCurrentTimeAfter: 1.701, pendingSeekSeconds: null}
+- t+ 6697ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 73, engineCurrentTime: 2.764, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 6697ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 74, engineCurrentTime: 2.764, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 6697ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 75, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 6697ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 76, condition: shouldAcceptPositionAfterSeek, providerTime: 2.764, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 6697ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 77, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 2.764, providerTime: 2.764}
+- t+ 6697ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 78, transportCurrentTimeBefore: 1.701, transportCurrentTimeAfter: 2.764, engineCurrentTime: 2.764, acceptedEngineTime: true}
+- t+ 6697ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 79, transportCurrentTimeBefore: 1.701, transportCurrentTimeAfter: 2.764, engineCurrentTime: 2.764, pendingSeekSeconds: null}
+- t+ 6697ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 80, engineCurrentTime: 2.764, transportCurrentTimeBefore: 1.701, transportCurrentTimeAfter: 2.764, pendingSeekSeconds: null}
+- t+ 6905ms === MARKER: pause ===
+- t+ 6952ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 81, engineCurrentTime: 2.764, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 6952ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 82, engineCurrentTime: 2.764, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 6952ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 83, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 6953ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 84, condition: shouldAcceptPositionAfterSeek, providerTime: 2.764, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 6953ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 85, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 2.764, providerTime: 2.764}
+- t+ 6953ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 86, transportCurrentTimeBefore: 2.764, transportCurrentTimeAfter: 2.764, engineCurrentTime: 2.764, acceptedEngineTime: true}
+- t+ 6953ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 87, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 2.764, engineCurrentTime: 2.764}
+- t+ 6953ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 88, engineCurrentTime: 2.764, transportCurrentTimeBefore: 2.764, transportCurrentTimeAfter: 2.764, pendingSeekSeconds: null}
+- t+ 6994ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 89, engineCurrentTime: 3.047, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 6994ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 90, engineCurrentTime: 3.047, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 6994ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 91, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 6994ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 92, condition: shouldAcceptPositionAfterSeek, providerTime: 3.047, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 6994ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 93, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 3.047, providerTime: 3.047}
+- t+ 6994ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 94, transportCurrentTimeBefore: 2.764, transportCurrentTimeAfter: 3.047, engineCurrentTime: 3.047, acceptedEngineTime: true}
+- t+ 6994ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 95, transportCurrentTimeBefore: 2.764, transportCurrentTimeAfter: 3.047, engineCurrentTime: 3.047, pendingSeekSeconds: null}
+- t+ 6994ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 96, engineCurrentTime: 3.047, transportCurrentTimeBefore: 2.764, transportCurrentTimeAfter: 3.047, pendingSeekSeconds: null}
+- t+ 7986ms === MARKER: resume ===
+- t+ 8040ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 97, engineCurrentTime: 3.047, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 8040ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 98, engineCurrentTime: 3.047, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 8041ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 99, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 8041ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 100, condition: shouldAcceptPositionAfterSeek, providerTime: 3.047, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 8041ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 101, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 3.047, providerTime: 3.047}
+- t+ 8041ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 102, transportCurrentTimeBefore: 3.047, transportCurrentTimeAfter: 3.047, engineCurrentTime: 3.047, acceptedEngineTime: true}
+- t+ 8041ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 103, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 3.047, engineCurrentTime: 3.047}
+- t+ 8044ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 104, engineCurrentTime: 3.047, transportCurrentTimeBefore: 3.047, transportCurrentTimeAfter: 3.047, pendingSeekSeconds: null}
+- t+ 8332ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 105, engineCurrentTime: 3.312, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 8333ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 106, engineCurrentTime: 3.312, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 8333ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 107, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 8333ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 108, condition: shouldAcceptPositionAfterSeek, providerTime: 3.312, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 8333ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 109, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 3.312, providerTime: 3.312}
+- t+ 8333ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 110, transportCurrentTimeBefore: 3.047, transportCurrentTimeAfter: 3.312, engineCurrentTime: 3.312, acceptedEngineTime: true}
+- t+ 8333ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 111, transportCurrentTimeBefore: 3.047, transportCurrentTimeAfter: 3.312, engineCurrentTime: 3.312, pendingSeekSeconds: null}
+- t+ 8333ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 112, engineCurrentTime: 3.312, transportCurrentTimeBefore: 3.047, transportCurrentTimeAfter: 3.312, pendingSeekSeconds: null}
+- t+ 9403ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 113, engineCurrentTime: 4.38, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 9403ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 114, engineCurrentTime: 4.38, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+ 9403ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 115, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+ 9403ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 116, condition: shouldAcceptPositionAfterSeek, providerTime: 4.38, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+ 9404ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 117, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 4.38, providerTime: 4.38}
+- t+ 9404ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 118, transportCurrentTimeBefore: 3.312, transportCurrentTimeAfter: 4.38, engineCurrentTime: 4.38, acceptedEngineTime: true}
+- t+ 9404ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 119, transportCurrentTimeBefore: 3.312, transportCurrentTimeAfter: 4.38, engineCurrentTime: 4.38, pendingSeekSeconds: null}
+- t+ 9404ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 120, engineCurrentTime: 4.38, transportCurrentTimeBefore: 3.312, transportCurrentTimeAfter: 4.38, pendingSeekSeconds: null}
+- t+ 9582ms === MARKER: seek 50% ===
+- t+ 9635ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 121, engineCurrentTime: 15, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 15}
+- t+ 9635ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 122, engineCurrentTime: 15, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 15}
+- t+ 9635ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 123, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}
+- t+ 9635ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 124, condition: shouldAcceptPositionAfterSeek, providerTime: 15, pendingSeekSeconds: 15, pendingSeekDeadline: 1783054425710}
+- t+ 9635ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 125, condition: currentTime assignment, branch: pendingSeek + accept → providerTime, assignedCurrentTime: 15, providerTime: 15}
+- t+ 9635ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 126, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15, engineCurrentTime: 15, acceptedEngineTime: true}
+- t+ 9636ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 127, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 15, engineCurrentTime: 15}
+- t+ 9636ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 128, engineCurrentTime: 15, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15, pendingSeekSeconds: 15}
+- t+ 9669ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 129, engineCurrentTime: 4.38, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 15}
+- t+ 9669ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 130, engineCurrentTime: 4.38, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 15}
+- t+ 9669ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 131, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}
+- t+ 9669ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 132, condition: shouldAcceptPositionAfterSeek, providerTime: 4.38, pendingSeekSeconds: 15, pendingSeekDeadline: 1783054425710}
+- t+ 9669ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 133, condition: currentTime assignment, branch: pendingSeek + pending → pendingSeekSeconds, assignedCurrentTime: 15, providerTime: 4.38}
+- t+ 9669ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 134, condition: PRESERVED non-engine time instead of accepting engine.currentTime, engineCurrentTime: 4.38, transportBefore: 15, transportAfter: 15}
+- t+ 9669ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 135, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15, engineCurrentTime: 4.38, acceptedEngineTime: false}
+- t+ 9669ms [MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 136, reason: reconciled.currentTime unchanged but engine.currentTime differs, transportCurrentTime: 15, reconciledCurrentTime: 15, engineCurrentTime: 4.38}
+- t+ 9669ms [MSC-RECONCILE] onEngineSnapshot GUARD {id: 137, condition: POST-RECONCILE MISMATCH — engine.currentTime still differs from transport.currentTime, engineCurrentTime: 4.38, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15}
+- t+ 9669ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 138, engineCurrentTime: 4.38, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15, pendingSeekSeconds: 15}
+- t+10466ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 139, engineCurrentTime: 15.562, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 15}
+- t+10466ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 140, engineCurrentTime: 15.562, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 15}
+- t+10466ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 141, condition: seek flags, isSeeking: true, inSeekLock: false, inSeekSettle: true}
+- t+10466ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 142, condition: shouldAcceptPositionAfterSeek, providerTime: 15.562, pendingSeekSeconds: 15, pendingSeekDeadline: 1783054425710}
+- t+10466ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 143, condition: currentTime assignment, branch: pendingSeek + accept → providerTime, assignedCurrentTime: 15.562, providerTime: 15.562}
+- t+10466ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 144, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15.562, engineCurrentTime: 15.562, acceptedEngineTime: true}
+- t+10466ms [MSC-RECONCILE] onEngineSnapshot BRANCH {id: 145, condition: clearPendingSeek, clearedPendingSeekSeconds: 15, positionAccept: true}
+- t+10466ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 146, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15.562, engineCurrentTime: 15.562, pendingSeekSeconds: null}
+- t+10466ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 147, engineCurrentTime: 15.562, transportCurrentTimeBefore: 15, transportCurrentTimeAfter: 15.562, pendingSeekSeconds: null}
+- t+11521ms [MSC-RECONCILE] onEngineSnapshot ENTER {id: 148, engineCurrentTime: 16.623, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+11521ms [MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 149, engineCurrentTime: 16.623, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}
+- t+11521ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 150, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}
+- t+11521ms [MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 151, condition: shouldAcceptPositionAfterSeek, providerTime: 16.623, pendingSeekSeconds: null, pendingSeekDeadline: 0}
+- t+11521ms [MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 152, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 16.623, providerTime: 16.623}
+- t+11521ms [MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 153, transportCurrentTimeBefore: 15.562, transportCurrentTimeAfter: 16.623, engineCurrentTime: 16.623, acceptedEngineTime: true}
+- t+11521ms [MSC-RECONCILE] onEngineSnapshot PATCH {id: 154, transportCurrentTimeBefore: 15.562, transportCurrentTimeAfter: 16.623, engineCurrentTime: 16.623, pendingSeekSeconds: null}
+- t+11522ms [MSC-RECONCILE] onEngineSnapshot EXIT {id: 155, engineCurrentTime: 16.623, transportCurrentTimeBefore: 15.562, transportCurrentTimeAfter: 16.623, pendingSeekSeconds: null}

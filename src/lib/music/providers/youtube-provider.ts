@@ -14,6 +14,8 @@ import {
   logProviderPlay,
 } from "@/lib/music/providers/provider-debug";
 import { logPlaybackStarted, logSeekExecuted, logVideoLoaded } from "@/lib/music/media-binding-debug";
+import { seekPipelineTrace } from "@/lib/music/seek-pipeline-trace";
+import { playPausePipelineTrace, isDuplicateCommand } from "@/lib/music/play-pause-pipeline-trace";
 import { extractYouTubeId } from "@/lib/music";
 
 const EMBED_WIDTH = 352;
@@ -186,6 +188,13 @@ export class YouTubeProvider implements PlaybackProvider {
           } else if (buffering) {
             this.patch({ isLoading: true });
           } else if (paused) {
+            playPausePipelineTrace({
+              fn: "YoutubeProvider",
+              phase: "state_change",
+              event: "pause",
+              providerIsPlaying: false,
+              note: "YT PlayerState.PAUSED",
+            });
             this.patch({ isPlaying: false, isLoading: false });
             this.clearTick();
             this.syncFromPlayer();
@@ -257,6 +266,13 @@ export class YouTubeProvider implements PlaybackProvider {
   pause(): void {
     if (!this.isReady) return;
     logProviderPause(this.kind);
+    playPausePipelineTrace({
+      fn: "YoutubeProvider.pause",
+      phase: "ENTER",
+      event: "pause",
+      duplicateCommand: isDuplicateCommand("youtube-pause"),
+      providerIsPlaying: this.state.isPlaying,
+    });
     try {
       this.player?.pauseVideo();
     } catch {
@@ -265,17 +281,37 @@ export class YouTubeProvider implements PlaybackProvider {
     this.clearTick();
     this.syncFromPlayer();
     this.patch({ isPlaying: false, isLoading: false });
+    playPausePipelineTrace({
+      fn: "YoutubeProvider.pause",
+      phase: "EXIT",
+      event: "pause",
+      providerIsPlaying: this.state.isPlaying,
+    });
   }
 
   resume(): void {
     if (!this.isReady) return;
     logProviderPlay(this.kind);
+    playPausePipelineTrace({
+      fn: "YoutubeProvider.resume",
+      phase: "ENTER",
+      event: "resume",
+      duplicateCommand: isDuplicateCommand("youtube-resume"),
+      providerIsPlaying: this.state.isPlaying,
+    });
     this.patch({ isLoading: true, isPlaying: false, error: null });
     try {
       this.player?.playVideo();
     } catch {
       // ignore
     }
+    playPausePipelineTrace({
+      fn: "YoutubeProvider.resume",
+      phase: "EXIT",
+      event: "resume",
+      providerIsPlaying: this.state.isPlaying,
+      note: "playVideo() invoked",
+    });
   }
 
   stop(): void {
@@ -293,14 +329,34 @@ export class YouTubeProvider implements PlaybackProvider {
   }
 
   seek(positionSeconds: number): void {
-    if (!this.isReady || !this.player) return;
+    seekPipelineTrace("YoutubeProvider.seek", "ENTER", {
+      positionSeconds,
+      isReady: this.isReady,
+      hasPlayer: !!this.player,
+    });
+    if (!this.isReady || !this.player) {
+      seekPipelineTrace("YoutubeProvider.seek", "EARLY_RETURN", {
+        reason: "!isReady || !player",
+        isReady: this.isReady,
+        hasPlayer: !!this.player,
+      });
+      return;
+    }
     const clamped = Math.max(0, positionSeconds);
     try {
+      seekPipelineTrace("YoutubeProvider.seek", "INVOKE", {
+        next: "player.seekTo",
+        clamped,
+      });
       this.player.seekTo(clamped, true);
       logSeekExecuted(clamped, this.kind);
       this.patch({ isLoading: true });
-    } catch {
-      // ignore
+      seekPipelineTrace("YoutubeProvider.seek", "EXIT", { clamped });
+    } catch (err) {
+      seekPipelineTrace("YoutubeProvider.seek", "EARLY_RETURN", {
+        reason: "player.seekTo threw",
+        error: err instanceof Error ? err.message : String(err),
+      });
     }
   }
 

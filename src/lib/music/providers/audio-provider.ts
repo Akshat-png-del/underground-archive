@@ -6,12 +6,15 @@ import type {
 } from "@/lib/music/providers/playback-provider";
 import { EMPTY_PROVIDER_STATE } from "@/lib/music/providers/playback-provider";
 import { ProviderReadyGate } from "@/lib/music/providers/provider-ready-gate";
+import { seekPipelineTrace } from "@/lib/music/seek-pipeline-trace";
 import {
   logProviderInit,
   logProviderLoad,
   logProviderPause,
   logProviderPlay,
 } from "@/lib/music/providers/provider-debug";
+import { volumePipelineTrace } from "@/lib/music/volume-pipeline-trace";
+import { playPausePipelineTrace, isDuplicateCommand } from "@/lib/music/play-pause-pipeline-trace";
 
 export class AudioProvider implements PlaybackProvider {
   readonly kind = "audio" as const;
@@ -53,6 +56,15 @@ export class AudioProvider implements PlaybackProvider {
     audio.setAttribute("playsinline", "true");
     audio.volume = this.volume;
     audio.muted = this.muted;
+    volumePipelineTrace({
+      initiator: "AudioProvider",
+      fn: "AudioProvider.init",
+      phase: "audio_element_created",
+      newVolume: this.volume,
+      newMuted: this.muted,
+      providerAccepted: true,
+      note: "defaults_from_constructor",
+    });
     audio.style.display = "none";
     this.mountNode.appendChild(audio);
     this.audio = audio;
@@ -99,14 +111,23 @@ export class AudioProvider implements PlaybackProvider {
       emit();
     });
     audio.addEventListener("pause", () => {
+      playPausePipelineTrace({
+        fn: "AudioProvider",
+        phase: "dom_pause_event",
+        event: "pause",
+        providerIsPlaying: false,
+        note: "HTMLAudioElement pause event",
+      });
       this.patch({ isPlaying: false, isLoading: false });
       emit();
     });
     audio.addEventListener("ended", () => {
-      this.patch({ isPlaying: false, isLoading: false, currentTime: 0 });
+      this.patch({ isPlaying: false, isLoading: false, currentTime: this.audio?.duration ?? this.state.duration,});
+      emit();
     });
     audio.addEventListener("waiting", () => {
       this.patch({ isLoading: true });
+      emit();
     });
     audio.addEventListener("canplay", () => {
       this.patch({ isLoading: false });
@@ -115,9 +136,11 @@ export class AudioProvider implements PlaybackProvider {
     });
     audio.addEventListener("loadedmetadata", () => {
       this.syncDurationFromElement();
+      emit();
     });
     audio.addEventListener("durationchange", () => {
       this.syncDurationFromElement();
+      emit();
     });
     audio.addEventListener("loadeddata", () => {
       this.syncDurationFromElement();
@@ -130,7 +153,7 @@ export class AudioProvider implements PlaybackProvider {
     });
     audio.addEventListener("seeked", () => {
       this.patch({ isLoading: false, currentTime: this.audio?.currentTime ?? this.state.currentTime });
-      this.pushState();
+      emit();
     });
     audio.addEventListener("error", () => {
       const mediaError = audio.error;
@@ -138,11 +161,23 @@ export class AudioProvider implements PlaybackProvider {
         mediaError?.message || `Audio error (code ${mediaError?.code ?? "unknown"})`;
       this.patch({ isPlaying: false, isLoading: false, error: message });
       this.readyGate.fail(message);
+      emit();
     });
   }
 
   private patch(partial: Partial<ProviderState>): void {
-    this.state = { ...this.state, ...partial };
+    const before = this.state;
+    const next = { ...before, ...partial };
+    if (
+      next.currentTime === before.currentTime &&
+      next.duration === before.duration &&
+      next.isPlaying === before.isPlaying &&
+      next.isLoading === before.isLoading &&
+      next.error === before.error
+    ) {
+      return;
+    }
+    this.state = next;
     this.listener?.(this.getState());
   }
 
@@ -242,17 +277,44 @@ export class AudioProvider implements PlaybackProvider {
   pause(): void {
     if (!this.audio) return;
     logProviderPause(this.kind);
+    playPausePipelineTrace({
+      fn: "AudioProvider.pause",
+      phase: "ENTER",
+      event: "pause",
+      duplicateCommand: isDuplicateCommand("audio-pause"),
+      providerIsPlaying: this.state.isPlaying,
+    });
     this.audio.pause();
     this.pushState();
+    playPausePipelineTrace({
+      fn: "AudioProvider.pause",
+      phase: "EXIT",
+      event: "pause",
+      providerIsPlaying: this.state.isPlaying,
+    });
   }
 
   resume(): void {
     if (!this.isReady || !this.audio) return;
     logProviderPlay(this.kind);
+    playPausePipelineTrace({
+      fn: "AudioProvider.resume",
+      phase: "ENTER",
+      event: "resume",
+      duplicateCommand: isDuplicateCommand("audio-resume"),
+      providerIsPlaying: this.state.isPlaying,
+    });
     this.patch({ isLoading: true, isPlaying: false });
     void this.audio.play().then(() => this.pushState()).catch((err) => {
       const message = err instanceof Error ? err.message : String(err);
       this.patch({ isPlaying: false, isLoading: false, error: message });
+    });
+    playPausePipelineTrace({
+      fn: "AudioProvider.resume",
+      phase: "EXIT",
+      event: "resume",
+      providerIsPlaying: this.state.isPlaying,
+      note: "async play() in flight",
     });
   }
 
@@ -272,7 +334,20 @@ export class AudioProvider implements PlaybackProvider {
   }
 
   seek(positionSeconds: number): void {
-    if (!this.audio?.src) return;
+    seekPipelineTrace("AudioProvider.seek", "ENTER", {
+      positionSeconds,
+      hasAudio: !!this.audio,
+      hasSrc: !!this.audio?.src,
+      audioCurrentTime: this.audio?.currentTime ?? null,
+      audioDuration: this.audio?.duration ?? null,
+    });
+    if (!this.audio?.src) {
+      seekPipelineTrace("AudioProvider.seek", "EARLY_RETURN", {
+        reason: "!this.audio?.src",
+        hasAudio: !!this.audio,
+      });
+      return;
+    }
     const max = Number.isFinite(this.audio.duration) ? this.audio.duration : 0;
     const clamped = max > 0 ? Math.min(Math.max(0, positionSeconds), max) : Math.max(0, positionSeconds);
     this.audio.currentTime = clamped;
@@ -280,7 +355,10 @@ export class AudioProvider implements PlaybackProvider {
       currentTime: Number.isFinite(this.audio.currentTime) ? this.audio.currentTime : clamped,
       isLoading: true,
     });
-    this.pushState();
+    seekPipelineTrace("AudioProvider.seek", "EXIT", {
+      clamped,
+      audioCurrentTime: this.audio.currentTime,
+    });
   }
 
   getState(): ProviderState {
@@ -293,13 +371,33 @@ export class AudioProvider implements PlaybackProvider {
   }
 
   setVolume(volume: number): void {
+    const prev = this.volume;
     this.volume = volume;
     if (this.audio) this.audio.volume = volume;
+    volumePipelineTrace({
+      initiator: "AudioProvider",
+      fn: "AudioProvider.setVolume",
+      phase: "applied",
+      previousVolume: prev,
+      newVolume: volume,
+      domAudioVolume: this.audio?.volume ?? null,
+      providerAccepted: true,
+    });
   }
 
   setMuted(muted: boolean): void {
+    const prev = this.muted;
     this.muted = muted;
     if (this.audio) this.audio.muted = muted;
+    volumePipelineTrace({
+      initiator: "AudioProvider",
+      fn: "AudioProvider.setMuted",
+      phase: "applied",
+      previousMuted: prev,
+      newMuted: muted,
+      domAudioMuted: this.audio?.muted ?? null,
+      providerAccepted: true,
+    });
   }
 
   destroy(): void {

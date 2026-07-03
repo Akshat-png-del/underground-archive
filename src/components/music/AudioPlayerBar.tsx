@@ -10,15 +10,16 @@ import {
 } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import type { PlaybackItem } from "@/lib/music/playback";
+import { resolvePlaybackExperience } from "@/lib/music/playback-experience";
 import { registerPlayerShell } from "@/lib/music/player-controller";
 import { mediaSessionController } from "@/lib/music/media-session-controller";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
-import { usePlaybackExperience } from "@/lib/music/use-playback-experience";
 import { PlaybackSeekBar } from "@/components/music/PlaybackSeekBar";
 import { PlayerErrorBoundary } from "@/components/music/PlayerErrorBoundary";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { useNowPlayingMetadata } from "@/lib/music/use-now-playing-metadata";
 import { assertAudioBarNotOnSetWatchPage } from "@/lib/music/playback-domain-lock";
+import { hydrationPipelineTrace } from "@/lib/music/hydration-pipeline-trace";
 
 const EXPANDED_BAR_HEIGHT = "6.75rem";
 const COLLAPSED_BAR_HEIGHT = "1.25rem";
@@ -27,7 +28,7 @@ export function AudioPlayerBar() {
   const shellRef = useRef<HTMLDivElement>(null);
   const snapshot = useFinalPlaybackSnapshot();
   const current = snapshot.activeTrack;
-  const experience = usePlaybackExperience();
+  const experience = resolvePlaybackExperience(current);
   const showBar = experience === "audio" && !!current;
   const [expanded, setExpanded] = useState(true);
 
@@ -39,6 +40,19 @@ export function AudioPlayerBar() {
   useLayoutEffect(() => {
     if (showBar) assertAudioBarNotOnSetWatchPage("AudioPlayerBar");
   }, [showBar]);
+
+  useEffect(() => {
+    hydrationPipelineTrace({
+      fn: "AudioPlayerBar",
+      phase: "mount",
+      snapshot: {
+        activeTrack: current?.refId ?? null,
+        isPlaying: snapshot.isPlaying,
+        currentTime: snapshot.currentTime,
+      },
+      extra: { showBar, experience },
+    });
+  }, []);
 
   useEffect(() => {
     if (showBar) setExpanded(true);
@@ -151,13 +165,12 @@ function AudioPlayerBarChrome({
         <div className="sb-center spotify-player-center spotify-player-interactive">
           <AudioTransportControls snapshot={snapshot} />
           <PlaybackSeekBar
+            snapshot={snapshot}
             key={snapshot.activeTrack?.refId ?? "none"}
             variant="spotify-bar"
             className="w-full"
           />
         </div>
-
-        <div className="sb-right" aria-hidden />
       </div>
 
       {error && (

@@ -6,6 +6,7 @@
  */
 import { globalPlayerEngine } from "@/lib/music/global-player-engine";
 import { playbackDebugLog } from "@/lib/music/playback-debug";
+import { preloadSpotifyIframeApi } from "@/lib/music/spotify-embed-api";
 
 let bootstrapped = false;
 
@@ -22,6 +23,7 @@ export function bootstrapMediaEngine(): void {
   }
 
   playbackDebugLog("MOUNT", "MediaEngine bootstrap — first init");
+  preloadSpotifyIframeApi();
   globalPlayerEngine.mount();
   bootstrapped = true;
 }

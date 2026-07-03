@@ -10,7 +10,8 @@ export function shouldAcceptPositionAfterSeek(
   positionSeconds: number,
   pendingSeekSeconds: number | null,
   pendingSeekDeadline: number,
-  toleranceSeconds = 2,
+  toleranceSeconds = 0.25,
+  seekOriginSeconds: number | null = null,
 ): { accept: boolean; clearPending: boolean } {
   if (pendingSeekSeconds === null) {
     return { accept: true, clearPending: false };
@@ -19,6 +20,14 @@ export function shouldAcceptPositionAfterSeek(
     return { accept: true, clearPending: true };
   }
   if (Math.abs(positionSeconds - pendingSeekSeconds) <= toleranceSeconds) {
+    return { accept: true, clearPending: true };
+  }
+  const origin = seekOriginSeconds ?? pendingSeekSeconds;
+  const forwardSeek = pendingSeekSeconds >= origin - toleranceSeconds;
+  if (forwardSeek && positionSeconds >= pendingSeekSeconds - toleranceSeconds) {
+    return { accept: true, clearPending: true };
+  }
+  if (!forwardSeek && positionSeconds <= pendingSeekSeconds + toleranceSeconds) {
     return { accept: true, clearPending: true };
   }
   return { accept: false, clearPending: false };

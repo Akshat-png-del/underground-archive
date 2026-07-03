@@ -14,6 +14,7 @@ import {
   playbackItemPlaying,
 } from "@/lib/music/use-card-playback";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
+import { formatPlaybackElapsedSubline } from "@/lib/music/playback-elapsed-display";
 
 interface TrackRowProps {
   track: CatalogTrack;
@@ -62,7 +63,9 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
         <p className="truncate text-sm font-medium text-foreground">{track.artist}</p>
         <p className="truncate text-base text-foreground/90">{track.title}</p>
         <p className="mt-0.5 truncate text-xs text-muted">
-          {track.releaseYear} · {track.duration}
+          {active
+            ? formatPlaybackElapsedSubline(snapshot.displayTime, snapshot.duration)
+            : `${track.releaseYear} · ${track.duration}`}
         </p>
       </div>
       <div className="flex shrink-0 flex-col items-end gap-1">

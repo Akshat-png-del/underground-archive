@@ -1,0 +1,1964 @@
+{
+  "generatedAt": "2026-07-02T21:53:40.279Z",
+  "post": {
+    "ts": 1783029220241,
+    "controller": {
+      "currentTime": 29.713,
+      "duration": 29.713,
+      "isPlaying": true,
+      "isSeeking": false,
+      "seekPreviewTime": null,
+      "hoverPreviewTime": null,
+      "displayTime": 29.713
+    },
+    "engine": {
+      "currentTime": 29.713,
+      "duration": 29.713,
+      "isPlaying": true,
+      "isLoading": false,
+      "refId": "sara-landry::legacy"
+    },
+    "store": {
+      "currentTime": 29.713,
+      "duration": 29.713,
+      "isPlaying": true,
+      "isLoading": false
+    },
+    "audio": null,
+    "dom": {
+      "rootPresent": true,
+      "iframePresent": true,
+      "audioPresent": false,
+      "iframeSrc": "https://open.spotify.com/embed/track/0aMonkh8OKgqx1K0viRHRT?utm_source=iframe-api",
+      "audioSrc": null,
+      "audioPaused": null,
+      "engineRootPresent": true,
+      "globalPlayerPresent": true
+    }
+  },
+  "entered": [
+    "PlaybackSeekBar.handlePointerDown",
+    "MediaSessionController.beginSeek",
+    "MediaSessionUiSession.beginSeek",
+    "PlaybackSeekBar.attachPointerEndListeners",
+    "PlaybackSeekBar.clearPointerEndListeners",
+    "PlaybackSeekBar.handlePreviewMove",
+    "MediaSessionController.updateSeek",
+    "MediaSessionUiSession.updateSeek",
+    "PlaybackSeekBar.commitDragSeek",
+    "PlaybackSeekBar.detachPointerEndListeners",
+    "MediaSessionController.commitSeek",
+    "MediaSessionUiSession.clearOnSeekCommit",
+    "GlobalPlayerEngine.seek",
+    "ProviderRouter.seek",
+    "SpotifyProvider.seek",
+    "PlaybackSeekBar.handlePointerMove",
+    "PlaybackSeekBar.handleClick"
+  ],
+  "skipped": [
+    "PlaybackSeekBar.onPointerEnd",
+    "PlaybackSeekBar.windowPointerEnd",
+    "MediaSessionController.seek",
+    "AudioProvider.seek",
+    "YoutubeProvider.seek"
+  ],
+  "earlyReturns": [
+    {
+      "tMs": 9053,
+      "fn": "PlaybackSeekBar.handlePointerMove",
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerMove EARLY_RETURN {id: 63, ts: 9043.9, fn: PlaybackSeekBar.handlePointerMove, kind: EARLY_RETURN, reason: draggingRef.current === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_108mcta._.js:11472:64) | at handlePointerMove (http://localhost:3000/_next/static/chunks/_108mcta._.js:16581:186) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74) | at processDispatchQueue (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10355:41)"
+    }
+  ],
+  "invocations": [],
+  "lastExecuted": {
+    "tMs": 9169,
+    "parsed": {
+      "fn": "PlaybackSeekBar.handleClick",
+      "kind": "EXIT",
+      "raw": "{id: 131, ts: 9161.4, fn: PlaybackSeekBar.handleClick, kind: EXIT}"
+    },
+    "raw": "[TRACE] PlaybackSeekBar.handleClick EXIT {id: 131, ts: 9161.4, fn: PlaybackSeekBar.handleClick, kind: EXIT}"
+  },
+  "firstMissing": "PlaybackSeekBar.onPointerEnd",
+  "logs": [
+    {
+      "tMs": 1802,
+      "type": "log",
+      "text": "[SESSION] play() {refId: sara-landry::legacy, type: track}"
+    },
+    {
+      "tMs": 1805,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 1, ts: 1799.7, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+    },
+    {
+      "tMs": 1805,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 2, ts: 1800.5, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners detached}"
+    },
+    {
+      "tMs": 1806,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 3, ts: 1800.9, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+    },
+    {
+      "tMs": 6479,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 4, ts: 6467.6, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0.753}"
+    },
+    {
+      "tMs": 6915,
+      "type": "marker",
+      "text": "=== SEEK GESTURE START (element.dispatchEvent pointerdown/up) ==="
+    },
+    {
+      "tMs": 6919,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 5, ts: 6911.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerdown}"
+    },
+    {
+      "tMs": 6920,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown ENTER {id: 6, ts: 6912.7, fn: PlaybackSeekBar.handlePointerDown, kind: ENTER, eventType: react.pointerdown}"
+    },
+    {
+      "tMs": 6920,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown BRANCH {id: 7, ts: 6913.5, fn: PlaybackSeekBar.handlePointerDown, kind: BRANCH, action: stopPropagation}"
+    },
+    {
+      "tMs": 6920,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown STATE {id: 8, ts: 6913.6, fn: PlaybackSeekBar.handlePointerDown, kind: STATE, dragging: true}"
+    },
+    {
+      "tMs": 6920,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown → mediaSessionController.beginSeek {id: 9, ts: 6913.7, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: mediaSessionController.beginSeek}"
+    },
+    {
+      "tMs": 6920,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.beginSeek ENTER {id: 10, ts: 6913.8, fn: MediaSessionController.beginSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6921,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.beginSeek ENTER {id: 11, ts: 6914.0, fn: MediaSessionUiSession.beginSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6921,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.beginSeek EXIT {id: 12, ts: 6914.0, fn: MediaSessionUiSession.beginSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 6921,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 13, ts: 6914.2, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0}"
+    },
+    {
+      "tMs": 6921,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.beginSeek EXIT {id: 14, ts: 6914.4, fn: MediaSessionController.beginSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 6921,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown → attachPointerEndListeners {id: 15, ts: 6914.5, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: attachPointerEndListeners}"
+    },
+    {
+      "tMs": 6922,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners ENTER {id: 16, ts: 6914.6, fn: PlaybackSeekBar.attachPointerEndListeners, kind: ENTER, listenerGenBefore: 0}"
+    },
+    {
+      "tMs": 6922,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 17, ts: 6914.8, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: false}"
+    },
+    {
+      "tMs": 6922,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 18, ts: 6914.9, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 0}"
+    },
+    {
+      "tMs": 6922,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners STATE {id: 19, ts: 6915.0, fn: PlaybackSeekBar.attachPointerEndListeners, kind: STATE, attached: Array(2)}"
+    },
+    {
+      "tMs": 6922,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners EXIT {id: 20, ts: 6915.1, fn: PlaybackSeekBar.attachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 6922,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown EXIT {id: 21, ts: 6915.1, fn: PlaybackSeekBar.handlePointerDown, kind: EXIT, dragging: true}"
+    },
+    {
+      "tMs": 6968,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 22, ts: 6961.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 6968,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 23, ts: 6961.9, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 6969,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 24, ts: 6962.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 6974,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 25, ts: 6962.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6975,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 26, ts: 6962.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6975,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 27, ts: 6962.4, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 6975,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 28, ts: 6962.6, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 6975,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 29, ts: 6962.6, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 0}"
+    },
+    {
+      "tMs": 7016,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 30, ts: 7009.3, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+    },
+    {
+      "tMs": 7016,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.windowPointerEnd {id: 31, ts: 7009.5, listenerGen: 1, eventType: pointerup, isTrusted: false}"
+    },
+    {
+      "tMs": 7016,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.onPointerEnd → commitDragSeek {id: 32, ts: 7009.7, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+    },
+    {
+      "tMs": 7016,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek ENTER {id: 33, ts: 7009.8, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+    },
+    {
+      "tMs": 7016,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 34, ts: 7009.9, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners ENTER {id: 35, ts: 7010.0, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 1}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners EXIT {id: 36, ts: 7010.0, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 37, ts: 7010.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek {id: 38, ts: 7010.2, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek ENTER {id: 39, ts: 7010.3, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek GUARD {id: 40, ts: 7010.7, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_108mcta._.js:11472:64) | at MediaSessionController.commitSeek (http://localhost:3000/_next/static/chunks/_108mcta._.js:12488:182) | at PlaybackSeekBar.useCallback[commitDragSeek] (http://localhost:3000/_next/static/chunks/_108mcta._.js:16457:192) | at PlaybackSeekBar.useCallback[attachPointerEndListeners].onPointerEnd (http://localhost:3000/_next/static/chunks/_108mcta._.js:16491:21) | at InjectedScript.dispatchEvent (<anonymous>:7535:10)"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[SESSION] commitSeek() {seconds: 0}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek → uiSession.clearOnSeekCommit {id: 41, ts: 7010.8, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit ENTER {id: 42, ts: 7010.9, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit EXIT {id: 43, ts: 7010.9, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek → patchTransport {id: 44, ts: 7011.0, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+    },
+    {
+      "tMs": 7017,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 45, ts: 7011.1, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek → globalPlayerEngine.seek {id: 46, ts: 7011.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[TRACE] GlobalPlayerEngine.seek ENTER {id: 47, ts: 7011.4, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[SEEK] engine seek requested {seconds: 0, mode: spotify}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 48, ts: 7011.6, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[TRACE] ProviderRouter.seek ENTER {id: 49, ts: 7011.6, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 0}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[TRACE] ProviderRouter.seek → active.seek(spotify) {id: 50, ts: 7011.7, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[TRACE] SpotifyProvider.seek ENTER {id: 51, ts: 7011.9, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 0}"
+    },
+    {
+      "tMs": 7018,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.onEngineSnapshot STATE {id: 52, ts: 7012.1, fn: MediaSessionController.onEngineSnapshot, kind: STATE, providerCurrentTime: 0}"
+    },
+    {
+      "tMs": 7019,
+      "type": "log",
+      "text": "[TRACE] SpotifyProvider.seek → host.seekIfReady {id: 53, ts: 7012.3, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+    },
+    {
+      "tMs": 7019,
+      "type": "log",
+      "text": "[TRACE] SpotifyProvider.seek EXIT {id: 54, ts: 7012.4, fn: SpotifyProvider.seek, kind: EXIT, target: 0}"
+    },
+    {
+      "tMs": 7019,
+      "type": "log",
+      "text": "[TRACE] ProviderRouter.seek EXIT {id: 55, ts: 7012.5, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 0}"
+    },
+    {
+      "tMs": 7019,
+      "type": "log",
+      "text": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 56, ts: 7012.5, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 0}"
+    },
+    {
+      "tMs": 7019,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek EXIT {id: 57, ts: 7012.6, fn: MediaSessionController.commitSeek, kind: EXIT, target: 0}"
+    },
+    {
+      "tMs": 7019,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek EXIT {id: 58, ts: 7012.7, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 0}"
+    },
+    {
+      "tMs": 7031,
+      "type": "marker",
+      "text": "=== SEEK GESTURE END ==="
+    },
+    {
+      "tMs": 7538,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 59, ts: 7528.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 1.805}"
+    },
+    {
+      "tMs": 8597,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 60, ts: 8589.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.868}"
+    },
+    {
+      "tMs": 9033,
+      "type": "marker",
+      "text": "=== SECOND GESTURE: page.mouse down/up at 75% ==="
+    },
+    {
+      "tMs": 9052,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 61, ts: 9042.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 9053,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 62, ts: 9043.2, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 9053,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EARLY_RETURN {id: 63, ts: 9043.9, fn: PlaybackSeekBar.handlePointerMove, kind: EARLY_RETURN, reason: draggingRef.current === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_108mcta._.js:11472:64) | at handlePointerMove (http://localhost:3000/_next/static/chunks/_108mcta._.js:16581:186) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74) | at processDispatchQueue (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10355:41)"
+    },
+    {
+      "tMs": 9058,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 64, ts: 9049.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerdown}"
+    },
+    {
+      "tMs": 9058,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown ENTER {id: 65, ts: 9050.2, fn: PlaybackSeekBar.handlePointerDown, kind: ENTER, eventType: react.pointerdown}"
+    },
+    {
+      "tMs": 9059,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown BRANCH {id: 66, ts: 9050.5, fn: PlaybackSeekBar.handlePointerDown, kind: BRANCH, action: stopPropagation}"
+    },
+    {
+      "tMs": 9059,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown STATE {id: 67, ts: 9050.7, fn: PlaybackSeekBar.handlePointerDown, kind: STATE, dragging: true}"
+    },
+    {
+      "tMs": 9059,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown → mediaSessionController.beginSeek {id: 68, ts: 9050.8, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: mediaSessionController.beginSeek}"
+    },
+    {
+      "tMs": 9059,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.beginSeek ENTER {id: 69, ts: 9051.0, fn: MediaSessionController.beginSeek, kind: ENTER, seconds: 2}"
+    },
+    {
+      "tMs": 9059,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.beginSeek ENTER {id: 70, ts: 9051.2, fn: MediaSessionUiSession.beginSeek, kind: ENTER, seconds: 2}"
+    },
+    {
+      "tMs": 9060,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.beginSeek EXIT {id: 71, ts: 9051.3, fn: MediaSessionUiSession.beginSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9060,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 72, ts: 9051.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2}"
+    },
+    {
+      "tMs": 9061,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.beginSeek EXIT {id: 73, ts: 9051.8, fn: MediaSessionController.beginSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 9061,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown → attachPointerEndListeners {id: 74, ts: 9051.9, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: attachPointerEndListeners}"
+    },
+    {
+      "tMs": 9061,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners ENTER {id: 75, ts: 9052.1, fn: PlaybackSeekBar.attachPointerEndListeners, kind: ENTER, listenerGenBefore: 1}"
+    },
+    {
+      "tMs": 9061,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 76, ts: 9052.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: false}"
+    },
+    {
+      "tMs": 9061,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 77, ts: 9052.4, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 9061,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners STATE {id: 78, ts: 9052.6, fn: PlaybackSeekBar.attachPointerEndListeners, kind: STATE, attached: Array(2)}"
+    },
+    {
+      "tMs": 9062,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners EXIT {id: 79, ts: 9052.7, fn: PlaybackSeekBar.attachPointerEndListeners, kind: EXIT, listenerGen: 2}"
+    },
+    {
+      "tMs": 9062,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown EXIT {id: 80, ts: 9052.8, fn: PlaybackSeekBar.handlePointerDown, kind: EXIT, dragging: true}"
+    },
+    {
+      "tMs": 9081,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 81, ts: 9074.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 9082,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 82, ts: 9074.5, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 9082,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 83, ts: 9074.6, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 9082,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 84, ts: 9074.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9082,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 85, ts: 9074.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9082,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 86, ts: 9074.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9082,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 87, ts: 9075.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22}"
+    },
+    {
+      "tMs": 9082,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 88, ts: 9075.1, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 89, ts: 9075.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 22}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 90, ts: 9075.4, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 91, ts: 9075.4, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 92, ts: 9075.5, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 93, ts: 9075.6, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 94, ts: 9075.7, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 95, ts: 9075.8, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 9083,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 96, ts: 9075.9, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 22}"
+    },
+    {
+      "tMs": 9150,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 97, ts: 9143.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+    },
+    {
+      "tMs": 9151,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.windowPointerEnd {id: 98, ts: 9143.2, listenerGen: 2, eventType: pointerup, isTrusted: true}"
+    },
+    {
+      "tMs": 9151,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.onPointerEnd → commitDragSeek {id: 99, ts: 9143.3, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+    },
+    {
+      "tMs": 9151,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek ENTER {id: 100, ts: 9143.4, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+    },
+    {
+      "tMs": 9151,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 101, ts: 9143.4, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+    },
+    {
+      "tMs": 9151,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners ENTER {id: 102, ts: 9143.5, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 2}"
+    },
+    {
+      "tMs": 9151,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners EXIT {id: 103, ts: 9143.5, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 2}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 104, ts: 9143.6, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 2}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek {id: 105, ts: 9143.7, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek ENTER {id: 106, ts: 9143.7, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek GUARD {id: 107, ts: 9144.0, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_108mcta._.js:11472:64) | at MediaSessionController.commitSeek (http://localhost:3000/_next/static/chunks/_108mcta._.js:12488:182) | at PlaybackSeekBar.useCallback[commitDragSeek] (http://localhost:3000/_next/static/chunks/_108mcta._.js:16457:192) | at PlaybackSeekBar.useCallback[attachPointerEndListeners].onPointerEnd (http://localhost:3000/_next/static/chunks/_108mcta._.js:16491:21)"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[SESSION] commitSeek() {seconds: 22}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek → uiSession.clearOnSeekCommit {id: 108, ts: 9144.1, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit ENTER {id: 109, ts: 9144.2, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit EXIT {id: 110, ts: 9144.3, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek → patchTransport {id: 111, ts: 9144.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+    },
+    {
+      "tMs": 9152,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 112, ts: 9144.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek → globalPlayerEngine.seek {id: 113, ts: 9144.7, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] GlobalPlayerEngine.seek ENTER {id: 114, ts: 9144.7, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[SEEK] engine seek requested {seconds: 22, mode: spotify}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 115, ts: 9144.8, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] ProviderRouter.seek ENTER {id: 116, ts: 9144.9, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] ProviderRouter.seek → active.seek(spotify) {id: 117, ts: 9145.0, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] SpotifyProvider.seek ENTER {id: 118, ts: 9145.1, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.onEngineSnapshot STATE {id: 119, ts: 9145.3, fn: MediaSessionController.onEngineSnapshot, kind: STATE, providerCurrentTime: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] SpotifyProvider.seek → host.seekIfReady {id: 120, ts: 9145.4, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] SpotifyProvider.seek EXIT {id: 121, ts: 9145.6, fn: SpotifyProvider.seek, kind: EXIT, target: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] ProviderRouter.seek EXIT {id: 122, ts: 9145.7, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 123, ts: 9145.8, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] MediaSessionController.commitSeek EXIT {id: 124, ts: 9145.8, fn: MediaSessionController.commitSeek, kind: EXIT, target: 22}"
+    },
+    {
+      "tMs": 9153,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek EXIT {id: 125, ts: 9145.9, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 22}"
+    },
+    {
+      "tMs": 9167,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 126, ts: 9159.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.mouseup}"
+    },
+    {
+      "tMs": 9168,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 127, ts: 9160.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.change}"
+    },
+    {
+      "tMs": 9168,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 128, ts: 9161.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.lostpointercapture}"
+    },
+    {
+      "tMs": 9168,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 129, ts: 9161.1, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.click}"
+    },
+    {
+      "tMs": 9169,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handleClick ENTER {id: 130, ts: 9161.2, fn: PlaybackSeekBar.handleClick, kind: ENTER, eventType: react.click}"
+    },
+    {
+      "tMs": 9169,
+      "type": "log",
+      "text": "[TRACE] PlaybackSeekBar.handleClick EXIT {id: 131, ts: 9161.4, fn: PlaybackSeekBar.handleClick, kind: EXIT}"
+    },
+    {
+      "tMs": 9178,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 132, ts: 9168.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.868}"
+    },
+    {
+      "tMs": 9277,
+      "type": "log",
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 133, ts: 9268.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 29.713}"
+    }
+  ],
+  "traceEntries": [
+    {
+      "tMs": 1805,
+      "parsed": {
+        "fn": "PlaybackSeekBar.useEffect",
+        "kind": "STATE",
+        "raw": "{id: 1, ts: 1799.7, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 1, ts: 1799.7, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+    },
+    {
+      "tMs": 1805,
+      "parsed": {
+        "fn": "PlaybackSeekBar.useEffect",
+        "kind": "STATE",
+        "raw": "{id: 2, ts: 1800.5, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners detached}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 2, ts: 1800.5, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners detached}"
+    },
+    {
+      "tMs": 1806,
+      "parsed": {
+        "fn": "PlaybackSeekBar.useEffect",
+        "kind": "STATE",
+        "raw": "{id: 3, ts: 1800.9, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 3, ts: 1800.9, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+    },
+    {
+      "tMs": 6479,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 4, ts: 6467.6, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0.753}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 4, ts: 6467.6, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0.753}"
+    },
+    {
+      "tMs": 6919,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 5, ts: 6911.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerdown}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 5, ts: 6911.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerdown}"
+    },
+    {
+      "tMs": 6920,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "ENTER",
+        "raw": "{id: 6, ts: 6912.7, fn: PlaybackSeekBar.handlePointerDown, kind: ENTER, eventType: react.pointerdown}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown ENTER {id: 6, ts: 6912.7, fn: PlaybackSeekBar.handlePointerDown, kind: ENTER, eventType: react.pointerdown}"
+    },
+    {
+      "tMs": 6920,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "BRANCH",
+        "raw": "{id: 7, ts: 6913.5, fn: PlaybackSeekBar.handlePointerDown, kind: BRANCH, action: stopPropagation}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown BRANCH {id: 7, ts: 6913.5, fn: PlaybackSeekBar.handlePointerDown, kind: BRANCH, action: stopPropagation}"
+    },
+    {
+      "tMs": 6920,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "STATE",
+        "raw": "{id: 8, ts: 6913.6, fn: PlaybackSeekBar.handlePointerDown, kind: STATE, dragging: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown STATE {id: 8, ts: 6913.6, fn: PlaybackSeekBar.handlePointerDown, kind: STATE, dragging: true}"
+    },
+    {
+      "tMs": 6920,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown → mediaSessionController.beginSeek",
+        "raw": "{id: 9, ts: 6913.7, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: mediaSessionController.beginSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown → mediaSessionController.beginSeek {id: 9, ts: 6913.7, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: mediaSessionController.beginSeek}"
+    },
+    {
+      "tMs": 6920,
+      "parsed": {
+        "fn": "MediaSessionController.beginSeek",
+        "kind": "ENTER",
+        "raw": "{id: 10, ts: 6913.8, fn: MediaSessionController.beginSeek, kind: ENTER, seconds: 0}"
+      },
+      "raw": "[TRACE] MediaSessionController.beginSeek ENTER {id: 10, ts: 6913.8, fn: MediaSessionController.beginSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6921,
+      "parsed": {
+        "fn": "MediaSessionUiSession.beginSeek",
+        "kind": "ENTER",
+        "raw": "{id: 11, ts: 6914.0, fn: MediaSessionUiSession.beginSeek, kind: ENTER, seconds: 0}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.beginSeek ENTER {id: 11, ts: 6914.0, fn: MediaSessionUiSession.beginSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6921,
+      "parsed": {
+        "fn": "MediaSessionUiSession.beginSeek",
+        "kind": "EXIT",
+        "raw": "{id: 12, ts: 6914.0, fn: MediaSessionUiSession.beginSeek, kind: EXIT, state: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.beginSeek EXIT {id: 12, ts: 6914.0, fn: MediaSessionUiSession.beginSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 6921,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 13, ts: 6914.2, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 13, ts: 6914.2, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0}"
+    },
+    {
+      "tMs": 6921,
+      "parsed": {
+        "fn": "MediaSessionController.beginSeek",
+        "kind": "EXIT",
+        "raw": "{id: 14, ts: 6914.4, fn: MediaSessionController.beginSeek, kind: EXIT, ui: Object}"
+      },
+      "raw": "[TRACE] MediaSessionController.beginSeek EXIT {id: 14, ts: 6914.4, fn: MediaSessionController.beginSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 6921,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown → attachPointerEndListeners",
+        "raw": "{id: 15, ts: 6914.5, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: attachPointerEndListeners}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown → attachPointerEndListeners {id: 15, ts: 6914.5, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: attachPointerEndListeners}"
+    },
+    {
+      "tMs": 6922,
+      "parsed": {
+        "fn": "PlaybackSeekBar.attachPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 16, ts: 6914.6, fn: PlaybackSeekBar.attachPointerEndListeners, kind: ENTER, listenerGenBefore: 0}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.attachPointerEndListeners ENTER {id: 16, ts: 6914.6, fn: PlaybackSeekBar.attachPointerEndListeners, kind: ENTER, listenerGenBefore: 0}"
+    },
+    {
+      "tMs": 6922,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 17, ts: 6914.8, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: false}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 17, ts: 6914.8, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: false}"
+    },
+    {
+      "tMs": 6922,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 18, ts: 6914.9, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 0}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 18, ts: 6914.9, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 0}"
+    },
+    {
+      "tMs": 6922,
+      "parsed": {
+        "fn": "PlaybackSeekBar.attachPointerEndListeners",
+        "kind": "STATE",
+        "raw": "{id: 19, ts: 6915.0, fn: PlaybackSeekBar.attachPointerEndListeners, kind: STATE, attached: Array(2)}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.attachPointerEndListeners STATE {id: 19, ts: 6915.0, fn: PlaybackSeekBar.attachPointerEndListeners, kind: STATE, attached: Array(2)}"
+    },
+    {
+      "tMs": 6922,
+      "parsed": {
+        "fn": "PlaybackSeekBar.attachPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 20, ts: 6915.1, fn: PlaybackSeekBar.attachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.attachPointerEndListeners EXIT {id: 20, ts: 6915.1, fn: PlaybackSeekBar.attachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 6922,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "EXIT",
+        "raw": "{id: 21, ts: 6915.1, fn: PlaybackSeekBar.handlePointerDown, kind: EXIT, dragging: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown EXIT {id: 21, ts: 6915.1, fn: PlaybackSeekBar.handlePointerDown, kind: EXIT, dragging: true}"
+    },
+    {
+      "tMs": 6968,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 22, ts: 6961.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 22, ts: 6961.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 6968,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove",
+        "kind": "ENTER",
+        "raw": "{id: 23, ts: 6961.9, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 23, ts: 6961.9, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 6969,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek",
+        "raw": "{id: 24, ts: 6962.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 24, ts: 6962.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 6974,
+      "parsed": {
+        "fn": "MediaSessionController.updateSeek",
+        "kind": "ENTER",
+        "raw": "{id: 25, ts: 6962.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 0}"
+      },
+      "raw": "[TRACE] MediaSessionController.updateSeek ENTER {id: 25, ts: 6962.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6975,
+      "parsed": {
+        "fn": "MediaSessionUiSession.updateSeek",
+        "kind": "ENTER",
+        "raw": "{id: 26, ts: 6962.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 0}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 26, ts: 6962.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 6975,
+      "parsed": {
+        "fn": "MediaSessionUiSession.updateSeek",
+        "kind": "EXIT",
+        "raw": "{id: 27, ts: 6962.4, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 27, ts: 6962.4, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 6975,
+      "parsed": {
+        "fn": "MediaSessionController.updateSeek",
+        "kind": "EXIT",
+        "raw": "{id: 28, ts: 6962.6, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+      },
+      "raw": "[TRACE] MediaSessionController.updateSeek EXIT {id: 28, ts: 6962.6, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 6975,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove",
+        "kind": "EXIT",
+        "raw": "{id: 29, ts: 6962.6, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 0}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 29, ts: 6962.6, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 0}"
+    },
+    {
+      "tMs": 7016,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 30, ts: 7009.3, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 30, ts: 7009.3, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+    },
+    {
+      "tMs": 7016,
+      "parsed": {
+        "fn": "PlaybackSeekBar.windowPointerEnd",
+        "raw": "{id: 31, ts: 7009.5, listenerGen: 1, eventType: pointerup, isTrusted: false}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.windowPointerEnd {id: 31, ts: 7009.5, listenerGen: 1, eventType: pointerup, isTrusted: false}"
+    },
+    {
+      "tMs": 7016,
+      "parsed": {
+        "fn": "PlaybackSeekBar.onPointerEnd → commitDragSeek",
+        "raw": "{id: 32, ts: 7009.7, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.onPointerEnd → commitDragSeek {id: 32, ts: 7009.7, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+    },
+    {
+      "tMs": 7016,
+      "parsed": {
+        "fn": "PlaybackSeekBar.commitDragSeek",
+        "kind": "ENTER",
+        "raw": "{id: 33, ts: 7009.8, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.commitDragSeek ENTER {id: 33, ts: 7009.8, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+    },
+    {
+      "tMs": 7016,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 34, ts: 7009.9, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 34, ts: 7009.9, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "PlaybackSeekBar.detachPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 35, ts: 7010.0, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 1}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.detachPointerEndListeners ENTER {id: 35, ts: 7010.0, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 1}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "PlaybackSeekBar.detachPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 36, ts: 7010.0, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.detachPointerEndListeners EXIT {id: 36, ts: 7010.0, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 37, ts: 7010.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 37, ts: 7010.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek",
+        "raw": "{id: 38, ts: 7010.2, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek {id: 38, ts: 7010.2, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek",
+        "kind": "ENTER",
+        "raw": "{id: 39, ts: 7010.3, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 0}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek ENTER {id: 39, ts: 7010.3, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek",
+        "kind": "GUARD",
+        "raw": "{id: 40, ts: 7010.7, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} "
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek GUARD {id: 40, ts: 7010.7, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_108mcta._.js:11472:64) | at MediaSessionController.commitSeek (http://localhost:3000/_next/static/chunks/_108mcta._.js:12488:182) | at PlaybackSeekBar.useCallback[commitDragSeek] (http://localhost:3000/_next/static/chunks/_108mcta._.js:16457:192) | at PlaybackSeekBar.useCallback[attachPointerEndListeners].onPointerEnd (http://localhost:3000/_next/static/chunks/_108mcta._.js:16491:21) | at InjectedScript.dispatchEvent (<anonymous>:7535:10)"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek → uiSession.clearOnSeekCommit",
+        "raw": "{id: 41, ts: 7010.8, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek → uiSession.clearOnSeekCommit {id: 41, ts: 7010.8, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "MediaSessionUiSession.clearOnSeekCommit",
+        "kind": "ENTER",
+        "raw": "{id: 42, ts: 7010.9, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.clearOnSeekCommit ENTER {id: 42, ts: 7010.9, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "MediaSessionUiSession.clearOnSeekCommit",
+        "kind": "EXIT",
+        "raw": "{id: 43, ts: 7010.9, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.clearOnSeekCommit EXIT {id: 43, ts: 7010.9, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek → patchTransport",
+        "raw": "{id: 44, ts: 7011.0, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek → patchTransport {id: 44, ts: 7011.0, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+    },
+    {
+      "tMs": 7017,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 45, ts: 7011.1, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 45, ts: 7011.1, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0}"
+    },
+    {
+      "tMs": 7018,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek → globalPlayerEngine.seek",
+        "raw": "{id: 46, ts: 7011.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek → globalPlayerEngine.seek {id: 46, ts: 7011.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+    },
+    {
+      "tMs": 7018,
+      "parsed": {
+        "fn": "GlobalPlayerEngine.seek",
+        "kind": "ENTER",
+        "raw": "{id: 47, ts: 7011.4, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 0}"
+      },
+      "raw": "[TRACE] GlobalPlayerEngine.seek ENTER {id: 47, ts: 7011.4, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7018,
+      "parsed": {
+        "fn": "GlobalPlayerEngine.seek → ProviderRouter.seek",
+        "raw": "{id: 48, ts: 7011.6, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+      },
+      "raw": "[TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 48, ts: 7011.6, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+    },
+    {
+      "tMs": 7018,
+      "parsed": {
+        "fn": "ProviderRouter.seek",
+        "kind": "ENTER",
+        "raw": "{id: 49, ts: 7011.6, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 0}"
+      },
+      "raw": "[TRACE] ProviderRouter.seek ENTER {id: 49, ts: 7011.6, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 0}"
+    },
+    {
+      "tMs": 7018,
+      "parsed": {
+        "fn": "ProviderRouter.seek → active.seek(spotify)",
+        "raw": "{id: 50, ts: 7011.7, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+      },
+      "raw": "[TRACE] ProviderRouter.seek → active.seek(spotify) {id: 50, ts: 7011.7, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+    },
+    {
+      "tMs": 7018,
+      "parsed": {
+        "fn": "SpotifyProvider.seek",
+        "kind": "ENTER",
+        "raw": "{id: 51, ts: 7011.9, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 0}"
+      },
+      "raw": "[TRACE] SpotifyProvider.seek ENTER {id: 51, ts: 7011.9, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 0}"
+    },
+    {
+      "tMs": 7018,
+      "parsed": {
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "kind": "STATE",
+        "raw": "{id: 52, ts: 7012.1, fn: MediaSessionController.onEngineSnapshot, kind: STATE, providerCurrentTime: 0}"
+      },
+      "raw": "[TRACE] MediaSessionController.onEngineSnapshot STATE {id: 52, ts: 7012.1, fn: MediaSessionController.onEngineSnapshot, kind: STATE, providerCurrentTime: 0}"
+    },
+    {
+      "tMs": 7019,
+      "parsed": {
+        "fn": "SpotifyProvider.seek → host.seekIfReady",
+        "raw": "{id: 53, ts: 7012.3, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+      },
+      "raw": "[TRACE] SpotifyProvider.seek → host.seekIfReady {id: 53, ts: 7012.3, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+    },
+    {
+      "tMs": 7019,
+      "parsed": {
+        "fn": "SpotifyProvider.seek",
+        "kind": "EXIT",
+        "raw": "{id: 54, ts: 7012.4, fn: SpotifyProvider.seek, kind: EXIT, target: 0}"
+      },
+      "raw": "[TRACE] SpotifyProvider.seek EXIT {id: 54, ts: 7012.4, fn: SpotifyProvider.seek, kind: EXIT, target: 0}"
+    },
+    {
+      "tMs": 7019,
+      "parsed": {
+        "fn": "ProviderRouter.seek",
+        "kind": "EXIT",
+        "raw": "{id: 55, ts: 7012.5, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 0}"
+      },
+      "raw": "[TRACE] ProviderRouter.seek EXIT {id: 55, ts: 7012.5, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 0}"
+    },
+    {
+      "tMs": 7019,
+      "parsed": {
+        "fn": "GlobalPlayerEngine.seek",
+        "kind": "EXIT",
+        "raw": "{id: 56, ts: 7012.5, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 0}"
+      },
+      "raw": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 56, ts: 7012.5, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 0}"
+    },
+    {
+      "tMs": 7019,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek",
+        "kind": "EXIT",
+        "raw": "{id: 57, ts: 7012.6, fn: MediaSessionController.commitSeek, kind: EXIT, target: 0}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek EXIT {id: 57, ts: 7012.6, fn: MediaSessionController.commitSeek, kind: EXIT, target: 0}"
+    },
+    {
+      "tMs": 7019,
+      "parsed": {
+        "fn": "PlaybackSeekBar.commitDragSeek",
+        "kind": "EXIT",
+        "raw": "{id: 58, ts: 7012.7, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 0}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.commitDragSeek EXIT {id: 58, ts: 7012.7, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 0}"
+    },
+    {
+      "tMs": 7538,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 59, ts: 7528.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 1.805}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 59, ts: 7528.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 1.805}"
+    },
+    {
+      "tMs": 8597,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 60, ts: 8589.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.868}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 60, ts: 8589.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.868}"
+    },
+    {
+      "tMs": 9052,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 61, ts: 9042.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 61, ts: 9042.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 9053,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerMove",
+        "kind": "ENTER",
+        "raw": "{id: 62, ts: 9043.2, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 62, ts: 9043.2, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 9053,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerMove",
+        "kind": "EARLY_RETURN",
+        "raw": "{id: 63, ts: 9043.9, fn: PlaybackSeekBar.handlePointerMove, kind: EARLY_RETURN, reason: draggingRef.current === false} "
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerMove EARLY_RETURN {id: 63, ts: 9043.9, fn: PlaybackSeekBar.handlePointerMove, kind: EARLY_RETURN, reason: draggingRef.current === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_108mcta._.js:11472:64) | at handlePointerMove (http://localhost:3000/_next/static/chunks/_108mcta._.js:16581:186) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74) | at processDispatchQueue (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10355:41)"
+    },
+    {
+      "tMs": 9058,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 64, ts: 9049.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerdown}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 64, ts: 9049.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerdown}"
+    },
+    {
+      "tMs": 9058,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "ENTER",
+        "raw": "{id: 65, ts: 9050.2, fn: PlaybackSeekBar.handlePointerDown, kind: ENTER, eventType: react.pointerdown}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown ENTER {id: 65, ts: 9050.2, fn: PlaybackSeekBar.handlePointerDown, kind: ENTER, eventType: react.pointerdown}"
+    },
+    {
+      "tMs": 9059,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "BRANCH",
+        "raw": "{id: 66, ts: 9050.5, fn: PlaybackSeekBar.handlePointerDown, kind: BRANCH, action: stopPropagation}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown BRANCH {id: 66, ts: 9050.5, fn: PlaybackSeekBar.handlePointerDown, kind: BRANCH, action: stopPropagation}"
+    },
+    {
+      "tMs": 9059,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "STATE",
+        "raw": "{id: 67, ts: 9050.7, fn: PlaybackSeekBar.handlePointerDown, kind: STATE, dragging: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown STATE {id: 67, ts: 9050.7, fn: PlaybackSeekBar.handlePointerDown, kind: STATE, dragging: true}"
+    },
+    {
+      "tMs": 9059,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown → mediaSessionController.beginSeek",
+        "raw": "{id: 68, ts: 9050.8, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: mediaSessionController.beginSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown → mediaSessionController.beginSeek {id: 68, ts: 9050.8, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: mediaSessionController.beginSeek}"
+    },
+    {
+      "tMs": 9059,
+      "parsed": {
+        "fn": "MediaSessionController.beginSeek",
+        "kind": "ENTER",
+        "raw": "{id: 69, ts: 9051.0, fn: MediaSessionController.beginSeek, kind: ENTER, seconds: 2}"
+      },
+      "raw": "[TRACE] MediaSessionController.beginSeek ENTER {id: 69, ts: 9051.0, fn: MediaSessionController.beginSeek, kind: ENTER, seconds: 2}"
+    },
+    {
+      "tMs": 9059,
+      "parsed": {
+        "fn": "MediaSessionUiSession.beginSeek",
+        "kind": "ENTER",
+        "raw": "{id: 70, ts: 9051.2, fn: MediaSessionUiSession.beginSeek, kind: ENTER, seconds: 2}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.beginSeek ENTER {id: 70, ts: 9051.2, fn: MediaSessionUiSession.beginSeek, kind: ENTER, seconds: 2}"
+    },
+    {
+      "tMs": 9060,
+      "parsed": {
+        "fn": "MediaSessionUiSession.beginSeek",
+        "kind": "EXIT",
+        "raw": "{id: 71, ts: 9051.3, fn: MediaSessionUiSession.beginSeek, kind: EXIT, state: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.beginSeek EXIT {id: 71, ts: 9051.3, fn: MediaSessionUiSession.beginSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9060,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 72, ts: 9051.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 72, ts: 9051.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2}"
+    },
+    {
+      "tMs": 9061,
+      "parsed": {
+        "fn": "MediaSessionController.beginSeek",
+        "kind": "EXIT",
+        "raw": "{id: 73, ts: 9051.8, fn: MediaSessionController.beginSeek, kind: EXIT, ui: Object}"
+      },
+      "raw": "[TRACE] MediaSessionController.beginSeek EXIT {id: 73, ts: 9051.8, fn: MediaSessionController.beginSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 9061,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown → attachPointerEndListeners",
+        "raw": "{id: 74, ts: 9051.9, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: attachPointerEndListeners}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown → attachPointerEndListeners {id: 74, ts: 9051.9, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: attachPointerEndListeners}"
+    },
+    {
+      "tMs": 9061,
+      "parsed": {
+        "fn": "PlaybackSeekBar.attachPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 75, ts: 9052.1, fn: PlaybackSeekBar.attachPointerEndListeners, kind: ENTER, listenerGenBefore: 1}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.attachPointerEndListeners ENTER {id: 75, ts: 9052.1, fn: PlaybackSeekBar.attachPointerEndListeners, kind: ENTER, listenerGenBefore: 1}"
+    },
+    {
+      "tMs": 9061,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 76, ts: 9052.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: false}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 76, ts: 9052.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: false}"
+    },
+    {
+      "tMs": 9061,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 77, ts: 9052.4, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 77, ts: 9052.4, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 9061,
+      "parsed": {
+        "fn": "PlaybackSeekBar.attachPointerEndListeners",
+        "kind": "STATE",
+        "raw": "{id: 78, ts: 9052.6, fn: PlaybackSeekBar.attachPointerEndListeners, kind: STATE, attached: Array(2)}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.attachPointerEndListeners STATE {id: 78, ts: 9052.6, fn: PlaybackSeekBar.attachPointerEndListeners, kind: STATE, attached: Array(2)}"
+    },
+    {
+      "tMs": 9062,
+      "parsed": {
+        "fn": "PlaybackSeekBar.attachPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 79, ts: 9052.7, fn: PlaybackSeekBar.attachPointerEndListeners, kind: EXIT, listenerGen: 2}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.attachPointerEndListeners EXIT {id: 79, ts: 9052.7, fn: PlaybackSeekBar.attachPointerEndListeners, kind: EXIT, listenerGen: 2}"
+    },
+    {
+      "tMs": 9062,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePointerDown",
+        "kind": "EXIT",
+        "raw": "{id: 80, ts: 9052.8, fn: PlaybackSeekBar.handlePointerDown, kind: EXIT, dragging: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePointerDown EXIT {id: 80, ts: 9052.8, fn: PlaybackSeekBar.handlePointerDown, kind: EXIT, dragging: true}"
+    },
+    {
+      "tMs": 9081,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 81, ts: 9074.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 81, ts: 9074.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 9082,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove",
+        "kind": "ENTER",
+        "raw": "{id: 82, ts: 9074.5, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 82, ts: 9074.5, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 9082,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek",
+        "raw": "{id: 83, ts: 9074.6, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 83, ts: 9074.6, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 9082,
+      "parsed": {
+        "fn": "MediaSessionController.updateSeek",
+        "kind": "ENTER",
+        "raw": "{id: 84, ts: 9074.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 22}"
+      },
+      "raw": "[TRACE] MediaSessionController.updateSeek ENTER {id: 84, ts: 9074.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9082,
+      "parsed": {
+        "fn": "MediaSessionUiSession.updateSeek",
+        "kind": "ENTER",
+        "raw": "{id: 85, ts: 9074.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 22}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 85, ts: 9074.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9082,
+      "parsed": {
+        "fn": "MediaSessionUiSession.updateSeek",
+        "kind": "EXIT",
+        "raw": "{id: 86, ts: 9074.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 86, ts: 9074.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9082,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 87, ts: 9075.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 87, ts: 9075.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22}"
+    },
+    {
+      "tMs": 9082,
+      "parsed": {
+        "fn": "MediaSessionController.updateSeek",
+        "kind": "EXIT",
+        "raw": "{id: 88, ts: 9075.1, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+      },
+      "raw": "[TRACE] MediaSessionController.updateSeek EXIT {id: 88, ts: 9075.1, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove",
+        "kind": "EXIT",
+        "raw": "{id: 89, ts: 9075.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 22}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 89, ts: 9075.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 22}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove",
+        "kind": "ENTER",
+        "raw": "{id: 90, ts: 9075.4, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 90, ts: 9075.4, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek",
+        "raw": "{id: 91, ts: 9075.4, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 91, ts: 9075.4, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "MediaSessionController.updateSeek",
+        "kind": "ENTER",
+        "raw": "{id: 92, ts: 9075.5, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 22}"
+      },
+      "raw": "[TRACE] MediaSessionController.updateSeek ENTER {id: 92, ts: 9075.5, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "MediaSessionUiSession.updateSeek",
+        "kind": "ENTER",
+        "raw": "{id: 93, ts: 9075.6, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 22}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 93, ts: 9075.6, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "MediaSessionUiSession.updateSeek",
+        "kind": "EXIT",
+        "raw": "{id: 94, ts: 9075.7, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 94, ts: 9075.7, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "MediaSessionController.updateSeek",
+        "kind": "EXIT",
+        "raw": "{id: 95, ts: 9075.8, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+      },
+      "raw": "[TRACE] MediaSessionController.updateSeek EXIT {id: 95, ts: 9075.8, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 9083,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handlePreviewMove",
+        "kind": "EXIT",
+        "raw": "{id: 96, ts: 9075.9, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 22}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 96, ts: 9075.9, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 22}"
+    },
+    {
+      "tMs": 9150,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 97, ts: 9143.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 97, ts: 9143.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+    },
+    {
+      "tMs": 9151,
+      "parsed": {
+        "fn": "PlaybackSeekBar.windowPointerEnd",
+        "raw": "{id: 98, ts: 9143.2, listenerGen: 2, eventType: pointerup, isTrusted: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.windowPointerEnd {id: 98, ts: 9143.2, listenerGen: 2, eventType: pointerup, isTrusted: true}"
+    },
+    {
+      "tMs": 9151,
+      "parsed": {
+        "fn": "PlaybackSeekBar.onPointerEnd → commitDragSeek",
+        "raw": "{id: 99, ts: 9143.3, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.onPointerEnd → commitDragSeek {id: 99, ts: 9143.3, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+    },
+    {
+      "tMs": 9151,
+      "parsed": {
+        "fn": "PlaybackSeekBar.commitDragSeek",
+        "kind": "ENTER",
+        "raw": "{id: 100, ts: 9143.4, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.commitDragSeek ENTER {id: 100, ts: 9143.4, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+    },
+    {
+      "tMs": 9151,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 101, ts: 9143.4, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 101, ts: 9143.4, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+    },
+    {
+      "tMs": 9151,
+      "parsed": {
+        "fn": "PlaybackSeekBar.detachPointerEndListeners",
+        "kind": "ENTER",
+        "raw": "{id: 102, ts: 9143.5, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 2}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.detachPointerEndListeners ENTER {id: 102, ts: 9143.5, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 2}"
+    },
+    {
+      "tMs": 9151,
+      "parsed": {
+        "fn": "PlaybackSeekBar.detachPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 103, ts: 9143.5, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 2}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.detachPointerEndListeners EXIT {id: 103, ts: 9143.5, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 2}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "PlaybackSeekBar.clearPointerEndListeners",
+        "kind": "EXIT",
+        "raw": "{id: 104, ts: 9143.6, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 2}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 104, ts: 9143.6, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 2}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek",
+        "raw": "{id: 105, ts: 9143.7, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek {id: 105, ts: 9143.7, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek",
+        "kind": "ENTER",
+        "raw": "{id: 106, ts: 9143.7, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 22}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek ENTER {id: 106, ts: 9143.7, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek",
+        "kind": "GUARD",
+        "raw": "{id: 107, ts: 9144.0, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} "
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek GUARD {id: 107, ts: 9144.0, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_108mcta._.js:11472:64) | at MediaSessionController.commitSeek (http://localhost:3000/_next/static/chunks/_108mcta._.js:12488:182) | at PlaybackSeekBar.useCallback[commitDragSeek] (http://localhost:3000/_next/static/chunks/_108mcta._.js:16457:192) | at PlaybackSeekBar.useCallback[attachPointerEndListeners].onPointerEnd (http://localhost:3000/_next/static/chunks/_108mcta._.js:16491:21)"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek → uiSession.clearOnSeekCommit",
+        "raw": "{id: 108, ts: 9144.1, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek → uiSession.clearOnSeekCommit {id: 108, ts: 9144.1, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "MediaSessionUiSession.clearOnSeekCommit",
+        "kind": "ENTER",
+        "raw": "{id: 109, ts: 9144.2, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.clearOnSeekCommit ENTER {id: 109, ts: 9144.2, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "MediaSessionUiSession.clearOnSeekCommit",
+        "kind": "EXIT",
+        "raw": "{id: 110, ts: 9144.3, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+      },
+      "raw": "[TRACE] MediaSessionUiSession.clearOnSeekCommit EXIT {id: 110, ts: 9144.3, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek → patchTransport",
+        "raw": "{id: 111, ts: 9144.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek → patchTransport {id: 111, ts: 9144.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+    },
+    {
+      "tMs": 9152,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 112, ts: 9144.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 112, ts: 9144.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek → globalPlayerEngine.seek",
+        "raw": "{id: 113, ts: 9144.7, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek → globalPlayerEngine.seek {id: 113, ts: 9144.7, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "GlobalPlayerEngine.seek",
+        "kind": "ENTER",
+        "raw": "{id: 114, ts: 9144.7, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 22}"
+      },
+      "raw": "[TRACE] GlobalPlayerEngine.seek ENTER {id: 114, ts: 9144.7, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "GlobalPlayerEngine.seek → ProviderRouter.seek",
+        "raw": "{id: 115, ts: 9144.8, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+      },
+      "raw": "[TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 115, ts: 9144.8, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "ProviderRouter.seek",
+        "kind": "ENTER",
+        "raw": "{id: 116, ts: 9144.9, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 22}"
+      },
+      "raw": "[TRACE] ProviderRouter.seek ENTER {id: 116, ts: 9144.9, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "ProviderRouter.seek → active.seek(spotify)",
+        "raw": "{id: 117, ts: 9145.0, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+      },
+      "raw": "[TRACE] ProviderRouter.seek → active.seek(spotify) {id: 117, ts: 9145.0, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "SpotifyProvider.seek",
+        "kind": "ENTER",
+        "raw": "{id: 118, ts: 9145.1, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 22}"
+      },
+      "raw": "[TRACE] SpotifyProvider.seek ENTER {id: 118, ts: 9145.1, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "MediaSessionController.onEngineSnapshot",
+        "kind": "STATE",
+        "raw": "{id: 119, ts: 9145.3, fn: MediaSessionController.onEngineSnapshot, kind: STATE, providerCurrentTime: 22}"
+      },
+      "raw": "[TRACE] MediaSessionController.onEngineSnapshot STATE {id: 119, ts: 9145.3, fn: MediaSessionController.onEngineSnapshot, kind: STATE, providerCurrentTime: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "SpotifyProvider.seek → host.seekIfReady",
+        "raw": "{id: 120, ts: 9145.4, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+      },
+      "raw": "[TRACE] SpotifyProvider.seek → host.seekIfReady {id: 120, ts: 9145.4, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "SpotifyProvider.seek",
+        "kind": "EXIT",
+        "raw": "{id: 121, ts: 9145.6, fn: SpotifyProvider.seek, kind: EXIT, target: 22}"
+      },
+      "raw": "[TRACE] SpotifyProvider.seek EXIT {id: 121, ts: 9145.6, fn: SpotifyProvider.seek, kind: EXIT, target: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "ProviderRouter.seek",
+        "kind": "EXIT",
+        "raw": "{id: 122, ts: 9145.7, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 22}"
+      },
+      "raw": "[TRACE] ProviderRouter.seek EXIT {id: 122, ts: 9145.7, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "GlobalPlayerEngine.seek",
+        "kind": "EXIT",
+        "raw": "{id: 123, ts: 9145.8, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 22}"
+      },
+      "raw": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 123, ts: 9145.8, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "MediaSessionController.commitSeek",
+        "kind": "EXIT",
+        "raw": "{id: 124, ts: 9145.8, fn: MediaSessionController.commitSeek, kind: EXIT, target: 22}"
+      },
+      "raw": "[TRACE] MediaSessionController.commitSeek EXIT {id: 124, ts: 9145.8, fn: MediaSessionController.commitSeek, kind: EXIT, target: 22}"
+    },
+    {
+      "tMs": 9153,
+      "parsed": {
+        "fn": "PlaybackSeekBar.commitDragSeek",
+        "kind": "EXIT",
+        "raw": "{id: 125, ts: 9145.9, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 22}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.commitDragSeek EXIT {id: 125, ts: 9145.9, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 22}"
+    },
+    {
+      "tMs": 9167,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 126, ts: 9159.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.mouseup}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 126, ts: 9159.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.mouseup}"
+    },
+    {
+      "tMs": 9168,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 127, ts: 9160.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.change}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 127, ts: 9160.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.change}"
+    },
+    {
+      "tMs": 9168,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 128, ts: 9161.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.lostpointercapture}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 128, ts: 9161.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.lostpointercapture}"
+    },
+    {
+      "tMs": 9168,
+      "parsed": {
+        "fn": "PlaybackSeekBar.nativeEvent",
+        "kind": "NATIVE",
+        "raw": "{id: 129, ts: 9161.1, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.click}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 129, ts: 9161.1, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.click}"
+    },
+    {
+      "tMs": 9169,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handleClick",
+        "kind": "ENTER",
+        "raw": "{id: 130, ts: 9161.2, fn: PlaybackSeekBar.handleClick, kind: ENTER, eventType: react.click}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handleClick ENTER {id: 130, ts: 9161.2, fn: PlaybackSeekBar.handleClick, kind: ENTER, eventType: react.click}"
+    },
+    {
+      "tMs": 9169,
+      "parsed": {
+        "fn": "PlaybackSeekBar.handleClick",
+        "kind": "EXIT",
+        "raw": "{id: 131, ts: 9161.4, fn: PlaybackSeekBar.handleClick, kind: EXIT}"
+      },
+      "raw": "[TRACE] PlaybackSeekBar.handleClick EXIT {id: 131, ts: 9161.4, fn: PlaybackSeekBar.handleClick, kind: EXIT}"
+    },
+    {
+      "tMs": 9178,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 132, ts: 9168.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.868}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 132, ts: 9168.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.868}"
+    },
+    {
+      "tMs": 9277,
+      "parsed": {
+        "fn": "useFinalPlaybackSnapshot.commitFrame",
+        "kind": "STATE",
+        "raw": "{id: 133, ts: 9268.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 29.713}"
+      },
+      "raw": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 133, ts: 9268.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 29.713}"
+    }
+  ]
+}

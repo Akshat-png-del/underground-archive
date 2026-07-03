@@ -1,0 +1,1882 @@
+{
+  "generatedAt": "2026-07-03T05:40:55.212Z",
+  "entries": [
+    {
+      "tMs": 1943,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine enter {id: 1, ts: 1822.5, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: enter}",
+      "detail": {
+        "id": 1,
+        "ts": 1822.5,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "enter",
+        "previousVolume": 1,
+        "previousMuted": false,
+        "providerKind": "spotify",
+        "activeRouterKind": "spotify",
+        "note": "early_return_non_preview",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 3024,
+      "text": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 2, ts: 2991.89999999851, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}",
+      "detail": {
+        "id": 2,
+        "ts": 2991.89999999851,
+        "initiator": "provider-playback_update",
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "providerKind": "spotify",
+        "providerOverwrote": false,
+        "note": "Spotify playback_update payload has no volume/mute fields",
+        "extra": {
+          "hasVolumeField": false,
+          "hasMutedField": false,
+          "rawKeys": [
+            "isPaused",
+            "isBuffering",
+            "duration",
+            "position",
+            "playingURI"
+          ]
+        },
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 3645,
+      "text": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 3, ts: 3591.199999999255, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}",
+      "detail": {
+        "id": 3,
+        "ts": 3591.199999999255,
+        "initiator": "provider-playback_update",
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "providerKind": "spotify",
+        "providerOverwrote": false,
+        "note": "Spotify playback_update payload has no volume/mute fields",
+        "extra": {
+          "hasVolumeField": false,
+          "hasMutedField": false,
+          "rawKeys": [
+            "isPaused",
+            "isBuffering",
+            "duration",
+            "position",
+            "playingURI"
+          ]
+        },
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 4286,
+      "text": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 4, ts: 4247.0999999996275, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}",
+      "detail": {
+        "id": 4,
+        "ts": 4247.0999999996275,
+        "initiator": "provider-playback_update",
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "providerKind": "spotify",
+        "providerOverwrote": false,
+        "note": "Spotify playback_update payload has no volume/mute fields",
+        "extra": {
+          "hasVolumeField": false,
+          "hasMutedField": false,
+          "rawKeys": [
+            "isPaused",
+            "isBuffering",
+            "duration",
+            "position",
+            "playingURI"
+          ]
+        },
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 4680,
+      "text": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 5, ts: 4644.89999999851, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}",
+      "detail": {
+        "id": 5,
+        "ts": 4644.89999999851,
+        "initiator": "provider-playback_update",
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "providerKind": "spotify",
+        "providerOverwrote": false,
+        "note": "Spotify playback_update payload has no volume/mute fields",
+        "extra": {
+          "hasVolumeField": false,
+          "hasMutedField": false,
+          "rawKeys": [
+            "isPaused",
+            "isBuffering",
+            "duration",
+            "position",
+            "playingURI"
+          ]
+        },
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 5776,
+      "text": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 6, ts: 5705, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}",
+      "detail": {
+        "id": 6,
+        "ts": 5705,
+        "initiator": "provider-playback_update",
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "providerKind": "spotify",
+        "providerOverwrote": false,
+        "note": "Spotify playback_update payload has no volume/mute fields",
+        "extra": {
+          "hasVolumeField": false,
+          "hasMutedField": false,
+          "rawKeys": [
+            "isPaused",
+            "isBuffering",
+            "duration",
+            "position",
+            "playingURI"
+          ]
+        },
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 6811,
+      "text": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 7, ts: 6768.39999999851, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}",
+      "detail": {
+        "id": 7,
+        "ts": 6768.39999999851,
+        "initiator": "provider-playback_update",
+        "fn": "SpotifyProvider.onUpdate",
+        "phase": "playback_update",
+        "providerKind": "spotify",
+        "providerOverwrote": false,
+        "note": "Spotify playback_update payload has no volume/mute fields",
+        "extra": {
+          "hasVolumeField": false,
+          "hasMutedField": false,
+          "rawKeys": [
+            "isPaused",
+            "isBuffering",
+            "duration",
+            "position",
+            "playingURI"
+          ]
+        },
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 6970,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-spotify-play {id: 8, ts: 6960.0999999996275, initiator: unknown, fn: __volumeTraceSample, phase: after-spotify-play}",
+      "detail": {
+        "id": 8,
+        "ts": 6960.0999999996275,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-spotify-play",
+        "previousVolume": 1,
+        "previousMuted": false,
+        "storeVolume": 1,
+        "storeMuted": false,
+        "snapshotVolume": 1,
+        "snapshotMuted": false,
+        "uiSliderValue": null,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false,
+        "activeRouterKind": "spotify",
+        "extra": {
+          "label": "after-spotify-play",
+          "ts": 1783057245169,
+          "msc": {
+            "volume": 1,
+            "muted": false
+          },
+          "engine": {
+            "mode": "spotify",
+            "refId": "sara-landry::legacy"
+          },
+          "store": {
+            "volume": 1,
+            "muted": false
+          },
+          "snapshot": {
+            "volume": 1,
+            "muted": false
+          },
+          "ui": {
+            "sliderValue": null,
+            "sliderPresent": false
+          },
+          "dom": {
+            "volume": null,
+            "muted": null,
+            "present": false
+          },
+          "routerKind": "spotify"
+        }
+      }
+    },
+    {
+      "tMs": 6997,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume enter {id: 9, ts: 6963.299999998882, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: enter}",
+      "detail": {
+        "id": 9,
+        "ts": 6963.299999998882,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "enter",
+        "previousVolume": 1,
+        "newVolume": 0.35,
+        "previousMuted": false,
+        "newMuted": false,
+        "muteChanged": false,
+        "providerKind": "spotify",
+        "note": "msc_only_non_preview",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 6997,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume exit {id: 10, ts: 6964, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: exit}",
+      "detail": {
+        "id": 10,
+        "ts": 6964,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "exit",
+        "newVolume": 0.35,
+        "newMuted": false,
+        "mscOverwrote": true,
+        "storeVolume": 0.35,
+        "storeMuted": false,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7407,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-msc-setVolume-spotify {id: 11, ts: 7396.89999999851, initiator: unknown, fn: __volumeTraceSample, phase: after-msc-setVolume-spotify}",
+      "detail": {
+        "id": 11,
+        "ts": 7396.89999999851,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-msc-setVolume-spotify",
+        "previousVolume": 0.35,
+        "previousMuted": false,
+        "storeVolume": 0.35,
+        "storeMuted": false,
+        "snapshotVolume": 0.35,
+        "snapshotMuted": false,
+        "uiSliderValue": null,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false,
+        "activeRouterKind": "spotify",
+        "extra": {
+          "label": "after-msc-setVolume-spotify",
+          "ts": 1783057245605,
+          "msc": {
+            "volume": 0.35,
+            "muted": false
+          },
+          "engine": {
+            "mode": "spotify",
+            "refId": "sara-landry::legacy"
+          },
+          "store": {
+            "volume": 0.35,
+            "muted": false
+          },
+          "snapshot": {
+            "volume": 0.35,
+            "muted": false
+          },
+          "ui": {
+            "sliderValue": null,
+            "sliderPresent": false
+          },
+          "dom": {
+            "volume": null,
+            "muted": null,
+            "present": false
+          },
+          "routerKind": "spotify"
+        }
+      }
+    },
+    {
+      "tMs": 7410,
+      "text": "[VOLUME-TRACE] MediaSessionController.toggleMute enter {id: 12, ts: 7400.89999999851, initiator: MediaSessionController, fn: MediaSessionController.toggleMute, phase: enter}",
+      "detail": {
+        "id": 12,
+        "ts": 7400.89999999851,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.toggleMute",
+        "phase": "enter",
+        "previousVolume": 0.35,
+        "previousMuted": false,
+        "providerKind": "spotify",
+        "note": "early_return_non_preview",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7814,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-msc-toggleMute-spotify {id: 13, ts: 7805.199999999255, initiator: unknown, fn: __volumeTraceSample, phase: after-msc-toggleMute-spotify}",
+      "detail": {
+        "id": 13,
+        "ts": 7805.199999999255,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-msc-toggleMute-spotify",
+        "previousVolume": 0.35,
+        "previousMuted": false,
+        "storeVolume": 0.35,
+        "storeMuted": false,
+        "snapshotVolume": 0.35,
+        "snapshotMuted": false,
+        "uiSliderValue": null,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false,
+        "activeRouterKind": "spotify",
+        "extra": {
+          "label": "after-msc-toggleMute-spotify",
+          "ts": 1783057246014,
+          "msc": {
+            "volume": 0.35,
+            "muted": false
+          },
+          "engine": {
+            "mode": "spotify",
+            "refId": "sara-landry::legacy"
+          },
+          "store": {
+            "volume": 0.35,
+            "muted": false
+          },
+          "snapshot": {
+            "volume": 0.35,
+            "muted": false
+          },
+          "ui": {
+            "sliderValue": null,
+            "sliderPresent": false
+          },
+          "dom": {
+            "volume": null,
+            "muted": null,
+            "present": false
+          },
+          "routerKind": "spotify"
+        }
+      }
+    },
+    {
+      "tMs": 7856,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume enter {id: 14, ts: 7807.299999998882, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: enter}",
+      "detail": {
+        "id": 14,
+        "ts": 7807.299999998882,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "enter",
+        "previousVolume": 0.35,
+        "newVolume": 0.42,
+        "previousMuted": false,
+        "newMuted": false,
+        "muteChanged": false,
+        "providerKind": "spotify",
+        "note": "msc_only_non_preview",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7857,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume exit {id: 15, ts: 7807.799999998882, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: exit}",
+      "detail": {
+        "id": 15,
+        "ts": 7807.799999998882,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "exit",
+        "newVolume": 0.42,
+        "newMuted": false,
+        "mscOverwrote": true,
+        "storeVolume": 0.42,
+        "storeMuted": false,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7857,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine enter {id: 16, ts: 7809.299999998882, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: enter}",
+      "detail": {
+        "id": 16,
+        "ts": 7809.299999998882,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "enter",
+        "previousVolume": 0.42,
+        "previousMuted": false,
+        "providerKind": "preview",
+        "activeRouterKind": "audio",
+        "note": "forwarding_to_engine",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7857,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setVolume invoke {id: 17, ts: 7809.5, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setVolume, phase: invoke}",
+      "detail": {
+        "id": 17,
+        "ts": 7809.5,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setVolume",
+        "phase": "invoke",
+        "newVolume": 0.42,
+        "activeRouterKind": "spotify",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7858,
+      "text": "[VOLUME-TRACE] ProviderRouter.setVolume skip_non_audio {id: 18, ts: 7809.5999999996275, initiator: ProviderRouter, fn: ProviderRouter.setVolume, phase: skip_non_audio}",
+      "detail": {
+        "id": 18,
+        "ts": 7809.5999999996275,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setVolume",
+        "phase": "skip_non_audio",
+        "newVolume": 0.42,
+        "activeRouterKind": "spotify",
+        "providerAccepted": false,
+        "note": "only AudioProvider receives setVolume",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7858,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setMuted invoke {id: 19, ts: 7809.699999999255, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setMuted, phase: invoke}",
+      "detail": {
+        "id": 19,
+        "ts": 7809.699999999255,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setMuted",
+        "phase": "invoke",
+        "newMuted": false,
+        "activeRouterKind": "spotify",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7858,
+      "text": "[VOLUME-TRACE] ProviderRouter.setMuted skip_non_audio {id: 20, ts: 7809.799999998882, initiator: ProviderRouter, fn: ProviderRouter.setMuted, phase: skip_non_audio}",
+      "detail": {
+        "id": 20,
+        "ts": 7809.799999998882,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setMuted",
+        "phase": "skip_non_audio",
+        "newMuted": false,
+        "activeRouterKind": "spotify",
+        "providerAccepted": false,
+        "note": "only AudioProvider receives setMuted",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7858,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine exit {id: 21, ts: 7809.799999998882, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: exit}",
+      "detail": {
+        "id": 21,
+        "ts": 7809.799999998882,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "exit",
+        "newVolume": 0.42,
+        "newMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7858,
+      "text": "[VOLUME-TRACE] AudioProvider.init audio_element_created {id: 22, ts: 7829.39999999851, initiator: AudioProvider, fn: AudioProvider.init, phase: audio_element_created}",
+      "detail": {
+        "id": 22,
+        "ts": 7829.39999999851,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.init",
+        "phase": "audio_element_created",
+        "newVolume": 1,
+        "newMuted": false,
+        "providerAccepted": true,
+        "note": "defaults_from_constructor",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 7868,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine enter {id: 23, ts: 7833.89999999851, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: enter}",
+      "detail": {
+        "id": 23,
+        "ts": 7833.89999999851,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "enter",
+        "previousVolume": 0.42,
+        "previousMuted": false,
+        "providerKind": "preview",
+        "activeRouterKind": "audio",
+        "note": "forwarding_to_engine",
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 7868,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setVolume invoke {id: 24, ts: 7834, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setVolume, phase: invoke}",
+      "detail": {
+        "id": 24,
+        "ts": 7834,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setVolume",
+        "phase": "invoke",
+        "newVolume": 0.42,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 7868,
+      "text": "[VOLUME-TRACE] ProviderRouter.setVolume forward_audio {id: 25, ts: 7834.199999999255, initiator: ProviderRouter, fn: ProviderRouter.setVolume, phase: forward_audio}",
+      "detail": {
+        "id": 25,
+        "ts": 7834.199999999255,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setVolume",
+        "phase": "forward_audio",
+        "newVolume": 0.42,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 7869,
+      "text": "[VOLUME-TRACE] AudioProvider.setVolume applied {id: 26, ts: 7834.199999999255, initiator: AudioProvider, fn: AudioProvider.setVolume, phase: applied}",
+      "detail": {
+        "id": 26,
+        "ts": 7834.199999999255,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setVolume",
+        "phase": "applied",
+        "previousVolume": 1,
+        "newVolume": 0.42,
+        "domAudioVolume": 0.42,
+        "providerAccepted": true,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 7869,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setMuted invoke {id: 27, ts: 7834.299999998882, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setMuted, phase: invoke}",
+      "detail": {
+        "id": 27,
+        "ts": 7834.299999998882,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setMuted",
+        "phase": "invoke",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 0.42,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 7869,
+      "text": "[VOLUME-TRACE] ProviderRouter.setMuted forward_audio {id: 28, ts: 7834.39999999851, initiator: ProviderRouter, fn: ProviderRouter.setMuted, phase: forward_audio}",
+      "detail": {
+        "id": 28,
+        "ts": 7834.39999999851,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setMuted",
+        "phase": "forward_audio",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 0.42,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 7869,
+      "text": "[VOLUME-TRACE] AudioProvider.setMuted applied {id: 29, ts: 7834.5, initiator: AudioProvider, fn: AudioProvider.setMuted, phase: applied}",
+      "detail": {
+        "id": 29,
+        "ts": 7834.5,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setMuted",
+        "phase": "applied",
+        "previousMuted": false,
+        "newMuted": false,
+        "domAudioMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": 0.42,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 7869,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine exit {id: 30, ts: 7834.5, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: exit}",
+      "detail": {
+        "id": 30,
+        "ts": 7834.5,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "exit",
+        "newVolume": 0.42,
+        "newMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": 0.42,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13855,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-preview-play {id: 31, ts: 13846.299999998882, initiator: unknown, fn: __volumeTraceSample, phase: after-preview-play}",
+      "detail": {
+        "id": 31,
+        "ts": 13846.299999998882,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-preview-play",
+        "previousVolume": 0.42,
+        "previousMuted": false,
+        "storeVolume": 0.42,
+        "storeMuted": false,
+        "snapshotVolume": 0.42,
+        "snapshotMuted": false,
+        "uiSliderValue": 0.42,
+        "domAudioVolume": 0.42,
+        "domAudioMuted": false,
+        "domAudioPresent": true,
+        "activeRouterKind": "audio",
+        "extra": {
+          "label": "after-preview-play",
+          "ts": 1783057252055,
+          "msc": {
+            "volume": 0.42,
+            "muted": false
+          },
+          "engine": {
+            "mode": "audio",
+            "refId": "volume-audit::preview-test"
+          },
+          "store": {
+            "volume": 0.42,
+            "muted": false
+          },
+          "snapshot": {
+            "volume": 0.42,
+            "muted": false
+          },
+          "ui": {
+            "sliderValue": 0.42,
+            "sliderPresent": true
+          },
+          "dom": {
+            "volume": 0.42,
+            "muted": false,
+            "present": true
+          },
+          "routerKind": "audio"
+        }
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume enter {id: 32, ts: 13848.299999998882, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: enter}",
+      "detail": {
+        "id": 32,
+        "ts": 13848.299999998882,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "enter",
+        "previousVolume": 0.42,
+        "newVolume": 0.15,
+        "previousMuted": false,
+        "newMuted": false,
+        "muteChanged": false,
+        "providerKind": "preview",
+        "note": "will_forward_engine",
+        "domAudioVolume": 0.42,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setVolume invoke {id: 33, ts: 13848.5, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setVolume, phase: invoke}",
+      "detail": {
+        "id": 33,
+        "ts": 13848.5,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setVolume",
+        "phase": "invoke",
+        "newVolume": 0.15,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 0.42,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] ProviderRouter.setVolume forward_audio {id: 34, ts: 13848.599999999627, initiator: ProviderRouter, fn: ProviderRouter.setVolume, phase: forward_audio}",
+      "detail": {
+        "id": 34,
+        "ts": 13848.599999999627,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setVolume",
+        "phase": "forward_audio",
+        "newVolume": 0.15,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 0.42,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] AudioProvider.setVolume applied {id: 35, ts: 13848.599999999627, initiator: AudioProvider, fn: AudioProvider.setVolume, phase: applied}",
+      "detail": {
+        "id": 35,
+        "ts": 13848.599999999627,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setVolume",
+        "phase": "applied",
+        "previousVolume": 0.42,
+        "newVolume": 0.15,
+        "domAudioVolume": 0.15,
+        "providerAccepted": true,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setMuted invoke {id: 36, ts: 13848.699999999255, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setMuted, phase: invoke}",
+      "detail": {
+        "id": 36,
+        "ts": 13848.699999999255,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setMuted",
+        "phase": "invoke",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] ProviderRouter.setMuted forward_audio {id: 37, ts: 13848.799999998882, initiator: ProviderRouter, fn: ProviderRouter.setMuted, phase: forward_audio}",
+      "detail": {
+        "id": 37,
+        "ts": 13848.799999998882,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setMuted",
+        "phase": "forward_audio",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] AudioProvider.setMuted applied {id: 38, ts: 13848.89999999851, initiator: AudioProvider, fn: AudioProvider.setMuted, phase: applied}",
+      "detail": {
+        "id": 38,
+        "ts": 13848.89999999851,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setMuted",
+        "phase": "applied",
+        "previousMuted": false,
+        "newMuted": false,
+        "domAudioMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": 0.15,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 13870,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume exit {id: 39, ts: 13849.5, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: exit}",
+      "detail": {
+        "id": 39,
+        "ts": 13849.5,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "exit",
+        "newVolume": 0.15,
+        "newMuted": false,
+        "mscOverwrote": true,
+        "storeVolume": 0.15,
+        "storeMuted": false,
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14373,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-preview-setVolume {id: 40, ts: 14364, initiator: unknown, fn: __volumeTraceSample, phase: after-preview-setVolume}",
+      "detail": {
+        "id": 40,
+        "ts": 14364,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-preview-setVolume",
+        "previousVolume": 0.15,
+        "previousMuted": false,
+        "storeVolume": 0.15,
+        "storeMuted": false,
+        "snapshotVolume": 0.15,
+        "snapshotMuted": false,
+        "uiSliderValue": 0.15,
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true,
+        "activeRouterKind": "audio",
+        "extra": {
+          "label": "after-preview-setVolume",
+          "ts": 1783057252573,
+          "msc": {
+            "volume": 0.15,
+            "muted": false
+          },
+          "engine": {
+            "mode": "audio",
+            "refId": "volume-audit::preview-test"
+          },
+          "store": {
+            "volume": 0.15,
+            "muted": false
+          },
+          "snapshot": {
+            "volume": 0.15,
+            "muted": false
+          },
+          "ui": {
+            "sliderValue": 0.15,
+            "sliderPresent": true
+          },
+          "dom": {
+            "volume": 0.15,
+            "muted": false,
+            "present": true
+          },
+          "routerKind": "audio"
+        }
+      }
+    },
+    {
+      "tMs": 14392,
+      "text": "[VOLUME-TRACE] PlaybackVolumeControl.slider onInput {id: 41, ts: 14370.799999998882, initiator: PlaybackVolumeControl, fn: PlaybackVolumeControl.slider, phase: onInput}",
+      "detail": {
+        "id": 41,
+        "ts": 14370.799999998882,
+        "initiator": "PlaybackVolumeControl",
+        "fn": "PlaybackVolumeControl.slider",
+        "phase": "onInput",
+        "previousVolume": 0.15,
+        "newVolume": 0.65,
+        "previousMuted": false,
+        "newMuted": false,
+        "muteChanged": false,
+        "uiSliderValue": 0.65,
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14392,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume enter {id: 42, ts: 14371.699999999255, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: enter}",
+      "detail": {
+        "id": 42,
+        "ts": 14371.699999999255,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "enter",
+        "previousVolume": 0.15,
+        "newVolume": 0.65,
+        "previousMuted": false,
+        "newMuted": false,
+        "muteChanged": false,
+        "providerKind": "preview",
+        "note": "will_forward_engine",
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14392,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setVolume invoke {id: 43, ts: 14371.799999998882, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setVolume, phase: invoke}",
+      "detail": {
+        "id": 43,
+        "ts": 14371.799999998882,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setVolume",
+        "phase": "invoke",
+        "newVolume": 0.65,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14392,
+      "text": "[VOLUME-TRACE] ProviderRouter.setVolume forward_audio {id: 44, ts: 14371.89999999851, initiator: ProviderRouter, fn: ProviderRouter.setVolume, phase: forward_audio}",
+      "detail": {
+        "id": 44,
+        "ts": 14371.89999999851,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setVolume",
+        "phase": "forward_audio",
+        "newVolume": 0.65,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 0.15,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14392,
+      "text": "[VOLUME-TRACE] AudioProvider.setVolume applied {id: 45, ts: 14372, initiator: AudioProvider, fn: AudioProvider.setVolume, phase: applied}",
+      "detail": {
+        "id": 45,
+        "ts": 14372,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setVolume",
+        "phase": "applied",
+        "previousVolume": 0.15,
+        "newVolume": 0.65,
+        "domAudioVolume": 0.65,
+        "providerAccepted": true,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14393,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setMuted invoke {id: 46, ts: 14372.099999999627, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setMuted, phase: invoke}",
+      "detail": {
+        "id": 46,
+        "ts": 14372.099999999627,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setMuted",
+        "phase": "invoke",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 0.65,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14393,
+      "text": "[VOLUME-TRACE] ProviderRouter.setMuted forward_audio {id: 47, ts: 14372.199999999255, initiator: ProviderRouter, fn: ProviderRouter.setMuted, phase: forward_audio}",
+      "detail": {
+        "id": 47,
+        "ts": 14372.199999999255,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setMuted",
+        "phase": "forward_audio",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 0.65,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14393,
+      "text": "[VOLUME-TRACE] AudioProvider.setMuted applied {id: 48, ts: 14372.299999998882, initiator: AudioProvider, fn: AudioProvider.setMuted, phase: applied}",
+      "detail": {
+        "id": 48,
+        "ts": 14372.299999998882,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setMuted",
+        "phase": "applied",
+        "previousMuted": false,
+        "newMuted": false,
+        "domAudioMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": 0.65,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14393,
+      "text": "[VOLUME-TRACE] MediaSessionController.setVolume exit {id: 49, ts: 14373, initiator: MediaSessionController, fn: MediaSessionController.setVolume, phase: exit}",
+      "detail": {
+        "id": 49,
+        "ts": 14373,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.setVolume",
+        "phase": "exit",
+        "newVolume": 0.65,
+        "newMuted": false,
+        "mscOverwrote": true,
+        "storeVolume": 0.65,
+        "storeMuted": false,
+        "domAudioVolume": 0.65,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14895,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-ui-slider {id: 50, ts: 14886.799999998882, initiator: unknown, fn: __volumeTraceSample, phase: after-ui-slider}",
+      "detail": {
+        "id": 50,
+        "ts": 14886.799999998882,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-ui-slider",
+        "previousVolume": 0.65,
+        "previousMuted": false,
+        "storeVolume": 0.65,
+        "storeMuted": false,
+        "snapshotVolume": 0.65,
+        "snapshotMuted": false,
+        "uiSliderValue": 0.65,
+        "domAudioVolume": 0.65,
+        "domAudioMuted": false,
+        "domAudioPresent": true,
+        "activeRouterKind": "audio",
+        "extra": {
+          "label": "after-ui-slider",
+          "ts": 1783057253095,
+          "msc": {
+            "volume": 0.65,
+            "muted": false
+          },
+          "engine": {
+            "mode": "audio",
+            "refId": "volume-audit::preview-test"
+          },
+          "store": {
+            "volume": 0.65,
+            "muted": false
+          },
+          "snapshot": {
+            "volume": 0.65,
+            "muted": false
+          },
+          "ui": {
+            "sliderValue": 0.65,
+            "sliderPresent": true
+          },
+          "dom": {
+            "volume": 0.65,
+            "muted": false,
+            "present": true
+          },
+          "routerKind": "audio"
+        }
+      }
+    },
+    {
+      "tMs": 14913,
+      "text": "[VOLUME-TRACE] MediaSessionController.toggleMute enter {id: 51, ts: 14888.699999999255, initiator: MediaSessionController, fn: MediaSessionController.toggleMute, phase: enter}",
+      "detail": {
+        "id": 51,
+        "ts": 14888.699999999255,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.toggleMute",
+        "phase": "enter",
+        "previousVolume": 0.65,
+        "previousMuted": false,
+        "providerKind": "preview",
+        "domAudioVolume": 0.65,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14913,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setMuted invoke {id: 52, ts: 14888.89999999851, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setMuted, phase: invoke}",
+      "detail": {
+        "id": 52,
+        "ts": 14888.89999999851,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setMuted",
+        "phase": "invoke",
+        "newMuted": true,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 0.65,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14913,
+      "text": "[VOLUME-TRACE] ProviderRouter.setMuted forward_audio {id: 53, ts: 14889, initiator: ProviderRouter, fn: ProviderRouter.setMuted, phase: forward_audio}",
+      "detail": {
+        "id": 53,
+        "ts": 14889,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setMuted",
+        "phase": "forward_audio",
+        "newMuted": true,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 0.65,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14913,
+      "text": "[VOLUME-TRACE] AudioProvider.setMuted applied {id: 54, ts: 14889.099999999627, initiator: AudioProvider, fn: AudioProvider.setMuted, phase: applied}",
+      "detail": {
+        "id": 54,
+        "ts": 14889.099999999627,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setMuted",
+        "phase": "applied",
+        "previousMuted": false,
+        "newMuted": true,
+        "domAudioMuted": true,
+        "providerAccepted": true,
+        "domAudioVolume": 0.65,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 14915,
+      "text": "[VOLUME-TRACE] MediaSessionController.toggleMute exit_muted {id: 55, ts: 14889.599999999627, initiator: MediaSessionController, fn: MediaSessionController.toggleMute, phase: exit_muted}",
+      "detail": {
+        "id": 55,
+        "ts": 14889.599999999627,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.toggleMute",
+        "phase": "exit_muted",
+        "previousMuted": false,
+        "newMuted": true,
+        "newVolume": 0.65,
+        "muteChanged": true,
+        "mscOverwrote": true,
+        "domAudioVolume": 0.65,
+        "domAudioMuted": true,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15318,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-preview-toggleMute {id: 56, ts: 15306.099999999627, initiator: unknown, fn: __volumeTraceSample, phase: after-preview-toggleMute}",
+      "detail": {
+        "id": 56,
+        "ts": 15306.099999999627,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-preview-toggleMute",
+        "previousVolume": 0.65,
+        "previousMuted": true,
+        "storeVolume": 0.65,
+        "storeMuted": true,
+        "snapshotVolume": 0.65,
+        "snapshotMuted": true,
+        "uiSliderValue": 0,
+        "domAudioVolume": 0.65,
+        "domAudioMuted": true,
+        "domAudioPresent": true,
+        "activeRouterKind": "audio",
+        "extra": {
+          "label": "after-preview-toggleMute",
+          "ts": 1783057253515,
+          "msc": {
+            "volume": 0.65,
+            "muted": true
+          },
+          "engine": {
+            "mode": "audio",
+            "refId": "volume-audit::preview-test"
+          },
+          "store": {
+            "volume": 0.65,
+            "muted": true
+          },
+          "snapshot": {
+            "volume": 0.65,
+            "muted": true
+          },
+          "ui": {
+            "sliderValue": 0,
+            "sliderPresent": true
+          },
+          "dom": {
+            "volume": 0.65,
+            "muted": true,
+            "present": true
+          },
+          "routerKind": "audio"
+        }
+      }
+    },
+    {
+      "tMs": 15738,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine enter {id: 1, ts: 340.80000000074506, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: enter}",
+      "detail": {
+        "id": 1,
+        "ts": 340.80000000074506,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "enter",
+        "previousVolume": 1,
+        "previousMuted": false,
+        "providerKind": "preview",
+        "activeRouterKind": "audio",
+        "note": "forwarding_to_engine",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 15738,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setVolume invoke {id: 2, ts: 341, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setVolume, phase: invoke}",
+      "detail": {
+        "id": 2,
+        "ts": 341,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setVolume",
+        "phase": "invoke",
+        "newVolume": 1,
+        "activeRouterKind": null,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 15738,
+      "text": "[VOLUME-TRACE] ProviderRouter.setVolume skip_non_audio {id: 3, ts: 341.40000000037253, initiator: ProviderRouter, fn: ProviderRouter.setVolume, phase: skip_non_audio}",
+      "detail": {
+        "id": 3,
+        "ts": 341.40000000037253,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setVolume",
+        "phase": "skip_non_audio",
+        "newVolume": 1,
+        "activeRouterKind": null,
+        "providerAccepted": false,
+        "note": "only AudioProvider receives setVolume",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 15738,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setMuted invoke {id: 4, ts: 341.7000000011176, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setMuted, phase: invoke}",
+      "detail": {
+        "id": 4,
+        "ts": 341.7000000011176,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setMuted",
+        "phase": "invoke",
+        "newMuted": false,
+        "activeRouterKind": null,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 15738,
+      "text": "[VOLUME-TRACE] ProviderRouter.setMuted skip_non_audio {id: 5, ts: 342, initiator: ProviderRouter, fn: ProviderRouter.setMuted, phase: skip_non_audio}",
+      "detail": {
+        "id": 5,
+        "ts": 342,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setMuted",
+        "phase": "skip_non_audio",
+        "newMuted": false,
+        "activeRouterKind": null,
+        "providerAccepted": false,
+        "note": "only AudioProvider receives setMuted",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 15738,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine exit {id: 6, ts: 342.30000000074506, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: exit}",
+      "detail": {
+        "id": 6,
+        "ts": 342.30000000074506,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "exit",
+        "newVolume": 1,
+        "newMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 15738,
+      "text": "[VOLUME-TRACE] AudioProvider.init audio_element_created {id: 7, ts: 345.30000000074506, initiator: AudioProvider, fn: AudioProvider.init, phase: audio_element_created}",
+      "detail": {
+        "id": 7,
+        "ts": 345.30000000074506,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.init",
+        "phase": "audio_element_created",
+        "newVolume": 1,
+        "newMuted": false,
+        "providerAccepted": true,
+        "note": "defaults_from_constructor",
+        "domAudioVolume": null,
+        "domAudioMuted": null,
+        "domAudioPresent": false
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine enter {id: 8, ts: 346.90000000037253, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: enter}",
+      "detail": {
+        "id": 8,
+        "ts": 346.90000000037253,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "enter",
+        "previousVolume": 1,
+        "previousMuted": false,
+        "providerKind": "preview",
+        "activeRouterKind": "audio",
+        "note": "forwarding_to_engine",
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setVolume invoke {id: 9, ts: 347, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setVolume, phase: invoke}",
+      "detail": {
+        "id": 9,
+        "ts": 347,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setVolume",
+        "phase": "invoke",
+        "newVolume": 1,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] ProviderRouter.setVolume forward_audio {id: 10, ts: 347, initiator: ProviderRouter, fn: ProviderRouter.setVolume, phase: forward_audio}",
+      "detail": {
+        "id": 10,
+        "ts": 347,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setVolume",
+        "phase": "forward_audio",
+        "newVolume": 1,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] AudioProvider.setVolume applied {id: 11, ts: 347.1000000014901, initiator: AudioProvider, fn: AudioProvider.setVolume, phase: applied}",
+      "detail": {
+        "id": 11,
+        "ts": 347.1000000014901,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setVolume",
+        "phase": "applied",
+        "previousVolume": 1,
+        "newVolume": 1,
+        "domAudioVolume": 1,
+        "providerAccepted": true,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] GlobalPlayerEngine.setMuted invoke {id: 12, ts: 347.2000000011176, initiator: GlobalPlayerEngine, fn: GlobalPlayerEngine.setMuted, phase: invoke}",
+      "detail": {
+        "id": 12,
+        "ts": 347.2000000011176,
+        "initiator": "GlobalPlayerEngine",
+        "fn": "GlobalPlayerEngine.setMuted",
+        "phase": "invoke",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] ProviderRouter.setMuted forward_audio {id: 13, ts: 347.2000000011176, initiator: ProviderRouter, fn: ProviderRouter.setMuted, phase: forward_audio}",
+      "detail": {
+        "id": 13,
+        "ts": 347.2000000011176,
+        "initiator": "ProviderRouter",
+        "fn": "ProviderRouter.setMuted",
+        "phase": "forward_audio",
+        "newMuted": false,
+        "activeRouterKind": "audio",
+        "providerAccepted": true,
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] AudioProvider.setMuted applied {id: 14, ts: 347.30000000074506, initiator: AudioProvider, fn: AudioProvider.setMuted, phase: applied}",
+      "detail": {
+        "id": 14,
+        "ts": 347.30000000074506,
+        "initiator": "AudioProvider",
+        "fn": "AudioProvider.setMuted",
+        "phase": "applied",
+        "previousMuted": false,
+        "newMuted": false,
+        "domAudioMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": 1,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 15739,
+      "text": "[VOLUME-TRACE] MediaSessionController.applyVolumeToEngine exit {id: 15, ts: 347.40000000037253, initiator: MediaSessionController, fn: MediaSessionController.applyVolumeToEngine, phase: exit}",
+      "detail": {
+        "id": 15,
+        "ts": 347.40000000037253,
+        "initiator": "MediaSessionController",
+        "fn": "MediaSessionController.applyVolumeToEngine",
+        "phase": "exit",
+        "newVolume": 1,
+        "newMuted": false,
+        "providerAccepted": true,
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true
+      }
+    },
+    {
+      "tMs": 16980,
+      "text": "[VOLUME-TRACE] __volumeTraceSample after-navigate {id: 16, ts: 1658.2000000011176, initiator: unknown, fn: __volumeTraceSample, phase: after-navigate}",
+      "detail": {
+        "id": 16,
+        "ts": 1658.2000000011176,
+        "initiator": "unknown",
+        "fn": "__volumeTraceSample",
+        "phase": "after-navigate",
+        "previousVolume": 1,
+        "previousMuted": false,
+        "storeVolume": 1,
+        "storeMuted": false,
+        "snapshotVolume": 1,
+        "snapshotMuted": false,
+        "uiSliderValue": 1,
+        "domAudioVolume": 1,
+        "domAudioMuted": false,
+        "domAudioPresent": true,
+        "activeRouterKind": "audio",
+        "extra": {
+          "label": "after-navigate",
+          "ts": 1783057255177,
+          "msc": {
+            "volume": 1,
+            "muted": false
+          },
+          "engine": {
+            "mode": "audio",
+            "refId": "volume-audit::preview-test"
+          },
+          "store": {
+            "volume": 1,
+            "muted": false
+          },
+          "snapshot": {
+            "volume": 1,
+            "muted": false
+          },
+          "ui": {
+            "sliderValue": 1,
+            "sliderPresent": true
+          },
+          "dom": {
+            "volume": 1,
+            "muted": false,
+            "present": true
+          },
+          "routerKind": "audio"
+        }
+      }
+    }
+  ],
+  "samples": [
+    {
+      "label": "after-spotify-play",
+      "tMs": 6955,
+      "data": {
+        "label": "after-spotify-play",
+        "ts": 1783057245169,
+        "msc": {
+          "volume": 1,
+          "muted": false
+        },
+        "engine": {
+          "mode": "spotify",
+          "refId": "sara-landry::legacy"
+        },
+        "store": {
+          "volume": 1,
+          "muted": false
+        },
+        "snapshot": {
+          "volume": 1,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": null,
+          "sliderPresent": false
+        },
+        "dom": {
+          "volume": null,
+          "muted": null,
+          "present": false
+        },
+        "routerKind": "spotify"
+      }
+    },
+    {
+      "label": "after-msc-setVolume-0.35-on-spotify",
+      "tMs": 7402,
+      "data": {
+        "label": "after-msc-setVolume-spotify",
+        "ts": 1783057245605,
+        "msc": {
+          "volume": 0.35,
+          "muted": false
+        },
+        "engine": {
+          "mode": "spotify",
+          "refId": "sara-landry::legacy"
+        },
+        "store": {
+          "volume": 0.35,
+          "muted": false
+        },
+        "snapshot": {
+          "volume": 0.35,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": null,
+          "sliderPresent": false
+        },
+        "dom": {
+          "volume": null,
+          "muted": null,
+          "present": false
+        },
+        "routerKind": "spotify"
+      }
+    },
+    {
+      "label": "after-msc-toggleMute-on-spotify",
+      "tMs": 7811,
+      "data": {
+        "label": "after-msc-toggleMute-spotify",
+        "ts": 1783057246014,
+        "msc": {
+          "volume": 0.35,
+          "muted": false
+        },
+        "engine": {
+          "mode": "spotify",
+          "refId": "sara-landry::legacy"
+        },
+        "store": {
+          "volume": 0.35,
+          "muted": false
+        },
+        "snapshot": {
+          "volume": 0.35,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": null,
+          "sliderPresent": false
+        },
+        "dom": {
+          "volume": null,
+          "muted": null,
+          "present": false
+        },
+        "routerKind": "spotify"
+      }
+    },
+    {
+      "label": "after-preview-play-volume-0.42",
+      "tMs": 13852,
+      "data": {
+        "label": "after-preview-play",
+        "ts": 1783057252055,
+        "msc": {
+          "volume": 0.42,
+          "muted": false
+        },
+        "engine": {
+          "mode": "audio",
+          "refId": "volume-audit::preview-test"
+        },
+        "store": {
+          "volume": 0.42,
+          "muted": false
+        },
+        "snapshot": {
+          "volume": 0.42,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": 0.42,
+          "sliderPresent": true
+        },
+        "dom": {
+          "volume": 0.42,
+          "muted": false,
+          "present": true
+        },
+        "routerKind": "audio"
+      }
+    },
+    {
+      "label": "after-preview-setVolume-0.15",
+      "tMs": 14370,
+      "data": {
+        "label": "after-preview-setVolume",
+        "ts": 1783057252573,
+        "msc": {
+          "volume": 0.15,
+          "muted": false
+        },
+        "engine": {
+          "mode": "audio",
+          "refId": "volume-audit::preview-test"
+        },
+        "store": {
+          "volume": 0.15,
+          "muted": false
+        },
+        "snapshot": {
+          "volume": 0.15,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": 0.15,
+          "sliderPresent": true
+        },
+        "dom": {
+          "volume": 0.15,
+          "muted": false,
+          "present": true
+        },
+        "routerKind": "audio"
+      }
+    },
+    {
+      "label": "after-ui-slider-0.65",
+      "tMs": 14893,
+      "data": {
+        "label": "after-ui-slider",
+        "ts": 1783057253095,
+        "msc": {
+          "volume": 0.65,
+          "muted": false
+        },
+        "engine": {
+          "mode": "audio",
+          "refId": "volume-audit::preview-test"
+        },
+        "store": {
+          "volume": 0.65,
+          "muted": false
+        },
+        "snapshot": {
+          "volume": 0.65,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": 0.65,
+          "sliderPresent": true
+        },
+        "dom": {
+          "volume": 0.65,
+          "muted": false,
+          "present": true
+        },
+        "routerKind": "audio"
+      }
+    },
+    {
+      "label": "after-preview-toggleMute",
+      "tMs": 15311,
+      "data": {
+        "label": "after-preview-toggleMute",
+        "ts": 1783057253515,
+        "msc": {
+          "volume": 0.65,
+          "muted": true
+        },
+        "engine": {
+          "mode": "audio",
+          "refId": "volume-audit::preview-test"
+        },
+        "store": {
+          "volume": 0.65,
+          "muted": true
+        },
+        "snapshot": {
+          "volume": 0.65,
+          "muted": true
+        },
+        "ui": {
+          "sliderValue": 0,
+          "sliderPresent": true
+        },
+        "dom": {
+          "volume": 0.65,
+          "muted": true,
+          "present": true
+        },
+        "routerKind": "audio"
+      }
+    },
+    {
+      "label": "after-navigate-discover",
+      "tMs": 16973,
+      "data": {
+        "label": "after-navigate",
+        "ts": 1783057255177,
+        "msc": {
+          "volume": 1,
+          "muted": false
+        },
+        "engine": {
+          "mode": "audio",
+          "refId": "volume-audit::preview-test"
+        },
+        "store": {
+          "volume": 1,
+          "muted": false
+        },
+        "snapshot": {
+          "volume": 1,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": 1,
+          "sliderPresent": true
+        },
+        "dom": {
+          "volume": 1,
+          "muted": false,
+          "present": true
+        },
+        "routerKind": "audio"
+      }
+    }
+  ]
+}

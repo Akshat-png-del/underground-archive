@@ -1,0 +1,880 @@
+{
+  "generatedAt": "2026-07-03T06:13:37.301Z",
+  "seekTarget": 16.4,
+  "anchorTMs": 8688,
+  "windowLogs": [
+    {
+      "tMs": 8491,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 22, ts: 8487.2, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+    },
+    {
+      "tMs": 8491,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 23, ts: 8487.5, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+    },
+    {
+      "tMs": 8493,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 236, ts: 8489.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 5.068}"
+    },
+    {
+      "tMs": 8504,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 237, ts: 8500.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 238, ts: 8500.8, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 239, ts: 8500.8, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 240, ts: 8500.9, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 241, ts: 8501.0, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 242, ts: 8501.0, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 243, ts: 8501.1, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 244, ts: 8501.3, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 11}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 245, ts: 8501.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 246, ts: 8501.5, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8505,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 247, ts: 8501.5, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 248, ts: 8501.5, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 12.3}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 249, ts: 8501.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 12.3}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 250, ts: 8501.7, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 251, ts: 8501.8, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 252, ts: 8501.9, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 12.3}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 253, ts: 8501.9, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 254, ts: 8502.0, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 255, ts: 8502.0, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 12.3}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 256, ts: 8502.0, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 12.3}"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 257, ts: 8502.2, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 258, ts: 8502.2, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8506,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 259, ts: 8502.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 12.3}"
+    },
+    {
+      "tMs": 8521,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 260, ts: 8515.7, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8521,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 261, ts: 8515.8, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8521,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 262, ts: 8515.9, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8521,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 263, ts: 8515.9, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 12.3}"
+    },
+    {
+      "tMs": 8521,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 264, ts: 8516.1, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 12.3}"
+    },
+    {
+      "tMs": 8521,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 265, ts: 8516.1, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 266, ts: 8516.2, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 267, ts: 8516.3, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 12.3}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 268, ts: 8516.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 269, ts: 8516.5, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 270, ts: 8516.5, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 271, ts: 8516.6, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 13.7}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 272, ts: 8516.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 13.7}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 273, ts: 8516.7, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 274, ts: 8516.8, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 275, ts: 8516.8, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 13.7}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 276, ts: 8516.9, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 277, ts: 8517.0, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 278, ts: 8517.0, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 13.7}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 279, ts: 8517.1, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 13.7}"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 280, ts: 8517.1, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 281, ts: 8517.2, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8522,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 282, ts: 8517.3, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 13.7}"
+    },
+    {
+      "tMs": 8537,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 283, ts: 8532.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8537,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 284, ts: 8532.5, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8537,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 285, ts: 8532.6, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8537,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 286, ts: 8532.6, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 13.7}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 287, ts: 8532.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 13.7}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 288, ts: 8532.7, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 289, ts: 8532.9, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 290, ts: 8533.0, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 13.7}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 291, ts: 8533.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 292, ts: 8533.1, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 293, ts: 8533.2, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 294, ts: 8533.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 295, ts: 8533.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 296, ts: 8533.3, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 297, ts: 8533.4, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 298, ts: 8533.5, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 15}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 299, ts: 8533.5, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 300, ts: 8533.6, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 301, ts: 8533.6, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 302, ts: 8533.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 303, ts: 8533.7, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 304, ts: 8533.9, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8538,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 305, ts: 8533.9, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 15}"
+    },
+    {
+      "tMs": 8554,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 306, ts: 8548.9, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8554,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 307, ts: 8549.1, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8554,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 308, ts: 8549.2, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8554,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 309, ts: 8549.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8554,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 310, ts: 8549.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 311, ts: 8549.4, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 312, ts: 8549.5, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePointerMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1521:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 313, ts: 8549.6, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 15}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 314, ts: 8549.7, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 315, ts: 8549.7, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 316, ts: 8549.7, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 317, ts: 8549.8, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 16.4}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 318, ts: 8549.9, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 16.4}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 319, ts: 8550.0, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 320, ts: 8550.1, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 321, ts: 8550.1, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 16.4}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 322, ts: 8550.2, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 323, ts: 8550.2, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 324, ts: 8550.3, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 16.4}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 325, ts: 8550.4, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 16.4}"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EARLY_RETURN {id: 326, ts: 8550.4, fn: MediaSessionUiSession.updateSeek, kind: EARLY_RETURN, reason: state.isSeeking === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionUiSession.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:8359:186) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9570:40) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13)"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] MediaSessionController.updateSeek EARLY_RETURN {id: 327, ts: 8550.5, fn: MediaSessionController.updateSeek, kind: EARLY_RETURN, reason: uiSession.updateSeek returned null} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.updateSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9572:186) | at handlePreviewMove (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1548:188) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)"
+    },
+    {
+      "tMs": 8555,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 328, ts: 8550.5, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 16.4}"
+    },
+    {
+      "tMs": 8680,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 329, ts: 8676.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+    },
+    {
+      "tMs": 8681,
+      "text": "[TRACE] PlaybackSeekBar.windowPointerEnd {id: 330, ts: 8676.6, listenerGen: 1, eventType: pointerup, isTrusted: true}"
+    },
+    {
+      "tMs": 8681,
+      "text": "[TRACE] PlaybackSeekBar.onPointerEnd → commitDragSeek {id: 331, ts: 8676.8, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+    },
+    {
+      "tMs": 8681,
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek ENTER {id: 332, ts: 8676.9, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+    },
+    {
+      "tMs": 8681,
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 333, ts: 8677.1, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+    },
+    {
+      "tMs": 8681,
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners ENTER {id: 334, ts: 8677.2, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 1}"
+    },
+    {
+      "tMs": 8681,
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners EXIT {id: 335, ts: 8677.3, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 8681,
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 336, ts: 8677.4, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 8682,
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek {id: 337, ts: 8677.5, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+    },
+    {
+      "tMs": 8682,
+      "text": "[TRACE] MediaSessionController.commitSeek ENTER {id: 338, ts: 8677.7, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 16.4}"
+    },
+    {
+      "tMs": 8682,
+      "text": "[TRACE] MediaSessionController.commitSeek GUARD {id: 339, ts: 8678.2, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:3320:64) | at MediaSessionController.commitSeek (http://localhost:3000/_next/static/chunks/src_lib_123q15c._.js:9281:182) | at PlaybackSeekBar.useCallback[commitDragSeek] (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1384:192) | at PlaybackSeekBar.useCallback[attachPointerEndListeners].onPointerEnd (http://localhost:3000/_next/static/chunks/src_components_1qbv-gr._.js:1418:21)"
+    },
+    {
+      "tMs": 8682,
+      "text": "[SESSION] commitSeek() {seconds: 16.4}"
+    },
+    {
+      "tMs": 8682,
+      "text": "[TRACE] MediaSessionController.commitSeek → uiSession.clearOnSeekCommit {id: 340, ts: 8678.4, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+    },
+    {
+      "tMs": 8683,
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit ENTER {id: 341, ts: 8678.5, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+    },
+    {
+      "tMs": 8683,
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit EXIT {id: 342, ts: 8678.6, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8683,
+      "text": "[TRACE] MediaSessionController.commitSeek → patchTransport {id: 343, ts: 8678.7, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+    },
+    {
+      "tMs": 8683,
+      "text": "[TRACE] MediaSessionController.commitSeek → globalPlayerEngine.seek {id: 344, ts: 8679.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+    },
+    {
+      "tMs": 8683,
+      "text": "[TRACE] GlobalPlayerEngine.seek ENTER {id: 345, ts: 8679.4, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 16.4}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 346, ts: 8679.6, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] ProviderRouter.seek ENTER {id: 347, ts: 8679.8, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 16.4}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] ProviderRouter.seek → active.seek(spotify) {id: 348, ts: 8679.9, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[PROVIDER] [PROVIDER SEEK] {kind: spotify, seconds: 16.4}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] SpotifyProvider.seek ENTER {id: 349, ts: 8680.2, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 16.4}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 24, ts: 8680.4, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 25, ts: 8680.5, msSinceSeek: 0, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 26, ts: 8680.6, msSinceSeek: 0.09999999962747097, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 350, ts: 8682.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] SpotifyProvider.seek → host.seekIfReady {id: 351, ts: 8682.9, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 27, ts: 8683, msSinceSeek: 2.5, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 28, ts: 8683.2, msSinceSeek: 2.700000001117587, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 29, ts: 8683.3, msSinceSeek: 2.800000000745058, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 30, ts: 8683.4, msSinceSeek: 2.900000000372529, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] SpotifyProvider.seek EXIT {id: 352, ts: 8683.5, fn: SpotifyProvider.seek, kind: EXIT, target: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] ProviderRouter.seek EXIT {id: 353, ts: 8683.6, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 354, ts: 8683.7, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] MediaSessionController.commitSeek EXIT {id: 355, ts: 8683.7, fn: MediaSessionController.commitSeek, kind: EXIT, target: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek EXIT {id: 356, ts: 8683.8, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 16.4}"
+    },
+    {
+      "tMs": 8704,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 357, ts: 8698.7, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.mouseup}"
+    },
+    {
+      "tMs": 8705,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 358, ts: 8701.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.change}"
+    },
+    {
+      "tMs": 8705,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 359, ts: 8701.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.lostpointercapture}"
+    },
+    {
+      "tMs": 8705,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 360, ts: 8701.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.click}"
+    },
+    {
+      "tMs": 8705,
+      "text": "[TRACE] PlaybackSeekBar.handleClick ENTER {id: 361, ts: 8701.7, fn: PlaybackSeekBar.handleClick, kind: ENTER, eventType: react.click}"
+    },
+    {
+      "tMs": 8706,
+      "text": "[TRACE] PlaybackSeekBar.handleClick EXIT {id: 362, ts: 8701.9, fn: PlaybackSeekBar.handleClick, kind: EXIT}"
+    },
+    {
+      "tMs": 8720,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 31, ts: 8712, msSinceSeek: 31.5, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8720,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 32, ts: 8712.3, msSinceSeek: 31.800000000745058, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8721,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 363, ts: 8713.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 5.068}"
+    },
+    {
+      "tMs": 9508,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 33, ts: 9503.8, msSinceSeek: 823.3000000007451, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 9509,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 34, ts: 9504.4, msSinceSeek: 823.9000000003725, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 9511,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 364, ts: 9507.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 16.728}"
+    },
+    {
+      "tMs": 10573,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 35, ts: 10567.1, msSinceSeek: 1886.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 10574,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 36, ts: 10568.1, msSinceSeek: 1887.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 10576,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 365, ts: 10571.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 17.792}"
+    },
+    {
+      "tMs": 11636,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 37, ts: 11630.1, msSinceSeek: 2949.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 11639,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 38, ts: 11631, msSinceSeek: 2950.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 11640,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 366, ts: 11635.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 18.845}"
+    },
+    {
+      "tMs": 12698,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 39, ts: 12692.6, msSinceSeek: 4012.0999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 12698,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 40, ts: 12693.6, msSinceSeek: 4013.0999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 12701,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 367, ts: 12697.1, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 19.909}"
+    },
+    {
+      "tMs": 13759,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 41, ts: 13753.9, msSinceSeek: 5073.4000000003725, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 13760,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 42, ts: 13754.6, msSinceSeek: 5074.0999999996275, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 13762,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 368, ts: 13758.3, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 20.97}"
+    },
+    {
+      "tMs": 14824,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 43, ts: 14818.4, msSinceSeek: 6137.9000000003725, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 14825,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 44, ts: 14819.1, msSinceSeek: 6138.5999999996275, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 14825,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 369, ts: 14820.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22.036}"
+    },
+    {
+      "tMs": 15889,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 45, ts: 15880.2, msSinceSeek: 7199.700000001118, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 15889,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 46, ts: 15881.2, msSinceSeek: 7200.700000001118, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 15891,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 370, ts: 15885.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 23.099}"
+    }
+  ],
+  "spotifyLogs": [
+    {
+      "tMs": 8491,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 22, ts: 8487.2, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+    },
+    {
+      "tMs": 8491,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 23, ts: 8487.5, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 24, ts: 8680.4, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 25, ts: 8680.5, msSinceSeek: 0, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 26, ts: 8680.6, msSinceSeek: 0.09999999962747097, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 27, ts: 8683, msSinceSeek: 2.5, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 28, ts: 8683.2, msSinceSeek: 2.700000001117587, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 29, ts: 8683.3, msSinceSeek: 2.800000000745058, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 30, ts: 8683.4, msSinceSeek: 2.900000000372529, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8720,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 31, ts: 8712, msSinceSeek: 31.5, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 8720,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 32, ts: 8712.3, msSinceSeek: 31.800000000745058, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 9508,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 33, ts: 9503.8, msSinceSeek: 823.3000000007451, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 9509,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 34, ts: 9504.4, msSinceSeek: 823.9000000003725, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 10573,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 35, ts: 10567.1, msSinceSeek: 1886.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 10574,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 36, ts: 10568.1, msSinceSeek: 1887.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 11636,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 37, ts: 11630.1, msSinceSeek: 2949.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 11639,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 38, ts: 11631, msSinceSeek: 2950.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 12698,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 39, ts: 12692.6, msSinceSeek: 4012.0999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 12698,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 40, ts: 12693.6, msSinceSeek: 4013.0999999996275, followsSeek: true, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 13759,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 41, ts: 13753.9, msSinceSeek: 5073.4000000003725, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 13760,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 42, ts: 13754.6, msSinceSeek: 5074.0999999996275, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 14824,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 43, ts: 14818.4, msSinceSeek: 6137.9000000003725, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 14825,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 44, ts: 14819.1, msSinceSeek: 6138.5999999996275, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 15889,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 45, ts: 15880.2, msSinceSeek: 7199.700000001118, followsSeek: false, lastSeekTargetMs: 16400}"
+    },
+    {
+      "tMs": 15889,
+      "text": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 46, ts: 15881.2, msSinceSeek: 7200.700000001118, followsSeek: false, lastSeekTargetMs: 16400}"
+    }
+  ],
+  "routerLogs": [
+    {
+      "tMs": 8683,
+      "text": "[TRACE] GlobalPlayerEngine.seek ENTER {id: 345, ts: 8679.4, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 16.4}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 346, ts: 8679.6, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] ProviderRouter.seek ENTER {id: 347, ts: 8679.8, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 16.4}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] ProviderRouter.seek → active.seek(spotify) {id: 348, ts: 8679.9, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+    },
+    {
+      "tMs": 8684,
+      "text": "[TRACE] SpotifyProvider.seek ENTER {id: 349, ts: 8680.2, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] SpotifyProvider.seek → host.seekIfReady {id: 351, ts: 8682.9, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] SpotifyProvider.seek EXIT {id: 352, ts: 8683.5, fn: SpotifyProvider.seek, kind: EXIT, target: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] ProviderRouter.seek EXIT {id: 353, ts: 8683.6, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 16.4}"
+    },
+    {
+      "tMs": 8688,
+      "text": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 354, ts: 8683.7, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 16.4}"
+    }
+  ],
+  "commandsAfterSeek": [],
+  "positions": [
+    {
+      "tMs": -197,
+      "followsSeek": false,
+      "msSinceSeek": null
+    },
+    {
+      "tMs": 32,
+      "followsSeek": true,
+      "msSinceSeek": 31.5
+    },
+    {
+      "tMs": 820,
+      "followsSeek": true,
+      "msSinceSeek": 823.3000000007451
+    },
+    {
+      "tMs": 1885,
+      "followsSeek": true,
+      "msSinceSeek": 1886.5999999996275
+    },
+    {
+      "tMs": 2948,
+      "followsSeek": true,
+      "msSinceSeek": 2949.5999999996275
+    },
+    {
+      "tMs": 4010,
+      "followsSeek": true,
+      "msSinceSeek": 4012.0999999996275
+    },
+    {
+      "tMs": 5071,
+      "followsSeek": false,
+      "msSinceSeek": 5073.4000000003725
+    },
+    {
+      "tMs": 6136,
+      "followsSeek": false,
+      "msSinceSeek": 6137.9000000003725
+    },
+    {
+      "tMs": 7201,
+      "followsSeek": false,
+      "msSinceSeek": 7199.700000001118
+    }
+  ],
+  "timeline": [
+    "t+-197ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 22, ts: 8487.2, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}",
+    "t+-197ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 23, ts: 8487.5, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}",
+    "t+-5ms — GlobalPlayerEngine.seek: [TRACE] GlobalPlayerEngine.seek ENTER {id: 345, ts: 8679.4, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 16.4}",
+    "t+-4ms — GlobalPlayerEngine.seek: [TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 346, ts: 8679.6, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}",
+    "t+-4ms — ProviderRouter.seek: [TRACE] ProviderRouter.seek ENTER {id: 347, ts: 8679.8, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 16.4}",
+    "t+-4ms — ProviderRouter.seek: [TRACE] ProviderRouter.seek → active.seek(spotify) {id: 348, ts: 8679.9, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}",
+    "t+-4ms — SpotifyProvider.seek: [SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 24, ts: 8680.4, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}",
+    "t+-4ms — SpotifyProvider.seek: [SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 25, ts: 8680.5, msSinceSeek: 0, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+-4ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 26, ts: 8680.6, msSinceSeek: 0.09999999962747097, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+0ms — host.seekIfReady: [SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 27, ts: 8683, msSinceSeek: 2.5, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+0ms — host.seekIfReady: [SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 28, ts: 8683.2, msSinceSeek: 2.700000001117587, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+0ms — host.seekIfReady: [SPOTIFY-SEEK-AUDIT] SpotifyEmbedHost HOST_SEEK {id: 29, ts: 8683.3, msSinceSeek: 2.800000000745058, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+0ms — SpotifyProvider.seek: [SPOTIFY-SEEK-AUDIT] SpotifyProvider SEEK {id: 30, ts: 8683.4, msSinceSeek: 2.900000000372529, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+0ms — ProviderRouter.seek: [TRACE] ProviderRouter.seek EXIT {id: 353, ts: 8683.6, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 16.4}",
+    "t+0ms — GlobalPlayerEngine.seek: [TRACE] GlobalPlayerEngine.seek EXIT {id: 354, ts: 8683.7, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 16.4}",
+    "t+0ms — commitSeek EXIT: [TRACE] MediaSessionController.commitSeek EXIT {id: 355, ts: 8683.7, fn: MediaSessionController.commitSeek, kind: EXIT, target: 16.4}",
+    "t+32ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 31, ts: 8712, msSinceSeek: 31.5, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+32ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 32, ts: 8712.3, msSinceSeek: 31.800000000745058, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+820ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 33, ts: 9503.8, msSinceSeek: 823.3000000007451, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+821ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 34, ts: 9504.4, msSinceSeek: 823.9000000003725, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+1885ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 35, ts: 10567.1, msSinceSeek: 1886.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+1886ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 36, ts: 10568.1, msSinceSeek: 1887.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+2948ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 37, ts: 11630.1, msSinceSeek: 2949.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+2951ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 38, ts: 11631, msSinceSeek: 2950.5999999996275, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+4010ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 39, ts: 12692.6, msSinceSeek: 4012.0999999996275, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+4010ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 40, ts: 12693.6, msSinceSeek: 4013.0999999996275, followsSeek: true, lastSeekTargetMs: 16400}",
+    "t+5071ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 41, ts: 13753.9, msSinceSeek: 5073.4000000003725, followsSeek: false, lastSeekTargetMs: 16400}",
+    "t+5072ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 42, ts: 13754.6, msSinceSeek: 5074.0999999996275, followsSeek: false, lastSeekTargetMs: 16400}",
+    "t+6136ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 43, ts: 14818.4, msSinceSeek: 6137.9000000003725, followsSeek: false, lastSeekTargetMs: 16400}",
+    "t+6137ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 44, ts: 14819.1, msSinceSeek: 6138.5999999996275, followsSeek: false, lastSeekTargetMs: 16400}",
+    "t+7201ms — playback_update: [SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 45, ts: 15880.2, msSinceSeek: 7199.700000001118, followsSeek: false, lastSeekTargetMs: 16400}",
+    "t+7201ms — provider state patch: [SPOTIFY-SEEK-AUDIT] SpotifyProvider STATE_PATCH {id: 46, ts: 15881.2, msSinceSeek: 7200.700000001118, followsSeek: false, lastSeekTargetMs: 16400}"
+  ],
+  "hostSeekReturned": null,
+  "hostSeekThrew": null,
+  "firstDiverge": null
+}

@@ -1,0 +1,1095 @@
+{
+  "generated": "2026-07-03T06:30:48.280Z",
+  "coldStart": {
+    "events": [
+      {
+        "stage": "spotify_api_ready",
+        "tMs": 1130,
+        "elapsedFromClick": null,
+        "detail": "[MOUNT] Spotify IFrame API ready"
+      },
+      {
+        "stage": "user_click",
+        "tMs": 2570,
+        "elapsedFromClick": 0,
+        "detail": "playwright click"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 2718,
+        "elapsedFromClick": 148,
+        "detail": "[SESSION] play() {refId: sara-landry::legacy, type: track}"
+      },
+      {
+        "stage": "engine_play",
+        "tMs": 2720,
+        "elapsedFromClick": 150,
+        "detail": "[ENGINE] play requested {refId: sara-landry::legacy, type: track, generation: 1, engineMounted: true}"
+      },
+      {
+        "stage": "router_play_enter",
+        "tMs": 2720,
+        "elapsedFromClick": 150,
+        "detail": "[QUEUE-TRACE] ProviderRouter.play enter {id: 34, ts: 2624.199999999255, fn: ProviderRouter.play, phase: enter, targetActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "embed_created",
+        "tMs": 2723,
+        "elapsedFromClick": 153,
+        "detail": "[MOUNT] Spotify embed controller created"
+      },
+      {
+        "stage": "embed_ready_callback",
+        "tMs": 3792,
+        "elapsedFromClick": 1222,
+        "detail": "[SPOTIFY] embed iframe ready"
+      },
+      {
+        "stage": "playback_confirmed",
+        "tMs": 3809,
+        "elapsedFromClick": 1239,
+        "detail": "[BINDING] [PLAYBACK CONFIRMED] {kind: spotify, refId: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4017,
+        "elapsedFromClick": 1447,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 7, ts: 4008.8, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4018,
+        "elapsedFromClick": 1448,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 2, ts: 4009.4000000003725, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4018,
+        "elapsedFromClick": 1448,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 44, ts: 4009.5, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4018,
+        "elapsedFromClick": 1448,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 6, ts: 4009.800000000745, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4602,
+        "elapsedFromClick": 2032,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 9, ts: 4566.5, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4602,
+        "elapsedFromClick": 2032,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 3, ts: 4566.800000000745, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4602,
+        "elapsedFromClick": 2032,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 49, ts: 4567, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 4602,
+        "elapsedFromClick": 2032,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 8, ts: 4567.0999999996275, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5235,
+        "elapsedFromClick": 2665,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 13, ts: 5223.2, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5236,
+        "elapsedFromClick": 2666,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 4, ts: 5223.5999999996275, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5236,
+        "elapsedFromClick": 2666,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 58, ts: 5223.9000000003725, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5236,
+        "elapsedFromClick": 2666,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 11, ts: 5224.0999999996275, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5627,
+        "elapsedFromClick": 3057,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 14, ts: 5618.5, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5627,
+        "elapsedFromClick": 3057,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 5, ts: 5618.9000000003725, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5627,
+        "elapsedFromClick": 3057,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 59, ts: 5619.0999999996275, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 5628,
+        "elapsedFromClick": 3058,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 12, ts: 5619.300000000745, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "engine_time_nonzero",
+        "tMs": 5674,
+        "elapsedFromClick": 3104,
+        "detail": "engine=0.745"
+      },
+      {
+        "stage": "snapshot_time_nonzero",
+        "tMs": 5674,
+        "elapsedFromClick": 3104,
+        "detail": "snapshot=0.745"
+      },
+      {
+        "stage": "ui_elapsed_nonzero",
+        "tMs": 5674,
+        "elapsedFromClick": 3104,
+        "detail": "ui=0:01"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 6689,
+        "elapsedFromClick": 4119,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 16, ts: 6680.8, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 6690,
+        "elapsedFromClick": 4120,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 6, ts: 6681, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 6690,
+        "elapsedFromClick": 4120,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 64, ts: 6681.300000000745, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 6690,
+        "elapsedFromClick": 4120,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 14, ts: 6681.300000000745, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 7752,
+        "elapsedFromClick": 5182,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 18, ts: 7742.8, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 7752,
+        "elapsedFromClick": 5182,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 7, ts: 7743.0999999996275, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 7753,
+        "elapsedFromClick": 5183,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 69, ts: 7743.199999999255, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 7753,
+        "elapsedFromClick": 5183,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 16, ts: 7743.4000000003725, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 8817,
+        "elapsedFromClick": 6247,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 20, ts: 8806.4, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 8818,
+        "elapsedFromClick": 6248,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 8, ts: 8806.800000000745, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 8818,
+        "elapsedFromClick": 6248,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 74, ts: 8807.099999999627, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 8818,
+        "elapsedFromClick": 6248,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 18, ts: 8807.400000000373, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 9877,
+        "elapsedFromClick": 7307,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 22, ts: 9868.8, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 9877,
+        "elapsedFromClick": 7307,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 9, ts: 9869, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 9877,
+        "elapsedFromClick": 7307,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 79, ts: 9869.199999999255, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 9878,
+        "elapsedFromClick": 7308,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 20, ts: 9869.400000000373, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 10939,
+        "elapsedFromClick": 8369,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 24, ts: 10930.4, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 10940,
+        "elapsedFromClick": 8370,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 10, ts: 10930.800000000745, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 10940,
+        "elapsedFromClick": 8370,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 84, ts: 10931, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 10940,
+        "elapsedFromClick": 8370,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 22, ts: 10931.199999999255, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 12009,
+        "elapsedFromClick": 9439,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 26, ts: 11994.4, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 12009,
+        "elapsedFromClick": 9439,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 11, ts: 11995.099999999627, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 12009,
+        "elapsedFromClick": 9439,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 89, ts: 11995.5, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 12009,
+        "elapsedFromClick": 9439,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 24, ts: 11995.900000000373, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 13070,
+        "elapsedFromClick": 10500,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 28, ts: 13056.6, msSinceSeek: null, followsSeek: false, lastSeekTargetMs: null}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 13070,
+        "elapsedFromClick": 10500,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 12, ts: 13057.300000000745, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 13070,
+        "elapsedFromClick": 10500,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 94, ts: 13057.800000000745, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 13070,
+        "elapsedFromClick": 10500,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 26, ts: 13058.199999999255, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14246,
+        "elapsedFromClick": 11676,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 14, ts: 927.5, msSinceSeek: 221.5, followsSeek: true, lastSeekTargetMs: 7116}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14246,
+        "elapsedFromClick": 11676,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 2, ts: 927.7999999988824, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14247,
+        "elapsedFromClick": 11677,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 47, ts: 928, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14247,
+        "elapsedFromClick": 11677,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 7, ts: 928.0999999996275, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14284,
+        "elapsedFromClick": 11714,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 16, ts: 963.6, msSinceSeek: 257.59999999962747, followsSeek: true, lastSeekTargetMs: 7116}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14284,
+        "elapsedFromClick": 11714,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 3, ts: 963.7999999988824, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14284,
+        "elapsedFromClick": 11714,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 52, ts: 963.7999999988824, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14284,
+        "elapsedFromClick": 11714,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 9, ts: 963.8999999985099, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14330,
+        "elapsedFromClick": 11760,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 20, ts: 1010.5, msSinceSeek: 304.5, followsSeek: true, lastSeekTargetMs: 7116}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14330,
+        "elapsedFromClick": 11760,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 4, ts: 1010.5, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14330,
+        "elapsedFromClick": 11760,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 61, ts: 1010.6999999992549, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14330,
+        "elapsedFromClick": 11760,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 12, ts: 1010.6999999992549, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14686,
+        "elapsedFromClick": 12116,
+        "detail": "[SPOTIFY-SEEK-AUDIT] SpotifyProvider PLAYBACK_UPDATE {id: 22, ts: 1366.8, msSinceSeek: 660.7999999988824, followsSeek: true, lastSeekTargetMs: 7116}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14687,
+        "elapsedFromClick": 12117,
+        "detail": "[VOLUME-TRACE] SpotifyProvider.onUpdate playback_update {id: 5, ts: 1367.7999999988824, initiator: provider-playback_update, fn: SpotifyProvider.onUpdate, phase: playback_update}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14687,
+        "elapsedFromClick": 12117,
+        "detail": "[QUEUE-TRACE] SpotifyProvider.onUpdate playback_update {id: 66, ts: 1368.0999999996275, fn: SpotifyProvider.onUpdate, phase: playback_update, mscActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "first_playback_update",
+        "tMs": 14687,
+        "elapsedFromClick": 12117,
+        "detail": "[PLAY-PAUSE-TRACE] SpotifyProvider.onUpdate playback_update {id: 14, ts: 1368.199999999255, fn: SpotifyProvider.onUpdate, phase: playback_update, event: playback_update}"
+      }
+    ],
+    "clickT": 2570
+  },
+  "refresh": {
+    "events": [
+      {
+        "stage": "msc_play",
+        "tMs": 13542,
+        "elapsedFromClick": 232,
+        "detail": "[HYDRATION-TRACE] PlaybackEngineMount mount {id: 1, ts: 223.39999999850988, fn: PlaybackEngineMount, phase: mount, extra: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13544,
+        "elapsedFromClick": 234,
+        "detail": "[HYDRATION-TRACE] GlobalPlayerEngine.initialize mount_ENTER {id: 2, ts: 225.2999999988824, fn: GlobalPlayerEngine.initialize, phase: mount_ENTER}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13544,
+        "elapsedFromClick": 234,
+        "detail": "[HYDRATION-TRACE] GlobalPlayerEngine.initialize provider_router_created {id: 3, ts: 225.7999999988824, fn: GlobalPlayerEngine.initialize, phase: provider_router_created}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13544,
+        "elapsedFromClick": 234,
+        "detail": "[HYDRATION-TRACE] GlobalPlayerEngine.initialize mount_EXIT {id: 4, ts: 226.19999999925494, fn: GlobalPlayerEngine.initialize, phase: mount_EXIT, engine: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13545,
+        "elapsedFromClick": 235,
+        "detail": "[HYDRATION-TRACE] initializePlaybackEngine hydration_started {id: 5, ts: 226.7999999988824, fn: initializePlaybackEngine, phase: hydration_started, note: count=1}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13545,
+        "elapsedFromClick": 235,
+        "detail": "[HYDRATION-TRACE] GlobalPlayerEngine.initialize mount_skipped {id: 6, ts: 227.19999999925494, fn: GlobalPlayerEngine.initialize, phase: mount_skipped, engine: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13546,
+        "elapsedFromClick": 236,
+        "detail": "[HYDRATION-TRACE] MediaSessionController.initialize attachEngineListener {id: 7, ts: 227.5, fn: MediaSessionController.initialize, phase: attachEngineListener}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13550,
+        "elapsedFromClick": 240,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 8, ts: 231.5, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13551,
+        "elapsedFromClick": 241,
+        "detail": "[HYDRATION-TRACE] MediaSessionController.initialize flushPendingPlay {id: 9, ts: 232.59999999962747, fn: MediaSessionController.initialize, phase: flushPendingPlay}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13551,
+        "elapsedFromClick": 241,
+        "detail": "[HYDRATION-TRACE] restorePersistedSession load {id: 10, ts: 232.89999999850988, fn: restorePersistedSession, phase: load, persisted: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13552,
+        "elapsedFromClick": 242,
+        "detail": "[HYDRATION-TRACE] restorePersistedSession resume_play {id: 11, ts: 233.5, fn: restorePersistedSession, phase: resume_play, persisted: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13553,
+        "elapsedFromClick": 243,
+        "detail": "[HYDRATION-TRACE] MediaSessionController.initialize attachEngineListener_skipped {id: 12, ts: 234.59999999962747, fn: MediaSessionController.initialize, phase: attachEngineListener_skipped, note: already attached}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13555,
+        "elapsedFromClick": 245,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 13, ts: 237, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13557,
+        "elapsedFromClick": 247,
+        "detail": "[HYDRATION-TRACE] GlobalPlayerEngine.initialize mount_skipped {id: 14, ts: 239.09999999962747, fn: GlobalPlayerEngine.initialize, phase: mount_skipped, engine: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13558,
+        "elapsedFromClick": 248,
+        "detail": "[ENGINE] play requested {refId: sara-landry::legacy, type: track, generation: 1, engineMounted: true}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13562,
+        "elapsedFromClick": 252,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 15, ts: 243.7999999988824, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13566,
+        "elapsedFromClick": 256,
+        "detail": "[HYDRATION-TRACE] initializePlaybackEngine hydration_finished {id: 16, ts: 247.59999999962747, fn: initializePlaybackEngine, phase: hydration_finished, note: restored from persistence}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13569,
+        "elapsedFromClick": 259,
+        "detail": "[HYDRATION-TRACE] useFinalPlaybackSnapshot snapshot_commit {id: 17, ts: 250.39999999850988, fn: useFinalPlaybackSnapshot, phase: snapshot_commit, snapshot: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13596,
+        "elapsedFromClick": 286,
+        "detail": "[HYDRATION-TRACE] AudioPlayerBar mount {id: 18, ts: 277.09999999962747, fn: AudioPlayerBar, phase: mount, snapshot: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13639,
+        "elapsedFromClick": 329,
+        "detail": "[HYDRATION-TRACE] GlobalPlayerEngine.initialize mount_skipped {id: 19, ts: 321.3999999985099, fn: GlobalPlayerEngine.initialize, phase: mount_skipped, engine: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13643,
+        "elapsedFromClick": 333,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 20, ts: 323.59999999962747, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 13989,
+        "elapsedFromClick": 679,
+        "detail": "[HYDRATION-TRACE] savePersistedPlayback persist {id: 21, ts: 671.1999999992549, fn: savePersistedPlayback, phase: persist, persisted: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14012,
+        "elapsedFromClick": 702,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 22, ts: 693, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14024,
+        "elapsedFromClick": 714,
+        "detail": "[QUEUE-TRACE] ProviderRouter.play playback_confirmed {id: 42, ts: 705.5999999996275, fn: ProviderRouter.play, phase: playback_confirmed, targetActiveTrack: sara-landry::legacy}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14025,
+        "elapsedFromClick": 715,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 23, ts: 707.1999999992549, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14250,
+        "elapsedFromClick": 940,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 24, ts: 930.5, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14286,
+        "elapsedFromClick": 976,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 25, ts: 965.7999999988824, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14300,
+        "elapsedFromClick": 990,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 26, ts: 981.0999999996275, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14331,
+        "elapsedFromClick": 1021,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 27, ts: 1011.8999999985099, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 14690,
+        "elapsedFromClick": 1380,
+        "detail": "[HYDRATION-TRACE] MediaSessionPersistence.pushLegacyMirror mirror_push {id: 28, ts: 1371.199999999255, fn: MediaSessionPersistence.pushLegacyMirror, phase: mirror_push, msc: Object}"
+      },
+      {
+        "stage": "msc_play",
+        "tMs": 15094,
+        "elapsedFromClick": 1784,
+        "detail": "[HYDRATION-TRACE] savePersistedPlayback persist {id: 29, ts: 1773.7999999988824, fn: savePersistedPlayback, phase: persist, persisted: Object}"
+      }
+    ],
+    "refreshT": 13310,
+    "sample": {
+      "hydration": {
+        "label": "refresh-settle",
+        "ts": 1783060248272,
+        "persisted": {
+          "activeTrack": "sara-landry::legacy",
+          "queueLength": 8,
+          "isPlaying": true,
+          "currentTime": 7
+        },
+        "msc": {
+          "activeTrack": "sara-landry::legacy",
+          "queueLength": 8,
+          "queueIndex": 0,
+          "currentTime": 7,
+          "duration": 29.713,
+          "isPlaying": true,
+          "volume": 1,
+          "muted": false
+        },
+        "store": {
+          "activeTrack": "sara-landry::legacy",
+          "queueLength": 8,
+          "queueIndex": 0,
+          "currentTime": 7,
+          "duration": 29.713,
+          "isPlaying": true,
+          "volume": 1,
+          "muted": false,
+          "detailsOpen": true,
+          "hydrated": true
+        },
+        "snapshot": {
+          "activeTrack": "sara-landry::legacy",
+          "queueLength": 8,
+          "queueIndex": 0,
+          "currentTime": 7,
+          "duration": 29.713,
+          "isPlaying": true,
+          "volume": 1,
+          "muted": false
+        },
+        "engine": {
+          "activeTrack": "sara-landry::legacy",
+          "currentTime": 7,
+          "duration": 29.713,
+          "isPlaying": false,
+          "engineMode": "spotify"
+        },
+        "ui": {
+          "barVisible": true,
+          "engineMount": true,
+          "playbackRoot": true
+        },
+        "counters": {
+          "hydrationStartCount": 1,
+          "hydrationFinishCount": 1,
+          "mirrorPushCount": 11,
+          "engineInitCount": 1
+        }
+      },
+      "sync": {
+        "action": "refresh-settle",
+        "engine": {
+          "mode": "spotify",
+          "currentTrack": {
+            "type": "track",
+            "refId": "sara-landry::legacy",
+            "label": "Legacy — Sara Landry",
+            "title": "Legacy",
+            "subtitle": "Sara Landry",
+            "coverArt": "https://i.scdn.co/image/ab67616d00001e02869b8fb7716ab4d6cbb92679",
+            "spotifyUrl": "https://open.spotify.com/track/0aMonkh8OKgqx1K0viRHRT",
+            "spotifyTrackId": "0aMonkh8OKgqx1K0viRHRT"
+          },
+          "isPlaying": false,
+          "isLoading": false,
+          "currentTime": 7,
+          "duration": 29.713,
+          "error": null
+        },
+        "msc": {
+          "activeTrack": {
+            "type": "track",
+            "refId": "sara-landry::legacy",
+            "label": "Legacy — Sara Landry",
+            "title": "Legacy",
+            "subtitle": "Sara Landry",
+            "coverArt": "https://i.scdn.co/image/ab67616d00001e02869b8fb7716ab4d6cbb92679",
+            "spotifyUrl": "https://open.spotify.com/track/0aMonkh8OKgqx1K0viRHRT",
+            "spotifyTrackId": "0aMonkh8OKgqx1K0viRHRT"
+          },
+          "currentTime": 7,
+          "duration": 29.713,
+          "isPlaying": true,
+          "isBuffering": false,
+          "isInitialLoading": false,
+          "volume": 1,
+          "muted": false,
+          "error": null,
+          "queue": [
+            {
+              "type": "track",
+              "refId": "sara-landry::legacy",
+              "label": "Legacy — Sara Landry",
+              "title": "Legacy",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02869b8fb7716ab4d6cbb92679",
+              "spotifyUrl": "https://open.spotify.com/track/0aMonkh8OKgqx1K0viRHRT",
+              "spotifyTrackId": "0aMonkh8OKgqx1K0viRHRT"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::pressure",
+              "label": "Pressure — Sara Landry",
+              "title": "Pressure",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e0249ba858c98dd5721233824b2",
+              "spotifyUrl": "https://open.spotify.com/track/3LgA6sFAEZ30TqeTWmGDlV",
+              "spotifyTrackId": "3LgA6sFAEZ30TqeTWmGDlV"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::prisoner",
+              "label": "Prisoner — Sara Landry",
+              "title": "Prisoner",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02143dad492c28a44c1e78b8f4",
+              "spotifyUrl": "https://open.spotify.com/track/2Rb5DcNmRKGmMGB48cY8cy",
+              "spotifyTrackId": "2Rb5DcNmRKGmMGB48cY8cy"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::grief-into-rage",
+              "label": "Grief Into Rage — Sara Landry",
+              "title": "Grief Into Rage",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e028bc0122685a6779c3b6f583c",
+              "spotifyUrl": "https://open.spotify.com/track/0JmFNORLiAQwtz48DsqeD0",
+              "spotifyTrackId": "0JmFNORLiAQwtz48DsqeD0"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::chaos-magicka",
+              "label": "Chaos Magicka — Sara Landry",
+              "title": "Chaos Magicka",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02c4eae66d7f48d3265e36b458",
+              "spotifyUrl": "https://open.spotify.com/track/5I5urH7JO7rRAUI4JCodLW",
+              "spotifyTrackId": "5I5urH7JO7rRAUI4JCodLW"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::girlboss",
+              "label": "GIRLBOSS — Sara Landry",
+              "title": "GIRLBOSS",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02c487becf6108d5717eee203b",
+              "spotifyUrl": "https://open.spotify.com/track/04WxwL4ZRewLveO2qjej54",
+              "spotifyTrackId": "04WxwL4ZRewLveO2qjej54"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::reality-check",
+              "label": "Reality Check — Sara Landry",
+              "title": "Reality Check",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02acb561f24c53f9f7672c209c",
+              "spotifyUrl": "https://open.spotify.com/track/4RB7S3C5A6ziH6Jni0Jlxv",
+              "spotifyTrackId": "4RB7S3C5A6ziH6Jni0Jlxv"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::heaven",
+              "label": "Heaven — Sara Landry",
+              "title": "Heaven",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02143dad492c28a44c1e78b8f4",
+              "spotifyUrl": "https://open.spotify.com/track/5Hh09KHzQ9NRjRd6HIes5R",
+              "spotifyTrackId": "5Hh09KHzQ9NRjRd6HIes5R"
+            }
+          ],
+          "queueIndex": 0,
+          "isSeeking": false,
+          "seekPreviewTime": null,
+          "hoverPreviewTime": null
+        },
+        "store": {
+          "currentTrack": {
+            "type": "track",
+            "refId": "sara-landry::legacy",
+            "label": "Legacy — Sara Landry",
+            "title": "Legacy",
+            "subtitle": "Sara Landry",
+            "coverArt": "https://i.scdn.co/image/ab67616d00001e02869b8fb7716ab4d6cbb92679",
+            "spotifyUrl": "https://open.spotify.com/track/0aMonkh8OKgqx1K0viRHRT",
+            "spotifyTrackId": "0aMonkh8OKgqx1K0viRHRT"
+          },
+          "queue": [
+            {
+              "type": "track",
+              "refId": "sara-landry::legacy",
+              "label": "Legacy — Sara Landry",
+              "title": "Legacy",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02869b8fb7716ab4d6cbb92679",
+              "spotifyUrl": "https://open.spotify.com/track/0aMonkh8OKgqx1K0viRHRT",
+              "spotifyTrackId": "0aMonkh8OKgqx1K0viRHRT"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::pressure",
+              "label": "Pressure — Sara Landry",
+              "title": "Pressure",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e0249ba858c98dd5721233824b2",
+              "spotifyUrl": "https://open.spotify.com/track/3LgA6sFAEZ30TqeTWmGDlV",
+              "spotifyTrackId": "3LgA6sFAEZ30TqeTWmGDlV"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::prisoner",
+              "label": "Prisoner — Sara Landry",
+              "title": "Prisoner",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02143dad492c28a44c1e78b8f4",
+              "spotifyUrl": "https://open.spotify.com/track/2Rb5DcNmRKGmMGB48cY8cy",
+              "spotifyTrackId": "2Rb5DcNmRKGmMGB48cY8cy"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::grief-into-rage",
+              "label": "Grief Into Rage — Sara Landry",
+              "title": "Grief Into Rage",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e028bc0122685a6779c3b6f583c",
+              "spotifyUrl": "https://open.spotify.com/track/0JmFNORLiAQwtz48DsqeD0",
+              "spotifyTrackId": "0JmFNORLiAQwtz48DsqeD0"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::chaos-magicka",
+              "label": "Chaos Magicka — Sara Landry",
+              "title": "Chaos Magicka",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02c4eae66d7f48d3265e36b458",
+              "spotifyUrl": "https://open.spotify.com/track/5I5urH7JO7rRAUI4JCodLW",
+              "spotifyTrackId": "5I5urH7JO7rRAUI4JCodLW"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::girlboss",
+              "label": "GIRLBOSS — Sara Landry",
+              "title": "GIRLBOSS",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02c487becf6108d5717eee203b",
+              "spotifyUrl": "https://open.spotify.com/track/04WxwL4ZRewLveO2qjej54",
+              "spotifyTrackId": "04WxwL4ZRewLveO2qjej54"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::reality-check",
+              "label": "Reality Check — Sara Landry",
+              "title": "Reality Check",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02acb561f24c53f9f7672c209c",
+              "spotifyUrl": "https://open.spotify.com/track/4RB7S3C5A6ziH6Jni0Jlxv",
+              "spotifyTrackId": "4RB7S3C5A6ziH6Jni0Jlxv"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::heaven",
+              "label": "Heaven — Sara Landry",
+              "title": "Heaven",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02143dad492c28a44c1e78b8f4",
+              "spotifyUrl": "https://open.spotify.com/track/5Hh09KHzQ9NRjRd6HIes5R",
+              "spotifyTrackId": "5Hh09KHzQ9NRjRd6HIes5R"
+            }
+          ],
+          "queueIndex": 0,
+          "isPlaying": true,
+          "isLoading": false,
+          "currentTime": 7,
+          "duration": 29.713,
+          "error": null,
+          "volume": 1,
+          "muted": false,
+          "detailsOpen": true,
+          "hydrated": true
+        },
+        "finalSnap": {
+          "displayTime": 7,
+          "currentTime": 7,
+          "duration": 29.713,
+          "isPlaying": true,
+          "isScrubbing": false,
+          "activeTrack": {
+            "type": "track",
+            "refId": "sara-landry::legacy",
+            "label": "Legacy — Sara Landry",
+            "title": "Legacy",
+            "subtitle": "Sara Landry",
+            "coverArt": "https://i.scdn.co/image/ab67616d00001e02869b8fb7716ab4d6cbb92679",
+            "spotifyUrl": "https://open.spotify.com/track/0aMonkh8OKgqx1K0viRHRT",
+            "spotifyTrackId": "0aMonkh8OKgqx1K0viRHRT"
+          },
+          "queue": [
+            {
+              "type": "track",
+              "refId": "sara-landry::legacy",
+              "label": "Legacy — Sara Landry",
+              "title": "Legacy",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02869b8fb7716ab4d6cbb92679",
+              "spotifyUrl": "https://open.spotify.com/track/0aMonkh8OKgqx1K0viRHRT",
+              "spotifyTrackId": "0aMonkh8OKgqx1K0viRHRT"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::pressure",
+              "label": "Pressure — Sara Landry",
+              "title": "Pressure",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e0249ba858c98dd5721233824b2",
+              "spotifyUrl": "https://open.spotify.com/track/3LgA6sFAEZ30TqeTWmGDlV",
+              "spotifyTrackId": "3LgA6sFAEZ30TqeTWmGDlV"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::prisoner",
+              "label": "Prisoner — Sara Landry",
+              "title": "Prisoner",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02143dad492c28a44c1e78b8f4",
+              "spotifyUrl": "https://open.spotify.com/track/2Rb5DcNmRKGmMGB48cY8cy",
+              "spotifyTrackId": "2Rb5DcNmRKGmMGB48cY8cy"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::grief-into-rage",
+              "label": "Grief Into Rage — Sara Landry",
+              "title": "Grief Into Rage",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e028bc0122685a6779c3b6f583c",
+              "spotifyUrl": "https://open.spotify.com/track/0JmFNORLiAQwtz48DsqeD0",
+              "spotifyTrackId": "0JmFNORLiAQwtz48DsqeD0"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::chaos-magicka",
+              "label": "Chaos Magicka — Sara Landry",
+              "title": "Chaos Magicka",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02c4eae66d7f48d3265e36b458",
+              "spotifyUrl": "https://open.spotify.com/track/5I5urH7JO7rRAUI4JCodLW",
+              "spotifyTrackId": "5I5urH7JO7rRAUI4JCodLW"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::girlboss",
+              "label": "GIRLBOSS — Sara Landry",
+              "title": "GIRLBOSS",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02c487becf6108d5717eee203b",
+              "spotifyUrl": "https://open.spotify.com/track/04WxwL4ZRewLveO2qjej54",
+              "spotifyTrackId": "04WxwL4ZRewLveO2qjej54"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::reality-check",
+              "label": "Reality Check — Sara Landry",
+              "title": "Reality Check",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02acb561f24c53f9f7672c209c",
+              "spotifyUrl": "https://open.spotify.com/track/4RB7S3C5A6ziH6Jni0Jlxv",
+              "spotifyTrackId": "4RB7S3C5A6ziH6Jni0Jlxv"
+            },
+            {
+              "type": "track",
+              "refId": "sara-landry::heaven",
+              "label": "Heaven — Sara Landry",
+              "title": "Heaven",
+              "subtitle": "Sara Landry",
+              "coverArt": "https://i.scdn.co/image/ab67616d00001e02143dad492c28a44c1e78b8f4",
+              "spotifyUrl": "https://open.spotify.com/track/5Hh09KHzQ9NRjRd6HIes5R",
+              "spotifyTrackId": "5Hh09KHzQ9NRjRd6HIes5R"
+            }
+          ],
+          "queueIndex": 0,
+          "error": null,
+          "isBuffering": false,
+          "isInitialLoading": false,
+          "isLoading": false,
+          "isSeeking": false,
+          "volume": 1,
+          "muted": false
+        },
+        "ui": {
+          "sliderValue": 7,
+          "sliderMax": 29.713,
+          "elapsedLabel": "0:07",
+          "playVisible": false,
+          "pauseVisible": true,
+          "currentTime": 7,
+          "duration": 29.713,
+          "isPlaying": true,
+          "currentTrack": "sara-landry::legacy"
+        },
+        "divergence": {
+          "ts": 1783060248274,
+          "action": "refresh-settle",
+          "field": "isPlaying",
+          "provider": false,
+          "engine": false,
+          "msc": true,
+          "store": true,
+          "snapshot": true,
+          "ui": true,
+          "firstDivergentLayer": "msc"
+        }
+      }
+    }
+  },
+  "gaps": [
+    {
+      "from": "user_click",
+      "to": "msc_play",
+      "ms": 148
+    },
+    {
+      "from": "msc_play",
+      "to": "engine_play",
+      "ms": 2
+    },
+    {
+      "from": "engine_play",
+      "to": "router_play_enter",
+      "ms": 0
+    },
+    {
+      "from": "spotify_api_ready",
+      "to": "embed_created",
+      "ms": 1593
+    },
+    {
+      "from": "embed_created",
+      "to": "embed_ready_callback",
+      "ms": 1069
+    },
+    {
+      "from": "playback_confirmed",
+      "to": "first_playback_update",
+      "ms": 10878
+    },
+    {
+      "from": "first_playback_update",
+      "to": "engine_time_nonzero",
+      "ms": -9013
+    },
+    {
+      "from": "engine_time_nonzero",
+      "to": "snapshot_time_nonzero",
+      "ms": 0
+    },
+    {
+      "from": "snapshot_time_nonzero",
+      "to": "ui_elapsed_nonzero",
+      "ms": 0
+    }
+  ]
+}

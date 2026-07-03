@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { reapplyPlaybackEmbedLayout } from "@/stores/playback-store";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { usePersistentPlaybackDock } from "@/components/music/use-persistent-playback-dock";
@@ -8,6 +8,7 @@ import { registerPlaybackMediaAnchor } from "@/lib/music/playback-media-anchor-r
 import { logMediaEngineActive } from "@/lib/music/media-binding-debug";
 import { usePlaybackExperience } from "@/lib/music/use-playback-experience";
 import { isSetWatchDockActive, subscribeSetWatchDock } from "@/lib/sets/set-watch-dock";
+import { hydrationPipelineTrace } from "@/lib/music/hydration-pipeline-trace";
 
 /**
  * Fallback engine canvas for audio playback when the set watch page is not active.
@@ -20,8 +21,13 @@ export function PlaybackEngineMount() {
   const [clientMounted, setClientMounted] = useState(false);
   const [, syncSetWatchDock] = useState(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setClientMounted(true);
+    hydrationPipelineTrace({
+      fn: "PlaybackEngineMount",
+      phase: "mount",
+      extra: { clientMounted: true },
+    });
   }, []);
 
   useLayoutEffect(() => {

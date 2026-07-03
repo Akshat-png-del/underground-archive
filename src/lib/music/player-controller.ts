@@ -58,12 +58,6 @@ export const playerController = {
   seek: (seconds: number) => mediaSessionController.commitSeek(seconds),
   skipForward: (seconds?: number) => mediaSessionController.skipForward(seconds ?? 10),
   skipBackward: (seconds?: number) => mediaSessionController.skipBackward(seconds ?? 10),
-  setVolume: (volume: number) => {
-    mediaSessionController.setVolume(volume);
-  },
-  toggleMute: () => {
-    mediaSessionController.toggleMute();
-  },
   openSurface: openPlayerSurface,
   closeSurface: closePlayerSurface,
   expandSurface: expandPlayerSurface,

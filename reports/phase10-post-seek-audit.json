@@ -1,0 +1,2674 @@
+{
+  "generatedAt": "2026-07-02T22:38:07.603Z",
+  "commitDragSeekExit": "[TRACE] PlaybackSeekBar.commitDragSeek EXIT {id: 358, ts: 8574.7, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 16}",
+  "commitSeekExit": "[TRACE] MediaSessionController.commitSeek EXIT {id: 357, ts: 8574.6, fn: MediaSessionController.commitSeek, kind: EXIT, target: 16}",
+  "engineSeekExit": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 356, ts: 8574.6, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 16}",
+  "ticks": [
+    {
+      "tick": 1,
+      "tMs": 8602,
+      "engineCurrentTime": 2.928,
+      "transportBefore": null,
+      "transportAfter": 16,
+      "pendingSeekSeconds": 16,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "pendingSeek + pending → pendingSeekSeconds",
+      "patchAction": "SKIP_PATCH",
+      "patchReason": "reconciled.currentTime unchanged but engine.currentTime differs",
+      "preservedNonEngine": true,
+      "preservedCondition": "SKIP_PATCH: reconciled.currentTime unchanged but engine.currentTime differs",
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 365, ts: 8597.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.928}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 89, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 90, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 91, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 92, condition: shouldAcceptPositionAfterSeek, providerTime: 2.928, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 93, condition: currentTime assignment, branch: pendingSeek + pending → pendingSeekSeconds, assignedCurrentTime: 16, providerTime: 2.928}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 94, condition: PRESERVED non-engine time instead of accepting engine.currentTime, engineCurrentTime: 2.928, transportBefore: 16, transportAfter: 16}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 95, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, engineCurrentTime: 2.928, acceptedEngineTime: false}",
+        "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 96, reason: reconciled.currentTime unchanged but engine.currentTime differs, transportCurrentTime: 16, reconciledCurrentTime: 16, engineCurrentTime: 2.928}",
+        "[MSC-RECONCILE] onEngineSnapshot GUARD {id: 97, condition: POST-RECONCILE MISMATCH — engine.currentTime still differs from transport.currentTime, engineCurrentTime: 2.928, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 98, engineCurrentTime: 2.928, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, pendingSeekSeconds: 16}"
+      ]
+    },
+    {
+      "tick": 2,
+      "tMs": 8859,
+      "engineCurrentTime": 16.203,
+      "transportBefore": null,
+      "transportAfter": 16.203,
+      "pendingSeekSeconds": 16,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "pendingSeek + accept → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 366, ts: 8856.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 16.203}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 99, engineCurrentTime: 16.203, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 100, engineCurrentTime: 16.203, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 101, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 102, condition: shouldAcceptPositionAfterSeek, providerTime: 16.203, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 103, condition: currentTime assignment, branch: pendingSeek + accept → providerTime, assignedCurrentTime: 16.203, providerTime: 16.203}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 104, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16.203, engineCurrentTime: 16.203, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 105, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16.203, engineCurrentTime: 16.203, pendingSeekSeconds: 16}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 106, engineCurrentTime: 16.203, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16.203, pendingSeekSeconds: 16}"
+      ]
+    },
+    {
+      "tick": 3,
+      "tMs": 9922,
+      "engineCurrentTime": 17.265,
+      "transportBefore": null,
+      "transportAfter": 17.265,
+      "pendingSeekSeconds": 16,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "pendingSeek + accept → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 367, ts: 9918.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 17.265}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 107, engineCurrentTime: 17.265, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 108, engineCurrentTime: 17.265, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 109, condition: seek flags, isSeeking: true, inSeekLock: false, inSeekSettle: true}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 110, condition: shouldAcceptPositionAfterSeek, providerTime: 17.265, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 111, condition: currentTime assignment, branch: pendingSeek + accept → providerTime, assignedCurrentTime: 17.265, providerTime: 17.265}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 112, transportCurrentTimeBefore: 16.203, transportCurrentTimeAfter: 17.265, engineCurrentTime: 17.265, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot BRANCH {id: 113, condition: clearPendingSeek, clearedPendingSeekSeconds: 16, positionAccept: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 114, transportCurrentTimeBefore: 16.203, transportCurrentTimeAfter: 17.265, engineCurrentTime: 17.265, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 115, engineCurrentTime: 17.265, transportCurrentTimeBefore: 16.203, transportCurrentTimeAfter: 17.265, pendingSeekSeconds: null}",
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 368, ts: 10980.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 18.328}"
+      ]
+    },
+    {
+      "tick": 4,
+      "tMs": 10986,
+      "engineCurrentTime": 18.328,
+      "transportBefore": null,
+      "transportAfter": 18.328,
+      "pendingSeekSeconds": null,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "default → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 116, engineCurrentTime: 18.328, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 117, engineCurrentTime: 18.328, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 118, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 119, condition: shouldAcceptPositionAfterSeek, providerTime: 18.328, pendingSeekSeconds: null, pendingSeekDeadline: 0}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 120, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 18.328, providerTime: 18.328}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 121, transportCurrentTimeBefore: 17.265, transportCurrentTimeAfter: 18.328, engineCurrentTime: 18.328, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 122, transportCurrentTimeBefore: 17.265, transportCurrentTimeAfter: 18.328, engineCurrentTime: 18.328, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 123, engineCurrentTime: 18.328, transportCurrentTimeBefore: 17.265, transportCurrentTimeAfter: 18.328, pendingSeekSeconds: null}"
+      ]
+    },
+    {
+      "tick": 5,
+      "tMs": 12050,
+      "engineCurrentTime": 19.379,
+      "transportBefore": null,
+      "transportAfter": 19.379,
+      "pendingSeekSeconds": null,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "default → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 369, ts: 12042.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 19.379}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 124, engineCurrentTime: 19.379, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 125, engineCurrentTime: 19.379, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 126, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 127, condition: shouldAcceptPositionAfterSeek, providerTime: 19.379, pendingSeekSeconds: null, pendingSeekDeadline: 0}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 128, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 19.379, providerTime: 19.379}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 129, transportCurrentTimeBefore: 18.328, transportCurrentTimeAfter: 19.379, engineCurrentTime: 19.379, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 130, transportCurrentTimeBefore: 18.328, transportCurrentTimeAfter: 19.379, engineCurrentTime: 19.379, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 131, engineCurrentTime: 19.379, transportCurrentTimeBefore: 18.328, transportCurrentTimeAfter: 19.379, pendingSeekSeconds: null}"
+      ]
+    },
+    {
+      "tick": 6,
+      "tMs": 13109,
+      "engineCurrentTime": 20.444,
+      "transportBefore": null,
+      "transportAfter": 20.444,
+      "pendingSeekSeconds": null,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "default → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 370, ts: 13104.1, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 20.444}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 132, engineCurrentTime: 20.444, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 133, engineCurrentTime: 20.444, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 134, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 135, condition: shouldAcceptPositionAfterSeek, providerTime: 20.444, pendingSeekSeconds: null, pendingSeekDeadline: 0}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 136, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 20.444, providerTime: 20.444}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 137, transportCurrentTimeBefore: 19.379, transportCurrentTimeAfter: 20.444, engineCurrentTime: 20.444, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 138, transportCurrentTimeBefore: 19.379, transportCurrentTimeAfter: 20.444, engineCurrentTime: 20.444, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 139, engineCurrentTime: 20.444, transportCurrentTimeBefore: 19.379, transportCurrentTimeAfter: 20.444, pendingSeekSeconds: null}",
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 371, ts: 14167.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 21.505}"
+      ]
+    },
+    {
+      "tick": 7,
+      "tMs": 14172,
+      "engineCurrentTime": 21.505,
+      "transportBefore": null,
+      "transportAfter": 21.505,
+      "pendingSeekSeconds": null,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "default → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 140, engineCurrentTime: 21.505, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 141, engineCurrentTime: 21.505, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 142, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 143, condition: shouldAcceptPositionAfterSeek, providerTime: 21.505, pendingSeekSeconds: null, pendingSeekDeadline: 0}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 144, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 21.505, providerTime: 21.505}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 145, transportCurrentTimeBefore: 20.444, transportCurrentTimeAfter: 21.505, engineCurrentTime: 21.505, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 146, transportCurrentTimeBefore: 20.444, transportCurrentTimeAfter: 21.505, engineCurrentTime: 21.505, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 147, engineCurrentTime: 21.505, transportCurrentTimeBefore: 20.444, transportCurrentTimeAfter: 21.505, pendingSeekSeconds: null}"
+      ]
+    },
+    {
+      "tick": 8,
+      "tMs": 15237,
+      "engineCurrentTime": 22.569,
+      "transportBefore": null,
+      "transportAfter": 22.569,
+      "pendingSeekSeconds": null,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "default → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 372, ts: 15229.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22.569}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 148, engineCurrentTime: 22.569, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 149, engineCurrentTime: 22.569, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 150, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 151, condition: shouldAcceptPositionAfterSeek, providerTime: 22.569, pendingSeekSeconds: null, pendingSeekDeadline: 0}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 152, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 22.569, providerTime: 22.569}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 153, transportCurrentTimeBefore: 21.505, transportCurrentTimeAfter: 22.569, engineCurrentTime: 22.569, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 154, transportCurrentTimeBefore: 21.505, transportCurrentTimeAfter: 22.569, engineCurrentTime: 22.569, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 155, engineCurrentTime: 22.569, transportCurrentTimeBefore: 21.505, transportCurrentTimeAfter: 22.569, pendingSeekSeconds: null}"
+      ]
+    },
+    {
+      "tick": 9,
+      "tMs": 16296,
+      "engineCurrentTime": 23.633,
+      "transportBefore": null,
+      "transportAfter": 23.633,
+      "pendingSeekSeconds": null,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "default → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 373, ts: 16292.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 23.633}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 156, engineCurrentTime: 23.633, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 157, engineCurrentTime: 23.633, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 158, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 159, condition: shouldAcceptPositionAfterSeek, providerTime: 23.633, pendingSeekSeconds: null, pendingSeekDeadline: 0}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 160, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 23.633, providerTime: 23.633}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 161, transportCurrentTimeBefore: 22.569, transportCurrentTimeAfter: 23.633, engineCurrentTime: 23.633, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 162, transportCurrentTimeBefore: 22.569, transportCurrentTimeAfter: 23.633, engineCurrentTime: 23.633, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 163, engineCurrentTime: 23.633, transportCurrentTimeBefore: 22.569, transportCurrentTimeAfter: 23.633, pendingSeekSeconds: null}"
+      ]
+    },
+    {
+      "tick": 10,
+      "tMs": 17360,
+      "engineCurrentTime": 24.697,
+      "transportBefore": null,
+      "transportAfter": 24.697,
+      "pendingSeekSeconds": null,
+      "seekLockUntil": null,
+      "pendingSeekDeadline": null,
+      "isLoading": false,
+      "accept": null,
+      "clearPending": null,
+      "currentTimeBranch": "default → providerTime",
+      "patchAction": "PATCH",
+      "patchReason": null,
+      "preservedNonEngine": false,
+      "preservedCondition": null,
+      "rawLines": [
+        "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 374, ts: 17353.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 24.697}",
+        "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 164, engineCurrentTime: 24.697, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 165, engineCurrentTime: 24.697, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 166, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 167, condition: shouldAcceptPositionAfterSeek, providerTime: 24.697, pendingSeekSeconds: null, pendingSeekDeadline: 0}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 168, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 24.697, providerTime: 24.697}",
+        "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 169, transportCurrentTimeBefore: 23.633, transportCurrentTimeAfter: 24.697, engineCurrentTime: 24.697, acceptedEngineTime: true}",
+        "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 170, transportCurrentTimeBefore: 23.633, transportCurrentTimeAfter: 24.697, engineCurrentTime: 24.697, pendingSeekSeconds: null}",
+        "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 171, engineCurrentTime: 24.697, transportCurrentTimeBefore: 23.633, transportCurrentTimeAfter: 24.697, pendingSeekSeconds: null}"
+      ]
+    }
+  ],
+  "firstDivergence": {
+    "tick": 1,
+    "tMs": 8602,
+    "engineCurrentTime": 2.928,
+    "transportBefore": null,
+    "transportAfter": 16,
+    "pendingSeekSeconds": 16,
+    "seekLockUntil": null,
+    "pendingSeekDeadline": null,
+    "isLoading": false,
+    "accept": null,
+    "clearPending": null,
+    "currentTimeBranch": "pendingSeek + pending → pendingSeekSeconds",
+    "patchAction": "SKIP_PATCH",
+    "patchReason": "reconciled.currentTime unchanged but engine.currentTime differs",
+    "preservedNonEngine": true,
+    "preservedCondition": "SKIP_PATCH: reconciled.currentTime unchanged but engine.currentTime differs",
+    "rawLines": [
+      "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 365, ts: 8597.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.928}",
+      "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 89, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+      "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 90, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}",
+      "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 91, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}",
+      "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 92, condition: shouldAcceptPositionAfterSeek, providerTime: 2.928, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}",
+      "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 93, condition: currentTime assignment, branch: pendingSeek + pending → pendingSeekSeconds, assignedCurrentTime: 16, providerTime: 2.928}",
+      "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 94, condition: PRESERVED non-engine time instead of accepting engine.currentTime, engineCurrentTime: 2.928, transportBefore: 16, transportAfter: 16}",
+      "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 95, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, engineCurrentTime: 2.928, acceptedEngineTime: false}",
+      "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 96, reason: reconciled.currentTime unchanged but engine.currentTime differs, transportCurrentTime: 16, reconciledCurrentTime: 16, engineCurrentTime: 2.928}",
+      "[MSC-RECONCILE] onEngineSnapshot GUARD {id: 97, condition: POST-RECONCILE MISMATCH — engine.currentTime still differs from transport.currentTime, engineCurrentTime: 2.928, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16}",
+      "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 98, engineCurrentTime: 2.928, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, pendingSeekSeconds: 16}"
+    ]
+  },
+  "post": {
+    "ts": 1783031887579,
+    "controller": {
+      "currentTime": 27.887,
+      "duration": 29.713,
+      "isPlaying": true,
+      "isSeeking": false,
+      "seekPreviewTime": null,
+      "hoverPreviewTime": null,
+      "displayTime": 27.887
+    },
+    "engine": {
+      "currentTime": 27.887,
+      "duration": 29.713,
+      "isPlaying": true,
+      "isLoading": false,
+      "refId": "sara-landry::legacy"
+    },
+    "store": {
+      "currentTime": 27.887,
+      "duration": 29.713,
+      "isPlaying": true,
+      "isLoading": false
+    },
+    "audio": null,
+    "dom": {
+      "rootPresent": true,
+      "iframePresent": true,
+      "audioPresent": false,
+      "iframeSrc": "https://open.spotify.com/embed/track/0aMonkh8OKgqx1K0viRHRT?utm_source=iframe-api",
+      "audioSrc": null,
+      "audioPaused": null,
+      "engineRootPresent": true,
+      "globalPlayerPresent": true
+    }
+  },
+  "logs": [
+    {
+      "tMs": 350,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 1, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: null, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 350,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 2, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: null, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 350,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 3, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 350,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 4, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 350,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 5, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}"
+    },
+    {
+      "tMs": 351,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 6, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 351,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 7, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}"
+    },
+    {
+      "tMs": 351,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 8, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 1716,
+      "text": "[SESSION] play() {refId: sara-landry::legacy, type: track}"
+    },
+    {
+      "tMs": 1720,
+      "text": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 1, ts: 1717.7, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+    },
+    {
+      "tMs": 1721,
+      "text": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 2, ts: 1718.5, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners detached}"
+    },
+    {
+      "tMs": 1721,
+      "text": "[TRACE] PlaybackSeekBar.useEffect STATE {id: 3, ts: 1718.9, fn: PlaybackSeekBar.useEffect, kind: STATE, action: native listeners attached}"
+    },
+    {
+      "tMs": 1722,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 9, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 1722,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 10, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 1722,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 11, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 1723,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 12, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 1723,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 13, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}"
+    },
+    {
+      "tMs": 1723,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 14, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 1723,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 15, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}"
+    },
+    {
+      "tMs": 1723,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 16, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 17, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 18, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 19, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 20, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 21, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 22, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 23, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}"
+    },
+    {
+      "tMs": 3628,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 24, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 25, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 26, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 27, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 28, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 29, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 30, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 31, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}"
+    },
+    {
+      "tMs": 3851,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 32, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 4343,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 33, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 4343,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 34, engineCurrentTime: 0, engineIsLoading: true, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 4343,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 35, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 4343,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 36, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 4344,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 37, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}"
+    },
+    {
+      "tMs": 4344,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 38, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 4344,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 39, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}"
+    },
+    {
+      "tMs": 4344,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 40, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 41, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 42, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 43, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 44, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 45, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 46, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 47, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}"
+    },
+    {
+      "tMs": 4366,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 48, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 5006,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 49, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 5008,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 50, engineCurrentTime: 0, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 5008,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 51, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 5008,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 52, condition: shouldAcceptPositionAfterSeek, providerTime: 0, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 5008,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 53, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0, providerTime: 0}"
+    },
+    {
+      "tMs": 5008,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 54, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, engineCurrentTime: 0, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 5008,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 55, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 0, engineCurrentTime: 0}"
+    },
+    {
+      "tMs": 5008,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 56, engineCurrentTime: 0, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 5386,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 4, ts: 5384.3, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0.801}"
+    },
+    {
+      "tMs": 5387,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 57, engineCurrentTime: 0.801, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 5387,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 58, engineCurrentTime: 0.801, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 5387,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 59, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 5387,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 60, condition: shouldAcceptPositionAfterSeek, providerTime: 0.801, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 5388,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 61, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 0.801, providerTime: 0.801}"
+    },
+    {
+      "tMs": 5388,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 62, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0.801, engineCurrentTime: 0.801, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 5388,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 63, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0.801, engineCurrentTime: 0.801, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 5388,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 64, engineCurrentTime: 0.801, transportCurrentTimeBefore: 0, transportCurrentTimeAfter: 0.801, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 6453,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 5, ts: 6449.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 1.867}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 65, engineCurrentTime: 1.867, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 66, engineCurrentTime: 1.867, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 67, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 68, condition: shouldAcceptPositionAfterSeek, providerTime: 1.867, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 69, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 1.867, providerTime: 1.867}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 70, transportCurrentTimeBefore: 0.801, transportCurrentTimeAfter: 1.867, engineCurrentTime: 1.867, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 71, transportCurrentTimeBefore: 0.801, transportCurrentTimeAfter: 1.867, engineCurrentTime: 1.867, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 6454,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 72, engineCurrentTime: 1.867, transportCurrentTimeBefore: 0.801, transportCurrentTimeAfter: 1.867, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 7518,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 6, ts: 7510.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.928}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 73, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 74, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 75, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 76, condition: shouldAcceptPositionAfterSeek, providerTime: 2.928, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 77, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 2.928, providerTime: 2.928}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 78, transportCurrentTimeBefore: 1.867, transportCurrentTimeAfter: 2.928, engineCurrentTime: 2.928, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 79, transportCurrentTimeBefore: 1.867, transportCurrentTimeAfter: 2.928, engineCurrentTime: 2.928, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 7519,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 80, engineCurrentTime: 2.928, transportCurrentTimeBefore: 1.867, transportCurrentTimeAfter: 2.928, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 7819,
+      "text": "=== MARKER: drag seek start ==="
+    },
+    {
+      "tMs": 7832,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 7, ts: 7829.7, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 7833,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 8, ts: 7830.1, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 7833,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EARLY_RETURN {id: 9, ts: 7831.0, fn: PlaybackSeekBar.handlePointerMove, kind: EARLY_RETURN, reason: draggingRef.current === false} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_0z_5ij9._.js:11472:64) | at handlePointerMove (http://localhost:3000/_next/static/chunks/_0z_5ij9._.js:17418:186) | at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10329:13) | at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74) | at processDispatchQueue (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10355:41)"
+    },
+    {
+      "tMs": 7917,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 10, ts: 7915.3, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerdown}"
+    },
+    {
+      "tMs": 7918,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown ENTER {id: 11, ts: 7915.9, fn: PlaybackSeekBar.handlePointerDown, kind: ENTER, eventType: react.pointerdown}"
+    },
+    {
+      "tMs": 7919,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown BRANCH {id: 12, ts: 7916.2, fn: PlaybackSeekBar.handlePointerDown, kind: BRANCH, action: stopPropagation}"
+    },
+    {
+      "tMs": 7919,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown STATE {id: 13, ts: 7916.3, fn: PlaybackSeekBar.handlePointerDown, kind: STATE, dragging: true}"
+    },
+    {
+      "tMs": 7919,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown → mediaSessionController.beginSeek {id: 14, ts: 7916.5, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: mediaSessionController.beginSeek}"
+    },
+    {
+      "tMs": 7919,
+      "text": "[TRACE] MediaSessionController.beginSeek ENTER {id: 15, ts: 7916.7, fn: MediaSessionController.beginSeek, kind: ENTER, seconds: 2}"
+    },
+    {
+      "tMs": 7919,
+      "text": "[TRACE] MediaSessionUiSession.beginSeek ENTER {id: 16, ts: 7916.9, fn: MediaSessionUiSession.beginSeek, kind: ENTER, seconds: 2}"
+    },
+    {
+      "tMs": 7920,
+      "text": "[TRACE] MediaSessionUiSession.beginSeek EXIT {id: 17, ts: 7917.0, fn: MediaSessionUiSession.beginSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 7920,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 18, ts: 7917.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2}"
+    },
+    {
+      "tMs": 7920,
+      "text": "[TRACE] MediaSessionController.beginSeek EXIT {id: 19, ts: 7917.5, fn: MediaSessionController.beginSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 7921,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown → attachPointerEndListeners {id: 20, ts: 7917.7, fn: PlaybackSeekBar.handlePointerDown, kind: INVOKE, next: attachPointerEndListeners}"
+    },
+    {
+      "tMs": 7921,
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners ENTER {id: 21, ts: 7917.8, fn: PlaybackSeekBar.attachPointerEndListeners, kind: ENTER, listenerGenBefore: 0}"
+    },
+    {
+      "tMs": 7921,
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 22, ts: 7918.0, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: false}"
+    },
+    {
+      "tMs": 7921,
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 23, ts: 7918.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 0}"
+    },
+    {
+      "tMs": 7921,
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners STATE {id: 24, ts: 7918.3, fn: PlaybackSeekBar.attachPointerEndListeners, kind: STATE, attached: Array(2)}"
+    },
+    {
+      "tMs": 7921,
+      "text": "[TRACE] PlaybackSeekBar.attachPointerEndListeners EXIT {id: 25, ts: 7918.4, fn: PlaybackSeekBar.attachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 7921,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerDown EXIT {id: 26, ts: 7918.5, fn: PlaybackSeekBar.handlePointerDown, kind: EXIT, dragging: true}"
+    },
+    {
+      "tMs": 7938,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 27, ts: 7935.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 7938,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 28, ts: 7936.1, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 7938,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 29, ts: 7936.3, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 7938,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 30, ts: 7936.3, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7938,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 31, ts: 7936.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 32, ts: 7936.6, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 33, ts: 7936.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 0}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 34, ts: 7936.9, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 35, ts: 7937.0, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 0}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 36, ts: 7937.1, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 37, ts: 7937.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 38, ts: 7937.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 39, ts: 7937.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 40, ts: 7937.4, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 41, ts: 7937.5, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 7939,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 42, ts: 7937.7, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 0}"
+    },
+    {
+      "tMs": 8048,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 43, ts: 8045.5, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8048,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 44, ts: 8045.7, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8048,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 45, ts: 8045.8, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8048,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 46, ts: 8046.1, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 8049,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 47, ts: 8046.1, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 0}"
+    },
+    {
+      "tMs": 8049,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 48, ts: 8046.3, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8049,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 49, ts: 8046.6, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8049,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 50, ts: 8046.7, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 0}"
+    },
+    {
+      "tMs": 8065,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 51, ts: 8062.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8065,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 52, ts: 8063.0, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8065,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 53, ts: 8063.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8065,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 54, ts: 8063.1, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 1}"
+    },
+    {
+      "tMs": 8065,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 55, ts: 8063.2, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 1}"
+    },
+    {
+      "tMs": 8065,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 56, ts: 8063.3, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 57, ts: 8063.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 1}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 58, ts: 8063.7, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 59, ts: 8063.8, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 1}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 60, ts: 8063.9, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 61, ts: 8064.0, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 62, ts: 8064.1, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 1}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 63, ts: 8064.2, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 1}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 64, ts: 8064.2, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 65, ts: 8064.5, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8066,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 66, ts: 8064.5, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 1}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 67, ts: 8095.5, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 68, ts: 8095.6, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 69, ts: 8095.7, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 70, ts: 8095.8, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 1}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 71, ts: 8095.8, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 1}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 72, ts: 8096.0, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 73, ts: 8096.2, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8098,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 74, ts: 8096.2, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 1}"
+    },
+    {
+      "tMs": 8109,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 75, ts: 8107.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8109,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 76, ts: 8107.7, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8109,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 77, ts: 8107.7, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8109,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 78, ts: 8107.8, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 3}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 79, ts: 8107.9, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 3}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 80, ts: 8107.9, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 81, ts: 8108.1, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 3}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 82, ts: 8108.2, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 83, ts: 8108.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 3}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 84, ts: 8108.3, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 85, ts: 8108.3, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 86, ts: 8108.4, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 3}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 87, ts: 8108.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 3}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 88, ts: 8108.5, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 89, ts: 8108.6, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8110,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 90, ts: 8108.8, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 3}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 91, ts: 8145.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 92, ts: 8145.6, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 93, ts: 8145.7, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 94, ts: 8145.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 3}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 95, ts: 8145.8, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 3}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 96, ts: 8145.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 97, ts: 8146.0, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8148,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 98, ts: 8146.1, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 3}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 99, ts: 8156.1, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 100, ts: 8156.2, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 101, ts: 8156.3, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 102, ts: 8156.4, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 4}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 103, ts: 8156.4, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 4}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 104, ts: 8156.5, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 105, ts: 8156.6, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 4}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 106, ts: 8156.7, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 107, ts: 8156.7, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 4}"
+    },
+    {
+      "tMs": 8158,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 108, ts: 8156.8, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8159,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 109, ts: 8156.8, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8159,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 110, ts: 8156.9, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 4}"
+    },
+    {
+      "tMs": 8159,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 111, ts: 8157.0, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 4}"
+    },
+    {
+      "tMs": 8159,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 112, ts: 8157.0, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8159,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 113, ts: 8157.1, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8159,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 114, ts: 8157.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 4}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 115, ts: 8178.3, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 116, ts: 8178.4, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 117, ts: 8178.5, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 118, ts: 8178.6, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 4}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 119, ts: 8178.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 4}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 120, ts: 8178.7, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 121, ts: 8179.0, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8181,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 122, ts: 8179.0, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 4}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 123, ts: 8188.3, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 124, ts: 8188.3, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 125, ts: 8188.4, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 126, ts: 8188.4, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 5}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 127, ts: 8188.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 5}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 128, ts: 8188.6, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 129, ts: 8188.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 5}"
+    },
+    {
+      "tMs": 8190,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 130, ts: 8188.9, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 131, ts: 8188.9, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 5}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 132, ts: 8189.0, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 133, ts: 8189.0, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 134, ts: 8189.1, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 5}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 135, ts: 8189.1, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 5}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 136, ts: 8189.1, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 137, ts: 8189.3, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8191,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 138, ts: 8189.3, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 5}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 139, ts: 8212.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 140, ts: 8212.2, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 141, ts: 8212.3, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 142, ts: 8212.4, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 5}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 143, ts: 8212.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 5}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 144, ts: 8212.6, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 145, ts: 8212.7, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8215,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 146, ts: 8212.8, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 5}"
+    },
+    {
+      "tMs": 8224,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 147, ts: 8222.5, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8224,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 148, ts: 8222.6, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8224,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 149, ts: 8222.7, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8224,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 150, ts: 8222.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 7}"
+    },
+    {
+      "tMs": 8224,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 151, ts: 8222.8, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 7}"
+    },
+    {
+      "tMs": 8224,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 152, ts: 8222.9, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 153, ts: 8223.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 7}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 154, ts: 8223.1, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 155, ts: 8223.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 7}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 156, ts: 8223.2, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 157, ts: 8223.3, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 158, ts: 8223.3, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 7}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 159, ts: 8223.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 7}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 160, ts: 8223.4, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 161, ts: 8223.5, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8225,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 162, ts: 8223.6, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 7}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 163, ts: 8245.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 164, ts: 8245.6, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 165, ts: 8245.6, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 166, ts: 8245.8, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 7}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 167, ts: 8245.8, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 7}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 168, ts: 8245.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 169, ts: 8246.0, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8248,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 170, ts: 8246.1, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 7}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 171, ts: 8255.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 172, ts: 8255.0, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 173, ts: 8255.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 174, ts: 8255.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 8}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 175, ts: 8255.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 8}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 176, ts: 8255.3, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 177, ts: 8255.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 8}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 178, ts: 8255.6, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8257,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 179, ts: 8255.6, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 8}"
+    },
+    {
+      "tMs": 8258,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 180, ts: 8255.7, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8258,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 181, ts: 8255.7, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8258,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 182, ts: 8255.8, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 8}"
+    },
+    {
+      "tMs": 8258,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 183, ts: 8255.8, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 8}"
+    },
+    {
+      "tMs": 8258,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 184, ts: 8255.9, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8258,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 185, ts: 8256.0, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8258,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 186, ts: 8256.0, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 8}"
+    },
+    {
+      "tMs": 8281,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 187, ts: 8278.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8281,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 188, ts: 8279.0, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8281,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 189, ts: 8279.0, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8281,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 190, ts: 8279.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 8}"
+    },
+    {
+      "tMs": 8282,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 191, ts: 8279.2, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 8}"
+    },
+    {
+      "tMs": 8282,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 192, ts: 8279.2, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8282,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 193, ts: 8279.5, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8282,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 194, ts: 8279.5, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 8}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 195, ts: 8283.6, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 196, ts: 8283.8, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 197, ts: 8283.9, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 198, ts: 8283.9, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 9}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 199, ts: 8284.0, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 9}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 200, ts: 8284.0, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 201, ts: 8284.2, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 9}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 202, ts: 8284.3, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 203, ts: 8284.3, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 9}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 204, ts: 8284.4, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 205, ts: 8284.4, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 206, ts: 8284.4, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 9}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 207, ts: 8284.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 9}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 208, ts: 8284.6, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 209, ts: 8284.7, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8287,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 210, ts: 8284.8, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 9}"
+    },
+    {
+      "tMs": 8314,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 211, ts: 8312.1, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8315,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 212, ts: 8312.2, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8315,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 213, ts: 8312.3, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8315,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 214, ts: 8312.4, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 9}"
+    },
+    {
+      "tMs": 8315,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 215, ts: 8312.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 9}"
+    },
+    {
+      "tMs": 8315,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 216, ts: 8312.5, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8315,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 217, ts: 8312.7, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8315,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 218, ts: 8312.8, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 9}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 219, ts: 8316.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 220, ts: 8317.0, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 221, ts: 8317.0, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 222, ts: 8317.1, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 223, ts: 8317.1, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 224, ts: 8317.2, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 225, ts: 8317.3, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 11}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 226, ts: 8317.4, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 227, ts: 8317.5, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 11}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 228, ts: 8317.6, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 229, ts: 8317.6, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 230, ts: 8317.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 231, ts: 8317.8, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8319,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 232, ts: 8317.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8320,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 233, ts: 8318.0, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8320,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 234, ts: 8318.0, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 11}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 235, ts: 8345.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 236, ts: 8345.6, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 237, ts: 8345.7, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 238, ts: 8345.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 239, ts: 8345.8, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 11}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 240, ts: 8345.9, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 241, ts: 8346.1, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8348,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 242, ts: 8346.1, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 11}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 243, ts: 8350.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 244, ts: 8350.3, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 245, ts: 8350.3, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 246, ts: 8350.3, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 12}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 247, ts: 8350.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 12}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 248, ts: 8350.5, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 249, ts: 8350.6, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 12}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 250, ts: 8350.7, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 251, ts: 8350.7, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 12}"
+    },
+    {
+      "tMs": 8352,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 252, ts: 8350.8, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8353,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 253, ts: 8350.8, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8353,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 254, ts: 8351.0, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 12}"
+    },
+    {
+      "tMs": 8353,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 255, ts: 8351.0, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 12}"
+    },
+    {
+      "tMs": 8353,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 256, ts: 8351.0, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8353,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 257, ts: 8351.2, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8353,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 258, ts: 8351.2, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 12}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 259, ts: 8378.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 260, ts: 8379.1, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 261, ts: 8379.2, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 262, ts: 8379.3, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 12}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 263, ts: 8379.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 12}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 264, ts: 8379.4, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 265, ts: 8379.5, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8381,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 266, ts: 8379.7, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 12}"
+    },
+    {
+      "tMs": 8385,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 267, ts: 8383.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8385,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 268, ts: 8383.4, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8385,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 269, ts: 8383.6, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8385,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 270, ts: 8383.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 13}"
+    },
+    {
+      "tMs": 8385,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 271, ts: 8383.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 13}"
+    },
+    {
+      "tMs": 8385,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 272, ts: 8383.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 273, ts: 8383.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 13}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 274, ts: 8384.0, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 275, ts: 8384.1, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 13}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 276, ts: 8384.1, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 277, ts: 8384.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 278, ts: 8384.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 13}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 279, ts: 8384.2, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 13}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 280, ts: 8384.3, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 281, ts: 8384.4, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8386,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 282, ts: 8384.5, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 13}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 283, ts: 8412.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 284, ts: 8412.2, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 285, ts: 8412.4, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 286, ts: 8412.4, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 13}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 287, ts: 8412.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 13}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 288, ts: 8412.6, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 289, ts: 8412.7, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8415,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 290, ts: 8412.8, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 13}"
+    },
+    {
+      "tMs": 8418,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 291, ts: 8416.5, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8418,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 292, ts: 8416.6, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8418,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 293, ts: 8416.7, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 294, ts: 8416.7, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 295, ts: 8416.7, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 296, ts: 8416.8, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 297, ts: 8416.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 15}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 298, ts: 8417.0, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 299, ts: 8417.1, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 15}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 300, ts: 8417.1, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 301, ts: 8417.1, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 302, ts: 8417.2, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 303, ts: 8417.3, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 304, ts: 8417.3, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 305, ts: 8417.5, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8419,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 306, ts: 8417.5, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 15}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 307, ts: 8428.8, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointermove}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove ENTER {id: 308, ts: 8429.0, fn: PlaybackSeekBar.handlePointerMove, kind: ENTER, eventType: react.pointermove}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove → mediaSessionController.updateSeek {id: 309, ts: 8429.0, fn: PlaybackSeekBar.handlePointerMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 310, ts: 8429.1, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 311, ts: 8429.1, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 15}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 312, ts: 8429.2, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 313, ts: 8429.4, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8432,
+      "text": "[TRACE] PlaybackSeekBar.handlePointerMove EXIT {id: 314, ts: 8429.5, fn: PlaybackSeekBar.handlePointerMove, kind: EXIT, previewRef: 15}"
+    },
+    {
+      "tMs": 8435,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 315, ts: 8433.2, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.input}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 316, ts: 8433.3, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.input}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 317, ts: 8433.4, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 318, ts: 8433.5, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 16}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 319, ts: 8433.5, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 16}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 320, ts: 8433.5, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 321, ts: 8433.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 16}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 322, ts: 8433.8, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 323, ts: 8433.9, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 16}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove ENTER {id: 324, ts: 8433.9, fn: PlaybackSeekBar.handlePreviewMove, kind: ENTER, eventType: react.change}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove → mediaSessionController.updateSeek {id: 325, ts: 8434.0, fn: PlaybackSeekBar.handlePreviewMove, kind: INVOKE, next: mediaSessionController.updateSeek}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionController.updateSeek ENTER {id: 326, ts: 8434.0, fn: MediaSessionController.updateSeek, kind: ENTER, seconds: 16}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek ENTER {id: 327, ts: 8434.0, fn: MediaSessionUiSession.updateSeek, kind: ENTER, seconds: 16}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionUiSession.updateSeek EXIT {id: 328, ts: 8434.1, fn: MediaSessionUiSession.updateSeek, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] MediaSessionController.updateSeek EXIT {id: 329, ts: 8434.3, fn: MediaSessionController.updateSeek, kind: EXIT, ui: Object}"
+    },
+    {
+      "tMs": 8436,
+      "text": "[TRACE] PlaybackSeekBar.handlePreviewMove EXIT {id: 330, ts: 8434.3, fn: PlaybackSeekBar.handlePreviewMove, kind: EXIT, previewRef: 16}"
+    },
+    {
+      "tMs": 8570,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 331, ts: 8568.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.pointerup}"
+    },
+    {
+      "tMs": 8570,
+      "text": "[TRACE] PlaybackSeekBar.windowPointerEnd {id: 332, ts: 8568.4, listenerGen: 1, eventType: pointerup, isTrusted: true}"
+    },
+    {
+      "tMs": 8570,
+      "text": "[TRACE] PlaybackSeekBar.onPointerEnd → commitDragSeek {id: 333, ts: 8568.6, fn: PlaybackSeekBar.onPointerEnd, kind: INVOKE, next: commitDragSeek}"
+    },
+    {
+      "tMs": 8571,
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek ENTER {id: 334, ts: 8568.8, fn: PlaybackSeekBar.commitDragSeek, kind: ENTER, dragging: true}"
+    },
+    {
+      "tMs": 8571,
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners ENTER {id: 335, ts: 8568.9, fn: PlaybackSeekBar.clearPointerEndListeners, kind: ENTER, hadCleanup: true}"
+    },
+    {
+      "tMs": 8571,
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners ENTER {id: 336, ts: 8569.0, fn: PlaybackSeekBar.detachPointerEndListeners, kind: ENTER, listenerGen: 1}"
+    },
+    {
+      "tMs": 8571,
+      "text": "[TRACE] PlaybackSeekBar.detachPointerEndListeners EXIT {id: 337, ts: 8569.1, fn: PlaybackSeekBar.detachPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 8571,
+      "text": "[TRACE] PlaybackSeekBar.clearPointerEndListeners EXIT {id: 338, ts: 8569.2, fn: PlaybackSeekBar.clearPointerEndListeners, kind: EXIT, listenerGen: 1}"
+    },
+    {
+      "tMs": 8571,
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek → mediaSessionController.commitSeek {id: 339, ts: 8569.2, fn: PlaybackSeekBar.commitDragSeek, kind: INVOKE, next: mediaSessionController.commitSeek}"
+    },
+    {
+      "tMs": 8571,
+      "text": "[TRACE] MediaSessionController.commitSeek ENTER {id: 340, ts: 8569.5, fn: MediaSessionController.commitSeek, kind: ENTER, seconds: 16}"
+    },
+    {
+      "tMs": 8572,
+      "text": "[TRACE] MediaSessionController.commitSeek GUARD {id: 341, ts: 8569.9, fn: MediaSessionController.commitSeek, kind: GUARD, condition: nearCurrent skip} \nstack: at seekPipelineTrace (http://localhost:3000/_next/static/chunks/_0z_5ij9._.js:11472:64) | at MediaSessionController.commitSeek (http://localhost:3000/_next/static/chunks/_0z_5ij9._.js:13203:182) | at PlaybackSeekBar.useCallback[commitDragSeek] (http://localhost:3000/_next/static/chunks/_0z_5ij9._.js:17294:192) | at PlaybackSeekBar.useCallback[attachPointerEndListeners].onPointerEnd (http://localhost:3000/_next/static/chunks/_0z_5ij9._.js:17328:21)"
+    },
+    {
+      "tMs": 8572,
+      "text": "[SESSION] commitSeek() {seconds: 16}"
+    },
+    {
+      "tMs": 8572,
+      "text": "[TRACE] MediaSessionController.commitSeek → uiSession.clearOnSeekCommit {id: 342, ts: 8570.1, fn: MediaSessionController.commitSeek, kind: INVOKE, next: uiSession.clearOnSeekCommit}"
+    },
+    {
+      "tMs": 8572,
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit ENTER {id: 343, ts: 8570.2, fn: MediaSessionUiSession.clearOnSeekCommit, kind: ENTER, prior: Object}"
+    },
+    {
+      "tMs": 8572,
+      "text": "[TRACE] MediaSessionUiSession.clearOnSeekCommit EXIT {id: 344, ts: 8570.2, fn: MediaSessionUiSession.clearOnSeekCommit, kind: EXIT, state: Object}"
+    },
+    {
+      "tMs": 8572,
+      "text": "[TRACE] MediaSessionController.commitSeek → patchTransport {id: 345, ts: 8570.3, fn: MediaSessionController.commitSeek, kind: INVOKE, next: patchTransport}"
+    },
+    {
+      "tMs": 8572,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 346, ts: 8570.6, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 16}"
+    },
+    {
+      "tMs": 8573,
+      "text": "[TRACE] MediaSessionController.commitSeek → globalPlayerEngine.seek {id: 347, ts: 8570.8, fn: MediaSessionController.commitSeek, kind: INVOKE, next: globalPlayerEngine.seek}"
+    },
+    {
+      "tMs": 8573,
+      "text": "[TRACE] GlobalPlayerEngine.seek ENTER {id: 348, ts: 8570.9, fn: GlobalPlayerEngine.seek, kind: ENTER, seconds: 16}"
+    },
+    {
+      "tMs": 8573,
+      "text": "[TRACE] GlobalPlayerEngine.seek → ProviderRouter.seek {id: 349, ts: 8571.1, fn: GlobalPlayerEngine.seek, kind: INVOKE, next: ProviderRouter.seek}"
+    },
+    {
+      "tMs": 8573,
+      "text": "[TRACE] ProviderRouter.seek ENTER {id: 350, ts: 8571.3, fn: ProviderRouter.seek, kind: ENTER, positionSeconds: 16}"
+    },
+    {
+      "tMs": 8573,
+      "text": "[TRACE] ProviderRouter.seek → active.seek(spotify) {id: 351, ts: 8571.4, fn: ProviderRouter.seek, kind: INVOKE, next: active.seek(spotify)}"
+    },
+    {
+      "tMs": 8573,
+      "text": "[TRACE] SpotifyProvider.seek ENTER {id: 352, ts: 8571.6, fn: SpotifyProvider.seek, kind: ENTER, positionSeconds: 16}"
+    },
+    {
+      "tMs": 8574,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 81, engineCurrentTime: 16, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8574,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 82, engineCurrentTime: 16, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8574,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 83, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}"
+    },
+    {
+      "tMs": 8575,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 84, condition: shouldAcceptPositionAfterSeek, providerTime: 16, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}"
+    },
+    {
+      "tMs": 8575,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 85, condition: currentTime assignment, branch: pendingSeek + accept → providerTime, assignedCurrentTime: 16, providerTime: 16}"
+    },
+    {
+      "tMs": 8575,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 86, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, engineCurrentTime: 16, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 8575,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 87, reason: reconciled.currentTime unchanged, engine aligned, transportCurrentTime: 16, engineCurrentTime: 16}"
+    },
+    {
+      "tMs": 8575,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 88, engineCurrentTime: 16, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8575,
+      "text": "[TRACE] SpotifyProvider.seek → host.seekIfReady {id: 353, ts: 8573.8, fn: SpotifyProvider.seek, kind: INVOKE, next: host.seekIfReady}"
+    },
+    {
+      "tMs": 8576,
+      "text": "[TRACE] SpotifyProvider.seek EXIT {id: 354, ts: 8574.4, fn: SpotifyProvider.seek, kind: EXIT, target: 16}"
+    },
+    {
+      "tMs": 8576,
+      "text": "[TRACE] ProviderRouter.seek EXIT {id: 355, ts: 8574.6, fn: ProviderRouter.seek, kind: EXIT, positionSeconds: 16}"
+    },
+    {
+      "tMs": 8576,
+      "text": "[TRACE] GlobalPlayerEngine.seek EXIT {id: 356, ts: 8574.6, fn: GlobalPlayerEngine.seek, kind: EXIT, seconds: 16}"
+    },
+    {
+      "tMs": 8576,
+      "text": "[TRACE] MediaSessionController.commitSeek EXIT {id: 357, ts: 8574.6, fn: MediaSessionController.commitSeek, kind: EXIT, target: 16}"
+    },
+    {
+      "tMs": 8576,
+      "text": "[TRACE] PlaybackSeekBar.commitDragSeek EXIT {id: 358, ts: 8574.7, fn: PlaybackSeekBar.commitDragSeek, kind: EXIT, target: 16}"
+    },
+    {
+      "tMs": 8590,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 359, ts: 8588.4, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.mouseup}"
+    },
+    {
+      "tMs": 8590,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 360, ts: 8588.7, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.change}"
+    },
+    {
+      "tMs": 8591,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 361, ts: 8589.0, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.lostpointercapture}"
+    },
+    {
+      "tMs": 8591,
+      "text": "[TRACE] PlaybackSeekBar.nativeEvent NATIVE {id: 362, ts: 8589.1, fn: PlaybackSeekBar.nativeEvent, kind: NATIVE, eventType: native.click}"
+    },
+    {
+      "tMs": 8591,
+      "text": "[TRACE] PlaybackSeekBar.handleClick ENTER {id: 363, ts: 8589.2, fn: PlaybackSeekBar.handleClick, kind: ENTER, eventType: react.click}"
+    },
+    {
+      "tMs": 8591,
+      "text": "[TRACE] PlaybackSeekBar.handleClick EXIT {id: 364, ts: 8589.3, fn: PlaybackSeekBar.handleClick, kind: EXIT}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 365, ts: 8597.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 2.928}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 89, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 90, engineCurrentTime: 2.928, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 91, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 92, condition: shouldAcceptPositionAfterSeek, providerTime: 2.928, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 93, condition: currentTime assignment, branch: pendingSeek + pending → pendingSeekSeconds, assignedCurrentTime: 16, providerTime: 2.928}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 94, condition: PRESERVED non-engine time instead of accepting engine.currentTime, engineCurrentTime: 2.928, transportBefore: 16, transportAfter: 16}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 95, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, engineCurrentTime: 2.928, acceptedEngineTime: false}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] onEngineSnapshot SKIP_PATCH {id: 96, reason: reconciled.currentTime unchanged but engine.currentTime differs, transportCurrentTime: 16, reconciledCurrentTime: 16, engineCurrentTime: 2.928}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] onEngineSnapshot GUARD {id: 97, condition: POST-RECONCILE MISMATCH — engine.currentTime still differs from transport.currentTime, engineCurrentTime: 2.928, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16}"
+    },
+    {
+      "tMs": 8602,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 98, engineCurrentTime: 2.928, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8859,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 366, ts: 8856.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 16.203}"
+    },
+    {
+      "tMs": 8859,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 99, engineCurrentTime: 16.203, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8860,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 100, engineCurrentTime: 16.203, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8860,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 101, condition: seek flags, isSeeking: true, inSeekLock: true, inSeekSettle: true}"
+    },
+    {
+      "tMs": 8860,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 102, condition: shouldAcceptPositionAfterSeek, providerTime: 16.203, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}"
+    },
+    {
+      "tMs": 8860,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 103, condition: currentTime assignment, branch: pendingSeek + accept → providerTime, assignedCurrentTime: 16.203, providerTime: 16.203}"
+    },
+    {
+      "tMs": 8860,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 104, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16.203, engineCurrentTime: 16.203, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 8860,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 105, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16.203, engineCurrentTime: 16.203, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 8861,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 106, engineCurrentTime: 16.203, transportCurrentTimeBefore: 16, transportCurrentTimeAfter: 16.203, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 9922,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 367, ts: 9918.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 17.265}"
+    },
+    {
+      "tMs": 9922,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 107, engineCurrentTime: 17.265, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 9922,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 108, engineCurrentTime: 17.265, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: 16}"
+    },
+    {
+      "tMs": 9922,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 109, condition: seek flags, isSeeking: true, inSeekLock: false, inSeekSettle: true}"
+    },
+    {
+      "tMs": 9922,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 110, condition: shouldAcceptPositionAfterSeek, providerTime: 17.265, pendingSeekSeconds: 16, pendingSeekDeadline: 1783031878558}"
+    },
+    {
+      "tMs": 9922,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 111, condition: currentTime assignment, branch: pendingSeek + accept → providerTime, assignedCurrentTime: 17.265, providerTime: 17.265}"
+    },
+    {
+      "tMs": 9922,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 112, transportCurrentTimeBefore: 16.203, transportCurrentTimeAfter: 17.265, engineCurrentTime: 17.265, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 9923,
+      "text": "[MSC-RECONCILE] onEngineSnapshot BRANCH {id: 113, condition: clearPendingSeek, clearedPendingSeekSeconds: 16, positionAccept: true}"
+    },
+    {
+      "tMs": 9923,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 114, transportCurrentTimeBefore: 16.203, transportCurrentTimeAfter: 17.265, engineCurrentTime: 17.265, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 9923,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 115, engineCurrentTime: 17.265, transportCurrentTimeBefore: 16.203, transportCurrentTimeAfter: 17.265, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 10985,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 368, ts: 10980.0, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 18.328}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 116, engineCurrentTime: 18.328, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 117, engineCurrentTime: 18.328, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 118, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 119, condition: shouldAcceptPositionAfterSeek, providerTime: 18.328, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 120, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 18.328, providerTime: 18.328}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 121, transportCurrentTimeBefore: 17.265, transportCurrentTimeAfter: 18.328, engineCurrentTime: 18.328, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 122, transportCurrentTimeBefore: 17.265, transportCurrentTimeAfter: 18.328, engineCurrentTime: 18.328, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 10986,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 123, engineCurrentTime: 18.328, transportCurrentTimeBefore: 17.265, transportCurrentTimeAfter: 18.328, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 12050,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 369, ts: 12042.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 19.379}"
+    },
+    {
+      "tMs": 12050,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 124, engineCurrentTime: 19.379, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 12050,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 125, engineCurrentTime: 19.379, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 12050,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 126, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 12051,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 127, condition: shouldAcceptPositionAfterSeek, providerTime: 19.379, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 12051,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 128, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 19.379, providerTime: 19.379}"
+    },
+    {
+      "tMs": 12051,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 129, transportCurrentTimeBefore: 18.328, transportCurrentTimeAfter: 19.379, engineCurrentTime: 19.379, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 12052,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 130, transportCurrentTimeBefore: 18.328, transportCurrentTimeAfter: 19.379, engineCurrentTime: 19.379, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 12052,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 131, engineCurrentTime: 19.379, transportCurrentTimeBefore: 18.328, transportCurrentTimeAfter: 19.379, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 370, ts: 13104.1, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 20.444}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 132, engineCurrentTime: 20.444, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 133, engineCurrentTime: 20.444, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 134, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 135, condition: shouldAcceptPositionAfterSeek, providerTime: 20.444, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 136, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 20.444, providerTime: 20.444}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 137, transportCurrentTimeBefore: 19.379, transportCurrentTimeAfter: 20.444, engineCurrentTime: 20.444, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 138, transportCurrentTimeBefore: 19.379, transportCurrentTimeAfter: 20.444, engineCurrentTime: 20.444, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 13109,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 139, engineCurrentTime: 20.444, transportCurrentTimeBefore: 19.379, transportCurrentTimeAfter: 20.444, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 14171,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 371, ts: 14167.8, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 21.505}"
+    },
+    {
+      "tMs": 14172,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 140, engineCurrentTime: 21.505, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 14172,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 141, engineCurrentTime: 21.505, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 14172,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 142, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 14172,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 143, condition: shouldAcceptPositionAfterSeek, providerTime: 21.505, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 14173,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 144, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 21.505, providerTime: 21.505}"
+    },
+    {
+      "tMs": 14173,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 145, transportCurrentTimeBefore: 20.444, transportCurrentTimeAfter: 21.505, engineCurrentTime: 21.505, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 14173,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 146, transportCurrentTimeBefore: 20.444, transportCurrentTimeAfter: 21.505, engineCurrentTime: 21.505, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 14173,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 147, engineCurrentTime: 21.505, transportCurrentTimeBefore: 20.444, transportCurrentTimeAfter: 21.505, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 372, ts: 15229.7, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 22.569}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 148, engineCurrentTime: 22.569, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 149, engineCurrentTime: 22.569, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 150, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 151, condition: shouldAcceptPositionAfterSeek, providerTime: 22.569, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 152, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 22.569, providerTime: 22.569}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 153, transportCurrentTimeBefore: 21.505, transportCurrentTimeAfter: 22.569, engineCurrentTime: 22.569, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 154, transportCurrentTimeBefore: 21.505, transportCurrentTimeAfter: 22.569, engineCurrentTime: 22.569, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 15237,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 155, engineCurrentTime: 22.569, transportCurrentTimeBefore: 21.505, transportCurrentTimeAfter: 22.569, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 16296,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 373, ts: 16292.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 23.633}"
+    },
+    {
+      "tMs": 16296,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 156, engineCurrentTime: 23.633, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 16301,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 157, engineCurrentTime: 23.633, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 16301,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 158, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 16301,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 159, condition: shouldAcceptPositionAfterSeek, providerTime: 23.633, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 16301,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 160, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 23.633, providerTime: 23.633}"
+    },
+    {
+      "tMs": 16301,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 161, transportCurrentTimeBefore: 22.569, transportCurrentTimeAfter: 23.633, engineCurrentTime: 23.633, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 16301,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 162, transportCurrentTimeBefore: 22.569, transportCurrentTimeAfter: 23.633, engineCurrentTime: 23.633, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 16302,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 163, engineCurrentTime: 23.633, transportCurrentTimeBefore: 22.569, transportCurrentTimeAfter: 23.633, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 374, ts: 17353.5, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 24.697}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 164, engineCurrentTime: 24.697, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 165, engineCurrentTime: 24.697, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 166, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 167, condition: shouldAcceptPositionAfterSeek, providerTime: 24.697, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 168, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 24.697, providerTime: 24.697}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 169, transportCurrentTimeBefore: 23.633, transportCurrentTimeAfter: 24.697, engineCurrentTime: 24.697, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 170, transportCurrentTimeBefore: 23.633, transportCurrentTimeAfter: 24.697, engineCurrentTime: 24.697, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 17360,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 171, engineCurrentTime: 24.697, transportCurrentTimeBefore: 23.633, transportCurrentTimeAfter: 24.697, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 18420,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 375, ts: 18416.9, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 25.761}"
+    },
+    {
+      "tMs": 18420,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 172, engineCurrentTime: 25.761, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 18420,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 173, engineCurrentTime: 25.761, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 18421,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 174, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 18421,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 175, condition: shouldAcceptPositionAfterSeek, providerTime: 25.761, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 18421,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 176, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 25.761, providerTime: 25.761}"
+    },
+    {
+      "tMs": 18421,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 177, transportCurrentTimeBefore: 24.697, transportCurrentTimeAfter: 25.761, engineCurrentTime: 25.761, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 18422,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 178, transportCurrentTimeBefore: 24.697, transportCurrentTimeAfter: 25.761, engineCurrentTime: 25.761, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 18422,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 179, engineCurrentTime: 25.761, transportCurrentTimeBefore: 24.697, transportCurrentTimeAfter: 25.761, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 19484,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 376, ts: 19479.6, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 26.826}"
+    },
+    {
+      "tMs": 19484,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 180, engineCurrentTime: 26.826, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 19485,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 181, engineCurrentTime: 26.826, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 19485,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 182, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 19485,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 183, condition: shouldAcceptPositionAfterSeek, providerTime: 26.826, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 19485,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 184, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 26.826, providerTime: 26.826}"
+    },
+    {
+      "tMs": 19485,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 185, transportCurrentTimeBefore: 25.761, transportCurrentTimeAfter: 26.826, engineCurrentTime: 26.826, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 19485,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 186, transportCurrentTimeBefore: 25.761, transportCurrentTimeAfter: 26.826, engineCurrentTime: 26.826, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 19485,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 187, engineCurrentTime: 26.826, transportCurrentTimeBefore: 25.761, transportCurrentTimeAfter: 26.826, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 20546,
+      "text": "[TRACE] useFinalPlaybackSnapshot.commitFrame STATE {id: 377, ts: 20542.4, fn: useFinalPlaybackSnapshot.commitFrame, kind: STATE, displayTime: 27.887}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] onEngineSnapshot ENTER {id: 188, engineCurrentTime: 27.887, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot ENTER {id: 189, engineCurrentTime: 27.887, engineIsLoading: false, engineCurrentTrack: sara-landry::legacy, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 190, condition: seek flags, isSeeking: false, inSeekLock: false, inSeekSettle: false}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot GUARD {id: 191, condition: shouldAcceptPositionAfterSeek, providerTime: 27.887, pendingSeekSeconds: null, pendingSeekDeadline: 0}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot BRANCH {id: 192, condition: currentTime assignment, branch: default → providerTime, assignedCurrentTime: 27.887, providerTime: 27.887}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] reconcileEngineSnapshot EXIT {id: 193, transportCurrentTimeBefore: 26.826, transportCurrentTimeAfter: 27.887, engineCurrentTime: 27.887, acceptedEngineTime: true}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] onEngineSnapshot PATCH {id: 194, transportCurrentTimeBefore: 26.826, transportCurrentTimeAfter: 27.887, engineCurrentTime: 27.887, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 20551,
+      "text": "[MSC-RECONCILE] onEngineSnapshot EXIT {id: 195, engineCurrentTime: 27.887, transportCurrentTimeBefore: 26.826, transportCurrentTimeAfter: 27.887, pendingSeekSeconds: null}"
+    },
+    {
+      "tMs": 20592,
+      "text": "=== MARKER: drag seek end ==="
+    }
+  ]
+}

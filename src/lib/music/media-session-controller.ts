@@ -2,7 +2,7 @@
  * MediaSessionController — single source of truth for all playback state.
  *
  * Flow: UI → MediaSessionController → GlobalPlayerEngine → ProviderRouter → providers
- * Return: provider → engine snapshot → controller → subscribers + Zustand mirror (read-only cache)
+ * Return: provider → engine snapshot → controller → subscribers + persistence mirror
  */
 import type { LibraryItemType } from "@/types/library";
 import type { PlaybackItem, PlaybackBrowseContext } from "@/lib/music/playback";
@@ -16,17 +16,46 @@ import {
   type PlayerEngineState,
 } from "@/lib/music/global-player-engine";
 import {
-  usePlaybackStore,
-  schedulePlaybackPersist,
   getPlaybackRecordFn,
   ensurePlaybackEngineReady,
 } from "@/stores/playback-store";
-import { clampPlaybackPosition, shouldAcceptPositionAfterSeek } from "@/lib/music/audio-transport-sync";
+import { shouldAcceptPositionAfterSeek } from "@/lib/music/audio-transport-sync";
 import { resolvePlaybackSource } from "@/lib/music/playback-source";
 import { playbackDebugLog, playbackDebugWarn } from "@/lib/music/playback-debug";
+import { syncAuditRecord } from "@/lib/music/playback-sync-audit";
+import { volumePipelineTrace } from "@/lib/music/volume-pipeline-trace";
+import { queuePipelineTrace } from "@/lib/music/queue-pipeline-trace";
+import { mscReconcileTrace } from "@/lib/music/msc-reconcile-trace";
+import { seekPipelineTrace } from "@/lib/music/seek-pipeline-trace";
+import { playPausePipelineTrace, isDuplicateCommand } from "@/lib/music/play-pause-pipeline-trace";
+import {
+  hydrationPipelineTrace,
+  hydrationTraceMarkStart,
+  hydrationTraceMarkFinish,
+} from "@/lib/music/hydration-pipeline-trace";
 import { warnIfAudioTransportInVideoContext } from "@/lib/music/playback-domain-lock";
-import { logStateSync } from "@/lib/music/media-binding-debug";
-import { clearPersistedPlayback } from "@/lib/music/playback-persistence";
+import {
+  MediaSessionPersistence,
+  type MirrorSessionPatch,
+} from "@/lib/music/media-session-persistence";
+import {
+  clampSeekTarget,
+  holdsTransportTimeDuringScrub,
+  MediaSessionUiSession,
+  mediaSessionDisplayTime as resolveMediaSessionDisplayTime,
+  reconcileUiFromEngine,
+  type MediaSessionUiState,
+} from "@/lib/music/media-session-ui";
+import {
+  isExplicitQueueNavigation,
+  MediaSessionQueueSession,
+  reconcileQueueIndex,
+  resolveAdvanceOnEnd,
+  resolveBrowseSession,
+  resolveNextQueueTarget,
+  resolvePreviousQueueTarget,
+  type MediaSessionQueueState,
+} from "@/lib/music/media-session-queue";
 
 export interface MediaSessionState {
   activeTrack: PlaybackItem | null;
@@ -46,18 +75,23 @@ export interface MediaSessionState {
   hoverPreviewTime: number | null;
 }
 
+type SessionTransportState = Omit<
+  MediaSessionState,
+  "isSeeking" | "seekPreviewTime" | "hoverPreviewTime" | "queue" | "queueIndex"
+>;
+
 type PlayOptions = {
   queue?: PlaybackItem[];
   queueIndex?: number;
   browse?: PlaybackBrowseContext;
+  /** Persisted resume position — used once on hydration refresh while playing. */
+  resumePosition?: number;
 };
 
 type Listener = () => void;
 
-const EMPTY: MediaSessionState = {
+const EMPTY_TRANSPORT: SessionTransportState = {
   activeTrack: null,
-  queue: [],
-  queueIndex: 0,
   currentTime: 0,
   duration: 0,
   isPlaying: false,
@@ -66,67 +100,52 @@ const EMPTY: MediaSessionState = {
   volume: 1,
   muted: false,
   error: null,
-  isSeeking: false,
-  seekPreviewTime: null,
-  hoverPreviewTime: null,
 };
 
-const SEEK_LOCK_MS = 850;
-const DURATION_SIGNIFICANT_DELTA_S = 2;
-const TIME_BACKWARD_EPSILON_S = 0.08;
-/** Reject provider play/pause oscillation inside this window. */
-const TRANSPORT_FLIP_GUARD_MS = 250;
-/** Max forward drift per reconcile tick while holding stable time during buffer/seek. */
-const TIME_INTERP_CAP_S = 0.5;
+const SEEK_LOCK_MS = 300;
+
+// ── Session helpers ───────────────────────────────────────────────────────────
 
 function guard(action: string, track: PlaybackItem | null): void {
   warnIfAudioTransportInVideoContext(action, track);
 }
 
-function resolveBrowseSession(
-  item: PlaybackItem,
-  options?: PlayOptions,
-): { queue: PlaybackItem[]; queueIndex: number } {
-  const queue = options?.browse?.queue ?? options?.queue;
-  const explicitIndex = options?.browse?.queueIndex ?? options?.queueIndex;
-
-  if (queue && queue.length > 0) {
-    const queueIndex =
-      explicitIndex !== undefined && explicitIndex >= 0 && explicitIndex < queue.length
-        ? explicitIndex
-        : queue.findIndex((entry) => isSamePlaybackItem(entry, item));
-    return { queue, queueIndex: queueIndex >= 0 ? queueIndex : 0 };
-  }
-
-  return { queue: [item], queueIndex: 0 };
-}
-
 /** Display position for progress UI — drag preview, then hover preview, then transport time. */
-export function mediaSessionDisplayTime(state: MediaSessionState): number {
+export function mediaSessionDisplayTime(
+  currentTime: number,
+  state: {
+    isSeeking: boolean;
+    seekPreviewTime: number | null;
+    hoverPreviewTime: number | null;
+  }
+): number {
   if (state.isSeeking && state.seekPreviewTime !== null) {
     return state.seekPreviewTime;
   }
-  if (!state.isSeeking && state.hoverPreviewTime !== null) {
+
+  if (state.hoverPreviewTime !== null) {
     return state.hoverPreviewTime;
   }
-  return state.currentTime;
-}
 
-type StableSnapshotInput = {
+  return currentTime;
+}
+// ── Reconciliation ────────────────────────────────────────────────────────────
+
+type ReconcileInput = {
   snapshot: PlayerEngineState;
-  prior: MediaSessionState;
+  prior: SessionTransportState;
+  priorQueue: MediaSessionQueueState;
+  priorUi: MediaSessionUiState;
   trackChanged: boolean;
   hadTrackBefore: boolean;
   transportIntent: "playing" | "paused";
   pendingSeekSeconds: number | null;
   pendingSeekDeadline: number;
   seekLockUntil: number;
-  playbackFloorTime: number;
-  stableDuration: number;
-  lastReconcileAtMs: number;
+  pendingSeekOriginSeconds: number | null;
 };
 
-type StableSnapshotResult = {
+type ReconcileTransportResult = {
   activeTrack: PlaybackItem | null;
   queueIndex: number;
   currentTime: number;
@@ -135,117 +154,132 @@ type StableSnapshotResult = {
   isBuffering: boolean;
   isInitialLoading: boolean;
   error: string | null;
-  isSeeking: boolean;
-  seekPreviewTime: number | null;
-  hoverPreviewTime: number | null;
-  playbackFloorTime: number;
-  stableDuration: number;
-  transportIntent: "playing" | "paused";
   clearPendingSeek: boolean;
 };
 
-/**
- * Playback reconciliation gate — filters provider/engine reports before they touch session state.
- * Volume/mute are controller-owned and never read from providers.
- */
-function createStableMediaSnapshot(input: StableSnapshotInput): StableSnapshotResult {
+type ReconcileResult = {
+  transport: ReconcileTransportResult;
+  ui: MediaSessionUiState;
+};
+
+/** Reconcile engine/provider reports into session state. Volume/mute stay controller-owned. */
+function reconcileEngineSnapshot(input: ReconcileInput): ReconcileResult {
   const {
     snapshot,
     prior,
+    priorQueue,
+    priorUi,
     trackChanged,
     hadTrackBefore,
     transportIntent,
     pendingSeekSeconds,
     pendingSeekDeadline,
     seekLockUntil,
-    playbackFloorTime,
-    stableDuration,
-    lastReconcileAtMs,
+    pendingSeekOriginSeconds,
   } = input;
 
+  const transportBefore = prior.currentTime;
+  const engineCurrentTime = snapshot.currentTime;
+
+  mscReconcileTrace("reconcileEngineSnapshot", "ENTER", {
+    engineCurrentTime,
+    engineIsLoading: snapshot.isLoading,
+    engineCurrentTrack: snapshot.currentTrack?.refId ?? null,
+    pendingSeekSeconds,
+    pendingSeekDeadline,
+    seekLockUntil,
+    transportCurrentTimeBefore: transportBefore,
+    trackChanged,
+    priorUiIsSeeking: priorUi.isSeeking,
+    priorUiSeekPreview: priorUi.seekPreviewTime,
+  });
+
+  const isSeeking = pendingSeekSeconds !== null || priorUi.isSeeking;
   const providerTime = snapshot.currentTime;
   const providerDuration = snapshot.duration;
   const isBuffering = snapshot.isLoading;
   const now = Date.now();
   const inSeekLock = now < seekLockUntil;
   const inSeekSettle = pendingSeekSeconds !== null;
-  const reconcileElapsedS =
-    lastReconcileAtMs > 0 ? Math.min((now - lastReconcileAtMs) / 1000, TIME_INTERP_CAP_S) : 0;
+
+  mscReconcileTrace("reconcileEngineSnapshot", "BRANCH", {
+    condition: "seek flags",
+    isSeeking,
+    inSeekLock,
+    inSeekSettle,
+    now,
+  });
 
   const positionDecision = shouldAcceptPositionAfterSeek(
     providerTime,
     pendingSeekSeconds,
     pendingSeekDeadline,
+    0.25,
+    pendingSeekOriginSeconds,
+  );
+  const clearPendingSeek =
+    positionDecision.clearPending && !inSeekLock;
+
+  mscReconcileTrace("reconcileEngineSnapshot", "GUARD", {
+    condition: "shouldAcceptPositionAfterSeek",
+    providerTime,
+    pendingSeekSeconds,
+    pendingSeekDeadline,
+    accept: positionDecision.accept,
+    clearPending: positionDecision.clearPending,
+    clearPendingSeek,
+    inSeekLock,
+    deadlineExpired: pendingSeekSeconds !== null && now > pendingSeekDeadline,
+  });
+
+  const queueIndex = reconcileQueueIndex(
+    priorQueue.queue,
+    priorQueue.queueIndex,
+    snapshot.currentTrack,
+    trackChanged,
   );
 
-  let queueIndex = prior.queueIndex;
-  if (trackChanged && snapshot.currentTrack) {
-    const matched = prior.queue.findIndex((entry) =>
-      isSamePlaybackItem(entry, snapshot.currentTrack!),
-    );
-    if (matched >= 0) queueIndex = matched;
-  }
-
-  // ── currentTime ──────────────────────────────────────────────────────────
-  let currentTime = prior.currentTime;
+  let currentTime: number;
+  let currentTimeBranch: string;
 
   if (trackChanged) {
     currentTime = Math.max(0, providerTime);
-  } else if (prior.isSeeking && prior.seekPreviewTime !== null) {
-    currentTime = prior.currentTime;
-  } else if (inSeekLock && pendingSeekSeconds !== null) {
-    currentTime = pendingSeekSeconds;
-  } else if (inSeekSettle && !positionDecision.accept) {
-    currentTime = pendingSeekSeconds ?? prior.currentTime;
-  } else if (positionDecision.accept) {
-    const candidate = Math.max(providerTime, playbackFloorTime);
-    currentTime = candidate;
-  } else {
-    currentTime = Math.max(providerTime, playbackFloorTime);
-    if (transportIntent === "playing" && !prior.isSeeking && isBuffering && reconcileElapsedS > 0) {
-      const cap = prior.duration > 0 ? prior.duration : prior.currentTime + reconcileElapsedS;
-      currentTime = Math.min(cap, currentTime + reconcileElapsedS);
+    currentTimeBranch = "trackChanged → providerTime";
+  } else if (pendingSeekSeconds !== null) {
+    if (positionDecision.accept) {
+      currentTime = providerTime;
+      currentTimeBranch = "pendingSeek + accept → providerTime";
+    } else {
+      currentTime = pendingSeekSeconds;
+      currentTimeBranch = "pendingSeek + pending → pendingSeekSeconds";
     }
-  }
-
-  if (
-    !trackChanged &&
-    !prior.isSeeking &&
-    !inSeekLock &&
-    providerTime + TIME_BACKWARD_EPSILON_S < currentTime
+  } else if (
+    inSeekLock &&
+    Math.abs(providerTime - transportBefore) > 0.25
   ) {
-    currentTime = Math.max(currentTime, playbackFloorTime);
+    currentTime = transportBefore;
+    currentTimeBranch = "inSeekLock → preserve prior transport (reject stale provider tick)";
+  } else {
+    currentTime = providerTime;
+    currentTimeBranch = "default → providerTime";
   }
 
-  const nextPlaybackFloorTime = trackChanged
-    ? currentTime
-    : Math.max(playbackFloorTime, currentTime);
+  mscReconcileTrace("reconcileEngineSnapshot", "BRANCH", {
+    condition: "currentTime assignment",
+    branch: currentTimeBranch,
+    assignedCurrentTime: currentTime,
+    providerTime,
+    pendingSeekSeconds,
+    preservedPriorTransport: currentTime === transportBefore && providerTime !== transportBefore,
+  });
 
-  // ── duration (stable per track — same trackId only, significant delta or first load) ─
   let duration = prior.duration;
-  let nextStableDuration = stableDuration;
-
   if (trackChanged) {
     duration = providerDuration > 0 ? providerDuration : 0;
-    nextStableDuration = duration;
   } else if (providerDuration > 0) {
-    const baseline = Math.max(stableDuration, prior.duration);
-    if (baseline <= 0) {
-      duration = providerDuration;
-      nextStableDuration = providerDuration;
-    } else if (Math.abs(providerDuration - baseline) > DURATION_SIGNIFICANT_DELTA_S) {
-      duration = providerDuration;
-      nextStableDuration = providerDuration;
-    } else {
-      duration = baseline;
-      nextStableDuration = baseline;
-    }
-  } else if (isBuffering) {
-    duration = Math.max(stableDuration, prior.duration);
-    nextStableDuration = duration;
+    duration = providerDuration;
   }
 
-  // ── isPlaying — transportIntent is sole authority; provider cannot override ─
   const isPlaying = transportIntent === "playing" && !snapshot.error;
 
   const initialLoad =
@@ -253,71 +287,122 @@ function createStableMediaSnapshot(input: StableSnapshotInput): StableSnapshotRe
     (!hadTrackBefore && !!snapshot.currentTrack) ||
     (isBuffering && prior.currentTime === 0 && providerTime === 0);
 
-  let isSeeking = prior.isSeeking;
-  let seekPreviewTime = prior.seekPreviewTime;
+  const ui = reconcileUiFromEngine(
+    priorUi,
+    positionDecision.accept,
+    pendingSeekSeconds,
+  );
 
-  if (!prior.isSeeking) {
-    // keep authority time
-  } else if (positionDecision.accept && pendingSeekSeconds === null) {
-    isSeeking = false;
-    seekPreviewTime = null;
-    currentTime = Math.max(currentTime, providerTime);
+  if (priorUi.isSeeking && positionDecision.accept && pendingSeekSeconds === null) {
+    const beforeOverride = currentTime;
+    currentTime = providerTime;
+    mscReconcileTrace("reconcileEngineSnapshot", "BRANCH", {
+      condition: "post-scrub settle override",
+      priorUiIsSeeking: priorUi.isSeeking,
+      positionAccept: positionDecision.accept,
+      pendingSeekSeconds,
+      currentTimeBeforeOverride: beforeOverride,
+      currentTimeAfterOverride: currentTime,
+      action: "accept providerTime after scrub ended",
+    });
   }
 
+  const transportAfter = currentTime;
+  const acceptedEngineTime = Math.abs(currentTime - providerTime) <= 0.05;
+  const preservedInsteadOfEngine = !acceptedEngineTime && providerTime !== transportBefore;
+
+  if (preservedInsteadOfEngine) {
+    mscReconcileTrace("reconcileEngineSnapshot", "GUARD", {
+      condition: "PRESERVED non-engine time instead of accepting engine.currentTime",
+      engineCurrentTime: providerTime,
+      transportBefore,
+      transportAfter,
+      pendingSeekSeconds,
+      currentTimeBranch,
+      deltaEngineVsTransport: providerTime - transportAfter,
+    });
+  }
+
+  mscReconcileTrace("reconcileEngineSnapshot", "EXIT", {
+    transportCurrentTimeBefore: transportBefore,
+    transportCurrentTimeAfter: transportAfter,
+    engineCurrentTime: providerTime,
+    acceptedEngineTime,
+    clearPendingSeek,
+    currentTimeBranch,
+  });
+
   return {
-    activeTrack: snapshot.currentTrack,
-    queueIndex,
-    currentTime,
-    duration,
-    isPlaying,
-    isBuffering,
-    isInitialLoading: initialLoad && isBuffering,
-    error: snapshot.error,
-    isSeeking,
-    seekPreviewTime,
-    hoverPreviewTime: prior.isSeeking ? null : prior.hoverPreviewTime,
-    playbackFloorTime: nextPlaybackFloorTime,
-    stableDuration: nextStableDuration,
-    transportIntent,
-    clearPendingSeek: positionDecision.clearPending,
+    transport: {
+      activeTrack: snapshot.currentTrack,
+      queueIndex,
+      currentTime,
+      duration,
+      isPlaying,
+      isBuffering,
+      isInitialLoading: initialLoad && isBuffering,
+      error: snapshot.error,
+      clearPendingSeek,
+    },
+    ui,
   };
 }
 
 class MediaSessionController {
-  private state: MediaSessionState = { ...EMPTY };
-  private listeners = new Set<Listener>();
-  private engineAttached = false;
+  // ── Published session state ─────────────────────────────────────────────────
 
-  private pendingSeekSeconds: number | null = null;
-  private pendingSeekDeadline = 0;
-  private wasPlayingAtSeek = false;
+  private transport: SessionTransportState = { ...EMPTY_TRANSPORT };
+  private queueSession = new MediaSessionQueueSession();
+  private uiSession = new MediaSessionUiSession();
+  private persistence = new MediaSessionPersistence();
+  private listeners = new Set<Listener>();
+
+  // ── Execution bridge ────────────────────────────────────────────────────────
+
+  private engineAttached = false;
+  private pendingPlayItem: PlaybackItem | null = null;
+
+  // ── Session authority (not provider-derived) ────────────────────────────────
+
+  /** User transport intent — reconciled isPlaying follows this, not provider isPlaying. */
+  private transportIntent: "playing" | "paused" = "paused";
   private hadTrackBefore = false;
   private lastAudibleVolume = 0.8;
-  private pendingPlayItem: PlaybackItem | null = null;
-  /** User transport intent — controller authority; provider reports reconcile against this. */
-  private transportIntent: "playing" | "paused" = "paused";
-  /** Seek commit anchor — set on commitSeek(). */
-  private seekAnchorTime = 0;
-  /** Forward-only playback floor during reconcile. */
-  private playbackFloorTime = 0;
-  /** Stable duration for current track session. */
-  private stableDuration = 0;
-  /** Seek lock — ignore provider time corrections briefly after commit. */
+
+  // ── Seek settle caches ──────────────────────────────────────────────────────
+
+  private pendingSeekSeconds: number | null = null;
+  private pendingSeekOriginSeconds: number | null = null;
+  private pendingSeekDeadline = 0;
   private seekLockUntil = 0;
-  /** Wall clock of last provider snapshot reconcile — forward drift while holding time. */
-  private lastReconcileAtMs = 0;
-  /** Provider play/pause flip guard — rejects rapid oscillation. */
-  private lastProviderPlaying: boolean | null = null;
-  private lastProviderPlayingFlipMs = 0;
+
+  /** Set when play() targets preview audio; cleared once session volume reaches the new AudioProvider. */
+  private pendingAudioVolumeApply = false;
+
+  private lastPlayTraceRef: string | null = null;
+  private lastPlayTraceAt = 0;
+
+  // ── Read API ────────────────────────────────────────────────────────────────
 
   subscribe = (listener: Listener): (() => void) => {
     this.listeners.add(listener);
     return () => this.listeners.delete(listener);
   };
 
-  getState = (): MediaSessionState => this.state;
+  getState = (): MediaSessionState => ({
+    ...this.transport,
+    ...this.queueSession.getState(),
+    ...this.uiSession.getState(),
+  });
 
-  getSnapshot = (): MediaSessionState => this.state;
+  getSnapshot = (): MediaSessionState => this.getState();
+
+  isActive(type: PlaybackItem["type"], refId: string): boolean {
+    const track = this.transport.activeTrack;
+    return !!track && track.type === type && track.refId === refId;
+  }
+
+  // ── Internal session plumbing ─────────────────────────────────────────────────
 
   private emit(): void {
     for (const listener of this.listeners) {
@@ -325,115 +410,106 @@ class MediaSessionController {
     }
   }
 
-  private patch(partial: Partial<MediaSessionState>, mirror = false): void {
-    this.state = { ...this.state, ...partial };
+  private patchTransport(partial: Partial<SessionTransportState>, mirror = false): void {
+    const priorPlaying = this.transport.isPlaying;
+    this.transport = { ...this.transport, ...partial };
+    if ("isPlaying" in partial && partial.isPlaying !== priorPlaying) {
+      playPausePipelineTrace({
+        fn: "MediaSessionController.patchTransport",
+        phase: "transport_patch",
+        event: partial.isPlaying ? "play" : "pause",
+        mscIsPlaying: this.transport.isPlaying,
+        transportIntent: this.transportIntent,
+        transportPatched: true,
+        activeTrack: this.transport.activeTrack?.refId ?? null,
+        extra: { priorPlaying, mirror, partialKeys: Object.keys(partial) },
+      });
+    }
     if (mirror) this.pushLegacyMirror();
     this.emit();
   }
 
+  private clearSeekState(): void {
+    this.pendingSeekSeconds = null;
+    this.pendingSeekOriginSeconds = null;
+    this.pendingSeekDeadline = 0;
+    this.seekLockUntil = 0;
+  }
+
+  private applyReconciledTransport(reconciled: ReconcileTransportResult): void {
+    const priorIndex = this.queueSession.getState().queueIndex;
+    this.queueSession.applyQueueIndex(reconciled.queueIndex);
+    queuePipelineTrace({
+      fn: "MediaSessionController.applyReconciledTransport",
+      phase: "queue_index",
+      queueReconciledIndex: reconciled.queueIndex,
+      currentQueueIndex: priorIndex,
+      mscActiveTrack: this.transport.activeTrack?.refId ?? null,
+      targetActiveTrack: reconciled.activeTrack?.refId ?? null,
+      trackChanged: reconciled.activeTrack?.refId !== this.transport.activeTrack?.refId,
+      transportPatched: true,
+    });
+    this.transport = {
+      ...this.transport,
+      activeTrack: reconciled.activeTrack,
+      currentTime: reconciled.currentTime,
+      duration: reconciled.duration,
+      isPlaying: reconciled.isPlaying,
+      isBuffering: reconciled.isBuffering,
+      isInitialLoading: reconciled.isInitialLoading,
+      error: reconciled.error,
+    };
+    playPausePipelineTrace({
+      fn: "MediaSessionController.applyReconciledTransport",
+      phase: "reconcile",
+      event: reconciled.isPlaying ? "play" : "pause",
+      mscIsPlaying: reconciled.isPlaying,
+      engineIsPlaying: globalPlayerEngine.getSnapshot().isPlaying,
+      transportIntent: this.transportIntent,
+      activeTrack: reconciled.activeTrack?.refId ?? null,
+      note: "reconcileEngineSnapshot applied isPlaying from transportIntent",
+    });
+  }
+
+  /** Delegates legacy mirror + persist scheduling to persistence layer. */
+  private pushLegacyMirror(sessionPatch?: MirrorSessionPatch): void {
+    const session = this.getState();
+    this.persistence.pushLegacyMirror(
+      {
+        currentTrack: session.activeTrack,
+        queue: session.queue,
+        queueIndex: session.queueIndex,
+        isPlaying: session.isPlaying,
+        isLoading: session.isBuffering,
+        currentTime: session.currentTime,
+        duration: session.duration,
+        error: session.error,
+        volume: session.volume,
+        muted: session.muted,
+      },
+      sessionPatch,
+    );
+  }
+
+  // ── Engine bridge ─────────────────────────────────────────────────────────────
+
   attachEngineListener(): void {
-    if (this.engineAttached) return;
+    if (this.engineAttached) {
+      hydrationPipelineTrace({
+        fn: "MediaSessionController.initialize",
+        phase: "attachEngineListener_skipped",
+        note: "already attached",
+      });
+      return;
+    }
     this.engineAttached = true;
+    hydrationPipelineTrace({
+      fn: "MediaSessionController.initialize",
+      phase: "attachEngineListener",
+    });
     globalPlayerEngine.setStateListener((snapshot) => {
       this.onEngineSnapshot(snapshot);
     });
-  }
-
-  /** Sole writer of transport + session mirror fields on the Zustand store. */
-  private pushLegacyMirror(sessionPatch?: { detailsOpen?: boolean; hydrated?: boolean }): void {
-    const patch = {
-      currentTrack: this.state.activeTrack,
-      queue: this.state.queue,
-      queueIndex: this.state.queueIndex,
-      isPlaying: this.state.isPlaying,
-      isLoading: this.state.isBuffering,
-      currentTime: this.state.currentTime,
-      duration: this.state.duration,
-      error: this.state.error,
-      volume: this.state.volume,
-      muted: this.state.muted,
-      ...sessionPatch,
-    };
-    logStateSync(patch);
-    usePlaybackStore.setState(patch);
-    schedulePlaybackPersist();
-  }
-
-  private onEngineSnapshot(snapshot: PlayerEngineState): void {
-    const sessionTrack = this.state.activeTrack;
-    const engineTrack = snapshot.currentTrack;
-
-    const now = Date.now();
-    if (this.lastProviderPlaying !== snapshot.isPlaying) {
-      if (
-        this.lastProviderPlaying !== null &&
-        now - this.lastProviderPlayingFlipMs < TRANSPORT_FLIP_GUARD_MS
-      ) {
-        playbackDebugLog("SESSION", "reconcile: ignore provider play oscillation");
-      } else {
-        this.lastProviderPlaying = snapshot.isPlaying;
-        this.lastProviderPlayingFlipMs = now;
-      }
-    }
-
-    const trackChanged = engineTrack?.refId !== sessionTrack?.refId;
-
-    const stable = createStableMediaSnapshot({
-      snapshot,
-      prior: this.state,
-      trackChanged,
-      hadTrackBefore: this.hadTrackBefore,
-      transportIntent: this.transportIntent,
-      pendingSeekSeconds: this.pendingSeekSeconds,
-      pendingSeekDeadline: this.pendingSeekDeadline,
-      seekLockUntil: this.seekLockUntil,
-      playbackFloorTime: this.playbackFloorTime,
-      stableDuration: this.stableDuration,
-      lastReconcileAtMs: this.lastReconcileAtMs,
-    });
-
-    this.hadTrackBefore = !!stable.activeTrack;
-    this.lastReconcileAtMs = now;
-
-    if (stable.clearPendingSeek) {
-      this.pendingSeekSeconds = null;
-      this.pendingSeekDeadline = 0;
-      this.wasPlayingAtSeek = false;
-      if (Date.now() >= this.seekLockUntil) {
-        this.seekLockUntil = 0;
-      }
-    }
-
-    this.playbackFloorTime = stable.playbackFloorTime;
-    this.stableDuration = stable.stableDuration;
-
-    this.state = {
-      ...this.state,
-      activeTrack: stable.activeTrack,
-      queueIndex: stable.queueIndex,
-      currentTime: stable.currentTime,
-      duration: stable.duration,
-      isPlaying: stable.isPlaying,
-      isBuffering: stable.isBuffering,
-      isInitialLoading: stable.isInitialLoading,
-      error: stable.error,
-      isSeeking: stable.isSeeking,
-      seekPreviewTime: stable.seekPreviewTime,
-      hoverPreviewTime: stable.hoverPreviewTime,
-      // volume + muted: controller-owned — never overwritten by provider reconcile
-    };
-
-    this.pushLegacyMirror();
-    this.emit();
-    if (trackChanged) this.applyVolumeToEngine();
-  }
-
-  private applyVolumeToEngine(): void {
-    const track = this.state.activeTrack;
-    const kind = track ? resolvePlaybackSource(track).kind : null;
-    if (kind !== "preview") return;
-    globalPlayerEngine.setVolume(this.state.volume);
-    globalPlayerEngine.setMuted(this.state.muted);
   }
 
   private ensureBridge(): void {
@@ -441,9 +517,182 @@ class MediaSessionController {
     ensurePlaybackEngineReady();
   }
 
+  private applyVolumeToEngine(): boolean {
+    const track = this.transport.activeTrack;
+    const kind = track ? resolvePlaybackSource(track).kind : null;
+    volumePipelineTrace({
+      initiator: "MediaSessionController",
+      fn: "MediaSessionController.applyVolumeToEngine",
+      phase: "enter",
+      previousVolume: this.transport.volume,
+      previousMuted: this.transport.muted,
+      providerKind: kind,
+      activeRouterKind: kind === "preview" ? "audio" : kind,
+      note: kind !== "preview" ? "early_return_non_preview" : "forwarding_to_engine",
+    });
+    if (kind !== "preview") return false;
+    globalPlayerEngine.setVolume(this.transport.volume);
+    globalPlayerEngine.setMuted(this.transport.muted);
+    volumePipelineTrace({
+      initiator: "MediaSessionController",
+      fn: "MediaSessionController.applyVolumeToEngine",
+      phase: "exit",
+      newVolume: this.transport.volume,
+      newMuted: this.transport.muted,
+      providerAccepted: true,
+    });
+    if (typeof document === "undefined") return false;
+    const audio = document.querySelector("#vitalforge-playback-root audio") as HTMLAudioElement | null;
+    if (!audio) return false;
+    return (
+      Math.abs(audio.volume - this.transport.volume) <= 0.001 &&
+      audio.muted === this.transport.muted
+    );
+  }
+
+  private onEngineSnapshot(snapshot: PlayerEngineState): void {
+    const sessionTrack = this.transport.activeTrack;
+    const engineTrack = snapshot.currentTrack;
+    const trackChanged = engineTrack?.refId !== sessionTrack?.refId;
+    const transportBefore = this.transport.currentTime;
+
+    queuePipelineTrace({
+      fn: "MediaSessionController.onEngineSnapshot",
+      phase: "enter",
+      trackChanged,
+      mscActiveTrack: sessionTrack?.refId ?? null,
+      engineActiveTrack: engineTrack?.refId ?? null,
+      mscQueueIndex: this.queueSession.getState().queueIndex,
+      queueLength: this.queueSession.getState().queue.length,
+    });
+
+    mscReconcileTrace("onEngineSnapshot", "ENTER", {
+      engineCurrentTime: snapshot.currentTime,
+      engineIsLoading: snapshot.isLoading,
+      engineCurrentTrack: snapshot.currentTrack?.refId ?? null,
+      pendingSeekSeconds: this.pendingSeekSeconds,
+      pendingSeekDeadline: this.pendingSeekDeadline,
+      seekLockUntil: this.seekLockUntil,
+      transportCurrentTimeBefore: transportBefore,
+      trackChanged,
+      uiIsSeeking: this.uiSession.getState().isSeeking,
+      uiSeekPreview: this.uiSession.getState().seekPreviewTime,
+    });
+
+    const reconciled = reconcileEngineSnapshot({
+      snapshot,
+      prior: this.transport,
+      priorQueue: this.queueSession.getState(),
+      priorUi: this.uiSession.getState(),
+      trackChanged,
+      hadTrackBefore: this.hadTrackBefore,
+      transportIntent: this.transportIntent,
+      pendingSeekSeconds: this.pendingSeekSeconds,
+      pendingSeekDeadline: this.pendingSeekDeadline,
+      seekLockUntil: this.seekLockUntil,
+      pendingSeekOriginSeconds: this.pendingSeekOriginSeconds,
+    });
+
+    this.hadTrackBefore = !!reconciled.transport.activeTrack;
+
+    if (reconciled.transport.clearPendingSeek) {
+      mscReconcileTrace("onEngineSnapshot", "BRANCH", {
+        condition: "clearPendingSeek",
+        clearedPendingSeekSeconds: this.pendingSeekSeconds,
+        positionAccept: true,
+      });
+      this.pendingSeekSeconds = null;
+      this.pendingSeekDeadline = 0;
+      if (Date.now() >= this.seekLockUntil) {
+        this.seekLockUntil = 0;
+      }
+    }
+
+    this.uiSession.applyReconciled(reconciled.ui);
+
+    const applyBefore = this.transport.currentTime;
+    if (reconciled.transport.currentTime !== applyBefore) {
+      mscReconcileTrace("onEngineSnapshot", "PATCH", {
+        transportCurrentTimeBefore: applyBefore,
+        transportCurrentTimeAfter: reconciled.transport.currentTime,
+        engineCurrentTime: snapshot.currentTime,
+        pendingSeekSeconds: this.pendingSeekSeconds,
+        source: "applyReconciledTransport",
+      });
+    } else if (Math.abs(snapshot.currentTime - applyBefore) > 0.05) {
+      mscReconcileTrace("onEngineSnapshot", "SKIP_PATCH", {
+        reason: "reconciled.currentTime unchanged but engine.currentTime differs",
+        transportCurrentTime: applyBefore,
+        reconciledCurrentTime: reconciled.transport.currentTime,
+        engineCurrentTime: snapshot.currentTime,
+        pendingSeekSeconds: this.pendingSeekSeconds,
+        currentTimeBranch: "see reconcileEngineSnapshot EXIT",
+      });
+    } else {
+      mscReconcileTrace("onEngineSnapshot", "SKIP_PATCH", {
+        reason: "reconciled.currentTime unchanged, engine aligned",
+        transportCurrentTime: applyBefore,
+        engineCurrentTime: snapshot.currentTime,
+      });
+    }
+
+    this.applyReconciledTransport(reconciled.transport);
+
+    const transportAfter = this.transport.currentTime;
+    const engineAdvanced = Math.abs(snapshot.currentTime - transportAfter) > 0.05;
+
+    if (engineAdvanced) {
+      mscReconcileTrace("onEngineSnapshot", "GUARD", {
+        condition: "POST-RECONCILE MISMATCH — engine.currentTime still differs from transport.currentTime",
+        engineCurrentTime: snapshot.currentTime,
+        transportCurrentTimeBefore: transportBefore,
+        transportCurrentTimeAfter: transportAfter,
+        pendingSeekSeconds: this.pendingSeekSeconds,
+        reconciledCurrentTime: reconciled.transport.currentTime,
+      });
+    }
+
+    mscReconcileTrace("onEngineSnapshot", "EXIT", {
+      engineCurrentTime: snapshot.currentTime,
+      transportCurrentTimeBefore: transportBefore,
+      transportCurrentTimeAfter: transportAfter,
+      pendingSeekSeconds: this.pendingSeekSeconds,
+      clearPendingSeek: reconciled.transport.clearPendingSeek,
+    });
+
+    syncAuditRecord({
+      ts: Date.now(),
+      action: "msc-reconcile",
+      layer: "msc",
+      currentTime: this.transport.currentTime,
+      duration: this.transport.duration,
+      isPlaying: this.transport.isPlaying,
+      volume: this.transport.volume,
+      muted: this.transport.muted,
+      isLoading: this.transport.isBuffering || this.transport.isInitialLoading,
+      currentTrack: this.transport.activeTrack?.refId ?? null,
+      extra: {
+        pendingSeekSeconds: this.pendingSeekSeconds,
+        uiIsSeeking: this.uiSession.getState().isSeeking,
+        providerCurrentTime: snapshot.currentTime,
+      },
+    });
+    this.pushLegacyMirror();
+    this.emit();
+    if (this.pendingAudioVolumeApply) {
+      if (this.applyVolumeToEngine()) {
+        this.pendingAudioVolumeApply = false;
+      }
+    } else if (trackChanged) {
+      this.applyVolumeToEngine();
+    }
+  }
+
   private recordPlay(type: LibraryItemType, refId: string): void {
     getPlaybackRecordFn()(type, refId);
   }
+
+  // ── Playback execution commands ─────────────────────────────────────────────
 
   play(track: PlaybackItem, options?: PlayOptions): void {
     track = hydratePlaybackItem(track);
@@ -457,6 +706,22 @@ class MediaSessionController {
     }
 
     playbackDebugLog("SESSION", "play()", { refId: track.refId, type: track.type });
+    const now = Date.now();
+    const duplicatePlay =
+      this.lastPlayTraceRef === track.refId && now - this.lastPlayTraceAt < 500;
+    this.lastPlayTraceRef = track.refId;
+    this.lastPlayTraceAt = now;
+    queuePipelineTrace({
+      fn: "MediaSessionController.play",
+      phase: "enter",
+      targetActiveTrack: track.refId,
+      currentActiveTrack: this.transport.activeTrack?.refId ?? null,
+      currentQueueIndex: this.queueSession.getState().queueIndex,
+      targetQueueIndex: options?.browse?.queueIndex ?? options?.queueIndex ?? null,
+      queueLength: options?.browse?.queue?.length ?? options?.queue?.length ?? null,
+      duplicatePlay,
+      pendingPlay: false,
+    });
     this.recordPlay(track.type, track.refId);
 
     const session = resolveBrowseSession(track, options);
@@ -472,53 +737,55 @@ class MediaSessionController {
         issue,
       });
       this.transportIntent = "paused";
-      this.state = {
-        ...this.state,
+      this.uiSession.clearHoverPreview();
+      this.queueSession.setQueue(queue, queueIndex);
+      this.transport = {
+        ...this.transport,
         activeTrack: track,
-        queue,
-        queueIndex,
         error: issue,
         isPlaying: false,
         isBuffering: false,
         isInitialLoading: false,
-        hoverPreviewTime: null,
       };
       this.pushLegacyMirror({ detailsOpen: true });
       this.emit();
       return;
     }
     const explicitIndex = options?.browse?.queueIndex ?? options?.queueIndex;
-    const queueNavigation =
-      explicitIndex !== undefined && explicitIndex !== this.state.queueIndex;
+    const queueNavigation = isExplicitQueueNavigation(
+      explicitIndex,
+      this.queueSession.getState().queueIndex,
+    );
 
     const engineSnap = globalPlayerEngine.getSnapshot();
     const sameRef =
       !queueNavigation &&
-      (isSamePlaybackItem(this.state.activeTrack, track) ||
+      (isSamePlaybackItem(this.transport.activeTrack, track) ||
         isSamePlaybackItem(engineSnap.currentTrack, track));
     const loadInFlight =
       sameRef &&
-      ((this.state.isBuffering || this.state.isInitialLoading) ||
+      ((this.transport.isBuffering || this.transport.isInitialLoading) ||
         (isSamePlaybackItem(engineSnap.currentTrack, track) && engineSnap.isLoading));
 
-    if (sameRef && this.state.isPlaying && !this.state.error) {
+    if (sameRef && this.transport.isPlaying && !this.transport.error) {
       playbackDebugWarn("SESSION", "play() no-op — already playing", { refId: track.refId });
-      this.state = { ...this.state, queue, queueIndex };
+      this.queueSession.setQueue(queue, queueIndex);
       this.pushLegacyMirror({ detailsOpen: true });
       return;
     }
 
-    if (sameRef && loadInFlight && !this.state.error) {
+    if (sameRef && loadInFlight && !this.transport.error) {
       playbackDebugWarn("SESSION", "play() no-op — load in flight", { refId: track.refId });
-      this.state = { ...this.state, queue, queueIndex };
+      this.queueSession.setQueue(queue, queueIndex);
       this.pushLegacyMirror({ detailsOpen: true });
       return;
     }
 
-    if (sameRef && !this.state.isPlaying && !this.state.error) {
+    if (sameRef && !this.transport.isPlaying && !this.transport.error) {
       playbackDebugLog("SESSION", "play() resume same item", track.refId);
       this.transportIntent = "playing";
-      this.state = { ...this.state, queue, queueIndex, isPlaying: true };
+      this.queueSession.setQueue(queue, queueIndex);
+      this.transport = { ...this.transport, isPlaying: true };
       this.pushLegacyMirror({ detailsOpen: true });
       this.emit();
       globalPlayerEngine.resume();
@@ -527,55 +794,103 @@ class MediaSessionController {
 
     playbackDebugLog("QUEUE", "play() session", { refId: track.refId, queueIndex, queueLength: queue.length });
 
-    const trackChanged = !isSamePlaybackItem(this.state.activeTrack, track);
+    const trackChanged = !isSamePlaybackItem(this.transport.activeTrack, track);
     this.transportIntent = "playing";
     if (trackChanged) {
-      this.seekAnchorTime = 0;
-      this.playbackFloorTime = 0;
-      this.stableDuration = 0;
-      this.seekLockUntil = 0;
-      this.lastReconcileAtMs = 0;
-      this.lastProviderPlaying = null;
-      this.lastProviderPlayingFlipMs = 0;
+      this.clearSeekState();
     }
-    this.state = {
-      ...this.state,
+    this.uiSession.clearHoverPreview();
+    this.queueSession.setQueue(queue, queueIndex);
+    queuePipelineTrace({
+      fn: "MediaSessionQueueSession.setQueue",
+      phase: "via_play",
+      currentQueueIndex: queueIndex,
+      targetQueueIndex: queueIndex,
+      queueLength: queue.length,
+      targetActiveTrack: track.refId,
+    });
+    this.transport = {
+      ...this.transport,
       activeTrack: track,
-      queue,
-      queueIndex,
       error: null,
-      hoverPreviewTime: null,
       isBuffering: true,
       isPlaying: true,
       isInitialLoading: trackChanged,
-      currentTime: trackChanged ? 0 : this.state.currentTime,
-      duration: trackChanged ? 0 : this.state.duration,
+      currentTime: trackChanged ? 0 : this.transport.currentTime,
+      duration: trackChanged ? 0 : this.transport.duration,
     };
     this.pushLegacyMirror({ detailsOpen: true });
     this.emit();
+    if (source.kind === "preview") {
+      this.pendingAudioVolumeApply = true;
+    }
     this.applyVolumeToEngine();
     globalPlayerEngine.play(track);
+    const resumeAt = options?.resumePosition;
+    if (typeof resumeAt === "number" && resumeAt > 0) {
+      this.commitSeek(resumeAt);
+    }
   }
 
   pause(): void {
-    guard("pause", this.state.activeTrack);
+    guard("pause", this.transport.activeTrack);
     playbackDebugLog("SESSION", "pause()");
+    const engine = globalPlayerEngine.getSnapshot();
+    playPausePipelineTrace({
+      fn: "MediaSessionController.pause",
+      phase: "ENTER",
+      event: "pause",
+      duplicateCommand: isDuplicateCommand("msc-pause"),
+      mscIsPlaying: this.transport.isPlaying,
+      engineIsPlaying: engine.isPlaying,
+      transportIntent: this.transportIntent,
+      activeTrack: this.transport.activeTrack?.refId ?? null,
+    });
     this.transportIntent = "paused";
-    this.patch({ isPlaying: false }, true);
+    this.patchTransport({ isPlaying: false }, true);
     globalPlayerEngine.pause();
+    playPausePipelineTrace({
+      fn: "MediaSessionController.pause",
+      phase: "EXIT",
+      event: "pause",
+      mscIsPlaying: this.transport.isPlaying,
+      engineIsPlaying: globalPlayerEngine.getSnapshot().isPlaying,
+      transportIntent: this.transportIntent,
+      activeTrack: this.transport.activeTrack?.refId ?? null,
+    });
   }
 
   resume(): void {
-    guard("resume", this.state.activeTrack);
+    guard("resume", this.transport.activeTrack);
     playbackDebugLog("SESSION", "resume()");
+    const engine = globalPlayerEngine.getSnapshot();
+    playPausePipelineTrace({
+      fn: "MediaSessionController.resume",
+      phase: "ENTER",
+      event: "resume",
+      duplicateCommand: isDuplicateCommand("msc-resume"),
+      mscIsPlaying: this.transport.isPlaying,
+      engineIsPlaying: engine.isPlaying,
+      transportIntent: this.transportIntent,
+      activeTrack: this.transport.activeTrack?.refId ?? null,
+    });
     this.transportIntent = "playing";
-    this.patch({ isPlaying: true }, true);
+    this.patchTransport({ isPlaying: true }, true);
     globalPlayerEngine.resume();
+    playPausePipelineTrace({
+      fn: "MediaSessionController.resume",
+      phase: "EXIT",
+      event: "resume",
+      mscIsPlaying: this.transport.isPlaying,
+      engineIsPlaying: globalPlayerEngine.getSnapshot().isPlaying,
+      transportIntent: this.transportIntent,
+      activeTrack: this.transport.activeTrack?.refId ?? null,
+    });
   }
 
   togglePlayPause(): void {
-    guard("toggle", this.state.activeTrack);
-    if (!this.state.activeTrack) return;
+    guard("toggle", this.transport.activeTrack);
+    if (!this.transport.activeTrack) return;
     if (this.transportIntent === "playing") this.pause();
     else this.resume();
   }
@@ -585,179 +900,260 @@ class MediaSessionController {
   }
 
   stop(): void {
-    guard("stop", this.state.activeTrack);
+    guard("stop", this.transport.activeTrack);
     playbackDebugLog("SESSION", "stop()");
     globalPlayerEngine.stop();
     this.transportIntent = "paused";
-    this.state = { ...EMPTY, volume: this.state.volume, muted: this.state.muted };
-    this.pendingSeekSeconds = null;
-    this.pendingSeekDeadline = 0;
-    this.wasPlayingAtSeek = false;
-    this.seekAnchorTime = 0;
-    this.playbackFloorTime = 0;
-    this.stableDuration = 0;
-    this.seekLockUntil = 0;
-    this.lastReconcileAtMs = 0;
-    this.lastProviderPlaying = null;
-    this.lastProviderPlayingFlipMs = 0;
+    this.transport = { ...EMPTY_TRANSPORT, volume: this.transport.volume, muted: this.transport.muted };
+    this.queueSession.reset();
+    this.uiSession.reset();
+    this.clearSeekState();
     this.pushLegacyMirror({ detailsOpen: false });
-    clearPersistedPlayback();
+    this.persistence.clearOnStop();
     this.emit();
   }
 
-  beginSeek(seconds: number): void {
-    const target =
-      this.state.duration > 0
-        ? clampPlaybackPosition(seconds, this.state.duration)
-        : Math.max(0, seconds);
-    this.patch({ isSeeking: true, seekPreviewTime: target, hoverPreviewTime: null });
-  }
-
-  updateSeek(seconds: number): void {
-    if (!this.state.isSeeking) return;
-    const target =
-      this.state.duration > 0
-        ? clampPlaybackPosition(seconds, this.state.duration)
-        : Math.max(0, seconds);
-    this.patch({ seekPreviewTime: target });
-  }
-
-  setHoverPreview(seconds: number): void {
-    if (this.state.isSeeking || this.state.duration <= 0) return;
-    const target = clampPlaybackPosition(seconds, this.state.duration);
-    if (this.state.hoverPreviewTime === target) return;
-    this.patch({ hoverPreviewTime: target });
-  }
-
-  clearHoverPreview(): void {
-    if (this.state.hoverPreviewTime === null) return;
-    this.patch({ hoverPreviewTime: null });
-  }
-
   commitSeek(seconds: number): void {
-    guard("seek", this.state.activeTrack);
-    const target =
-      this.state.duration > 0
-        ? clampPlaybackPosition(seconds, this.state.duration)
-        : Math.max(0, seconds);
-    if (
+    seekPipelineTrace("MediaSessionController.commitSeek", "ENTER", {
+      seconds,
+      activeTrack: this.transport.activeTrack?.refId ?? null,
+      transportCurrentTime: this.transport.currentTime,
+      transportDuration: this.transport.duration,
+      pendingSeekSeconds: this.pendingSeekSeconds,
+      uiIsSeeking: this.uiSession.getState().isSeeking,
+      uiSeekPreview: this.uiSession.getState().seekPreviewTime,
+    });
+    guard("seek", this.transport.activeTrack);
+    const target = clampSeekTarget(seconds, this.transport.duration);
+    const ui = this.uiSession.getState();
+    const nearCurrent =
       this.pendingSeekSeconds === null &&
-      !this.state.isSeeking &&
-      Math.abs(this.state.currentTime - target) < 0.05
-    ) {
+      !ui.isSeeking &&
+      Math.abs(this.transport.currentTime - target) < 0.05;
+    seekPipelineTrace("MediaSessionController.commitSeek", "GUARD", {
+      condition: "nearCurrent skip",
+      pendingSeekSeconds: this.pendingSeekSeconds,
+      uiIsSeeking: ui.isSeeking,
+      transportCurrentTime: this.transport.currentTime,
+      target,
+      delta: Math.abs(this.transport.currentTime - target),
+      threshold: 0.05,
+      decision: nearCurrent ? "EARLY_RETURN" : "PASS",
+    });
+    if (nearCurrent) {
+      seekPipelineTrace("MediaSessionController.commitSeek", "EARLY_RETURN", {
+        reason: "pendingSeekSeconds===null && !ui.isSeeking && abs(currentTime-target)<0.05",
+        target,
+        transportCurrentTime: this.transport.currentTime,
+      });
       return;
     }
     this.pendingSeekSeconds = target;
+    this.pendingSeekOriginSeconds = this.transport.currentTime;
     this.pendingSeekDeadline = Date.now() + 3000;
-    this.wasPlayingAtSeek = this.transportIntent === "playing";
     this.seekLockUntil = Date.now() + SEEK_LOCK_MS;
-    this.seekAnchorTime = target;
-    this.playbackFloorTime = target;
     playbackDebugLog("SESSION", "commitSeek()", { seconds: target });
-    this.patch({
-      isSeeking: false,
-      seekPreviewTime: null,
-      hoverPreviewTime: null,
+    seekPipelineTrace("MediaSessionController.commitSeek", "INVOKE", {
+      next: "uiSession.clearOnSeekCommit",
+      target,
+      pendingSeekSeconds: this.pendingSeekSeconds,
+    });
+    this.uiSession.clearOnSeekCommit();
+    seekPipelineTrace("MediaSessionController.commitSeek", "INVOKE", {
+      next: "patchTransport",
       currentTime: target,
     });
+    this.patchTransport({ currentTime: target });
     this.pushLegacyMirror();
+    seekPipelineTrace("MediaSessionController.commitSeek", "INVOKE", {
+      next: "globalPlayerEngine.seek",
+      target,
+    });
     globalPlayerEngine.seek(target);
+    seekPipelineTrace("MediaSessionController.commitSeek", "EXIT", {
+      target,
+      pendingSeekSeconds: this.pendingSeekSeconds,
+    });
   }
 
   seek(seconds: number): void {
+    seekPipelineTrace("MediaSessionController.seek", "ENTER", { seconds });
+    seekPipelineTrace("MediaSessionController.seek", "INVOKE", { next: "commitSeek", seconds });
     this.commitSeek(seconds);
+    seekPipelineTrace("MediaSessionController.seek", "EXIT", { seconds });
   }
 
   skipForward(seconds = 10): void {
     const max =
-      this.state.duration > 0 ? this.state.duration : this.state.currentTime + seconds;
-    this.commitSeek(Math.min(this.state.currentTime + seconds, max));
+      this.transport.duration > 0 ? this.transport.duration : this.transport.currentTime + seconds;
+    this.commitSeek(Math.min(this.transport.currentTime + seconds, max));
   }
 
   skipBackward(seconds = 10): void {
-    this.commitSeek(Math.max(0, this.state.currentTime - seconds));
+    this.commitSeek(Math.max(0, this.transport.currentTime - seconds));
   }
 
   next(): void {
-    guard("next", this.state.activeTrack);
-    if (!this.state.activeTrack) return;
-    const nextIndex = this.state.queueIndex + 1;
-    if (nextIndex >= this.state.queue.length) return;
-    const nextItem = this.state.queue[nextIndex];
-    if (!nextItem) return;
-    this.play(nextItem, { browse: { queue: this.state.queue, queueIndex: nextIndex } });
+    guard("next", this.transport.activeTrack);
+    if (!this.transport.activeTrack) return;
+    const { queue, queueIndex } = this.queueSession.getState();
+    const target = resolveNextQueueTarget(queue, queueIndex);
+    queuePipelineTrace({
+      fn: "MediaSessionController.next",
+      phase: "enter",
+      event: "next",
+      currentQueueIndex: queueIndex,
+      targetQueueIndex: target?.queueIndex ?? null,
+      queueLength: queue.length,
+      currentActiveTrack: this.transport.activeTrack?.refId ?? null,
+      targetActiveTrack: target?.item.refId ?? null,
+    });
+    if (!target) {
+      queuePipelineTrace({ fn: "MediaSessionController.next", phase: "early_return_end_of_queue" });
+      return;
+    }
+    this.play(target.item, { browse: { queue, queueIndex: target.queueIndex } });
   }
 
   prev(): void {
-    guard("prev", this.state.activeTrack);
-    if (!this.state.activeTrack) return;
-    if (this.state.currentTime > 3) {
+    guard("prev", this.transport.activeTrack);
+    if (!this.transport.activeTrack) return;
+    const currentTime = this.transport.currentTime;
+    if (currentTime > 3) {
+      queuePipelineTrace({
+        fn: "MediaSessionController.prev",
+        phase: "restart_current",
+        event: "prev",
+        currentTime,
+        note: "currentTime > 3 → commitSeek(0)",
+      });
       this.commitSeek(0);
       return;
     }
-    const prevIndex = this.state.queueIndex - 1;
-    if (prevIndex < 0) return;
-    const prevItem = this.state.queue[prevIndex];
-    if (!prevItem) return;
-    this.play(prevItem, { browse: { queue: this.state.queue, queueIndex: prevIndex } });
+    const { queue, queueIndex } = this.queueSession.getState();
+    const target = resolvePreviousQueueTarget(queue, queueIndex);
+    queuePipelineTrace({
+      fn: "MediaSessionController.prev",
+      phase: "enter",
+      event: "prev",
+      currentQueueIndex: queueIndex,
+      targetQueueIndex: target?.queueIndex ?? null,
+      queueLength: queue.length,
+      currentActiveTrack: this.transport.activeTrack?.refId ?? null,
+      targetActiveTrack: target?.item.refId ?? null,
+      currentTime,
+    });
+    if (!target) {
+      queuePipelineTrace({ fn: "MediaSessionController.prev", phase: "early_return_start_of_queue" });
+      return;
+    }
+    this.play(target.item, { browse: { queue, queueIndex: target.queueIndex } });
   }
 
   setVolume(volume: number): void {
-    guard("setVolume", this.state.activeTrack);
-    const track = this.state.activeTrack;
+    guard("setVolume", this.transport.activeTrack);
+    const track = this.transport.activeTrack;
     const kind = track ? resolvePlaybackSource(track).kind : null;
+    const prevVolume = this.transport.volume;
+    const prevMuted = this.transport.muted;
     const clamped = Math.max(0, Math.min(1, volume));
     const muted = clamped === 0;
+    volumePipelineTrace({
+      initiator: "MediaSessionController",
+      fn: "MediaSessionController.setVolume",
+      phase: "enter",
+      previousVolume: prevVolume,
+      newVolume: clamped,
+      previousMuted: prevMuted,
+      newMuted: muted,
+      muteChanged: prevMuted !== muted,
+      providerKind: kind,
+      note: kind === "preview" ? "will_forward_engine" : "msc_only_non_preview",
+    });
     if (clamped > 0) this.lastAudibleVolume = clamped;
     if (kind === "preview") {
       globalPlayerEngine.setVolume(clamped);
       globalPlayerEngine.setMuted(muted);
     }
-    this.patch({ volume: clamped, muted }, true);
+    this.patchTransport({ volume: clamped, muted }, true);
+    volumePipelineTrace({
+      initiator: "MediaSessionController",
+      fn: "MediaSessionController.setVolume",
+      phase: "exit",
+      newVolume: clamped,
+      newMuted: muted,
+      mscOverwrote: true,
+      storeVolume: clamped,
+      storeMuted: muted,
+    });
   }
 
   toggleMute(): void {
-    guard("toggleMute", this.state.activeTrack);
-    const track = this.state.activeTrack;
+    guard("toggleMute", this.transport.activeTrack);
+    const track = this.transport.activeTrack;
     const kind = track ? resolvePlaybackSource(track).kind : null;
+    volumePipelineTrace({
+      initiator: "MediaSessionController",
+      fn: "MediaSessionController.toggleMute",
+      phase: "enter",
+      previousVolume: this.transport.volume,
+      previousMuted: this.transport.muted,
+      providerKind: kind,
+      note: kind !== "preview" ? "early_return_non_preview" : undefined,
+    });
     if (kind !== "preview") return;
-    if (this.state.muted) {
+    if (this.transport.muted) {
       const restore =
-        this.state.volume > 0 ? this.state.volume : this.lastAudibleVolume;
+        this.transport.volume > 0 ? this.transport.volume : this.lastAudibleVolume;
       this.setVolume(restore);
       return;
     }
-    if (this.state.volume > 0) this.lastAudibleVolume = this.state.volume;
+    if (this.transport.volume > 0) this.lastAudibleVolume = this.transport.volume;
     globalPlayerEngine.setMuted(true);
-    this.patch({ muted: true, volume: this.state.volume }, true);
+    this.patchTransport({ muted: true, volume: this.transport.volume }, true);
+    volumePipelineTrace({
+      initiator: "MediaSessionController",
+      fn: "MediaSessionController.toggleMute",
+      phase: "exit_muted",
+      previousMuted: false,
+      newMuted: true,
+      newVolume: this.transport.volume,
+      muteChanged: true,
+      mscOverwrote: true,
+    });
   }
 
   retry(): void {
-    const item = this.state.activeTrack;
+    const item = this.transport.activeTrack;
     if (!item) return;
-    this.play(item, { browse: { queue: this.state.queue, queueIndex: this.state.queueIndex } });
+    const { queue, queueIndex } = this.queueSession.getState();
+    this.play(item, { browse: { queue, queueIndex } });
   }
 
-  isActive(type: PlaybackItem["type"], refId: string): boolean {
-    const track = this.state.activeTrack;
-    return !!track && track.type === type && track.refId === refId;
-  }
-
-  /** Preview track ended — advance queue. */
   advanceQueueOnEnd(): void {
-    const nextIndex = this.state.queueIndex + 1;
-    if (nextIndex >= this.state.queue.length) {
+    const { queue, queueIndex } = this.queueSession.getState();
+    const result = resolveAdvanceOnEnd(queue, queueIndex);
+    queuePipelineTrace({
+      fn: "MediaSessionController.advanceQueueOnEnd",
+      phase: "enter",
+      event: "auto_advance",
+      currentQueueIndex: queueIndex,
+      targetQueueIndex: result.kind === "advance" ? result.target.queueIndex : null,
+      queueLength: queue.length,
+      currentActiveTrack: this.transport.activeTrack?.refId ?? null,
+      targetActiveTrack: result.kind === "advance" ? result.target.item.refId : null,
+    });
+    if (result.kind === "end") {
+      queuePipelineTrace({ fn: "MediaSessionController.advanceQueueOnEnd", phase: "end_of_queue" });
       this.transportIntent = "paused";
-      this.patch({ isPlaying: false, isBuffering: false, isInitialLoading: false }, true);
+      this.patchTransport({ isPlaying: false, isBuffering: false, isInitialLoading: false }, true);
       return;
     }
-    const nextItem = this.state.queue[nextIndex];
-    if (!nextItem) return;
-    playbackDebugLog("QUEUE", "preview ended — advancing", { to: nextItem.refId, nextIndex });
-    this.play(nextItem, { browse: { queue: this.state.queue, queueIndex: nextIndex } });
+    const { target } = result;
+    playbackDebugLog("QUEUE", "preview ended — advancing", { to: target.item.refId, nextIndex: target.queueIndex });
+    this.play(target.item, { browse: { queue, queueIndex: target.queueIndex } });
   }
 
-  /** Resume a play request queued before engine mount. */
   flushPendingPlay(): void {
     if (!this.pendingPlayItem) return;
     const item = this.pendingPlayItem;
@@ -765,57 +1161,126 @@ class MediaSessionController {
     this.play(item);
   }
 
-  /** Bootstrap paused session from persistence without starting transport. */
+  // ── UI presentation (delegated) ─────────────────────────────────────────────
+
+  beginSeek(seconds: number): void {
+    seekPipelineTrace("MediaSessionController.beginSeek", "ENTER", {
+      seconds,
+      duration: this.transport.duration,
+    });
+    this.uiSession.beginSeek(seconds, this.transport.duration);
+    this.emit();
+    seekPipelineTrace("MediaSessionController.beginSeek", "EXIT", {
+      ui: this.uiSession.getState(),
+    });
+  }
+
+  updateSeek(seconds: number): void {
+    seekPipelineTrace("MediaSessionController.updateSeek", "ENTER", {
+      seconds,
+      duration: this.transport.duration,
+      uiIsSeeking: this.uiSession.getState().isSeeking,
+    });
+    const updated = this.uiSession.updateSeek(seconds, this.transport.duration);
+    if (!updated) {
+      seekPipelineTrace("MediaSessionController.updateSeek", "EARLY_RETURN", {
+        reason: "uiSession.updateSeek returned null",
+        uiIsSeeking: this.uiSession.getState().isSeeking,
+      });
+      return;
+    }
+    this.emit();
+    seekPipelineTrace("MediaSessionController.updateSeek", "EXIT", { ui: updated });
+  }
+
+  setHoverPreview(seconds: number): void {
+    if (!this.uiSession.setHoverPreview(seconds, this.transport.duration)) return;
+    this.emit();
+  }
+
+  clearHoverPreview(): void {
+    if (!this.uiSession.clearHoverPreview()) return;
+    this.emit();
+  }
+
+  // ── Persistence bootstrap (session only) ────────────────────────────────────
+
   hydratePausedSession(
     track: PlaybackItem,
     position: number,
     queue: PlaybackItem[],
     queueIndex: number,
   ): void {
-    track = hydratePlaybackItem(track);
-    queue = hydratePlaybackQueue(queue);
+    hydrationTraceMarkStart("MediaSessionController.hydrate");
+    hydrationPipelineTrace({
+      fn: "MediaSessionController.hydrate",
+      phase: "hydratePausedSession_ENTER",
+      persisted: {
+        activeTrack: track.refId,
+        queueLength: queue.length,
+        queueIndex,
+        currentTime: position,
+        isPlaying: false,
+      },
+    });
+    const hydrated = this.persistence.hydratePausedSession(track, position, queue, queueIndex);
     this.transportIntent = "paused";
-    this.state = {
-      ...this.state,
-      activeTrack: track,
-      queue,
-      queueIndex,
-      currentTime: position,
+    this.queueSession.setQueue(hydrated.queue, hydrated.queueIndex);
+    this.transport = {
+      ...this.transport,
+      activeTrack: hydrated.track,
+      currentTime: hydrated.position,
       isPlaying: false,
       isBuffering: false,
       error: null,
     };
-    this.seekAnchorTime = position;
-    this.playbackFloorTime = position;
     this.pushLegacyMirror({ hydrated: true });
     this.emit();
+    hydrationPipelineTrace({
+      fn: "MediaSessionController.hydrate",
+      phase: "hydratePausedSession_EXIT",
+      msc: {
+        activeTrack: hydrated.track.refId,
+        queueLength: hydrated.queue.length,
+        queueIndex: hydrated.queueIndex,
+        currentTime: hydrated.position,
+        isPlaying: false,
+      },
+    });
+    hydrationTraceMarkFinish("MediaSessionController.hydrate");
   }
 
-  /** Bootstrap queue metadata from persistence. */
   hydrateQueue(queue: PlaybackItem[], queueIndex: number): void {
-    this.state = { ...this.state, queue, queueIndex };
+    hydrationPipelineTrace({
+      fn: "MediaSessionController.hydrate",
+      phase: "hydrateQueue_ENTER",
+      extra: { queueLength: queue.length, queueIndex },
+    });
+    const hydrated = this.persistence.hydrateQueue(queue, queueIndex);
+    this.queueSession.setQueue(hydrated.queue, hydrated.queueIndex);
     this.pushLegacyMirror({ hydrated: true });
     this.emit();
+    hydrationPipelineTrace({
+      fn: "MediaSessionController.hydrate",
+      phase: "hydrateQueue_EXIT",
+      msc: {
+        queueLength: hydrated.queue.length,
+        queueIndex: hydrated.queueIndex,
+      },
+    });
   }
 
   __resetForTests(): void {
-    this.state = { ...EMPTY };
-    this.pendingSeekSeconds = null;
-    this.pendingSeekDeadline = 0;
-    this.wasPlayingAtSeek = false;
-    this.hadTrackBefore = false;
-    this.lastAudibleVolume = 0.8;
+    this.transport = { ...EMPTY_TRANSPORT };
+    this.queueSession.reset();
+    this.uiSession.reset();
+    this.listeners.clear();
+    this.engineAttached = false;
     this.pendingPlayItem = null;
     this.transportIntent = "paused";
-    this.seekAnchorTime = 0;
-    this.playbackFloorTime = 0;
-    this.stableDuration = 0;
-    this.seekLockUntil = 0;
-    this.lastReconcileAtMs = 0;
-    this.lastProviderPlaying = null;
-    this.lastProviderPlayingFlipMs = 0;
-    this.engineAttached = false;
-    this.listeners.clear();
+    this.hadTrackBefore = false;
+    this.lastAudibleVolume = 0.8;
+    this.clearSeekState();
   }
 }
 

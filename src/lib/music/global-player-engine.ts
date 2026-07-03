@@ -6,13 +6,26 @@ import { EMPTY_PROVIDER_STATE } from "@/lib/music/providers/playback-provider";
 import { ProviderRouter } from "@/lib/music/providers/provider-router";
 import { mediaEngineEvents } from "@/lib/music/media-engine-events";
 import { logSeekExecuted } from "@/lib/music/media-binding-debug";
-import { waitForPlaybackMediaAnchor } from "@/lib/music/playback-media-anchor-registry";
+import {
+  getProviderMountNode,
+  isPlaybackMediaAnchorReady,
+  waitForPlaybackMediaAnchor,
+} from "@/lib/music/playback-media-anchor-registry";
 import {
   playbackDebugLog,
   playbackDebugWarn,
   playbackDebugError,
   probePlaybackDom,
 } from "@/lib/music/playback-debug";
+import { syncAuditRecord } from "@/lib/music/playback-sync-audit";
+import { seekPipelineTrace } from "@/lib/music/seek-pipeline-trace";
+import { volumePipelineTrace } from "@/lib/music/volume-pipeline-trace";
+import { queuePipelineTrace } from "@/lib/music/queue-pipeline-trace";
+import { playPausePipelineTrace, isDuplicateCommand } from "@/lib/music/play-pause-pipeline-trace";
+import {
+  hydrationPipelineTrace,
+  hydrationTraceMarkEngineInit,
+} from "@/lib/music/hydration-pipeline-trace";
 
 const ROOT_ID = "vitalforge-playback-root";
 const EMBED_WIDTH = 352;
@@ -95,6 +108,8 @@ class GlobalPlayerEngine {
 
   /** Prior provider report — event edge detection only, not transport authority. */
   private lastProviderState: ProviderState | null = null;
+  /** Dedupes onEnded per track — Spotify stays isPlaying=true at duration. */
+  private endedEmittedForRef: string | null = null;
 
   setStateListener(listener: StateListener | null): void {
     this.listener = listener;
@@ -112,7 +127,20 @@ class GlobalPlayerEngine {
   }
 
   private publish(): void {
-    this.listener?.(this.getSnapshot());
+    const snap = this.getSnapshot();
+    syncAuditRecord({
+      ts: Date.now(),
+      action: "engine-publish",
+      layer: "engine",
+      currentTime: snap.currentTime,
+      duration: snap.duration,
+      isPlaying: snap.isPlaying,
+      volume: null,
+      muted: null,
+      isLoading: snap.isLoading,
+      currentTrack: snap.currentTrack?.refId ?? null,
+    });
+    this.listener?.(snap);
   }
 
   private publishCommandFailure(issue: string, track: PlaybackItem): void {
@@ -152,15 +180,40 @@ class GlobalPlayerEngine {
       });
     }
 
-    if (
-      mode === "audio" &&
-      wasPlaying &&
-      !providerState.isPlaying &&
-      !providerState.isLoading &&
-      !providerState.error &&
-      providerState.currentTime === 0 &&
-      providerState.duration > 0
-    ) {
+    const duration = providerState.duration;
+    const atEnd = duration > 0 && providerState.currentTime >= duration - 0.25;
+    const ref = this.currentTrack?.refId ?? null;
+    let emitEnded = false;
+
+    if ((mode === "audio" || mode === "spotify") && atEnd && !providerState.error && ref) {
+      if (this.endedEmittedForRef !== ref) {
+        if (mode === "spotify") {
+          const crossedEnd = prevTime < duration - 0.25;
+          emitEnded =
+            crossedEnd ||
+            (wasPlaying && !providerState.isPlaying && !providerState.isLoading);
+        } else {
+          emitEnded =
+            wasPlaying && !providerState.isPlaying && !providerState.isLoading;
+        }
+      }
+    }
+
+    if (emitEnded) {
+      this.endedEmittedForRef = ref;
+      queuePipelineTrace({
+        fn: "GlobalPlayerEngine.applyProviderState",
+        phase: "onEnded",
+        event: "track_end",
+        currentActiveTrack: ref,
+        providerKind: activeKind,
+        extra: {
+          currentTime: providerState.currentTime,
+          duration,
+          wasPlaying,
+          isPlaying: providerState.isPlaying,
+        },
+      });
       mediaEngineEvents.emit({ type: "onEnded", track: this.currentTrack });
     }
 
@@ -190,6 +243,10 @@ class GlobalPlayerEngine {
 
     this.router = new ProviderRouter();
     this.routerInitialized = true;
+    hydrationPipelineTrace({
+      fn: "GlobalPlayerEngine.initialize",
+      phase: "provider_router_created",
+    });
     this.router.setStateListener((providerState) => {
       this.applyProviderState(providerState);
     });
@@ -202,9 +259,20 @@ class GlobalPlayerEngine {
 
     if (this.mounted && this.container?.isConnected) {
       playbackDebugLog("MOUNT", "MediaEngine already mounted — skipping remount");
+      hydrationPipelineTrace({
+        fn: "GlobalPlayerEngine.initialize",
+        phase: "mount_skipped",
+        engine: this.getSnapshot(),
+      });
       applyEmbedContainerStyles(this.container);
       return;
     }
+
+    hydrationTraceMarkEngineInit("GlobalPlayerEngine.mount");
+    hydrationPipelineTrace({
+      fn: "GlobalPlayerEngine.initialize",
+      phase: "mount_ENTER",
+    });
 
     let container = document.getElementById(ROOT_ID) as HTMLDivElement | null;
     if (container && !container.isConnected) {
@@ -226,6 +294,14 @@ class GlobalPlayerEngine {
     this.mounted = true;
     this.ensureRouter();
 
+    hydrationPipelineTrace({
+      fn: "GlobalPlayerEngine.initialize",
+      phase: "mount_EXIT",
+      engine: {
+        activeTrack: this.currentTrack?.refId ?? null,
+        engineMode: this.getSnapshot().mode,
+      },
+    });
     playbackDebugLog("MOUNT", "MediaEngine mount complete", probePlaybackDom());
   }
 
@@ -251,39 +327,81 @@ class GlobalPlayerEngine {
     this.currentTrack = item;
     this.mode = modeFromResolvedKind(resolved.kind);
 
+    queuePipelineTrace({
+      fn: "GlobalPlayerEngine.play",
+      phase: "invoke",
+      targetActiveTrack: item.refId,
+      engineActiveTrack: item.refId,
+      trackChanged,
+      providerKind: resolved.kind,
+    });
+
     if (trackChanged) {
+      this.endedEmittedForRef = null;
       mediaEngineEvents.emit({ type: "onTrackChange", track: item });
+    }
+
+    const handlePlayResult = (result: { issue: string | null } | undefined) => {
+      if (!result || this.isStale(generation)) return;
+      const { issue } = result;
+      if (issue) {
+        this.mode = "idle";
+        this.lastProviderState = null;
+        this.publishCommandFailure(issue, item);
+      }
+    };
+
+    const handlePlayError = (err: unknown) => {
+      if (this.isStale(generation)) return;
+      const issue = err instanceof Error ? err.message : String(err);
+      this.mode = "idle";
+      this.lastProviderState = null;
+      this.publishCommandFailure(issue, item);
+    };
+
+    const invokeRouterPlay = (): Promise<{ issue: string | null } | undefined> => {
+      if (this.isStale(generation)) return Promise.resolve({ issue: null });
+      const activeRouter = this.ensureRouter();
+      if (!activeRouter) return Promise.resolve({ issue: "Media engine not mounted" });
+      return activeRouter.play(item, generation);
+    };
+
+    if (isPlaybackMediaAnchorReady() && getProviderMountNode()) {
+      void invokeRouterPlay().then(handlePlayResult).catch(handlePlayError);
+      return;
     }
 
     void waitForPlaybackMediaAnchor()
       .then(() => {
         if (this.isStale(generation)) return { issue: null as string | null };
         this.mount();
-        const activeRouter = this.ensureRouter();
-        if (!activeRouter) return { issue: "Media engine not mounted" };
-        return activeRouter.play(item, generation);
+        return invokeRouterPlay();
       })
-      .then((result) => {
-        if (!result || this.isStale(generation)) return;
-        const { issue } = result;
-        if (issue) {
-          this.mode = "idle";
-          this.lastProviderState = null;
-          this.publishCommandFailure(issue, item);
-        }
-      })
-      .catch((err) => {
-        if (this.isStale(generation)) return;
-        const issue = err instanceof Error ? err.message : String(err);
-        this.mode = "idle";
-        this.lastProviderState = null;
-        this.publishCommandFailure(issue, item);
-      });
+      .then(handlePlayResult)
+      .catch(handlePlayError);
   }
 
   pause(): void {
     playbackDebugLog("ENGINE", "pause requested", { mode: this.mode, refId: this.currentTrack?.refId });
+    const providerPlaying = this.router?.getState().isPlaying ?? null;
+    playPausePipelineTrace({
+      fn: "GlobalPlayerEngine.pause",
+      phase: "ENTER",
+      event: "pause",
+      duplicateCommand: isDuplicateCommand("engine-pause"),
+      engineIsPlaying: providerPlaying,
+      providerIsPlaying: providerPlaying,
+      activeTrack: this.currentTrack?.refId ?? null,
+    });
     this.router?.pause();
+    playPausePipelineTrace({
+      fn: "GlobalPlayerEngine.pause",
+      phase: "EXIT",
+      event: "pause",
+      engineIsPlaying: this.getSnapshot().isPlaying,
+      providerIsPlaying: this.router?.getState().isPlaying ?? null,
+      activeTrack: this.currentTrack?.refId ?? null,
+    });
   }
 
   resume(): void {
@@ -291,12 +409,38 @@ class GlobalPlayerEngine {
       mode: this.mode,
       refId: this.currentTrack?.refId,
     });
+    const providerPlaying = this.router?.getState().isPlaying ?? null;
+    playPausePipelineTrace({
+      fn: "GlobalPlayerEngine.resume",
+      phase: "ENTER",
+      event: "resume",
+      duplicateCommand: isDuplicateCommand("engine-resume"),
+      engineIsPlaying: providerPlaying,
+      providerIsPlaying: providerPlaying,
+      activeTrack: this.currentTrack?.refId ?? null,
+    });
     if (!this.currentTrack) return;
     if (this.router?.getActiveKind()) {
       this.router.resume();
+      playPausePipelineTrace({
+        fn: "GlobalPlayerEngine.resume",
+        phase: "EXIT",
+        event: "resume",
+        engineIsPlaying: this.getSnapshot().isPlaying,
+        providerIsPlaying: this.router?.getState().isPlaying ?? null,
+        activeTrack: this.currentTrack?.refId ?? null,
+      });
       return;
     }
     this.play(this.currentTrack);
+    playPausePipelineTrace({
+      fn: "GlobalPlayerEngine.resume",
+      phase: "EXIT",
+      event: "resume",
+      note: "fell through to play()",
+      engineIsPlaying: this.getSnapshot().isPlaying,
+      activeTrack: this.currentTrack?.refId ?? null,
+    });
   }
 
   stop(): void {
@@ -306,23 +450,50 @@ class GlobalPlayerEngine {
     this.mode = "idle";
     this.currentTrack = null;
     this.lastProviderState = null;
+    this.endedEmittedForRef = null;
     mediaEngineEvents.emit({ type: "onTrackChange", track: null });
     this.publish();
   }
 
   seek(seconds: number): void {
     const clamped = Math.max(0, seconds);
+    seekPipelineTrace("GlobalPlayerEngine.seek", "ENTER", {
+      seconds: clamped,
+      mode: this.mode,
+      refId: this.currentTrack?.refId ?? null,
+      routerPresent: !!this.router,
+      activeKind: this.router?.getActiveKind() ?? null,
+    });
     playbackDebugLog("SEEK", "engine seek requested", { seconds: clamped, mode: this.mode });
     mediaEngineEvents.emit({ type: "onSeek", time: clamped });
     logSeekExecuted(clamped, this.router?.getActiveKind() ?? null);
+    seekPipelineTrace("GlobalPlayerEngine.seek", "INVOKE", {
+      next: "ProviderRouter.seek",
+      seconds: clamped,
+    });
     this.router?.seek(clamped);
+    seekPipelineTrace("GlobalPlayerEngine.seek", "EXIT", { seconds: clamped });
   }
 
   setVolume(volume: number): void {
+    volumePipelineTrace({
+      initiator: "GlobalPlayerEngine",
+      fn: "GlobalPlayerEngine.setVolume",
+      phase: "invoke",
+      newVolume: volume,
+      activeRouterKind: this.router?.getActiveKind() ?? null,
+    });
     this.router?.setVolume(volume);
   }
 
   setMuted(muted: boolean): void {
+    volumePipelineTrace({
+      initiator: "GlobalPlayerEngine",
+      fn: "GlobalPlayerEngine.setMuted",
+      phase: "invoke",
+      newMuted: muted,
+      activeRouterKind: this.router?.getActiveKind() ?? null,
+    });
     this.router?.setMuted(muted);
   }
 
