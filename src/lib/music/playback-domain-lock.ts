@@ -53,9 +53,12 @@ export function warnIfAudioTransportInVideoContext(action: string, item: Playbac
 export function assertAudioBarNotOnSetWatchPage(surface: string): void {
   if (!isDev() || typeof document === "undefined") return;
   const onSetWatch = !!document.querySelector("[data-set-watch-page]");
-  const audioBarVisible = !!document.querySelector("[data-audio-player]");
+  const bar = document.querySelector("[data-audio-player]");
+  const audioBarVisible = !!bar;
   if (onSetWatch && audioBarVisible) {
-    console.error(`${DOMAIN_LOCK_TAG} ${surface} — audio bar must not render on set watch page`);
+    throw new Error(
+      `${DOMAIN_LOCK_TAG} ${surface} — audio bar must not render on set watch page`,
+    );
   }
 }
 

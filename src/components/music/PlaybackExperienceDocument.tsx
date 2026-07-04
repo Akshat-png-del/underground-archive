@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { usePlaybackExperience } from "@/lib/music/use-playback-experience";
 import { playbackExperienceDatasetValue } from "@/lib/music/playback-experience";
 
@@ -11,7 +11,7 @@ import { playbackExperienceDatasetValue } from "@/lib/music/playback-experience"
 export function PlaybackExperienceDocument() {
   const experience = usePlaybackExperience();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const root = document.documentElement;
     const mode = playbackExperienceDatasetValue(experience);
 

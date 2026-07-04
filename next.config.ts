@@ -36,7 +36,8 @@ const nextConfig: NextConfig = {
   },
   poweredByHeader: false,
   compress: true,
-  turbopack: {},
+  // Dev uses `next dev --webpack` (see package.json). Turbopack can serve stale PostCSS
+  // output for append-only globals.css edits; webpack matches the production CSS pipeline.
 };
 
 export default withPWA(nextConfig);

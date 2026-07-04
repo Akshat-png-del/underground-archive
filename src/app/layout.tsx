@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { GrainOverlay } from "@/components/ui/ArchivePrimitives";
 import { AppProviders } from "@/components/providers/AppProviders";
 import { PlaybackRoot } from "@/components/music/PlaybackRoot";
+import { PlaybackUiInvariantGuard } from "@/components/music/PlaybackUiInvariantGuard";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { organizationSchema, websiteSchema } from "@/lib/seo/jsonld";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <PlaybackRoot />
+          <PlaybackUiInvariantGuard />
         </AppProviders>
       </body>
     </html>

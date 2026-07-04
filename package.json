@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "audit:archive": "npx tsx scripts/audit-archive.ts",
     "audit:images": "npx tsx scripts/audit-images.ts",
     "audit:track-artwork": "npx tsx scripts/audit-track-artwork.ts",

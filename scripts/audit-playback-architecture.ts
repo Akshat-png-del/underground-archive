@@ -135,9 +135,48 @@ function auditSingletonPlaybackRoot(): void {
   }
 }
 
+function auditPlaybackInvariantBootstrapOrder(): void {
+  const layoutPath = join(SRC, "app/layout.tsx");
+  const providersPath = join(SRC, "components/providers/Providers.tsx");
+  if (!statSync(layoutPath).isFile() || !statSync(providersPath).isFile()) return;
+
+  const layout = readFileSync(layoutPath, "utf8");
+  const providers = readFileSync(providersPath, "utf8");
+
+  if (providers.includes("PlaybackUiInvariantGuard")) {
+    violations.push({
+      file: "src/components/providers/Providers.tsx",
+      line: 0,
+      rule: "PlaybackUiInvariantGuard must not mount before PlaybackRoot bootstrap",
+      text: "move <PlaybackUiInvariantGuard /> to layout.tsx after <PlaybackRoot />",
+    });
+  }
+
+  const rootIdx = layout.indexOf("<PlaybackRoot");
+  const guardIdx = layout.indexOf("<PlaybackUiInvariantGuard");
+  if (guardIdx === -1) {
+    violations.push({
+      file: "src/app/layout.tsx",
+      line: 0,
+      rule: "PlaybackUiInvariantGuard required after PlaybackRoot bootstrap",
+      text: "missing <PlaybackUiInvariantGuard /> after <PlaybackRoot />",
+    });
+    return;
+  }
+  if (rootIdx === -1 || rootIdx > guardIdx) {
+    violations.push({
+      file: "src/app/layout.tsx",
+      line: 0,
+      rule: "PlaybackUiInvariantGuard must mount after PlaybackRoot",
+      text: "layout.tsx must list <PlaybackRoot /> before <PlaybackUiInvariantGuard />",
+    });
+  }
+}
+
 function main(): void {
   for (const file of walk(SRC)) auditFile(file);
   auditSingletonPlaybackRoot();
+  auditPlaybackInvariantBootstrapOrder();
 
   if (violations.length === 0) {
     console.log("✓ Playback Reliability Protocol audit passed.");

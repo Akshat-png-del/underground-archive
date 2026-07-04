@@ -8,6 +8,7 @@ import {
   useEffect,
   type MouseEvent,
 } from "react";
+import { usePathname } from "next/navigation";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import type { PlaybackItem } from "@/lib/music/playback";
 import { resolvePlaybackExperience } from "@/lib/music/playback-experience";
@@ -26,10 +27,15 @@ const COLLAPSED_BAR_HEIGHT = "1.25rem";
 
 export function AudioPlayerBar() {
   const shellRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
   const snapshot = useFinalPlaybackSnapshot();
   const current = snapshot.activeTrack;
   const experience = resolvePlaybackExperience(current);
-  const showBar = experience === "audio" && !!current;
+  const onSetWatchPage =
+    typeof pathname === "string" &&
+    pathname.startsWith("/sets/") &&
+    pathname.length > "/sets/".length;
+  const showBar = experience === "audio" && !!current && !onSetWatchPage;
   const [expanded, setExpanded] = useState(true);
 
   useLayoutEffect(() => {
