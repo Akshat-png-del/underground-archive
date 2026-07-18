@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useLibrary } from "@/context/LibraryContext";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { Button } from "@/components/ui/Button";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 
 export function LibraryPlaylists() {
   const { playlists } = useLibrary();
@@ -27,7 +27,7 @@ export function LibraryPlaylists() {
           {playlists.map((p) => (
             <Link key={p.id} href={`/playlists/${p.id}`} className="interactive-row flex gap-4 border border-border p-4">
               <div className="relative h-20 w-20 shrink-0">
-                <SafeImage src={p.coverImage} alt="" fill sizes="80px" />
+                <LibraryArtwork src={p.coverImage} alt="" fill sizes="80px" />
               </div>
               <div>
                 <p className="font-serif text-lg text-foreground">{p.title}</p>

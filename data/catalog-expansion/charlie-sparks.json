@@ -1,18 +1,68 @@
 {
   "slug": "charlie-sparks",
   "tracks": [
-    { "title": "Rude Boy Selecta", "spotifyTrackId": "3iRP8pAXAEcCaLLpKehyDv", "year": 2024, "duration": "5:35" },
-    { "title": "Welcome To London", "spotifyTrackId": "1HeIccPT3CKvbKnf0YilHx", "year": 2024, "duration": "5:00" },
-    { "title": "Jump Around", "spotifyTrackId": "2To0cWOoMe86SXYStBI5Pk", "year": 2024, "duration": "4:45" },
-    { "title": "Bankai", "spotifyTrackId": "3l3iU5DMfi89YkMbpMTwR7", "year": 2024, "duration": "5:10" },
-    { "title": "Power", "spotifyTrackId": "3pmVYUybrSXz79BBwL9RWW", "year": 2025, "duration": "4:30" },
-    { "title": "Love Is A Drug", "spotifyTrackId": "7C5S4bJtm48HJDL0bAjaYs", "year": 2025, "duration": "5:00" }
+    {
+      "title": "Rude Boy Selecta",
+      "spotifyTrackId": "3iRP8pAXAEcCaLLpKehyDv",
+      "year": 2024,
+      "duration": "5:35"
+    },
+    {
+      "title": "Welcome To London",
+      "spotifyTrackId": "1HeIccPT3CKvbKnf0YilHx",
+      "year": 2024,
+      "duration": ""
+    },
+    {
+      "title": "Jump Around",
+      "spotifyTrackId": "2To0cWOoMe86SXYStBI5Pk",
+      "year": 2024,
+      "duration": "4:45"
+    },
+    {
+      "title": "Bankai",
+      "spotifyTrackId": "3l3iU5DMfi89YkMbpMTwR7",
+      "year": 2024,
+      "duration": "5:10"
+    },
+    {
+      "title": "Power",
+      "spotifyTrackId": "3pmVYUybrSXz79BBwL9RWW",
+      "year": 2025,
+      "duration": "4:30"
+    },
+    {
+      "title": "Love Is A Drug",
+      "spotifyTrackId": "7C5S4bJtm48HJDL0bAjaYs",
+      "year": 2025,
+      "duration": ""
+    }
   ],
   "sets": [
-    { "title": "Boiler Room Manchester — Teletech", "venue": "Teletech", "year": 2024, "youtubeId": "LoJ4tq4K4Wk" },
-    { "title": "Boiler Room Denver", "venue": "Boiler Room", "year": 2023, "youtubeId": "TlqineUUptE" },
-    { "title": "Intercell x Elektra — ADE 2024", "venue": "Intercell", "year": 2024, "youtubeId": "pJjLnZq4QgM" },
-    { "title": "Intercell b2b Parfait — ADE 2023", "venue": "Intercell", "year": 2023, "youtubeId": "2_KrHmNdCms" }
+    {
+      "title": "Boiler Room Manchester \u2014 Teletech",
+      "venue": "Teletech",
+      "year": 2024,
+      "youtubeId": "LoJ4tq4K4Wk"
+    },
+    {
+      "title": "Boiler Room Denver",
+      "venue": "Boiler Room",
+      "year": 2023,
+      "youtubeId": "TlqineUUptE"
+    },
+    {
+      "title": "Intercell x Elektra \u2014 ADE 2024",
+      "venue": "Intercell",
+      "year": 2024,
+      "youtubeId": "pJjLnZq4QgM"
+    },
+    {
+      "title": "Intercell b2b Parfait \u2014 ADE 2023",
+      "venue": "Intercell",
+      "year": 2023,
+      "youtubeId": "2_KrHmNdCms"
+    }
   ],
-  "updatedAt": "2026-06-28T01:45:00.000Z"
+  "updatedAt": "2026-07-17T02:38:00.161Z"
 }

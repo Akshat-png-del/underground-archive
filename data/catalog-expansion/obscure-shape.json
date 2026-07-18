@@ -1,6 +1,56 @@
 {
   "slug": "obscure-shape",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "I WISH I DIDN'T LOVE YOU SO",
+      "spotifyTrackId": "5TaapbD2MuhQUDdVq7ELQq",
+      "year": 2025,
+      "duration": "5:03",
+      "album": "TILL I DIE"
+    },
+    {
+      "title": "TILL I DIE",
+      "spotifyTrackId": "6UtN4mLWKOfLpx4k7LYdkq",
+      "year": 2025,
+      "duration": "4:59",
+      "album": "TILL I DIE"
+    },
+    {
+      "title": "You and Me",
+      "spotifyTrackId": "4wPtA0OQSzRwNGWO0fgoOw",
+      "year": 2026,
+      "duration": "4:38",
+      "album": "Clergy Splits [02-A]"
+    },
+    {
+      "title": "Turbulence",
+      "spotifyTrackId": "273hZiLcekoS5dDMHZn0uM",
+      "year": 2022,
+      "duration": "4:32",
+      "album": "Poetic Justice"
+    },
+    {
+      "title": "Mana - Traumer \"Stop\" Remix - Edit",
+      "spotifyTrackId": "1ELEXLLWDQXY78SfXMoZy0",
+      "year": 2025,
+      "duration": "4:01",
+      "album": "Mana & Remix"
+    },
+    {
+      "title": "Pegasus",
+      "spotifyTrackId": "2o9dISO5zM1C8NHvIZDmYz",
+      "year": 2025,
+      "duration": "4:34",
+      "album": "The Introduction, Pt. 1"
+    },
+    {
+      "title": "Dancer in the Dark",
+      "spotifyTrackId": "6eVObZmZadZp8MsUtgKIur",
+      "year": 2023,
+      "duration": "5:07",
+      "album": "Basic Instinct"
+    }
+  ],
   "sets": [
     {
       "title": "Shdw & Obscure Shape Boiler Room Glasgow DJ Set",
@@ -13,7 +63,25 @@
       "venue": "Awakenings",
       "year": 2019,
       "youtubeId": "_vDeehW-0iw"
+    },
+    {
+      "title": "Drei Vinyl - Obscure Shape | HÖR - January 30 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "pP0b65A3H9M"
+    },
+    {
+      "title": "Obscure Shape | HÖR - February 28 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "_k0hISiO31g"
+    },
+    {
+      "title": "IMF - SHDW & Obscure Shape / June 2 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "VqcpAzCm4bY"
     }
   ],
-  "updatedAt": "2026-06-28T01:49:12.558Z"
+  "updatedAt": "2026-07-18T00:55:26.775Z"
 }

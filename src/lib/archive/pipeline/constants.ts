@@ -22,6 +22,10 @@ export const ALLOWED_SET_VENUE_PATTERNS = [
   "unreal",
   "rotterdam rave",
   "gotec",
+  "vault sessions",
+  "kntxt",
+  "tomorrowland",
+  "exit festival",
 ] as const;
 
 export const SPOTIFY_ARTIST_ID_PATTERN = /^[a-zA-Z0-9]{22}$/;

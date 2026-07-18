@@ -4,32 +4,58 @@
     {
       "title": "Hope Reminds Me Of Her",
       "spotifyTrackId": "3MeSC2yKxENtA2xbVsWj61",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2019,
+      "duration": "6:26",
+      "album": "The World Of Monnom Black II"
     },
     {
       "title": "On The Edge Of Adhesion - Original",
       "spotifyTrackId": "2EPFNgckNrQMgpORGZBa1u",
-      "year": 2026,
-      "duration": "5:00"
-    },
-    {
-      "title": "Kaledra",
-      "spotifyTrackId": "0bhkoSG87IhXbiPt4hmaUl",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2021,
+      "duration": "6:27",
+      "album": "On The Edge Of Adhesion (Original)"
     },
     {
       "title": "How To Fake Success",
       "spotifyTrackId": "1gGjvDQ4ezE2Lc5w2Gbg6A",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2019,
+      "duration": "6:27",
+      "album": "Defining Persuasion"
     },
     {
       "title": "Bite the Hand That Feeds You",
       "spotifyTrackId": "0eZ2nfNNzWW1T7T3wPbkHC",
       "year": 2026,
-      "duration": "5:00"
+      "duration": "4:49",
+      "album": "Bite the Hand That Feeds You"
+    },
+    {
+      "title": "Euphoria",
+      "spotifyTrackId": "3XmN9K7yypyAWnXTVXmca4",
+      "year": 2023,
+      "duration": "6:17",
+      "album": "The World Of Monnom Black III"
+    },
+    {
+      "title": "Break Your Toys",
+      "spotifyTrackId": "1BRwo9KTZRPGksBfnOGzyX",
+      "year": 2026,
+      "duration": "4:38",
+      "album": "Bite the Hand That Feeds You"
+    },
+    {
+      "title": "Stand Too Close",
+      "spotifyTrackId": "0A4LtB78KdO9xdp6V5Gjaw",
+      "year": 2026,
+      "duration": "5:37",
+      "album": "Bite the Hand That Feeds You"
+    },
+    {
+      "title": "Lead Mysteries",
+      "spotifyTrackId": "3VNOHOH0u0ZzOwpoe1dLaC",
+      "year": 2021,
+      "duration": "6:25",
+      "album": "Stone Techno Series - Tetragonal EP"
     }
   ],
   "sets": [
@@ -62,7 +88,13 @@
       "venue": "Intercell",
       "year": 2022,
       "youtubeId": "sFBeDyXsAIg"
+    },
+    {
+      "title": "Hadone / August 17 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "4aAarbUbft8"
     }
   ],
-  "updatedAt": "2026-06-28T01:23:52.319Z"
+  "updatedAt": "2026-07-18T00:54:47.600Z"
 }

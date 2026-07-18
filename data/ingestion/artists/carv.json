@@ -1,0 +1,31 @@
+{
+  "slug": "carv",
+  "name": "CARV",
+  "updatedAt": "2026-07-17T06:50:14.726Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T00:54:15.893Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "6xenmpQHeDugzwDn9H2pSI",
+    "name": "CARV",
+    "url": "https://open.spotify.com/artist/6xenmpQHeDugzwDn9H2pSI",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb3840f1b0069575ad6091f43e",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb3840f1b0069575ad6091f43e",
+      "https://i.scdn.co/image/ab676161000051743840f1b0069575ad6091f43e",
+      "https://i.scdn.co/image/ab6761610000f1783840f1b0069575ad6091f43e"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051743840f1b0069575ad6091f43e",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6xenmpQHeDugzwDn9H2pSI"
+  }
+}

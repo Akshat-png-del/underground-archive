@@ -1,6 +1,63 @@
 {
   "slug": "alarico",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Solace",
+      "spotifyTrackId": "4svjYcqdCVT4uxPapiIDIp",
+      "year": 2026,
+      "duration": "7:52",
+      "album": "Solace pt. 1"
+    },
+    {
+      "title": "Iruka",
+      "spotifyTrackId": "3RHjzsJWvCWfrp0QCZHUA2",
+      "year": 2025,
+      "duration": "5:57",
+      "album": "Sonora"
+    },
+    {
+      "title": "Dawn",
+      "spotifyTrackId": "2dYJgbBa0MfuZkgDsRnShG",
+      "year": 2026,
+      "duration": "5:34",
+      "album": "Solace pt. 1"
+    },
+    {
+      "title": "Drops of You",
+      "spotifyTrackId": "6sRYDNzwAKKSH7TWhxV0Nl",
+      "year": 2023,
+      "duration": "4:49",
+      "album": "Drops of You"
+    },
+    {
+      "title": "Skin",
+      "spotifyTrackId": "4CILyR2BGCZppvB2JtyfiL",
+      "year": 2026,
+      "duration": "5:30",
+      "album": "Solace pt. 1"
+    },
+    {
+      "title": "I Love You 2",
+      "spotifyTrackId": "1xqcZD9KBX6fHGUYrpcuuH",
+      "year": 2026,
+      "duration": "5:41",
+      "album": "Solace pt. 1"
+    },
+    {
+      "title": "Caresses After Lies",
+      "spotifyTrackId": "64zEJRksWknrlS4L5Fu7pM",
+      "year": 2025,
+      "duration": "4:57",
+      "album": "Sonora"
+    },
+    {
+      "title": "Shook Ones",
+      "spotifyTrackId": "15bRI3ASwq3yopUdL2u5U4",
+      "year": 2021,
+      "duration": "7:15",
+      "album": "Through the Loophole"
+    }
+  ],
   "sets": [
     {
       "title": "Alarico | Boiler Room: Frankfurt",
@@ -13,7 +70,25 @@
       "venue": "Stone Techno",
       "year": 2024,
       "youtubeId": "60F1npXlCTw"
+    },
+    {
+      "title": "Neighbourhood - Alarico | HÖR - Mar 16 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "7BYy6g0vQLo"
+    },
+    {
+      "title": "Resonate.turin - RUIZ OSC1 B2B Alarico / December 28 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "hF2W0YSBSJk"
+    },
+    {
+      "title": "The Grid - Alarico / July 27 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "OzAT7eU12hc"
     }
   ],
-  "updatedAt": "2026-06-28T01:34:24.132Z"
+  "updatedAt": "2026-07-18T00:53:57.429Z"
 }

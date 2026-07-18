@@ -1,6 +1,63 @@
 {
   "slug": "helena-hauff",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Spur",
+      "spotifyTrackId": "4v2EuZGI2keGtmUoOBucwk",
+      "year": 2015,
+      "duration": "4:18",
+      "album": "Discreet Desires"
+    },
+    {
+      "title": "C45p",
+      "spotifyTrackId": "1tA9wVYpDOEiFiPqCXIpkb",
+      "year": 2017,
+      "duration": "7:08",
+      "album": "A Tape"
+    },
+    {
+      "title": "Tripartite Pact",
+      "spotifyTrackId": "5f15WRVPnPUqoEZGkUUfA1",
+      "year": 2015,
+      "duration": "3:16",
+      "album": "Discreet Desires"
+    },
+    {
+      "title": "Continuez Mon Enfant Vous Serez Traité En Conséquence",
+      "spotifyTrackId": "13SnuxYQDtySfKIijMpgjh",
+      "year": 2017,
+      "duration": "4:50",
+      "album": "Have You Been There, Have You Seen It"
+    },
+    {
+      "title": "Dreams in Colour",
+      "spotifyTrackId": "6lkzLlHLfUqnMpoWtPowGd",
+      "year": 2015,
+      "duration": "1:41",
+      "album": "Discreet Desires"
+    },
+    {
+      "title": "Silver Sand & Boxes of Mould",
+      "spotifyTrackId": "1fhxulImEJlYd6YRV3udUy",
+      "year": 2015,
+      "duration": "3:09",
+      "album": "Discreet Desires"
+    },
+    {
+      "title": "The Smell Of Suds And Steel",
+      "spotifyTrackId": "0wZ7yAcRnaY9Lz0YJiSizK",
+      "year": 2018,
+      "duration": "8:11",
+      "album": "Qualm"
+    },
+    {
+      "title": "Sworn to Secrecy Part II",
+      "spotifyTrackId": "1vnm5K1joDjpN674ooHvmV",
+      "year": 2015,
+      "duration": "3:54",
+      "album": "Discreet Desires"
+    }
+  ],
   "sets": [
     {
       "title": "Helena Hauff | Boiler Room x Glitch Festival 2023",
@@ -31,7 +88,19 @@
       "venue": "Dekmantel",
       "year": 2024,
       "youtubeId": "PqWFidEZsVk"
+    },
+    {
+      "title": "Borshch Magazine - Helena Hauff / December 30 / 6pm-7pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "C44XpjGO38A"
+    },
+    {
+      "title": "Helena Hauff B2B L.F.T. / October 6 / 7pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "u2qaQLKkVDA"
     }
   ],
-  "updatedAt": "2026-06-28T01:26:32.619Z"
+  "updatedAt": "2026-07-18T00:54:54.479Z"
 }

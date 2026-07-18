@@ -172,16 +172,17 @@ export function GenrePageContent({ slug }: Props) {
       {sets.length > 0 && (
         <section className="mt-12 border-t border-border pt-10">
           <h2 className="font-serif text-2xl text-foreground">Essential sets</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="mt-6 grid min-w-0 gap-4 sm:grid-cols-2">
             {sets.map((set, i) => (
-              <SetRow
-                key={set.id}
-                set={set}
-                variant="row"
-                meta={`${set.artistName} · ${set.event}`}
-                browseQueue={setBrowseQueue}
-                browseIndex={i}
-              />
+              <div key={set.id} className="min-w-0">
+                <SetRow
+                  set={set}
+                  variant="row"
+                  meta={`${set.artistName} · ${set.event}`}
+                  browseQueue={setBrowseQueue}
+                  browseIndex={i}
+                />
+              </div>
             ))}
           </div>
         </section>

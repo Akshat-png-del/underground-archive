@@ -15,4 +15,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - Do **not** merge, refactor, or share transport UI between domains.
 - Shared layer only: engine, store, provider router, providers, session.
 
-Cursor rules: `.cursor/rules/architecture-domain-lock.mdc`, `.cursor/rules/sets-video-architecture-freeze.mdc`, `.cursor/rules/playback-architecture.mdc`
+Cursor rules: `.cursor/rules/architecture-domain-lock.mdc`, `.cursor/rules/sets-video-architecture-freeze.mdc`, `.cursor/rules/playback-architecture.mdc`, `.cursor/rules/playback-production-freeze.mdc`, `.cursor/rules/catalog-authenticity.mdc`, `.cursor/rules/catalog-curation-mode.mdc`
+
+## Catalog — Curation Mode (media-first)
+
+- Cleanup phase is complete. Grow via **verified ingestion** only — no mass cleanup, no invented media.
+- Public catalog requires verified Spotify track(s) OR YouTube set(s) ≥10 min (API duration).
+- Reintroduce removed legitimate artists only after Spotify track and/or verified long YouTube set.
+- Success = authenticity + verified media, not artist count. Never touch frozen playback.

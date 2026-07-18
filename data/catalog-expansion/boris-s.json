@@ -5,31 +5,36 @@
       "title": "Symphonie des Seins",
       "spotifyTrackId": "4FdtavdZA6NTfmJWXiXqWZ",
       "year": 2026,
-      "duration": "5:00"
+      "duration": "5:38",
+      "album": "Evolver"
     },
     {
       "title": "Higher Things - FJAAK Remix",
       "spotifyTrackId": "4bakznhqCKWR9FHiGuk0n6",
       "year": 2026,
-      "duration": "5:00"
+      "duration": "4:49",
+      "album": "Higher Things (FJAAK Remix)"
     },
     {
       "title": "Turkish Bazar - Chris Liebing Remake",
       "spotifyTrackId": "12pjGZHDyQxuROgK2gZ4My",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2024,
+      "duration": "8:00",
+      "album": "Turkish Bazar (Chris Liebing Remake)"
     },
     {
       "title": "Brooks Ave",
       "spotifyTrackId": "0ccyXEKie4wSZ9ymCpZ1Iy",
       "year": 2026,
-      "duration": "5:00"
+      "duration": "5:06",
+      "album": "Evolver"
     },
     {
       "title": "Liquid Slow",
       "spotifyTrackId": "5W4NmQtT2934fQYOqFwzBM",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2019,
+      "duration": "6:46",
+      "album": "Liquid Slow EP"
     }
   ],
   "sets": [
@@ -38,18 +43,6 @@
       "venue": "Boiler Room",
       "year": 2026,
       "youtubeId": "xJSMf8hRWtA"
-    },
-    {
-      "title": "Gradient - Boris | HÖR - October 10 / 2023",
-      "venue": "HÖR Berlin",
-      "year": 2023,
-      "youtubeId": "ZEaqqk8V1bY"
-    },
-    {
-      "title": "boris & davy | HÖR @ Kunstfestival Begehungen - 26 July / 2025",
-      "venue": "HÖR Berlin",
-      "year": 2025,
-      "youtubeId": "UUuNuYs3ZyA"
     },
     {
       "title": "Videoset Boris S. @ Awakenings Festival '15 Amsterdam/NL 28.06.15",
@@ -62,7 +55,25 @@
       "venue": "Exhale",
       "year": 2026,
       "youtubeId": "OgRPJNY-aWo"
+    },
+    {
+      "title": "boris & davy | HÖR @ Kunstfestival Begehungen - 26 July / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "UUuNuYs3ZyA"
+    },
+    {
+      "title": "Gradient - Boris | HÖR - October 10 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "ZEaqqk8V1bY"
+    },
+    {
+      "title": "Boris / September 16 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "r0PQxkk4P_E"
     }
   ],
-  "updatedAt": "2026-06-28T01:25:46.048Z"
+  "updatedAt": "2026-07-18T00:54:15.475Z"
 }

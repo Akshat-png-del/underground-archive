@@ -1,6 +1,63 @@
 {
   "slug": "rebekah",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Cry Baby",
+      "spotifyTrackId": "1HT4dUq8tpvwBqV4CzIn7q",
+      "year": 2026,
+      "duration": "3:44",
+      "album": "Cry Baby"
+    },
+    {
+      "title": "Loading Main Frame",
+      "spotifyTrackId": "65FUbnHEHW3R8MirLOVjl2",
+      "year": 2026,
+      "duration": "0:49",
+      "album": "Industrial Mind"
+    },
+    {
+      "title": "Industrial Mind",
+      "spotifyTrackId": "5Q3vqoMSLxPPRo5eLBQct8",
+      "year": 2026,
+      "duration": "3:48",
+      "album": "Industrial Mind"
+    },
+    {
+      "title": "Biggest Baddest Mother",
+      "spotifyTrackId": "2KncLtRmlBu3wvpqHzm5Xo",
+      "year": 2026,
+      "duration": "3:25",
+      "album": "Industrial Mind"
+    },
+    {
+      "title": "Echoes",
+      "spotifyTrackId": "4CjHAlDv0Q0z35msgwpYuv",
+      "year": 2026,
+      "duration": "4:31",
+      "album": "Industrial Mind"
+    },
+    {
+      "title": "Back in Black",
+      "spotifyTrackId": "3reSQ9CZo7UtAiREB0bnn5",
+      "year": 2026,
+      "duration": "4:36",
+      "album": "Industrial Mind"
+    },
+    {
+      "title": "AI4U",
+      "spotifyTrackId": "5ViLKdfNwqYD2OShVsPpnV",
+      "year": 2026,
+      "duration": "3:30",
+      "album": "Industrial Mind"
+    },
+    {
+      "title": "Show Me What You Got",
+      "spotifyTrackId": "6djLiSSQRiU1t11BLXuvvf",
+      "year": 2026,
+      "duration": "4:03",
+      "album": "Industrial Mind"
+    }
+  ],
   "sets": [
     {
       "title": "Rebekah | Boiler Room: Paris",
@@ -31,7 +88,31 @@
       "venue": "HÖR Berlin",
       "year": 2024,
       "youtubeId": "cfFrWPL9Acg"
+    },
+    {
+      "title": "Rebekah | HÖR - Nov 23 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "AVfy5hNvlIA"
+    },
+    {
+      "title": "HÖRSNOBIETY BERLIN, BERLIN - Rebekah / September 10 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "WL5WMD6C_8I"
+    },
+    {
+      "title": "SYNOID - Rebekah / March 4 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "9WL2A3Lobw8"
+    },
+    {
+      "title": "Bastardo Electrico - Rebekah (HYBRID) / January 20 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "N1pOZyA8HgE"
     }
   ],
-  "updatedAt": "2026-06-28T01:26:40.106Z"
+  "updatedAt": "2026-07-18T00:55:51.961Z"
 }

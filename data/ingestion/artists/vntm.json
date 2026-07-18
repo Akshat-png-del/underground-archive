@@ -1,10 +1,14 @@
 {
   "slug": "vntm",
   "name": "VNTM",
-  "updatedAt": "2026-06-28T01:38:18.297Z",
+  "updatedAt": "2026-07-16T23:51:04.444Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:02.705Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:51:04.444Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_nMplGHlnSbTPNaM_OI_JYiM8mS8F68m1zbBg9qHKtDZuw=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/ytc/AIdro_nMplGHlnSbTPNaM_OI_JYiM8mS8F68m1zbBg9qHKtDZuw=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@vntm"
+    "url": "https://i.scdn.co/image/ab6761610000e5eb061df2db6ff39e05ae83763d",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3OIINbAKKK2MjCiFEpEft3"
+  },
+  "spotify": {
+    "artistId": "3OIINbAKKK2MjCiFEpEft3",
+    "name": "VNTM",
+    "url": "https://open.spotify.com/artist/3OIINbAKKK2MjCiFEpEft3",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb061df2db6ff39e05ae83763d",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb061df2db6ff39e05ae83763d",
+      "https://i.scdn.co/image/ab67616100005174061df2db6ff39e05ae83763d",
+      "https://i.scdn.co/image/ab6761610000f178061df2db6ff39e05ae83763d"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

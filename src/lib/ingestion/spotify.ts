@@ -69,14 +69,14 @@ async function spotifyGet<T>(path: string): Promise<T> {
 }
 
 function mapArtist(artist: SpotifyArtistResponse): SpotifyIngested {
-  const imageUrls = artist.images.map((i) => i.url).filter(Boolean);
+  const imageUrls = (artist.images ?? []).map((i) => i.url).filter(Boolean);
   return {
     artistId: artist.id,
     name: artist.name,
-    url: artist.external_urls.spotify,
-    genres: artist.genres,
-    followers: artist.followers.total,
-    popularity: artist.popularity,
+    url: artist.external_urls?.spotify ?? `https://open.spotify.com/artist/${artist.id}`,
+    genres: artist.genres ?? [],
+    followers: artist.followers?.total ?? 0,
+    popularity: artist.popularity ?? 0,
     imageUrl: imageUrls[0] ?? null,
     imageUrls,
     relatedArtists: [],
@@ -102,12 +102,33 @@ export async function fetchSpotifyArtistById(artistId: string): Promise<SpotifyI
   return ingested;
 }
 
+function foldName(text: string): string {
+  return text
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+}
+
 export async function searchSpotifyArtist(name: string): Promise<SpotifyIngested | null> {
   const q = encodeURIComponent(name);
   const result = await spotifyGet<SpotifySearchResponse>(
     `/search?type=artist&q=${q}&limit=5`
   );
-  const match = result.artists.items[0];
+  const items = result.artists?.items ?? [];
+  if (items.length === 0) return null;
+
+  const target = foldName(name);
+  if (!target) return null;
+
+  const exact = items.find((i) => foldName(i.name) === target);
+  const stripTarget = target.replace(/\d+$/, "");
+  const stripMatch = items.find((i) => {
+    const f = foldName(i.name).replace(/\d+$/, "");
+    return f.length >= 4 && f === stripTarget;
+  });
+
+  const match = exact ?? stripMatch;
   if (!match) return null;
   return fetchSpotifyArtistById(match.id);
 }

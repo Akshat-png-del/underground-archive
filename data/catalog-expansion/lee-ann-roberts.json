@@ -1,0 +1,62 @@
+{
+  "slug": "lee-ann-roberts",
+  "tracks": [
+    {
+      "title": "Sabie Sunset - The Rocketman Remix",
+      "spotifyTrackId": "7myefbgLOK1JWjCPa5Xtz6",
+      "year": 2025,
+      "duration": "3:38",
+      "album": "Africa EP"
+    },
+    {
+      "title": "THE NIGHT GOES ON",
+      "spotifyTrackId": "2yvI8iNb4srqkUHp6v1Pnb",
+      "year": 2026,
+      "duration": "2:49",
+      "album": "THE NIGHT GOES ON"
+    },
+    {
+      "title": "TAKE CONTROL",
+      "spotifyTrackId": "4KxMIYFJYXEL58c5JfyE66",
+      "year": 2026,
+      "duration": "2:49",
+      "album": "TAKE CONTROL"
+    },
+    {
+      "title": "What's A Girl To Do - Lee Ann Roberts Remix",
+      "spotifyTrackId": "2n4WGBY9hf6XDSR5kwPsKK",
+      "year": 2025,
+      "duration": "2:37",
+      "album": "What's A Girl To Do (Remix EP)"
+    },
+    {
+      "title": "Energy - Lee Ann Roberts Remix",
+      "spotifyTrackId": "0dEXvqgcTWwNiNEFaeBkDj",
+      "year": 2024,
+      "duration": "3:08",
+      "album": "Energy (Lee Ann Roberts Remix)"
+    },
+    {
+      "title": "Keep Moving",
+      "spotifyTrackId": "33lNmTCkE8hqDLKuFCZsgS",
+      "year": 2023,
+      "duration": "5:20",
+      "album": "Come With Me EP"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Lee Ann Roberts | HÖR - Oct 4 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "mmT6GBkzdS4"
+    },
+    {
+      "title": "Lee Ann Roberts / December 9 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "9YTOp079y80"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:04.927Z"
+}

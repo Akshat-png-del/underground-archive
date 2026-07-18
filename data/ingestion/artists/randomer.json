@@ -1,7 +1,7 @@
 {
   "slug": "randomer",
   "name": "Randomer",
-  "updatedAt": "2026-06-28T19:30:12.183Z",
+  "updatedAt": "2026-07-17T06:57:49.201Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:55.078Z",
@@ -9,7 +9,7 @@
       "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:12.183Z",
+      "syncedAt": "2026-07-18T00:55:45.992Z",
       "status": "ok"
     }
   },
@@ -25,9 +25,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "/images/portraits/researched/randomer.jpg",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebf30c7a227faf6b037537f157",
     "imageUrls": [
-      "/images/portraits/researched/randomer.jpg"
+      "https://i.scdn.co/image/ab6761610000e5ebf30c7a227faf6b037537f157",
+      "https://i.scdn.co/image/ab67616100005174f30c7a227faf6b037537f157",
+      "https://i.scdn.co/image/ab6761610000f178f30c7a227faf6b037537f157"
     ],
     "relatedArtists": []
   }

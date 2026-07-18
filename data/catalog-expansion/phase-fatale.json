@@ -1,6 +1,63 @@
 {
   "slug": "phase-fatale",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Velvet Imprints",
+      "spotifyTrackId": "0gCfuwnY7o5ypDTqCAt0Ab",
+      "year": 2020,
+      "duration": "5:11",
+      "album": "Scanning Backwards"
+    },
+    {
+      "title": "Reverse Fall",
+      "spotifyTrackId": "3Q5YJa6lQdYMHfTu4WeKN3",
+      "year": 2018,
+      "duration": "7:20",
+      "album": "Reverse Fall"
+    },
+    {
+      "title": "Immobile Symmetry",
+      "spotifyTrackId": "5cd6NgIiEyqsPnT66IEPiC",
+      "year": 2026,
+      "duration": "5:27",
+      "album": "Off Desire"
+    },
+    {
+      "title": "Machina (Ft. Mariana Saldaña) - Soft Crash Remix",
+      "spotifyTrackId": "2GkyGcngCZhreuQofh1eSf",
+      "year": 2024,
+      "duration": "6:06",
+      "album": "Machina EP"
+    },
+    {
+      "title": "Off Desire",
+      "spotifyTrackId": "6NIC1LH8iP7sJB2ZrfzpI3",
+      "year": 2026,
+      "duration": "5:46",
+      "album": "Off Desire"
+    },
+    {
+      "title": "Guts",
+      "spotifyTrackId": "1OUQiJZ5iokRkMOnwCL8rt",
+      "year": 2026,
+      "duration": "5:24",
+      "album": "Off Desire"
+    },
+    {
+      "title": "Desertion - Phase Fatale Remix",
+      "spotifyTrackId": "2n7VggtT4zdUlBI0JIg8XA",
+      "year": 2016,
+      "duration": "5:06",
+      "album": "Deeper Remixed"
+    },
+    {
+      "title": "Desecrating Vows - Original Mix",
+      "spotifyTrackId": "0g01erNzTfDyjsctQk6CTu",
+      "year": 2023,
+      "duration": "5:52",
+      "album": "Nailed to the Net"
+    }
+  ],
   "sets": [
     {
       "title": "Phase Fatale | Boiler Room: Warsaw",
@@ -31,7 +88,31 @@
       "venue": "HÖR Berlin",
       "year": 2023,
       "youtubeId": "LofQ-Msc6OM"
+    },
+    {
+      "title": "Second Sight - Soft Crash (Pablo Bozzi & Phase Fatale) / October 15 / 8pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "vUi4EYptR8c"
+    },
+    {
+      "title": "MANHIGH Takeover - Phase Fatale / July 22 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "N2JgSr1unYE"
+    },
+    {
+      "title": "Bite Showcase - Phase Fatale / April 10 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "tcRg5KfYJBM"
+    },
+    {
+      "title": "Second Sight - Phase Fatale / February 20 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "AGPCAwmPLWo"
     }
   ],
-  "updatedAt": "2026-06-28T01:26:26.421Z"
+  "updatedAt": "2026-07-18T00:55:45.573Z"
 }

@@ -1,6 +1,63 @@
 {
   "slug": "jks",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "L'Orologio",
+      "spotifyTrackId": "6GwyICcH2brfQp9wWobnh0",
+      "year": 2024,
+      "duration": "4:54",
+      "album": "L'Orologio"
+    },
+    {
+      "title": "Charm",
+      "spotifyTrackId": "6X47T9NSqkDGvLmmpi437S",
+      "year": 2025,
+      "duration": "5:20",
+      "album": "Wild Nights"
+    },
+    {
+      "title": "Venom Rush",
+      "spotifyTrackId": "3k7sE40yPTOh4E2zwQxwty",
+      "year": 2026,
+      "duration": "5:33",
+      "album": "Temples EP"
+    },
+    {
+      "title": "Temples",
+      "spotifyTrackId": "5gqeMweSxaDKspoVctwXvT",
+      "year": 2026,
+      "duration": "4:12",
+      "album": "Temples EP"
+    },
+    {
+      "title": "Crush On You",
+      "spotifyTrackId": "2xfYGM5QYymSz2ku9srxFk",
+      "year": 2026,
+      "duration": "4:36",
+      "album": "Temples EP"
+    },
+    {
+      "title": "Venom Rush - A Strange Wedding Remix",
+      "spotifyTrackId": "6K7NZwWIZFeuObj7KKZN6M",
+      "year": 2026,
+      "duration": "6:22",
+      "album": "Temples EP"
+    },
+    {
+      "title": "Temples - Aloka Remix",
+      "spotifyTrackId": "1gRlh6PVjO5qgMnsBzIW8s",
+      "year": 2026,
+      "duration": "4:39",
+      "album": "Temples EP"
+    },
+    {
+      "title": "Crush On You - Olympe4000 Remix",
+      "spotifyTrackId": "2TlUdgHiy7ifUjhGvTnKmK",
+      "year": 2026,
+      "duration": "4:36",
+      "album": "Temples EP"
+    }
+  ],
   "sets": [
     {
       "title": "JKS | Boiler Room: Berlin",
@@ -13,7 +70,31 @@
       "venue": "Boiler Room",
       "year": 2026,
       "youtubeId": "bIeigeEhATs"
+    },
+    {
+      "title": "JKS | HÖR - Jul 19 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "CWoXZU9JF7Q"
+    },
+    {
+      "title": "WHP XXL Festival - JKS | HÖR - Oct 8 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "m2F_1_yHz5c"
+    },
+    {
+      "title": "JKS | HÖR - Aug 23 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "QTHCplEaLmY"
+    },
+    {
+      "title": "JKS / November 18 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "wrHiMKNfsTU"
     }
   ],
-  "updatedAt": "2026-06-28T01:35:35.051Z"
+  "updatedAt": "2026-07-18T00:54:57.830Z"
 }

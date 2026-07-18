@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { getWeeklyDiscoveriesEditorial } from "@/content/home/feed";
 import type { WeeklyDiscoveriesEditorial } from "@/content/home/feed";
 import { ArtistCard } from "@/components/artists/ArtistCard";
@@ -9,21 +8,18 @@ import { SetRow } from "@/components/music/SetRow";
 import { playbackItemFromTrack, playbackItemFromSet } from "@/lib/music/playback";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
+import { useHomepageRotationRefresh } from "@/components/home/useHomepageRotationRefresh";
+import { useMemo } from "react";
 
 export function WeeklyDiscoveriesMagazine({
   initialEditorial,
 }: {
   initialEditorial: WeeklyDiscoveriesEditorial;
 }) {
-  const [editorial, setEditorial] = useState<WeeklyDiscoveriesEditorial>(initialEditorial);
-
-  useEffect(() => {
-    setEditorial(getWeeklyDiscoveriesEditorial());
-  }, []);
-
+  const editorial = useHomepageRotationRefresh(getWeeklyDiscoveriesEditorial, initialEditorial);
   const { artists, tracks, sets } = editorial;
-  const trackBrowseQueue = tracks.map(playbackItemFromTrack);
-  const setBrowseQueue = sets.map(playbackItemFromSet);
+  const trackBrowseQueue = useMemo(() => tracks.map(playbackItemFromTrack), [tracks]);
+  const setBrowseQueue = useMemo(() => sets.map(playbackItemFromSet), [sets]);
 
   return (
     <FadeInSection>

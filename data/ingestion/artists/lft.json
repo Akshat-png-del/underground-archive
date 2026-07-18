@@ -1,7 +1,7 @@
 {
   "slug": "lft",
   "name": "L.F.T.",
-  "updatedAt": "2026-06-28T19:30:19.001Z",
+  "updatedAt": "2026-07-17T06:50:11.344Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:58.244Z",
@@ -9,7 +9,7 @@
       "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:19.001Z",
+      "syncedAt": "2026-07-18T00:55:05.340Z",
       "status": "ok"
     }
   },
@@ -25,9 +25,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "/images/portraits/researched/lft.jpg",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebe6837647bc222c897635e3db",
     "imageUrls": [
-      "/images/portraits/researched/lft.jpg"
+      "https://i.scdn.co/image/ab6761610000e5ebe6837647bc222c897635e3db",
+      "https://i.scdn.co/image/ab67616100005174e6837647bc222c897635e3db",
+      "https://i.scdn.co/image/ab6761610000f178e6837647bc222c897635e3db"
     ],
     "relatedArtists": []
   }

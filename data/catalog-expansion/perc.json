@@ -1,6 +1,63 @@
 {
   "slug": "perc",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Can You Imagine?",
+      "spotifyTrackId": "1qIOp8IkOBGFb9Mh770tV4",
+      "year": 2024,
+      "duration": "5:38",
+      "album": "The Cut Off"
+    },
+    {
+      "title": "Milk Snatcher's Return",
+      "spotifyTrackId": "7kxCP7h8zk5M9FFqBzr8jZ",
+      "year": 2024,
+      "duration": "5:37",
+      "album": "The Cut Off"
+    },
+    {
+      "title": "Static",
+      "spotifyTrackId": "0nJ1m86Dleg982681KSjOd",
+      "year": 2024,
+      "duration": "6:29",
+      "album": "The Cut Off"
+    },
+    {
+      "title": "Heartbeat Popper",
+      "spotifyTrackId": "4B16CcRcP324Xx7FTMW79i",
+      "year": 2024,
+      "duration": "5:46",
+      "album": "The Cut Off"
+    },
+    {
+      "title": "Cold Snap",
+      "spotifyTrackId": "1BA1Suk97MbUKUKsCEnix6",
+      "year": 2024,
+      "duration": "5:55",
+      "album": "The Cut Off"
+    },
+    {
+      "title": "Imperial Leather",
+      "spotifyTrackId": "2NBqTfZF3ezgC0vdEzfYrf",
+      "year": 2024,
+      "duration": "6:32",
+      "album": "The Cut Off"
+    },
+    {
+      "title": "UK Style",
+      "spotifyTrackId": "4fwZOnOwiDrD8vv8lZlJIZ",
+      "year": 2024,
+      "duration": "3:23",
+      "album": "The Cut Off"
+    },
+    {
+      "title": "Full Goblin",
+      "spotifyTrackId": "7s95q3bpaieJ3aqN47oc1N",
+      "year": 2024,
+      "duration": "5:18",
+      "album": "The Cut Off"
+    }
+  ],
   "sets": [
     {
       "title": "Perc | Boiler Room Toronto",
@@ -33,5 +90,5 @@
       "youtubeId": "eRqSFkenzs0"
     }
   ],
-  "updatedAt": "2026-06-28T01:26:01.585Z"
+  "updatedAt": "2026-07-18T00:55:38.797Z"
 }

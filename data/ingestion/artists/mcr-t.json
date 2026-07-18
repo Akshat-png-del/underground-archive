@@ -1,7 +1,7 @@
 {
   "slug": "mcr-t",
   "name": "MCR-T",
-  "updatedAt": "2026-06-28T19:30:12.184Z",
+  "updatedAt": "2026-07-17T06:50:13.708Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:58.588Z",
@@ -9,7 +9,7 @@
       "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:12.184Z",
+      "syncedAt": "2026-07-18T00:55:12.690Z",
       "status": "ok"
     }
   },
@@ -25,9 +25,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "/images/portraits/researched/mcr-t.jpg",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb13c354bf032479d1c2437f88",
     "imageUrls": [
-      "/images/portraits/researched/mcr-t.jpg"
+      "https://i.scdn.co/image/ab6761610000e5eb13c354bf032479d1c2437f88",
+      "https://i.scdn.co/image/ab6761610000517413c354bf032479d1c2437f88",
+      "https://i.scdn.co/image/ab6761610000f17813c354bf032479d1c2437f88"
     ],
     "relatedArtists": []
   }

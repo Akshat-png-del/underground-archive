@@ -40,7 +40,7 @@ export function EssentialSetOfDayHero({ set }: Props) {
     <FadeInSection>
       <HomeSection
         title="Essential set of the day"
-        subtitle="Rotates every 12 hours · One performance worth your full attention."
+        subtitle="One performance worth your full attention."
         badge="Today"
         href={`/sets/${set.slug}`}
         linkLabel="Full set page"
@@ -60,6 +60,7 @@ export function EssentialSetOfDayHero({ set }: Props) {
               src={setThumbnailUrl(set.thumbnail, set.youtubeId)}
               alt=""
               fill
+              priority
               sizes="(max-width:1024px) 100vw, 60vw"
               className="image-zoom"
             />
@@ -72,7 +73,7 @@ export function EssentialSetOfDayHero({ set }: Props) {
             <dl className="mt-6 grid grid-cols-2 gap-4 text-sm">
               <div>
                 <dt className="text-xs uppercase text-muted">Duration</dt>
-                <dd className="mt-1 text-foreground">{set.duration}</dd>
+                <dd className="mt-1 text-foreground">{set.duration ?? "—"}</dd>
               </div>
               <div>
                 <dt className="text-xs uppercase text-muted">Genre</dt>

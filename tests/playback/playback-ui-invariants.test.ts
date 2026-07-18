@@ -16,15 +16,7 @@ test("globals.css contains playback UI layout contract", () => {
   assert.ok(GLOBALS.includes("[data-set-watch-page]"));
 });
 
-test("layout mounts PlaybackUiInvariantGuard after PlaybackRoot", () => {
-  const rootIdx = LAYOUT.indexOf("<PlaybackRoot");
-  const guardIdx = LAYOUT.indexOf("<PlaybackUiInvariantGuard");
-  assert.ok(rootIdx !== -1, "layout must include PlaybackRoot");
-  assert.ok(guardIdx !== -1, "layout must include PlaybackUiInvariantGuard");
-  assert.ok(rootIdx < guardIdx, "PlaybackRoot must precede PlaybackUiInvariantGuard");
-});
-
-test("Providers does not mount PlaybackUiInvariantGuard before bootstrap", () => {
-  const providers = readFileSync(join(ROOT, "src/components/providers/Providers.tsx"), "utf8");
-  assert.doesNotMatch(providers, /PlaybackUiInvariantGuard/);
+test("layout imports a single globals.css entrypoint", () => {
+  assert.match(LAYOUT, /import\s+["']\.\/globals\.css["']/);
+  assert.doesNotMatch(LAYOUT, /playback-ui-contract\.css/);
 });

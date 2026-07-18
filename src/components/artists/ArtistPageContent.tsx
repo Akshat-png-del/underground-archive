@@ -62,6 +62,7 @@ export function ArtistPageContent({ artist }: Props) {
               src={portraitSrc}
               fallbacks={portraitFallbacks}
               name={artist.name}
+              priority
               className="h-28 w-28 shrink-0 sm:h-36 sm:w-36"
             />
             <div className="flex-1">

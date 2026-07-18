@@ -1,0 +1,31 @@
+{
+  "slug": "cloudy",
+  "name": "Cloudy",
+  "updatedAt": "2026-07-17T06:56:55.667Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:27.420Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "6T9GuyLe3Wkw5KRhhXUMC1",
+    "name": "CLOUDY",
+    "url": "https://open.spotify.com/artist/6T9GuyLe3Wkw5KRhhXUMC1",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb48c31cdaadc4cf0ac2bb864b",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb48c31cdaadc4cf0ac2bb864b",
+      "https://i.scdn.co/image/ab6761610000517448c31cdaadc4cf0ac2bb864b",
+      "https://i.scdn.co/image/ab6761610000f17848c31cdaadc4cf0ac2bb864b"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517448c31cdaadc4cf0ac2bb864b",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6T9GuyLe3Wkw5KRhhXUMC1"
+  }
+}

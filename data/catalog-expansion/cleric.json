@@ -1,6 +1,63 @@
 {
   "slug": "cleric",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Only time is ours",
+      "spotifyTrackId": "5vwRqboFfO8GJgcG61OER6",
+      "year": 2026,
+      "duration": "4:52",
+      "album": "Clergy Splits [03-A]"
+    },
+    {
+      "title": "Milk of the poppy",
+      "spotifyTrackId": "6DhzawjuPtlCbp6NQu4z1v",
+      "year": 2026,
+      "duration": "5:11",
+      "album": "Clergy Splits [03-A]"
+    },
+    {
+      "title": "Blitz - Original mix",
+      "spotifyTrackId": "4vgT3c6iAtns4bkm9caqu6",
+      "year": 2015,
+      "duration": "6:57",
+      "album": "Codes of Chaos EP"
+    },
+    {
+      "title": "Redacted",
+      "spotifyTrackId": "1cp1oVGEBCugUB4v1pUadE",
+      "year": 2026,
+      "duration": "5:05",
+      "album": "Clergy Splits [03-A]"
+    },
+    {
+      "title": "Illogical Behaviour - Cleric Remix",
+      "spotifyTrackId": "5d7vR4mPSPPzcnBSqWe5eq",
+      "year": 2025,
+      "duration": "5:39",
+      "album": "Not A Reason"
+    },
+    {
+      "title": "Validation Machine",
+      "spotifyTrackId": "0caW0Zy91Y9JZNf098ZQZg",
+      "year": 2023,
+      "duration": "6:37",
+      "album": "Validation Machine EP"
+    },
+    {
+      "title": "Menai Bridge [Locked Groove]",
+      "spotifyTrackId": "0oHTvQUAtc0qSHafYr7sKw",
+      "year": 2023,
+      "duration": "0:29",
+      "album": "Validation Machine EP"
+    },
+    {
+      "title": "Validation Machine [Second Dose]",
+      "spotifyTrackId": "7L9IG8ODEMuVkrMYkevF7C",
+      "year": 2023,
+      "duration": "5:56",
+      "album": "Validation Machine EP"
+    }
+  ],
   "sets": [
     {
       "title": "Cleric | HÖR - Jan 7 / 2023",
@@ -15,5 +72,5 @@
       "youtubeId": "IcBdV6uOWyA"
     }
   ],
-  "updatedAt": "2026-06-28T01:40:06.379Z"
+  "updatedAt": "2026-07-18T00:55:26.963Z"
 }

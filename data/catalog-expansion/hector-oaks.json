@@ -1,6 +1,86 @@
 {
   "slug": "hector-oaks",
-  "tracks": [],
-  "sets": [],
-  "updatedAt": "2026-06-28T01:54:46.459Z"
+  "tracks": [
+    {
+      "title": "No Hay Mañana",
+      "spotifyTrackId": "5Nbgz5ULGqG9kIuefpSFn6",
+      "year": 2021,
+      "duration": "3:56",
+      "album": "No Hay Mañana"
+    },
+    {
+      "title": "Chasing Highs",
+      "spotifyTrackId": "7p1bX9lFV94Dxcvy2nmx5G",
+      "year": 2021,
+      "duration": "6:18",
+      "album": "Chasing Highs"
+    },
+    {
+      "title": "WELCOME TO NINGUNA PARTE",
+      "spotifyTrackId": "2jByGX6J99gk1kar2J82z7",
+      "year": 2024,
+      "duration": "3:45",
+      "album": "WELCOME TO NINGUNA PARTE"
+    },
+    {
+      "title": "We Met Under The Strobe Light",
+      "spotifyTrackId": "4o3tIyNqK73LLypJSR3p0o",
+      "year": 2019,
+      "duration": "5:45",
+      "album": "We Met Under The Strobe Light"
+    },
+    {
+      "title": "Knees",
+      "spotifyTrackId": "3JsKkWIZq3HnRTiCZJUS6B",
+      "year": 2025,
+      "duration": "5:20",
+      "album": "Knees"
+    },
+    {
+      "title": "Intro",
+      "spotifyTrackId": "2X6q4XcN4OyAs6FAgRGCj6",
+      "year": 2021,
+      "duration": "2:26",
+      "album": "Intro"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Héctor Oaks | HÖR x Sennheiser Amsterdam Pop-up - October 21 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "vU9IVXAHQ4Y"
+    },
+    {
+      "title": "Héctor Oaks | HÖR - May 19 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "e47mfhwFwuo"
+    },
+    {
+      "title": "Dour Festival - Héctor Oaks | HÖR - Jun 22 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "HkKr8HG3qUA"
+    },
+    {
+      "title": "KAOS - Héctor Oaks | HÖR - May 24 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "FGh2sFg8wUY"
+    },
+    {
+      "title": "Héctor Oaks AKA Cadency / April 23 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "JFj6FyEGKZ0"
+    },
+    {
+      "title": "MODEL 1.4 - Ellen Allien B2B Héctor Oaks / January 22 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "Q3no26KDuh0"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:54:50.618Z"
 }

@@ -4,32 +4,37 @@
     {
       "title": "Make You Scream - yunè pinku Remix",
       "spotifyTrackId": "5sB6nWsUKo40L5AeJ7Ja7Q",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2023,
+      "duration": "2:44",
+      "album": "Make You Scream (yunè pinku Remix)"
     },
     {
       "title": "TITS, LIPS, HIPS, KISS (10/10 Remix)",
       "spotifyTrackId": "3KkesrPkSGFZYXUHtk1Zfn",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2024,
+      "duration": "3:36",
+      "album": "TITS, LIPS, HIPS, KISS (10/10 Remix)"
     },
     {
       "title": "Can't Catch Me",
       "spotifyTrackId": "3Qd3EeuoHj4LXzCkff7DFT",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2025,
+      "duration": "2:05",
+      "album": "Can't Catch Me"
     },
     {
       "title": "f@k€ - VTSS remix",
       "spotifyTrackId": "0Ii836ApF3PKY2AIavpXpE",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2024,
+      "duration": "4:07",
+      "album": "f@k€ (VTSS remix)"
     },
     {
       "title": "The Lobby",
       "spotifyTrackId": "3S9fUHrEJ7NSOswsEtcwMs",
       "year": 2026,
-      "duration": "5:00"
+      "duration": "3:02",
+      "album": "The Lobby"
     }
   ],
   "sets": [
@@ -62,7 +67,31 @@
       "venue": "Boiler Room",
       "year": 2022,
       "youtubeId": "cfJLi4bxpao"
+    },
+    {
+      "title": "VTSS | HÖR - Feb 1 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "Xadk7lnaSBo"
+    },
+    {
+      "title": "VTSS / October 22 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "6RjJFoGt0y4"
+    },
+    {
+      "title": "TTT X HÖR - VTSS / May 2 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "g3ZN5nxlWeE"
+    },
+    {
+      "title": "Haven Showcase - VTSS / October 30 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2019,
+      "youtubeId": "a8RAzjF6abc"
     }
   ],
-  "updatedAt": "2026-06-28T01:23:35.594Z"
+  "updatedAt": "2026-07-18T00:56:16.329Z"
 }

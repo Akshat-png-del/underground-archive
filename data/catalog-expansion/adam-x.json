@@ -1,6 +1,63 @@
 {
   "slug": "adam-x",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Breathe It In",
+      "spotifyTrackId": "1dG1izuI7LZ3pJfMqd6YlR",
+      "year": 2022,
+      "duration": "7:31",
+      "album": "The Lion & The Ram"
+    },
+    {
+      "title": "Subterranean Caverns",
+      "spotifyTrackId": "6UlJWbxilmoRyu1vTfAkZX",
+      "year": 2022,
+      "duration": "6:10",
+      "album": "The Lion & The Ram"
+    },
+    {
+      "title": "Psychic Vulture",
+      "spotifyTrackId": "498qu6EtN3xHHo3aFBRfPL",
+      "year": 2022,
+      "duration": "6:19",
+      "album": "The Lion & The Ram"
+    },
+    {
+      "title": "Caged Animal",
+      "spotifyTrackId": "3OHbSBWvfFJ2atnDkuc3tH",
+      "year": 2022,
+      "duration": "6:14",
+      "album": "The Lion & The Ram"
+    },
+    {
+      "title": "Buckle Up",
+      "spotifyTrackId": "7rf8T1Am0EPiUQtSzTyr3m",
+      "year": 2022,
+      "duration": "5:58",
+      "album": "The Lion & The Ram"
+    },
+    {
+      "title": "Corrupt Pigs",
+      "spotifyTrackId": "40GfaQwVq5MxSx1FHqjged",
+      "year": 2022,
+      "duration": "6:05",
+      "album": "The Lion & The Ram"
+    },
+    {
+      "title": "Human Replacements",
+      "spotifyTrackId": "72eYgEvOWKlrsmNzPNnzCG",
+      "year": 2022,
+      "duration": "6:26",
+      "album": "The Lion & The Ram"
+    },
+    {
+      "title": "Subliminal Messages",
+      "spotifyTrackId": "2GaTnbvkjGuyrJP6CFMMmD",
+      "year": 2022,
+      "duration": "5:06",
+      "album": "The Lion & The Ram"
+    }
+  ],
   "sets": [
     {
       "title": "Adam X Boiler Room Berlin DJ Set",
@@ -9,29 +66,17 @@
       "youtubeId": "0QmGRIS8JqI"
     },
     {
-      "title": "Adam Beyer Boiler Room x Eristoff Vienna DJ Set",
-      "venue": "Boiler Room",
-      "year": 2026,
-      "youtubeId": "E8UMOqVtfuI"
-    },
-    {
-      "title": "Adam Beyer Boiler Room DJ Set at Warehouse Project",
-      "venue": "Boiler Room",
-      "year": 2026,
-      "youtubeId": "v--0OhHHKfg"
-    },
-    {
-      "title": "Adam Port b2b &ME | Boiler Room x III Points Festival | Miami Day 2",
-      "venue": "Boiler Room",
-      "year": 2026,
-      "youtubeId": "lHF7lsk9mco"
-    },
-    {
-      "title": "Keinemusik - Adam Port | HÖR - Mar 2 / 2022",
+      "title": "Tresor 30 Live from Metabolic Rift - Adam X / October 9 / 7pm-8pm",
       "venue": "HÖR Berlin",
-      "year": 2022,
-      "youtubeId": "MoyZRbodpWg"
+      "year": 2021,
+      "youtubeId": "oJfLh4lWvr0"
+    },
+    {
+      "title": "DEAD ON MONDAY - Adam X / February 24 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "h4y3RwzYDLk"
     }
   ],
-  "updatedAt": "2026-06-28T01:26:19.535Z"
+  "updatedAt": "2026-07-18T00:53:49.811Z"
 }

@@ -8,11 +8,11 @@ import { playbackItemFromTrack } from "@/lib/music/playback";
 
 export function LibraryLikedTracks() {
   const { likedTracks } = useLibrary();
-  const tracks = likedTracks.map((id) => getTrack(id)).filter(Boolean);
-  const browseQueue = useMemo(
-    () => tracks.filter((t): t is NonNullable<typeof t> => !!t).map(playbackItemFromTrack),
-    [tracks],
+  const tracks = useMemo(
+    () => likedTracks.map((id) => getTrack(id)).filter((t): t is NonNullable<typeof t> => !!t),
+    [likedTracks],
   );
+  const browseQueue = useMemo(() => tracks.map(playbackItemFromTrack), [tracks]);
 
   return (
     <div>
@@ -22,7 +22,9 @@ export function LibraryLikedTracks() {
         <p className="mt-12 text-muted">Like tracks from artist pages.</p>
       ) : (
         <ol className="mt-10 space-y-3">
-          {tracks.map((t, i) => t && <TrackRow key={t.id} track={t} index={i} browseQueue={browseQueue} />)}
+          {tracks.map((t, i) => (
+            <TrackRow key={t.id} track={t} index={i} browseQueue={browseQueue} />
+          ))}
         </ol>
       )}
     </div>

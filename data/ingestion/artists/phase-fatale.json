@@ -1,10 +1,14 @@
 {
   "slug": "phase-fatale",
   "name": "Phase Fatale",
-  "updatedAt": "2026-06-28T01:38:01.011Z",
+  "updatedAt": "2026-07-17T06:56:02.350Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:46.706Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:42.134Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCRw-q7lOA359WBk8j2w0Bmg"
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174374df698828c0b00ce137806",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1jjplgZcgCwhU7JlGhBQiw"
+  },
+  "spotify": {
+    "artistId": "1jjplgZcgCwhU7JlGhBQiw",
+    "name": "Phase Fatale",
+    "url": "https://open.spotify.com/artist/1jjplgZcgCwhU7JlGhBQiw",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb374df698828c0b00ce137806",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb374df698828c0b00ce137806",
+      "https://i.scdn.co/image/ab67616100005174374df698828c0b00ce137806",
+      "https://i.scdn.co/image/ab6761610000f178374df698828c0b00ce137806"
+    ],
+    "relatedArtists": []
   }
 }

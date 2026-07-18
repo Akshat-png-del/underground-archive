@@ -1,34 +1,25 @@
 import type { Metadata } from "next";
-import { archiveSets, setCategoryLabels } from "@/content/sets";
-import type { SetCategory } from "@/types/library";
+import { archiveSets } from "@/content/sets";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { SetsDirectoryGrid } from "@/components/sets/SetsDirectoryGrid";
+import { SetsArchiveBrowser } from "@/components/sets/SetsArchiveBrowser";
 
 export const metadata: Metadata = buildMetadata({
   title: "Essential Sets",
-  description: "Boiler Room, HÖR Berlin, Awakenings, Teletech, and festival performances from underground electronic artists.",
+  description:
+    "Professionally curated archive of HÖR Berlin, Boiler Room, Awakenings, Verknipt, Teletech, Intercell, and warehouse performances.",
   path: "/sets",
 });
-
-const categories = Object.keys(setCategoryLabels) as SetCategory[];
 
 export default function SetsPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <h1 className="font-serif text-3xl text-foreground sm:text-4xl">Essential Sets</h1>
-      <p className="mt-3 text-muted-light">
-        Live performances from Boiler Room, HÖR Berlin, Awakenings, Teletech, and underground institutions.
+      <p className="mt-3 max-w-2xl text-muted-light">
+        A premium archive of verified long-form performances — organized by institution, festival,
+        and warehouse culture. Every set is at least 10 minutes and mapped to one primary collection.
       </p>
 
-      <div className="mt-8 flex flex-wrap gap-2">
-        {categories.map((cat) => (
-          <span key={cat} className="border border-border px-3 py-1 text-xs text-muted-light">
-            {setCategoryLabels[cat]}
-          </span>
-        ))}
-      </div>
-
-      <SetsDirectoryGrid sets={archiveSets} />
+      <SetsArchiveBrowser sets={archiveSets} />
     </div>
   );
 }

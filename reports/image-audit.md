@@ -1,16 +1,16 @@
 # Artist image authenticity audit
-Generated: 2026-06-28T20:30:42.143Z
+Generated: 2026-07-18T01:18:02.109Z
 
 ## Summary
-- Artists: 150
-- Verified photography: 35
-- Editorial / genre portraits (display-ready): 115
+- Artists: 79
+- Verified photography: 21
+- Editorial / genre portraits (display-ready): 58
 - Suspicious assignments: 0
 - Broken URLs: 0
 - Duplicate verified URLs: 0
 - Visual coverage: 100%
 
-## Verified images (35)
+## Verified images (21)
 - Sven Wittekind (sven-wittekind) [Tier 1]
   - URL: /images/portraits/researched/sven-wittekind.jpg
   - Source: spotify
@@ -32,38 +32,11 @@ Generated: 2026-06-28T20:30:42.143Z
 - Petduo (petduo) [Tier 2]
   - URL: /images/portraits/researched/petduo.jpg
   - Source: spotify
-- Assemblage 23 (assemblage-23) [Tier 3]
-  - URL: /images/portraits/researched/assemblage-23.jpg
-  - Source: spotify
-- Hante (hante) [Tier 3]
-  - URL: /images/portraits/researched/hante.jpg
-  - Source: spotify
-- She Past Away (she-past-away) [Tier 2]
-  - URL: /images/portraits/researched/she-past-away.jpg
-  - Source: spotify
-- Lebanon Hanover (lebanon-hanover) [Tier 2]
-  - URL: /images/portraits/researched/lebanon-hanover.jpg
-  - Source: spotify
-- Drab Majesty (drab-majesty) [Tier 2]
-  - URL: /images/portraits/researched/drab-majesty.jpg
-  - Source: spotify
-- Rumina (rumina) [Tier 3]
-  - URL: /images/portraits/researched/rumina.jpg
-  - Source: spotify
-- Per-sona (per-sona) [Tier 3]
-  - URL: /images/portraits/researched/per-sona.jpg
-  - Source: official-website
-- The Soft Moon (the-soft-moon) [Tier 2]
-  - URL: /images/portraits/researched/the-soft-moon.jpg
-  - Source: spotify
 - Rrose (rrose) [Tier 2]
   - URL: /images/portraits/researched/rrose.jpg
   - Source: spotify
 - Blawan (blawan) [Tier 2]
   - URL: /images/portraits/researched/blawan.jpg
-  - Source: spotify
-- PH87 (ph87) [Tier 3]
-  - URL: /images/portraits/researched/ph87.jpg
   - Source: spotify
 - Part Time Killer (part-time-killer) [Tier 3]
   - URL: /images/portraits/researched/part-time-killer.jpg
@@ -80,7 +53,7 @@ Generated: 2026-06-28T20:30:42.143Z
 - Ansome (ansome) [Tier 2]
   - URL: /images/portraits/researched/ansome.jpg
   - Source: spotify
-- D.A.V.E. The Drummer (dave-the-drummer) [Tier 2]
+- D.A.V.E. The Drummer (dave-the-drummer) [Tier 3]
   - URL: /images/portraits/researched/dave-the-drummer.jpg
   - Source: spotify
 - Paranoid London (paranoid-london) [Tier 2]
@@ -89,35 +62,20 @@ Generated: 2026-06-28T20:30:42.143Z
 - Randomer (randomer) [Tier 2]
   - URL: /images/portraits/researched/randomer.jpg
   - Source: spotify
-- Héctor Oaks (hector-oaks) [Tier 2]
+- Héctor Oaks (hector-oaks) [Tier 3]
   - URL: /images/portraits/researched/hector-oaks.jpg
   - Source: spotify
-- Alex Bau (alex-bau) [Tier 2]
-  - URL: /images/portraits/researched/alex-bau.jpg
-  - Source: spotify
-- Weichentechnikk (weichentechnikk) [Tier 2]
-  - URL: /images/portraits/researched/weichentechnikk.jpg
-  - Source: spotify
-- Petra Flurr (petra-flurr) [Tier 2]
-  - URL: /images/portraits/researched/petra-flurr.jpg
-  - Source: spotify
-- Front 242 (front-242) [Tier 2]
-  - URL: /images/portraits/researched/front-242.jpg
-  - Source: spotify
-- Deepbass (deepbass) [Tier 2]
-  - URL: /images/portraits/researched/deepbass.jpg
-  - Source: spotify
-- Nørbak (norbak) [Tier 2]
+- Nørbak (norbak) [Tier 3]
   - URL: /images/portraits/researched/norbak.jpg
   - Source: spotify
-- L.F.T. (lft) [Tier 2]
+- L.F.T. (lft) [Tier 3]
   - URL: /images/portraits/researched/lft.jpg
   - Source: spotify
-- MCR-T (mcr-t) [Tier 2]
+- MCR-T (mcr-t) [Tier 3]
   - URL: /images/portraits/researched/mcr-t.jpg
   - Source: spotify
 
-## Editorial portraits (unverified) (115)
+## Editorial portraits (unverified) (58)
 - Sara Landry (sara-landry) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f
   - Source: spotify
@@ -128,7 +86,7 @@ Generated: 2026-06-28T20:30:42.143Z
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ddc291044a945ae802c0434c
   - Source: spotify
 - VTSS (vtss) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051742c592ef981e3103fac56b539
   - Source: spotify
 - Regal (regal) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683
@@ -143,7 +101,7 @@ Generated: 2026-06-28T20:30:42.143Z
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051742d6285111ab8944150879a05
   - Source: spotify
 - Hadone (hadone) [Tier 1]
-  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0295ec3bafc1e2245c512d10c1
   - Source: spotify
 - Anetha (anetha) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2
@@ -152,8 +110,8 @@ Generated: 2026-06-28T20:30:42.143Z
   - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174092f7b33a43e7d0cedea85de
   - Source: spotify
 - DJ Rush (dj-rush) [Tier 1]
-  - URL: https://yt3.ggpht.com/ZdVzt68dKyxHHa10WrBKP5L8MJSSqfmyrV07IvtFcSqtmFNaC0hWrDQQpaPSuj3JMyfr1DWeJ1c=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://i.scdn.co/image/ab67616d0000b273777ebea81ef957316a6d391b
+  - Source: spotify
 - Robert Natus (robert-natus) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cbcea93ffe1f07c8c7bb9614
   - Source: spotify
@@ -164,81 +122,81 @@ Generated: 2026-06-28T20:30:42.143Z
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051744dfb2d3ee3a2dfdd8f476600
   - Source: spotify
 - Phase Fatale (phase-fatale) [Tier 1]
-  - URL: https://yt3.ggpht.com/SyGGIyNrDOICkI7QFqHw5TeeEiD3GJ61ompi-qOqKrQh7zltB54UYXwPyNL054EvUs3pRuOD=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174374df698828c0b00ce137806
+  - Source: spotify
 - Helena Hauff (helena-hauff) [Tier 1]
-  - URL: https://yt3.ggpht.com/CcYZyoEhoahY6EHFT7yi8SDgkIQwO9PIo2Mh3HZX-zwrjggRex9bvKGbnpH_v-TqCe2U4-8e=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174b61b03aef8e44727006ceb72
+  - Source: spotify
 - Rebekah (rebekah) [Tier 1]
-  - URL: https://yt3.ggpht.com/2jr7AUI_bKQva-dzlNEfRwo5uf3xu6swR40E9o7XPg-OamFm879_HPVuwCmV8y_olxLlKXSxYQ=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517409dcc41dd5fbceefe795ce59
+  - Source: spotify
 - Ghost in the Machine (ghost-in-the-machine) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174967450bbee9bf0cfc07bb402
   - Source: spotify
 - Codex Empire (codex-empire) [Tier 1]
-  - URL: https://yt3.ggpht.com/I5RAfzqFOqLsMz7RZx977EDTPFW7P_5OFS3KoOUMU9OGQZADKG-KKLa6qaRAQiC-IU5gCwEf=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://i.scdn.co/image/ab6761610000e5eb6966bf77ef2d2fe0b51fe528
+  - Source: spotify
 - Orphx (orphx) [Tier 1]
-  - URL: https://yt3.ggpht.com/0W0APBqfHdCKUL1oIe1HsaEKqTSg21EM6Gdq-GVTVkysM15UCA3lnHiUY2DdO_1ZSga0lnkBOg=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://i.scdn.co/image/a598194336a15f31ce741b7ff1471ab5563c0038
+  - Source: spotify
 - LAVEN (laven) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174ef522cb545ff8f256dae8a5a
   - Source: spotify
 - Klangkuenstler (klangkuenstler) [Tier 1]
-  - URL: https://yt3.ggpht.com/WPnzwBQ8UQYxLPxWHmdcN1Me6UO9rpn7zHt3q463AU1vb4mjVTtOM2lLGQz6tXXYwiWWZMxDAqE=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051743d65ee13ef224f8dacdd4b92
+  - Source: spotify
 - DYEN (dyen) [Tier 1]
-  - URL: https://yt3.ggpht.com/Ck5B3BDio8eOFwqtNY5d0smi1M2aa914q1lpzNFMsweCWSD24-58yO01z_-CV6xaYhNfPlc_=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Trym (trym) [Tier 1]
+  - URL: https://i.scdn.co/image/ab6761610000e5eb3234528addf597ea532d2ca6
+  - Source: spotify
+- TRYM (trym) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174185bbfc6ea9e44c34c0199a1
   - Source: spotify
 - Charlie Sparks (charlie-sparks) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a7d68de3c6f64cf109d20bd8
   - Source: spotify
 - Parfait (parfait) [Tier 1]
-  - URL: https://yt3.ggpht.com/IfKFvKLVhv7qUkC1OC0AkenYD3JjV8EYsPMAiyvE2qM5RwELdl8owNjCw2R0phkju-Lozjr0=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Funk Tribu (funk-tribu) [Tier 1]
-  - URL: https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Holy Priest (holy-priest) [Tier 1]
-  - URL: https://yt3.ggpht.com/eK148TLK2AefCDJdwGBVXBDCvqOGTYoYwyeb4wACIU2f0bmwdYXZEk_yOXbr9E_4aLR7XNwFIA=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- Vendex (vendex) [Tier 1]
-  - URL: https://image-cdn-fa.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517452f4da7e8202e3094be3eea7
   - Source: spotify
-- Nikolina (nikolina) [Tier 1]
+- Funk Tribu (funk-tribu) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517403d24f1203d1e67917a2737a
+  - Source: spotify
+- Holy Priest (holy-priest) [Tier 1]
+  - URL: https://i.scdn.co/image/ab6761610000e5eb3ed6781742a2f3159aa4ee69
+  - Source: spotify
+- Vendex (vendex) [Tier 1]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051748b7c6cea3a9298450ecfbc69
+  - Source: spotify
+- NIKOLINA (nikolina) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517458c3c7f14e0fabab1acd6ab2
   - Source: spotify
 - Fantasm (fantasm) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051740a3946395e1ee04f3fd20cfd
   - Source: spotify
 - Alignment (alignment) [Tier 1]
-  - URL: https://yt3.ggpht.com/q7WiBQNEx2-aoy35A6dX1SjLjqyPSkJQ3sekognOzvi42Qv7r-21Lq-b4aL5EoYuG2XJ9e9l=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://image-cdn-fa.spotifycdn.com/image/ab6761610000517423106ee6c8479ffcf2391f7a
+  - Source: spotify
 - 999999999 (999999999) [Tier 1]
   - URL: https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ecb23a5f80883b6d546f3c96
   - Source: spotify
 - Shlømo (shlomo) [Tier 2]
-  - URL: https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517452a349188b67995ad3e3a8e2
+  - Source: spotify
 - Azyr (azyr) [Tier 2]
-  - URL: https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- MRD (mrd) [Tier 2]
-  - URL: https://yt3.ggpht.com/b5d8qu6FWwhHCODQJzDdPFLQohlAup91n5GZhGEIOlqfpzQdbRAGnQqMR9B8UrvuAHS8IRRH=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517483bc4927a66df04da5c48647
+  - Source: spotify
 - Nico Moreno (nico-moreno) [Tier 2]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849
   - Source: spotify
-- Alarico (alarico) [Tier 2]
-  - URL: https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-- CRAVET (cravet) [Tier 2]
-  - URL: https://yt3.ggpht.com/-GmAnyjHkg6InDB6i4IpUQFwiaEyCrjH5uUdMkIzaqeC8_zhmkZsWMJIgMIJb9m--eu9zjGv2g=s800-c-k-c0x00ffffff-no-rj
-  - Source: official-website
-  … and 75 more
+- CARV (carv) [Tier 2]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051743840f1b0069575ad6091f43e
+  - Source: spotify
+- Clara Cuvé (clara-cuve) [Tier 2]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab6761610000517469cd0a65a4536e6a9eaeaa8d
+  - Source: spotify
+- Patrick Mason (patrick-mason) [Tier 2]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0259f0ffa461c2cc533656616e
+  - Source: spotify
+  … and 18 more
 
 ## Suspicious assignments (0)
 

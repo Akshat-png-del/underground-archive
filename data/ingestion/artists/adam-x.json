@@ -1,14 +1,14 @@
 {
   "slug": "adam-x",
   "name": "Adam X",
-  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "updatedAt": "2026-07-17T06:34:14.652Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:46.060Z",
       "status": "ok"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "syncedAt": "2026-07-18T00:53:47.575Z",
       "status": "ok"
     },
     "residentAdvisor": {
@@ -25,8 +25,8 @@
   },
   "resolvedImage": {
     "url": "/images/portraits/researched/adam-x.jpg",
-    "source": "resident-advisor",
-    "sourceUrl": "https://ra.co/dj/adamx"
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4puKiwP3DNIzEaxPCheUbj"
   },
   "spotify": {
     "artistId": "4puKiwP3DNIzEaxPCheUbj",
@@ -35,9 +35,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "/images/portraits/researched/adam-x.jpg",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebc7de614f1d9a401cd5cc8620",
     "imageUrls": [
-      "/images/portraits/researched/adam-x.jpg"
+      "https://i.scdn.co/image/ab6761610000e5ebc7de614f1d9a401cd5cc8620",
+      "https://i.scdn.co/image/ab67616100005174c7de614f1d9a401cd5cc8620",
+      "https://i.scdn.co/image/ab6761610000f178c7de614f1d9a401cd5cc8620"
     ],
     "relatedArtists": []
   }

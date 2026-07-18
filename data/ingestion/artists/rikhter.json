@@ -1,10 +1,14 @@
 {
   "slug": "rikhter",
   "name": "Rikhter",
-  "updatedAt": "2026-06-28T01:38:18.298Z",
+  "updatedAt": "2026-07-16T23:51:05.702Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:03.974Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:51:05.702Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/GWgg1IuY7LwmOWeGBGESMBX8JWv5UBfCk_HCQ5uROwFrszoAXG8IJsk2O2CAVD67FmdPWJdv=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/GWgg1IuY7LwmOWeGBGESMBX8JWv5UBfCk_HCQ5uROwFrszoAXG8IJsk2O2CAVD67FmdPWJdv=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCjQrI4CQ1VUlLgqGCYAavYw"
+    "url": "https://i.scdn.co/image/ab6761610000e5eb1f7ae7150279fa67fb75b855",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/01wXJJ2iH73waMzLrINVY6"
+  },
+  "spotify": {
+    "artistId": "01wXJJ2iH73waMzLrINVY6",
+    "name": "Rikhter",
+    "url": "https://open.spotify.com/artist/01wXJJ2iH73waMzLrINVY6",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb1f7ae7150279fa67fb75b855",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb1f7ae7150279fa67fb75b855",
+      "https://i.scdn.co/image/ab676161000051741f7ae7150279fa67fb75b855",
+      "https://i.scdn.co/image/ab6761610000f1781f7ae7150279fa67fb75b855"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

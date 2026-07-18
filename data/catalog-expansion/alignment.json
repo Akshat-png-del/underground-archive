@@ -1,6 +1,63 @@
 {
   "slug": "alignment",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Attack",
+      "spotifyTrackId": "2ZOo2V27Gvj38dZwGOEwLS",
+      "year": 2022,
+      "duration": "6:03",
+      "album": "Attack EP"
+    },
+    {
+      "title": "Close Your Eyes",
+      "spotifyTrackId": "1Hll6B9gqsOFi2Bln02laD",
+      "year": 2023,
+      "duration": "5:01",
+      "album": "Close Your Eyes EP"
+    },
+    {
+      "title": "Mystical Energy",
+      "spotifyTrackId": "6jQJKutPT5MicGc9jvgFhu",
+      "year": 2025,
+      "duration": "5:20",
+      "album": "Mystical Energy EP"
+    },
+    {
+      "title": "Proton",
+      "spotifyTrackId": "2AzAamWZi47Fv7nds8h7AM",
+      "year": 2026,
+      "duration": "3:10",
+      "album": "Proton"
+    },
+    {
+      "title": "I Am Alignment",
+      "spotifyTrackId": "0554UZ7Ivopl6bjywLkRdM",
+      "year": 2025,
+      "duration": "1:08",
+      "album": "Hidden Frequencies EP"
+    },
+    {
+      "title": "Hidden Frequencies",
+      "spotifyTrackId": "0ihoHOy7es3FbtJKageQUn",
+      "year": 2025,
+      "duration": "4:31",
+      "album": "Hidden Frequencies EP"
+    },
+    {
+      "title": "The Darkness Of This Night",
+      "spotifyTrackId": "1viuBZW7iiGasgXwhpJL9h",
+      "year": 2025,
+      "duration": "3:39",
+      "album": "Hidden Frequencies EP"
+    },
+    {
+      "title": "Brazilian Pulse",
+      "spotifyTrackId": "3j3GTXzZ2c8Spo3KzSABv1",
+      "year": 2025,
+      "duration": "5:01",
+      "album": "Mystical Energy EP"
+    }
+  ],
   "sets": [
     {
       "title": "Alignment | Boiler Room: Lyon",
@@ -31,7 +88,25 @@
       "venue": "Intercell",
       "year": 2022,
       "youtubeId": "6qSnO5U95yU"
+    },
+    {
+      "title": "Voxnox - Alignment / December 2 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "BRV_ZccRkWQ"
+    },
+    {
+      "title": "Fernwerk Club - Alignment / September 3 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "xUGYc0s3b9s"
+    },
+    {
+      "title": "Voxnox Showcase - Alignment / April 14 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "GJoJ0lIUlnE"
     }
   ],
-  "updatedAt": "2026-06-28T01:33:06.092Z"
+  "updatedAt": "2026-07-18T00:54:02.247Z"
 }

@@ -1,6 +1,88 @@
 {
   "slug": "lft",
-  "tracks": [],
-  "sets": [],
-  "updatedAt": "2026-06-28T02:00:30.440Z"
+  "tracks": [
+    {
+      "title": "Knebelfreunde",
+      "spotifyTrackId": "5wdxmoMLDk8ajOEVLYo6Bt",
+      "year": 2025,
+      "duration": "3:18",
+      "album": "Hell Was Boring"
+    },
+    {
+      "title": "Die Infektion",
+      "spotifyTrackId": "4lrjNFm6ZXgMMZj5kv79M3",
+      "year": 2025,
+      "duration": "3:35",
+      "album": "Hell Was Boring"
+    },
+    {
+      "title": "Die Geldmaschine",
+      "spotifyTrackId": "4cfu4ZUatXPsuSpq0c5PFc",
+      "year": 2020,
+      "duration": "6:24",
+      "album": "Blood In The Grass"
+    },
+    {
+      "title": "Broken101",
+      "spotifyTrackId": "16ReZND4yg5tP2zhDbfe6J",
+      "year": 2024,
+      "duration": "5:47",
+      "album": "Minecrawler"
+    },
+    {
+      "title": "Waste Your Facelift",
+      "spotifyTrackId": "31PQpQItygkhukiDGaFGf8",
+      "year": 2025,
+      "duration": "4:05",
+      "album": "Hell Was Boring"
+    },
+    {
+      "title": "Free Cigarettes",
+      "spotifyTrackId": "1PRc7rmQqABBNVZ3S6IQS1",
+      "year": 2025,
+      "duration": "5:23",
+      "album": "Hell Was Boring"
+    },
+    {
+      "title": "Going In Circles",
+      "spotifyTrackId": "7jSNSmagYKrM8NII4FMpi3",
+      "year": 2025,
+      "duration": "4:24",
+      "album": "Hell Was Boring"
+    },
+    {
+      "title": "Totengräber",
+      "spotifyTrackId": "6wlC3D34CKzg22Jqkqxg2B",
+      "year": 2025,
+      "duration": "3:33",
+      "album": "Hell Was Boring"
+    }
+  ],
+  "sets": [
+    {
+      "title": "L.F.T. | HÖR - May 19 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "6CYnmGzKcvE"
+    },
+    {
+      "title": "L.F.T. | HÖR - Nov 22 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "W-nkZTQ3QYk"
+    },
+    {
+      "title": "L.F.T. | HÖR - Apr 27 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "-sT_53uG7-o"
+    },
+    {
+      "title": "L.F.T. / February 21 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "W89h8Jy8oR0"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:09.593Z"
 }

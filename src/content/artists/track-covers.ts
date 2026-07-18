@@ -1,6 +1,5 @@
 import type { Genre } from "@/types";
 import { getGenreArtwork } from "@/lib/archive/genre-artwork";
-import { ytThumb } from "@/lib/images";
 import syncedHashes from "./track-cover-hashes.json";
 
 /** Spotify track/album ID → i.scdn.co image hash */
@@ -61,7 +60,7 @@ export function spotifyCoverHash(id: string): string | undefined {
   return COVER_HASHES[id];
 }
 
-/** Release artwork from Spotify; YouTube still, synced hash, or genre placeholder. */
+/** Release artwork from Spotify only. Never invent or substitute YouTube stills. */
 export function trackCover(
   spotifyUrl: string,
   options?: { youtubeId?: string; hash?: string; genre?: Genre }
@@ -69,6 +68,7 @@ export function trackCover(
   if (options?.hash) return scdn(options.hash);
   const id = spotifyId(spotifyUrl);
   if (id && COVER_HASHES[id]) return scdn(COVER_HASHES[id]);
-  if (options?.youtubeId) return ytThumb(options.youtubeId, "hq");
+  // Prefer empty/fallback over mismatched YouTube stills or guessed covers.
+  // Genre SVG is a last-resort UI placeholder — not claimed as official artwork.
   return options?.genre ? getGenreArtwork(options.genre) : "/images/genres/techno.svg";
 }

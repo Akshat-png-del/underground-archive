@@ -1,6 +1,35 @@
 {
   "slug": "randomer",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Bring",
+      "spotifyTrackId": "5n4uWPmWMbg4XLzrkck25e",
+      "year": 2013,
+      "duration": "4:54",
+      "album": "Bring / Curtains"
+    },
+    {
+      "title": "Smokin",
+      "spotifyTrackId": "7Fe7FtyTFaw5EEQ2lEZNfc",
+      "year": 2017,
+      "duration": "5:39",
+      "album": "Smokin"
+    },
+    {
+      "title": "Curtains",
+      "spotifyTrackId": "5AWudLwexcjj0zNLAiCKwW",
+      "year": 2013,
+      "duration": "4:41",
+      "album": "Bring / Curtains"
+    },
+    {
+      "title": "Universe Of 90's Techno Parties - Randomer Remix",
+      "spotifyTrackId": "5jOzCLCwDcc2rZfQbuxCvr",
+      "year": 2019,
+      "duration": "6:03",
+      "album": "Universe (Remixes)"
+    }
+  ],
   "sets": [
     {
       "title": "Randomer | Boiler Room x Dekmantel Festival 2018",
@@ -13,7 +42,19 @@
       "venue": "Boiler Room",
       "year": 2026,
       "youtubeId": "fe7GcoqA5HU"
+    },
+    {
+      "title": "Randomer / August 13 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "E7w-NEBT0vw"
+    },
+    {
+      "title": "TTT X HÖR - Randomer / June 6 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "cXLkzML6fW0"
     }
   ],
-  "updatedAt": "2026-06-28T01:53:53.857Z"
+  "updatedAt": "2026-07-18T00:55:48.949Z"
 }

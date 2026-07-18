@@ -1,10 +1,14 @@
 {
   "slug": "helena-hauff",
   "name": "Helena Hauff",
-  "updatedAt": "2026-06-28T01:38:02.191Z",
+  "updatedAt": "2026-07-17T06:51:48.323Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:47.285Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:54:51.035Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/CcYZyoEhoahY6EHFT7yi8SDgkIQwO9PIo2Mh3HZX-zwrjggRex9bvKGbnpH_v-TqCe2U4-8e=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/CcYZyoEhoahY6EHFT7yi8SDgkIQwO9PIo2Mh3HZX-zwrjggRex9bvKGbnpH_v-TqCe2U4-8e=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCvyn_w7CUWKpW3LRCy3M0LA"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174b61b03aef8e44727006ceb72",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1JcefSOP7bcWEluL0iEIaN"
+  },
+  "spotify": {
+    "artistId": "1JcefSOP7bcWEluL0iEIaN",
+    "name": "Helena Hauff",
+    "url": "https://open.spotify.com/artist/1JcefSOP7bcWEluL0iEIaN",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebb61b03aef8e44727006ceb72",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5ebb61b03aef8e44727006ceb72",
+      "https://i.scdn.co/image/ab67616100005174b61b03aef8e44727006ceb72",
+      "https://i.scdn.co/image/ab6761610000f178b61b03aef8e44727006ceb72"
+    ],
+    "relatedArtists": []
   }
 }

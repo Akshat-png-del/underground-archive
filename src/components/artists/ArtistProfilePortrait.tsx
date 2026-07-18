@@ -10,6 +10,7 @@ interface ArtistProfilePortraitProps {
   name: string;
   className?: string;
   sizes?: string;
+  priority?: boolean;
 }
 
 export function ArtistProfilePortrait({
@@ -18,6 +19,7 @@ export function ArtistProfilePortrait({
   name,
   className,
   sizes = "144px",
+  priority,
 }: ArtistProfilePortraitProps) {
   return (
     <ArtistPortraitTrigger
@@ -29,7 +31,7 @@ export function ArtistProfilePortrait({
         className,
       )}
     >
-      <SafeImage src={src} fallbacks={fallbacks} alt={name} fill sizes={sizes} />
+      <SafeImage src={src} fallbacks={fallbacks} alt={name} fill sizes={sizes} priority={priority} />
     </ArtistPortraitTrigger>
   );
 }

@@ -1,0 +1,75 @@
+{
+  "slug": "cera-khin",
+  "tracks": [
+    {
+      "title": "Full Belly",
+      "spotifyTrackId": "3FO2udFq5htKXTN61UwDNU",
+      "year": 2021,
+      "duration": "5:17",
+      "album": "Full Belly"
+    },
+    {
+      "title": "Close Your Eyes",
+      "spotifyTrackId": "65QAOszbAC1PIgQZOgvkyj",
+      "year": 2025,
+      "duration": "4:46",
+      "album": "Close Your Eyes"
+    },
+    {
+      "title": "Vampire Workout",
+      "spotifyTrackId": "2ECpeOf9qEUivoQhAFTI48",
+      "year": 2024,
+      "duration": "4:54",
+      "album": "Vampire Workout"
+    },
+    {
+      "title": "Mamichula",
+      "spotifyTrackId": "4PfgLpBwcH0sd7CRh2Lg6R",
+      "year": 2025,
+      "duration": "4:12",
+      "album": "Mamichula"
+    },
+    {
+      "title": "No Escape",
+      "spotifyTrackId": "2AxgnL2PuO8qprrjiIa0Kf",
+      "year": 2021,
+      "duration": "6:32",
+      "album": "No Escape"
+    },
+    {
+      "title": "Demons To Some Angels To Others",
+      "spotifyTrackId": "3Ph1ThoFVEqT4eiTV3hIq3",
+      "year": 2021,
+      "duration": "5:42",
+      "album": "Demons To Some Angels To Others"
+    },
+    {
+      "title": "Sissel & Bass - Cera Khin Mind Destruction Remix",
+      "spotifyTrackId": "5hSKs0ORdQRT9iTe67ifbe",
+      "year": 2019,
+      "duration": "5:17",
+      "album": "Sissel & Bass 4 Ever"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Cera Khin / June 25 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "Rohz_MvE5to"
+    },
+    {
+      "title": "Cera Khin / February 11 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "3oU7HVLSMOY"
+    },
+    {
+      "title": "Cera Khin / May 14 / 6pm-7pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "dTrSGnCSfJw"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:30.448Z"
+}

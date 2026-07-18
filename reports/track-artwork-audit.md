@@ -1,13 +1,13 @@
 # Track artwork audit
 
-Generated: 2026-06-28T20:13:57.263Z
+Generated: 2026-07-16T23:48:19.741Z
 
 ## Summary
 
 | Metric | Count |
 | --- | --- |
-| Catalog tracks | 781 |
-| Catalog releases | 301 |
+| Catalog tracks | 259 |
+| Catalog releases | 0 |
 | Issues | 0 |
 
 _All track cards have Spotify or genre placeholder artwork._

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useMemo } from "react";
 import {
   getMostDiscussedArtists,
   getMostLikedPlaylists,
@@ -13,12 +14,27 @@ import { SafeImage } from "@/components/ui/SafeImage";
 import { SocialBadge } from "@/components/ui/SocialBadge";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
+import { useHomepageRotationRefresh } from "@/components/home/useHomepageRotationRefresh";
+import type { Artist } from "@/types";
+import type { ArchiveSet } from "@/types/library";
 
-export function CommunityFavoritesHub() {
+export function CommunityFavoritesHub({
+  initialArtists,
+  initialSets,
+}: {
+  initialArtists?: Artist[];
+  initialSets?: ArchiveSet[];
+}) {
   const playlists = getMostLikedPlaylists(3);
-  const sets = getMostSavedSets(3);
-  const setBrowseQueue = sets.map(playbackItemFromSet);
-  const artists = getMostDiscussedArtists(4);
+  const artists = useHomepageRotationRefresh(
+    () => getMostDiscussedArtists(4),
+    initialArtists ?? getMostDiscussedArtists(4),
+  );
+  const sets = useHomepageRotationRefresh(
+    () => getMostSavedSets(3),
+    initialSets ?? getMostSavedSets(3),
+  );
+  const setBrowseQueue = useMemo(() => sets.map(playbackItemFromSet), [sets]);
 
   return (
     <FadeInSection>

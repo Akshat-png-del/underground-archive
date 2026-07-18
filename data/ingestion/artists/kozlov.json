@@ -1,0 +1,26 @@
+{
+  "slug": "kozlov",
+  "name": "Køzløv",
+  "updatedAt": "2026-07-16T23:47:07.376Z",
+  "sources": {},
+  "spotify": {
+    "artistId": "6lmg9kOOeuhhgThuBOE4bX",
+    "name": "Køzløv",
+    "url": "https://open.spotify.com/artist/6lmg9kOOeuhhgThuBOE4bX",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e971db90779c63eece39a3c1",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e971db90779c63eece39a3c1"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174e971db90779c63eece39a3c1",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6lmg9kOOeuhhgThuBOE4bX",
+    "confidence": "high",
+    "updatedAt": "2026-07-16T23:47:07.376Z"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "slug": "anetha",
   "name": "Anetha",
-  "updatedAt": "2026-06-28T19:50:59.511Z",
+  "updatedAt": "2026-07-17T06:49:47.259Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:50:59.511Z",
+      "syncedAt": "2026-07-18T00:54:06.906Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,9 +19,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb097a0dde7fc487e54c2394e2",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174097a0dde7fc487e54c2394e2"
+      "https://i.scdn.co/image/ab6761610000e5eb097a0dde7fc487e54c2394e2",
+      "https://i.scdn.co/image/ab67616100005174097a0dde7fc487e54c2394e2",
+      "https://i.scdn.co/image/ab6761610000f178097a0dde7fc487e54c2394e2"
     ],
     "relatedArtists": []
   },

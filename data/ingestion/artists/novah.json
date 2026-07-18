@@ -1,10 +1,14 @@
 {
   "slug": "novah",
   "name": "Novah",
-  "updatedAt": "2026-06-28T01:38:18.308Z",
+  "updatedAt": "2026-07-16T23:48:51.356Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:18.601Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:48:51.356Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,21 @@
     "thumbnailUrl": "https://yt3.ggpht.com/Z9r7bYM8AyVsBMuYcMLSeN5wdhjvkdKxLhuYsoI7zC9ltUIoFjc0VhYEh-ptk8wy_guqB0Pm=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/Z9r7bYM8AyVsBMuYcMLSeN5wdhjvkdKxLhuYsoI7zC9ltUIoFjc0VhYEh-ptk8wy_guqB0Pm=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@novah_music"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517422279571b77dc25224c13ce2",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7qvjUtp2ccRD9AiDnukyFF"
+  },
+  "spotify": {
+    "artistId": "7qvjUtp2ccRD9AiDnukyFF",
+    "name": "NOVAH",
+    "url": "https://open.spotify.com/artist/7qvjUtp2ccRD9AiDnukyFF",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517422279571b77dc25224c13ce2",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517422279571b77dc25224c13ce2"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

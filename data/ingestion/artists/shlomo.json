@@ -1,10 +1,14 @@
 {
   "slug": "shlomo",
   "name": "Shlømo",
-  "updatedAt": "2026-06-28T01:38:16.870Z",
+  "updatedAt": "2026-07-17T07:02:48.564Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:58.917Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:55.006Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/oj_PF962NUp-5Ppt07SXVPvsfErya33wO15KUXGfwxyVnc0Bc1IIU-bg5_yVPh7rPHtVycuGvQ=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@shlomo-dj"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517452a349188b67995ad3e3a8e2",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0ZdNs1hU6aAiaZxvFbtDWF"
+  },
+  "spotify": {
+    "artistId": "0ZdNs1hU6aAiaZxvFbtDWF",
+    "name": "Shlømo",
+    "url": "https://open.spotify.com/artist/0ZdNs1hU6aAiaZxvFbtDWF",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb52a349188b67995ad3e3a8e2",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb52a349188b67995ad3e3a8e2",
+      "https://i.scdn.co/image/ab6761610000517452a349188b67995ad3e3a8e2",
+      "https://i.scdn.co/image/ab6761610000f17852a349188b67995ad3e3a8e2"
+    ],
+    "relatedArtists": []
   }
 }

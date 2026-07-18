@@ -1,8 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 
-export function FadeInSection({
+/**
+ * Lightweight reveal — above-the-fold content paints immediately;
+ * below-fold fades in with a short transition (perf-first).
+ */
+export const FadeInSection = memo(function FadeInSection({
   children,
   className = "",
 }: {
@@ -15,6 +19,14 @@ export function FadeInSection({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    const rect = el.getBoundingClientRect();
+    // Already near viewport → show now (no wait for observer tick)
+    if (rect.top < (typeof window !== "undefined" ? window.innerHeight + 160 : 800)) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -22,7 +34,7 @@ export function FadeInSection({
           observer.disconnect();
         }
       },
-      { threshold: 0.12 }
+      { rootMargin: "180px 0px", threshold: 0.01 },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -31,11 +43,11 @@ export function FadeInSection({
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ease-out ${
-        visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+      className={`transition-[opacity,transform] duration-300 ease-out will-change-[opacity,transform] ${
+        visible ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
       } ${className}`}
     >
       {children}
     </div>
   );
-}
+});

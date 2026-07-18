@@ -1,0 +1,570 @@
+{
+  "artists": {
+    "total": 150,
+    "byTier": {
+      "1": 40,
+      "2": 53,
+      "3": 57
+    },
+    "byVerification": {
+      "verified": 40,
+      "partial": 53,
+      "unverified": 57
+    },
+    "noSpotifyArtistId": 80,
+    "noSpotifyLink": 80,
+    "noExternalLinks": 4,
+    "noTopTracks": 0,
+    "noEssentialSets": 80,
+    "unverifiedPortrait": 115
+  },
+  "nestedTopTracks": {
+    "total": 781,
+    "verified": 202,
+    "spotifyUrlKind": {
+      "blank": 545,
+      "track": 210,
+      "album": 4,
+      "artist": 22,
+      "invalid": 0
+    },
+    "blankYt": 781,
+    "noUrl": 545,
+    "artistOrAlbumAsTrackUrl": 26
+  },
+  "catalogTracks": {
+    "total": 781,
+    "verified": 202,
+    "spotifyUrlKind": {
+      "blank": 545,
+      "track": 210,
+      "album": 4,
+      "artist": 22,
+      "invalid": 0
+    },
+    "blankYt": 781,
+    "hasPreview": 0,
+    "noMedia": 545,
+    "playable": 236,
+    "unplayable": 545,
+    "bySource": {
+      "spotify": 236,
+      "none": 545
+    },
+    "issues": {
+      "Using album embed (no track URL)": 4,
+      "Track missing Spotify or YouTube URL": 545
+    },
+    "artistOrAlbumAsTrackUrl": 26
+  },
+  "releases": {
+    "total": 301,
+    "blankSpotify": 160
+  },
+  "sets": {
+    "essentialTotal": 241,
+    "archiveDisplayed": 241,
+    "filteredOut": 0,
+    "verified": 185,
+    "unverified": 56,
+    "blankYt": 0,
+    "invalidYt": 0,
+    "playable": 241,
+    "unplayable": 0,
+    "durationHardcoded1h": 241,
+    "under10min": 0,
+    "bySource": {
+      "youtube": 241
+    },
+    "issues": {}
+  },
+  "samples": {
+    "unplayableTracks": [
+      {
+        "id": "azyr::azyr",
+        "title": "Azyr",
+        "artist": "Azyr",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "azyr::warehouse-pressure",
+        "title": "Warehouse Pressure",
+        "artist": "Azyr",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "azyr::peak-hour",
+        "title": "Peak Hour",
+        "artist": "Azyr",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "azyr::distorted-dreams",
+        "title": "Distorted Dreams",
+        "artist": "Azyr",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "azyr::night-shift",
+        "title": "Night Shift",
+        "artist": "Azyr",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "mrd::mrd",
+        "title": "MRD",
+        "artist": "MRD",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "mrd::warehouse-pressure",
+        "title": "Warehouse Pressure",
+        "artist": "MRD",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "mrd::peak-hour",
+        "title": "Peak Hour",
+        "artist": "MRD",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "mrd::distorted-dreams",
+        "title": "Distorted Dreams",
+        "artist": "MRD",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "mrd::night-shift",
+        "title": "Night Shift",
+        "artist": "MRD",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "nico-moreno::nico-moreno",
+        "title": "Nico Moreno",
+        "artist": "Nico Moreno",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "nico-moreno::warehouse-pressure",
+        "title": "Warehouse Pressure",
+        "artist": "Nico Moreno",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "nico-moreno::peak-hour",
+        "title": "Peak Hour",
+        "artist": "Nico Moreno",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "nico-moreno::distorted-dreams",
+        "title": "Distorted Dreams",
+        "artist": "Nico Moreno",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "nico-moreno::night-shift",
+        "title": "Night Shift",
+        "artist": "Nico Moreno",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "alarico::alarico",
+        "title": "Alarico",
+        "artist": "Alarico",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "alarico::warehouse-pressure",
+        "title": "Warehouse Pressure",
+        "artist": "Alarico",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "alarico::peak-hour",
+        "title": "Peak Hour",
+        "artist": "Alarico",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "alarico::distorted-dreams",
+        "title": "Distorted Dreams",
+        "artist": "Alarico",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      },
+      {
+        "id": "alarico::night-shift",
+        "title": "Night Shift",
+        "artist": "Alarico",
+        "issue": "Track missing Spotify or YouTube URL",
+        "spotifyKind": "blank",
+        "spotify": ""
+      }
+    ],
+    "weakSpotifyTrackUrls": [
+      {
+        "id": "kobosil::we-grow",
+        "title": "We Grow",
+        "artist": "Kobosil",
+        "spotifyKind": "album",
+        "playable": true,
+        "issue": "Using album embed (no track URL)"
+      },
+      {
+        "id": "kobosil::pressure",
+        "title": "Pressure",
+        "artist": "Kobosil",
+        "spotifyKind": "album",
+        "playable": true,
+        "issue": "Using album embed (no track URL)"
+      },
+      {
+        "id": "kobosil::seil-01",
+        "title": "Seil 01",
+        "artist": "Kobosil",
+        "spotifyKind": "album",
+        "playable": true,
+        "issue": "Using album embed (no track URL)"
+      },
+      {
+        "id": "regal::verdansk",
+        "title": "Verdansk",
+        "artist": "Regal",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "regal::involve-01",
+        "title": "Involve 01",
+        "artist": "Regal",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "regal::acid-rage",
+        "title": "Acid Rage",
+        "artist": "Regal",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "regal::schranz-tool",
+        "title": "Schranz Tool",
+        "artist": "Regal",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "regal::madrid-nights",
+        "title": "Madrid Nights",
+        "artist": "Regal",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "boy-harsher::country-girl",
+        "title": "Country Girl",
+        "artist": "Boy Harsher",
+        "spotifyKind": "album",
+        "playable": true,
+        "issue": "Using album embed (no track URL)"
+      },
+      {
+        "id": "boy-harsher::machina",
+        "title": "Machina",
+        "artist": "Boy Harsher",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "boy-harsher::face-the-fire",
+        "title": "Face the Fire",
+        "artist": "Boy Harsher",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "amelie-lens::in-my-mind",
+        "title": "In My Mind",
+        "artist": "Amelie Lens",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "amelie-lens::higher",
+        "title": "Higher",
+        "artist": "Amelie Lens",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "amelie-lens::exhale",
+        "title": "Exhale",
+        "artist": "Amelie Lens",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "amelie-lens::raver",
+        "title": "Raver",
+        "artist": "Amelie Lens",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "amelie-lens::never",
+        "title": "Never",
+        "artist": "Amelie Lens",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "hadone::angel-numbers",
+        "title": "Angel Numbers",
+        "artist": "Hadone",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "hadone::never",
+        "title": "Never",
+        "artist": "Hadone",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "hadone::gabber",
+        "title": "Gabber",
+        "artist": "Hadone",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "hadone::possession",
+        "title": "Possession",
+        "artist": "Hadone",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "hadone::lyon",
+        "title": "Lyon",
+        "artist": "Hadone",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "anetha::acid-drop",
+        "title": "Acid Drop",
+        "artist": "Anetha",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "anetha::mama-told-ya",
+        "title": "Mama Told Ya",
+        "artist": "Anetha",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "anetha::schranz-tool",
+        "title": "Schranz Tool",
+        "artist": "Anetha",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "anetha::paris-nights",
+        "title": "Paris Nights",
+        "artist": "Anetha",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "anetha::rave",
+        "title": "Rave",
+        "artist": "Anetha",
+        "spotifyKind": "artist",
+        "playable": true,
+        "issue": null
+      },
+      {
+        "id": "azyr::azyr",
+        "title": "Azyr",
+        "artist": "Azyr",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "azyr::warehouse-pressure",
+        "title": "Warehouse Pressure",
+        "artist": "Azyr",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "azyr::peak-hour",
+        "title": "Peak Hour",
+        "artist": "Azyr",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "azyr::distorted-dreams",
+        "title": "Distorted Dreams",
+        "artist": "Azyr",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "azyr::night-shift",
+        "title": "Night Shift",
+        "artist": "Azyr",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "mrd::mrd",
+        "title": "MRD",
+        "artist": "MRD",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "mrd::warehouse-pressure",
+        "title": "Warehouse Pressure",
+        "artist": "MRD",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "mrd::peak-hour",
+        "title": "Peak Hour",
+        "artist": "MRD",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "mrd::distorted-dreams",
+        "title": "Distorted Dreams",
+        "artist": "MRD",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "mrd::night-shift",
+        "title": "Night Shift",
+        "artist": "MRD",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "nico-moreno::nico-moreno",
+        "title": "Nico Moreno",
+        "artist": "Nico Moreno",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "nico-moreno::warehouse-pressure",
+        "title": "Warehouse Pressure",
+        "artist": "Nico Moreno",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "nico-moreno::peak-hour",
+        "title": "Peak Hour",
+        "artist": "Nico Moreno",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      },
+      {
+        "id": "nico-moreno::distorted-dreams",
+        "title": "Distorted Dreams",
+        "artist": "Nico Moreno",
+        "spotifyKind": "blank",
+        "playable": false,
+        "issue": "Track missing Spotify or YouTube URL"
+      }
+    ],
+    "badYoutubeEssentials": [],
+    "unplayableSets": [],
+    "under10minSets": []
+  }
+}

@@ -1,10 +1,14 @@
 {
   "slug": "somewhen",
   "name": "Somewhen",
-  "updatedAt": "2026-06-28T01:38:18.298Z",
+  "updatedAt": "2026-07-17T07:04:35.591Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:04.581Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:59.348Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/SZ3h0f2P7wpXUULVQDE8xw6i8AiaIOJJJxTTyequgq8zUMrqwbN8OoG5Q5WOWFJUh-IJcqBe=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/SZ3h0f2P7wpXUULVQDE8xw6i8AiaIOJJJxTTyequgq8zUMrqwbN8OoG5Q5WOWFJUh-IJcqBe=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@somewhensrx"
+    "url": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517464b29d04e6ac5cd5f46b3e50",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0k47nZgznsmnNkSIJvjbVy"
+  },
+  "spotify": {
+    "artistId": "0k47nZgznsmnNkSIJvjbVy",
+    "name": "Somewhen",
+    "url": "https://open.spotify.com/artist/0k47nZgznsmnNkSIJvjbVy",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb64b29d04e6ac5cd5f46b3e50",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb64b29d04e6ac5cd5f46b3e50",
+      "https://i.scdn.co/image/ab6761610000517464b29d04e6ac5cd5f46b3e50",
+      "https://i.scdn.co/image/ab6761610000f17864b29d04e6ac5cd5f46b3e50"
+    ],
+    "relatedArtists": []
   }
 }

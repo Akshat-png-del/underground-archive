@@ -34,7 +34,7 @@ export default async function GenrePage({
   if (!genreLabels[slug]) notFound();
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+    <div className="mx-auto max-w-6xl min-w-0 px-4 py-12 sm:py-16">
       <GenrePageContent slug={slug} />
     </div>
   );

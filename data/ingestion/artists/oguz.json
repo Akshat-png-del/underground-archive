@@ -1,10 +1,14 @@
 {
   "slug": "oguz",
   "name": "Oguz",
-  "updatedAt": "2026-06-28T01:38:18.316Z",
+  "updatedAt": "2026-07-16T23:51:08.739Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:29.019Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:51:08.739Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/IIOEFUi8pxQYvuvrx70GW1zQxfAZXV3MXYiFVeyCnZnqWji9--SR8t_D2M2lVgNB-PwDAFFrvg=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/IIOEFUi8pxQYvuvrx70GW1zQxfAZXV3MXYiFVeyCnZnqWji9--SR8t_D2M2lVgNB-PwDAFFrvg=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@oguz.yenihayat"
+    "url": "https://i.scdn.co/image/ab6761610000e5eb16070403281edafeaac744f4",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2n6aFLFLpEBs61Kfy5EX5v"
+  },
+  "spotify": {
+    "artistId": "2n6aFLFLpEBs61Kfy5EX5v",
+    "name": "Oguz",
+    "url": "https://open.spotify.com/artist/2n6aFLFLpEBs61Kfy5EX5v",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb16070403281edafeaac744f4",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb16070403281edafeaac744f4",
+      "https://i.scdn.co/image/ab6761610000517416070403281edafeaac744f4",
+      "https://i.scdn.co/image/ab6761610000f17816070403281edafeaac744f4"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

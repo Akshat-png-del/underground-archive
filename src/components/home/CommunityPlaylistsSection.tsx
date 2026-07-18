@@ -12,12 +12,7 @@ export function CommunityPlaylistsSection() {
 
   return (
     <FadeInSection>
-      <HomeSection
-        title="Community playlists"
-        subtitle="Curated by listeners — warehouse pressure, industrial darkness, peak-time chaos."
-        href="/library/playlists"
-        linkLabel="Browse playlists"
-      >
+      <HomeSection title="Community playlists" href="/library/playlists" linkLabel="Browse playlists">
         <HomeCarousel>
           {playlists.map((p) => (
             <CarouselItem key={p.id}>

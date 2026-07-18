@@ -183,8 +183,6 @@ export function createCatalogArtist(entry: CatalogEntry): Artist {
       ? entry.imageVideoId
       : undefined;
 
-  const epCover = topTracks[0]?.coverArt ?? getGenreArtwork(entry.genres[0]);
-
   return buildArtist({
     slug: entry.slug,
     name: entry.name,
@@ -212,19 +210,10 @@ export function createCatalogArtist(entry: CatalogEntry): Artist {
       influences: ["Industrial techno", "EBM", "90s rave"],
     },
     topTracks,
+    // Do not fabricate releases — only keep explicitly authored Spotify album/track URLs.
     albums: [],
-    eps:
-      topTracks.length
-        ? [{ title: `${topTracks[0].title} EP`, year: topTracks[0].year, coverArt: epCover }]
-        : [],
-    singles:
-      topTracks.length
-        ? topTracks.slice(0, 1).map((t) => ({
-            title: t.title,
-            year: topTracks[0].year,
-            coverArt: t.coverArt,
-          }))
-        : [],
+    eps: [],
+    singles: [],
     essentialSets,
     listeningPath:
       topTracks.length

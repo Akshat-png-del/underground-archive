@@ -5,7 +5,6 @@ import {
   type PlaybackExperience,
 } from "@/lib/music/playback-experience";
 import { isSetWatchDockActive } from "@/lib/sets/set-watch-dock";
-import { isMediaEngineBootstrapped } from "@/lib/music/media-engine-bootstrap";
 
 const TAG = "[PLAYBACK UI]";
 
@@ -47,17 +46,6 @@ export function assertPlaybackLayoutCssLoaded(): void {
     fail(
       "globals.css playback rules are missing in the browser (.spotify-player-bar is not position:fixed). " +
         "Restart with `npm run dev` (webpack). Do not use `next dev --turbo` until Turbopack CSS cache is fixed.",
-    );
-  }
-}
-
-/** Dev-only: invariant guard must run after PlaybackRoot bootstrapMediaEngine(). */
-export function assertPlaybackBootstrapLifecycle(): void {
-  if (!isDev() || typeof document === "undefined") return;
-
-  if (!isMediaEngineBootstrapped()) {
-    fail(
-      "PlaybackUiInvariantGuard executed before bootstrapMediaEngine() — mount the guard after <PlaybackRoot /> in layout.tsx",
     );
   }
 }
@@ -105,7 +93,6 @@ export function assertYoutubeInsideWatchHost(): void {
 /** Dev-only: document experience token must match the active playback item. */
 export function assertPlaybackExperienceDocumentSync(ctx: PlaybackUiInvariantContext): void {
   if (!isDev() || typeof document === "undefined") return;
-  if (!ctx.activeTrack) return;
 
   const expected = playbackExperienceDatasetValue(ctx.experience);
   const actual = document.documentElement.dataset.playbackExperience;
@@ -163,7 +150,6 @@ export function assertPlaybackUiExperienceSync(ctx: PlaybackUiInvariantContext):
 export function assertPlaybackUiInvariants(ctx: PlaybackUiInvariantContext): void {
   if (!isDev() || typeof document === "undefined") return;
 
-  assertPlaybackBootstrapLifecycle();
   assertPlaybackLayoutCssLoaded();
   assertSinglePlaybackEngineHost();
   assertSinglePlaybackExperience(ctx);

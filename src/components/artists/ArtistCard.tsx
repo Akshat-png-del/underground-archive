@@ -1,3 +1,6 @@
+"use client";
+
+import { memo, useMemo } from "react";
 import Link from "next/link";
 import type { Artist } from "@/types";
 import { genreLabels } from "@/content/artists";
@@ -6,28 +9,42 @@ import {
   resolvePortrait,
   resolvePortraitFallbacksForDisplay,
 } from "@/lib/archive/verification";
+import { isPlaceholderArtwork } from "@/lib/library/resolve-display";
 import { Tag } from "@/components/ui/ArchivePrimitives";
 
 interface ArtistCardProps {
   artist: Pick<Artist, "slug" | "name" | "portrait" | "heroImage" | "genres" | "city" | "image" | "spotifyArtistId">;
+  /** First cards in a carousel may request priority for snappier paint. */
+  priority?: boolean;
 }
 
-export function ArtistCard({ artist }: ArtistCardProps) {
+export const ArtistCard = memo(function ArtistCard({ artist, priority }: ArtistCardProps) {
   const imageSrc = resolvePortrait(artist);
-  const fallbacks = resolvePortraitFallbacksForDisplay(artist);
+  const fallbacks = useMemo(
+    () => resolvePortraitFallbacksForDisplay(artist).filter((url) => !isPlaceholderArtwork(url)),
+    // artist identity fields that affect portrait resolution
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [artist.slug, artist.portrait, artist.spotifyArtistId, artist.image?.url],
+  );
+  const hasPortrait = !isPlaceholderArtwork(imageSrc) || fallbacks.length > 0;
+  const src = isPlaceholderArtwork(imageSrc) ? fallbacks[0] : imageSrc;
+  const restFallbacks = isPlaceholderArtwork(imageSrc) ? fallbacks.slice(1) : fallbacks;
 
   return (
     <Link href={`/artists/${artist.slug}`} className="group block cursor-pointer">
       <div className="card-editorial overflow-hidden border border-border bg-surface hover-glow hover:border-accent/40">
-        <div className="relative aspect-[4/5] w-full">
-          <SafeImage
-            src={imageSrc}
-            fallbacks={fallbacks}
-            alt={artist.name}
-            fill
-            className="w-full"
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-          />
+        <div className="relative aspect-[4/5] w-full bg-surface">
+          {hasPortrait && src ? (
+            <SafeImage
+              src={src}
+              fallbacks={restFallbacks}
+              alt={artist.name}
+              fill
+              priority={priority}
+              className="w-full"
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            />
+          ) : null}
         </div>
         <div className="p-4">
           <h3 className="font-serif text-xl text-foreground transition-colors group-hover:text-accent">
@@ -43,4 +60,4 @@ export function ArtistCard({ artist }: ArtistCardProps) {
       </div>
     </Link>
   );
-}
+});

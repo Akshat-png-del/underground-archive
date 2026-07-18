@@ -1,6 +1,82 @@
 {
   "slug": "shlomo",
-  "tracks": [],
-  "sets": [],
-  "updatedAt": "2026-06-28T01:34:08.635Z"
+  "tracks": [
+    {
+      "title": "Dam Dam Dam",
+      "spotifyTrackId": "2xBXLFJRja72cfOVR4o8WY",
+      "year": 2024,
+      "duration": "5:48",
+      "album": "Dam Dam Dam"
+    },
+    {
+      "title": "Welcome Back Devil",
+      "spotifyTrackId": "51xCJIB6whswDNw6tdbF97",
+      "year": 2019,
+      "duration": "5:20",
+      "album": "Welcome Back Devil"
+    },
+    {
+      "title": "Lights Up",
+      "spotifyTrackId": "0kGg7BiTL0hpy2jJxtOJ38",
+      "year": 2025,
+      "duration": "4:45",
+      "album": "Lights Up"
+    },
+    {
+      "title": "CONTROL YOUR BODY",
+      "spotifyTrackId": "3xTwHPwWKMWrWgyN22Qk2h",
+      "year": 2025,
+      "duration": "3:36",
+      "album": "CONTROL YOUR BODY"
+    },
+    {
+      "title": "Hadal Zone - Original",
+      "spotifyTrackId": "6OCzUwH91m05zxSUhOEjNf",
+      "year": 2018,
+      "duration": "3:28",
+      "album": "Mercurial Skin"
+    },
+    {
+      "title": "Mercurial Skin - Original",
+      "spotifyTrackId": "1jZAUbEUdeChJ62xRLhwgX",
+      "year": 2018,
+      "duration": "6:58",
+      "album": "Mercurial Skin"
+    },
+    {
+      "title": "Maara - Original",
+      "spotifyTrackId": "54Quwz7KCgCDYZBzdU3YqJ",
+      "year": 2018,
+      "duration": "5:24",
+      "album": "Mercurial Skin"
+    },
+    {
+      "title": "Napalm - Original",
+      "spotifyTrackId": "7HbCNOj24Sd8n93xXrInbf",
+      "year": 2018,
+      "duration": "5:38",
+      "album": "Mercurial Skin"
+    }
+  ],
+  "sets": [
+    {
+      "title": "SHLØMO | HÖR - March 21 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "8WzFoUPyvgY"
+    },
+    {
+      "title": "Shlømo | HÖR - Oct 14 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "O_V15Mjwzzo"
+    },
+    {
+      "title": "Shlømo / September 5 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "TpziZeK-yA8"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:58.921Z"
 }

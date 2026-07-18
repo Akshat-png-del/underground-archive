@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   getPlaylistById,
   isSeedPlaylist,
@@ -11,9 +12,7 @@ import {
   useLibrary,
 } from "@/context/LibraryContext";
 import { parseDuration, formatTotalDuration } from "@/lib/music";
-import { getArtist } from "@/content/artists";
-import { SafeImage } from "@/components/ui/SafeImage";
-import { TrackArtwork } from "@/components/music/TrackArtwork";
+import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import { Button } from "@/components/ui/Button";
 import { MusicActions } from "@/components/music/MusicActions";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
@@ -78,7 +77,7 @@ function PlaylistItemRow({
         if (!playbackItem) return;
         handleCardPointerDown(e);
       }}
-      className={`flex cursor-pointer touch-manipulation items-center gap-4 border p-3 ${
+      className={`flex w-full min-w-0 max-w-full cursor-pointer touch-manipulation items-center gap-3 border p-3 sm:gap-4 ${
         active ? "border-accent bg-surface" : "border-border"
       } ${dragId === item.id ? "opacity-50" : ""}`}
       role="button"
@@ -88,13 +87,7 @@ function PlaylistItemRow({
       <span className="w-6 text-sm text-muted">{index + 1}</span>
       {isOwner && <span className="cursor-grab text-muted">⋮⋮</span>}
       <div className="relative h-12 w-12 shrink-0 overflow-hidden">
-        <TrackArtwork
-          coverArt={item.coverArt}
-          genres={getArtist(item.artistSlug)?.genres}
-          alt=""
-          fill
-          sizes="48px"
-        />
+        <LibraryArtwork src={item.coverArt} alt="" fill sizes="48px" />
       </div>
       <div className="min-w-0 flex-1">
         <p className="truncate font-medium text-foreground">{item.title}</p>
@@ -103,7 +96,8 @@ function PlaylistItemRow({
           className="text-xs text-muted hover:text-accent"
           onPointerDown={stopCardPointerDown}
         >
-          {item.artist} · {item.duration}
+          {item.artist}
+          {item.duration ? ` · ${item.duration}` : ""}
         </Link>
       </div>
       <div className="flex items-center gap-2" onPointerDown={stopCardPointerDown}>
@@ -130,6 +124,7 @@ function PlaylistItemRow({
 }
 
 export function PlaylistPageContent({ playlistId }: Props) {
+  const router = useRouter();
   const {
     playlists,
     updatePlaylist,
@@ -152,20 +147,33 @@ export function PlaylistPageContent({ playlistId }: Props) {
   const [description, setDescription] = useState(playlist?.description ?? "");
   const [dragId, setDragId] = useState<string | null>(null);
 
+  const resolved = useMemo(
+    () =>
+      (playlist?.items ?? [])
+        .slice()
+        .sort((a, b) => a.order - b.order)
+        .map(resolvePlaylistItem)
+        .filter((i): i is NonNullable<typeof i> => !!i),
+    [playlist?.items],
+  );
+
+  const totalSeconds = useMemo(
+    () => resolved.reduce((sum, item) => sum + parseDuration(item.duration), 0),
+    [resolved],
+  );
+  const browseQueue = useMemo(
+    () =>
+      resolved
+        .map((row) => playbackItemFromRef(row.type === "release" ? "release" : row.type, row.refId))
+        .filter((item): item is PlaybackItem => !!item),
+    [resolved],
+  );
+
   if (!playlist) {
     return <p className="text-muted">Playlist not found.</p>;
   }
 
   const isOwner = playlist.creatorId === profile.id && !isSeedPlaylist(playlist.id);
-  const resolved = playlist.items
-    .sort((a, b) => a.order - b.order)
-    .map(resolvePlaylistItem)
-    .filter((i): i is NonNullable<typeof i> => !!i);
-
-  const totalSeconds = resolved.reduce((sum, item) => sum + parseDuration(item.duration), 0);
-  const browseQueue = resolved
-    .map((row) => playbackItemFromRef(row.type === "release" ? "release" : row.type, row.refId))
-    .filter((item): item is PlaybackItem => !!item);
   const liked = isPlaylistLiked(playlist.id);
 
   const saveEdit = () => {
@@ -191,7 +199,7 @@ export function PlaylistPageContent({ playlistId }: Props) {
     <div>
       <div className="flex flex-col gap-8 sm:flex-row">
         <div className="relative h-48 w-48 shrink-0 border border-border">
-          <SafeImage src={playlist.coverImage} alt="" fill sizes="192px" />
+          <LibraryArtwork src={playlist.coverImage} alt="" fill sizes="192px" />
         </div>
         <div className="flex-1">
           {editing ? (
@@ -236,7 +244,7 @@ export function PlaylistPageContent({ playlistId }: Props) {
               variant="outline"
               onClick={() => {
                 const copy = copyPlaylist(playlist.id);
-                if (copy) window.location.href = `/playlists/${copy.id}`;
+                if (copy) router.push(`/playlists/${copy.id}`);
               }}
             >
               Copy playlist
@@ -250,7 +258,7 @@ export function PlaylistPageContent({ playlistId }: Props) {
                   onClick={() => {
                     if (confirm("Delete this playlist?")) {
                       deletePlaylist(playlist.id);
-                      window.location.href = "/library/playlists";
+                      router.push("/library/playlists");
                     }
                   }}
                 >

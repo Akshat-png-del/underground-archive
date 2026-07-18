@@ -1,6 +1,14 @@
 {
   "slug": "parfait",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Can You Feel",
+      "spotifyTrackId": "4iijSch8oJUYZmbqelNwwY",
+      "year": 2024,
+      "duration": "4:36",
+      "album": "Can You Feel"
+    }
+  ],
   "sets": [
     {
       "title": "Parfait | Boiler Room Festival London 2021 | Possession",
@@ -33,5 +41,5 @@
       "youtubeId": "fVSfwYZG6bM"
     }
   ],
-  "updatedAt": "2026-06-28T01:30:44.511Z"
+  "updatedAt": "2026-07-18T00:55:29.402Z"
 }

@@ -1,0 +1,27 @@
+---
+description: Playback is production-frozen — never modify unless user explicitly requests a playback bug fix
+alwaysApply: true
+---
+
+# Playback Production Freeze
+
+Playback is **production stable**. Do not modify, refactor, optimize, reorganize, or replace these systems unless the user explicitly requests a playback bug fix or architecture change.
+
+## Frozen
+
+- MediaSessionController, GlobalPlayerEngine, ProviderRouter
+- SpotifyProvider, AudioProvider, YouTubeProvider
+- Queue, sync, state, hooks, persistence, hydration, auto-next
+- Seek, next/prev, play/pause, volume, mute, Media Session API
+- Bottom player UI/logic/animations/progress/seek/queue/transport
+- Set page / YouTube / video playback, transport, sync, autoplay
+
+## Regression bar
+
+Preserve audio, video, bottom player, queue, seeking, transport, media session.
+
+If the task is unrelated to playback → **do not touch playback code**.
+
+If a request would require playback changes, **stop and explain** instead of making unrelated edits.
+
+See also: `playback-reliability-protocol.mdc`, `playback-architecture.mdc`, `architecture-domain-lock.mdc`

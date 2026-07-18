@@ -56,36 +56,51 @@ export default async function EditorialArticlePage({
       />
 
       <article>
-        <section className="relative h-[50vh]">
-          <SafeImage src={article.heroImage} alt="" fill className="opacity-35" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background" />
-          <div className="relative mx-auto flex h-full max-w-3xl flex-col justify-end px-4 pb-12 sm:px-6">
+        <section className="relative isolate min-h-[min(50vh,28rem)] overflow-hidden sm:min-h-[50vh]">
+          <div className="absolute inset-0">
+            <SafeImage
+              src={article.heroImage}
+              alt=""
+              fill
+              className="object-cover opacity-35"
+              priority
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/75 to-background" />
+          </div>
+          <div className="relative z-10 mx-auto flex min-h-[min(50vh,28rem)] max-w-3xl flex-col justify-end px-4 pb-10 pt-28 sm:min-h-[50vh] sm:px-6 sm:pb-12">
             <SectionLabel>{categoryLabels[article.category]}</SectionLabel>
-            <h1 className="mt-3 font-serif text-4xl text-foreground sm:text-5xl">{article.title}</h1>
+            <h1 className="mt-3 max-w-full break-words font-serif text-3xl leading-tight text-foreground sm:text-5xl">
+              {article.title}
+            </h1>
             <p className="mt-4 font-mono text-[10px] uppercase tracking-widest text-muted">
               {article.author} · {article.publishedAt} · {article.readTime} min
             </p>
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-          <p className="text-xl leading-relaxed text-muted-light">{article.excerpt}</p>
-          <div className="prose-archive mt-12">
-            {paragraphs.map((block) => {
+        <div className="relative z-0 mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+          <p className="text-lg leading-relaxed text-muted-light sm:text-xl">{article.excerpt}</p>
+          <div className="prose-archive mt-10 sm:mt-12">
+            {paragraphs.map((block, i) => {
               if (block.startsWith("## ")) {
-                return <h2 key={block}>{block.replace("## ", "")}</h2>;
+                return (
+                  <h2 key={`h-${i}-${block.slice(0, 24)}`}>{block.replace("## ", "")}</h2>
+                );
               }
               if (block.startsWith("- ")) {
                 const items = block.split("\n").filter((l) => l.startsWith("- "));
                 return (
-                  <ul key={block} className="my-4 space-y-2">
-                    {items.map((item) => (
-                      <li key={item} className="text-muted-light">— {item.replace("- ", "")}</li>
+                  <ul key={`ul-${i}`} className="my-4 space-y-2">
+                    {items.map((item, j) => (
+                      <li key={`li-${i}-${j}`} className="text-muted-light">
+                        — {item.replace("- ", "")}
+                      </li>
                     ))}
                   </ul>
                 );
               }
-              return <p key={block.slice(0, 40)}>{block}</p>;
+              return <p key={`p-${i}`}>{block}</p>;
             })}
           </div>
         </div>

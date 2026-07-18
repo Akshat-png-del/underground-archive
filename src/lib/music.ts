@@ -1,5 +1,6 @@
-/** Parse "5:42" or "1:02:30" into total seconds */
-export function parseDuration(duration: string): number {
+/** Parse "5:42" or "1:02:30" into total seconds. Returns 0 for missing/invalid. */
+export function parseDuration(duration: string | undefined | null): number {
+  if (!duration) return 0;
   const parts = duration.split(":").map(Number);
   if (parts.some(Number.isNaN)) return 0;
   if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];

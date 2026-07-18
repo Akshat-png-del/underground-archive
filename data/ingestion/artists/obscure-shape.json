@@ -1,10 +1,14 @@
 {
   "slug": "obscure-shape",
   "name": "Obscure Shape",
-  "updatedAt": "2026-06-28T01:38:18.330Z",
+  "updatedAt": "2026-07-17T06:53:25.119Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:48.063Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:23.886Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/yx37Cmw8FmxVk427IWdmUZI35DnPELvE9VpcXYGtI-41rUquZnQiJOpTM1BkubQciitIO33yPg=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/yx37Cmw8FmxVk427IWdmUZI35DnPELvE9VpcXYGtI-41rUquZnQiJOpTM1BkubQciitIO33yPg=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCxejXz0qs5RdWXj0CdYnwJQ"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051745f06672eda5d5e1ecb4b88cd",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6RLKERK1S5PKg3dLhzM0ZB"
+  },
+  "spotify": {
+    "artistId": "6RLKERK1S5PKg3dLhzM0ZB",
+    "name": "Obscure Shape",
+    "url": "https://open.spotify.com/artist/6RLKERK1S5PKg3dLhzM0ZB",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb5f06672eda5d5e1ecb4b88cd",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb5f06672eda5d5e1ecb4b88cd",
+      "https://i.scdn.co/image/ab676161000051745f06672eda5d5e1ecb4b88cd",
+      "https://i.scdn.co/image/ab6761610000f1785f06672eda5d5e1ecb4b88cd"
+    ],
+    "relatedArtists": []
   }
 }

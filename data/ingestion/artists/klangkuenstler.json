@@ -1,10 +1,14 @@
 {
   "slug": "klangkuenstler",
   "name": "Klangkuenstler",
-  "updatedAt": "2026-06-28T01:38:06.681Z",
+  "updatedAt": "2026-07-17T06:52:13.288Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:51.143Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:54:58.307Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/WPnzwBQ8UQYxLPxWHmdcN1Me6UO9rpn7zHt3q463AU1vb4mjVTtOM2lLGQz6tXXYwiWWZMxDAqE=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/WPnzwBQ8UQYxLPxWHmdcN1Me6UO9rpn7zHt3q463AU1vb4mjVTtOM2lLGQz6tXXYwiWWZMxDAqE=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCiKYs9p3BdEO44ZBeNCkJWA"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051743d65ee13ef224f8dacdd4b92",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6H77vD9YyhyxHBTkRpbMBk"
+  },
+  "spotify": {
+    "artistId": "6H77vD9YyhyxHBTkRpbMBk",
+    "name": "Klangkuenstler",
+    "url": "https://open.spotify.com/artist/6H77vD9YyhyxHBTkRpbMBk",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb3d65ee13ef224f8dacdd4b92",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb3d65ee13ef224f8dacdd4b92",
+      "https://i.scdn.co/image/ab676161000051743d65ee13ef224f8dacdd4b92",
+      "https://i.scdn.co/image/ab6761610000f1783d65ee13ef224f8dacdd4b92"
+    ],
+    "relatedArtists": []
   }
 }

@@ -1,13 +1,82 @@
 {
   "slug": "klangkuenstler",
   "tracks": [
-    { "title": "Armageddon", "spotifyTrackId": "57Z7OOlDvNhseKxhbYTsve", "year": 2020, "duration": "6:24" },
-    { "title": "Weltschmerz", "spotifyTrackId": "5dV8v9sGqh0qt4eGdoJzKg", "year": 2021, "duration": "5:59" },
-    { "title": "Das Ende Der Isolation", "spotifyTrackId": "7BB5gcz4C28nsRblTF79oS", "year": 2022, "duration": "6:31" },
-    { "title": "Toter Schmetterling", "spotifyTrackId": "4LsYdWDeumtYjMndQVcA94", "year": 2021, "duration": "2:44" }
+    {
+      "title": "Armageddon",
+      "spotifyTrackId": "57Z7OOlDvNhseKxhbYTsve",
+      "year": 2020,
+      "duration": "5:49",
+      "album": "Armageddon"
+    },
+    {
+      "title": "Weltschmerz",
+      "spotifyTrackId": "5dV8v9sGqh0qt4eGdoJzKg",
+      "year": 2021,
+      "duration": "6:24",
+      "album": "Weltschmerz"
+    },
+    {
+      "title": "Das Ende Der Isolation",
+      "spotifyTrackId": "7BB5gcz4C28nsRblTF79oS",
+      "year": 2022,
+      "duration": "6:31",
+      "album": "Deine Angst"
+    },
+    {
+      "title": "Toter Schmetterling",
+      "spotifyTrackId": "4LsYdWDeumtYjMndQVcA94",
+      "year": 2024,
+      "duration": "3:53",
+      "album": "Toter Schmetterling"
+    },
+    {
+      "title": "Sonne Geht Auf",
+      "spotifyTrackId": "6bs1myCEARQoI7oOLxqHkp",
+      "year": 2025,
+      "duration": "2:06",
+      "album": "Sonne Geht Auf"
+    },
+    {
+      "title": "Die Welt Brennt",
+      "spotifyTrackId": "7oAM2GxHCTKTLU3gXvkuuj",
+      "year": 2023,
+      "duration": "5:10",
+      "album": "Die Welt Brennt"
+    },
+    {
+      "title": "Toter Schmetterling",
+      "spotifyTrackId": "5ZOSgH7PHnPlJijoh1bjPh",
+      "year": 2024,
+      "duration": "3:53",
+      "album": "Toter Schmetterling"
+    },
+    {
+      "title": "Untergang",
+      "spotifyTrackId": "2lYxJyemy6xyccCLknXMcY",
+      "year": 2021,
+      "duration": "6:07",
+      "album": "Weltschmerz"
+    }
   ],
   "sets": [
-    { "title": "Boiler Room Manchester — Teletech", "venue": "Teletech", "year": 2024, "youtubeId": "RMLBjvvtXyk" }
+    {
+      "title": "Boiler Room Manchester — Teletech",
+      "venue": "Teletech",
+      "year": 2024,
+      "youtubeId": "RMLBjvvtXyk"
+    },
+    {
+      "title": "Klangkuenstler / December 25 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "OT_MZ3JgNdk"
+    },
+    {
+      "title": "IMPULS - Klangkuenstler / June 18 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "Ch0QL50wLvk"
+    }
   ],
-  "updatedAt": "2026-06-28T01:50:00.000Z"
+  "updatedAt": "2026-07-18T00:55:01.760Z"
 }

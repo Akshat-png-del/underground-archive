@@ -1,6 +1,106 @@
 {
   "slug": "mcr-t",
-  "tracks": [],
-  "sets": [],
-  "updatedAt": "2026-06-28T02:01:25.563Z"
+  "tracks": [
+    {
+      "title": "My Barn My Rules",
+      "spotifyTrackId": "1bXW9UIZWmXtoSGXJvyyAm",
+      "year": 2023,
+      "duration": "4:26",
+      "album": "My Barn My Rules"
+    },
+    {
+      "title": "Gib Ein Fick",
+      "spotifyTrackId": "3jW0xA57DtH73ZfIJbWPdq",
+      "year": 2020,
+      "duration": "3:59",
+      "album": "United Ravers Against Fascism"
+    },
+    {
+      "title": "Anal OG",
+      "spotifyTrackId": "6FZ5YSxLXduiXuJwDVy7vB",
+      "year": 2019,
+      "duration": "",
+      "album": "Fuck You, Play Me"
+    },
+    {
+      "title": "Slut Commandments",
+      "spotifyTrackId": "5JxGIPcfHWiR4t5FoBUFFO",
+      "year": 2023,
+      "duration": "2:53",
+      "album": "Tootsie Pop"
+    },
+    {
+      "title": "My Little White Pony",
+      "spotifyTrackId": "46PRAC9BDGinxWR2Jw6chN",
+      "year": 2022,
+      "duration": "4:59",
+      "album": "Farm Fantasies"
+    },
+    {
+      "title": "Lollipops & Limousines",
+      "spotifyTrackId": "1bRpqgsNxT10VLyENoveul",
+      "year": 2023,
+      "duration": "4:16",
+      "album": "Tootsie Pop"
+    },
+    {
+      "title": "Buurman Uit Berlijn",
+      "spotifyTrackId": "5lE64uyiHhhSwS01VI4pV6",
+      "year": 2024,
+      "duration": "4:45",
+      "album": "Buurman Uit Berlijn"
+    },
+    {
+      "title": "POGO",
+      "spotifyTrackId": "5n99FISBjKlyv30iTw6ZIm",
+      "year": 2024,
+      "duration": "5:42",
+      "album": "POGO"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Frederic. Invites - MCR-T | H\u00d6R - March 26 / 2025",
+      "venue": "H\u00d6R Berlin",
+      "year": 2025,
+      "youtubeId": "YDlnEfGv1Ns"
+    },
+    {
+      "title": "H\u00d6R x Bau Mich Auf - MCR-T (LIVE) | H\u00d6R - Aug 20 / 2022",
+      "venue": "H\u00d6R Berlin",
+      "year": 2022,
+      "youtubeId": "eQ0RRFqdSWA"
+    },
+    {
+      "title": "Live From Earth Klub - MCR-T (HYBRID LIVE) | H\u00d6R - Feb 3 / 2022",
+      "venue": "H\u00d6R Berlin",
+      "year": 2022,
+      "youtubeId": "ss_VCQS39U8"
+    },
+    {
+      "title": "Live From Earth Klub - MCR-T (LIVE) / July 13 / 4pm-5pm",
+      "venue": "H\u00d6R Berlin",
+      "year": 2021,
+      "youtubeId": "kia8LSX53qg"
+    },
+    {
+      "title": "Live From Earth Klub - DJ Gigola B2B MCR-T / January 19 / 5pm-6pm",
+      "venue": "H\u00d6R Berlin",
+      "year": 2021,
+      "youtubeId": "jcR-qLLwz5M"
+    },
+    {
+      "title": "HO\u0308R 1 Year Anniversary - MCR-T (LIVE) / August 15 / 2pm-3pm",
+      "venue": "H\u00d6R Berlin",
+      "year": 2020,
+      "youtubeId": "3vxO1BVgea0"
+    },
+    {
+      "title": "Live From Earth Klub - MCR-T (LIVE) / June 12 / 5pm-6pm",
+      "venue": "H\u00d6R Berlin",
+      "year": 2020,
+      "youtubeId": "jZyQdewgy3c"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:16.190Z"
 }

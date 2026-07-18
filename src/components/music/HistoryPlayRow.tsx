@@ -1,7 +1,8 @@
 "use client";
 
+import { useMemo } from "react";
 import type { PlayHistoryEntry } from "@/types/library";
-import { TrackArtwork } from "@/components/music/TrackArtwork";
+import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
@@ -12,6 +13,7 @@ import {
 } from "@/lib/music/use-card-playback";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
+import { hydrateHistoryEntry } from "@/lib/library/resolve-display";
 
 interface HistoryPlayRowProps {
   entry: PlayHistoryEntry;
@@ -22,29 +24,55 @@ interface HistoryPlayRowProps {
 }
 
 export function HistoryPlayRow({
-  entry,
+  entry: rawEntry,
   browseQueue,
   browseIndex,
   trailing,
   className = "",
 }: HistoryPlayRowProps) {
-  const item = playbackItemFromRef(entry.type, entry.refId);
-  const fallback = {
-    type: entry.type,
-    refId: entry.refId,
-    label: entry.title,
-    title: entry.title,
-    subtitle: entry.subtitle,
-  };
-  const playbackItem = item ?? fallback;
-  const browse = browseQueue ? browseContextAt(browseQueue, playbackItem, browseIndex) : undefined;
+  const entry = useMemo(() => hydrateHistoryEntry(rawEntry), [rawEntry]);
+  const item = useMemo(
+    () => (entry ? playbackItemFromRef(entry.type, entry.refId) : null),
+    [entry],
+  );
+
+  if (!entry || !item) return null;
+
+  return (
+    <HistoryPlayRowInner
+      entry={entry}
+      item={item}
+      browseQueue={browseQueue}
+      browseIndex={browseIndex}
+      trailing={trailing}
+      className={className}
+    />
+  );
+}
+
+function HistoryPlayRowInner({
+  entry,
+  item,
+  browseQueue,
+  browseIndex,
+  trailing,
+  className = "",
+}: {
+  entry: PlayHistoryEntry;
+  item: PlaybackItem;
+  browseQueue?: PlaybackItem[];
+  browseIndex?: number;
+  trailing?: React.ReactNode;
+  className?: string;
+}) {
+  const browse = browseQueue ? browseContextAt(browseQueue, item, browseIndex) : undefined;
   const setSlug =
     entry.type === "set" ? resolveSetWatchSlug(entry.refId) ?? undefined : undefined;
   const snapshot = useFinalPlaybackSnapshot();
   const active = playbackItemActive(snapshot, entry.type, entry.refId);
   const playing = playbackItemPlaying(snapshot, entry.type, entry.refId);
   const { handleCardPointerDown, stopCardPointerDown } = useCardPlayback(
-    playbackItem,
+    item,
     entry.type,
     entry.refId,
     browse,
@@ -53,10 +81,7 @@ export function HistoryPlayRow({
 
   return (
     <div
-      onPointerDown={(e) => {
-        if (!item) return;
-        handleCardPointerDown(e);
-      }}
+      onPointerDown={handleCardPointerDown}
       className={`playable-surface flex cursor-pointer touch-manipulation items-center gap-3 rounded-sm px-3 py-2.5 ${playableSurfaceClass(active, playing)} ${className}`}
       role="button"
       tabIndex={0}
@@ -64,11 +89,13 @@ export function HistoryPlayRow({
       aria-current={active ? "true" : undefined}
     >
       <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-sm">
-        <TrackArtwork coverArt={entry.coverArt} alt="" fill sizes="40px" />
+        <LibraryArtwork src={entry.coverArt} alt="" fill sizes="40px" />
       </div>
       <div className="min-w-0 flex-1">
-        <p className="truncate text-sm font-medium text-foreground">{entry.subtitle}</p>
-        <p className="truncate text-sm text-foreground/90">{entry.title}</p>
+        <p className="truncate text-sm font-medium text-foreground">{entry.subtitle || entry.title}</p>
+        {entry.subtitle ? (
+          <p className="truncate text-sm text-foreground/90">{entry.title}</p>
+        ) : null}
       </div>
       {active && <PlayingIndicator playing={playing} compact />}
       {trailing && <div onPointerDown={stopCardPointerDown}>{trailing}</div>}

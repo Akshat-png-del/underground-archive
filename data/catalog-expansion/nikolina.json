@@ -4,14 +4,16 @@
     {
       "title": "No More Lies",
       "spotifyTrackId": "7KkCp4bClCsnrdqBLhCUFg",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2025,
+      "duration": "5:14",
+      "album": "No More Lies"
     },
     {
       "title": "Dizzy",
       "spotifyTrackId": "0AWic9aw9jUqDq4cwJb0fy",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2023,
+      "duration": "6:09",
+      "album": "Dizzy"
     }
   ],
   "sets": [
@@ -44,7 +46,13 @@
       "venue": "Teletech",
       "year": 2026,
       "youtubeId": "CLfqWu7Aics"
+    },
+    {
+      "title": "Nikolina | HÖR x Technoabteil @ Zürich Street Parade - 9 August / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "rY8drrmx4k4"
     }
   ],
-  "updatedAt": "2026-06-28T01:32:57.203Z"
+  "updatedAt": "2026-07-18T00:55:20.127Z"
 }

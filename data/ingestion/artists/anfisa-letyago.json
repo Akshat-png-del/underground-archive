@@ -1,10 +1,14 @@
 {
   "slug": "anfisa-letyago",
   "name": "Anfisa Letyago",
-  "updatedAt": "2026-06-28T01:38:18.302Z",
+  "updatedAt": "2026-07-16T23:51:07.633Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:12.606Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:51:07.633Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/B8XhqOX3k1174bwS6iz62bntGJmnu0ub2uszmeEc7jQ8v5bcWaeX1hYd9mKEWeuTZnOu6lCrog=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/B8XhqOX3k1174bwS6iz62bntGJmnu0ub2uszmeEc7jQ8v5bcWaeX1hYd9mKEWeuTZnOu6lCrog=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@anfisaletyago"
+    "url": "https://i.scdn.co/image/ab6761610000e5eb348da04d6efecefe16b43721",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7icoOm5fKKPo49jVxoj1Cq"
+  },
+  "spotify": {
+    "artistId": "7icoOm5fKKPo49jVxoj1Cq",
+    "name": "Anfisa Letyago",
+    "url": "https://open.spotify.com/artist/7icoOm5fKKPo49jVxoj1Cq",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb348da04d6efecefe16b43721",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb348da04d6efecefe16b43721",
+      "https://i.scdn.co/image/ab67616100005174348da04d6efecefe16b43721",
+      "https://i.scdn.co/image/ab6761610000f178348da04d6efecefe16b43721"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

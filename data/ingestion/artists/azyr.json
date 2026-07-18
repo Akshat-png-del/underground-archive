@@ -1,10 +1,14 @@
 {
   "slug": "azyr",
   "name": "Azyr",
-  "updatedAt": "2026-06-28T01:38:17.660Z",
+  "updatedAt": "2026-07-16T23:48:50.429Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:59.569Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:48:50.428Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,21 @@
     "thumbnailUrl": "https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/YxffJHThrG55XRDS3v7RyNSZpjukkNtw15rCp4N8qrdIggxga43rpaie-hwirdwjlwj-Xk_fug=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@azyrmusic"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517483bc4927a66df04da5c48647",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1Ujj9Jh1Z4tDJ4j6qGRml8"
+  },
+  "spotify": {
+    "artistId": "1Ujj9Jh1Z4tDJ4j6qGRml8",
+    "name": "Azyr",
+    "url": "https://open.spotify.com/artist/1Ujj9Jh1Z4tDJ4j6qGRml8",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517483bc4927a66df04da5c48647",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517483bc4927a66df04da5c48647"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

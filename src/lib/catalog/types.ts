@@ -4,6 +4,8 @@ export interface ExpansionTrack {
   spotifyTrackId: string;
   year: number;
   duration: string;
+  /** Verified album name from Spotify Web API (optional). */
+  album?: string;
 }
 
 export interface ExpansionSet {

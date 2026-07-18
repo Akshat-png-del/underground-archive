@@ -1,98 +1,78 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Artist } from "@/types";
 import {
-  getMostSavedArtists,
   getMostViewedArtistsThisWeek,
-  getTrendingGenresThisWeek,
+  getTrendingSavedArtists,
+  getRisingArtists,
 } from "@/content/home/feed";
-import { trendingGenres } from "@/content/home/index";
 import { ArtistCard } from "@/components/artists/ArtistCard";
-import { SocialBadge } from "@/components/ui/SocialBadge";
 import { HomeSection, HomeCarousel, CarouselItem } from "@/components/home/HomeSection";
 import { FadeInSection } from "@/components/ui/FadeInSection";
+import { useHomepageRotationRefresh } from "@/components/home/useHomepageRotationRefresh";
 
-type GenreChip = (typeof trendingGenres)[number];
+type TabKey = "viewed" | "saved" | "rising";
+
+const TABS: { key: TabKey; label: string }[] = [
+  { key: "viewed", label: "Most viewed" },
+  { key: "saved", label: "Most saved" },
+  { key: "rising", label: "Rising" },
+];
 
 export function TrendingThisWeek({
   initialViewed,
-  initialGenres,
+  initialSaved,
+  initialRising,
 }: {
   initialViewed: Artist[];
-  initialGenres: GenreChip[];
+  initialSaved: Artist[];
+  initialRising: Artist[];
 }) {
-  const saved = getMostSavedArtists();
-  const [viewed, setViewed] = useState<Artist[]>(initialViewed);
-  const [genres, setGenres] = useState<GenreChip[]>(initialGenres);
+  const [tab, setTab] = useState<TabKey>("viewed");
 
-  useEffect(() => {
-    setViewed(getMostViewedArtistsThisWeek());
-    setGenres(getTrendingGenresThisWeek());
-  }, []);
+  const viewed = useHomepageRotationRefresh(getMostViewedArtistsThisWeek, initialViewed);
+  const saved = useHomepageRotationRefresh(getTrendingSavedArtists, initialSaved);
+  const rising = useHomepageRotationRefresh(() => getRisingArtists(6), initialRising);
+
+  const artists =
+    tab === "viewed" ? viewed.slice(0, 6) : tab === "saved" ? saved.slice(0, 6) : rising.slice(0, 6);
 
   return (
     <FadeInSection>
-      <HomeSection
-        title="Trending this week"
-        subtitle="What the underground is watching, saving, and exploring."
-        badge="Live"
-        href="/discover"
-      >
-        <div className="space-y-10">
-          <div>
-            <div className="mb-4 flex items-center gap-3">
-              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Most viewed</h3>
-              <SocialBadge variant="trending" />
-            </div>
-            <HomeCarousel>
-              {viewed.map((artist, i) => (
-                <CarouselItem key={artist.slug}>
-                  <div className="card-editorial group relative">
-                    <span className="absolute left-3 top-3 z-10 font-mono text-2xl text-accent/70">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <ArtistCard artist={artist} />
-                  </div>
-                </CarouselItem>
-              ))}
-            </HomeCarousel>
-          </div>
-
-          <div>
-            <div className="mb-4 flex items-center gap-3">
-              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Most saved</h3>
-              <SocialBadge variant="saved" />
-            </div>
-            <HomeCarousel>
-              {saved.slice(0, 6).map((artist) => (
-                <CarouselItem key={`saved-${artist.slug}`}>
-                  <div className="card-editorial">
-                    <ArtistCard artist={artist} />
-                  </div>
-                </CarouselItem>
-              ))}
-            </HomeCarousel>
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-muted">Trending genres</h3>
-            <HomeCarousel>
-              {genres.map((g) => (
-                <CarouselItem key={g.slug} className="min-w-[55%] sm:min-w-[35%] lg:min-w-[22%]">
-                  <Link
-                    href={`/genres/${g.slug}`}
-                    className="card-editorial group flex h-full flex-col justify-between border border-border bg-surface-elevated p-6 hover-glow"
-                  >
-                    <p className="font-serif text-2xl text-foreground group-hover:text-accent">{g.name}</p>
-                    <p className="mt-4 font-mono text-xs text-muted">{g.count} artists archived</p>
-                  </Link>
-                </CarouselItem>
-              ))}
-            </HomeCarousel>
-          </div>
+      <HomeSection title="Trending this week" badge="Live" href="/discover">
+        <div className="mb-8 flex flex-wrap gap-2">
+          {TABS.map((t) => (
+            <button
+              key={t.key}
+              type="button"
+              onClick={() => setTab(t.key)}
+              aria-pressed={tab === t.key}
+              className={`rounded-full border px-4 py-1.5 font-mono text-xs uppercase tracking-[0.15em] transition-colors ${
+                tab === t.key
+                  ? "border-accent bg-accent text-background"
+                  : "border-border text-muted-light hover:border-accent/50 hover:text-foreground"
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
         </div>
+
+        <HomeCarousel>
+          {artists.map((artist, i) => (
+            <CarouselItem key={`${tab}-${artist.slug}`}>
+              <div className="card-editorial group relative">
+                {tab === "viewed" && (
+                  <span className="absolute left-3 top-3 z-10 font-mono text-2xl text-accent/70">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                )}
+                <ArtistCard artist={artist} priority={i < 2} />
+              </div>
+            </CarouselItem>
+          ))}
+        </HomeCarousel>
       </HomeSection>
     </FadeInSection>
   );

@@ -1,10 +1,14 @@
 {
   "slug": "orphx",
   "name": "Orphx",
-  "updatedAt": "2026-06-28T01:38:05.340Z",
+  "updatedAt": "2026-07-16T23:50:57.160Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:49.840Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:50:57.160Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/0W0APBqfHdCKUL1oIe1HsaEKqTSg21EM6Gdq-GVTVkysM15UCA3lnHiUY2DdO_1ZSga0lnkBOg=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/0W0APBqfHdCKUL1oIe1HsaEKqTSg21EM6Gdq-GVTVkysM15UCA3lnHiUY2DdO_1ZSga0lnkBOg=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCfDmC5MNMuH4owykBcoDCSw"
+    "url": "https://i.scdn.co/image/a598194336a15f31ce741b7ff1471ab5563c0038",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4mNIz9D4L2JGnpUmkvMFMV"
+  },
+  "spotify": {
+    "artistId": "4mNIz9D4L2JGnpUmkvMFMV",
+    "name": "Orphx",
+    "url": "https://open.spotify.com/artist/4mNIz9D4L2JGnpUmkvMFMV",
+    "imageUrl": "https://i.scdn.co/image/a598194336a15f31ce741b7ff1471ab5563c0038",
+    "imageUrls": [
+      "https://i.scdn.co/image/a598194336a15f31ce741b7ff1471ab5563c0038",
+      "https://i.scdn.co/image/5e92e860dabb4efb521dc61cebdc418c031060c2",
+      "https://i.scdn.co/image/0def4c8a8d90cb85d11629673f78db0f7c3cf0ce"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

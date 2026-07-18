@@ -1,6 +1,63 @@
 {
   "slug": "stranger",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "555",
+      "spotifyTrackId": "2pvEG7eYqc448zx5ANETmS",
+      "year": 2025,
+      "duration": "2:16",
+      "album": "555"
+    },
+    {
+      "title": "Kaha Ja Rahe Hum",
+      "spotifyTrackId": "0hsJYrma9FAGRVos8I4Wh0",
+      "year": 2025,
+      "duration": "2:30",
+      "album": "Kaha Ja Rahe Hum"
+    },
+    {
+      "title": "Heart Talk 2",
+      "spotifyTrackId": "0mS9D9KsYHcZuQVCfiTd8L",
+      "year": 2025,
+      "duration": "2:46",
+      "album": "Heart Talk 2"
+    },
+    {
+      "title": "Toota Tara",
+      "spotifyTrackId": "3zcw5UHDieu8BWPRT2llsV",
+      "year": 2024,
+      "duration": "2:27",
+      "album": "Toota Tara"
+    },
+    {
+      "title": "Break Down",
+      "spotifyTrackId": "5NOKKvTFJecdhQcFVNWA3X",
+      "year": 2024,
+      "duration": "2:13",
+      "album": "Break Down"
+    },
+    {
+      "title": "Fuck All the Pain",
+      "spotifyTrackId": "65DUJQiiZxjDYrKvNvypof",
+      "year": 2024,
+      "duration": "2:28",
+      "album": "Fuck All the Pain"
+    },
+    {
+      "title": "Bumble Story",
+      "spotifyTrackId": "4x68yKdbsUEjVqj4yOjlhb",
+      "year": 2024,
+      "duration": "2:47",
+      "album": "Bumble Story"
+    },
+    {
+      "title": "Strange Life",
+      "spotifyTrackId": "53FYd9gZcqU9P1jKprTZ2R",
+      "year": 2024,
+      "duration": "2:56",
+      "album": "Strange Life"
+    }
+  ],
   "sets": [
     {
       "title": "It got even HOTTER in the boiler room #henrycreel #001strangerthings #fyp #strangerthings4",
@@ -13,7 +70,13 @@
       "venue": "HÖR Berlin",
       "year": 2023,
       "youtubeId": "up4fDq8oyi8"
+    },
+    {
+      "title": "Prof. Stranger | HÖR - Mar 30 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "KETfrZmwHAw"
     }
   ],
-  "updatedAt": "2026-06-28T01:35:51.684Z"
+  "updatedAt": "2026-07-18T00:56:07.916Z"
 }

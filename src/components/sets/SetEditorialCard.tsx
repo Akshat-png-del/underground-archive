@@ -2,7 +2,6 @@
 
 import type { ArchiveSet } from "@/types/library";
 import { setCategoryLabels } from "@/content/sets";
-import { genreLabels } from "@/content/artists";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { playbackItemFromSet } from "@/lib/music/playback";
 import { setThumbnailUrl } from "@/lib/music/set-display";
@@ -24,8 +23,8 @@ export function SetEditorialCard({ set }: SetEditorialCardProps) {
   const active = playbackItemActive(snapshot, "set", set.id);
   const playing = playbackItemPlaying(snapshot, "set", set.id);
   const { handleCardPointerDown } = useCardPlayback(item, "set", set.id, undefined, set.slug);
-  const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
   const year = set.date?.slice(0, 4) ?? "—";
+  const collection = setCategoryLabels[set.category];
 
   return (
     <article
@@ -54,7 +53,7 @@ export function SetEditorialCard({ set }: SetEditorialCardProps) {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
-            {setCategoryLabels[set.category]}
+            {collection}
           </p>
           <h2 className="mt-2 font-serif text-2xl leading-tight text-foreground sm:text-3xl">
             {set.artistName}
@@ -68,18 +67,22 @@ export function SetEditorialCard({ set }: SetEditorialCardProps) {
           </span>
         )}
       </div>
-      <div className="grid grid-cols-3 gap-3 border-t border-border px-5 py-4 text-xs sm:px-6">
+      <div className="grid grid-cols-2 gap-3 border-t border-border px-5 py-4 text-xs sm:grid-cols-4 sm:px-6">
         <div>
           <p className="text-muted">Event</p>
           <p className="mt-0.5 truncate font-medium text-foreground">{set.event}</p>
         </div>
         <div>
-          <p className="text-muted">Year</p>
-          <p className="mt-0.5 font-medium text-foreground">{year}</p>
+          <p className="text-muted">Collection</p>
+          <p className="mt-0.5 truncate font-medium text-foreground">{collection}</p>
         </div>
         <div>
-          <p className="text-muted">Genre</p>
-          <p className="mt-0.5 truncate font-medium text-foreground">{genre}</p>
+          <p className="text-muted">Duration</p>
+          <p className="mt-0.5 font-medium text-foreground">{set.duration ?? "—"}</p>
+        </div>
+        <div>
+          <p className="text-muted">Year</p>
+          <p className="mt-0.5 font-medium text-foreground">{year}</p>
         </div>
       </div>
       <div className="border-t border-border px-5 py-3 sm:px-6">

@@ -1,0 +1,36 @@
+---
+description: Catalog Curation Mode — verified ingestion only; no mass cleanup; playback frozen
+alwaysApply: true
+---
+
+# Catalog Curation Mode
+
+Cleanup phase is **complete**. Work is **Curation Mode**: grow authenticity via verified ingestion.
+
+## Playback
+
+Playback is production-frozen. Catalog work must never touch engines, providers, store, hooks, bottom player, video/set playback, or transport. See `playback-production-freeze.mdc`.
+
+## Do NOT
+
+- Run another mass cleanup
+- Remove artists solely because new data is unavailable
+- Invent tracks, releases, IDs, URLs, artwork, durations, bios, or metadata
+- Add placeholders or synthetic media
+
+## Reintroduction
+
+Legitimate artists removed for missing media (e.g. Front 242, Nitzer Ebb, Lebanon Hanover) may return **only** after verification of at least one:
+
+- Spotify: valid artist ID + ≥1 playable track ID/URL, **or**
+- YouTube: public video, API-verified duration ≥10 min, long-form set/performance
+
+If verification fails → skip until later. Prefer 5 fully verified artists over 100 partial ones.
+
+## Ingestion workflow
+
+Verify identity → Spotify artist + real track IDs → and/or YouTube sets (duration API) → add → update similarArtists/collections → validate → run playback tests (must still pass; no playback edits).
+
+## Success metric
+
+More verified tracks/sets and authenticity — **not** artist count.

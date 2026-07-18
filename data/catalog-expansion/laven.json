@@ -12,33 +12,26 @@
       "spotifyTrackId": "4zNcnHkulTRTXqiBzEbFgs",
       "year": 2026,
       "duration": "5:00"
+    },
+    {
+      "title": "2094",
+      "spotifyTrackId": "5Ih8kMx63U3j4srsR5UjfU",
+      "year": 2026,
+      "duration": ""
+    },
+    {
+      "title": "I Thought You Were Real",
+      "spotifyTrackId": "0nXcNs4tCvDW17kzwdu4ML",
+      "year": 2026,
+      "duration": ""
+    },
+    {
+      "title": "All Is Temporary",
+      "spotifyTrackId": "40OOIaXgyGSQv2ef7Nknyl",
+      "year": 2026,
+      "duration": ""
     }
   ],
-  "sets": [
-    {
-      "title": "Mister Bear Records - Vick Lavender | HÖR - April 21 / 2025",
-      "venue": "HÖR Berlin",
-      "year": 2025,
-      "youtubeId": "oaiP_FKMwvE"
-    },
-    {
-      "title": "Where there's lavender, there's peace and breathe in calm, exhale stress—it's a lavender kind of day",
-      "venue": "Exhale",
-      "year": 2026,
-      "youtubeId": "3cPMW1OMM5o"
-    },
-    {
-      "title": "Lavender Exhale",
-      "venue": "Exhale",
-      "year": 2026,
-      "youtubeId": "0vc_upMFBg0"
-    },
-    {
-      "title": "Lavender Exhale",
-      "venue": "Exhale",
-      "year": 2026,
-      "youtubeId": "qHX55HTlUMw"
-    }
-  ],
-  "updatedAt": "2026-06-28T01:29:43.187Z"
+  "sets": [],
+  "updatedAt": "2026-07-17T02:38:00.168Z"
 }

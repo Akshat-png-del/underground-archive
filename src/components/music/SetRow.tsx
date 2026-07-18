@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import type { ArchiveSet } from "@/types/library";
 import { genreLabels } from "@/content/artists";
 import { SafeImage } from "@/components/ui/SafeImage";
@@ -22,7 +23,13 @@ interface SetRowProps {
   browseIndex?: number;
 }
 
-export function SetRow({ set, variant = "row", meta, browseQueue, browseIndex }: SetRowProps) {
+export const SetRow = memo(function SetRow({
+  set,
+  variant = "row",
+  meta,
+  browseQueue,
+  browseIndex,
+}: SetRowProps) {
   const item = playbackItemFromSet(set);
   const browse = browseQueue
     ? browseContextAt(browseQueue, item, browseIndex)
@@ -33,6 +40,7 @@ export function SetRow({ set, variant = "row", meta, browseQueue, browseIndex }:
   const { handleCardPointerDown } = useCardPlayback(item, "set", set.id, browse, set.slug);
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
   const subtitle = meta ?? `${set.event} · ${set.date?.slice(0, 4) ?? ""}`.replace(/ · $/, "");
+  const thumb = setThumbnailUrl(set.thumbnail, set.youtubeId);
 
   const handleCardKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -47,13 +55,15 @@ export function SetRow({ set, variant = "row", meta, browseQueue, browseIndex }:
         variant === "card" ? "h-20 w-28" : "h-14 w-20 sm:h-16 sm:w-24"
       }`}
     >
-      <SafeImage
-        src={setThumbnailUrl(set.thumbnail, set.youtubeId)}
-        alt=""
-        fill
-        sizes="96px"
-        className="object-cover"
-      />
+      {thumb ? (
+        <SafeImage
+          src={thumb}
+          alt=""
+          fill
+          sizes="96px"
+          className="object-cover"
+        />
+      ) : null}
     </div>
   );
 
@@ -64,7 +74,8 @@ export function SetRow({ set, variant = "row", meta, browseQueue, browseIndex }:
         <p className="truncate text-sm font-medium text-foreground">{set.artistName}</p>
         <p className="truncate text-base text-foreground/90">{set.title}</p>
         <p className="mt-0.5 truncate text-xs text-muted">
-          {subtitle} · {genre} · {set.duration}
+          {subtitle} · {genre}
+          {set.duration ? ` · ${set.duration}` : ""}
         </p>
       </div>
       {active && (
@@ -75,7 +86,7 @@ export function SetRow({ set, variant = "row", meta, browseQueue, browseIndex }:
     </>
   );
 
-  const surfaceClass = `playable-surface group flex cursor-pointer touch-manipulation items-center gap-4 rounded-sm px-3 py-3 sm:px-4 ${playableSurfaceClass(active, playing)}`;
+  const surfaceClass = `playable-surface group flex w-full min-w-0 max-w-full cursor-pointer touch-manipulation items-center gap-4 rounded-sm px-3 py-3 sm:px-4 ${playableSurfaceClass(active, playing)}`;
 
   return (
     <div
@@ -90,4 +101,4 @@ export function SetRow({ set, variant = "row", meta, browseQueue, browseIndex }:
       {body}
     </div>
   );
-}
+});

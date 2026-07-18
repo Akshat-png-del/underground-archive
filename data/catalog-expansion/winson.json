@@ -1,0 +1,70 @@
+{
+  "slug": "winson",
+  "tracks": [
+    {
+      "title": "Save The World",
+      "spotifyTrackId": "53VdzavZfEJLkzKtHOeDYg",
+      "year": 2026,
+      "duration": "3:15",
+      "album": "Save The World"
+    },
+    {
+      "title": "Keeping Your Head Up",
+      "spotifyTrackId": "6xwNMLT4ekMXv4lXZFI63Q",
+      "year": 2024,
+      "duration": "2:57",
+      "album": "Keeping Your Head Up"
+    },
+    {
+      "title": "Bass In Your Face (Vocals from Yellow Claw & Juyen Sebulba’s “Do You Like Bass”)",
+      "spotifyTrackId": "7bee6cXd8rJYa7H5gfh3g3",
+      "year": 2025,
+      "duration": "3:19",
+      "album": "Bass In Your Face (Vocals from Yellow Claw & Juyen Sebulba’s “Do You Like Bass”)"
+    },
+    {
+      "title": "SCANDAL ANTHEM",
+      "spotifyTrackId": "08DchrgnFXBD6H142l4tvY",
+      "year": 2025,
+      "duration": "4:04",
+      "album": "SCANDAL ANTHEM"
+    },
+    {
+      "title": "REMEMBER THIS FACE",
+      "spotifyTrackId": "7bwjc2oYo6mkLblcqh0IcD",
+      "year": 2026,
+      "duration": "3:51",
+      "album": "REMEMBER THIS FACE"
+    },
+    {
+      "title": "Joker",
+      "spotifyTrackId": "7Db9MKYy3Rav3iA16kVna1",
+      "year": 2024,
+      "duration": "5:05",
+      "album": "Joker"
+    },
+    {
+      "title": "Back the F up",
+      "spotifyTrackId": "4aQpKQPnx4QNF4WkmSRJ2F",
+      "year": 2024,
+      "duration": "4:54",
+      "album": "Back the F up"
+    },
+    {
+      "title": "Transcend",
+      "spotifyTrackId": "1lT0KuiOGSE6zstepTAqtu",
+      "year": 2024,
+      "duration": "5:12",
+      "album": "Transcend"
+    }
+  ],
+  "sets": [
+    {
+      "title": "WINSON | HÖR @ FURY Festival Barcelona - 13 June / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "7DSkAnECk_0"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:51:21.586Z"
+}

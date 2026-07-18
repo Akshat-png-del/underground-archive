@@ -1,7 +1,7 @@
 import type { Artist } from "@/types";
 import { getIngestedMetadata } from "@/content/artists/metadata";
-import { getVerifiedImageRecord } from "@/content/artists/images/verified";
-import { getGenreArtwork, getGenreHeroArtwork } from "@/lib/archive/genre-artwork";
+import { GENRE_HERO_SLUGS } from "@/content/artists/hero-overrides";
+import { getGenreHeroArtwork } from "@/lib/archive/genre-artwork";
 import { FALLBACK_IMAGE } from "@/lib/archive/schema";
 import { ytThumb } from "@/lib/images";
 import { isBlockedImageUrl } from "./validate";
@@ -20,7 +20,9 @@ function uniqueUrls(urls: (string | undefined)[]): string[] {
   return [...new Set(urls.filter((u): u is string => !!u && !isBlockedImageUrl(u)))];
 }
 
-/** Remote CDN / channel URLs usable when local researched assets are absent. */
+/** Remote CDN URLs usable when local researched assets are absent.
+ * Spotify artist images only — never YouTube channel thumbs (wrong identity risk).
+ */
 export function getRemotePortraitCandidates(
   artist: Pick<Artist, "slug" | "portrait" | "spotifyArtistId"> & {
     image?: Artist["image"];
@@ -30,17 +32,46 @@ export function getRemotePortraitCandidates(
 
   const fromIngested = uniqueUrls([
     ...(ingested?.spotify?.imageUrls ?? []),
-    ingested?.spotify?.imageUrl,
-    ingested?.youtube?.thumbnailUrl,
-    ingested?.resolvedImage?.url,
-  ]).filter(isRemoteUrl);
+    ingested?.spotify?.imageUrl ?? undefined,
+    ingested?.resolvedImage?.source === "spotify" ? ingested.resolvedImage.url : undefined,
+  ].map((u) => u ?? undefined)).filter(isRemoteUrl);
 
   if (fromIngested.length > 0) return fromIngested;
 
-  if (isRemoteUrl(artist.image?.url)) return [artist.image.url];
-  if (isRemoteUrl(artist.portrait)) return [artist.portrait];
+  // Only accept artist.image when it was marked verified or is a Spotify CDN URL
+  if (isRemoteUrl(artist.image?.url) && isSpotifyArtistImage(artist.image.url)) {
+    return [artist.image.url];
+  }
+  if (isRemoteUrl(artist.portrait) && isSpotifyArtistImage(artist.portrait)) {
+    return [artist.portrait];
+  }
 
   return [];
+}
+
+function isSpotifyArtistImage(url: string): boolean {
+  return (
+    /i\.scdn\.co\/image\//.test(url) ||
+    /image-cdn[^/]*\.spotifycdn\.com\//.test(url)
+  );
+}
+
+function isYoutubeIdentityUrl(url: string): boolean {
+  return (
+    /yt3\.ggpht\.com/i.test(url) ||
+    /ggpht\.com/i.test(url) ||
+    /youtube\.com/i.test(url) ||
+    /ytimg\.com/i.test(url)
+  );
+}
+
+function isGenreOrPlaceholderUrl(url: string): boolean {
+  return (
+    url === FALLBACK_IMAGE ||
+    url.includes("/images/genres/") ||
+    url.includes("hero-atmospheric") ||
+    url.includes("artist-fallback")
+  );
 }
 
 export function preferRenderablePortraitUrl(
@@ -49,16 +80,28 @@ export function preferRenderablePortraitUrl(
   },
   resolvedPortrait: string,
 ): string {
-  if (isLocalResearchedPortraitPath(resolvedPortrait)) {
-    const remote = getRemotePortraitCandidates(artist)[0];
-    if (remote) return remote;
-  }
+  const remote = getRemotePortraitCandidates(artist)[0];
 
-  if (resolvedPortrait && resolvedPortrait !== FALLBACK_IMAGE && !isBlockedImageUrl(resolvedPortrait)) {
+  if (isLocalResearchedPortraitPath(resolvedPortrait)) {
+    if (remote) return remote;
     return resolvedPortrait;
   }
 
-  return getRemotePortraitCandidates(artist)[0] ?? getGenreArtwork((artist as Artist).genres?.[0]) ?? FALLBACK_IMAGE;
+  // Never display YouTube channel avatars as artist identity photos
+  if (resolvedPortrait && isYoutubeIdentityUrl(resolvedPortrait)) {
+    return remote ?? "";
+  }
+
+  if (
+    resolvedPortrait &&
+    !isGenreOrPlaceholderUrl(resolvedPortrait) &&
+    !isBlockedImageUrl(resolvedPortrait)
+  ) {
+    return resolvedPortrait;
+  }
+
+  // Prefer verified Spotify remote; otherwise empty — never genre SVG as identity.
+  return remote ?? "";
 }
 
 function normalizeUrl(url: string): string {
@@ -71,38 +114,32 @@ function urlsAreSame(a: string, b: string): boolean {
 
 /** Wide cinematic hero — never the same URL as the profile portrait. */
 export function resolveHeroDisplayUrl(artist: Artist, portraitUrl: string): string {
+  if (GENRE_HERO_SLUGS.has(artist.slug)) {
+    return getGenreHeroArtwork(artist.genres[0]);
+  }
+
   if (
     artist.heroImage &&
     artist.heroImage !== FALLBACK_IMAGE &&
     !isBlockedImageUrl(artist.heroImage) &&
+    !isGenreOrPlaceholderUrl(artist.heroImage) &&
     !urlsAreSame(artist.heroImage, portraitUrl)
   ) {
-    if (isLocalResearchedPortraitPath(artist.heroImage)) {
-      const remote = getRemotePortraitCandidates(artist)[0];
-      if (remote && !urlsAreSame(remote, portraitUrl)) return remote;
-    } else {
+    // Never substitute the portrait for a missing local hero file
+    if (!isLocalResearchedPortraitPath(artist.heroImage)) {
       return artist.heroImage;
     }
   }
 
+  // Prefer the artist's own verified set thumbnail (YouTube official still)
   const set = artist.essentialSets.find((s) => s.youtubeId?.trim());
   if (set?.youtubeId) {
     const thumb = ytThumb(set.youtubeId, "max");
     if (!urlsAreSame(thumb, portraitUrl)) return thumb;
   }
 
-  const ingested = getIngestedMetadata(artist.slug);
-  if (
-    isRemoteUrl(ingested?.youtube?.thumbnailUrl) &&
-    !urlsAreSame(ingested.youtube.thumbnailUrl, portraitUrl)
-  ) {
-    return ingested.youtube.thumbnailUrl;
-  }
-
-  const genreHero = getGenreHeroArtwork(artist.genres[0]);
-  if (!urlsAreSame(genreHero, portraitUrl)) return genreHero;
-
-  return genreHero;
+  // Atmospheric hero is preferable to a mismatched channel photo or portrait reuse
+  return getGenreHeroArtwork(artist.genres[0]);
 }
 
 export function resolveHeroDisplayFallbacks(artist: Artist, portraitUrl: string): string[] {
@@ -113,10 +150,7 @@ export function resolveHeroDisplayFallbacks(artist: Artist, portraitUrl: string)
     primary,
     set?.youtubeId ? ytThumb(set.youtubeId, "max") : undefined,
     set?.youtubeId ? ytThumb(set.youtubeId, "hq") : undefined,
-    getIngestedMetadata(artist.slug)?.youtube?.thumbnailUrl,
     getGenreHeroArtwork(artist.genres[0]),
-    getGenreArtwork(artist.genres[0]),
-    portraitUrl !== primary ? portraitUrl : undefined,
     FALLBACK_IMAGE,
   ]);
 }
@@ -131,11 +165,8 @@ export function buildPortraitDisplayFallbacks(
   baseChain: string[],
 ): string[] {
   const remote = getRemotePortraitCandidates(artist);
-  return uniqueUrls([
-    portraitUrl,
-    ...remote,
-    ...baseChain,
-    getGenreArtwork(artist.genres[0]),
-    FALLBACK_IMAGE,
-  ]);
+  // Verified remotes only — never genre SVGs / artist-fallback as identity art.
+  return uniqueUrls([portraitUrl, ...remote, ...baseChain]).filter(
+    (url) => url && !isGenreOrPlaceholderUrl(url),
+  );
 }

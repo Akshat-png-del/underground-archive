@@ -1,0 +1,33 @@
+---
+description: Media-first catalog gate — verified playable media only; never invent content
+alwaysApply: true
+---
+
+# Catalog Authenticity (Media-First)
+
+Underground Archive is a curated cultural archive. **Authenticity > quantity.** Never generate fake content.
+
+Curation workflow (reintroduction, ingestion, no mass cleanup): `.cursor/rules/catalog-curation-mode.mdc`.
+
+## Scope
+
+Catalog/data only: content, metadata, builders, generators, validation/ingestion scripts. **Never playback.**
+
+## Public artist gate
+
+Artist appears publicly only with at least one:
+
+- verified playable Spotify track, OR
+- verified YouTube set with **API-fetched duration ≥ 10 minutes**
+
+## Tracks / releases / sets
+
+- Tracks: valid Spotify track ID/URL only
+- Releases: real Spotify album/release URL/ID only
+- Sets: valid YouTube ID, playable, API duration ≥ 10 min — never invent/hardcode durations
+
+## Delete (targeted only)
+
+Placeholder/generated media, invalid URLs, album/artist URLs as tracks, fabricated metadata, sets under 10 min after API check.
+
+Do **not** mass-remove artists during Curation Mode. Skip unverified candidates instead.

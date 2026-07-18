@@ -4,44 +4,51 @@
     {
       "title": "BLEEDING GODS",
       "spotifyTrackId": "2ksOtA1vxR8Z6CipP5B5XF",
-      "year": 2024,
-      "duration": "5:30"
+      "year": 2026,
+      "duration": "2:34",
+      "album": "cross/øver"
     },
     {
       "title": "OW I KNOW",
       "spotifyTrackId": "4t8s49ALwddkY5ML4jubgO",
-      "year": 2025,
-      "duration": "4:30"
+      "year": 2026,
+      "duration": "3:12",
+      "album": "OW I KNOW"
     },
     {
       "title": "R-301",
       "spotifyTrackId": "10AH8YLYFX2uUZR5N7ZGsc",
-      "year": 2023,
-      "duration": "5:00"
+      "year": 2019,
+      "duration": "5:09",
+      "album": "R-301"
     },
     {
       "title": "Transition",
       "spotifyTrackId": "7MC2ZDjvreeUGGvMpz5IhU",
-      "year": 2023,
-      "duration": "5:15"
+      "year": 2019,
+      "duration": "5:26",
+      "album": "Sparkling System"
     },
     {
       "title": "In My Mind",
       "spotifyTrackId": "7k6ds2BvraCzxPW95vSOwd",
       "year": 2024,
-      "duration": "5:45"
+      "duration": "4:34",
+      "album": "In My Mind"
     },
     {
       "title": "Requiem For A Rave",
       "spotifyTrackId": "4PCTlqlAaGzRbSPQguejWR",
       "year": 2025,
-      "duration": "4:01"
+      "duration": "4:01",
+      "album": "Requiem For A Rave"
     },
     {
       "title": "Trinity - Amelie Lens Remix",
       "spotifyTrackId": "1zgkuQAjwHz9dpy1ty7bX7",
       "year": 2023,
-      "duration": "7:23"
+      "duration": "7:23",
+      "album": "Trinity (Amelie Lens Remix)"
     }
   ],
   "sets": [
@@ -80,7 +87,19 @@
       "venue": "Teletech",
       "year": 2026,
       "youtubeId": "pzCK1nWaO6g"
+    },
+    {
+      "title": "Trym | HÖR x Technoabteil @ Zürich Street Parade - 9 August / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "Sqju_uCbPPY"
+    },
+    {
+      "title": "Trym / September 5 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "Er7GjSb5mHU"
     }
   ],
-  "updatedAt": "2026-06-28T01:30:29.105Z"
+  "updatedAt": "2026-07-18T00:56:11.285Z"
 }

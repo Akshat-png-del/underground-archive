@@ -44,7 +44,8 @@ export async function fetchSpotifyTrackMeta(trackId: string): Promise<SpotifyTra
     const data = (await res.json()) as { title?: string };
     const title = data.title?.replace(/\s*-\s*song.*$/i, "").trim();
     if (!title) return null;
-    return { id: trackId, title, duration: "5:00", year: new Date().getFullYear() };
+    // oEmbed has no duration_ms — never invent placeholders (use verify-spotify-track-durations).
+    return { id: trackId, title, duration: "", year: new Date().getFullYear() };
   } catch {
     return null;
   }

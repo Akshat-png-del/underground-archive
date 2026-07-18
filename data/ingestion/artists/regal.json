@@ -1,10 +1,10 @@
 {
   "slug": "regal",
   "name": "Regal",
-  "updatedAt": "2026-06-28T19:50:41.581Z",
+  "updatedAt": "2026-07-17T07:01:01.699Z",
   "sources": {
     "spotify": {
-      "syncedAt": "2026-06-28T19:50:41.581Z",
+      "syncedAt": "2026-07-18T00:55:52.407Z",
       "status": "ok"
     },
     "youtube": {
@@ -19,9 +19,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9dc667c66f52799736c40683",
     "imageUrls": [
-      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749dc667c66f52799736c40683"
+      "https://i.scdn.co/image/ab6761610000e5eb9dc667c66f52799736c40683",
+      "https://i.scdn.co/image/ab676161000051749dc667c66f52799736c40683",
+      "https://i.scdn.co/image/ab6761610000f1789dc667c66f52799736c40683"
     ],
     "relatedArtists": []
   },

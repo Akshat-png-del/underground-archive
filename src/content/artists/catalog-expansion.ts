@@ -1,5 +1,6 @@
 import type { Genre } from "@/types";
 import { createCatalogArtist, type CatalogEntry } from "./builder";
+import { AUTHENTICITY_REMOVED_SLUGS } from "./authenticity-removals";
 
 interface BulkSeed {
   slug: string;
@@ -32,11 +33,8 @@ function toEntry(_idx: number, seed: BulkSeed): CatalogEntry {
     bpmRange: seed.bpmRange ?? [140, 155],
     moodTags: seed.moodTags,
     similarArtists: seed.similarArtists ?? [],
-    tracks: [seed.name, "Live Session", "Essential Mix", "Peak Hour", "Warehouse"].map((title, i) => ({
-      title,
-      year: Math.min(seed.activeSince + i + 2, 2024),
-      duration: "5:00",
-    })),
+    // Never seed placeholder track titles — real tracks come from expansions / research.
+    tracks: [],
     trending: seed.trending,
     featured: seed.featured,
   };
@@ -103,6 +101,7 @@ const SEEDS: BulkSeed[] = [
     bpmRange: [125, 140],
     moodTags: ["hypnotic", "euphoric"],
     featured: true,
+    spotifyArtistId: "58nnSR1lwvcuklbb3Uc6TU",
   },
   {
     slug: "randomer",
@@ -235,6 +234,8 @@ const SEEDS: BulkSeed[] = [
   },
 ];
 
-export const expansionCatalogArtists = SEEDS.map((seed, i) =>
-  createCatalogArtist(toEntry(i + 126, seed))
-);
+export const expansionCatalogSeeds = SEEDS;
+
+export const expansionCatalogArtists = SEEDS.filter(
+  (seed) => !AUTHENTICITY_REMOVED_SLUGS.has(seed.slug),
+).map((seed, i) => createCatalogArtist(toEntry(i + 126, seed)));

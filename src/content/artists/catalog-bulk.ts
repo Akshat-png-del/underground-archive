@@ -1,5 +1,6 @@
 import type { Genre } from "@/types";
 import { createCatalogArtist, type CatalogEntry } from "./builder";
+import { AUTHENTICITY_REMOVED_SLUGS } from "./authenticity-removals";
 
 interface BulkSeed {
   slug: string;
@@ -10,7 +11,6 @@ interface BulkSeed {
   genres: Genre[];
   labels?: string[];
   similarArtists?: string[];
-  trackTitles: string[];
   spotifyArtistId?: string;
   trending?: boolean;
   featured?: boolean;
@@ -32,11 +32,8 @@ function toEntry(_idx: number, seed: BulkSeed): CatalogEntry {
       ? ([120, 140] as [number, number])
       : ([140, 155] as [number, number]),
     similarArtists: seed.similarArtists ?? [],
-    tracks: seed.trackTitles.slice(0, 5).map((title, i) => ({
-      title,
-      year: Math.min(seed.activeSince + i + 1, 2024),
-      duration: "5:00",
-    })),
+    // Never seed placeholder track titles — real tracks come from expansions / research.
+    tracks: [],
     trending: seed.trending,
     featured: seed.featured,
   };
@@ -50,7 +47,6 @@ function hard(slug: string, name: string, country: string, city: string, since: 
     city,
     activeSince: since,
     genres: ["hard-techno", "peak-time-techno"],
-    trackTitles: [`${name}`, "Warehouse Pressure", "Peak Hour", "Distorted Dreams", "Night Shift", "Raw Energy"],
     similarArtists: ["kobosil", "dyen", "trym", "fantasm", "charlie-sparks", "klangkuenstler"],
     ...extra,
   };
@@ -64,7 +60,6 @@ function industrial(slug: string, name: string, country: string, city: string, s
     city,
     activeSince: since,
     genres: ["industrial-techno", "dark-techno"],
-    trackTitles: [`${name}`, "Factory Floor", "Steel Rhythm", "Dark Matter", "Machine Soul", "Void"],
     similarArtists: ["paula-temple", "i-hate-models", "shlomo", "ancient-methods", "perc"],
     ...extra,
   };
@@ -78,26 +73,110 @@ function ebmDark(slug: string, name: string, country: string, city: string, sinc
     city,
     activeSince: since,
     genres,
-    trackTitles: [`${name}`, "Cold Pulse", "Body Control", "Neon Decay", "Ashes", "Midnight Drive"],
     similarArtists: ["boy-harsher", "phase-fatale", "helene-hauff"],
     ...extra,
   };
 }
 
 const SEEDS: BulkSeed[] = [
-  hard("azyr", "Azyr", "Brazil", "São Paulo", 2019, { trending: true, featured: true }),
-  hard("mrd", "MRD", "France", "Paris", 2018, { labels: ["MRD"], trending: true }),
+  hard("azyr", "Azyr", "Brazil", "São Paulo", 2019, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "1Ujj9Jh1Z4tDJ4j6qGRml8",
+    similarArtists: ["nico-moreno", "basswell", "carv", "fantasm", "trym", "winson"],
+  }),
   hard("nico-moreno", "Nico Moreno", "France", "Lyon", 2017, {
     labels: ["No Mercy"],
+    trending: true,
+    featured: true,
     spotifyArtistId: "6fjhNhp9IoeiZpEXq9AT2S",
+    similarArtists: ["azyr", "basswell", "carv", "fantasm", "trym", "novah"],
   }),
-  hard("alarico", "Alarico", "Italy", "Milan", 2018, { trending: true }),
+  hard("basswell", "Basswell", "France", "Paris", 2018, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "4NzdIkiweEHJgVdg8q2Ruk",
+    similarArtists: ["azyr", "nico-moreno", "carv", "winson", "onlynumbers", "novah"],
+  }),
+  hard("carv", "CARV", "Netherlands", "Amsterdam", 2019, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "6xenmpQHeDugzwDn9H2pSI",
+    similarArtists: ["basswell", "onlynumbers", "winson", "cloudy", "azyr", "nico-moreno"],
+  }),
+  hard("clara-cuve", "Clara Cuvé", "Spain", "Madrid", 2019, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "7daFW9cX9jHmOxZ0PIofRm",
+    similarArtists: ["lee-ann-roberts", "cera-khin", "patrick-mason", "vtss", "anetha", "yazzus"],
+  }),
+  hard("patrick-mason", "Patrick Mason", "Ireland", "Dublin", 2018, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "32H97VEM4nTqJsJgdt3hDg",
+    similarArtists: ["amelie-lens", "clara-cuve", "lee-ann-roberts", "anetha", "alignment", "999999999"],
+  }),
+  hard("adrian-mills", "Adrián Mills", "Spain", "Madrid", 2019, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "6H9sRmDCsXzsWK7jEg1thF",
+    similarArtists: ["cloudy", "winson", "carv", "onlynumbers", "basswell", "azyr"],
+  }),
+  hard("cera-khin", "Cera Khin", "Germany", "Berlin", 2018, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "49QMv0RvuxcUG8Xk6YweEz",
+    similarArtists: ["lee-ann-roberts", "clara-cuve", "vtss", "yazzus", "fantasm", "trym"],
+  }),
+  hard("cloudy", "Cloudy", "Netherlands", "Amsterdam", 2020, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "6T9GuyLe3Wkw5KRhhXUMC1",
+    similarArtists: ["adrian-mills", "winson", "carv", "onlynumbers", "basswell", "novah"],
+  }),
+  hard("luca-agnelli", "Luca Agnelli", "Italy", "Florence", 2015, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "4gF60Mys5KoWdQrf0bhRWq",
+    similarArtists: ["i-hate-models", "kobosil", "999999999", "alignment", "anetha", "hadone"],
+  }),
+  hard("lee-ann-roberts", "Lee Ann Roberts", "United States", "Detroit", 2018, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "0vemAVjLY9Dbz229ZqRlT1",
+    similarArtists: ["cera-khin", "clara-cuve", "vtss", "yazzus", "anetha", "fantasm"],
+  }),
+  hard("kozlov", "Køzløv", "France", "Paris", 2018, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "6lmg9kOOeuhhgThuBOE4bX",
+    similarArtists: ["basswell", "nico-moreno", "azyr", "carv", "novah", "winson"],
+  }),
+  hard("onlynumbers", "Onlynumbers", "Netherlands", "Amsterdam", 2019, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "14lZi2xEonJg9DyYk9JBak",
+    similarArtists: ["carv", "winson", "basswell", "cloudy", "adrian-mills", "novah"],
+  }),
+  hard("winson", "Winson", "Netherlands", "Amsterdam", 2019, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "2z9op9COiMU6QquVfY8HTN",
+    similarArtists: ["onlynumbers", "carv", "basswell", "cloudy", "azyr", "nico-moreno"],
+  }),
+  hard("novah", "NOVAH", "Germany", "Berlin", 2018, {
+    trending: true,
+    featured: true,
+    spotifyArtistId: "7qvjUtp2ccRD9AiDnukyFF",
+    similarArtists: ["nico-moreno", "basswell", "azyr", "fantasm", "trym", "winson"],
+  }),
+  hard("alarico", "Alarico", "Italy", "Milan", 2018, { spotifyArtistId: "3160Uht6QdGT17EECSPWAO",  trending: true }),
   hard("cravet", "CRAVET", "France", "Paris", 2019),
-  hard("vntm", "VNTM", "Germany", "Berlin", 2018),
-  hard("jks", "JKS", "France", "Paris", 2016, { labels: ["Molekul"] }),
-  hard("rikhter", "Rikhter", "Germany", "Berlin", 2019),
-  hard("somewhen", "Somewhen", "Germany", "Berlin", 2017),
-  hard("stranger", "Stranger", "Belgium", "Antwerp", 2014, { labels: ["Stroboscopic Artefacts"] }),
+  hard("vntm", "VNTM", "Germany", "Berlin", 2018, { spotifyArtistId: "3OIINbAKKK2MjCiFEpEft3" }),
+  hard("jks", "JKS", "France", "Paris", 2016, { spotifyArtistId: "7CQ5jMPSOl75LWm04fshav", labels: ["Molekul"] }),
+  hard("rikhter", "Rikhter", "Germany", "Berlin", 2019, { spotifyArtistId: "01wXJJ2iH73waMzLrINVY6" }),
+  hard("somewhen", "Somewhen", "Germany", "Berlin", 2017, { spotifyArtistId: "0k47nZgznsmnNkSIJvjbVy" }),
+  hard("stranger", "Stranger", "Belgium", "Antwerp", 2014, { spotifyArtistId: "3DPK0SXbCc0YYwFrsHUSWP",  labels: ["Stroboscopic Artefacts"] }),
   hard("spektre", "Spektre", "United Kingdom", "London", 2015),
   hard("ben-spencer", "Ben Spencer", "United Kingdom", "Manchester", 2018),
   hard("ogian", "Ogian", "Italy", "Rome", 2019),
@@ -109,7 +188,7 @@ const SEEDS: BulkSeed[] = [
   hard("klaps", "Klaps (BE)", "Belgium", "Brussels", 2019),
   hard("lsdxoxo", "LSDXOXO", "United States", "Philadelphia", 2018),
   hard("ogive", "Ogive", "France", "Paris", 2017),
-  hard("anfisa-letyago", "Anfisa Letyago", "Russia", "Moscow", 2016, { featured: true }),
+  hard("anfisa-letyago", "Anfisa Letyago", "Russia", "Moscow", 2016, { spotifyArtistId: "7icoOm5fKKPo49jVxoj1Cq",  featured: true }),
   hard("cltx", "CLTX", "France", "Paris", 2019),
   hard("krow", "Krow", "France", "Paris", 2018),
   hard("psyk32", "Psyk32", "France", "Paris", 2020),
@@ -119,13 +198,11 @@ const SEEDS: BulkSeed[] = [
   hard("kaiser", "Kaiser", "Germany", "Berlin", 2018),
   hard("blasha-allatt", "Blasha & Allatt", "United Kingdom", "Manchester", 2017, { labels: ["On Rotation"] }),
   hard("rosati", "Rosati", "Italy", "Naples", 2019),
-  hard("novah", "Novah", "Germany", "Berlin", 2018),
   hard("jacidorex", "Jacidorex", "France", "Paris", 2019),
   hard("ha-cay", "Ha CAY", "France", "Paris", 2020),
   hard("blicz", "Blicz", "Poland", "Warsaw", 2019),
-  hard("basswell", "Basswell", "France", "Paris", 2018),
   hard("matrakk", "Matrakk", "France", "Lyon", 2019),
-  hard("yazzus", "Yazzus", "France", "Paris", 2018, { genres: ["hardgroove", "hard-techno", "peak-time-techno"], trending: true }),
+  hard("yazzus", "Yazzus", "France", "Paris", 2018, { spotifyArtistId: "0KWutsZ75Y4GvjcPTFnKXU",  genres: ["hardgroove", "hard-techno", "peak-time-techno"], trending: true }),
   hard("yanamaste", "Yanamaste", "France", "Paris", 2019),
   hard("warface", "Warface", "Netherlands", "Amsterdam", 2017),
   hard("mcmlxxxv", "MCMLXXXV", "France", "Paris", 2018),
@@ -136,10 +213,10 @@ const SEEDS: BulkSeed[] = [
   hard("hemka", "Hemka", "France", "Paris", 2018),
   hard("iochan", "Iochan", "Japan", "Tokyo", 2019),
   hard("randall", "Randall", "France", "Paris", 2017),
-  hard("oguz", "Oguz", "Turkey", "Istanbul", 2018, { trending: true }),
+  hard("oguz", "Oguz", "Turkey", "Istanbul", 2018, { spotifyArtistId: "2n6aFLFLpEBs61Kfy5EX5v",  trending: true }),
   hard("hausman", "Hausman", "France", "Paris", 2019),
   hard("vklf", "VKLF", "France", "Paris", 2020),
-  hard("cleric", "Cleric", "Romania", "Bucharest", 2014, { labels: ["Clergy"] }),
+  hard("cleric", "Cleric", "Romania", "Bucharest", 2014, { spotifyArtistId: "4KT7MVScl2ZwwX6uDUJIEL",  labels: ["Clergy"] }),
   hard("pulsar", "Pulsar", "France", "Paris", 2019),
   hard("amelior", "Amelior", "France", "Paris", 2018),
   hard("vrtx", "VRTX", "France", "Paris", 2020),
@@ -150,7 +227,7 @@ const SEEDS: BulkSeed[] = [
   hard("berkan", "Berkan", "Turkey", "Istanbul", 2019),
   hard("berlyn", "Berlyn", "Germany", "Berlin", 2020),
   hard("bianca-obyn", "Bianca Oblivion", "United Kingdom", "London", 2018),
-  hard("eric-sneo", "Eric Sneo", "Germany", "Frankfurt", 1998, { genres: ["schranz", "hard-techno"], labels: ["CLR"], trackTitles: ["Sneo 1", "Sneo 2", "Metallic Loop", "Pressure", "Drive", "Endurance"] }),
+  hard("eric-sneo", "Eric Sneo", "Germany", "Frankfurt", 1998, { genres: ["schranz", "hard-techno"], labels: ["CLR"] }),
   hard("petduo", "Petduo", "Germany", "Berlin", 2010, {
     genres: ["schranz", "hard-techno"],
     spotifyArtistId: "5SEUYqumyvmrkgWpOco1lo",
@@ -158,7 +235,7 @@ const SEEDS: BulkSeed[] = [
   hard("spd", "SPD", "Germany", "Berlin", 2015, { genres: ["schranz", "hard-techno"] }),
   hard("frank-nitzinsky", "Frank Nitzinsky", "Germany", "Berlin", 2005, { genres: ["schranz", "hard-techno"] }),
   hard("crystal-distortion", "Crystal Distortion", "France", "Paris", 2012, { genres: ["hard-techno", "acid-techno"] }),
-  hard("hardfloor", "Hardfloor", "Germany", "Frankfurt", 1992, { genres: ["acid-techno", "hard-techno"], labels: ["Harthouse"], trackTitles: ["Acperience 1", "Acperience 2", "Hardtrance Acperience", "Fish & Chips", "Mirror Man", "Into Nature"] }),
+  hard("hardfloor", "Hardfloor", "Germany", "Frankfurt", 1992, { genres: ["acid-techno", "hard-techno"], labels: ["Harthouse"] }),
   industrial("front-line-assembly", "Front Line Assembly", "Canada", "Vancouver", 1986, { genres: ["industrial", "ebm", "industrial-ebm"], labels: ["Metropolis"] }),
   industrial("nitzer-ebb", "Nitzer Ebb", "United Kingdom", "Essex", 1982, { genres: ["ebm", "industrial-ebm"], labels: ["Mute"] }),
   industrial("leather-strip", "Leather Strip", "Sweden", "Gothenburg", 1989, { genres: ["ebm", "industrial-ebm"] }),
@@ -192,7 +269,11 @@ const SEEDS: BulkSeed[] = [
     spotifyArtistId: "40HeNm05FEAxGx8gUOV4my",
   }),
   industrial("phuture-corp", "Phuture Corp", "Germany", "Berlin", 2016, { genres: ["dark-techno", "industrial-techno"] }),
-  industrial("obscure-shape", "Obscure Shape", "Germany", "Berlin", 2014, { genres: ["dark-techno", "industrial-techno"], labels: ["Oliver Hafenbauer"] }),
+  industrial("obscure-shape", "Obscure Shape", "Germany", "Berlin", 2014, {
+    genres: ["dark-techno", "industrial-techno"],
+    labels: ["Oliver Hafenbauer"],
+    spotifyArtistId: "6RLKERK1S5PKg3dLhzM0ZB",
+  }),
   industrial("rrose", "Rrose", "United States", "Philadelphia", 2009, {
     genres: ["dark-techno", "industrial-techno"],
     spotifyArtistId: "5naKaYAyzzuPDsh4H2dwyT",
@@ -211,7 +292,7 @@ const SEEDS: BulkSeed[] = [
     labels: ["Stroboscopic Artefacts"],
     spotifyArtistId: "0BlPI3UKzTcN2jf0gCa0b9",
   }),
-  hard("kangding-ray", "Kangding Ray", "France", "Paris", 2006, { genres: ["hypnotic-techno", "dark-techno", "industrial-techno"], labels: ["RA"] }),
+  hard("kangding-ray", "Kangding Ray", "France", "Paris", 2006, { spotifyArtistId: "20UWNE4rEU7YMO0GHq4F26",  genres: ["hypnotic-techno", "dark-techno", "industrial-techno"], labels: ["RA"] }),
   hard("victor-ruiz", "Victor Ruiz", "Brazil", "São Paulo", 2010, {
     genres: ["peak-time-techno", "hard-techno"],
     featured: true,
@@ -221,4 +302,8 @@ const SEEDS: BulkSeed[] = [
   hard("francois-x", "François X", "France", "Paris", 2014, { genres: ["dark-techno", "peak-time-techno"], labels: ["Dement3d"] }),
 ];
 
-export const bulkCatalogArtists = SEEDS.map((seed, i) => createCatalogArtist(toEntry(i + 32, seed)));
+export const bulkCatalogSeeds = SEEDS;
+
+export const bulkCatalogArtists = SEEDS.filter(
+  (seed) => !AUTHENTICITY_REMOVED_SLUGS.has(seed.slug),
+).map((seed, i) => createCatalogArtist(toEntry(i + 32, seed)));

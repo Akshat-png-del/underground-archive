@@ -1,0 +1,106 @@
+{
+  "slug": "patrick-mason",
+  "tracks": [
+    {
+      "title": "Elevate",
+      "spotifyTrackId": "5b3oqZ9Fd3cWoX0JBRgnZP",
+      "year": 2018,
+      "duration": "8:13",
+      "album": "Elevate"
+    },
+    {
+      "title": "Nasty",
+      "spotifyTrackId": "0QVFX0Lo5VvLnTGLwSeJr5",
+      "year": 2018,
+      "duration": "6:38",
+      "album": "Elevate"
+    },
+    {
+      "title": "Elevate - Dub Mix",
+      "spotifyTrackId": "2iUs0LFJ9Z68y4fqIjSM7O",
+      "year": 2018,
+      "duration": "7:10",
+      "album": "Elevate"
+    },
+    {
+      "title": "The Feast of Love (Version for Baritone & Orchestra)",
+      "spotifyTrackId": "7M1zunSl7gDEmsnCNF6tvn",
+      "year": 2017,
+      "duration": "9:15",
+      "album": "American Orchestral Song"
+    },
+    {
+      "title": "No. 1, On a Screen",
+      "spotifyTrackId": "2jF8PMZphz61lNhxP4tWm9",
+      "year": 2017,
+      "duration": "2:16",
+      "album": "American Orchestral Song"
+    },
+    {
+      "title": "No. 2, The Odalisque",
+      "spotifyTrackId": "5tLTdMtDjNjiY7b9tVFPMM",
+      "year": 2017,
+      "duration": "2:29",
+      "album": "American Orchestral Song"
+    },
+    {
+      "title": "No. 3, Highwaymen",
+      "spotifyTrackId": "4aoOJk2UGguj6jieodjJ1Z",
+      "year": 2017,
+      "duration": "3:13",
+      "album": "American Orchestral Song"
+    },
+    {
+      "title": "No. 4, To a Young Gentleman",
+      "spotifyTrackId": "0DMLwvr3CGuJBtnFFyxFsS",
+      "year": 2017,
+      "duration": "2:42",
+      "album": "American Orchestral Song"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Patrick Mason | HÖR - Jun 14 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "zkO0xHTXV7I"
+    },
+    {
+      "title": "Patrick Mason / August 27 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "XZw7YbvuqHg"
+    },
+    {
+      "title": "Patrick Mason / April 2 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "CcQpVwyU2yU"
+    },
+    {
+      "title": "Patrick Mason / January 8 / 6pm-7pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "oJXKZXD8E2s"
+    },
+    {
+      "title": "Patrick Mason / October 22 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "4pmCUaW7r78"
+    },
+    {
+      "title": "Patrick Mason / June 19 / 6pm-7pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "0maEYkQMAKE"
+    },
+    {
+      "title": "HÖR 1 Year Anniversary - Patrick Mason / August 15 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "TSFHdBjQB8c"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:36.126Z"
+}

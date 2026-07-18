@@ -41,7 +41,7 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
     <div
       id={`track-${id}`}
       onPointerDown={handleCardPointerDown}
-      className={`playable-surface group flex cursor-pointer touch-manipulation items-center gap-4 rounded-sm px-3 py-3 sm:px-4 ${playableSurfaceClass(active, playing)}`}
+      className={`playable-surface group flex w-full min-w-0 max-w-full cursor-pointer touch-manipulation items-center gap-4 rounded-sm px-3 py-3 sm:px-4 ${playableSurfaceClass(active, playing)}`}
       role="button"
       tabIndex={0}
       aria-label={playing ? `Pause ${track.title}` : `Play ${track.title}`}
@@ -65,7 +65,9 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
         <p className="mt-0.5 truncate text-xs text-muted">
           {active
             ? formatPlaybackElapsedSubline(snapshot.displayTime, snapshot.duration)
-            : `${track.releaseYear} · ${track.duration}`}
+            : track.duration
+              ? `${track.releaseYear} · ${track.duration}`
+              : String(track.releaseYear)}
         </p>
       </div>
       <div className="flex shrink-0 flex-col items-end gap-1">

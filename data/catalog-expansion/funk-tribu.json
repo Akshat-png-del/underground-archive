@@ -1,6 +1,63 @@
 {
   "slug": "funk-tribu",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Azul",
+      "spotifyTrackId": "1KOTY2OVnEgua9eY76WxvT",
+      "year": 2025,
+      "duration": "3:46",
+      "album": "Azul"
+    },
+    {
+      "title": "I Got It For You",
+      "spotifyTrackId": "4HYWGaqCkshGWu6stZxlmd",
+      "year": 2024,
+      "duration": "3:34",
+      "album": "Against All Odds"
+    },
+    {
+      "title": "Phonky Tribu",
+      "spotifyTrackId": "7aIb17DMLcOhLJIc9vF6Aa",
+      "year": 2021,
+      "duration": "4:46",
+      "album": "The Midnight Club GT"
+    },
+    {
+      "title": "Viento",
+      "spotifyTrackId": "1aLfpxEUwwrB2zItNq7wrd",
+      "year": 2024,
+      "duration": "3:37",
+      "album": "Viento EP"
+    },
+    {
+      "title": "where are you taking me? (mente)",
+      "spotifyTrackId": "7JFH1pIbhv14d2TE6KiAeN",
+      "year": 2026,
+      "duration": "3:47",
+      "album": "where are you taking me? (mente)"
+    },
+    {
+      "title": "reborn (alma)",
+      "spotifyTrackId": "59IwqDfglT8yEzXYRc2HwF",
+      "year": 2026,
+      "duration": "3:33",
+      "album": "reborn (alma)"
+    },
+    {
+      "title": "Under the Moon",
+      "spotifyTrackId": "2pkIZ2AuuKwkkqasf5wXRo",
+      "year": 2023,
+      "duration": "3:41",
+      "album": "Under the Moon"
+    },
+    {
+      "title": "All Of It",
+      "spotifyTrackId": "79grw34DPX7iCvVUfBPB9S",
+      "year": 2023,
+      "duration": "5:31",
+      "album": "All Of It"
+    }
+  ],
   "sets": [
     {
       "title": "Funk Tribu | Boiler Room: Ghent",
@@ -33,5 +90,5 @@
       "youtubeId": "JnbHbfhW48A"
     }
   ],
-  "updatedAt": "2026-06-28T01:30:56.650Z"
+  "updatedAt": "2026-07-18T00:54:44.004Z"
 }

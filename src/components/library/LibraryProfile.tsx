@@ -1,17 +1,47 @@
 "use client";
 
+import { useMemo } from "react";
 import Link from "next/link";
 import { useLibrary } from "@/context/LibraryContext";
 import { Button } from "@/components/ui/Button";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
-import { SafeImage } from "@/components/ui/SafeImage";
 import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
-import { TrackArtwork } from "@/components/music/TrackArtwork";
+import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import { TodaysDiscovery, PreferencesSummary } from "@/components/home/TodaysDiscovery";
+import {
+  hydrateHistoryEntry,
+  hydrateRecentlyViewedEntry,
+} from "@/lib/library/resolve-display";
+import { playbackItemFromRef } from "@/lib/music/playback";
 
 export function LibraryProfile() {
   const { profile, updateProfile, publicPlaylists, history, playlists, recentlyViewed } = useLibrary();
   const { openCreatePlaylist } = usePlaylistModal();
+
+  const viewed = useMemo(
+    () =>
+      recentlyViewed
+        .map(hydrateRecentlyViewedEntry)
+        .filter((v): v is NonNullable<typeof v> => !!v)
+        .slice(0, 8),
+    [recentlyViewed],
+  );
+  const continueListening = useMemo(
+    () =>
+      history
+        .map(hydrateHistoryEntry)
+        .filter((h): h is NonNullable<typeof h> => !!h)
+        .slice(0, 5),
+    [history],
+  );
+  const continueBrowseQueue = useMemo(
+    () =>
+      continueListening
+        .map((h) => playbackItemFromRef(h.type, h.refId))
+        .filter((item): item is NonNullable<typeof item> => !!item),
+    [continueListening],
+  );
+  const trendingPlaylists = useMemo(() => publicPlaylists.slice(0, 4), [publicPlaylists]);
 
   return (
     <div>
@@ -58,19 +88,19 @@ export function LibraryProfile() {
         </div>
       </div>
 
-      {recentlyViewed.length > 0 && (
+      {viewed.length > 0 && (
         <section className="mt-12">
           <h2 className="font-serif text-xl text-foreground">Recently viewed</h2>
           <ul className="mt-4 space-y-2">
-            {recentlyViewed.slice(0, 8).map((v) => (
+            {viewed.map((v) => (
               <li key={v.id}>
                 <Link href={v.href} className="interactive-row flex items-center gap-3 border border-border p-3">
                   <div className="relative h-10 w-10 shrink-0">
-                    <TrackArtwork coverArt={v.coverArt} alt="" fill sizes="40px" />
+                    <LibraryArtwork src={v.coverArt} alt="" fill sizes="40px" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground">{v.title}</p>
-                    <p className="text-xs text-muted">{v.subtitle}</p>
+                    {v.subtitle ? <p className="text-xs text-muted">{v.subtitle}</p> : null}
                   </div>
                 </Link>
               </li>
@@ -79,13 +109,13 @@ export function LibraryProfile() {
         </section>
       )}
 
-      {history.length > 0 && (
+      {continueListening.length > 0 && (
         <section className="mt-12">
           <h2 className="font-serif text-xl text-foreground">Continue listening</h2>
           <ul className="mt-4 space-y-2">
-            {history.slice(0, 5).map((h) => (
+            {continueListening.map((h, i) => (
               <li key={h.id}>
-                <HistoryPlayRow entry={h} />
+                <HistoryPlayRow entry={h} browseQueue={continueBrowseQueue} browseIndex={i} />
               </li>
             ))}
           </ul>
@@ -95,10 +125,10 @@ export function LibraryProfile() {
       <section className="mt-12">
         <h2 className="font-serif text-xl text-foreground">Trending public playlists</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          {publicPlaylists.slice(0, 4).map((p) => (
+          {trendingPlaylists.map((p) => (
             <Link key={p.id} href={`/playlists/${p.id}`} className="interactive-row flex gap-3 border border-border p-3">
               <div className="relative h-16 w-16 shrink-0">
-                <SafeImage src={p.coverImage} alt="" fill sizes="64px" />
+                <LibraryArtwork src={p.coverImage} alt="" fill sizes="64px" />
               </div>
               <div>
                 <p className="font-medium text-foreground">{p.title}</p>

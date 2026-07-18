@@ -111,6 +111,12 @@ body {
   line-height: 1.8;
   color: var(--muted-light);
   font-size: 1.05rem;
+  overflow-wrap: break-word;
+}
+
+.prose-archive h2,
+.prose-archive h3 {
+  overflow-wrap: break-word;
 }
 
 /* Animations */

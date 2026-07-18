@@ -1,0 +1,31 @@
+{
+  "slug": "cera-khin",
+  "name": "Cera Khin",
+  "updatedAt": "2026-07-17T06:50:25.670Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:27.465Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "49QMv0RvuxcUG8Xk6YweEz",
+    "name": "Cera Khin",
+    "url": "https://open.spotify.com/artist/49QMv0RvuxcUG8Xk6YweEz",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9df9d5920542936328880d97",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb9df9d5920542936328880d97",
+      "https://i.scdn.co/image/ab676161000051749df9d5920542936328880d97",
+      "https://i.scdn.co/image/ab6761610000f1789df9d5920542936328880d97"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051749df9d5920542936328880d97",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/49QMv0RvuxcUG8Xk6YweEz"
+  }
+}

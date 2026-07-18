@@ -1,6 +1,94 @@
 {
   "slug": "part-time-killer",
-  "tracks": [],
-  "sets": [],
-  "updatedAt": "2026-06-28T01:49:19.151Z"
+  "tracks": [
+    {
+      "title": "Like A Phoenix",
+      "spotifyTrackId": "5ZK9U7Clsquva2vIArinAX",
+      "year": 2021,
+      "duration": "1:46",
+      "album": "Human Syntax Error"
+    },
+    {
+      "title": "D.I.C.T.A.T.O.R",
+      "spotifyTrackId": "6ymSoaZbwL3E9hp1TOUjeQ",
+      "year": 2021,
+      "duration": "1:27",
+      "album": "Human Syntax Error"
+    },
+    {
+      "title": "Pressure Is On",
+      "spotifyTrackId": "5ha8KruVcAFOXAOImtCQlF",
+      "year": 2021,
+      "duration": "2:16",
+      "album": "Human Syntax Error"
+    },
+    {
+      "title": "Human Syntax Error",
+      "spotifyTrackId": "4eSelvhwibNEqUsZazmTeq",
+      "year": 2021,
+      "duration": "1:06",
+      "album": "Human Syntax Error"
+    },
+    {
+      "title": "Kill Your Feelings",
+      "spotifyTrackId": "5vptbScOtCrlIkEY5vVAYF",
+      "year": 2021,
+      "duration": "1:10",
+      "album": "Human Syntax Error"
+    },
+    {
+      "title": "Destined For Nothing",
+      "spotifyTrackId": "3GfjWyzaFpBbRt4s5ryjQI",
+      "year": 2021,
+      "duration": "2:28",
+      "album": "Human Syntax Error"
+    },
+    {
+      "title": "Long Johns",
+      "spotifyTrackId": "2yesBxrSndBVyvekdykHCo",
+      "year": 2021,
+      "duration": "0:57",
+      "album": "Human Syntax Error"
+    },
+    {
+      "title": "System Is Using You",
+      "spotifyTrackId": "5ixR3y9gccbLSh0niUsLUl",
+      "year": 2020,
+      "duration": "2:53",
+      "album": "The Fight"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Part Time Killer | HÖR ON TOUR Ankara - 23 May / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "CCJJEyNZ6zs"
+    },
+    {
+      "title": "Part Time Killer | HÖR x Sennheiser Amsterdam Pop-up - October 23 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "HWQjB37GOgo"
+    },
+    {
+      "title": "10 Years Selected - Part Time Killer B2B Cara Elizabeth | HÖR - September 24 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "5hyOLrn7JlA"
+    },
+    {
+      "title": "Frederic. Invites - Part Time Killer | HÖR - March 26 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "J5IWduq6ifw"
+    },
+    {
+      "title": "Part Time Killer | HÖR - May 16 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "_qaxuzB97tI"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:32.583Z"
 }

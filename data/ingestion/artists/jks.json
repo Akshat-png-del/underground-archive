@@ -1,10 +1,14 @@
 {
   "slug": "jks",
   "name": "JKS",
-  "updatedAt": "2026-06-28T01:38:18.297Z",
+  "updatedAt": "2026-07-17T06:52:02.380Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:03.356Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-17T06:52:02.380Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,21 @@
     "thumbnailUrl": "https://yt3.ggpht.com/ytc/AIdro_n5CE76MVQkMhu6a4iK8az9kQPv_kPr-iuQ5nXhdG29qrENWaHeBnsbgnZdiKIuS-Wfkw=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/ytc/AIdro_n5CE76MVQkMhu6a4iK8az9kQPv_kPr-iuQ5nXhdG29qrENWaHeBnsbgnZdiKIuS-Wfkw=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@j.k.s.6982"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a79b3dca2d4a03c73ec5692a",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7CQ5jMPSOl75LWm04fshav"
+  },
+  "spotify": {
+    "artistId": "7CQ5jMPSOl75LWm04fshav",
+    "name": "JKS",
+    "url": "https://open.spotify.com/artist/7CQ5jMPSOl75LWm04fshav",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a79b3dca2d4a03c73ec5692a",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a79b3dca2d4a03c73ec5692a"
+    ],
+    "relatedArtists": []
   }
 }

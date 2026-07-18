@@ -1,0 +1,31 @@
+{
+  "slug": "adrian-mills",
+  "name": "Adrián Mills",
+  "updatedAt": "2026-07-17T06:49:16.590Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T00:53:50.238Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "6H9sRmDCsXzsWK7jEg1thF",
+    "name": "Adrian Mills",
+    "url": "https://open.spotify.com/artist/6H9sRmDCsXzsWK7jEg1thF",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebeea49bd98b1a2319aa9d2a9c",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5ebeea49bd98b1a2319aa9d2a9c",
+      "https://i.scdn.co/image/ab67616100005174eea49bd98b1a2319aa9d2a9c",
+      "https://i.scdn.co/image/ab6761610000f178eea49bd98b1a2319aa9d2a9c"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174eea49bd98b1a2319aa9d2a9c",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6H9sRmDCsXzsWK7jEg1thF"
+  }
+}

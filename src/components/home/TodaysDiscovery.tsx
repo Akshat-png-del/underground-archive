@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePreferences } from "@/context/PreferencesContext";
 import { getTodaysDiscovery, getTodaysDiscoveryStatic, type DailyDiscovery } from "@/lib/preferences/recommendations";
+import { getHomepageDiscovery, getHomepageDiscoveryStatic } from "@/content/home/feed";
 import { DEFAULT_PREFERENCES } from "@/types/preferences";
 import { genreLabels, moodLabels } from "@/content/artists";
 import { resolvePortrait, resolvePortraitFallbacksForDisplay } from "@/lib/archive/verification";
@@ -11,6 +12,7 @@ import { SafeImage } from "@/components/ui/SafeImage";
 import { TrackRow } from "@/components/music/TrackRow";
 import { SetRow } from "@/components/music/SetRow";
 import { FadeInSection } from "@/components/ui/FadeInSection";
+import { useHomepageRotationRefresh } from "@/components/home/useHomepageRotationRefresh";
 
 interface Props {
   compact?: boolean;
@@ -21,15 +23,22 @@ export function TodaysDiscovery({
   initialDiscovery,
 }: Props & { initialDiscovery?: DailyDiscovery }) {
   const { preferences, ready } = usePreferences();
-  const [discovery, setDiscovery] = useState<DailyDiscovery>(
+  const useBudget = !!initialDiscovery && !compact;
+  const budgeted = useHomepageRotationRefresh(
+    getHomepageDiscovery,
+    initialDiscovery ?? getHomepageDiscoveryStatic(),
+  );
+  const [personal, setPersonal] = useState<DailyDiscovery>(
     () => initialDiscovery ?? getTodaysDiscoveryStatic(DEFAULT_PREFERENCES),
   );
 
   useEffect(() => {
+    if (useBudget) return;
     if (!ready) return;
-    setDiscovery(getTodaysDiscovery(preferences));
-  }, [preferences, ready]);
+    setPersonal(getTodaysDiscovery(preferences));
+  }, [preferences, ready, useBudget]);
 
+  const discovery = useBudget ? budgeted : personal;
   const { artist, set, track } = discovery;
 
   if (compact) {
@@ -52,8 +61,7 @@ export function TodaysDiscovery({
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent">Today&apos;s discovery</p>
           <h2 className="mt-2 font-serif text-3xl text-foreground sm:text-4xl">Picked for your taste</h2>
           <p className="mt-2 text-sm text-muted-light">
-            Refreshes every 12 hours
-            {preferences.completedAt ? " · based on your preferences" : " · complete onboarding to personalize"}
+            {preferences.completedAt ? "Based on your preferences" : "Complete onboarding to personalize"}
           </p>
 
           <div className="mt-8 space-y-2">

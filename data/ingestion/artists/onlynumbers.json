@@ -1,0 +1,26 @@
+{
+  "slug": "onlynumbers",
+  "name": "Onlynumbers",
+  "updatedAt": "2026-07-16T23:47:07.817Z",
+  "sources": {},
+  "spotify": {
+    "artistId": "14lZi2xEonJg9DyYk9JBak",
+    "name": "Onlynumbers",
+    "url": "https://open.spotify.com/artist/14lZi2xEonJg9DyYk9JBak",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517490b253078837894ea6262068",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517490b253078837894ea6262068"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517490b253078837894ea6262068",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/14lZi2xEonJg9DyYk9JBak",
+    "confidence": "high",
+    "updatedAt": "2026-07-16T23:47:07.817Z"
+  }
+}

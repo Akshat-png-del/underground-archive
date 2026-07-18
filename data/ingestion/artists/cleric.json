@@ -1,10 +1,14 @@
 {
   "slug": "cleric",
   "name": "Cleric",
-  "updatedAt": "2026-06-28T01:38:18.317Z",
+  "updatedAt": "2026-07-17T06:50:51.679Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:30.920Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:23.574Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/3bpvrlM2QoMPMI90_vLdxbZzdLYnaqmeGOtmavZIcMwjlLSVUpCjA-XVc8qR-iDHYiq3QSezww=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/3bpvrlM2QoMPMI90_vLdxbZzdLYnaqmeGOtmavZIcMwjlLSVUpCjA-XVc8qR-iDHYiq3QSezww=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@theclericcorner"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a71d7a9875bd77d6a615cb7d",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4KT7MVScl2ZwwX6uDUJIEL"
+  },
+  "spotify": {
+    "artistId": "4KT7MVScl2ZwwX6uDUJIEL",
+    "name": "Cleric",
+    "url": "https://open.spotify.com/artist/4KT7MVScl2ZwwX6uDUJIEL",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a71d7a9875bd77d6a615cb7d",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab67616d0000b273a71d7a9875bd77d6a615cb7d",
+      "https://i.scdn.co/image/ab67616d00001e02a71d7a9875bd77d6a615cb7d",
+      "https://i.scdn.co/image/ab67616d00004851a71d7a9875bd77d6a615cb7d"
+    ],
+    "relatedArtists": []
   }
 }

@@ -1,0 +1,26 @@
+{
+  "slug": "luca-agnelli",
+  "name": "Luca Agnelli",
+  "updatedAt": "2026-07-16T23:47:06.399Z",
+  "sources": {},
+  "spotify": {
+    "artistId": "4gF60Mys5KoWdQrf0bhRWq",
+    "name": "Luca Agnelli",
+    "url": "https://open.spotify.com/artist/4gF60Mys5KoWdQrf0bhRWq",
+    "imageUrl": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a066db6e6619e12d99991af",
+    "imageUrls": [
+      "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a066db6e6619e12d99991af"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a066db6e6619e12d99991af",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4gF60Mys5KoWdQrf0bhRWq",
+    "confidence": "high",
+    "updatedAt": "2026-07-16T23:47:06.399Z"
+  }
+}

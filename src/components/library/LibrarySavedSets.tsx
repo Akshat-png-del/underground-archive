@@ -8,11 +8,11 @@ import { playbackItemFromSet } from "@/lib/music/playback";
 
 export function LibrarySavedSets() {
   const { savedSets } = useLibrary();
-  const sets = savedSets.map((id) => getSet(id)).filter(Boolean);
-  const browseQueue = useMemo(
-    () => sets.filter((s): s is NonNullable<typeof s> => !!s).map(playbackItemFromSet),
-    [sets],
+  const sets = useMemo(
+    () => savedSets.map((id) => getSet(id)).filter((s): s is NonNullable<typeof s> => !!s),
+    [savedSets],
   );
+  const browseQueue = useMemo(() => sets.map(playbackItemFromSet), [sets]);
 
   return (
     <div>
@@ -22,7 +22,7 @@ export function LibrarySavedSets() {
         <p className="mt-12 text-muted">Save live sets from artist pages or the sets directory.</p>
       ) : (
         <div className="mt-8 divide-y divide-border/50">
-          {sets.map((set, i) => set && (
+          {sets.map((set, i) => (
             <SetRow key={set.id} set={set} browseQueue={browseQueue} browseIndex={i} />
           ))}
         </div>

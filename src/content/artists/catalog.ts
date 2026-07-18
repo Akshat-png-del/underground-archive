@@ -17,7 +17,7 @@ function entry(
   const tracks = trackSpecs?.map((t) => ({
     title: t.title,
     year: t.year ?? 2020,
-    duration: t.duration ?? "5:00",
+    duration: t.duration ?? "",
     spotifyTrackId: t.trackId,
   }));
 
@@ -73,7 +73,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Chicago / Berlin",
     activeSince: 1985,
     genres: ["hard-techno", "industrial"],
-    spotifyArtistId: "5lYB7n8SnuwVB30X6hZ1i9",
+    spotifyArtistId: "6gBmUpKvNYtnQTSLK5vwS5",
     labels: ["GTO Records"],
     bpmRange: [140, 155],
     soundScores: { energy: 9.8, darkness: 8.0, aggression: 9.9, industrial: 8.5, melody: 3.0 },
@@ -251,7 +251,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "New York / Berlin",
     activeSince: 2014,
     genres: ["ebm", "industrial-techno"],
-    spotifyArtistId: "3PwE5dMjmoZZ11KFNBr7dB",
+    spotifyArtistId: "1jjplgZcgCwhU7JlGhBQiw",
     labels: ["Sonic Groove"],
     similarArtists: ["adam-x", "ancient-methods", "boy-harsher"],
     trackSpecs: [
@@ -268,7 +268,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Hamburg",
     activeSince: 2010,
     genres: ["industrial-techno", "acid-techno"],
-    spotifyArtistId: "0yxJdmHyqSY3bPVuJ1DSd8",
+    spotifyArtistId: "1JcefSOP7bcWEluL0iEIaN",
     labels: ["Werkstatt"],
     similarArtists: ["surgeon", "charlotte-de-witte", "alignment"],
     trackSpecs: [
@@ -286,7 +286,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "UK",
     activeSince: 2005,
     genres: ["industrial-techno", "hard-techno"],
-    spotifyArtistId: "0IglQh5pb2c2A3FnUT1ClA",
+    spotifyArtistId: "7rmuxvt1D8dIU920lNcR67",
     labels: ["Rebekah"],
     similarArtists: ["paula-temple", "perc", "laven"],
     trackSpecs: [
@@ -321,7 +321,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Berlin",
     activeSince: 2015,
     genres: ["industrial-techno", "ebm"],
-    spotifyArtistId: "4UK8fjzDeZqpCkNtxeXBS7",
+    spotifyArtistId: "0kG9fbMSeXKXLI5w6f9YXj",
     labels: ["Codex Empire"],
     similarArtists: ["ancient-methods", "phase-fatale", "orphx"],
     trackSpecs: [
@@ -338,7 +338,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Canada / Europe",
     activeSince: 1993,
     genres: ["industrial-techno", "ebm", "industrial"],
-    spotifyArtistId: "5nN5fT9KXMvn51uwVDjWQJ",
+    spotifyArtistId: "4mNIz9D4L2JGnpUmkvMFMV",
     labels: ["Sonic Groove"],
     similarArtists: ["ancient-methods", "adam-x", "surgeon"],
     trackSpecs: [
@@ -363,10 +363,6 @@ const catalogEntries: CatalogEntry[] = [
       { title: "All Is Temporary", trackId: "40OOIaXgyGSQv2ef7Nknyl", year: 2022 },
       { title: "2094", trackId: "5Ih8kMx63U3j4srsR5UjfU", year: 2021 },
     ],
-    setTitle: "Awakenings ADE 2017",
-    setVenue: "Awakenings",
-    setYear: 2017,
-    setYoutubeId: "faUGU6Z9qSU",
   }),
   // Modern Hard Techno Leaders
   entry(18, {
@@ -377,7 +373,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Germany",
     activeSince: 2016,
     genres: ["hard-techno", "schranz"],
-    spotifyArtistId: "5uFHfu0m1Q67JtuBxaN5g4",
+    spotifyArtistId: "6H77vD9YyhyxHBTkRpbMBk",
     labels: ["Outworld"],
     similarArtists: ["sara-landry", "trym", "dyen"],
     trackSpecs: [
@@ -399,7 +395,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Paris",
     activeSince: 2018,
     genres: ["hard-techno", "industrial-techno"],
-    spotifyArtistId: "2gXqsp9n6whHizwgIsQWvK",
+    spotifyArtistId: "6LFELkZXRJs04hi8gywM2A",
     labels: ["Hardgroove"],
     similarArtists: ["i-hate-models", "hadone", "fantasm"],
     trackSpecs: [
@@ -457,7 +453,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Paris",
     activeSince: 2016,
     genres: ["hard-techno", "schranz"],
-    spotifyArtistId: "3tFRzplldDxib5z3YjQb6n",
+    spotifyArtistId: "6wJWBxyA4Log2qT7ZqGmhI",
     labels: ["Mama Told Ya"],
     similarArtists: ["anetha", "regal", "nikolina"],
     trackSpecs: [
@@ -473,7 +469,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Paris",
     activeSince: 2020,
     genres: ["hardgroove", "hard-techno", "acid-techno"],
-    spotifyArtistId: "6VLbvoWNHKJ6TEfY7Z3ZBK",
+    spotifyArtistId: "1vK8NnrPlBlF34LaiFX1SK",
     labels: ["Tribu"],
     similarArtists: ["dyen", "alignment", "shlomo"],
     trackSpecs: [
@@ -491,7 +487,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Germany",
     activeSince: 2020,
     genres: ["hard-techno", "industrial-techno"],
-    spotifyArtistId: "7idnqUdFfieRBg91nX2PUZ",
+    spotifyArtistId: "5UG2ipdnA4vk8Eevkf1s06",
     labels: ["Revised Records"],
     similarArtists: ["charlie-sparks", "vendex", "fantasm"],
     trackSpecs: [
@@ -570,7 +566,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Italy / Berlin",
     activeSince: 2016,
     genres: ["hard-techno", "industrial-techno"],
-    spotifyArtistId: "0eNHvP3zBR2Qa0UfJN8c6O",
+    spotifyArtistId: "4eFbq5PZgW7YbtA65PP4wS",
     labels: ["AnalyticTrail"],
     similarArtists: ["charlotte-de-witte", "amelie-lens", "funk-tribu"],
     trackSpecs: [
@@ -607,7 +603,7 @@ const catalogEntries: CatalogEntry[] = [
     scene: "Paris / Berlin",
     activeSince: 2015,
     genres: ["hard-techno", "industrial-techno"],
-    spotifyArtistId: "0wN8XvAaWEWZQkY2Cl3rfQ",
+    spotifyArtistId: "0ZdNs1hU6aAiaZxvFbtDWF",
     labels: ["Taapion"],
     similarArtists: ["alignment", "i-hate-models", "999999999"],
     trackSpecs: [

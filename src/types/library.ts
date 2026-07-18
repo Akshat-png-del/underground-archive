@@ -9,7 +9,10 @@ export type SetCategory =
   | "awakenings"
   | "stone-techno"
   | "verknipt"
-  | "other";
+  | "vault-sessions"
+  | "kntxt"
+  | "festival-sets"
+  | "warehouse-sessions";
 
 export interface CatalogTrack {
   id: string;
@@ -50,7 +53,8 @@ export interface ArchiveSet {
   event: string;
   category: SetCategory;
   date: string;
-  duration: string;
+  /** Real set length when known. Never invent (e.g. do not hardcode 1:00:00). */
+  duration?: string;
   youtubeId: string;
   genres: Genre[];
   bpm?: number;

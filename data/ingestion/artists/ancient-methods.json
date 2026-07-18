@@ -1,14 +1,14 @@
 {
   "slug": "ancient-methods",
   "name": "Ancient Methods",
-  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "updatedAt": "2026-07-17T06:36:05.451Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:44.800Z",
       "status": "ok"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "syncedAt": "2026-07-18T00:54:02.662Z",
       "status": "ok"
     }
   },
@@ -31,9 +31,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "/images/portraits/researched/ancient-methods.jpg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730e80da55a517cf6964b36fc9",
     "imageUrls": [
-      "/images/portraits/researched/ancient-methods.jpg"
+      "https://i.scdn.co/image/ab67616d0000b2730e80da55a517cf6964b36fc9",
+      "https://i.scdn.co/image/ab67616d00001e020e80da55a517cf6964b36fc9",
+      "https://i.scdn.co/image/ab67616d000048510e80da55a517cf6964b36fc9"
     ],
     "relatedArtists": []
   }

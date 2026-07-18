@@ -1,0 +1,31 @@
+{
+  "slug": "winson",
+  "name": "Winson",
+  "updatedAt": "2026-07-17T07:14:12.223Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T00:56:16.756Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "2z9op9COiMU6QquVfY8HTN",
+    "name": "WINSON",
+    "url": "https://open.spotify.com/artist/2z9op9COiMU6QquVfY8HTN",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebcc2949a099dcdb2174032923",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5ebcc2949a099dcdb2174032923",
+      "https://i.scdn.co/image/ab67616100005174cc2949a099dcdb2174032923",
+      "https://i.scdn.co/image/ab6761610000f178cc2949a099dcdb2174032923"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174cc2949a099dcdb2174032923",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2z9op9COiMU6QquVfY8HTN"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "carv",
+  "tracks": [
+    {
+      "title": "Say My Name",
+      "spotifyTrackId": "3ilMTmdIAhvj0JhGhQXQTO",
+      "year": 2023,
+      "duration": "6:10",
+      "album": "Say My Name EP"
+    },
+    {
+      "title": "Now and Forever",
+      "spotifyTrackId": "7lxqAEW9G0AXsITxx4Dfgl",
+      "year": 2026,
+      "duration": "3:33",
+      "album": "Now and Forever"
+    },
+    {
+      "title": "Nothing Can Stop Us",
+      "spotifyTrackId": "2jQVWltGd9v3GAAWUuLoqy",
+      "year": 2024,
+      "duration": "5:34",
+      "album": "MOSHPIT EP"
+    }
+  ],
+  "sets": [
+    {
+      "title": "CARV | HÖR @ MONEGROS - 26 July / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "XZtzKcuekgM"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:55:26.985Z"
+}

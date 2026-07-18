@@ -1,6 +1,63 @@
 {
   "slug": "lucy",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Wanton Witch 1 (Daddyʼs Girl)",
+      "spotifyTrackId": "6uXA5Zq3xAWmalRHh7gGxt",
+      "year": 2022,
+      "duration": "4:45",
+      "album": "Lucy Plays Wanton Witch"
+    },
+    {
+      "title": "Wanton Witch 2 (Do I Pass)",
+      "spotifyTrackId": "5uK5rqCmZi4KHG8QNL3vQk",
+      "year": 2022,
+      "duration": "3:18",
+      "album": "Lucy Plays Wanton Witch"
+    },
+    {
+      "title": "Wanton Witch 3 (Walking on Moirai)",
+      "spotifyTrackId": "0QKNoGGnuWs3vTn99pnRkS",
+      "year": 2022,
+      "duration": "2:40",
+      "album": "Lucy Plays Wanton Witch"
+    },
+    {
+      "title": "Wanton Witch 4 -5 (Lament Ceremony - Looping Projection of You)",
+      "spotifyTrackId": "7paUN3vztSYEihIe1qWIFZ",
+      "year": 2022,
+      "duration": "4:51",
+      "album": "Lucy Plays Wanton Witch"
+    },
+    {
+      "title": "Wanton Witch 6 (Resentment)",
+      "spotifyTrackId": "0zKIrBwVZXupEHqrr5WLLR",
+      "year": 2022,
+      "duration": "3:17",
+      "album": "Lucy Plays Wanton Witch"
+    },
+    {
+      "title": "Wanton Witch 7 - 8 (Is This All We Can Do - Unsound Mind)",
+      "spotifyTrackId": "5CcIfbE3re6SGX8DHuv5Tz",
+      "year": 2022,
+      "duration": "4:43",
+      "album": "Lucy Plays Wanton Witch"
+    },
+    {
+      "title": "Wanton Witch 9 (Nervous Burial)",
+      "spotifyTrackId": "6K356U5B8nyzsq576tWquR",
+      "year": 2022,
+      "duration": "2:54",
+      "album": "Lucy Plays Wanton Witch"
+    },
+    {
+      "title": "Wanton Witch 10 (The Beautiful Trauma of Being)",
+      "spotifyTrackId": "7mkAg6vhfnlNS1T28WZ71V",
+      "year": 2022,
+      "duration": "1:26",
+      "album": "Lucy Plays Wanton Witch"
+    }
+  ],
   "sets": [
     {
       "title": "LUCY | Boiler Room x Kompass",
@@ -13,7 +70,13 @@
       "venue": "Boiler Room",
       "year": 2026,
       "youtubeId": "J5qyTPBqj9k"
+    },
+    {
+      "title": "EXXCEL - Lucy X / May 27 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "C8hZu8TgflA"
     }
   ],
-  "updatedAt": "2026-06-28T01:49:21.589Z"
+  "updatedAt": "2026-07-18T00:55:12.252Z"
 }

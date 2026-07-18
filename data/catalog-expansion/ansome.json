@@ -1,10 +1,67 @@
 {
   "slug": "ansome",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Tin",
+      "spotifyTrackId": "32uupWMt6AvQyoVxYBSotj",
+      "year": 2017,
+      "duration": "5:38",
+      "album": "SLAM002"
+    },
+    {
+      "title": "Mans Head - Original Mix",
+      "spotifyTrackId": "25Vrtz68whap6U3muxEcMt",
+      "year": 2014,
+      "duration": "5:16",
+      "album": "Penny & Pound EP"
+    },
+    {
+      "title": "Copper",
+      "spotifyTrackId": "4K7byMqZBdwlNzT9eJzytX",
+      "year": 2019,
+      "duration": "4:57",
+      "album": "Hounds of the Harbour"
+    },
+    {
+      "title": "Pedal to the Metal",
+      "spotifyTrackId": "7ymFnj0EyeS9DziQJ1jULf",
+      "year": 2019,
+      "duration": "",
+      "album": "Hounds of the Harbour"
+    },
+    {
+      "title": "Kaledra",
+      "spotifyTrackId": "0bhkoSG87IhXbiPt4hmaUl",
+      "year": 2022,
+      "duration": "8:28",
+      "album": "Kaledra / With You"
+    },
+    {
+      "title": "With You",
+      "spotifyTrackId": "5e9QoQNfparj831uyxhZua",
+      "year": 2022,
+      "duration": "9:14",
+      "album": "Kaledra / With You"
+    },
+    {
+      "title": "Clodgy - Original Mix",
+      "spotifyTrackId": "75OziaJaYXX0muA33CSD1h",
+      "year": 2014,
+      "duration": "5:47",
+      "album": "Penny & Pound EP"
+    },
+    {
+      "title": "Coldharbour",
+      "spotifyTrackId": "5TSoSUYs8JG4alO0ckClIS",
+      "year": 2017,
+      "duration": "6:24",
+      "album": "SLAM002"
+    }
+  ],
   "sets": [
     {
-      "title": "Ansome (LIVE) | HÖR - Jul 8 / 2023",
-      "venue": "HÖR Berlin",
+      "title": "Ansome (LIVE) | H\u00d6R - Jul 8 / 2023",
+      "venue": "H\u00d6R Berlin",
       "year": 2023,
       "youtubeId": "EP1-bDBBwEg"
     },
@@ -15,5 +72,5 @@
       "youtubeId": "ZFOHvXHttuE"
     }
   ],
-  "updatedAt": "2026-06-28T01:51:59.958Z"
+  "updatedAt": "2026-07-18T00:54:11.283Z"
 }

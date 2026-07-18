@@ -1,10 +1,14 @@
 {
   "slug": "dyen",
   "name": "DYEN",
-  "updatedAt": "2026-06-28T01:38:07.438Z",
+  "updatedAt": "2026-07-16T23:50:58.989Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:51.760Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:50:58.989Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/Ck5B3BDio8eOFwqtNY5d0smi1M2aa914q1lpzNFMsweCWSD24-58yO01z_-CV6xaYhNfPlc_=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/Ck5B3BDio8eOFwqtNY5d0smi1M2aa914q1lpzNFMsweCWSD24-58yO01z_-CV6xaYhNfPlc_=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UC2cQgZ7mT7s0oSTMPP-KKCA"
+    "url": "https://i.scdn.co/image/ab6761610000e5eb3234528addf597ea532d2ca6",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6LFELkZXRJs04hi8gywM2A"
+  },
+  "spotify": {
+    "artistId": "6LFELkZXRJs04hi8gywM2A",
+    "name": "DYEN",
+    "url": "https://open.spotify.com/artist/6LFELkZXRJs04hi8gywM2A",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb3234528addf597ea532d2ca6",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb3234528addf597ea532d2ca6",
+      "https://i.scdn.co/image/ab676161000051743234528addf597ea532d2ca6",
+      "https://i.scdn.co/image/ab6761610000f1783234528addf597ea532d2ca6"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

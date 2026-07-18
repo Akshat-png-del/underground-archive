@@ -1,6 +1,63 @@
 {
   "slug": "ancient-methods",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Knights & Bishops",
+      "spotifyTrackId": "53QdkrCeeSQKA9WsojpAp0",
+      "year": 2013,
+      "duration": "5:18",
+      "album": "Seventh Seal"
+    },
+    {
+      "title": "A German Love",
+      "spotifyTrackId": "5AqBVXX2gczGekS8JEt35Z",
+      "year": 2016,
+      "duration": "6:04",
+      "album": "La Saignée - Metaphysik"
+    },
+    {
+      "title": "Am-5 A1",
+      "spotifyTrackId": "6jTht9kD7ANJ06VWm7xwSD",
+      "year": 2010,
+      "duration": "9:06",
+      "album": "Fifth Method"
+    },
+    {
+      "title": "I Am Your New King",
+      "spotifyTrackId": "6H1Ej9d9D5uu4taS4hWw7n",
+      "year": 2018,
+      "duration": "5:45",
+      "album": "The Jericho Records"
+    },
+    {
+      "title": "Burning Heretic - Cycles Of Absolute Truths Mix by Ancient Methods",
+      "spotifyTrackId": "2OrdVfcYrK1GqeKwAyTrOe",
+      "year": 2019,
+      "duration": "5:04",
+      "album": "SDGXXV"
+    },
+    {
+      "title": "Justification Unknown - Ancient Methods Remix",
+      "spotifyTrackId": "4kptlfp79NWaoMnoLD4fro",
+      "year": 2026,
+      "duration": "5:09",
+      "album": "Liberation"
+    },
+    {
+      "title": "Dämmerung der Parhelia - Ancient Methods Interpretation",
+      "spotifyTrackId": "51gpA65gaMsDaSxJjWQTh9",
+      "year": 2012,
+      "duration": "5:26",
+      "album": "Exstinctio Conscientia"
+    },
+    {
+      "title": "Deluge - Ancient Methods Remix",
+      "spotifyTrackId": "7lFjFenkcBTHwTehNuOK1f",
+      "year": 2024,
+      "duration": "5:40",
+      "album": "Abide! Remixes!"
+    }
+  ],
   "sets": [
     {
       "title": "Ancient Methods Boiler Room Berlin DJ Set",
@@ -31,7 +88,37 @@
       "venue": "HÖR Berlin",
       "year": 2024,
       "youtubeId": "cfVwQQHEgwQ"
+    },
+    {
+      "title": "Ancient Methods | HÖR - Mar 7 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "spq1W7ZcVmQ"
+    },
+    {
+      "title": "Rote Sonne - Ancient Methods / May 7 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "wOKmtf2pl1I"
+    },
+    {
+      "title": "aufnahme + wiedergabe - Ancient Methods B2B Philipp Strobel / April 15 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "hI_2L7ECSPI"
+    },
+    {
+      "title": "TTT X HÖR - Ancient Methods / May 9 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "YF2EngWwIIc"
+    },
+    {
+      "title": "aufnahme + wiedergabe Showcase - Ancient Methods / March 19 / 7pm-8pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "Excr8to41g8"
     }
   ],
-  "updatedAt": "2026-06-28T01:26:06.536Z"
+  "updatedAt": "2026-07-18T00:54:06.479Z"
 }

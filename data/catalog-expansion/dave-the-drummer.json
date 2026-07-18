@@ -1,13 +1,70 @@
 {
   "slug": "dave-the-drummer",
-  "tracks": [],
-  "sets": [
+  "tracks": [
     {
-      "title": "Dave The Drummer reventando Hor Berlin #techno #dj #ravers #set #mix #vinyl #track",
-      "venue": "HÖR Berlin",
+      "title": "Groove Merchant",
+      "spotifyTrackId": "6hMyaufPlTaCdNZpQazjCc",
       "year": 2026,
-      "youtubeId": "uCYECAJn1fU"
+      "duration": "6:23",
+      "album": "Rave Boots E.P."
+    },
+    {
+      "title": "Hydraulix 09 A",
+      "spotifyTrackId": "2fxNkT1PUocRFT2BwyRolp",
+      "year": 2016,
+      "duration": "8:30",
+      "album": "Hydraulix 09 (Remastered)"
+    },
+    {
+      "title": "One Night In Hackney - Dynamo City's \"Sunday Night In Hackney\" Mix",
+      "spotifyTrackId": "3IusDDKwRL1RE7PwP1vkfX",
+      "year": 2006,
+      "duration": "8:49",
+      "album": "One Night In Hackney Remixes"
+    },
+    {
+      "title": "Blackness",
+      "spotifyTrackId": "6O0QRdg9h2C55DVYJjHq6O",
+      "year": 2016,
+      "duration": "1:39",
+      "album": "A Bit Different"
+    },
+    {
+      "title": "Hydrogen",
+      "spotifyTrackId": "0OeaHxutlsCoPt5nuSAc2K",
+      "year": 2016,
+      "duration": "8:36",
+      "album": "A Bit Different"
+    },
+    {
+      "title": "Next Level",
+      "spotifyTrackId": "5valjgAR1hTjbHKR9VsVkY",
+      "year": 2016,
+      "duration": "7:15",
+      "album": "A Bit Different"
+    },
+    {
+      "title": "Looking Back",
+      "spotifyTrackId": "7kWFVCwBO9LB09MBF46RJ7",
+      "year": 2016,
+      "duration": "8:39",
+      "album": "A Bit Different"
+    },
+    {
+      "title": "Good Session",
+      "spotifyTrackId": "55e17cFBcq8WxtRBrpxn2u",
+      "year": 2016,
+      "duration": "8:10",
+      "album": "A Bit Different"
     }
   ],
-  "updatedAt": "2026-06-28T01:52:54.592Z"
+  "sets": [
+    {
+      "title": "D.A.V.E. The Drummer | HÖR - March 29 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "KDefWQutA9w"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:54:40.190Z"
 }

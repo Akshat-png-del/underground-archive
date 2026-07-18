@@ -1,0 +1,82 @@
+{
+  "slug": "adrian-mills",
+  "tracks": [
+    {
+      "title": "GROOVEARCADE 2004",
+      "spotifyTrackId": "4urZYxYyGCRmWFPq3AetVD",
+      "year": 2023,
+      "duration": "4:28",
+      "album": "GROOVEARCADE 2004"
+    },
+    {
+      "title": "240 INTRO",
+      "spotifyTrackId": "3KO4hzcExe2SeapsmuLizY",
+      "year": 2025,
+      "duration": "5:40",
+      "album": "240 INTRO"
+    },
+    {
+      "title": "METAVERSO",
+      "spotifyTrackId": "7yG1WnAViThzokX5FLL24v",
+      "year": 2026,
+      "duration": "3:33",
+      "album": "PROBANDO PROBANDO"
+    },
+    {
+      "title": "SOLO - Adrián Mills Remix",
+      "spotifyTrackId": "0toWvB26ONxS4gjPeiXAVv",
+      "year": 2025,
+      "duration": "2:41",
+      "album": "SOLO (Adrián Mills Remix)"
+    },
+    {
+      "title": "ORGASM - ADRIÁN MILLS & SELECTA REMIX",
+      "spotifyTrackId": "6bZ2bedpcwjeB9PuRvatTe",
+      "year": 2025,
+      "duration": "3:54",
+      "album": "ORGASM (Adrián Mills & Selecta REMIX)"
+    },
+    {
+      "title": "Dumm Gehen",
+      "spotifyTrackId": "2VWXvqcUJtjXQ89fa5kXCW",
+      "year": 2023,
+      "duration": "4:20",
+      "album": "Dumm Gehen"
+    },
+    {
+      "title": "FUTURO (INTRO)",
+      "spotifyTrackId": "7cO2ZPy5gOOa15PE1j6EFW",
+      "year": 2026,
+      "duration": "5:06",
+      "album": "FUTURO (INTRO)"
+    },
+    {
+      "title": "RENACER",
+      "spotifyTrackId": "5RF261HKK4cGecVGlJgOzC",
+      "year": 2026,
+      "duration": "3:22",
+      "album": "PROBANDO PROBANDO"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Adrenaline - Adrián Mills | HÖR - October 29 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "Zre17-3CyWU"
+    },
+    {
+      "title": "GOTEC - Adrián Mills | HÖR - May 29 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "08__IepUcFA"
+    },
+    {
+      "title": "FACE 2 FACE TV - Adrián Mills F2F Cloudy | HÖR - May 8 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "tmmkQaqxDbw"
+    }
+  ],
+  "updatedAt": "2026-07-18T00:53:53.632Z"
+}

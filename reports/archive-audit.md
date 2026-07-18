@@ -1,12 +1,12 @@
 # Archive authenticity audit
-Generated: 2026-06-28T20:30:38.129Z
+Generated: 2026-07-18T01:17:46.823Z
 
 ## Summary
-- Artists: 150 (40 tier 1, 53 tier 2, 57 tier 3)
-- Status: 40 verified, 53 partial, 57 unverified
-- Sets: 241 (185 verified)
-- Tracks: 781 (202 verified)
-- Suspicious profiles: 55
+- Artists: 79 (40 tier 1, 33 tier 2, 6 tier 3)
+- Status: 40 verified, 33 partial, 6 unverified
+- Sets: 279 (169 verified)
+- Tracks: 450 (270 verified)
+- Suspicious profiles: 33
 - Broken profiles: 0
 - Research registry: 11 artists with editorial records
 
@@ -28,89 +28,45 @@ Generated: 2026-06-28T20:30:38.129Z
 - Arkus P (arkus-p) [Tier 1 — fully curated]
   … and 25 more
 
-## Suspicious (55)
+## Suspicious (33)
 - Shlømo (shlomo) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Azyr (azyr) [Tier 2 — extended]
-- MRD (mrd) [Tier 2 — extended]
 - Nico Moreno (nico-moreno) [Tier 2 — extended]
+- CARV (carv) [Tier 2 — extended]
+- Clara Cuvé (clara-cuve) [Tier 2 — extended]
+- Patrick Mason (patrick-mason) [Tier 2 — extended]
+- Adrian Mills (adrian-mills) [Tier 2 — extended]
+- Cera Khin (cera-khin) [Tier 2 — extended]
+- CLOUDY (cloudy) [Tier 2 — extended]
+- Lee Ann Roberts (lee-ann-roberts) [Tier 2 — extended]
+- WINSON (winson) [Tier 2 — extended]
 - Alarico (alarico) [Tier 2 — extended]
-- CRAVET (cravet) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - VNTM (vntm) [Tier 2 — extended]
 - JKS (jks) [Tier 2 — extended]
 - Rikhter (rikhter) [Tier 2 — extended]
 - Somewhen (somewhen) [Tier 2 — extended]
 - Stranger (stranger) [Tier 2 — extended]
-- Spektre (spektre) [Tier 2 — extended]
-- Daxson (daxson) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Anfisa Letyago (anfisa-letyago) [Tier 2 — extended]
-- Lars Huismann (lars-huismann) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Yazzus (yazzus) [Tier 2 — extended]
 - Oguz (oguz) [Tier 2 — extended]
 - Cleric (cleric) [Tier 2 — extended]
-- Eric Sneo (eric-sneo) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
 - Petduo (petduo) [Tier 2 — extended]
-- Hardfloor (hardfloor) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
-- Front Line Assembly (front-line-assembly) [Tier 2 — extended]
-- Nitzer Ebb (nitzer-ebb) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
-- She Past Away (she-past-away) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
-  - MISSING_SIMILAR: Similar artist slug "helene-hauff" not in archive
-- Lebanon Hanover (lebanon-hanover) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
-  - MISSING_SIMILAR: Similar artist slug "helene-hauff" not in archive
-- Drab Majesty (drab-majesty) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
-  - MISSING_SIMILAR: Similar artist slug "helene-hauff" not in archive
-- Linea Aspera (linea-aspera) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
-  - MISSING_SIMILAR: Similar artist slug "helene-hauff" not in archive
-- Ash Code (ash-code) [Tier 2 — extended]
-  - TIER2_NO_SET: Tier 2 missing essential set
-  - MISSING_SIMILAR: Similar artist slug "helene-hauff" not in archive
-- Rumina (rumina) [Tier 3 — directory]
-  - MISSING_SIMILAR: Similar artist slug "helene-hauff" not in archive
-- Per-sona (per-sona) [Tier 3 — directory]
-  - MISSING_SIMILAR: Similar artist slug "helene-hauff" not in archive
-  … and 25 more
+- Obscure Shape (obscure-shape) [Tier 2 — extended]
+- Rrose (rrose) [Tier 2 — extended]
+- Blawan (blawan) [Tier 2 — extended]
+- Lucy (lucy) [Tier 2 — extended]
+- Kangding Ray (kangding-ray) [Tier 2 — extended]
+- Victor Ruiz (victor-ruiz) [Tier 2 — extended]
+- Josh Wink (josh-wink) [Tier 2 — extended]
+- Ansome (ansome) [Tier 2 — extended]
+  … and 3 more
 
 ## Broken (0)
 
-## Missing (55)
-- Ben Spencer (ben-spencer) [Tier 3 — directory]
-- Ogian (ogian) [Tier 3 — directory]
-- Moia (moia) [Tier 3 — directory]
-- Yant (yant) [Tier 3 — directory]
-- Ignacio (ignacio) [Tier 3 — directory]
-- Chlar (chlar) [Tier 3 — directory]
-- Klaps (BE) (klaps) [Tier 3 — directory]
-- LSDXOXO (lsdxoxo) [Tier 3 — directory]
-- Ogive (ogive) [Tier 3 — directory]
-- CLTX (cltx) [Tier 3 — directory]
-- Krow (krow) [Tier 3 — directory]
-- Psyk32 (psyk32) [Tier 3 — directory]
-- TAFKAMP (tafkamp) [Tier 3 — directory]
-- Pinion (pinion) [Tier 3 — directory]
-- Kaiser (kaiser) [Tier 3 — directory]
-- Blasha & Allatt (blasha-allatt) [Tier 3 — directory]
-- Rosati (rosati) [Tier 3 — directory]
-- Novah (novah) [Tier 3 — directory]
-- Jacidorex (jacidorex) [Tier 3 — directory]
-- Ha CAY (ha-cay) [Tier 3 — directory]
-- Blicz (blicz) [Tier 3 — directory]
-- Basswell (basswell) [Tier 3 — directory]
-- Matrakk (matrakk) [Tier 3 — directory]
-- Yanamaste (yanamaste) [Tier 3 — directory]
-- Warface (warface) [Tier 3 — directory]
-- MCMLXXXV (mcmlxxxv) [Tier 3 — directory]
-- Temo (temo) [Tier 3 — directory]
-- Raxyor (raxyor) [Tier 3 — directory]
-- VIL (vil) [Tier 3 — directory]
-- VILCHEZZ (vilchezz) [Tier 3 — directory]
-  … and 25 more
+## Missing (6)
+- Part Time Killer (part-time-killer) [Tier 3 — directory]
+- D.A.V.E. The Drummer (dave-the-drummer) [Tier 3 — directory]
+- Héctor Oaks (hector-oaks) [Tier 3 — directory]
+- Nørbak (norbak) [Tier 3 — directory]
+- L.F.T. (lft) [Tier 3 — directory]
+- MCR-T (mcr-t) [Tier 3 — directory]

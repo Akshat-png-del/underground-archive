@@ -5,10 +5,7 @@ import type { ArchiveSet } from "@/types/library";
 import { setCategoryLabels } from "@/content/sets";
 import { genreLabels } from "@/content/artists";
 import { Button } from "@/components/ui/Button";
-import { SafeImage } from "@/components/ui/SafeImage";
-import { Heart, Share2 } from "lucide-react";
 import { useLibrary } from "@/context/LibraryContext";
-import { setThumbnailUrl } from "@/lib/music/set-display";
 
 interface SetWatchMetadataProps {
   set: ArchiveSet;
@@ -16,20 +13,10 @@ interface SetWatchMetadataProps {
 }
 
 export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
-  const { toggleSaveSet, toggleLikeSet, isSetSaved, isSetLiked } = useLibrary();
+  const { toggleSaveSet, isSetSaved } = useLibrary();
   const saved = isSetSaved(set.id);
-  const liked = isSetLiked(set.id);
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
   const category = setCategoryLabels[set.category];
-
-  const handleShare = async () => {
-    const url = typeof window !== "undefined" ? window.location.href : "";
-    if (navigator.share) {
-      await navigator.share({ title: `${set.title} — ${set.artistName}`, url });
-    } else {
-      await navigator.clipboard.writeText(url);
-    }
-  };
 
   return (
     <div className="set-watch-metadata mt-6 sm:mt-8">
@@ -58,7 +45,7 @@ export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
         </div>
         <div>
           <dt className="sr-only">Duration</dt>
-          <dd>{set.duration}</dd>
+          <dd>{set.duration ?? "—"}</dd>
         </div>
         <div>
           <dt className="sr-only">Genre</dt>
@@ -79,14 +66,6 @@ export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
       <div className="mt-6 flex flex-wrap items-center gap-2">
         <Button size="sm" variant="outline" onClick={() => toggleSaveSet(set.id)}>
           {saved ? "Saved" : "Save set"}
-        </Button>
-        <Button size="sm" variant="outline" onClick={() => toggleLikeSet(set.id)}>
-          <Heart className={`mr-1.5 h-4 w-4 ${liked ? "fill-accent text-accent" : ""}`} />
-          {liked ? "Liked" : "Like"}
-        </Button>
-        <Button size="sm" variant="ghost" onClick={handleShare} aria-label="Share set">
-          <Share2 className="mr-1.5 h-4 w-4" />
-          Share
         </Button>
         <Link href={`/artists/${set.artistSlug}`}>
           <Button size="sm" variant="ghost">

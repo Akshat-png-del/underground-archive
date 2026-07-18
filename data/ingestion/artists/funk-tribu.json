@@ -1,10 +1,14 @@
 {
   "slug": "funk-tribu",
   "name": "Funk Tribu",
-  "updatedAt": "2026-06-28T01:38:11.093Z",
+  "updatedAt": "2026-07-17T06:51:21.886Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:54.365Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:54:40.616Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/jgIgGNmtnACwLZu1fok0w94zV_t4Bpnghj8T6AjfZWyE4M6Qz_C6vlUzLZWHAItkfA3W3JlsYA=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCHHbn0fgp2P2XkC9W1mu6iQ"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517403d24f1203d1e67917a2737a",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1vK8NnrPlBlF34LaiFX1SK"
+  },
+  "spotify": {
+    "artistId": "1vK8NnrPlBlF34LaiFX1SK",
+    "name": "Funk Tribu",
+    "url": "https://open.spotify.com/artist/1vK8NnrPlBlF34LaiFX1SK",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb03d24f1203d1e67917a2737a",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb03d24f1203d1e67917a2737a",
+      "https://i.scdn.co/image/ab6761610000517403d24f1203d1e67917a2737a",
+      "https://i.scdn.co/image/ab6761610000f17803d24f1203d1e67917a2737a"
+    ],
+    "relatedArtists": []
   }
 }

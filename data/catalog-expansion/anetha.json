@@ -5,31 +5,36 @@
       "title": "Voicetrack Generation",
       "spotifyTrackId": "41gmO7kWreWhpNxlHWHODa",
       "year": 2026,
-      "duration": "5:00"
+      "duration": "4:13",
+      "album": "Voicetrack Generation"
     },
     {
       "title": "Sorry For Being So Sexy",
       "spotifyTrackId": "1waZfiVyVvpQ8IxWED3FSA",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2024,
+      "duration": "4:31",
+      "album": "Mothearth"
     },
     {
       "title": "Free Britney",
       "spotifyTrackId": "4cZXujsgwcqot9oMpfa0no",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2021,
+      "duration": "4:39",
+      "album": "Free Britney"
     },
     {
       "title": "On / Offline",
       "spotifyTrackId": "628qJyGUO6nlfkax4GcqM7",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2020,
+      "duration": "5:35",
+      "album": "Popularity Is Overrated"
     },
     {
       "title": "One More Cartoon, Please",
       "spotifyTrackId": "3EKREjUxGtH4wENykFPJ4V",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2020,
+      "duration": "6:07",
+      "album": "Body Changes Are Natural"
     }
   ],
   "sets": [
@@ -50,7 +55,19 @@
       "venue": "Stone Techno",
       "year": 2023,
       "youtubeId": "kVMqMlmZmLQ"
+    },
+    {
+      "title": "Mama Told Ya - Anetha | HÖR - Jun 17 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "1Ndhb2BJyME"
+    },
+    {
+      "title": "Anetha | HÖR - Apr 11 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "ijv8hEwMxcY"
     }
   ],
-  "updatedAt": "2026-06-28T01:23:55.680Z"
+  "updatedAt": "2026-07-18T00:54:09.170Z"
 }

@@ -25,9 +25,14 @@ import {
   saveLibraryState,
   SEED_PLAYLISTS,
 } from "@/lib/library/store";
+import {
+  pruneAndHydrateLibraryState,
+  resolveLibraryCoverArt,
+} from "@/lib/library/resolve-display";
 import { getRelease, getTrack } from "@/content/tracks";
 import { getSet } from "@/content/sets";
 import { getArtist } from "@/content/artists";
+import { setThumbnailUrl } from "@/lib/music/set-display";
 import { uid } from "@/lib/music";
 
 interface LibraryContextValue extends UserLibraryState {
@@ -69,28 +74,31 @@ const LibraryContext = createContext<LibraryContextValue | null>(null);
 function resolveHistoryMeta(
   type: LibraryItemType,
   refId: string
-): Pick<PlayHistoryEntry, "title" | "subtitle" | "coverArt"> {
+): Pick<PlayHistoryEntry, "title" | "subtitle" | "coverArt"> | null {
   if (type === "track") {
     const track = getTrack(refId);
+    if (!track) return null;
     return {
-      title: track?.title ?? refId,
-      subtitle: track?.artist ?? "",
-      coverArt: track?.coverArt ?? "",
+      title: track.title,
+      subtitle: track.artist,
+      coverArt: resolveLibraryCoverArt("track", refId),
     };
   }
   if (type === "set") {
     const set = getSet(refId);
+    if (!set) return null;
     return {
-      title: set?.title ?? refId,
-      subtitle: set?.artistName ?? "",
-      coverArt: set?.thumbnail ?? "",
+      title: set.title,
+      subtitle: set.artistName,
+      coverArt: resolveLibraryCoverArt("set", refId),
     };
   }
   const release = getRelease(refId);
+  if (!release) return null;
   return {
-    title: release?.title ?? refId,
-    subtitle: release?.artist ?? "",
-    coverArt: release?.coverArt ?? "",
+    title: release.title,
+    subtitle: release.artist,
+    coverArt: resolveLibraryCoverArt("release", refId),
   };
 }
 
@@ -99,7 +107,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setState(loadLibraryState());
+    setState(pruneAndHydrateLibraryState(loadLibraryState()));
     setReady(true);
   }, []);
 
@@ -131,7 +139,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
         id: `playlist-${uid()}`,
         title: data.title,
         description: data.description ?? "",
-        coverImage: data.coverImage ?? "/images/artist-fallback.svg",
+        coverImage: data.coverImage ?? "",
         isPublic: data.isPublic ?? false,
         creatorId: state.profile.id,
         creatorName: state.profile.displayName,
@@ -263,6 +271,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
   const recordPlay = useCallback(
     (type: LibraryItemType, refId: string) => {
       const meta = resolveHistoryMeta(type, refId);
+      if (!meta) return;
       const entry: PlayHistoryEntry = {
         id: uid(),
         type,
@@ -290,21 +299,21 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
         if (!artist) return;
         title = artist.name;
         subtitle = artist.city;
-        coverArt = artist.portrait;
+        coverArt = resolveLibraryCoverArt("artist", refId);
         href = `/artists/${refId}`;
       } else if (type === "set") {
         const set = getSet(refId);
         if (!set) return;
         title = set.title;
         subtitle = set.artistName;
-        coverArt = set.thumbnail;
+        coverArt = resolveLibraryCoverArt("set", refId);
         href = `/sets/${set.slug}`;
       } else if (type === "track") {
         const track = getTrack(refId);
         if (!track) return;
         title = track.title;
         subtitle = track.artist;
-        coverArt = track.coverArt;
+        coverArt = resolveLibraryCoverArt("track", refId);
         href = `/artists/${track.artistSlug}`;
       }
 
@@ -402,7 +411,7 @@ export function resolvePlaylistItem(item: PlaylistItem) {
       artist: track.artist,
       artistSlug: track.artistSlug,
       duration: track.duration,
-      coverArt: track.coverArt,
+      coverArt: resolveLibraryCoverArt("track", item.refId),
       spotifyUrl: track.spotifyUrl,
       youtubeUrl: track.youtubeUrl,
     };
@@ -417,8 +426,8 @@ export function resolvePlaylistItem(item: PlaylistItem) {
       title: set.title,
       artist: set.artistName,
       artistSlug: set.artistSlug,
-      duration: set.duration,
-      coverArt: set.thumbnail,
+      duration: set.duration ?? "",
+      coverArt: setThumbnailUrl(set.thumbnail, set.youtubeId),
       youtubeId: set.youtubeId,
     };
   }

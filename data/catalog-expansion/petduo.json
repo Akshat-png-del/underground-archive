@@ -1,6 +1,49 @@
 {
   "slug": "petduo",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Timeslice - SveTec Remix - 2026 Edit",
+      "spotifyTrackId": "0hd6T3VdzGSto7zwjWGcGd",
+      "year": 2026,
+      "duration": "4:46",
+      "album": "Timeslice Remixes"
+    },
+    {
+      "title": "Hypersonic",
+      "spotifyTrackId": "0fHBv8LzASwiUBs38mpkkv",
+      "year": 2013,
+      "duration": "6:32",
+      "album": "High On Sound EP"
+    },
+    {
+      "title": "Believe The Noise",
+      "spotifyTrackId": "2jSObFE6jirjeTp8bCX2zu",
+      "year": 2026,
+      "duration": "4:39",
+      "album": "Follow Us"
+    },
+    {
+      "title": "Aggressive Delights - Original Mix",
+      "spotifyTrackId": "2Rj5MpkYo1EnOXRvhsTCkA",
+      "year": 2014,
+      "duration": "6:17",
+      "album": "Aggressive Delights"
+    },
+    {
+      "title": "Sexual Harassment - PETDuo Remix",
+      "spotifyTrackId": "0N7cECw8oLdWWPhLLRjycv",
+      "year": 2016,
+      "duration": "6:05",
+      "album": "Sexual Harassment"
+    },
+    {
+      "title": "Freak",
+      "spotifyTrackId": "1MOvzoexCALg3bipcnUBpk",
+      "year": 2022,
+      "duration": "6:30",
+      "album": "Not Waiting To Be Chosen"
+    }
+  ],
   "sets": [
     {
       "title": "PETDuo @ Verknipt Kingsday 2024 | Hembrugterrein, Zaandam",
@@ -13,7 +56,13 @@
       "venue": "Verknipt",
       "year": 2023,
       "youtubeId": "KIwvqUqVlnQ"
+    },
+    {
+      "title": "FACE 2 FACE TV - F2F PET DUO | HÖR - November 8 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "s_iTxrVMqV4"
     }
   ],
-  "updatedAt": "2026-06-28T01:41:13.305Z"
+  "updatedAt": "2026-07-18T00:55:41.737Z"
 }

@@ -1,14 +1,14 @@
 {
   "slug": "perc",
   "name": "Perc",
-  "updatedAt": "2026-06-28T19:30:12.181Z",
+  "updatedAt": "2026-07-17T06:52:28.868Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:44.195Z",
       "status": "ok"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:12.181Z",
+      "syncedAt": "2026-07-18T00:55:36.535Z",
       "status": "ok"
     },
     "residentAdvisor": {
@@ -25,8 +25,8 @@
   },
   "resolvedImage": {
     "url": "/images/portraits/researched/perc.jpg",
-    "source": "resident-advisor",
-    "sourceUrl": "https://ra.co/dj/perc"
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4iyqyvWXO734GUNLTTnrPQ"
   },
   "spotify": {
     "artistId": "4iyqyvWXO734GUNLTTnrPQ",
@@ -35,9 +35,12 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "/images/portraits/researched/perc.jpg",
+    "imageUrl": "https://i.scdn.co/image/05d990aacd90d7936c828e5d721e1eaa5d1e25c4",
     "imageUrls": [
-      "/images/portraits/researched/perc.jpg"
+      "https://i.scdn.co/image/05d990aacd90d7936c828e5d721e1eaa5d1e25c4",
+      "https://i.scdn.co/image/2bc7a1ffc4c533a5bee9078d5dbd4361a38cf174",
+      "https://i.scdn.co/image/6e50950b1b1e657c1db20ab19a8a424e480957f1",
+      "https://i.scdn.co/image/37eb41741e5f361d98d85cfa2885d08dbe4eeb8f"
     ],
     "relatedArtists": []
   }

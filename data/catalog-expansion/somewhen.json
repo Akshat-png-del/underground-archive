@@ -1,6 +1,49 @@
 {
   "slug": "somewhen",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "CWWDBI",
+      "spotifyTrackId": "5Y1PbmoHC3RPrBd4xQlz4Y",
+      "year": 2024,
+      "duration": "3:19",
+      "album": "CWWDBI"
+    },
+    {
+      "title": "Promise",
+      "spotifyTrackId": "02iid7jLIDPuI4JyHTtyBz",
+      "year": 2025,
+      "duration": "4:04",
+      "album": "Promise"
+    },
+    {
+      "title": "Fever Dream",
+      "spotifyTrackId": "7tYZp2HjFtqTmf7vPnlzVF",
+      "year": 2025,
+      "duration": "4:11",
+      "album": "Fever Dream"
+    },
+    {
+      "title": "Bricks",
+      "spotifyTrackId": "0xKrRID1IyyLkq4wsaGl9q",
+      "year": 2024,
+      "duration": "3:47",
+      "album": "Bricks"
+    },
+    {
+      "title": "CH4N2O",
+      "spotifyTrackId": "5Eie57B99fwZvr6Hu0uEgg",
+      "year": 2024,
+      "duration": "3:45",
+      "album": "44009"
+    },
+    {
+      "title": "Somewhen - 437p",
+      "spotifyTrackId": "2hOgMqywNsliLHgcIFXCkt",
+      "year": 2022,
+      "duration": "5:23",
+      "album": "HOME I"
+    }
+  ],
   "sets": [
     {
       "title": "Somewhen | HÖR - May 31 / 2023",
@@ -13,7 +56,13 @@
       "venue": "HÖR Berlin",
       "year": 2022,
       "youtubeId": "L8KkGewleGc"
+    },
+    {
+      "title": "Revier Südost - Somewhen / January 23 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "gAyIIGMcn4E"
     }
   ],
-  "updatedAt": "2026-06-28T01:35:45.255Z"
+  "updatedAt": "2026-07-18T00:56:01.890Z"
 }

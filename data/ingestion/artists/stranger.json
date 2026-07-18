@@ -1,10 +1,14 @@
 {
   "slug": "stranger",
   "name": "Stranger",
-  "updatedAt": "2026-06-28T01:38:18.298Z",
+  "updatedAt": "2026-07-17T07:06:22.425Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:05.192Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:56:02.298Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/0Is03qu0_E1SL141CyglFFBQ6GCsBGA_3YPtyG4k1Q9Bf-B_TL39qO4Hv2pkO1JACuRu63ygMw=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/0Is03qu0_E1SL141CyglFFBQ6GCsBGA_3YPtyG4k1Q9Bf-B_TL39qO4Hv2pkO1JACuRu63ygMw=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@stranger_freefire"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174c3baa75ce2471a511c945a22",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3DPK0SXbCc0YYwFrsHUSWP"
+  },
+  "spotify": {
+    "artistId": "3DPK0SXbCc0YYwFrsHUSWP",
+    "name": "Stranger",
+    "url": "https://open.spotify.com/artist/3DPK0SXbCc0YYwFrsHUSWP",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebc3baa75ce2471a511c945a22",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5ebc3baa75ce2471a511c945a22",
+      "https://i.scdn.co/image/ab67616100005174c3baa75ce2471a511c945a22",
+      "https://i.scdn.co/image/ab6761610000f178c3baa75ce2471a511c945a22"
+    ],
+    "relatedArtists": []
   }
 }

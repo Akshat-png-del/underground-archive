@@ -4,32 +4,37 @@
     {
       "title": "Sanguine Fountain",
       "spotifyTrackId": "07kd3tNgESIZHSt5kI0Ze9",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2021,
+      "duration": "6:14",
+      "album": "VAGUE TRAX, Vol. 1"
     },
     {
       "title": "Herz In Flammen",
       "spotifyTrackId": "5UU4ByMK3kTSD4TFfVgPDB",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2025,
+      "duration": "4:55",
+      "album": "Herz In Flammen"
     },
     {
       "title": "M.L.A.",
       "spotifyTrackId": "2epABeRo0Xhvqi8vi6CF5j",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2025,
+      "duration": "4:10",
+      "album": "M.L.A."
     },
     {
       "title": "Emotional Khaos",
       "spotifyTrackId": "6mzPAhuqFFAazXP4mFAgHn",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2025,
+      "duration": "5:12",
+      "album": "Emotional Khaos"
     },
     {
       "title": "Blutgesichter",
       "spotifyTrackId": "5n6wtZap1OIsziNOrGTv7N",
-      "year": 2026,
-      "duration": "5:00"
+      "year": 2025,
+      "duration": "4:36",
+      "album": "Emotional Khaos"
     }
   ],
   "sets": [
@@ -62,7 +67,13 @@
       "venue": "Verknipt",
       "year": 2023,
       "youtubeId": "-IOnLTFeib8"
+    },
+    {
+      "title": "Brvtal Vision - Vendex / December 23 / 5pm-6pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "SHXl5bpXERc"
     }
   ],
-  "updatedAt": "2026-06-28T01:32:44.546Z"
+  "updatedAt": "2026-07-18T00:56:13.844Z"
 }

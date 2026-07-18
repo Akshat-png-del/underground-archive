@@ -1,6 +1,49 @@
 {
   "slug": "blawan",
-  "tracks": [],
+  "tracks": [
+    {
+      "title": "Under Belly",
+      "spotifyTrackId": "29EqYPuLdMrl6sQwq4nh2X",
+      "year": 2021,
+      "duration": "3:52",
+      "album": "Woke Up Right Handed"
+    },
+    {
+      "title": "What You Do with What You Have",
+      "spotifyTrackId": "58NyJ6JJqJDi6BiACABuq9",
+      "year": 2011,
+      "duration": "6:32",
+      "album": "What You Do with What You Have"
+    },
+    {
+      "title": "993",
+      "spotifyTrackId": "4yDFhjGlhRcS5Ay8mBYuk5",
+      "year": 2017,
+      "duration": "6:03",
+      "album": "Nutrition"
+    },
+    {
+      "title": "NOS",
+      "spotifyTrackId": "5z46Jo6PQMz2kDmJuKknhV",
+      "year": 2025,
+      "duration": "3:02",
+      "album": "SickElixir"
+    },
+    {
+      "title": "Thistle",
+      "spotifyTrackId": "7bqe0mNTl2Ql9JwmM8nkFg",
+      "year": 2026,
+      "duration": "3:55",
+      "album": "Thistle"
+    },
+    {
+      "title": "Bloom - Blawan Rmx",
+      "spotifyTrackId": "5eoxyqmauOEpe0kNAzyQFX",
+      "year": 2011,
+      "duration": "7:29",
+      "album": "TKOL RMX 1234567"
+    }
+  ],
   "sets": [
     {
       "title": "Blawan Boiler Room London DJ set",
@@ -13,7 +56,13 @@
       "venue": "Boiler Room",
       "year": 2026,
       "youtubeId": "eFhsH3j4fOU"
+    },
+    {
+      "title": "TTT X HÖR - Blawan / March 21 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "R-D7Qdcnilg"
     }
   ],
-  "updatedAt": "2026-06-28T01:49:17.643Z"
+  "updatedAt": "2026-07-18T00:54:12.947Z"
 }

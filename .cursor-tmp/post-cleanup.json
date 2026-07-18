@@ -1,0 +1,2310 @@
+{
+  "remaining": {
+    "artists": 71,
+    "tracks": 209,
+    "releases": 0,
+    "sets": 241
+  },
+  "quality": {
+    "tracksWithoutValidSpotifyTrackUrl": 0,
+    "stubTitlesRemaining": 0,
+    "weakSpotifyUrls": 0,
+    "setsWithoutValidYoutubeId": 0,
+    "setsWithDuration": 0,
+    "setsWithHardcoded1h": 0,
+    "artistsWithNoMedia": 0,
+    "danglingSimilarArtists": 0,
+    "danglingSimilarSample": [],
+    "removedStillPresent": []
+  },
+  "artistsRemaining": [
+    {
+      "slug": "sara-landry",
+      "name": "Sara Landry",
+      "tracks": 8,
+      "sets": 6,
+      "tier": 1
+    },
+    {
+      "slug": "i-hate-models",
+      "name": "I Hate Models",
+      "tracks": 10,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "kobosil",
+      "name": "Kobosil",
+      "tracks": 6,
+      "sets": 8,
+      "tier": 1
+    },
+    {
+      "slug": "vtss",
+      "name": "VTSS",
+      "tracks": 9,
+      "sets": 7,
+      "tier": 1
+    },
+    {
+      "slug": "regal",
+      "name": "Regal",
+      "tracks": 5,
+      "sets": 6,
+      "tier": 1
+    },
+    {
+      "slug": "boy-harsher",
+      "name": "Boy Harsher",
+      "tracks": 6,
+      "sets": 2,
+      "tier": 1
+    },
+    {
+      "slug": "amelie-lens",
+      "name": "Amelie Lens",
+      "tracks": 5,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "charlotte-de-witte",
+      "name": "Charlotte de Witte",
+      "tracks": 8,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "hadone",
+      "name": "Hadone",
+      "tracks": 5,
+      "sets": 6,
+      "tier": 1
+    },
+    {
+      "slug": "anetha",
+      "name": "Anetha",
+      "tracks": 5,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "chris-liebing",
+      "name": "Chris Liebing",
+      "tracks": 5,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "dj-rush",
+      "name": "DJ Rush",
+      "tracks": 3,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "sven-wittekind",
+      "name": "Sven Wittekind",
+      "tracks": 3,
+      "sets": 3,
+      "tier": 1
+    },
+    {
+      "slug": "robert-natus",
+      "name": "Robert Natus",
+      "tracks": 5,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "arkus-p",
+      "name": "Arkus P",
+      "tracks": 8,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "boris-s",
+      "name": "Boris S.",
+      "tracks": 8,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "paula-temple",
+      "name": "Paula Temple",
+      "tracks": 8,
+      "sets": 6,
+      "tier": 1
+    },
+    {
+      "slug": "perc",
+      "name": "Perc",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "ancient-methods",
+      "name": "Ancient Methods",
+      "tracks": 3,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "surgeon",
+      "name": "Surgeon",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "adam-x",
+      "name": "Adam X",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "phase-fatale",
+      "name": "Phase Fatale",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "helena-hauff",
+      "name": "Helena Hauff",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "rebekah",
+      "name": "Rebekah",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "ghost-in-the-machine",
+      "name": "Ghost in the Machine",
+      "tracks": 8,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "codex-empire",
+      "name": "Codex Empire",
+      "tracks": 3,
+      "sets": 2,
+      "tier": 1
+    },
+    {
+      "slug": "orphx",
+      "name": "Orphx",
+      "tracks": 3,
+      "sets": 2,
+      "tier": 1
+    },
+    {
+      "slug": "laven",
+      "name": "LAVEN",
+      "tracks": 5,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "klangkuenstler",
+      "name": "Klangkuenstler",
+      "tracks": 4,
+      "sets": 1,
+      "tier": 1
+    },
+    {
+      "slug": "dyen",
+      "name": "DYEN",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "trym",
+      "name": "Trym",
+      "tracks": 7,
+      "sets": 6,
+      "tier": 1
+    },
+    {
+      "slug": "charlie-sparks",
+      "name": "Charlie Sparks",
+      "tracks": 6,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "parfait",
+      "name": "Parfait",
+      "tracks": 2,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "funk-tribu",
+      "name": "Funk Tribu",
+      "tracks": 3,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "holy-priest",
+      "name": "Holy Priest",
+      "tracks": 3,
+      "sets": 2,
+      "tier": 1
+    },
+    {
+      "slug": "vendex",
+      "name": "Vendex",
+      "tracks": 8,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "nikolina",
+      "name": "Nikolina",
+      "tracks": 2,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "fantasm",
+      "name": "Fantasm",
+      "tracks": 7,
+      "sets": 6,
+      "tier": 1
+    },
+    {
+      "slug": "alignment",
+      "name": "Alignment",
+      "tracks": 2,
+      "sets": 4,
+      "tier": 1
+    },
+    {
+      "slug": "999999999",
+      "name": "999999999",
+      "tracks": 7,
+      "sets": 5,
+      "tier": 1
+    },
+    {
+      "slug": "shlomo",
+      "name": "Shlømo",
+      "tracks": 3,
+      "sets": 0,
+      "tier": 2
+    },
+    {
+      "slug": "azyr",
+      "name": "Azyr",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "mrd",
+      "name": "MRD",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "nico-moreno",
+      "name": "Nico Moreno",
+      "tracks": 5,
+      "sets": 3,
+      "tier": 2
+    },
+    {
+      "slug": "alarico",
+      "name": "Alarico",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "vntm",
+      "name": "VNTM",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "jks",
+      "name": "JKS",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "rikhter",
+      "name": "Rikhter",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "somewhen",
+      "name": "Somewhen",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "stranger",
+      "name": "Stranger",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "spektre",
+      "name": "Spektre",
+      "tracks": 0,
+      "sets": 1,
+      "tier": 2
+    },
+    {
+      "slug": "anfisa-letyago",
+      "name": "Anfisa Letyago",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "yazzus",
+      "name": "Yazzus",
+      "tracks": 0,
+      "sets": 1,
+      "tier": 2
+    },
+    {
+      "slug": "oguz",
+      "name": "Oguz",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "cleric",
+      "name": "Cleric",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "petduo",
+      "name": "Petduo",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "front-line-assembly",
+      "name": "Front Line Assembly",
+      "tracks": 0,
+      "sets": 1,
+      "tier": 2
+    },
+    {
+      "slug": "obscure-shape",
+      "name": "Obscure Shape",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "rrose",
+      "name": "Rrose",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "blawan",
+      "name": "Blawan",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "lucy",
+      "name": "Lucy",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "kangding-ray",
+      "name": "Kangding Ray",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "victor-ruiz",
+      "name": "Victor Ruiz",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "josh-wink",
+      "name": "Josh Wink",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "ansome",
+      "name": "Ansome",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "dave-the-drummer",
+      "name": "D.A.V.E. The Drummer",
+      "tracks": 0,
+      "sets": 1,
+      "tier": 2
+    },
+    {
+      "slug": "paranoid-london",
+      "name": "Paranoid London",
+      "tracks": 0,
+      "sets": 1,
+      "tier": 2
+    },
+    {
+      "slug": "dj-pierre",
+      "name": "DJ Pierre",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "randomer",
+      "name": "Randomer",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "len-d",
+      "name": "Len D",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    },
+    {
+      "slug": "alex-bau",
+      "name": "Alex Bau",
+      "tracks": 0,
+      "sets": 2,
+      "tier": 2
+    }
+  ],
+  "setsRemaining": [
+    {
+      "id": "sara-landry::boiler-room-x-teletech-festival-2023",
+      "title": "Boiler Room x Teletech Festival 2023",
+      "artist": "Sara Landry",
+      "youtubeId": "EIQlDpgAY5Y",
+      "duration": null
+    },
+    {
+      "id": "sara-landry::awakenings-festival-2025",
+      "title": "Awakenings Festival 2025",
+      "artist": "Sara Landry",
+      "youtubeId": "b-PupDxC-ik",
+      "duration": null
+    },
+    {
+      "id": "sara-landry::verknipt-events",
+      "title": "Verknipt Events",
+      "artist": "Sara Landry",
+      "youtubeId": "0m_RS2Y2S6A",
+      "duration": null
+    },
+    {
+      "id": "sara-landry::verknipt-arena",
+      "title": "Verknipt Arena",
+      "artist": "Sara Landry",
+      "youtubeId": "61TtukNICZU",
+      "duration": null
+    },
+    {
+      "id": "sara-landry::verknipt-festival-2023",
+      "title": "Verknipt Festival 2023",
+      "artist": "Sara Landry",
+      "youtubeId": "XUdq1G8FrHo",
+      "duration": null
+    },
+    {
+      "id": "sara-landry::time-warp-nyc",
+      "title": "Time Warp NYC",
+      "artist": "Sara Landry",
+      "youtubeId": "8lE59Shdod0",
+      "duration": null
+    },
+    {
+      "id": "i-hate-models::boiler-room-x-teletech-festival-2024",
+      "title": "Boiler Room x Teletech Festival 2024",
+      "artist": "I Hate Models",
+      "youtubeId": "8CT6HxYA0cg",
+      "duration": null
+    },
+    {
+      "id": "i-hate-models::awakenings-ade-2018",
+      "title": "Awakenings ADE 2018",
+      "artist": "I Hate Models",
+      "youtubeId": "v4XiZkpqEIU",
+      "duration": null
+    },
+    {
+      "id": "i-hate-models::glitch-festival-possession-2022",
+      "title": "Glitch Festival — Possession 2022",
+      "artist": "I Hate Models",
+      "youtubeId": "3Xb2gnAZMb8",
+      "duration": null
+    },
+    {
+      "id": "i-hate-models::i-hate-models-at-boiler-room-montr-al",
+      "title": "I Hate Models at Boiler Room: Montréal",
+      "artist": "I Hate Models",
+      "youtubeId": "rkX34tlAKXg",
+      "duration": null
+    },
+    {
+      "id": "i-hate-models::i-hate-models-at-boiler-room-london",
+      "title": "I Hate Models at Boiler Room: London⁠",
+      "artist": "I Hate Models",
+      "youtubeId": "IfU_CCY03XA",
+      "duration": null
+    },
+    {
+      "id": "kobosil::boiler-room-berlin",
+      "title": "Boiler Room Berlin",
+      "artist": "Kobosil",
+      "youtubeId": "E4lxtEzoQ3c",
+      "duration": null
+    },
+    {
+      "id": "kobosil::exhale-together-livestream",
+      "title": "Exhale Together Livestream",
+      "artist": "Kobosil",
+      "youtubeId": "pSkun1wICSc",
+      "duration": null
+    },
+    {
+      "id": "kobosil::boiler-room-berlin-5th-birthday",
+      "title": "Boiler Room Berlin 5th Birthday",
+      "artist": "Kobosil",
+      "youtubeId": "C93Fb4PC4fo",
+      "duration": null
+    },
+    {
+      "id": "kobosil::awakenings-festival-2017-area-x",
+      "title": "Awakenings Festival 2017 — Area X",
+      "artist": "Kobosil",
+      "youtubeId": "1V_Yxqx5_BM",
+      "duration": null
+    },
+    {
+      "id": "kobosil::rikhter-live-at-intercell-x-kobosil-pres-r-label-group",
+      "title": "Rikhter [live] at Intercell x Kobosil pres. R - Label Group",
+      "artist": "Kobosil",
+      "youtubeId": "c_1gJiVS7rs",
+      "duration": null
+    },
+    {
+      "id": "kobosil::kobosil-play-at-intercell-ade",
+      "title": "Kobosil play at Intercell, Ade 💣🔥",
+      "artist": "Kobosil",
+      "youtubeId": "28--TqRW_K8",
+      "duration": null
+    },
+    {
+      "id": "kobosil::kobosil-awakenings-2024-crazy-visuals",
+      "title": "Kobosil @ Awakenings 2024 CRAZY VISUALS",
+      "artist": "Kobosil",
+      "youtubeId": "HMsarxyA64c",
+      "duration": null
+    },
+    {
+      "id": "kobosil::kobosil-at-awakenings-festival",
+      "title": "Kobosil at Awakenings Festival",
+      "artist": "Kobosil",
+      "youtubeId": "U9LSmLTVUxk",
+      "duration": null
+    },
+    {
+      "id": "vtss::boiler-room-x-dekmantel-festival-2022",
+      "title": "Boiler Room x Dekmantel Festival 2022",
+      "artist": "VTSS",
+      "youtubeId": "Ko0hAh1iriE",
+      "duration": null
+    },
+    {
+      "id": "vtss::boiler-room-london",
+      "title": "Boiler Room London",
+      "artist": "VTSS",
+      "youtubeId": "D6sUo7Bw3Tc",
+      "duration": null
+    },
+    {
+      "id": "vtss::vtss-b2b-ki-ki-boiler-room-x-glitch-festival-2024",
+      "title": "VTSS b2b KI/KI | Boiler Room x Glitch Festival 2024",
+      "artist": "VTSS",
+      "youtubeId": "I1mhJjxtJx4",
+      "duration": null
+    },
+    {
+      "id": "vtss::vtss-boiler-room-madrid-mondo-disko-xix",
+      "title": "VTSS | Boiler Room Madrid: Mondo Disko XIX",
+      "artist": "VTSS",
+      "youtubeId": "ny9XZffta1U",
+      "duration": null
+    },
+    {
+      "id": "vtss::vtss-b2b-marlon-hoffstadt-at-intercell-x-vtss-invites-ade-2025",
+      "title": "VTSS b2b Marlon Hoffstadt at Intercell x VTSS Invites | ADE 2025",
+      "artist": "VTSS",
+      "youtubeId": "twCyIXAd7bE",
+      "duration": null
+    },
+    {
+      "id": "vtss::vtss-boiler-room-set-dekmantel-festival-august-2022",
+      "title": "VTSS Boiler Room set @ Dekmantel Festival, August 2022. 🔥",
+      "artist": "VTSS",
+      "youtubeId": "TU1ZYyXuRdE",
+      "duration": null
+    },
+    {
+      "id": "vtss::vtss-at-dekmantel-netherlands-boiler-room-2022",
+      "title": "VTSS at Dekmantel Netherlands, Boiler Room 2022",
+      "artist": "VTSS",
+      "youtubeId": "cfJLi4bxpao",
+      "duration": null
+    },
+    {
+      "id": "regal::boiler-room-madrid-mondo-disko-xix",
+      "title": "Boiler Room Madrid: Mondo Disko XIX",
+      "artist": "Regal",
+      "youtubeId": "R6vYN8rRVqs",
+      "duration": null
+    },
+    {
+      "id": "regal::regal-boiler-room-tbilisi-khidi",
+      "title": "Regal | Boiler Room Tbilisi: KHIDI",
+      "artist": "Regal",
+      "youtubeId": "wdSKl92tRNg",
+      "duration": null
+    },
+    {
+      "id": "regal::regal86-boiler-room-mexico-city",
+      "title": "Regal86 | Boiler Room: Mexico City",
+      "artist": "Regal",
+      "youtubeId": "LVG4-NU0D0Y",
+      "duration": null
+    },
+    {
+      "id": "regal::regal-boiler-room-tbilisi-bird-1-underworld",
+      "title": "Regal | Boiler Room Tbilisi -   Bird 1 | Underworld",
+      "artist": "Regal",
+      "youtubeId": "ToOFNT1DvGc",
+      "duration": null
+    },
+    {
+      "id": "regal::regal-h-r-on-tour-hyderabad-7-september-2025",
+      "title": "REGAL | HÖR ON TOUR Hyderabad - 7 September  / 2025",
+      "artist": "Regal",
+      "youtubeId": "hKU99jGE4XY",
+      "duration": null
+    },
+    {
+      "id": "regal::nasty-enterprises-regal86-h-r-jul-29-2022",
+      "title": "Nasty Enterprises - Regal86 | HÖR - Jul 29 / 2022",
+      "artist": "Regal",
+      "youtubeId": "ch0x5RwDU_g",
+      "duration": null
+    },
+    {
+      "id": "boy-harsher::boiler-room-streaming-from-isolation",
+      "title": "Boiler Room: Streaming From Isolation",
+      "artist": "Boy Harsher",
+      "youtubeId": "ZlIXogjQ8X0",
+      "duration": null
+    },
+    {
+      "id": "boy-harsher::boy-harsher-give-me-a-reason-lyrics-possession-1981-music-video",
+      "title": "Boy Harsher - Give Me a Reason (Lyrics) (Possession  1981) (Music Video)",
+      "artist": "Boy Harsher",
+      "youtubeId": "DxwJMtM5m8Q",
+      "duration": null
+    },
+    {
+      "id": "amelie-lens::exhale-together-livestream",
+      "title": "Exhale Together Livestream",
+      "artist": "Amelie Lens",
+      "youtubeId": "pSkun1wICSc",
+      "duration": null
+    },
+    {
+      "id": "amelie-lens::amelie-lens-live-at-awakenings-festival-2018",
+      "title": "Amelie Lens live at Awakenings Festival 2018",
+      "artist": "Amelie Lens",
+      "youtubeId": "6dYo4mCDnZI",
+      "duration": null
+    },
+    {
+      "id": "amelie-lens::amelie-lens-at-the-gashouder-for-awakenings-festival-2020-online-weekender",
+      "title": "Amelie Lens at the Gashouder for Awakenings Festival 2020 | Online weekender",
+      "artist": "Amelie Lens",
+      "youtubeId": "ElH8oBCFrG4",
+      "duration": null
+    },
+    {
+      "id": "amelie-lens::amelie-lens-awakenings-festival-2019",
+      "title": "Amelie Lens - Awakenings Festival 2019",
+      "artist": "Amelie Lens",
+      "youtubeId": "HGdqwhUPZvE",
+      "duration": null
+    },
+    {
+      "id": "amelie-lens::amelie-lens-awakenings-2017",
+      "title": "Amelie Lens - Awakenings 2017",
+      "artist": "Amelie Lens",
+      "youtubeId": "MLpIGqUJ2Hc",
+      "duration": null
+    },
+    {
+      "id": "charlotte-de-witte::awakenings-festival-2017",
+      "title": "Awakenings Festival 2017",
+      "artist": "Charlotte de Witte",
+      "youtubeId": "I2Y2C3LSF5E",
+      "duration": null
+    },
+    {
+      "id": "charlotte-de-witte::charlotte-de-witte-at-pukkelpop-2018-boiler-room",
+      "title": "Charlotte de Witte at Pukkelpop 2018 (Boiler Room)",
+      "artist": "Charlotte de Witte",
+      "youtubeId": "er2lzvlfPCE",
+      "duration": null
+    },
+    {
+      "id": "charlotte-de-witte::charlotte-de-witte-boiler-room-x-eristoff-dj-set",
+      "title": "Charlotte de Witte Boiler Room x Eristoff DJ Set",
+      "artist": "Charlotte de Witte",
+      "youtubeId": "sq2MsyiBfDQ",
+      "duration": null
+    },
+    {
+      "id": "charlotte-de-witte::charlotte-de-witte-awakenings-festival-2025",
+      "title": "Charlotte de Witte | Awakenings Festival 2025",
+      "artist": "Charlotte de Witte",
+      "youtubeId": "m1SvbXLYEEc",
+      "duration": null
+    },
+    {
+      "id": "charlotte-de-witte::awakenings-ade-2019-charlotte-de-witte",
+      "title": "Awakenings ADE 2019 - Charlotte de Witte",
+      "artist": "Charlotte de Witte",
+      "youtubeId": "2c4PRA59TD4",
+      "duration": null
+    },
+    {
+      "id": "hadone::boiler-room-x-hex-barcelona-hard-dance",
+      "title": "Boiler Room x HEX Barcelona: Hard Dance",
+      "artist": "Hadone",
+      "youtubeId": "t0UIy_vrCLY",
+      "duration": null
+    },
+    {
+      "id": "hadone::hadone-h-r-sep-20-2023",
+      "title": "Hadone | HÖR - Sep 20 / 2023",
+      "artist": "Hadone",
+      "youtubeId": "MF6b5JzFq3E",
+      "duration": null
+    },
+    {
+      "id": "hadone::hadone-at-intercell-outdoor-hadone-invites-2022",
+      "title": "Hadone at Intercell Outdoor: Hadone Invites 2022",
+      "artist": "Hadone",
+      "youtubeId": "k6Q_deTwguo",
+      "duration": null
+    },
+    {
+      "id": "hadone::mrd-at-intercell-outdoor-hadone-invites-2022",
+      "title": "MRD at Intercell Outdoor: Hadone Invites 2022",
+      "artist": "Hadone",
+      "youtubeId": "glQnNDWcgXM",
+      "duration": null
+    },
+    {
+      "id": "hadone::hadone-at-intercell-indoor-2022",
+      "title": "Hadone at Intercell Indoor 2022",
+      "artist": "Hadone",
+      "youtubeId": "X-CRmExDPzA",
+      "duration": null
+    },
+    {
+      "id": "hadone::tred-b2b-dina-at-intercell-outdoor-hadone-invites-2022",
+      "title": "TRED b2b DINA at Intercell Outdoor: Hadone Invites 2022",
+      "artist": "Hadone",
+      "youtubeId": "sFBeDyXsAIg",
+      "duration": null
+    },
+    {
+      "id": "anetha::boiler-room-amsterdam",
+      "title": "Boiler Room Amsterdam",
+      "artist": "Anetha",
+      "youtubeId": "Lg0Mkj4D9xo",
+      "duration": null
+    },
+    {
+      "id": "anetha::anetha-boiler-room-festival-london-2021-possession",
+      "title": "Anetha | Boiler Room Festival London 2021 | Possession",
+      "artist": "Anetha",
+      "youtubeId": "qVRj8-t4PwI",
+      "duration": null
+    },
+    {
+      "id": "anetha::anetha-boiler-room-barcelona-mama-told-ya",
+      "title": "Anetha | Boiler Room Barcelona: Mama Told Ya",
+      "artist": "Anetha",
+      "youtubeId": "-rEfUwsBKFI",
+      "duration": null
+    },
+    {
+      "id": "anetha::anetha-stone-techno-2023-arte-concert",
+      "title": "Anetha - Stone Techno 2023 - ARTE Concert",
+      "artist": "Anetha",
+      "youtubeId": "kVMqMlmZmLQ",
+      "duration": null
+    },
+    {
+      "id": "chris-liebing::boiler-room-warsaw-b2b-luke-slater",
+      "title": "Boiler Room Warsaw — B2B Luke Slater",
+      "artist": "Chris Liebing",
+      "youtubeId": "5NuRC714fv8",
+      "duration": null
+    },
+    {
+      "id": "chris-liebing::awakenings-festival-2017-area-y",
+      "title": "Awakenings Festival 2017 — Area Y",
+      "artist": "Chris Liebing",
+      "youtubeId": "iozfIRB34gM",
+      "duration": null
+    },
+    {
+      "id": "chris-liebing::chris-liebing-boiler-room-ballantine-s-true-music-russia-dj-set",
+      "title": "Chris Liebing Boiler Room & Ballantine's True Music Russia DJ Set",
+      "artist": "Chris Liebing",
+      "youtubeId": "jyOHvAaxZ-M",
+      "duration": null
+    },
+    {
+      "id": "chris-liebing::playdifferently-chris-liebing-boiler-room-dj-set",
+      "title": "PLAYdifferently: Chris Liebing Boiler Room DJ Set",
+      "artist": "Chris Liebing",
+      "youtubeId": "aS9qKXb04q0",
+      "duration": null
+    },
+    {
+      "id": "chris-liebing::chris-liebing-time-warp-2018-full-set-hires-arte-concert",
+      "title": "Chris Liebing – Time Warp 2018 (Full Set HiRes) – ARTE Concert",
+      "artist": "Chris Liebing",
+      "youtubeId": "pNHi5Pz6YUw",
+      "duration": null
+    },
+    {
+      "id": "dj-rush::dj-rush-boiler-room-rotterdam",
+      "title": "DJ Rush | Boiler Room Rotterdam",
+      "artist": "DJ Rush",
+      "youtubeId": "sJl2LyNEz0s",
+      "duration": null
+    },
+    {
+      "id": "dj-rush::awakenings-festival-2018-saturday-live-set-dj-rush-area-y",
+      "title": "Awakenings Festival 2018 Saturday - Live set DJ Rush @ Area Y",
+      "artist": "DJ Rush",
+      "youtubeId": "hTD1_Zmxk1I",
+      "duration": null
+    },
+    {
+      "id": "dj-rush::dj-rush-awakenings-easter-festival-2022",
+      "title": "DJ Rush - Awakenings Easter Festival 2022",
+      "artist": "DJ Rush",
+      "youtubeId": "c71SnHp6kO8",
+      "duration": null
+    },
+    {
+      "id": "dj-rush::awakenings-29-12-dj-rush",
+      "title": "Awakenings 29.12 | DJ Rush",
+      "artist": "DJ Rush",
+      "youtubeId": "6mAhcG-1Nlg",
+      "duration": null
+    },
+    {
+      "id": "sven-wittekind::gayle-san-sven-wittekind-set-awakenings-festival-spaarnwoude-2011",
+      "title": "►Gayle San & Sven Wittekind Set @ Awakenings Festival,Spaarnwoude 2011",
+      "artist": "Sven Wittekind",
+      "youtubeId": "g24nUY3CeH0",
+      "duration": null
+    },
+    {
+      "id": "sven-wittekind::sven-wittekind-awakenings-festival-2005",
+      "title": "Sven Wittekind @ Awakenings Festival 2005",
+      "artist": "Sven Wittekind",
+      "youtubeId": "2xuINVhvrgc",
+      "duration": null
+    },
+    {
+      "id": "sven-wittekind::awakenings-festival-08-sven-wittekind",
+      "title": "Awakenings Festival '08 - Sven Wittekind",
+      "artist": "Sven Wittekind",
+      "youtubeId": "7bmuTxNAAPk",
+      "duration": null
+    },
+    {
+      "id": "robert-natus::robert-natus-arkus-p-h-rtest-1",
+      "title": "Robert Natus & Arkus P. -  Hörtest (1)",
+      "artist": "Robert Natus",
+      "youtubeId": "skqiE_1tuwY",
+      "duration": null
+    },
+    {
+      "id": "robert-natus::triple-religion-arkus-p-boris-s-robert-natus-live-awakenings-hard-techno-special-29-12-2012",
+      "title": "Triple Religion (Arkus P, Boris S & Robert Natus) LIVE @ Awakenings Hard Techno Special 29-12-2012",
+      "artist": "Robert Natus",
+      "youtubeId": "igilseYYdyQ",
+      "duration": null
+    },
+    {
+      "id": "robert-natus::triple-religion-live-boris-s-arkus-p-robert-natus-awakenings-festival-2013",
+      "title": "Triple Religion Live (Boris S. & Arkus P & Robert Natus) @ Awakenings Festival 2013",
+      "artist": "Robert Natus",
+      "youtubeId": "Vw-NAxUYzIU",
+      "duration": null
+    },
+    {
+      "id": "robert-natus::triple-religion-arkus-p-boris-s-robert-natus-live-awakenings-hardtechno-special-29-12-2012",
+      "title": "Triple Religion (Arkus P, Boris S & Robert Natus) LIVE @ Awakenings hardtechno Special  29-12-2012",
+      "artist": "Robert Natus",
+      "youtubeId": "nucJABinbgA",
+      "duration": null
+    },
+    {
+      "id": "arkus-p::robert-natus-arkus-p-h-rtest-1",
+      "title": "Robert Natus & Arkus P. -  Hörtest (1)",
+      "artist": "Arkus P",
+      "youtubeId": "skqiE_1tuwY",
+      "duration": null
+    },
+    {
+      "id": "arkus-p::triple-religion-arkus-p-boris-s-robert-natus-live-awakenings-hard-techno-special-29-12-2012",
+      "title": "Triple Religion (Arkus P, Boris S & Robert Natus) LIVE @ Awakenings Hard Techno Special 29-12-2012",
+      "artist": "Arkus P",
+      "youtubeId": "igilseYYdyQ",
+      "duration": null
+    },
+    {
+      "id": "arkus-p::triple-religion-live-boris-s-arkus-p-robert-natus-awakenings-festival-2013",
+      "title": "Triple Religion Live (Boris S. & Arkus P & Robert Natus) @ Awakenings Festival 2013",
+      "artist": "Arkus P",
+      "youtubeId": "Vw-NAxUYzIU",
+      "duration": null
+    },
+    {
+      "id": "arkus-p::robert-natus-arkus-p-hardcore-salsa-dj-rush-timewarp-remix",
+      "title": "Robert Natus & Arkus P. - Hardcore Salsa ( DJ Rush Timewarp remix )",
+      "artist": "Arkus P",
+      "youtubeId": "ucW9AcfbaIM",
+      "duration": null
+    },
+    {
+      "id": "boris-s::boris-merzbow-boiler-room-tokyo-live-set",
+      "title": "Boris & Merzbow Boiler Room Tokyo Live Set",
+      "artist": "Boris S.",
+      "youtubeId": "xJSMf8hRWtA",
+      "duration": null
+    },
+    {
+      "id": "boris-s::gradient-boris-h-r-october-10-2023",
+      "title": "Gradient - Boris | HÖR - October 10 / 2023",
+      "artist": "Boris S.",
+      "youtubeId": "ZEaqqk8V1bY",
+      "duration": null
+    },
+    {
+      "id": "boris-s::boris-davy-h-r-kunstfestival-begehungen-26-july-2025",
+      "title": "boris & davy | HÖR @ Kunstfestival Begehungen - 26 July / 2025",
+      "artist": "Boris S.",
+      "youtubeId": "UUuNuYs3ZyA",
+      "duration": null
+    },
+    {
+      "id": "boris-s::videoset-boris-s-awakenings-festival-15-amsterdam-nl-28-06-15",
+      "title": "Videoset Boris S. @ Awakenings Festival '15 Amsterdam/NL 28.06.15",
+      "artist": "Boris S.",
+      "youtubeId": "28IeGuAOrWA",
+      "duration": null
+    },
+    {
+      "id": "boris-s::boris-kleine-im-exhale-hardcore-gym",
+      "title": "Boris Kleine im Exhale Hardcore Gym",
+      "artist": "Boris S.",
+      "youtubeId": "OgRPJNY-aWo",
+      "duration": null
+    },
+    {
+      "id": "paula-temple::awakenings-ade-2017",
+      "title": "Awakenings ADE 2017",
+      "artist": "Paula Temple",
+      "youtubeId": "faUGU6Z9qSU",
+      "duration": null
+    },
+    {
+      "id": "paula-temple::paula-temple-time-warp-2018-full-set-hires-arte-concert",
+      "title": "Paula Temple – Time Warp 2018 (Full Set HiRes) – ARTE Concert",
+      "artist": "Paula Temple",
+      "youtubeId": "L7PrP_6dPcw",
+      "duration": null
+    },
+    {
+      "id": "paula-temple::paula-temple-awakenings-spring-festival-2023-audio-recording",
+      "title": "Paula Temple | Awakenings Spring Festival 2023 (audio recording)",
+      "artist": "Paula Temple",
+      "youtubeId": "SBxgpZsexV0",
+      "duration": null
+    },
+    {
+      "id": "paula-temple::awakenings-ade-2018-rebekah-paula-temple",
+      "title": "Awakenings ADE 2018 | Rebekah & Paula Temple",
+      "artist": "Paula Temple",
+      "youtubeId": "Q7csy2ZlU_0",
+      "duration": null
+    },
+    {
+      "id": "paula-temple::ghost-in-the-machine-at-intercell-x-paula-temple-pres-noise-manifesto-ade-2019-closing-full-set",
+      "title": "Ghost in the Machine at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019 Closing - FULL SET",
+      "artist": "Paula Temple",
+      "youtubeId": "vq8mf2uliq8",
+      "duration": null
+    },
+    {
+      "id": "paula-temple::paula-temple-b2b-snts-at-intercell-x-paula-temple-pres-noise-manifesto-ade-2019",
+      "title": "Paula Temple b2b SNTS at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019",
+      "artist": "Paula Temple",
+      "youtubeId": "Tqn_S1Sz8s0",
+      "duration": null
+    },
+    {
+      "id": "perc::perc-boiler-room-toronto",
+      "title": "Perc | Boiler Room Toronto",
+      "artist": "Perc",
+      "youtubeId": "uEXaRSzYxX4",
+      "duration": null
+    },
+    {
+      "id": "perc::perc-boiler-room-paris-possession",
+      "title": "Perc | Boiler Room Paris: Possession",
+      "artist": "Perc",
+      "youtubeId": "vMifim5ZL4g",
+      "duration": null
+    },
+    {
+      "id": "perc::perc-boiler-room-london-dj-set",
+      "title": "Perc Boiler Room London DJ Set",
+      "artist": "Perc",
+      "youtubeId": "8s86Z9aVhjM",
+      "duration": null
+    },
+    {
+      "id": "perc::perc-awakenings-easter-festival-2022",
+      "title": "Perc - Awakenings Easter Festival 2022",
+      "artist": "Perc",
+      "youtubeId": "lfAkIC9hrd8",
+      "duration": null
+    },
+    {
+      "id": "perc::perc-h-r-jul-8-2023",
+      "title": "Perc | HÖR - Jul 8 / 2023",
+      "artist": "Perc",
+      "youtubeId": "eRqSFkenzs0",
+      "duration": null
+    },
+    {
+      "id": "ancient-methods::ancient-methods-boiler-room-berlin-dj-set",
+      "title": "Ancient Methods Boiler Room Berlin DJ Set",
+      "artist": "Ancient Methods",
+      "youtubeId": "pEOhnkjEpqE",
+      "duration": null
+    },
+    {
+      "id": "ancient-methods::ancient-methods-boiler-room-x-hex-barcelona",
+      "title": "Ancient Methods | Boiler Room x HEX Barcelona",
+      "artist": "Ancient Methods",
+      "youtubeId": "NGMsT3TMwnY",
+      "duration": null
+    },
+    {
+      "id": "ancient-methods::ancient-methods-boiler-room-x-belgrade-drugstore",
+      "title": "Ancient Methods | Boiler Room x Belgrade: Drugstore",
+      "artist": "Ancient Methods",
+      "youtubeId": "14ksGZfcgHM",
+      "duration": null
+    },
+    {
+      "id": "ancient-methods::ancient-methods-h-r-november-15-2024",
+      "title": "Ancient Methods | HÖR - November 15 / 2024",
+      "artist": "Ancient Methods",
+      "youtubeId": "cfVwQQHEgwQ",
+      "duration": null
+    },
+    {
+      "id": "surgeon::surgeon-boiler-room-x-dekmantel-festival-live-set",
+      "title": "Surgeon Boiler Room x Dekmantel Festival Live Set",
+      "artist": "Surgeon",
+      "youtubeId": "Ww9VtKqprUY",
+      "duration": null
+    },
+    {
+      "id": "surgeon::surgeon-boiler-room-london",
+      "title": "Surgeon | Boiler Room: London",
+      "artist": "Surgeon",
+      "youtubeId": "1Tndlzrc_g0",
+      "duration": null
+    },
+    {
+      "id": "surgeon::surgeon-boiler-room-x-eristoff-into-the-dark-porto",
+      "title": "Surgeon | Boiler Room x Eristoff 'Into The Dark' Porto",
+      "artist": "Surgeon",
+      "youtubeId": "rl1a3oZdMvI",
+      "duration": null
+    },
+    {
+      "id": "surgeon::surgeon-boiler-room-london-live-set",
+      "title": "Surgeon Boiler Room London LIVE Set",
+      "artist": "Surgeon",
+      "youtubeId": "5BtUlkYXS3o",
+      "duration": null
+    },
+    {
+      "id": "surgeon::surgeon-boiler-room-dj-set-daytime-session",
+      "title": "Surgeon Boiler Room DJ Set - Daytime Session",
+      "artist": "Surgeon",
+      "youtubeId": "hnkc3xTz0D8",
+      "duration": null
+    },
+    {
+      "id": "adam-x::adam-x-boiler-room-berlin-dj-set",
+      "title": "Adam X Boiler Room Berlin DJ Set",
+      "artist": "Adam X",
+      "youtubeId": "0QmGRIS8JqI",
+      "duration": null
+    },
+    {
+      "id": "adam-x::adam-beyer-boiler-room-x-eristoff-vienna-dj-set",
+      "title": "Adam Beyer Boiler Room x Eristoff Vienna DJ Set",
+      "artist": "Adam X",
+      "youtubeId": "E8UMOqVtfuI",
+      "duration": null
+    },
+    {
+      "id": "adam-x::adam-beyer-boiler-room-dj-set-at-warehouse-project",
+      "title": "Adam Beyer Boiler Room DJ Set at Warehouse Project",
+      "artist": "Adam X",
+      "youtubeId": "v--0OhHHKfg",
+      "duration": null
+    },
+    {
+      "id": "adam-x::adam-port-b2b-me-boiler-room-x-iii-points-festival-miami-day-2",
+      "title": "Adam Port b2b &ME | Boiler Room x III Points Festival | Miami Day 2",
+      "artist": "Adam X",
+      "youtubeId": "lHF7lsk9mco",
+      "duration": null
+    },
+    {
+      "id": "adam-x::keinemusik-adam-port-h-r-mar-2-2022",
+      "title": "Keinemusik - Adam Port | HÖR - Mar 2 / 2022",
+      "artist": "Adam X",
+      "youtubeId": "MoyZRbodpWg",
+      "duration": null
+    },
+    {
+      "id": "phase-fatale::phase-fatale-boiler-room-warsaw",
+      "title": "Phase Fatale | Boiler Room: Warsaw",
+      "artist": "Phase Fatale",
+      "youtubeId": "K0BsVqZf85U",
+      "duration": null
+    },
+    {
+      "id": "phase-fatale::phase-fatale-boiler-room-x-mzesumzira-x-khidi",
+      "title": "Phase Fatale | Boiler Room X Mzesumzira X KHIDI",
+      "artist": "Phase Fatale",
+      "youtubeId": "s5O7oMn__HM",
+      "duration": null
+    },
+    {
+      "id": "phase-fatale::phase-fatale-boiler-room-berlin-dj-set",
+      "title": "Phase Fatale Boiler Room Berlin DJ Set",
+      "artist": "Phase Fatale",
+      "youtubeId": "Rc8837-V4p8",
+      "duration": null
+    },
+    {
+      "id": "phase-fatale::bite-phase-fatale-h-r-mar-17-2022",
+      "title": "BITE - Phase Fatale | HÖR - Mar 17 / 2022",
+      "artist": "Phase Fatale",
+      "youtubeId": "QOPvBq-PoSA",
+      "duration": null
+    },
+    {
+      "id": "phase-fatale::bite-phase-fatale-h-r-aug-23-2023",
+      "title": "BITE - Phase Fatale | HÖR - Aug 23 / 2023",
+      "artist": "Phase Fatale",
+      "youtubeId": "LofQ-Msc6OM",
+      "duration": null
+    },
+    {
+      "id": "helena-hauff::helena-hauff-boiler-room-x-glitch-festival-2023",
+      "title": "Helena Hauff | Boiler Room x Glitch Festival 2023",
+      "artist": "Helena Hauff",
+      "youtubeId": "2WFc7gmPOjY",
+      "duration": null
+    },
+    {
+      "id": "helena-hauff::helena-hauff-boiler-room-x-dekmantel-festival-dj-set",
+      "title": "Helena Hauff Boiler Room x Dekmantel Festival DJ Set",
+      "artist": "Helena Hauff",
+      "youtubeId": "OdJy_g1G7Ho",
+      "duration": null
+    },
+    {
+      "id": "helena-hauff::helena-hauff-boiler-room-dj-set",
+      "title": "Helena Hauff Boiler Room DJ Set",
+      "artist": "Helena Hauff",
+      "youtubeId": "vBIVet7QPAE",
+      "duration": null
+    },
+    {
+      "id": "helena-hauff::helena-hauff-boiler-room-streaming-from-isolation-4",
+      "title": "Helena Hauff | Boiler Room: Streaming From Isolation | #4",
+      "artist": "Helena Hauff",
+      "youtubeId": "kVd7zUgs7Hk",
+      "duration": null
+    },
+    {
+      "id": "helena-hauff::dekmantel-ten-helena-hauff-marcel-dettmann-radar-aug-2-2024",
+      "title": "Dekmantel Ten - Helena Hauff & Marcel Dettmann | Radar - Aug 2 / 2024",
+      "artist": "Helena Hauff",
+      "youtubeId": "PqWFidEZsVk",
+      "duration": null
+    },
+    {
+      "id": "rebekah::rebekah-boiler-room-paris",
+      "title": "Rebekah | Boiler Room: Paris",
+      "artist": "Rebekah",
+      "youtubeId": "SF1mhYBXWyk",
+      "duration": null
+    },
+    {
+      "id": "rebekah::rebekah-boiler-room-glasgow-dj-set",
+      "title": "Rebekah Boiler Room Glasgow DJ Set",
+      "artist": "Rebekah",
+      "youtubeId": "5TZcCG-ItRE",
+      "duration": null
+    },
+    {
+      "id": "rebekah::rebekah-h-r-on-tour-ankara-23-may-2025",
+      "title": "Rebekah | HÖR ON TOUR Ankara - 23 May / 2025",
+      "artist": "Rebekah",
+      "youtubeId": "dlW4C2P6X1w",
+      "duration": null
+    },
+    {
+      "id": "rebekah::go-hard-or-go-hardcore-rebekah-h-r-july-3-2025",
+      "title": "Go Hard or Go Hardcore - Rebekah | HÖR - July 3 / 2025",
+      "artist": "Rebekah",
+      "youtubeId": "ZOwbxGzZOO0",
+      "duration": null
+    },
+    {
+      "id": "rebekah::go-hard-or-go-hardcore-rebekah-h-r-april-25-2024",
+      "title": "Go Hard or Go Hardcore - Rebekah | HÖR - April 25 / 2024",
+      "artist": "Rebekah",
+      "youtubeId": "cfFrWPL9Acg",
+      "duration": null
+    },
+    {
+      "id": "ghost-in-the-machine::ghost-in-the-machine-boiler-room-hard-dance-193",
+      "title": "Ghost in the Machine - Boiler Room Hard Dance 193",
+      "artist": "Ghost in the Machine",
+      "youtubeId": "BbNlke-2gm0",
+      "duration": null
+    },
+    {
+      "id": "ghost-in-the-machine::ghost-in-the-machine-at-intercell-x-paula-temple-pres-noise-manifesto-ade-2019-closing-full-set",
+      "title": "Ghost in the Machine at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019 Closing - FULL SET",
+      "artist": "Ghost in the Machine",
+      "youtubeId": "vq8mf2uliq8",
+      "duration": null
+    },
+    {
+      "id": "ghost-in-the-machine::ghost-in-the-machine-7-5-boiler-room",
+      "title": "Ghost In The Machine 7/5 Boiler Room",
+      "artist": "Ghost in the Machine",
+      "youtubeId": "usKUkBlJ2Lc",
+      "duration": null
+    },
+    {
+      "id": "ghost-in-the-machine::ghost-in-the-machine-at-intercell-x-paula-temple-pres-noise-manifesto-ade-2019-closing",
+      "title": "Ghost in the Machine at Intercell x Paula Temple pres. Noise Manifesto | ADE 2019 Closing",
+      "artist": "Ghost in the Machine",
+      "youtubeId": "mHWzbacL3AU",
+      "duration": null
+    },
+    {
+      "id": "ghost-in-the-machine::ghost-in-the-machine-dropping-a-hard-banger-at-intercell-ade-x-perc-trax",
+      "title": "Ghost In The Machine dropping a hard banger at Intercell ADE x Perc Trax",
+      "artist": "Ghost in the Machine",
+      "youtubeId": "85EDVE9Dih0",
+      "duration": null
+    },
+    {
+      "id": "codex-empire::codex-empire-boiler-room-berlin-live-set",
+      "title": "CODEX EMPIRE Boiler Room Berlin Live Set",
+      "artist": "Codex Empire",
+      "youtubeId": "BEuRUuML1mU",
+      "duration": null
+    },
+    {
+      "id": "codex-empire::codex-empire-live-possession-21-10-17",
+      "title": "Codex Empire Live @Possession 21.10.17",
+      "artist": "Codex Empire",
+      "youtubeId": "4yVh-K3pgWY",
+      "duration": null
+    },
+    {
+      "id": "orphx::orphx-possession",
+      "title": "Orphx - Possession",
+      "artist": "Orphx",
+      "youtubeId": "KiiFwmuMErw",
+      "duration": null
+    },
+    {
+      "id": "orphx::orphx-possession-sg1039-2010",
+      "title": "Orphx - Possession [SG1039] (2010)",
+      "artist": "Orphx",
+      "youtubeId": "W_C2OzblMSE",
+      "duration": null
+    },
+    {
+      "id": "laven::awakenings-ade-2017",
+      "title": "Awakenings ADE 2017",
+      "artist": "LAVEN",
+      "youtubeId": "faUGU6Z9qSU",
+      "duration": null
+    },
+    {
+      "id": "laven::mister-bear-records-vick-lavender-h-r-april-21-2025",
+      "title": "Mister Bear Records - Vick Lavender | HÖR - April 21 / 2025",
+      "artist": "LAVEN",
+      "youtubeId": "oaiP_FKMwvE",
+      "duration": null
+    },
+    {
+      "id": "laven::where-there-s-lavender-there-s-peace-and-breathe-in-calm-exhale-stress-it-s-a-lavender-kind-of-day",
+      "title": "Where there's lavender, there's peace and breathe in calm, exhale stress—it's a lavender kind of day",
+      "artist": "LAVEN",
+      "youtubeId": "3cPMW1OMM5o",
+      "duration": null
+    },
+    {
+      "id": "laven::lavender-exhale",
+      "title": "Lavender Exhale",
+      "artist": "LAVEN",
+      "youtubeId": "0vc_upMFBg0",
+      "duration": null
+    },
+    {
+      "id": "klangkuenstler::boiler-room-manchester-teletech",
+      "title": "Boiler Room Manchester — Teletech",
+      "artist": "Klangkuenstler",
+      "youtubeId": "RMLBjvvtXyk",
+      "duration": null
+    },
+    {
+      "id": "dyen::dyen-boiler-room-x-teletech-festival-2023",
+      "title": "DYEN | Boiler Room x Teletech Festival 2023",
+      "artist": "DYEN",
+      "youtubeId": "dogc20LI1Hs",
+      "duration": null
+    },
+    {
+      "id": "dyen::dyen-b2b-fantasm-verknipt-arena-2025-world-s-biggest-360-rave",
+      "title": "DYEN b2b FANTASM @ Verknipt ArenA 2025 | World's biggest 360° rave",
+      "artist": "DYEN",
+      "youtubeId": "1_P5LzX5vwE",
+      "duration": null
+    },
+    {
+      "id": "dyen::dyen-verknipt-easter-special-08-04-2023-afas-live-amsterdam",
+      "title": "DYEN @ Verknipt Easter Special 08-04-2023 | AFAS Live, Amsterdam",
+      "artist": "DYEN",
+      "youtubeId": "HVrnjQvIU_w",
+      "duration": null
+    },
+    {
+      "id": "dyen::nico-moreno-b2b-dyen-all-night-long-unreal-x-free-your-mind",
+      "title": "NICO MORENO b2b DYEN all night long | Unreal x Free Your Mind",
+      "artist": "DYEN",
+      "youtubeId": "7wrIVAtQk2M",
+      "duration": null
+    },
+    {
+      "id": "dyen::rotterdam-rave-x-reckless-kick-off-2025-dyen-full-set",
+      "title": "Rotterdam Rave x Reckless 'Kick-Off 2025' - DYEN (full set)",
+      "artist": "DYEN",
+      "youtubeId": "0L2rTDRSl3M",
+      "duration": null
+    },
+    {
+      "id": "trym::boiler-room-manchester-teletech",
+      "title": "Boiler Room Manchester — Teletech",
+      "artist": "Trym",
+      "youtubeId": "8SCM_YeNOos",
+      "duration": null
+    },
+    {
+      "id": "trym::trym-unrealgermany-x-bootshaus-2024",
+      "title": "TRYM | @UnrealGermany x BOOTSHAUS 2024",
+      "artist": "Trym",
+      "youtubeId": "Xxg_PSPrNNU",
+      "duration": null
+    },
+    {
+      "id": "trym::trym-at-boiler-room",
+      "title": "Trym at Boiler room",
+      "artist": "Trym",
+      "youtubeId": "cIb4oh9VruI",
+      "duration": null
+    },
+    {
+      "id": "trym::trym-at-teletech-boiler-room-2022",
+      "title": "Trym at Teletech, Boiler Room 2022",
+      "artist": "Trym",
+      "youtubeId": "yC9TjuqKbxo",
+      "duration": null
+    },
+    {
+      "id": "trym::trym-dropping-and-1995-classic-golden-raver-at-his-boiler-room-in-manchester-rave-techno",
+      "title": "TRYM dropping and 1995 classic “Golden Raver” at his Boiler Room in Manchester #rave #techno",
+      "artist": "Trym",
+      "youtubeId": "3mQXAoISRYU",
+      "duration": null
+    },
+    {
+      "id": "trym::trym-using-the-diet-coke-vocal-at-teletech-before-sending-an-absolutely-brutal-hard-techno-drop",
+      "title": "Trym using the “DIET COKE” vocal at TELETECH before sending an absolutely brutal hard techno drop 🔥",
+      "artist": "Trym",
+      "youtubeId": "pzCK1nWaO6g",
+      "duration": null
+    },
+    {
+      "id": "charlie-sparks::boiler-room-manchester-teletech",
+      "title": "Boiler Room Manchester — Teletech",
+      "artist": "Charlie Sparks",
+      "youtubeId": "LoJ4tq4K4Wk",
+      "duration": null
+    },
+    {
+      "id": "charlie-sparks::boiler-room-denver",
+      "title": "Boiler Room Denver",
+      "artist": "Charlie Sparks",
+      "youtubeId": "TlqineUUptE",
+      "duration": null
+    },
+    {
+      "id": "charlie-sparks::intercell-x-elektra-ade-2024",
+      "title": "Intercell x Elektra — ADE 2024",
+      "artist": "Charlie Sparks",
+      "youtubeId": "pJjLnZq4QgM",
+      "duration": null
+    },
+    {
+      "id": "charlie-sparks::intercell-b2b-parfait-ade-2023",
+      "title": "Intercell b2b Parfait — ADE 2023",
+      "artist": "Charlie Sparks",
+      "youtubeId": "2_KrHmNdCms",
+      "duration": null
+    },
+    {
+      "id": "parfait::parfait-boiler-room-festival-london-2021-possession",
+      "title": "Parfait | Boiler Room Festival London 2021 | Possession",
+      "artist": "Parfait",
+      "youtubeId": "SWiUqDM3dGI",
+      "duration": null
+    },
+    {
+      "id": "parfait::parfait-boiler-room-paris-possession",
+      "title": "Parfait | Boiler Room Paris: Possession",
+      "artist": "Parfait",
+      "youtubeId": "on0pXYh0lqI",
+      "duration": null
+    },
+    {
+      "id": "parfait::comme-dans-les-films-parfait-h-r-june-9-2025",
+      "title": "Comme Dans Les Films - Parfait | HÖR - June 9 / 2025",
+      "artist": "Parfait",
+      "youtubeId": "nImo06iZhWw",
+      "duration": null
+    },
+    {
+      "id": "parfait::parfait-boiler-room-x-possession-paris-2019",
+      "title": "Parfait • Boiler Room x Possession •  Paris 2019",
+      "artist": "Parfait",
+      "youtubeId": "e1Sb0lVTMb8",
+      "duration": null
+    },
+    {
+      "id": "parfait::synoid-parfait-h-r-mar-31-2022",
+      "title": "SYNOID - Parfait | HÖR - Mar 31 / 2022",
+      "artist": "Parfait",
+      "youtubeId": "fVSfwYZG6bM",
+      "duration": null
+    },
+    {
+      "id": "funk-tribu::funk-tribu-boiler-room-ghent",
+      "title": "Funk Tribu | Boiler Room: Ghent",
+      "artist": "Funk Tribu",
+      "youtubeId": "cmUov7X5Pjc",
+      "duration": null
+    },
+    {
+      "id": "funk-tribu::funk-tribu-b2b-pegassi-at-intercell-klokgebouw-2025",
+      "title": "Funk Tribu b2b Pegassi at Intercell Klokgebouw 2025",
+      "artist": "Funk Tribu",
+      "youtubeId": "VTfAxGkQi0o",
+      "duration": null
+    },
+    {
+      "id": "funk-tribu::funk-tribu-h-r-feb-1-2023",
+      "title": "FUNK TRIBU | HÖR - Feb 1 / 2023",
+      "artist": "Funk Tribu",
+      "youtubeId": "vBQFcUTm8dA",
+      "duration": null
+    },
+    {
+      "id": "funk-tribu::funk-tribu-awakenings-festival-2025",
+      "title": "Funk Tribu | Awakenings Festival 2025",
+      "artist": "Funk Tribu",
+      "youtubeId": "uwEiEnuKFuQ",
+      "duration": null
+    },
+    {
+      "id": "funk-tribu::funk-tribu-at-intercell-x-bcco-ade-2023",
+      "title": "Funk Tribu at Intercell x BCCO | ADE 2023",
+      "artist": "Funk Tribu",
+      "youtubeId": "JnbHbfhW48A",
+      "duration": null
+    },
+    {
+      "id": "holy-priest::holy-priest-creamfields-teletech-arena-2025",
+      "title": "HOLY PRIEST | CREAMFIELDS | TELETECH ARENA | 2025",
+      "artist": "Holy Priest",
+      "youtubeId": "TXXxYf82dAA",
+      "duration": null
+    },
+    {
+      "id": "holy-priest::holy-priest-b2b-marshmello-h-r-june-26-2026",
+      "title": "Holy Priest B2B Marshmello | HÖR - June 26 / 2026",
+      "artist": "Holy Priest",
+      "youtubeId": "Qub-GxH0aTw",
+      "duration": null
+    },
+    {
+      "id": "vendex::vendex-main-floor-gotec-club-2-h-schranz-set",
+      "title": "Vendex | Main floor - Gotec Club | 2 H Schranz Set",
+      "artist": "Vendex",
+      "youtubeId": "UI5l0VHs_6U",
+      "duration": null
+    },
+    {
+      "id": "vendex::vendex-monegros-desert-festival-2025-unreal-av-show",
+      "title": "VENDEX @ MONEGROS DESERT FESTIVAL 2025 - UNREAL - AV SHOW",
+      "artist": "Vendex",
+      "youtubeId": "x_QfePjfCHQ",
+      "duration": null
+    },
+    {
+      "id": "vendex::vendex-h-r-monegros-26-july-2025",
+      "title": "VENDEX | HÖR @ MONEGROS - 26 July / 2025",
+      "artist": "Vendex",
+      "youtubeId": "x-3TPNw3bKA",
+      "duration": null
+    },
+    {
+      "id": "vendex::vendex-verknipt-germany-day-1-turbinenhalle-oberhausen",
+      "title": "Vendex @ Verknipt Germany Day 1 | Turbinenhalle, Oberhausen",
+      "artist": "Vendex",
+      "youtubeId": "FEKCQfIaUtA",
+      "duration": null
+    },
+    {
+      "id": "vendex::vendex-verknipt-x-blackworks-ade-2023-saturday",
+      "title": "Vendex @ Verknipt x Blackworks ADE 2023 | Saturday",
+      "artist": "Vendex",
+      "youtubeId": "-IOnLTFeib8",
+      "duration": null
+    },
+    {
+      "id": "nikolina::nikolina-boiler-room-x-teletech-london",
+      "title": "Nikolina | Boiler Room x Teletech: London",
+      "artist": "Nikolina",
+      "youtubeId": "BZPONFOlNoQ",
+      "duration": null
+    },
+    {
+      "id": "nikolina::nikolina-main-floor-gotec-club-1-1-2h-schranz-set",
+      "title": "NIKOLINA | Main Floor - Gotec Club | 1 1/2H Schranz Set",
+      "artist": "Nikolina",
+      "youtubeId": "u5QGNgeh_dM",
+      "duration": null
+    },
+    {
+      "id": "nikolina::tba-nikolina-h-r-september-11-2025",
+      "title": "TBA - Nikolina | HÖR - September 11 / 2025",
+      "artist": "Nikolina",
+      "youtubeId": "6gRXToZhO1A",
+      "duration": null
+    },
+    {
+      "id": "nikolina::nikolina-at-boiler-room-x-teletech-london",
+      "title": "Nikolina at Boiler Room x Teletech: London",
+      "artist": "Nikolina",
+      "youtubeId": "m_H0u8eCJow",
+      "duration": null
+    },
+    {
+      "id": "nikolina::nikolina-play-at-teletech",
+      "title": "Nikolina play at Teletech 🔥💣",
+      "artist": "Nikolina",
+      "youtubeId": "CLfqWu7Aics",
+      "duration": null
+    },
+    {
+      "id": "fantasm::gotec-club-2h-hard-techno-set",
+      "title": "Gotec Club — 2h Hard Techno Set",
+      "artist": "Fantasm",
+      "youtubeId": "NQNn7HGfMSk",
+      "duration": null
+    },
+    {
+      "id": "fantasm::rotterdam-rave-festival-2025",
+      "title": "Rotterdam Rave Festival 2025",
+      "artist": "Fantasm",
+      "youtubeId": "GLMUDJGxwJc",
+      "duration": null
+    },
+    {
+      "id": "fantasm::verknipt-arena-amsterdam",
+      "title": "Verknipt ArenA Amsterdam",
+      "artist": "Fantasm",
+      "youtubeId": "mQY5D0lNuJ4",
+      "duration": null
+    },
+    {
+      "id": "fantasm::dyen-b2b-fantasm-verknipt-arena",
+      "title": "DYEN b2b FANTASM @ Verknipt ArenA",
+      "artist": "Fantasm",
+      "youtubeId": "1_P5LzX5vwE",
+      "duration": null
+    },
+    {
+      "id": "fantasm::rotterdam-rave-all-night-long",
+      "title": "Rotterdam Rave — All Night Long",
+      "artist": "Fantasm",
+      "youtubeId": "20s7ynn0izo",
+      "duration": null
+    },
+    {
+      "id": "fantasm::unreal-germany",
+      "title": "Unreal Germany",
+      "artist": "Fantasm",
+      "youtubeId": "-r1jD4jnhA0",
+      "duration": null
+    },
+    {
+      "id": "alignment::alignment-boiler-room-lyon",
+      "title": "Alignment | Boiler Room: Lyon",
+      "artist": "Alignment",
+      "youtubeId": "cSnQSjmty8w",
+      "duration": null
+    },
+    {
+      "id": "alignment::alignment-at-boiler-room-lyon",
+      "title": "Alignment at Boiler Room: Lyon",
+      "artist": "Alignment",
+      "youtubeId": "isGJmL1QxiE",
+      "duration": null
+    },
+    {
+      "id": "alignment::alignment-boiler-room-elpartynotermina",
+      "title": "Alignment | Boiler room #ElPartynotermina",
+      "artist": "Alignment",
+      "youtubeId": "DyVAL06G4SE",
+      "duration": null
+    },
+    {
+      "id": "alignment::alignment-at-intercell-x-999999999-invites-ade-2022",
+      "title": "Alignment at Intercell x 999999999 Invites | ADE 2022",
+      "artist": "Alignment",
+      "youtubeId": "6qSnO5U95yU",
+      "duration": null
+    },
+    {
+      "id": "999999999::999999999-live-boiler-room-paris-possession",
+      "title": "999999999 (Live) | Boiler Room Paris: Possession",
+      "artist": "999999999",
+      "youtubeId": "a5Lb5vBIa9Y",
+      "duration": null
+    },
+    {
+      "id": "999999999::999999999-awakenings-festival-2025",
+      "title": "999999999 | Awakenings Festival 2025",
+      "artist": "999999999",
+      "youtubeId": "4ayP8pfGMoc",
+      "duration": null
+    },
+    {
+      "id": "999999999::999999999-at-intercell-x-999999999-all-night-long",
+      "title": "999999999 at Intercell x 999999999 [All Night Long]",
+      "artist": "999999999",
+      "youtubeId": "S7xipFV26js",
+      "duration": null
+    },
+    {
+      "id": "999999999::999999999-at-intercell-x-snts-invites-ade-2021-full-video-set",
+      "title": "999999999 at Intercell x SNTS Invites | ADE 2021 - FULL VIDEO SET",
+      "artist": "999999999",
+      "youtubeId": "FG02ONL7cBg",
+      "duration": null
+    },
+    {
+      "id": "999999999::999999999-awakenings-easter-festival-2022",
+      "title": "999999999 - Awakenings Easter Festival 2022",
+      "artist": "999999999",
+      "youtubeId": "MF7k7dFaZ04",
+      "duration": null
+    },
+    {
+      "id": "azyr::azyr-boiler-room-x-teletech-festival-2023",
+      "title": "AZYR | Boiler Room x Teletech Festival 2023",
+      "artist": "Azyr",
+      "youtubeId": "UJ6oBCM2GUM",
+      "duration": null
+    },
+    {
+      "id": "azyr::azyr-main-floor-gotec-club-3-h-hard-hitting-techno-set",
+      "title": "Azyr | Main Floor - Gotec Club | 3 h hard-hitting techno set",
+      "artist": "Azyr",
+      "youtubeId": "YJQn2kcOP3o",
+      "duration": null
+    },
+    {
+      "id": "mrd::mrd-boiler-room-x-igloofest-2023",
+      "title": "MRD | Boiler Room x Igloofest 2023",
+      "artist": "MRD",
+      "youtubeId": "HFlwMa-bOiQ",
+      "duration": null
+    },
+    {
+      "id": "mrd::mrd-at-intercell-outdoor-hadone-invites-2022",
+      "title": "MRD at Intercell Outdoor: Hadone Invites 2022",
+      "artist": "MRD",
+      "youtubeId": "glQnNDWcgXM",
+      "duration": null
+    },
+    {
+      "id": "nico-moreno::boiler-room-x-teletech-festival-2023",
+      "title": "Boiler Room x Teletech Festival 2023",
+      "artist": "Nico Moreno",
+      "youtubeId": "6nhPuJIjnWI",
+      "duration": null
+    },
+    {
+      "id": "nico-moreno::nico-moreno-boiler-room-denver",
+      "title": "Nico Moreno | Boiler Room: Denver",
+      "artist": "Nico Moreno",
+      "youtubeId": "UyqBSncE7LQ",
+      "duration": null
+    },
+    {
+      "id": "nico-moreno::nico-moreno-boiler-room",
+      "title": "NICO MORENO @ \"BOILER ROOM\"",
+      "artist": "Nico Moreno",
+      "youtubeId": "H9InjufBxdQ",
+      "duration": null
+    },
+    {
+      "id": "alarico::alarico-boiler-room-frankfurt",
+      "title": "Alarico | Boiler Room: Frankfurt",
+      "artist": "Alarico",
+      "youtubeId": "uQMthOH6k1I",
+      "duration": null
+    },
+    {
+      "id": "alarico::alarico-live-stone-techno-2024-arte-concert",
+      "title": "Alarico (live) - Stone Techno 2024 - ARTE Concert",
+      "artist": "Alarico",
+      "youtubeId": "60F1npXlCTw",
+      "duration": null
+    },
+    {
+      "id": "vntm::vntm-live-awakenings-festival-2025",
+      "title": "VNTM live   Awakenings Festival 2025",
+      "artist": "VNTM",
+      "youtubeId": "hz3aZAXYF2g",
+      "duration": null
+    },
+    {
+      "id": "vntm::awakenings-29-12-vntm-live",
+      "title": "Awakenings 29.12 | VNTM (Live)",
+      "artist": "VNTM",
+      "youtubeId": "5EDeBMHthSc",
+      "duration": null
+    },
+    {
+      "id": "jks::jks-boiler-room-berlin",
+      "title": "JKS | Boiler Room: Berlin",
+      "artist": "JKS",
+      "youtubeId": "FMEjKr8lRng",
+      "duration": null
+    },
+    {
+      "id": "jks::jawbreakers-jks-mayeul-boiler-room-paris-possession",
+      "title": "Jawbreakers (JKS & Mayeul) | Boiler Room Paris: Possession",
+      "artist": "JKS",
+      "youtubeId": "bIeigeEhATs",
+      "duration": null
+    },
+    {
+      "id": "rikhter::rikhter-live-boiler-room-x-hardline-pune",
+      "title": "Rikhter (Live) | Boiler Room x Hardline: Pune",
+      "artist": "Rikhter",
+      "youtubeId": "z6Kz4x3Ri3o",
+      "duration": null
+    },
+    {
+      "id": "rikhter::rikhter-at-boiler-room-techno-rave-boilerroom-dj",
+      "title": "Rikhter🇷🇺 at Boiler Room #techno #rave #boilerroom #dj",
+      "artist": "Rikhter",
+      "youtubeId": "UEeWqeYdGRI",
+      "duration": null
+    },
+    {
+      "id": "somewhen::somewhen-h-r-may-31-2023",
+      "title": "Somewhen | HÖR - May 31 / 2023",
+      "artist": "Somewhen",
+      "youtubeId": "IdEX3dfAyLI",
+      "duration": null
+    },
+    {
+      "id": "somewhen::4mp-somewhen-h-r-apr-13-2022",
+      "title": "4MP - Somewhen | HÖR - Apr 13 / 2022",
+      "artist": "Somewhen",
+      "youtubeId": "L8KkGewleGc",
+      "duration": null
+    },
+    {
+      "id": "stranger::it-got-even-hotter-in-the-boiler-room-henrycreel-001strangerthings-fyp-strangerthings4",
+      "title": "It got even HOTTER in the boiler room #henrycreel #001strangerthings #fyp #strangerthings4",
+      "artist": "Stranger",
+      "youtubeId": "X27CfESc6DY",
+      "duration": null
+    },
+    {
+      "id": "stranger::prof-stranger-h-r-jul-25-2023",
+      "title": "Prof. Stranger | HÖR - Jul 25 / 2023",
+      "artist": "Stranger",
+      "youtubeId": "up4fDq8oyi8",
+      "duration": null
+    },
+    {
+      "id": "spektre::max-cooper-inhaleexhale-spektre-s-breathe-out-mix-veryverywrongindeed",
+      "title": "Max Cooper - \"InhaleExhale - Spektre's Breathe Out Mix\" (Veryverywrongindeed)",
+      "artist": "Spektre",
+      "youtubeId": "lvjAQT07-hg",
+      "duration": null
+    },
+    {
+      "id": "anfisa-letyago::anfisa-letyago-awakenings-spring-festival-2023",
+      "title": "Anfisa Letyago | Awakenings Spring Festival 2023",
+      "artist": "Anfisa Letyago",
+      "youtubeId": "i8o1fCMAtK0",
+      "duration": null
+    },
+    {
+      "id": "anfisa-letyago::anfisa-letyago-awakenings-x-x-ade-2023",
+      "title": "Anfisa Letyago | Awakenings x X ADE  2023",
+      "artist": "Anfisa Letyago",
+      "youtubeId": "wA9PQ4fkhbY",
+      "duration": null
+    },
+    {
+      "id": "yazzus::yazzus-boiler-room-x-glitch-festival-2022",
+      "title": "Yazzus | Boiler Room x Glitch Festival 2022",
+      "artist": "Yazzus",
+      "youtubeId": "7d1Z5drgjcs",
+      "duration": null
+    },
+    {
+      "id": "oguz::oguz-boiler-room-x-teletech-festival-2023",
+      "title": "OGUZ | Boiler Room x Teletech Festival 2023",
+      "artist": "Oguz",
+      "youtubeId": "Yz6k1z8xZog",
+      "duration": null
+    },
+    {
+      "id": "oguz::oguz-gotec-main-floor-2026-ogtec",
+      "title": "OGUZ | GOTEC - MAIN FLOOR | 2026 | OGTEC",
+      "artist": "Oguz",
+      "youtubeId": "9lE2rVGxdDQ",
+      "duration": null
+    },
+    {
+      "id": "cleric::cleric-h-r-jan-7-2023",
+      "title": "Cleric | HÖR - Jan 7 / 2023",
+      "artist": "Cleric",
+      "youtubeId": "3K8w4HgjJwY",
+      "duration": null
+    },
+    {
+      "id": "cleric::cleric-awakenings-podcast-2024",
+      "title": "Cleric - Awakenings Podcast 2024",
+      "artist": "Cleric",
+      "youtubeId": "IcBdV6uOWyA",
+      "duration": null
+    },
+    {
+      "id": "petduo::petduo-verknipt-kingsday-2024-hembrugterrein-zaandam",
+      "title": "PETDuo @ Verknipt Kingsday 2024 | Hembrugterrein, Zaandam",
+      "artist": "Petduo",
+      "youtubeId": "UZeEbnXjooE",
+      "duration": null
+    },
+    {
+      "id": "petduo::petduo-verknipt-easter-special-09-04-2023-afas-live-amsterdam",
+      "title": "PETDuo @ Verknipt Easter Special 09-04-2023 | AFAS Live, Amsterdam",
+      "artist": "Petduo",
+      "youtubeId": "KIwvqUqVlnQ",
+      "duration": null
+    },
+    {
+      "id": "front-line-assembly::front-line-assembly-exhale",
+      "title": "Front Line Assembly - Exhale",
+      "artist": "Front Line Assembly",
+      "youtubeId": "_j03N4im1T0",
+      "duration": null
+    },
+    {
+      "id": "obscure-shape::shdw-obscure-shape-boiler-room-glasgow-dj-set",
+      "title": "Shdw & Obscure Shape Boiler Room Glasgow DJ Set",
+      "artist": "Obscure Shape",
+      "youtubeId": "5Ya3gKZbO18",
+      "duration": null
+    },
+    {
+      "id": "obscure-shape::awakenings-ade-2019-shdw-obscure-shape",
+      "title": "Awakenings ADE 2019 - SHDW & Obscure Shape",
+      "artist": "Obscure Shape",
+      "youtubeId": "_vDeehW-0iw",
+      "duration": null
+    },
+    {
+      "id": "rrose::rrose-boiler-room-mumbai",
+      "title": "Rrose | Boiler Room: Mumbai",
+      "artist": "Rrose",
+      "youtubeId": "5nnVauFwD5k",
+      "duration": null
+    },
+    {
+      "id": "rrose::rrose-dj-set-boiler-room-x-kaos",
+      "title": "Rrose DJ Set | Boiler Room x Kaos",
+      "artist": "Rrose",
+      "youtubeId": "Ml7w3XWkEXI",
+      "duration": null
+    },
+    {
+      "id": "blawan::blawan-boiler-room-london-dj-set",
+      "title": "Blawan Boiler Room London DJ set",
+      "artist": "Blawan",
+      "youtubeId": "NUOlLkVfjDE",
+      "duration": null
+    },
+    {
+      "id": "blawan::spfdj-b2b-blawan-boiler-room-festival-day-4-club",
+      "title": "SPFDJ B2B Blawan | Boiler Room Festival | Day 4: Club",
+      "artist": "Blawan",
+      "youtubeId": "eFhsH3j4fOU",
+      "duration": null
+    },
+    {
+      "id": "lucy::lucy-boiler-room-x-kompass",
+      "title": "LUCY | Boiler Room x Kompass",
+      "artist": "Lucy",
+      "youtubeId": "EFgCPhGRt5A",
+      "duration": null
+    },
+    {
+      "id": "lucy::lucy-boiler-room-berlin-studio-dj-set",
+      "title": "Lucy Boiler Room Berlin Studio Dj Set",
+      "artist": "Lucy",
+      "youtubeId": "J5qyTPBqj9k",
+      "duration": null
+    },
+    {
+      "id": "kangding-ray::kangding-ray-boiler-room-berlin-live-set",
+      "title": "Kangding Ray Boiler Room Berlin Live Set",
+      "artist": "Kangding Ray",
+      "youtubeId": "MN1YhlRJOx0",
+      "duration": null
+    },
+    {
+      "id": "kangding-ray::kangding-ray-at-intercell-x-stroboscopic-artefacts-ade-2018-full-set",
+      "title": "Kangding Ray at Intercell x Stroboscopic Artefacts | ADE 2018 - FULL SET",
+      "artist": "Kangding Ray",
+      "youtubeId": "nw1_xsEGu2s",
+      "duration": null
+    },
+    {
+      "id": "victor-ruiz::bart-skils-victor-ruiz-awakenings-2019",
+      "title": "Bart Skils & Victor Ruiz @ Awakenings 2019",
+      "artist": "Victor Ruiz",
+      "youtubeId": "TSJphd3Vvj8",
+      "duration": null
+    },
+    {
+      "id": "victor-ruiz::awakenings-festival-2019-saturday-live-set-bart-skils-victor-ruiz-area-v",
+      "title": "Awakenings Festival 2019 Saturday - Live set Bart Skils & Victor Ruiz @ Area V",
+      "artist": "Victor Ruiz",
+      "youtubeId": "avs7kmerglc",
+      "duration": null
+    },
+    {
+      "id": "josh-wink::josh-wink-boiler-room-x-budweiser-miami-dj-set",
+      "title": "Josh Wink Boiler Room x Budweiser Miami DJ Set",
+      "artist": "Josh Wink",
+      "youtubeId": "1CrlxJM0I54",
+      "duration": null
+    },
+    {
+      "id": "josh-wink::josh-wink-awakenings-easter-anniversary-24-04-11-gashouder-amsterdam",
+      "title": "Josh Wink @ Awakenings Easter Anniversary 24-04-11 Gashouder Amsterdam",
+      "artist": "Josh Wink",
+      "youtubeId": "IbfpjyhL7j4",
+      "duration": null
+    },
+    {
+      "id": "ansome::ansome-live-h-r-jul-8-2023",
+      "title": "Ansome (LIVE) | HÖR - Jul 8 / 2023",
+      "artist": "Ansome",
+      "youtubeId": "EP1-bDBBwEg",
+      "duration": null
+    },
+    {
+      "id": "ansome::ansome-live-at-intercell-x-perc-trax-ade-2019-full-set",
+      "title": "Ansome [live] at Intercell x Perc Trax | ADE 2019 - FULL SET",
+      "artist": "Ansome",
+      "youtubeId": "ZFOHvXHttuE",
+      "duration": null
+    },
+    {
+      "id": "dave-the-drummer::dave-the-drummer-reventando-hor-berlin-techno-dj-ravers-set-mix-vinyl-track",
+      "title": "Dave The Drummer reventando Hor Berlin #techno #dj #ravers #set #mix #vinyl #track",
+      "artist": "D.A.V.E. The Drummer",
+      "youtubeId": "uCYECAJn1fU",
+      "duration": null
+    },
+    {
+      "id": "paranoid-london::paranoid-london-boiler-room-x-eristoff-day-night-vienna",
+      "title": "Paranoid London | Boiler Room x Eristoff Day & Night | Vienna",
+      "artist": "Paranoid London",
+      "youtubeId": "Op4srH2uoWw",
+      "duration": null
+    },
+    {
+      "id": "dj-pierre::dj-pierre-75-min-boiler-room-los-angeles-dj-set",
+      "title": "DJ Pierre 75 min Boiler Room Los Angeles DJ Set",
+      "artist": "DJ Pierre",
+      "youtubeId": "-bicMOFbBMI",
+      "duration": null
+    },
+    {
+      "id": "dj-pierre::dj-pierre-boiler-room-chicago",
+      "title": "DJ Pierre | Boiler Room: Chicago",
+      "artist": "DJ Pierre",
+      "youtubeId": "NsR7kVgxFLs",
+      "duration": null
+    },
+    {
+      "id": "randomer::randomer-boiler-room-x-dekmantel-festival-2018",
+      "title": "Randomer | Boiler Room x Dekmantel Festival 2018",
+      "artist": "Randomer",
+      "youtubeId": "q0RKYQIDqMc",
+      "duration": null
+    },
+    {
+      "id": "randomer::randomer-boiler-room-london-dj-set",
+      "title": "Randomer Boiler Room London DJ Set",
+      "artist": "Randomer",
+      "youtubeId": "fe7GcoqA5HU",
+      "duration": null
+    },
+    {
+      "id": "len-d::len-faki-boiler-room-berlin-dj-set",
+      "title": "Len Faki Boiler Room Berlin DJ Set",
+      "artist": "Len D",
+      "youtubeId": "jQRI3b2SX8c",
+      "duration": null
+    },
+    {
+      "id": "len-d::lens-feat-linguistics-mc-boiler-room-nottingham",
+      "title": "Lens feat. Linguistics MC | Boiler Room: Nottingham",
+      "artist": "Len D",
+      "youtubeId": "U8Gj270JC94",
+      "duration": null
+    },
+    {
+      "id": "alex-bau::alex-bau-awakenings-eindhoven-2011",
+      "title": "Alex Bau - Awakenings Eindhoven 2011",
+      "artist": "Alex Bau",
+      "youtubeId": "oU-6IORR5Cc",
+      "duration": null
+    },
+    {
+      "id": "alex-bau::alex-bau-awakenings-29-01-2011",
+      "title": "Alex Bau @ Awakenings 29-01-2011",
+      "artist": "Alex Bau",
+      "youtubeId": "oHj0bAFw94Q",
+      "duration": null
+    }
+  ],
+  "releasesRemaining": [],
+  "removedArtists": [
+    "amelior",
+    "ash-code",
+    "assemblage-23",
+    "basswell",
+    "ben-spencer",
+    "berkan",
+    "berlyn",
+    "bianca-obyn",
+    "blasha-allatt",
+    "blicz",
+    "chlar",
+    "clouds",
+    "cltx",
+    "cravet",
+    "crystal-distortion",
+    "daxson",
+    "debora-alessio",
+    "deepbass",
+    "drab-majesty",
+    "eric-sneo",
+    "francois-x",
+    "frank-nitzinsky",
+    "front-242",
+    "ha-cay",
+    "hante",
+    "hardfloor",
+    "hausman",
+    "hector-oaks",
+    "hemka",
+    "hiccup",
+    "igor-r",
+    "ignacio",
+    "iochan",
+    "jacidorex",
+    "kaiser",
+    "klaps",
+    "klonne",
+    "krow",
+    "lars-huismann",
+    "leather-strip",
+    "lebanon-hanover",
+    "lft",
+    "linea-aspera",
+    "lsdxoxo",
+    "matrakk",
+    "mcmlxxxv",
+    "mcr-t",
+    "moia",
+    "nitzer-ebb",
+    "norbak",
+    "novah",
+    "ogian",
+    "ogive",
+    "part-time-killer",
+    "per-sona",
+    "petra-flurr",
+    "ph87",
+    "phuture-corp",
+    "pinion",
+    "psyk32",
+    "pulsar",
+    "randall",
+    "raw-distort",
+    "raxyor",
+    "rosati",
+    "rumina",
+    "she-past-away",
+    "spd",
+    "tafkamp",
+    "temo",
+    "the-soft-moon",
+    "vil",
+    "vilchezz",
+    "vklf",
+    "vrtx",
+    "warface",
+    "weichentechnikk",
+    "yanamaste",
+    "yant"
+  ],
+  "placeholderPatterns": [
+    "Warehouse Pressure",
+    "Peak Hour",
+    "Distorted Dreams",
+    "Night Shift",
+    "Raw Energy",
+    "Factory Floor",
+    "Steel Rhythm",
+    "Dark Matter",
+    "Machine Soul",
+    "Void",
+    "Cold Pulse",
+    "Body Control",
+    "Neon Decay",
+    "Ashes",
+    "Midnight Drive",
+    "Live Session",
+    "Essential Mix",
+    "Warehouse"
+  ]
+}

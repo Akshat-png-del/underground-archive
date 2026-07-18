@@ -1,10 +1,14 @@
 {
   "slug": "holy-priest",
   "name": "Holy Priest",
-  "updatedAt": "2026-06-28T01:38:11.872Z",
+  "updatedAt": "2026-07-16T23:51:01.526Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:34:55.011Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:51:01.526Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/eK148TLK2AefCDJdwGBVXBDCvqOGTYoYwyeb4wACIU2f0bmwdYXZEk_yOXbr9E_4aLR7XNwFIA=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/eK148TLK2AefCDJdwGBVXBDCvqOGTYoYwyeb4wACIU2f0bmwdYXZEk_yOXbr9E_4aLR7XNwFIA=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/@holypriest_music"
+    "url": "https://i.scdn.co/image/ab6761610000e5eb3ed6781742a2f3159aa4ee69",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/5UG2ipdnA4vk8Eevkf1s06"
+  },
+  "spotify": {
+    "artistId": "5UG2ipdnA4vk8Eevkf1s06",
+    "name": "Holy Priest",
+    "url": "https://open.spotify.com/artist/5UG2ipdnA4vk8Eevkf1s06",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb3ed6781742a2f3159aa4ee69",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb3ed6781742a2f3159aa4ee69",
+      "https://i.scdn.co/image/ab676161000051743ed6781742a2f3159aa4ee69",
+      "https://i.scdn.co/image/ab6761610000f1783ed6781742a2f3159aa4ee69"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

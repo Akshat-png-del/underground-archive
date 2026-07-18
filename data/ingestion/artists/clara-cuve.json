@@ -1,0 +1,31 @@
+{
+  "slug": "clara-cuve",
+  "name": "Clara Cuvé",
+  "updatedAt": "2026-07-17T06:50:40.152Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:30.850Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "7daFW9cX9jHmOxZ0PIofRm",
+    "name": "Clara Cuvé",
+    "url": "https://open.spotify.com/artist/7daFW9cX9jHmOxZ0PIofRm",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb69cd0a65a4536e6a9eaeaa8d",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb69cd0a65a4536e6a9eaeaa8d",
+      "https://i.scdn.co/image/ab6761610000517469cd0a65a4536e6a9eaeaa8d",
+      "https://i.scdn.co/image/ab6761610000f17869cd0a65a4536e6a9eaeaa8d"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab6761610000517469cd0a65a4536e6a9eaeaa8d",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7daFW9cX9jHmOxZ0PIofRm"
+  }
+}

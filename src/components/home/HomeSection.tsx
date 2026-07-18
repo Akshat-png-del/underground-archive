@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 
 interface HomeCarouselProps {
   children: React.ReactNode;
@@ -11,10 +12,10 @@ export function HomeCarousel({ children, className = "" }: HomeCarouselProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative min-w-0 max-w-full ${className}`}>
       <div
         ref={ref}
-        className="flex gap-4 overflow-x-auto pb-2 scroll-smooth snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex max-w-full gap-4 overflow-x-auto pb-2 scroll-smooth snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {children}
       </div>
@@ -71,9 +72,9 @@ export function HomeSection({
             {subtitle && <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-light">{subtitle}</p>}
           </div>
           {href && (
-            <a href={href} className="text-sm text-accent hover:underline">
+            <Link href={href} className="text-sm text-accent hover:underline">
               {linkLabel}
-            </a>
+            </Link>
           )}
         </div>
         <div className="mt-10">{children}</div>

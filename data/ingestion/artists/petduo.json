@@ -1,7 +1,7 @@
 {
   "slug": "petduo",
   "name": "Petduo",
-  "updatedAt": "2026-06-28T19:30:17.128Z",
+  "updatedAt": "2026-07-17T06:54:15.565Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:38.557Z",
@@ -9,7 +9,7 @@
       "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:971"
     },
     "spotify": {
-      "syncedAt": "2026-06-28T19:30:17.128Z",
+      "syncedAt": "2026-07-18T00:55:39.223Z",
       "status": "ok"
     }
   },
@@ -25,9 +25,11 @@
     "genres": [],
     "followers": 0,
     "popularity": 0,
-    "imageUrl": "/images/portraits/researched/petduo.jpg",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb75f0a766aa3968cc4e704c0a",
     "imageUrls": [
-      "/images/portraits/researched/petduo.jpg"
+      "https://i.scdn.co/image/ab6761610000e5eb75f0a766aa3968cc4e704c0a",
+      "https://i.scdn.co/image/ab6761610000517475f0a766aa3968cc4e704c0a",
+      "https://i.scdn.co/image/ab6761610000f17875f0a766aa3968cc4e704c0a"
     ],
     "relatedArtists": []
   }

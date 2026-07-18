@@ -1,0 +1,5493 @@
+{
+  "keepCount": 71,
+  "removeCount": 79,
+  "remove": [
+    {
+      "slug": "cravet",
+      "name": "CRAVET",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ben-spencer",
+      "name": "Ben Spencer",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ogian",
+      "name": "Ogian",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "moia",
+      "name": "Moia",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "daxson",
+      "name": "Daxson",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "yant",
+      "name": "Yant",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ignacio",
+      "name": "Ignacio",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "chlar",
+      "name": "Chlar",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "klaps",
+      "name": "Klaps (BE)",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "lsdxoxo",
+      "name": "LSDXOXO",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ogive",
+      "name": "Ogive",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "cltx",
+      "name": "CLTX",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "krow",
+      "name": "Krow",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "psyk32",
+      "name": "Psyk32",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "tafkamp",
+      "name": "TAFKAMP",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "lars-huismann",
+      "name": "Lars Huismann",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "pinion",
+      "name": "Pinion",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "kaiser",
+      "name": "Kaiser",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "blasha-allatt",
+      "name": "Blasha & Allatt",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "rosati",
+      "name": "Rosati",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "novah",
+      "name": "Novah",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "jacidorex",
+      "name": "Jacidorex",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ha-cay",
+      "name": "Ha CAY",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "blicz",
+      "name": "Blicz",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "basswell",
+      "name": "Basswell",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "matrakk",
+      "name": "Matrakk",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "yanamaste",
+      "name": "Yanamaste",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "warface",
+      "name": "Warface",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "mcmlxxxv",
+      "name": "MCMLXXXV",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "temo",
+      "name": "Temo",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "raxyor",
+      "name": "Raxyor",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "vil",
+      "name": "VIL",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "vilchezz",
+      "name": "VILCHEZZ",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "hemka",
+      "name": "Hemka",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "iochan",
+      "name": "Iochan",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "randall",
+      "name": "Randall",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "hausman",
+      "name": "Hausman",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "vklf",
+      "name": "VKLF",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "pulsar",
+      "name": "Pulsar",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "amelior",
+      "name": "Amelior",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "vrtx",
+      "name": "VRTX",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "klonne",
+      "name": "Klonne",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "hiccup",
+      "name": "Hiccup",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "igor-r",
+      "name": "Igor R",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "raw-distort",
+      "name": "Raw Distort",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "berkan",
+      "name": "Berkan",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "berlyn",
+      "name": "Berlyn",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "bianca-obyn",
+      "name": "Bianca Oblivion",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "eric-sneo",
+      "name": "Eric Sneo",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 0,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId"
+      ]
+    },
+    {
+      "slug": "spd",
+      "name": "SPD",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "frank-nitzinsky",
+      "name": "Frank Nitzinsky",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "crystal-distortion",
+      "name": "Crystal Distortion",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "hardfloor",
+      "name": "Hardfloor",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 0,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId"
+      ]
+    },
+    {
+      "slug": "nitzer-ebb",
+      "name": "Nitzer Ebb",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "leather-strip",
+      "name": "Leather Strip",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "assemblage-23",
+      "name": "Assemblage 23",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "hante",
+      "name": "Hante",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "she-past-away",
+      "name": "She Past Away",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "lebanon-hanover",
+      "name": "Lebanon Hanover",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "drab-majesty",
+      "name": "Drab Majesty",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "linea-aspera",
+      "name": "Linea Aspera",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ash-code",
+      "name": "Ash Code",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "rumina",
+      "name": "Rumina",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "per-sona",
+      "name": "Per-sona",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "the-soft-moon",
+      "name": "The Soft Moon",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "phuture-corp",
+      "name": "Phuture Corp",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "clouds",
+      "name": "Clouds",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ph87",
+      "name": "PH87",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "part-time-killer",
+      "name": "Part Time Killer",
+      "tier": 3,
+      "ver": "unverified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "debora-alessio",
+      "name": "Debora Alessio",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "francois-x",
+      "name": "François X",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "hector-oaks",
+      "name": "Héctor Oaks",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "weichentechnikk",
+      "name": "Weichentechnikk",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "petra-flurr",
+      "name": "Petra Flurr",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "front-242",
+      "name": "Front 242",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "deepbass",
+      "name": "Deepbass",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "norbak",
+      "name": "Nørbak",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "lft",
+      "name": "L.F.T.",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "mcr-t",
+      "name": "MCR-T",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": false,
+      "reasons": [
+        "no real track URL and no playable set",
+        "all tracks are stubs"
+      ]
+    }
+  ],
+  "keep": [
+    {
+      "slug": "sara-landry",
+      "name": "Sara Landry",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 8,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 8,
+      "weakUrls": 0,
+      "sets": 6,
+      "playableSets": 6,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "i-hate-models",
+      "name": "I Hate Models",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 10,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 10,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "kobosil",
+      "name": "Kobosil",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 9,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 6,
+      "weakUrls": 3,
+      "sets": 8,
+      "playableSets": 8,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "vtss",
+      "name": "VTSS",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 9,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 9,
+      "weakUrls": 0,
+      "sets": 7,
+      "playableSets": 7,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "regal",
+      "name": "Regal",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 10,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 5,
+      "weakUrls": 5,
+      "sets": 6,
+      "playableSets": 6,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "boy-harsher",
+      "name": "Boy Harsher",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 9,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 6,
+      "weakUrls": 3,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "amelie-lens",
+      "name": "Amelie Lens",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 10,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 5,
+      "weakUrls": 5,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "charlotte-de-witte",
+      "name": "Charlotte de Witte",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 8,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 8,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "hadone",
+      "name": "Hadone",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 10,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 5,
+      "weakUrls": 5,
+      "sets": 6,
+      "playableSets": 6,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "anetha",
+      "name": "Anetha",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 10,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 5,
+      "weakUrls": 5,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "chris-liebing",
+      "name": "Chris Liebing",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 5,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "dj-rush",
+      "name": "DJ Rush",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "sven-wittekind",
+      "name": "Sven Wittekind",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 3,
+      "playableSets": 3,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "robert-natus",
+      "name": "Robert Natus",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 5,
+      "weakUrls": 0,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "arkus-p",
+      "name": "Arkus P",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 8,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 8,
+      "weakUrls": 0,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "boris-s",
+      "name": "Boris S.",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 8,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 8,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "paula-temple",
+      "name": "Paula Temple",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 8,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 8,
+      "weakUrls": 0,
+      "sets": 6,
+      "playableSets": 6,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "perc",
+      "name": "Perc",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "ancient-methods",
+      "name": "Ancient Methods",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "surgeon",
+      "name": "Surgeon",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "adam-x",
+      "name": "Adam X",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "phase-fatale",
+      "name": "Phase Fatale",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "helena-hauff",
+      "name": "Helena Hauff",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "rebekah",
+      "name": "Rebekah",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "ghost-in-the-machine",
+      "name": "Ghost in the Machine",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 8,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 8,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "codex-empire",
+      "name": "Codex Empire",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "orphx",
+      "name": "Orphx",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "laven",
+      "name": "LAVEN",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 5,
+      "weakUrls": 0,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "klangkuenstler",
+      "name": "Klangkuenstler",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 4,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 4,
+      "weakUrls": 0,
+      "sets": 1,
+      "playableSets": 1,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "dyen",
+      "name": "DYEN",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "trym",
+      "name": "Trym",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 7,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 7,
+      "weakUrls": 0,
+      "sets": 6,
+      "playableSets": 6,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "charlie-sparks",
+      "name": "Charlie Sparks",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 6,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 6,
+      "weakUrls": 0,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "parfait",
+      "name": "Parfait",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 2,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 2,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "funk-tribu",
+      "name": "Funk Tribu",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "holy-priest",
+      "name": "Holy Priest",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "vendex",
+      "name": "Vendex",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 8,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 8,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "nikolina",
+      "name": "Nikolina",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 2,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 2,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "fantasm",
+      "name": "Fantasm",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 7,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 7,
+      "weakUrls": 0,
+      "sets": 6,
+      "playableSets": 6,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "alignment",
+      "name": "Alignment",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 4,
+      "playableSets": 4,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "999999999",
+      "name": "999999999",
+      "tier": 1,
+      "ver": "verified",
+      "hasSpotifyId": true,
+      "totalTracks": 7,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 7,
+      "weakUrls": 0,
+      "sets": 5,
+      "playableSets": 5,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "shlomo",
+      "name": "Shlømo",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 3,
+      "stubTracks": 0,
+      "blankUrlTracks": 0,
+      "realTrackUrls": 3,
+      "weakUrls": 0,
+      "sets": 0,
+      "playableSets": 0,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "azyr",
+      "name": "Azyr",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "mrd",
+      "name": "MRD",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "nico-moreno",
+      "name": "Nico Moreno",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 10,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 5,
+      "weakUrls": 0,
+      "sets": 3,
+      "playableSets": 3,
+      "keep": true,
+      "reasons": []
+    },
+    {
+      "slug": "alarico",
+      "name": "Alarico",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "vntm",
+      "name": "VNTM",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "jks",
+      "name": "JKS",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "rikhter",
+      "name": "Rikhter",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "somewhen",
+      "name": "Somewhen",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "stranger",
+      "name": "Stranger",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "spektre",
+      "name": "Spektre",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 1,
+      "playableSets": 1,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "anfisa-letyago",
+      "name": "Anfisa Letyago",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "yazzus",
+      "name": "Yazzus",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 1,
+      "playableSets": 1,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "oguz",
+      "name": "Oguz",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "cleric",
+      "name": "Cleric",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "petduo",
+      "name": "Petduo",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "front-line-assembly",
+      "name": "Front Line Assembly",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 1,
+      "playableSets": 1,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "obscure-shape",
+      "name": "Obscure Shape",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "rrose",
+      "name": "Rrose",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "blawan",
+      "name": "Blawan",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "lucy",
+      "name": "Lucy",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "kangding-ray",
+      "name": "Kangding Ray",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "victor-ruiz",
+      "name": "Victor Ruiz",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "josh-wink",
+      "name": "Josh Wink",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "ansome",
+      "name": "Ansome",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "dave-the-drummer",
+      "name": "D.A.V.E. The Drummer",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 1,
+      "playableSets": 1,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "paranoid-london",
+      "name": "Paranoid London",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 1,
+      "playableSets": 1,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "dj-pierre",
+      "name": "DJ Pierre",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "randomer",
+      "name": "Randomer",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "len-d",
+      "name": "Len D",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": false,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "no spotifyArtistId",
+        "all tracks are stubs"
+      ]
+    },
+    {
+      "slug": "alex-bau",
+      "name": "Alex Bau",
+      "tier": 2,
+      "ver": "partial",
+      "hasSpotifyId": true,
+      "totalTracks": 5,
+      "stubTracks": 5,
+      "blankUrlTracks": 5,
+      "realTrackUrls": 0,
+      "weakUrls": 0,
+      "sets": 2,
+      "playableSets": 2,
+      "keep": true,
+      "reasons": [
+        "all tracks are stubs"
+      ]
+    }
+  ],
+  "tracksToStrip": [
+    {
+      "artistSlug": "kobosil",
+      "title": "We Grow",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "kobosil",
+      "title": "Pressure",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "kobosil",
+      "title": "Seil 01",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "regal",
+      "title": "Verdansk",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "regal",
+      "title": "Involve 01",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "regal",
+      "title": "Acid Rage",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "regal",
+      "title": "Schranz Tool",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "regal",
+      "title": "Madrid Nights",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "boy-harsher",
+      "title": "Country Girl",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "boy-harsher",
+      "title": "Machina",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "boy-harsher",
+      "title": "Face the Fire",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "amelie-lens",
+      "title": "In My Mind",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "amelie-lens",
+      "title": "Higher",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "amelie-lens",
+      "title": "Exhale",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "amelie-lens",
+      "title": "Raver",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "amelie-lens",
+      "title": "Never",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "hadone",
+      "title": "Angel Numbers",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "hadone",
+      "title": "Never",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "hadone",
+      "title": "Gabber",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "hadone",
+      "title": "Possession",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "hadone",
+      "title": "Lyon",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "anetha",
+      "title": "Acid Drop",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "anetha",
+      "title": "Mama Told Ya",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "anetha",
+      "title": "Schranz Tool",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "anetha",
+      "title": "Paris Nights",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "anetha",
+      "title": "Rave",
+      "reason": "album/artist URL not track"
+    },
+    {
+      "artistSlug": "azyr",
+      "title": "Azyr",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "azyr",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "azyr",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "azyr",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "azyr",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "mrd",
+      "title": "MRD",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "mrd",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "mrd",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "mrd",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "mrd",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "nico-moreno",
+      "title": "Nico Moreno",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "nico-moreno",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "nico-moreno",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "nico-moreno",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "nico-moreno",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alarico",
+      "title": "Alarico",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alarico",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alarico",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alarico",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alarico",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "vntm",
+      "title": "VNTM",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "vntm",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "vntm",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "vntm",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "vntm",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "jks",
+      "title": "JKS",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "jks",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "jks",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "jks",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "jks",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rikhter",
+      "title": "Rikhter",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rikhter",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rikhter",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rikhter",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rikhter",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "somewhen",
+      "title": "Somewhen",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "somewhen",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "somewhen",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "somewhen",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "somewhen",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "stranger",
+      "title": "Stranger",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "stranger",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "stranger",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "stranger",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "stranger",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "spektre",
+      "title": "Spektre",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "spektre",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "spektre",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "spektre",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "spektre",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "anfisa-letyago",
+      "title": "Anfisa Letyago",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "anfisa-letyago",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "anfisa-letyago",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "anfisa-letyago",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "anfisa-letyago",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "yazzus",
+      "title": "Yazzus",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "yazzus",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "yazzus",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "yazzus",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "yazzus",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "oguz",
+      "title": "Oguz",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "oguz",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "oguz",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "oguz",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "oguz",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "cleric",
+      "title": "Cleric",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "cleric",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "cleric",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "cleric",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "cleric",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "petduo",
+      "title": "Petduo",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "petduo",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "petduo",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "petduo",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "petduo",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "front-line-assembly",
+      "title": "Front Line Assembly",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "front-line-assembly",
+      "title": "Factory Floor",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "front-line-assembly",
+      "title": "Steel Rhythm",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "front-line-assembly",
+      "title": "Dark Matter",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "front-line-assembly",
+      "title": "Machine Soul",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "obscure-shape",
+      "title": "Obscure Shape",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "obscure-shape",
+      "title": "Factory Floor",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "obscure-shape",
+      "title": "Steel Rhythm",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "obscure-shape",
+      "title": "Dark Matter",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "obscure-shape",
+      "title": "Machine Soul",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rrose",
+      "title": "Rrose",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rrose",
+      "title": "Factory Floor",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rrose",
+      "title": "Steel Rhythm",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rrose",
+      "title": "Dark Matter",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "rrose",
+      "title": "Machine Soul",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "blawan",
+      "title": "Blawan",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "blawan",
+      "title": "Factory Floor",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "blawan",
+      "title": "Steel Rhythm",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "blawan",
+      "title": "Dark Matter",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "blawan",
+      "title": "Machine Soul",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "lucy",
+      "title": "Lucy",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "lucy",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "lucy",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "lucy",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "lucy",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "kangding-ray",
+      "title": "Kangding Ray",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "kangding-ray",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "kangding-ray",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "kangding-ray",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "kangding-ray",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "victor-ruiz",
+      "title": "Victor Ruiz",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "victor-ruiz",
+      "title": "Warehouse Pressure",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "victor-ruiz",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "victor-ruiz",
+      "title": "Distorted Dreams",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "victor-ruiz",
+      "title": "Night Shift",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "josh-wink",
+      "title": "Josh Wink",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "josh-wink",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "josh-wink",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "josh-wink",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "josh-wink",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "ansome",
+      "title": "Ansome",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "ansome",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "ansome",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "ansome",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "ansome",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dave-the-drummer",
+      "title": "D.A.V.E. The Drummer",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dave-the-drummer",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dave-the-drummer",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dave-the-drummer",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dave-the-drummer",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "paranoid-london",
+      "title": "Paranoid London",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "paranoid-london",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "paranoid-london",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "paranoid-london",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "paranoid-london",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dj-pierre",
+      "title": "DJ Pierre",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dj-pierre",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dj-pierre",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dj-pierre",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "dj-pierre",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "randomer",
+      "title": "Randomer",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "randomer",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "randomer",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "randomer",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "randomer",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "len-d",
+      "title": "Len D",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "len-d",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "len-d",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "len-d",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "len-d",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alex-bau",
+      "title": "Alex Bau",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alex-bau",
+      "title": "Live Session",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alex-bau",
+      "title": "Essential Mix",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alex-bau",
+      "title": "Peak Hour",
+      "reason": "stub title + no track URL"
+    },
+    {
+      "artistSlug": "alex-bau",
+      "title": "Warehouse",
+      "reason": "stub title + no track URL"
+    }
+  ],
+  "releasesToStrip": [
+    {
+      "id": "sara-landry::ep::legacy-ep",
+      "title": "Legacy EP",
+      "artist": "Sara Landry",
+      "spotifyUrl": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK"
+    },
+    {
+      "id": "sara-landry::single::legacy",
+      "title": "Legacy",
+      "artist": "Sara Landry",
+      "spotifyUrl": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK"
+    },
+    {
+      "id": "i-hate-models::ep::intergalactic-emotional-breakdown-ep",
+      "title": "Intergalactic Emotional Breakdown EP",
+      "artist": "I Hate Models",
+      "spotifyUrl": "https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN"
+    },
+    {
+      "id": "i-hate-models::single::intergalactic-emotional-breakdown",
+      "title": "Intergalactic Emotional Breakdown",
+      "artist": "I Hate Models",
+      "spotifyUrl": "https://open.spotify.com/artist/0KqSULB80ft2H3aFg6kJmN"
+    },
+    {
+      "id": "kobosil::ep::intimacy-one-ep",
+      "title": "Intimacy One EP",
+      "artist": "Kobosil",
+      "spotifyUrl": "https://open.spotify.com/artist/2ZvIFwl0BuQgHqWvDE80hC"
+    },
+    {
+      "id": "kobosil::single::intimacy-one",
+      "title": "Intimacy One",
+      "artist": "Kobosil",
+      "spotifyUrl": "https://open.spotify.com/artist/2ZvIFwl0BuQgHqWvDE80hC"
+    },
+    {
+      "id": "vtss::ep::goin-nuts-ep",
+      "title": "Goin Nuts EP",
+      "artist": "VTSS",
+      "spotifyUrl": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN"
+    },
+    {
+      "id": "vtss::single::goin-nuts",
+      "title": "Goin Nuts",
+      "artist": "VTSS",
+      "spotifyUrl": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN"
+    },
+    {
+      "id": "regal::ep::verdansk-ep",
+      "title": "Verdansk EP",
+      "artist": "Regal",
+      "spotifyUrl": "https://open.spotify.com/artist/10RlWd6mCUDiRpQ30bGL2E"
+    },
+    {
+      "id": "regal::single::verdansk",
+      "title": "Verdansk",
+      "artist": "Regal",
+      "spotifyUrl": "https://open.spotify.com/artist/10RlWd6mCUDiRpQ30bGL2E"
+    },
+    {
+      "id": "boy-harsher::album::country-girl-uncut",
+      "title": "Country Girl Uncut",
+      "artist": "Boy Harsher",
+      "spotifyUrl": "https://open.spotify.com/artist/4iom7VVRU6AHRIu1JUXpLG"
+    },
+    {
+      "id": "boy-harsher::ep::yulia",
+      "title": "Yulia",
+      "artist": "Boy Harsher",
+      "spotifyUrl": "https://open.spotify.com/artist/4iom7VVRU6AHRIu1JUXpLG"
+    },
+    {
+      "id": "boy-harsher::single::pain",
+      "title": "Pain",
+      "artist": "Boy Harsher",
+      "spotifyUrl": "https://open.spotify.com/artist/4iom7VVRU6AHRIu1JUXpLG"
+    },
+    {
+      "id": "amelie-lens::ep::in-my-mind-ep",
+      "title": "In My Mind EP",
+      "artist": "Amelie Lens",
+      "spotifyUrl": "https://open.spotify.com/artist/5Ho1vKl1Uz8bJlk4vbmvmf"
+    },
+    {
+      "id": "amelie-lens::single::in-my-mind",
+      "title": "In My Mind",
+      "artist": "Amelie Lens",
+      "spotifyUrl": "https://open.spotify.com/artist/5Ho1vKl1Uz8bJlk4vbmvmf"
+    },
+    {
+      "id": "charlotte-de-witte::ep::selected-ep",
+      "title": "Selected EP",
+      "artist": "Charlotte de Witte",
+      "spotifyUrl": "https://open.spotify.com/artist/1lJhME1ZpzsEa5M0wW6Mso"
+    },
+    {
+      "id": "charlotte-de-witte::single::selected",
+      "title": "Selected",
+      "artist": "Charlotte de Witte",
+      "spotifyUrl": "https://open.spotify.com/artist/1lJhME1ZpzsEa5M0wW6Mso"
+    },
+    {
+      "id": "hadone::ep::angel-numbers-ep",
+      "title": "Angel Numbers EP",
+      "artist": "Hadone",
+      "spotifyUrl": "https://open.spotify.com/artist/4aSlYJptLO5PXv3jGueMkD"
+    },
+    {
+      "id": "hadone::single::angel-numbers",
+      "title": "Angel Numbers",
+      "artist": "Hadone",
+      "spotifyUrl": "https://open.spotify.com/artist/4aSlYJptLO5PXv3jGueMkD"
+    },
+    {
+      "id": "anetha::ep::acid-drop-ep",
+      "title": "Acid Drop EP",
+      "artist": "Anetha",
+      "spotifyUrl": "https://open.spotify.com/artist/7sJ3ngSMvvXGdVLnODPqXa"
+    },
+    {
+      "id": "anetha::single::acid-drop",
+      "title": "Acid Drop",
+      "artist": "Anetha",
+      "spotifyUrl": "https://open.spotify.com/artist/7sJ3ngSMvvXGdVLnODPqXa"
+    },
+    {
+      "id": "chris-liebing::ep::brooks-ave-ep",
+      "title": "Brooks Ave EP",
+      "artist": "Chris Liebing",
+      "spotifyUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+    },
+    {
+      "id": "chris-liebing::single::brooks-ave",
+      "title": "Brooks Ave",
+      "artist": "Chris Liebing",
+      "spotifyUrl": "https://open.spotify.com/artist/21444lX8gpmOX36icLmbFI"
+    },
+    {
+      "id": "dj-rush::ep::she-s-evil-ep",
+      "title": "She's Evil EP",
+      "artist": "DJ Rush",
+      "spotifyUrl": "https://open.spotify.com/artist/5lYB7n8SnuwVB30X6hZ1i9"
+    },
+    {
+      "id": "dj-rush::single::she-s-evil",
+      "title": "She's Evil",
+      "artist": "DJ Rush",
+      "spotifyUrl": "https://open.spotify.com/artist/5lYB7n8SnuwVB30X6hZ1i9"
+    },
+    {
+      "id": "sven-wittekind::ep::lost-in-this-world-ep",
+      "title": "Lost in this world EP",
+      "artist": "Sven Wittekind",
+      "spotifyUrl": "https://open.spotify.com/artist/1Xoao0EbCROD5MzC3iyyAD"
+    },
+    {
+      "id": "sven-wittekind::single::lost-in-this-world",
+      "title": "Lost in this world",
+      "artist": "Sven Wittekind",
+      "spotifyUrl": "https://open.spotify.com/artist/1Xoao0EbCROD5MzC3iyyAD"
+    },
+    {
+      "id": "robert-natus::ep::hardcore-salsa-ep",
+      "title": "Hardcore Salsa EP",
+      "artist": "Robert Natus",
+      "spotifyUrl": "https://open.spotify.com/artist/3zCZyqet8mJHJ9RJgUO8Mt"
+    },
+    {
+      "id": "robert-natus::single::hardcore-salsa",
+      "title": "Hardcore Salsa",
+      "artist": "Robert Natus",
+      "spotifyUrl": "https://open.spotify.com/artist/3zCZyqet8mJHJ9RJgUO8Mt"
+    },
+    {
+      "id": "arkus-p::ep::hardcore-salsa-ep",
+      "title": "Hardcore Salsa EP",
+      "artist": "Arkus P",
+      "spotifyUrl": "https://open.spotify.com/artist/2QX0SpKMsDrLa2qM15KcDf"
+    },
+    {
+      "id": "arkus-p::single::hardcore-salsa",
+      "title": "Hardcore Salsa",
+      "artist": "Arkus P",
+      "spotifyUrl": "https://open.spotify.com/artist/2QX0SpKMsDrLa2qM15KcDf"
+    },
+    {
+      "id": "boris-s::ep::ambience-ep",
+      "title": "Ambience EP",
+      "artist": "Boris S.",
+      "spotifyUrl": "https://open.spotify.com/artist/1YtebzJsPHni4DwAoMumGs"
+    },
+    {
+      "id": "boris-s::single::ambience",
+      "title": "Ambience",
+      "artist": "Boris S.",
+      "spotifyUrl": "https://open.spotify.com/artist/1YtebzJsPHni4DwAoMumGs"
+    },
+    {
+      "id": "paula-temple::ep::colonized-ep",
+      "title": "Colonized EP",
+      "artist": "Paula Temple",
+      "spotifyUrl": "https://open.spotify.com/artist/4iy2RFU8gIpXF5yaK0l8ZT"
+    },
+    {
+      "id": "paula-temple::single::colonized",
+      "title": "Colonized",
+      "artist": "Paula Temple",
+      "spotifyUrl": "https://open.spotify.com/artist/4iy2RFU8gIpXF5yaK0l8ZT"
+    },
+    {
+      "id": "perc::ep::look-what-your-love-has-done-to-me-ep",
+      "title": "Look What Your Love Has Done To Me EP",
+      "artist": "Perc",
+      "spotifyUrl": "https://open.spotify.com/artist/4iyqyvWXO734GUNLTTnrPQ"
+    },
+    {
+      "id": "perc::single::look-what-your-love-has-done-to-me",
+      "title": "Look What Your Love Has Done To Me",
+      "artist": "Perc",
+      "spotifyUrl": "https://open.spotify.com/artist/4iyqyvWXO734GUNLTTnrPQ"
+    },
+    {
+      "id": "ancient-methods::ep::knives-and-skin-ep",
+      "title": "Knives and Skin EP",
+      "artist": "Ancient Methods",
+      "spotifyUrl": "https://open.spotify.com/artist/2kWRgcJHbgSEAIgewkJ1g2"
+    },
+    {
+      "id": "ancient-methods::single::knives-and-skin",
+      "title": "Knives and Skin",
+      "artist": "Ancient Methods",
+      "spotifyUrl": "https://open.spotify.com/artist/2kWRgcJHbgSEAIgewkJ1g2"
+    },
+    {
+      "id": "surgeon::ep::magneze-ep",
+      "title": "Magneze EP",
+      "artist": "Surgeon",
+      "spotifyUrl": "https://open.spotify.com/artist/1PSylklb2w06BAAHEtepqM"
+    },
+    {
+      "id": "surgeon::single::magneze",
+      "title": "Magneze",
+      "artist": "Surgeon",
+      "spotifyUrl": "https://open.spotify.com/artist/1PSylklb2w06BAAHEtepqM"
+    },
+    {
+      "id": "adam-x::ep::irreformable-ep",
+      "title": "Irreformable EP",
+      "artist": "Adam X",
+      "spotifyUrl": "https://open.spotify.com/artist/4puKiwP3DNIzEaxPCheUbj"
+    },
+    {
+      "id": "adam-x::single::irreformable",
+      "title": "Irreformable",
+      "artist": "Adam X",
+      "spotifyUrl": "https://open.spotify.com/artist/4puKiwP3DNIzEaxPCheUbj"
+    },
+    {
+      "id": "phase-fatale::ep::suspension-ep",
+      "title": "Suspension EP",
+      "artist": "Phase Fatale",
+      "spotifyUrl": "https://open.spotify.com/artist/3PwE5dMjmoZZ11KFNBr7dB"
+    },
+    {
+      "id": "phase-fatale::single::suspension",
+      "title": "Suspension",
+      "artist": "Phase Fatale",
+      "spotifyUrl": "https://open.spotify.com/artist/3PwE5dMjmoZZ11KFNBr7dB"
+    },
+    {
+      "id": "helena-hauff::ep::spur-ep",
+      "title": "Spur EP",
+      "artist": "Helena Hauff",
+      "spotifyUrl": "https://open.spotify.com/artist/0yxJdmHyqSY3bPVuJ1DSd8"
+    },
+    {
+      "id": "helena-hauff::single::spur",
+      "title": "Spur",
+      "artist": "Helena Hauff",
+      "spotifyUrl": "https://open.spotify.com/artist/0yxJdmHyqSY3bPVuJ1DSd8"
+    },
+    {
+      "id": "rebekah::ep::code-black-ep",
+      "title": "Code Black EP",
+      "artist": "Rebekah",
+      "spotifyUrl": "https://open.spotify.com/artist/0IglQh5pb2c2A3FnUT1ClA"
+    },
+    {
+      "id": "rebekah::single::code-black",
+      "title": "Code Black",
+      "artist": "Rebekah",
+      "spotifyUrl": "https://open.spotify.com/artist/0IglQh5pb2c2A3FnUT1ClA"
+    },
+    {
+      "id": "ghost-in-the-machine::ep::guilty-ep",
+      "title": "Guilty EP",
+      "artist": "Ghost in the Machine",
+      "spotifyUrl": "https://open.spotify.com/artist/5opfVCjYF7B4DIKULygJ84"
+    },
+    {
+      "id": "ghost-in-the-machine::single::guilty",
+      "title": "Guilty",
+      "artist": "Ghost in the Machine",
+      "spotifyUrl": "https://open.spotify.com/artist/5opfVCjYF7B4DIKULygJ84"
+    },
+    {
+      "id": "codex-empire::ep::control-ep",
+      "title": "Control EP",
+      "artist": "Codex Empire",
+      "spotifyUrl": "https://open.spotify.com/artist/4UK8fjzDeZqpCkNtxeXBS7"
+    },
+    {
+      "id": "codex-empire::single::control",
+      "title": "Control",
+      "artist": "Codex Empire",
+      "spotifyUrl": "https://open.spotify.com/artist/4UK8fjzDeZqpCkNtxeXBS7"
+    },
+    {
+      "id": "orphx::ep::pitch-black-mirror-ep",
+      "title": "Pitch Black Mirror EP",
+      "artist": "Orphx",
+      "spotifyUrl": "https://open.spotify.com/artist/5nN5fT9KXMvn51uwVDjWQJ"
+    },
+    {
+      "id": "orphx::single::pitch-black-mirror",
+      "title": "Pitch Black Mirror",
+      "artist": "Orphx",
+      "spotifyUrl": "https://open.spotify.com/artist/5nN5fT9KXMvn51uwVDjWQJ"
+    },
+    {
+      "id": "laven::ep::i-thought-you-were-real-ep",
+      "title": "I Thought You Were Real EP",
+      "artist": "LAVEN",
+      "spotifyUrl": "https://open.spotify.com/artist/5YWZmwPZ8PpWfnCS8lSfAX"
+    },
+    {
+      "id": "laven::single::i-thought-you-were-real",
+      "title": "I Thought You Were Real",
+      "artist": "LAVEN",
+      "spotifyUrl": "https://open.spotify.com/artist/5YWZmwPZ8PpWfnCS8lSfAX"
+    },
+    {
+      "id": "klangkuenstler::ep::armageddon-ep",
+      "title": "Armageddon EP",
+      "artist": "Klangkuenstler",
+      "spotifyUrl": "https://open.spotify.com/artist/5uFHfu0m1Q67JtuBxaN5g4"
+    },
+    {
+      "id": "klangkuenstler::single::armageddon",
+      "title": "Armageddon",
+      "artist": "Klangkuenstler",
+      "spotifyUrl": "https://open.spotify.com/artist/5uFHfu0m1Q67JtuBxaN5g4"
+    },
+    {
+      "id": "dyen::ep::la-haine-ep",
+      "title": "La Haine EP",
+      "artist": "DYEN",
+      "spotifyUrl": "https://open.spotify.com/artist/2gXqsp9n6whHizwgIsQWvK"
+    },
+    {
+      "id": "dyen::single::la-haine",
+      "title": "La Haine",
+      "artist": "DYEN",
+      "spotifyUrl": "https://open.spotify.com/artist/2gXqsp9n6whHizwgIsQWvK"
+    },
+    {
+      "id": "trym::ep::bleeding-gods-ep",
+      "title": "BLEEDING GODS EP",
+      "artist": "Trym",
+      "spotifyUrl": "https://open.spotify.com/artist/5Nd385K2g3s0828W8Ab70z"
+    },
+    {
+      "id": "trym::single::bleeding-gods",
+      "title": "BLEEDING GODS",
+      "artist": "Trym",
+      "spotifyUrl": "https://open.spotify.com/artist/5Nd385K2g3s0828W8Ab70z"
+    },
+    {
+      "id": "charlie-sparks::ep::rude-boy-selecta-ep",
+      "title": "Rude Boy Selecta EP",
+      "artist": "Charlie Sparks",
+      "spotifyUrl": "https://open.spotify.com/artist/1lsjQdGrRe2D1nmvCVB7JZ"
+    },
+    {
+      "id": "charlie-sparks::single::rude-boy-selecta",
+      "title": "Rude Boy Selecta",
+      "artist": "Charlie Sparks",
+      "spotifyUrl": "https://open.spotify.com/artist/1lsjQdGrRe2D1nmvCVB7JZ"
+    },
+    {
+      "id": "parfait::ep::posh-scary-ep",
+      "title": "Posh & Scary EP",
+      "artist": "Parfait",
+      "spotifyUrl": "https://open.spotify.com/artist/3tFRzplldDxib5z3YjQb6n"
+    },
+    {
+      "id": "parfait::single::posh-scary",
+      "title": "Posh & Scary",
+      "artist": "Parfait",
+      "spotifyUrl": "https://open.spotify.com/artist/3tFRzplldDxib5z3YjQb6n"
+    },
+    {
+      "id": "funk-tribu::ep::phonky-tribu-ep",
+      "title": "Phonky Tribu EP",
+      "artist": "Funk Tribu",
+      "spotifyUrl": "https://open.spotify.com/artist/6VLbvoWNHKJ6TEfY7Z3ZBK"
+    },
+    {
+      "id": "funk-tribu::single::phonky-tribu",
+      "title": "Phonky Tribu",
+      "artist": "Funk Tribu",
+      "spotifyUrl": "https://open.spotify.com/artist/6VLbvoWNHKJ6TEfY7Z3ZBK"
+    },
+    {
+      "id": "holy-priest::ep::fuck-this-ep",
+      "title": "Fuck This EP",
+      "artist": "Holy Priest",
+      "spotifyUrl": "https://open.spotify.com/artist/7idnqUdFfieRBg91nX2PUZ"
+    },
+    {
+      "id": "holy-priest::single::fuck-this",
+      "title": "Fuck This",
+      "artist": "Holy Priest",
+      "spotifyUrl": "https://open.spotify.com/artist/7idnqUdFfieRBg91nX2PUZ"
+    },
+    {
+      "id": "vendex::ep::the-heads-that-know-ep",
+      "title": "The Heads That Know EP",
+      "artist": "Vendex",
+      "spotifyUrl": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7"
+    },
+    {
+      "id": "vendex::single::the-heads-that-know",
+      "title": "The Heads That Know",
+      "artist": "Vendex",
+      "spotifyUrl": "https://open.spotify.com/artist/2kqP3BXfLgo74OpfoC9cf7"
+    },
+    {
+      "id": "nikolina::ep::no-more-lies-ep",
+      "title": "No More Lies EP",
+      "artist": "Nikolina",
+      "spotifyUrl": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc"
+    },
+    {
+      "id": "nikolina::single::no-more-lies",
+      "title": "No More Lies",
+      "artist": "Nikolina",
+      "spotifyUrl": "https://open.spotify.com/artist/3d0OOhNi5k69JBZ5BVV8bc"
+    },
+    {
+      "id": "fantasm::ep::shake-that-bunda-ep",
+      "title": "Shake That Bunda EP",
+      "artist": "Fantasm",
+      "spotifyUrl": "https://open.spotify.com/artist/0copVQkrcbfv5CzOyXuLKy"
+    },
+    {
+      "id": "fantasm::single::shake-that-bunda",
+      "title": "Shake That Bunda",
+      "artist": "Fantasm",
+      "spotifyUrl": "https://open.spotify.com/artist/0copVQkrcbfv5CzOyXuLKy"
+    },
+    {
+      "id": "alignment::ep::alignment-ep",
+      "title": "Alignment EP",
+      "artist": "Alignment",
+      "spotifyUrl": "https://open.spotify.com/artist/0eNHvP3zBR2Qa0UfJN8c6O"
+    },
+    {
+      "id": "alignment::single::alignment",
+      "title": "Alignment",
+      "artist": "Alignment",
+      "spotifyUrl": "https://open.spotify.com/artist/0eNHvP3zBR2Qa0UfJN8c6O"
+    },
+    {
+      "id": "999999999::ep::300000003-ep",
+      "title": "300000003 EP",
+      "artist": "999999999",
+      "spotifyUrl": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc"
+    },
+    {
+      "id": "999999999::single::300000003",
+      "title": "300000003",
+      "artist": "999999999",
+      "spotifyUrl": "https://open.spotify.com/artist/6uD2LjPHUjxrpax0se17Nc"
+    },
+    {
+      "id": "shlomo::ep::one-mind-ep",
+      "title": "One Mind EP",
+      "artist": "Shlømo",
+      "spotifyUrl": "https://open.spotify.com/artist/0wN8XvAaWEWZQkY2Cl3rfQ"
+    },
+    {
+      "id": "shlomo::single::one-mind",
+      "title": "One Mind",
+      "artist": "Shlømo",
+      "spotifyUrl": "https://open.spotify.com/artist/0wN8XvAaWEWZQkY2Cl3rfQ"
+    },
+    {
+      "id": "azyr::ep::azyr-ep",
+      "title": "Azyr EP",
+      "artist": "Azyr",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "azyr::single::azyr",
+      "title": "Azyr",
+      "artist": "Azyr",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "mrd::ep::mrd-ep",
+      "title": "MRD EP",
+      "artist": "MRD",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "mrd::single::mrd",
+      "title": "MRD",
+      "artist": "MRD",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "nico-moreno::ep::nico-moreno-ep",
+      "title": "Nico Moreno EP",
+      "artist": "Nico Moreno",
+      "spotifyUrl": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S"
+    },
+    {
+      "id": "nico-moreno::single::nico-moreno",
+      "title": "Nico Moreno",
+      "artist": "Nico Moreno",
+      "spotifyUrl": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S"
+    },
+    {
+      "id": "alarico::ep::alarico-ep",
+      "title": "Alarico EP",
+      "artist": "Alarico",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "alarico::single::alarico",
+      "title": "Alarico",
+      "artist": "Alarico",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "cravet::ep::cravet-ep",
+      "title": "CRAVET EP",
+      "artist": "CRAVET",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "cravet::single::cravet",
+      "title": "CRAVET",
+      "artist": "CRAVET",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vntm::ep::vntm-ep",
+      "title": "VNTM EP",
+      "artist": "VNTM",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vntm::single::vntm",
+      "title": "VNTM",
+      "artist": "VNTM",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "jks::ep::jks-ep",
+      "title": "JKS EP",
+      "artist": "JKS",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "jks::single::jks",
+      "title": "JKS",
+      "artist": "JKS",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "rikhter::ep::rikhter-ep",
+      "title": "Rikhter EP",
+      "artist": "Rikhter",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "rikhter::single::rikhter",
+      "title": "Rikhter",
+      "artist": "Rikhter",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "somewhen::ep::somewhen-ep",
+      "title": "Somewhen EP",
+      "artist": "Somewhen",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "somewhen::single::somewhen",
+      "title": "Somewhen",
+      "artist": "Somewhen",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "stranger::ep::stranger-ep",
+      "title": "Stranger EP",
+      "artist": "Stranger",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "stranger::single::stranger",
+      "title": "Stranger",
+      "artist": "Stranger",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "spektre::ep::spektre-ep",
+      "title": "Spektre EP",
+      "artist": "Spektre",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "spektre::single::spektre",
+      "title": "Spektre",
+      "artist": "Spektre",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ben-spencer::ep::ben-spencer-ep",
+      "title": "Ben Spencer EP",
+      "artist": "Ben Spencer",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ben-spencer::single::ben-spencer",
+      "title": "Ben Spencer",
+      "artist": "Ben Spencer",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ogian::ep::ogian-ep",
+      "title": "Ogian EP",
+      "artist": "Ogian",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ogian::single::ogian",
+      "title": "Ogian",
+      "artist": "Ogian",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "moia::ep::moia-ep",
+      "title": "Moia EP",
+      "artist": "Moia",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "moia::single::moia",
+      "title": "Moia",
+      "artist": "Moia",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "daxson::ep::daxson-ep",
+      "title": "Daxson EP",
+      "artist": "Daxson",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "daxson::single::daxson",
+      "title": "Daxson",
+      "artist": "Daxson",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "yant::ep::yant-ep",
+      "title": "Yant EP",
+      "artist": "Yant",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "yant::single::yant",
+      "title": "Yant",
+      "artist": "Yant",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ignacio::ep::ignacio-ep",
+      "title": "Ignacio EP",
+      "artist": "Ignacio",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ignacio::single::ignacio",
+      "title": "Ignacio",
+      "artist": "Ignacio",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "chlar::ep::chlar-ep",
+      "title": "Chlar EP",
+      "artist": "Chlar",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "chlar::single::chlar",
+      "title": "Chlar",
+      "artist": "Chlar",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "klaps::ep::klaps-be-ep",
+      "title": "Klaps (BE) EP",
+      "artist": "Klaps (BE)",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "klaps::single::klaps-be",
+      "title": "Klaps (BE)",
+      "artist": "Klaps (BE)",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "lsdxoxo::ep::lsdxoxo-ep",
+      "title": "LSDXOXO EP",
+      "artist": "LSDXOXO",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "lsdxoxo::single::lsdxoxo",
+      "title": "LSDXOXO",
+      "artist": "LSDXOXO",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ogive::ep::ogive-ep",
+      "title": "Ogive EP",
+      "artist": "Ogive",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ogive::single::ogive",
+      "title": "Ogive",
+      "artist": "Ogive",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "anfisa-letyago::ep::anfisa-letyago-ep",
+      "title": "Anfisa Letyago EP",
+      "artist": "Anfisa Letyago",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "anfisa-letyago::single::anfisa-letyago",
+      "title": "Anfisa Letyago",
+      "artist": "Anfisa Letyago",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "cltx::ep::cltx-ep",
+      "title": "CLTX EP",
+      "artist": "CLTX",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "cltx::single::cltx",
+      "title": "CLTX",
+      "artist": "CLTX",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "krow::ep::krow-ep",
+      "title": "Krow EP",
+      "artist": "Krow",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "krow::single::krow",
+      "title": "Krow",
+      "artist": "Krow",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "psyk32::ep::psyk32-ep",
+      "title": "Psyk32 EP",
+      "artist": "Psyk32",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "psyk32::single::psyk32",
+      "title": "Psyk32",
+      "artist": "Psyk32",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "tafkamp::ep::tafkamp-ep",
+      "title": "TAFKAMP EP",
+      "artist": "TAFKAMP",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "tafkamp::single::tafkamp",
+      "title": "TAFKAMP",
+      "artist": "TAFKAMP",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "lars-huismann::ep::lars-huismann-ep",
+      "title": "Lars Huismann EP",
+      "artist": "Lars Huismann",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "lars-huismann::single::lars-huismann",
+      "title": "Lars Huismann",
+      "artist": "Lars Huismann",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "pinion::ep::pinion-ep",
+      "title": "Pinion EP",
+      "artist": "Pinion",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "pinion::single::pinion",
+      "title": "Pinion",
+      "artist": "Pinion",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "kaiser::ep::kaiser-ep",
+      "title": "Kaiser EP",
+      "artist": "Kaiser",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "kaiser::single::kaiser",
+      "title": "Kaiser",
+      "artist": "Kaiser",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "blasha-allatt::ep::blasha-allatt-ep",
+      "title": "Blasha & Allatt EP",
+      "artist": "Blasha & Allatt",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "blasha-allatt::single::blasha-allatt",
+      "title": "Blasha & Allatt",
+      "artist": "Blasha & Allatt",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "rosati::ep::rosati-ep",
+      "title": "Rosati EP",
+      "artist": "Rosati",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "rosati::single::rosati",
+      "title": "Rosati",
+      "artist": "Rosati",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "novah::ep::novah-ep",
+      "title": "Novah EP",
+      "artist": "Novah",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "novah::single::novah",
+      "title": "Novah",
+      "artist": "Novah",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "jacidorex::ep::jacidorex-ep",
+      "title": "Jacidorex EP",
+      "artist": "Jacidorex",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "jacidorex::single::jacidorex",
+      "title": "Jacidorex",
+      "artist": "Jacidorex",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ha-cay::ep::ha-cay-ep",
+      "title": "Ha CAY EP",
+      "artist": "Ha CAY",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ha-cay::single::ha-cay",
+      "title": "Ha CAY",
+      "artist": "Ha CAY",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "blicz::ep::blicz-ep",
+      "title": "Blicz EP",
+      "artist": "Blicz",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "blicz::single::blicz",
+      "title": "Blicz",
+      "artist": "Blicz",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "basswell::ep::basswell-ep",
+      "title": "Basswell EP",
+      "artist": "Basswell",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "basswell::single::basswell",
+      "title": "Basswell",
+      "artist": "Basswell",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "matrakk::ep::matrakk-ep",
+      "title": "Matrakk EP",
+      "artist": "Matrakk",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "matrakk::single::matrakk",
+      "title": "Matrakk",
+      "artist": "Matrakk",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "yazzus::ep::yazzus-ep",
+      "title": "Yazzus EP",
+      "artist": "Yazzus",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "yazzus::single::yazzus",
+      "title": "Yazzus",
+      "artist": "Yazzus",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "yanamaste::ep::yanamaste-ep",
+      "title": "Yanamaste EP",
+      "artist": "Yanamaste",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "yanamaste::single::yanamaste",
+      "title": "Yanamaste",
+      "artist": "Yanamaste",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "warface::ep::warface-ep",
+      "title": "Warface EP",
+      "artist": "Warface",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "warface::single::warface",
+      "title": "Warface",
+      "artist": "Warface",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "mcmlxxxv::ep::mcmlxxxv-ep",
+      "title": "MCMLXXXV EP",
+      "artist": "MCMLXXXV",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "mcmlxxxv::single::mcmlxxxv",
+      "title": "MCMLXXXV",
+      "artist": "MCMLXXXV",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "temo::ep::temo-ep",
+      "title": "Temo EP",
+      "artist": "Temo",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "temo::single::temo",
+      "title": "Temo",
+      "artist": "Temo",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "raxyor::ep::raxyor-ep",
+      "title": "Raxyor EP",
+      "artist": "Raxyor",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "raxyor::single::raxyor",
+      "title": "Raxyor",
+      "artist": "Raxyor",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vil::ep::vil-ep",
+      "title": "VIL EP",
+      "artist": "VIL",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vil::single::vil",
+      "title": "VIL",
+      "artist": "VIL",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vilchezz::ep::vilchezz-ep",
+      "title": "VILCHEZZ EP",
+      "artist": "VILCHEZZ",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vilchezz::single::vilchezz",
+      "title": "VILCHEZZ",
+      "artist": "VILCHEZZ",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hemka::ep::hemka-ep",
+      "title": "Hemka EP",
+      "artist": "Hemka",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hemka::single::hemka",
+      "title": "Hemka",
+      "artist": "Hemka",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "iochan::ep::iochan-ep",
+      "title": "Iochan EP",
+      "artist": "Iochan",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "iochan::single::iochan",
+      "title": "Iochan",
+      "artist": "Iochan",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "randall::ep::randall-ep",
+      "title": "Randall EP",
+      "artist": "Randall",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "randall::single::randall",
+      "title": "Randall",
+      "artist": "Randall",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "oguz::ep::oguz-ep",
+      "title": "Oguz EP",
+      "artist": "Oguz",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "oguz::single::oguz",
+      "title": "Oguz",
+      "artist": "Oguz",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hausman::ep::hausman-ep",
+      "title": "Hausman EP",
+      "artist": "Hausman",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hausman::single::hausman",
+      "title": "Hausman",
+      "artist": "Hausman",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vklf::ep::vklf-ep",
+      "title": "VKLF EP",
+      "artist": "VKLF",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vklf::single::vklf",
+      "title": "VKLF",
+      "artist": "VKLF",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "cleric::ep::cleric-ep",
+      "title": "Cleric EP",
+      "artist": "Cleric",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "cleric::single::cleric",
+      "title": "Cleric",
+      "artist": "Cleric",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "pulsar::ep::pulsar-ep",
+      "title": "Pulsar EP",
+      "artist": "Pulsar",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "pulsar::single::pulsar",
+      "title": "Pulsar",
+      "artist": "Pulsar",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "amelior::ep::amelior-ep",
+      "title": "Amelior EP",
+      "artist": "Amelior",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "amelior::single::amelior",
+      "title": "Amelior",
+      "artist": "Amelior",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vrtx::ep::vrtx-ep",
+      "title": "VRTX EP",
+      "artist": "VRTX",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "vrtx::single::vrtx",
+      "title": "VRTX",
+      "artist": "VRTX",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "klonne::ep::klonne-ep",
+      "title": "Klonne EP",
+      "artist": "Klonne",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "klonne::single::klonne",
+      "title": "Klonne",
+      "artist": "Klonne",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hiccup::ep::hiccup-ep",
+      "title": "Hiccup EP",
+      "artist": "Hiccup",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hiccup::single::hiccup",
+      "title": "Hiccup",
+      "artist": "Hiccup",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "igor-r::ep::igor-r-ep",
+      "title": "Igor R EP",
+      "artist": "Igor R",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "igor-r::single::igor-r",
+      "title": "Igor R",
+      "artist": "Igor R",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "raw-distort::ep::raw-distort-ep",
+      "title": "Raw Distort EP",
+      "artist": "Raw Distort",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "raw-distort::single::raw-distort",
+      "title": "Raw Distort",
+      "artist": "Raw Distort",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "berkan::ep::berkan-ep",
+      "title": "Berkan EP",
+      "artist": "Berkan",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "berkan::single::berkan",
+      "title": "Berkan",
+      "artist": "Berkan",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "berlyn::ep::berlyn-ep",
+      "title": "Berlyn EP",
+      "artist": "Berlyn",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "berlyn::single::berlyn",
+      "title": "Berlyn",
+      "artist": "Berlyn",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "bianca-obyn::ep::bianca-oblivion-ep",
+      "title": "Bianca Oblivion EP",
+      "artist": "Bianca Oblivion",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "bianca-obyn::single::bianca-oblivion",
+      "title": "Bianca Oblivion",
+      "artist": "Bianca Oblivion",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "eric-sneo::ep::sneo-1-ep",
+      "title": "Sneo 1 EP",
+      "artist": "Eric Sneo",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "eric-sneo::single::sneo-1",
+      "title": "Sneo 1",
+      "artist": "Eric Sneo",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "petduo::ep::petduo-ep",
+      "title": "Petduo EP",
+      "artist": "Petduo",
+      "spotifyUrl": "https://open.spotify.com/artist/5SEUYqumyvmrkgWpOco1lo"
+    },
+    {
+      "id": "petduo::single::petduo",
+      "title": "Petduo",
+      "artist": "Petduo",
+      "spotifyUrl": "https://open.spotify.com/artist/5SEUYqumyvmrkgWpOco1lo"
+    },
+    {
+      "id": "spd::ep::spd-ep",
+      "title": "SPD EP",
+      "artist": "SPD",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "spd::single::spd",
+      "title": "SPD",
+      "artist": "SPD",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "frank-nitzinsky::ep::frank-nitzinsky-ep",
+      "title": "Frank Nitzinsky EP",
+      "artist": "Frank Nitzinsky",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "frank-nitzinsky::single::frank-nitzinsky",
+      "title": "Frank Nitzinsky",
+      "artist": "Frank Nitzinsky",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "crystal-distortion::ep::crystal-distortion-ep",
+      "title": "Crystal Distortion EP",
+      "artist": "Crystal Distortion",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "crystal-distortion::single::crystal-distortion",
+      "title": "Crystal Distortion",
+      "artist": "Crystal Distortion",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hardfloor::ep::acperience-1-ep",
+      "title": "Acperience 1 EP",
+      "artist": "Hardfloor",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "hardfloor::single::acperience-1",
+      "title": "Acperience 1",
+      "artist": "Hardfloor",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "front-line-assembly::ep::front-line-assembly-ep",
+      "title": "Front Line Assembly EP",
+      "artist": "Front Line Assembly",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "front-line-assembly::single::front-line-assembly",
+      "title": "Front Line Assembly",
+      "artist": "Front Line Assembly",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "nitzer-ebb::ep::nitzer-ebb-ep",
+      "title": "Nitzer Ebb EP",
+      "artist": "Nitzer Ebb",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "nitzer-ebb::single::nitzer-ebb",
+      "title": "Nitzer Ebb",
+      "artist": "Nitzer Ebb",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "leather-strip::ep::leather-strip-ep",
+      "title": "Leather Strip EP",
+      "artist": "Leather Strip",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "leather-strip::single::leather-strip",
+      "title": "Leather Strip",
+      "artist": "Leather Strip",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "assemblage-23::ep::assemblage-23-ep",
+      "title": "Assemblage 23 EP",
+      "artist": "Assemblage 23",
+      "spotifyUrl": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx"
+    },
+    {
+      "id": "assemblage-23::single::assemblage-23",
+      "title": "Assemblage 23",
+      "artist": "Assemblage 23",
+      "spotifyUrl": "https://open.spotify.com/artist/7pwThElmrxl0pjTwXMojCx"
+    },
+    {
+      "id": "hante::ep::hante-ep",
+      "title": "Hante EP",
+      "artist": "Hante",
+      "spotifyUrl": "https://open.spotify.com/artist/5PhSiNjHZevtfAj9zmvVkU"
+    },
+    {
+      "id": "hante::single::hante",
+      "title": "Hante",
+      "artist": "Hante",
+      "spotifyUrl": "https://open.spotify.com/artist/5PhSiNjHZevtfAj9zmvVkU"
+    },
+    {
+      "id": "she-past-away::ep::she-past-away-ep",
+      "title": "She Past Away EP",
+      "artist": "She Past Away",
+      "spotifyUrl": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR"
+    },
+    {
+      "id": "she-past-away::single::she-past-away",
+      "title": "She Past Away",
+      "artist": "She Past Away",
+      "spotifyUrl": "https://open.spotify.com/artist/6paE8ghTau4qwwNzVRSgjR"
+    },
+    {
+      "id": "lebanon-hanover::ep::lebanon-hanover-ep",
+      "title": "Lebanon Hanover EP",
+      "artist": "Lebanon Hanover",
+      "spotifyUrl": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7"
+    },
+    {
+      "id": "lebanon-hanover::single::lebanon-hanover",
+      "title": "Lebanon Hanover",
+      "artist": "Lebanon Hanover",
+      "spotifyUrl": "https://open.spotify.com/artist/6w8h2uD28BEdg7bX4k3Lh7"
+    },
+    {
+      "id": "drab-majesty::ep::drab-majesty-ep",
+      "title": "Drab Majesty EP",
+      "artist": "Drab Majesty",
+      "spotifyUrl": "https://open.spotify.com/artist/2CSEKlTT9empsZ8vZWsrKO"
+    },
+    {
+      "id": "drab-majesty::single::drab-majesty",
+      "title": "Drab Majesty",
+      "artist": "Drab Majesty",
+      "spotifyUrl": "https://open.spotify.com/artist/2CSEKlTT9empsZ8vZWsrKO"
+    },
+    {
+      "id": "linea-aspera::ep::linea-aspera-ep",
+      "title": "Linea Aspera EP",
+      "artist": "Linea Aspera",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "linea-aspera::single::linea-aspera",
+      "title": "Linea Aspera",
+      "artist": "Linea Aspera",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ash-code::ep::ash-code-ep",
+      "title": "Ash Code EP",
+      "artist": "Ash Code",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ash-code::single::ash-code",
+      "title": "Ash Code",
+      "artist": "Ash Code",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "rumina::ep::rumina-ep",
+      "title": "Rumina EP",
+      "artist": "Rumina",
+      "spotifyUrl": "https://open.spotify.com/artist/7IDiYtKojSbRAaf2b2Mpew"
+    },
+    {
+      "id": "rumina::single::rumina",
+      "title": "Rumina",
+      "artist": "Rumina",
+      "spotifyUrl": "https://open.spotify.com/artist/7IDiYtKojSbRAaf2b2Mpew"
+    },
+    {
+      "id": "per-sona::ep::per-sona-ep",
+      "title": "Per-sona EP",
+      "artist": "Per-sona",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "per-sona::single::per-sona",
+      "title": "Per-sona",
+      "artist": "Per-sona",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "the-soft-moon::ep::the-soft-moon-ep",
+      "title": "The Soft Moon EP",
+      "artist": "The Soft Moon",
+      "spotifyUrl": "https://open.spotify.com/artist/40HeNm05FEAxGx8gUOV4my"
+    },
+    {
+      "id": "the-soft-moon::single::the-soft-moon",
+      "title": "The Soft Moon",
+      "artist": "The Soft Moon",
+      "spotifyUrl": "https://open.spotify.com/artist/40HeNm05FEAxGx8gUOV4my"
+    },
+    {
+      "id": "phuture-corp::ep::phuture-corp-ep",
+      "title": "Phuture Corp EP",
+      "artist": "Phuture Corp",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "phuture-corp::single::phuture-corp",
+      "title": "Phuture Corp",
+      "artist": "Phuture Corp",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "obscure-shape::ep::obscure-shape-ep",
+      "title": "Obscure Shape EP",
+      "artist": "Obscure Shape",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "obscure-shape::single::obscure-shape",
+      "title": "Obscure Shape",
+      "artist": "Obscure Shape",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "rrose::ep::rrose-ep",
+      "title": "Rrose EP",
+      "artist": "Rrose",
+      "spotifyUrl": "https://open.spotify.com/artist/5naKaYAyzzuPDsh4H2dwyT"
+    },
+    {
+      "id": "rrose::single::rrose",
+      "title": "Rrose",
+      "artist": "Rrose",
+      "spotifyUrl": "https://open.spotify.com/artist/5naKaYAyzzuPDsh4H2dwyT"
+    },
+    {
+      "id": "blawan::ep::blawan-ep",
+      "title": "Blawan EP",
+      "artist": "Blawan",
+      "spotifyUrl": "https://open.spotify.com/artist/64kN9EkSTHYhda2FupL0KI"
+    },
+    {
+      "id": "blawan::single::blawan",
+      "title": "Blawan",
+      "artist": "Blawan",
+      "spotifyUrl": "https://open.spotify.com/artist/64kN9EkSTHYhda2FupL0KI"
+    },
+    {
+      "id": "clouds::ep::clouds-ep",
+      "title": "Clouds EP",
+      "artist": "Clouds",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "clouds::single::clouds",
+      "title": "Clouds",
+      "artist": "Clouds",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "ph87::ep::ph87-ep",
+      "title": "PH87 EP",
+      "artist": "PH87",
+      "spotifyUrl": "https://open.spotify.com/artist/6w8j7obDDze1ovIL3lXGZf"
+    },
+    {
+      "id": "ph87::single::ph87",
+      "title": "PH87",
+      "artist": "PH87",
+      "spotifyUrl": "https://open.spotify.com/artist/6w8j7obDDze1ovIL3lXGZf"
+    },
+    {
+      "id": "part-time-killer::ep::part-time-killer-ep",
+      "title": "Part Time Killer EP",
+      "artist": "Part Time Killer",
+      "spotifyUrl": "https://open.spotify.com/artist/1PDjdSn9YCXz1reA1PUcC0"
+    },
+    {
+      "id": "part-time-killer::single::part-time-killer",
+      "title": "Part Time Killer",
+      "artist": "Part Time Killer",
+      "spotifyUrl": "https://open.spotify.com/artist/1PDjdSn9YCXz1reA1PUcC0"
+    },
+    {
+      "id": "lucy::ep::lucy-ep",
+      "title": "Lucy EP",
+      "artist": "Lucy",
+      "spotifyUrl": "https://open.spotify.com/artist/0BlPI3UKzTcN2jf0gCa0b9"
+    },
+    {
+      "id": "lucy::single::lucy",
+      "title": "Lucy",
+      "artist": "Lucy",
+      "spotifyUrl": "https://open.spotify.com/artist/0BlPI3UKzTcN2jf0gCa0b9"
+    },
+    {
+      "id": "kangding-ray::ep::kangding-ray-ep",
+      "title": "Kangding Ray EP",
+      "artist": "Kangding Ray",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "kangding-ray::single::kangding-ray",
+      "title": "Kangding Ray",
+      "artist": "Kangding Ray",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "victor-ruiz::ep::victor-ruiz-ep",
+      "title": "Victor Ruiz EP",
+      "artist": "Victor Ruiz",
+      "spotifyUrl": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z"
+    },
+    {
+      "id": "victor-ruiz::single::victor-ruiz",
+      "title": "Victor Ruiz",
+      "artist": "Victor Ruiz",
+      "spotifyUrl": "https://open.spotify.com/artist/0xgdNNa5mIbnJKp8AG8S4z"
+    },
+    {
+      "id": "debora-alessio::ep::debora-alessio-ep",
+      "title": "Debora Alessio EP",
+      "artist": "Debora Alessio",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "debora-alessio::single::debora-alessio",
+      "title": "Debora Alessio",
+      "artist": "Debora Alessio",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "francois-x::ep::fran-ois-x-ep",
+      "title": "François X EP",
+      "artist": "François X",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "francois-x::single::fran-ois-x",
+      "title": "François X",
+      "artist": "François X",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "josh-wink::ep::josh-wink-ep",
+      "title": "Josh Wink EP",
+      "artist": "Josh Wink",
+      "spotifyUrl": "https://open.spotify.com/artist/6DQLkRykAsF6paJnlIMX4H"
+    },
+    {
+      "id": "josh-wink::single::josh-wink",
+      "title": "Josh Wink",
+      "artist": "Josh Wink",
+      "spotifyUrl": "https://open.spotify.com/artist/6DQLkRykAsF6paJnlIMX4H"
+    },
+    {
+      "id": "ansome::ep::ansome-ep",
+      "title": "Ansome EP",
+      "artist": "Ansome",
+      "spotifyUrl": "https://open.spotify.com/artist/14gRo11WOeTXBDcgFr8Ejb"
+    },
+    {
+      "id": "ansome::single::ansome",
+      "title": "Ansome",
+      "artist": "Ansome",
+      "spotifyUrl": "https://open.spotify.com/artist/14gRo11WOeTXBDcgFr8Ejb"
+    },
+    {
+      "id": "dave-the-drummer::ep::d-a-v-e-the-drummer-ep",
+      "title": "D.A.V.E. The Drummer EP",
+      "artist": "D.A.V.E. The Drummer",
+      "spotifyUrl": "https://open.spotify.com/artist/4ulxN8QnUlk3bX6IopQO7C"
+    },
+    {
+      "id": "dave-the-drummer::single::d-a-v-e-the-drummer",
+      "title": "D.A.V.E. The Drummer",
+      "artist": "D.A.V.E. The Drummer",
+      "spotifyUrl": "https://open.spotify.com/artist/4ulxN8QnUlk3bX6IopQO7C"
+    },
+    {
+      "id": "paranoid-london::ep::paranoid-london-ep",
+      "title": "Paranoid London EP",
+      "artist": "Paranoid London",
+      "spotifyUrl": "https://open.spotify.com/artist/0KyUH5WmspOhuIQAnw42Fb"
+    },
+    {
+      "id": "paranoid-london::single::paranoid-london",
+      "title": "Paranoid London",
+      "artist": "Paranoid London",
+      "spotifyUrl": "https://open.spotify.com/artist/0KyUH5WmspOhuIQAnw42Fb"
+    },
+    {
+      "id": "dj-pierre::ep::dj-pierre-ep",
+      "title": "DJ Pierre EP",
+      "artist": "DJ Pierre",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "dj-pierre::single::dj-pierre",
+      "title": "DJ Pierre",
+      "artist": "DJ Pierre",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "randomer::ep::randomer-ep",
+      "title": "Randomer EP",
+      "artist": "Randomer",
+      "spotifyUrl": "https://open.spotify.com/artist/7K0WJzyqUNRhraNcsvJp1h"
+    },
+    {
+      "id": "randomer::single::randomer",
+      "title": "Randomer",
+      "artist": "Randomer",
+      "spotifyUrl": "https://open.spotify.com/artist/7K0WJzyqUNRhraNcsvJp1h"
+    },
+    {
+      "id": "hector-oaks::ep::h-ctor-oaks-ep",
+      "title": "Héctor Oaks EP",
+      "artist": "Héctor Oaks",
+      "spotifyUrl": "https://open.spotify.com/artist/2FZAQdFEANNv5Gi29PI10x"
+    },
+    {
+      "id": "hector-oaks::single::h-ctor-oaks",
+      "title": "Héctor Oaks",
+      "artist": "Héctor Oaks",
+      "spotifyUrl": "https://open.spotify.com/artist/2FZAQdFEANNv5Gi29PI10x"
+    },
+    {
+      "id": "len-d::ep::len-d-ep",
+      "title": "Len D EP",
+      "artist": "Len D",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "len-d::single::len-d",
+      "title": "Len D",
+      "artist": "Len D",
+      "spotifyUrl": ""
+    },
+    {
+      "id": "alex-bau::ep::alex-bau-ep",
+      "title": "Alex Bau EP",
+      "artist": "Alex Bau",
+      "spotifyUrl": "https://open.spotify.com/artist/0NepOrVsrboBKYECeSmwak"
+    },
+    {
+      "id": "alex-bau::single::alex-bau",
+      "title": "Alex Bau",
+      "artist": "Alex Bau",
+      "spotifyUrl": "https://open.spotify.com/artist/0NepOrVsrboBKYECeSmwak"
+    },
+    {
+      "id": "weichentechnikk::ep::weichentechnikk-ep",
+      "title": "Weichentechnikk EP",
+      "artist": "Weichentechnikk",
+      "spotifyUrl": "https://open.spotify.com/artist/3sIkF6FOnvaaA9nLCnITrh"
+    },
+    {
+      "id": "weichentechnikk::single::weichentechnikk",
+      "title": "Weichentechnikk",
+      "artist": "Weichentechnikk",
+      "spotifyUrl": "https://open.spotify.com/artist/3sIkF6FOnvaaA9nLCnITrh"
+    },
+    {
+      "id": "petra-flurr::ep::petra-flurr-ep",
+      "title": "Petra Flurr EP",
+      "artist": "Petra Flurr",
+      "spotifyUrl": "https://open.spotify.com/artist/51exL0KZS30QQSJd9osmig"
+    },
+    {
+      "id": "petra-flurr::single::petra-flurr",
+      "title": "Petra Flurr",
+      "artist": "Petra Flurr",
+      "spotifyUrl": "https://open.spotify.com/artist/51exL0KZS30QQSJd9osmig"
+    },
+    {
+      "id": "front-242::ep::front-242-ep",
+      "title": "Front 242 EP",
+      "artist": "Front 242",
+      "spotifyUrl": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX"
+    },
+    {
+      "id": "front-242::single::front-242",
+      "title": "Front 242",
+      "artist": "Front 242",
+      "spotifyUrl": "https://open.spotify.com/artist/2tyMOS8xKREgpEwHnLc6EX"
+    },
+    {
+      "id": "deepbass::ep::deepbass-ep",
+      "title": "Deepbass EP",
+      "artist": "Deepbass",
+      "spotifyUrl": "https://open.spotify.com/artist/4JBXPj21sTqOZvgQurUJoP"
+    },
+    {
+      "id": "deepbass::single::deepbass",
+      "title": "Deepbass",
+      "artist": "Deepbass",
+      "spotifyUrl": "https://open.spotify.com/artist/4JBXPj21sTqOZvgQurUJoP"
+    },
+    {
+      "id": "norbak::ep::n-rbak-ep",
+      "title": "Nørbak EP",
+      "artist": "Nørbak",
+      "spotifyUrl": "https://open.spotify.com/artist/0TwXWZcwzGVVOa1Vdu3UEj"
+    },
+    {
+      "id": "norbak::single::n-rbak",
+      "title": "Nørbak",
+      "artist": "Nørbak",
+      "spotifyUrl": "https://open.spotify.com/artist/0TwXWZcwzGVVOa1Vdu3UEj"
+    },
+    {
+      "id": "lft::ep::l-f-t-ep",
+      "title": "L.F.T. EP",
+      "artist": "L.F.T.",
+      "spotifyUrl": "https://open.spotify.com/artist/0CxkG7EdCzA4QJoDeiODFP"
+    },
+    {
+      "id": "lft::single::l-f-t",
+      "title": "L.F.T.",
+      "artist": "L.F.T.",
+      "spotifyUrl": "https://open.spotify.com/artist/0CxkG7EdCzA4QJoDeiODFP"
+    },
+    {
+      "id": "mcr-t::ep::mcr-t-ep",
+      "title": "MCR-T EP",
+      "artist": "MCR-T",
+      "spotifyUrl": "https://open.spotify.com/artist/4m7q9onIm2bqhwHy9utqmw"
+    },
+    {
+      "id": "mcr-t::single::mcr-t",
+      "title": "MCR-T",
+      "artist": "MCR-T",
+      "spotifyUrl": "https://open.spotify.com/artist/4m7q9onIm2bqhwHy9utqmw"
+    }
+  ],
+  "catalogTrackCount": 781,
+  "archiveSetCount": 241,
+  "stubTitlePatterns": [
+    "Warehouse Pressure",
+    "Peak Hour",
+    "Distorted Dreams",
+    "Night Shift",
+    "Raw Energy",
+    "Factory Floor",
+    "Steel Rhythm",
+    "Dark Matter",
+    "Machine Soul",
+    "Void",
+    "Cold Pulse",
+    "Body Control",
+    "Neon Decay",
+    "Ashes",
+    "Midnight Drive",
+    "Live Session",
+    "Essential Mix",
+    "Warehouse"
+  ]
+}

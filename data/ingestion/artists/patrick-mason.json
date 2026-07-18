@@ -1,0 +1,31 @@
+{
+  "slug": "patrick-mason",
+  "name": "Patrick Mason",
+  "updatedAt": "2026-07-17T06:53:58.724Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T00:55:33.019Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "32H97VEM4nTqJsJgdt3hDg",
+    "name": "Patrick Mason",
+    "url": "https://open.spotify.com/artist/32H97VEM4nTqJsJgdt3hDg",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27359f0ffa461c2cc533656616e",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab67616d0000b27359f0ffa461c2cc533656616e",
+      "https://i.scdn.co/image/ab67616d00001e0259f0ffa461c2cc533656616e",
+      "https://i.scdn.co/image/ab67616d0000485159f0ffa461c2cc533656616e"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0259f0ffa461c2cc533656616e",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/32H97VEM4nTqJsJgdt3hDg"
+  }
+}

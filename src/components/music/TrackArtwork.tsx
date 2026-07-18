@@ -1,5 +1,6 @@
 "use client";
 
+import { memo, useMemo } from "react";
 import type { ImageProps } from "next/image";
 import type { Genre } from "@/types";
 import { SafeImage } from "@/components/ui/SafeImage";
@@ -13,8 +14,8 @@ type TrackArtworkProps = Omit<ImageProps, "src" | "alt"> & {
   wrapperClassName?: string;
 };
 
-/** Track/release artwork with Spotify URL first, genre placeholder on miss or load failure. */
-export function TrackArtwork({
+/** Track/release artwork — verified Spotify covers only; empty surface when missing. */
+export const TrackArtwork = memo(function TrackArtwork({
   coverArt,
   genres,
   alt = "",
@@ -22,17 +23,20 @@ export function TrackArtwork({
   wrapperClassName,
   ...props
 }: TrackArtworkProps) {
-  const { src, fallbacks, fallbackSrc } = resolveTrackArtwork({ coverArt, genres });
+  const resolved = useMemo(
+    () => resolveTrackArtwork({ coverArt, genres }),
+    [coverArt, genres],
+  );
 
   return (
     <SafeImage
-      src={src}
+      src={resolved.src}
       alt={alt}
-      fallbacks={fallbacks}
-      fallbackSrc={fallbackSrc}
+      fallbacks={resolved.fallbacks}
+      fallbackSrc={resolved.fallbackSrc}
       className={cn("object-cover", className)}
       wrapperClassName={wrapperClassName}
       {...props}
     />
   );
-}
+});

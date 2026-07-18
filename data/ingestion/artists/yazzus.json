@@ -1,10 +1,14 @@
 {
   "slug": "yazzus",
   "name": "Yazzus",
-  "updatedAt": "2026-06-28T01:38:18.311Z",
+  "updatedAt": "2026-07-16T23:51:08.194Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:22.297Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-16T23:51:08.194Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/IuujE6JyTVznke4d2vHBTUwcE_gr6EJP-khzpoH3rburL5yVSYYw4tTcsBIRJLARGGYZnnNy6A=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/IuujE6JyTVznke4d2vHBTUwcE_gr6EJP-khzpoH3rburL5yVSYYw4tTcsBIRJLARGGYZnnNy6A=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCrnKJan8mfvDpaISVIRVY1Q"
+    "url": "https://i.scdn.co/image/ab6761610000e5eb46998fb7fe04a20ea5327ce8",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0KWutsZ75Y4GvjcPTFnKXU"
+  },
+  "spotify": {
+    "artistId": "0KWutsZ75Y4GvjcPTFnKXU",
+    "name": "Yazzus",
+    "url": "https://open.spotify.com/artist/0KWutsZ75Y4GvjcPTFnKXU",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb46998fb7fe04a20ea5327ce8",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb46998fb7fe04a20ea5327ce8",
+      "https://i.scdn.co/image/ab6761610000517446998fb7fe04a20ea5327ce8",
+      "https://i.scdn.co/image/ab6761610000f17846998fb7fe04a20ea5327ce8"
+    ],
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "relatedArtists": []
   }
 }

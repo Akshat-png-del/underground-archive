@@ -1,10 +1,14 @@
 {
   "slug": "alarico",
   "name": "Alarico",
-  "updatedAt": "2026-06-28T01:38:18.296Z",
+  "updatedAt": "2026-07-17T06:49:23.448Z",
   "sources": {
     "youtube": {
       "syncedAt": "2026-06-28T01:35:01.415Z",
+      "status": "ok"
+    },
+    "spotify": {
+      "syncedAt": "2026-07-18T00:53:54.064Z",
       "status": "ok"
     }
   },
@@ -16,8 +20,23 @@
     "thumbnailUrl": "https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj"
   },
   "resolvedImage": {
-    "url": "https://yt3.ggpht.com/m-GglwyBxYCiu1srwtLINYAIW7DvHr4URi9wvlLUce9bXEZo2_x7p5vBCfpnKuABieRVulH9-MA=s800-c-k-c0x00ffffff-no-rj",
-    "source": "youtube",
-    "sourceUrl": "https://www.youtube.com/channel/UCgv0lNj2bP4UMPFC-Q66pNw"
+    "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616100005174a8610f5783e9f8a00ca5e9f1",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3160Uht6QdGT17EECSPWAO"
+  },
+  "spotify": {
+    "artistId": "3160Uht6QdGT17EECSPWAO",
+    "name": "Alarico",
+    "url": "https://open.spotify.com/artist/3160Uht6QdGT17EECSPWAO",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eba8610f5783e9f8a00ca5e9f1",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eba8610f5783e9f8a00ca5e9f1",
+      "https://i.scdn.co/image/ab67616100005174a8610f5783e9f8a00ca5e9f1",
+      "https://i.scdn.co/image/ab6761610000f178a8610f5783e9f8a00ca5e9f1"
+    ],
+    "relatedArtists": []
   }
 }
