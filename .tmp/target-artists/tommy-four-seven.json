@@ -1,0 +1,112 @@
+{
+  "slug": "tommy-four-seven",
+  "name": "Tommy Four Seven",
+  "spotifyName": "Tommy Four Seven",
+  "spotifyId": "3AxgXLivpM1GoOVMjMgsId",
+  "spotifyUrl": "https://open.spotify.com/artist/3AxgXLivpM1GoOVMjMgsId",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb247165685990e551a1009026",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb247165685990e551a1009026",
+    "https://i.scdn.co/image/ab67616100005174247165685990e551a1009026",
+    "https://i.scdn.co/image/ab6761610000f178247165685990e551a1009026"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Germany",
+  "city": "United Kingdom",
+  "activeSince": 2009,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "OX1",
+      "spotifyTrackId": "2ad04RkIBe69ZjJUyFdFlg",
+      "year": 2014,
+      "duration": "7:12",
+      "album": "OX"
+    },
+    {
+      "title": "Ratu",
+      "spotifyTrackId": "6xtqEUksZAgkCQGY5YyssW",
+      "year": 2011,
+      "duration": "7:58",
+      "album": "Primate"
+    },
+    {
+      "title": "Sevals - Terence Fixmer Remix",
+      "spotifyTrackId": "5RaVm2Y9MPoMepFA0S3tQp",
+      "year": 2011,
+      "duration": "8:00",
+      "album": "Primate Remixed"
+    },
+    {
+      "title": "UUU",
+      "spotifyTrackId": "2ZYYbaSILhg4XdvncqeCNL",
+      "year": 2016,
+      "duration": "4:41",
+      "album": "47007"
+    },
+    {
+      "title": "OX1 - Oscar Mulero Remix",
+      "spotifyTrackId": "6fO21bTewuudyPH40vPHSd",
+      "year": 2014,
+      "duration": "6:39",
+      "album": "OX"
+    },
+    {
+      "title": "Surma - Speed J Remix",
+      "spotifyTrackId": "30rqyQQ6hfeqL6gkEM7uxK",
+      "year": 2009,
+      "duration": "10:51",
+      "album": "Surma"
+    }
+  ],
+  "trackHashes": {
+    "2ad04RkIBe69ZjJUyFdFlg": "ab67616d00001e0250f916c8ef1a5481b8a0457b",
+    "6xtqEUksZAgkCQGY5YyssW": "ab67616d00001e02722d3e75c0aee3cf68cce1e1",
+    "5RaVm2Y9MPoMepFA0S3tQp": "ab67616d00001e028165b753449b687b2ebc2efb",
+    "2ZYYbaSILhg4XdvncqeCNL": "ab67616d00001e02f7583e244ae948335552dc59",
+    "6fO21bTewuudyPH40vPHSd": "ab67616d00001e0250f916c8ef1a5481b8a0457b",
+    "30rqyQQ6hfeqL6gkEM7uxK": "ab67616d00001e024ff082a1ee20f241c77f9eec"
+  },
+  "sets": [
+    {
+      "title": "Tommy Four Seven | HÖR - May 24 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "GheRQu38N-c"
+    },
+    {
+      "title": "Samurai Music - Tommy Four Seven / January 15 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "l0q9SHhjLRg"
+    },
+    {
+      "title": "Tommy Four Seven | HÖR - Jul 21 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "3FwtdGQDoTg"
+    },
+    {
+      "title": "TOMMY FOUR SEVEN | Boiler Room x Kompass",
+      "venue": "Boiler Room",
+      "year": 2019,
+      "youtubeId": "3uJL-JuYvls"
+    },
+    {
+      "title": "Tommy Four Seven | Boiler Room Prague",
+      "venue": "Boiler Room",
+      "year": 2018,
+      "youtubeId": "tfrZCnhooGo"
+    }
+  ]
+}

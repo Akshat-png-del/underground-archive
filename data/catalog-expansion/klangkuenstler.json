@@ -60,12 +60,6 @@
   ],
   "sets": [
     {
-      "title": "Boiler Room Manchester — Teletech",
-      "venue": "Teletech",
-      "year": 2024,
-      "youtubeId": "RMLBjvvtXyk"
-    },
-    {
       "title": "Klangkuenstler / December 25 / 4pm-5pm",
       "venue": "HÖR Berlin",
       "year": 2020,
@@ -76,7 +70,13 @@
       "venue": "HÖR Berlin",
       "year": 2021,
       "youtubeId": "Ch0QL50wLvk"
+    },
+    {
+      "title": "Boiler Room Manchester — Teletech",
+      "venue": "Teletech",
+      "year": 2024,
+      "youtubeId": "RMLBjvvtXyk"
     }
   ],
-  "updatedAt": "2026-07-18T00:55:01.760Z"
+  "updatedAt": "2026-07-18T01:42:41.665Z"
 }

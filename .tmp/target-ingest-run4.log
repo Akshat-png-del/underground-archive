@@ -1,0 +1,106 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+npm warn exec The following package was not found and will be installed: tsx@4.23.1
+◇ injected env (2) from .env.local // tip: ⌁ auth for agents [www.vestauth.com]
+Loaded 674 cached official event sets
+
+▶ BYORN
+  [byorn] BYORN · 6 tracks · Unknown/Unknown · since 2023
+  ! YouTube quota exhausted — skipping remaining live searches
+
+▶ KUKO
+  [kuko] KUKO · 3 tracks · Japan/Japan · since 2024
+
+▶ Lessss
+  [lessss] LESSSS · 6 tracks · France/France · since 2024
+
+▶ Luciid
+  [luciid] Luciid · 6 tracks · Ireland/Monaghan · since 2024
+
+▶ Doruksen
+  [doruksen] Doruksen · 6 tracks · Unknown/Unknown · since 2023
+
+▶ Kander
+  [kander] Kander · 2 tracks · United States/Kansas City · since 2025
+
+▶ Callush
+  [callush] Callush · 6 tracks · Germany/Germany · since 2024
+
+▶ KRL MX
+  [krl-mx] Krl Mx · 6 tracks · France/France · since 2021
+
+▶ 6EJOU
+  [6ejou] 6EJOU · 6 tracks · France/Lyon · since 2020
+
+▶ AIROD
+  [airod] AIROD · 6 tracks · France/France · since 2020
+
+▶ Fatima Hajji
+  [fatima-hajji] Fatima Hajji · 6 tracks · Spain/Spain · since 2016
+
+▶ Fernanda Martins
+  [fernanda-martins] Fernanda Martins · 6 tracks · Spain/Brazil · since 2015
+  ✗ not verified: unverifiable techno identity (Spotify genres=[], MB tags=[], no verified techno set)
+
+▶ Otta
+  [otta] OTTA · 0 tracks · United Kingdom/London · since 1997
+  ✗ not verified: no owned Spotify tracks found — Spotify identity unconfirmed (likely same-named namesake)
+
+▶ SNTS
+  [snts] Snts · 6 tracks · Germany/Germany · since 2015
+
+▶ Tommy Four Seven
+  [tommy-four-seven] Tommy Four Seven · 6 tracks · Germany/United Kingdom · since 2009
+
+▶ Headless Horseman
+  [headless-horseman] Headless Horseman · 6 tracks · Germany/Berlin · since 2013
+
+▶ Inhalt der Nacht
+  [inhalt-der-nacht] Inhalt Der Nacht · 6 tracks · Germany/Germany · since 2018
+
+▶ Scalameriya
+    track search failed: HTTP 429: Too many requests
+  [scalameriya] Scalameriya · 6 tracks · Serbia/Šumadijski okrug · since 2020
+
+▶ DJ Hyperdrive
+  ✗ error: HTTP 429: Too many requests
+
+▶ MISCHLUFT
+  ✗ error: HTTP 429: Too many requests
+
+▶ Onlynumbers
+  ⤳ skipped: already in catalog (onlynumbers)
+
+▶ XRTN
+  ✗ error: HTTP 429: Too many requests
+
+▶ KUSS
+  ✗ error: HTTP 429: Too many requests
+
+▶ Jazzy
+  ✗ error: HTTP 429: Too many requests
+
+▶ KAS:ST
+  ✗ error: HTTP 429: Too many requests
+  cleaned stale /Users/akshat/Projects/vitalforge/data/catalog-expansion/otta.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/ingestion/artists/otta.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/catalog-expansion/dj-hyperdrive.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/ingestion/artists/dj-hyperdrive.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/catalog-expansion/mischluft.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/ingestion/artists/mischluft.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/catalog-expansion/xrtn.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/ingestion/artists/xrtn.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/catalog-expansion/jazzy.json
+  cleaned stale /Users/akshat/Projects/vitalforge/data/ingestion/artists/jazzy.json
+
+=== DONE ===
+Added: 16 · tracks: 89 · sets: 66 · covers: +0
+Skipped (existing): 1 · Not verified: 8
+Sets by venue: {
+  'HÖR Berlin': 27,
+  Verknipt: 25,
+  'Boiler Room': 9,
+  Gotec: 3,
+  Intercell: 2
+}
+Result → /Users/akshat/Projects/vitalforge/.tmp/target-artists/result.json
+Seeds → /Users/akshat/Projects/vitalforge/src/content/artists/target-artists-seeds.ts

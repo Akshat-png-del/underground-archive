@@ -1,0 +1,68 @@
+{
+  "slug": "scalameriya",
+  "tracks": [
+    {
+      "title": "Vicious Remedy",
+      "spotifyTrackId": "4P29grgTgbQR8quJe7dGRa",
+      "year": 2020,
+      "duration": "4:46",
+      "album": "Blueprint for Disaster - EP"
+    },
+    {
+      "title": "Eidolon",
+      "spotifyTrackId": "0A2tTieG79Vuau776zvwbj",
+      "year": 2020,
+      "duration": "4:50",
+      "album": "47024"
+    },
+    {
+      "title": "Incorruptible Essence",
+      "spotifyTrackId": "1A42L7BXZ1S38RuMIqW4Hy",
+      "year": 2025,
+      "duration": "4:46",
+      "album": "Incorruptible Essence"
+    },
+    {
+      "title": "Red X",
+      "spotifyTrackId": "0xV9jM8sCOipcBIfmwA9N6",
+      "year": 2020,
+      "duration": "4:50",
+      "album": "47024"
+    },
+    {
+      "title": "Havoc & Despair",
+      "spotifyTrackId": "1JYfOalcQ4eZGsko68xoYx",
+      "year": 2020,
+      "duration": "4:51",
+      "album": "5Y"
+    },
+    {
+      "title": "Tainted Voltage",
+      "spotifyTrackId": "6pMZjO8JIKRNXUK3KZDrpq",
+      "year": 2020,
+      "duration": "4:49",
+      "album": "47024"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Scalameriya at Intercell x Perc Trax | ADE 2019 - FULL SET",
+      "venue": "Intercell",
+      "year": 2019,
+      "youtubeId": "F6U-iO13v9I"
+    },
+    {
+      "title": "Scalameriya | HÖR - Oct 7 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "WsiNfC_Cqh8"
+    },
+    {
+      "title": "Scalameriya | HÖR - Sep 1 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "xj6GpwDfoqw"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.249Z"
+}

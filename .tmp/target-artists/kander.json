@@ -1,0 +1,76 @@
+{
+  "slug": "kander",
+  "name": "Kander",
+  "spotifyName": "Kander",
+  "spotifyId": "3gSVZTpmVW2JKzngOCDXkd",
+  "spotifyUrl": "https://open.spotify.com/artist/3gSVZTpmVW2JKzngOCDXkd",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb381a19c364a83f0e2e0372a1",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb381a19c364a83f0e2e0372a1",
+    "https://i.scdn.co/image/ab67616100005174381a19c364a83f0e2e0372a1",
+    "https://i.scdn.co/image/ab6761610000f178381a19c364a83f0e2e0372a1"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [
+    "american"
+  ],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "United States",
+  "city": "Kansas City",
+  "activeSince": 2025,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Higher State",
+      "spotifyTrackId": "6rPCbRKOxkxtMly0YbCtLn",
+      "year": 2026,
+      "duration": "3:50",
+      "album": "Higher State"
+    },
+    {
+      "title": "Rules of the Dance",
+      "spotifyTrackId": "0FoisMbB6Y8ayGi8tt8aZw",
+      "year": 2025,
+      "duration": "4:42",
+      "album": "Rules of the Dance"
+    }
+  ],
+  "trackHashes": {
+    "6rPCbRKOxkxtMly0YbCtLn": "ab67616d00001e02e27b885abfe19ee733bbdf2b",
+    "0FoisMbB6Y8ayGi8tt8aZw": "ab67616d00001e021bab4caf1c4f62669574f05e"
+  },
+  "sets": [
+    {
+      "title": "Kander @ Verknipt Festival 2023 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "Rp6069sY5BU"
+    },
+    {
+      "title": "Kander | HÖR - October 8 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "RVsTMrhZAcw"
+    },
+    {
+      "title": "Driller - THANDER (THAM & Kander)  | HÖR - March 12 / 2026",
+      "venue": "HÖR Berlin",
+      "year": 2026,
+      "youtubeId": "npfGhFCaL0A"
+    },
+    {
+      "title": "Kander | Boiler Room Manchester: Teletech",
+      "venue": "Boiler Room",
+      "year": 2022,
+      "youtubeId": "fa06uuZeVwo"
+    }
+  ]
+}

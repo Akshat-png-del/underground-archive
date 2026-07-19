@@ -1,0 +1,124 @@
+{
+  "slug": "krl-mx",
+  "name": "KRL MX",
+  "spotifyName": "Krl Mx",
+  "spotifyId": "49e9A9elFAUS9sCDMTyiWC",
+  "spotifyUrl": "https://open.spotify.com/artist/49e9A9elFAUS9sCDMTyiWC",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb99c6ba6bad9ac37142cb8567",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb99c6ba6bad9ac37142cb8567",
+    "https://i.scdn.co/image/ab6761610000517499c6ba6bad9ac37142cb8567",
+    "https://i.scdn.co/image/ab6761610000f17899c6ba6bad9ac37142cb8567"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "France",
+  "city": "France",
+  "activeSince": 2021,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Tropical Boost",
+      "spotifyTrackId": "3MfaiftNQipH4r99RGymxc",
+      "year": 2023,
+      "duration": "4:36",
+      "album": "Tropical Boost"
+    },
+    {
+      "title": "Holy Gucci - Clair Remix",
+      "spotifyTrackId": "5xrVpvItGKWMsTtkZgof8P",
+      "year": 2021,
+      "duration": "6:09",
+      "album": "Shifter Pro"
+    },
+    {
+      "title": "<3",
+      "spotifyTrackId": "1DC6Q9Y8s4SrcwEMm7PVnZ",
+      "year": 2023,
+      "duration": "5:13",
+      "album": "<3"
+    },
+    {
+      "title": "Summertime Sadness",
+      "spotifyTrackId": "0MABo0JcpbjJFaF4LGETkH",
+      "year": 2026,
+      "duration": "3:12",
+      "album": "Summertime Sadness"
+    },
+    {
+      "title": "LEFTLOVERS",
+      "spotifyTrackId": "0DM8bfkXGLOQBQ5XFCDKfW",
+      "year": 2022,
+      "duration": "7:04",
+      "album": "Manifesto 666"
+    },
+    {
+      "title": "Monica Makes Boyz Cry",
+      "spotifyTrackId": "4yXsCIdddK2GLh42Xa4q5E",
+      "year": 2021,
+      "duration": "5:50",
+      "album": "Shifter Pro"
+    }
+  ],
+  "trackHashes": {
+    "3MfaiftNQipH4r99RGymxc": "ab67616d00001e02ccd5cb97e86c56ee29de6a64",
+    "5xrVpvItGKWMsTtkZgof8P": "ab67616d00001e029ca2ac4a6ef60b946ef5da70",
+    "1DC6Q9Y8s4SrcwEMm7PVnZ": "ab67616d00001e0246cd6bec7271b470862935dd",
+    "0MABo0JcpbjJFaF4LGETkH": "ab67616d00001e024864e6fe020ba7c3f9b61626",
+    "0DM8bfkXGLOQBQ5XFCDKfW": "ab67616d00001e0274999d518189010f508a4ebb",
+    "4yXsCIdddK2GLh42Xa4q5E": "ab67616d00001e029ca2ac4a6ef60b946ef5da70"
+  },
+  "sets": [
+    {
+      "title": "KRL MX | Main Floor - Gotec Club | 2 H Hard Set",
+      "venue": "Gotec",
+      "year": 2025,
+      "youtubeId": "8KzQm7G9Nho"
+    },
+    {
+      "title": "KRL MX @ Verknipt Germany Day 1 | Turbinenhalle, Oberhausen",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "aXDknjTX2MA"
+    },
+    {
+      "title": "KRL MX @ Verknipt x Blackworks ADE 2023 | Saturday",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "6-8zWD7yL6c"
+    },
+    {
+      "title": "KRL MX @ Verknipt ADE 2022",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "X-S9Vr0Vy70"
+    },
+    {
+      "title": "Raise Agency - KRL MX | HÖR - Jun 7 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "g6ta8-91df8"
+    },
+    {
+      "title": "KRL MX | HÖR - May 1 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "3vZglthb6_k"
+    },
+    {
+      "title": "KRL MX | HÖR x Sennheiser Amsterdam Pop-up - October 21 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "cClJDV1ix1A"
+    }
+  ]
+}

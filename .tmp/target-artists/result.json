@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-07-18T02:41:23.271Z",
+  "added": [
+    {
+      "slug": "byorn",
+      "name": "BYORN",
+      "spotifyId": "6PNduxfJ9CVW1bVXUR16AD",
+      "tracks": 6,
+      "sets": 2,
+      "country": "International",
+      "city": "International"
+    },
+    {
+      "slug": "kuko",
+      "name": "KUKO",
+      "spotifyId": "4sCQPElBVBfJNFGydeWwnU",
+      "tracks": 3,
+      "sets": 1,
+      "country": "Japan",
+      "city": "Japan"
+    },
+    {
+      "slug": "lessss",
+      "name": "Lessss",
+      "spotifyId": "5Os2nUALInDs7MyexVNwrm",
+      "tracks": 6,
+      "sets": 4,
+      "country": "France",
+      "city": "France"
+    },
+    {
+      "slug": "luciid",
+      "name": "Luciid",
+      "spotifyId": "3YMs2NjzmU8oc5muj4LxgL",
+      "tracks": 6,
+      "sets": 2,
+      "country": "Ireland",
+      "city": "Monaghan"
+    },
+    {
+      "slug": "doruksen",
+      "name": "Doruksen",
+      "spotifyId": "4QualaVaoF8vYnpJ5o8Pw6",
+      "tracks": 6,
+      "sets": 2,
+      "country": "International",
+      "city": "International"
+    },
+    {
+      "slug": "kander",
+      "name": "Kander",
+      "spotifyId": "3gSVZTpmVW2JKzngOCDXkd",
+      "tracks": 2,
+      "sets": 4,
+      "country": "United States",
+      "city": "Kansas City"
+    },
+    {
+      "slug": "callush",
+      "name": "Callush",
+      "spotifyId": "7mD8JtA3uI7BI0CoGdKcid",
+      "tracks": 6,
+      "sets": 5,
+      "country": "Germany",
+      "city": "Germany"
+    },
+    {
+      "slug": "krl-mx",
+      "name": "KRL MX",
+      "spotifyId": "49e9A9elFAUS9sCDMTyiWC",
+      "tracks": 6,
+      "sets": 7,
+      "country": "France",
+      "city": "France"
+    },
+    {
+      "slug": "6ejou",
+      "name": "6EJOU",
+      "spotifyId": "1k0U51DXyjFk4YnLZUIMP9",
+      "tracks": 6,
+      "sets": 8,
+      "country": "France",
+      "city": "Lyon"
+    },
+    {
+      "slug": "airod",
+      "name": "AIROD",
+      "spotifyId": "3oPI0nOC7MHooFy5qDsFrv",
+      "tracks": 6,
+      "sets": 4,
+      "country": "France",
+      "city": "France"
+    },
+    {
+      "slug": "fatima-hajji",
+      "name": "Fatima Hajji",
+      "spotifyId": "6jZSXmTCxZhFfYELtp78Ci",
+      "tracks": 6,
+      "sets": 8,
+      "country": "Spain",
+      "city": "Spain"
+    },
+    {
+      "slug": "fernanda-martins",
+      "name": "Fernanda Martins",
+      "spotifyId": "52MgoD4ydR3spsWVir9naX",
+      "tracks": 6,
+      "sets": 0,
+      "country": "Spain",
+      "city": "Brazil"
+    },
+    {
+      "slug": "snts",
+      "name": "SNTS",
+      "spotifyId": "6Unmr1mmDxRqZY7jkSQOcg",
+      "tracks": 6,
+      "sets": 3,
+      "country": "Germany",
+      "city": "Germany"
+    },
+    {
+      "slug": "tommy-four-seven",
+      "name": "Tommy Four Seven",
+      "spotifyId": "3AxgXLivpM1GoOVMjMgsId",
+      "tracks": 6,
+      "sets": 5,
+      "country": "Germany",
+      "city": "United Kingdom"
+    },
+    {
+      "slug": "headless-horseman",
+      "name": "Headless Horseman",
+      "spotifyId": "7zB6lIez4mAY66sepHvJBa",
+      "tracks": 6,
+      "sets": 3,
+      "country": "Germany",
+      "city": "Berlin"
+    },
+    {
+      "slug": "inhalt-der-nacht",
+      "name": "Inhalt der Nacht",
+      "spotifyId": "0rCDBsRMdD2jIAnAf6kbaL",
+      "tracks": 6,
+      "sets": 5,
+      "country": "Germany",
+      "city": "Germany"
+    },
+    {
+      "slug": "scalameriya",
+      "name": "Scalameriya",
+      "spotifyId": "2YMcVZW7930T6vyQikJJpG",
+      "tracks": 6,
+      "sets": 3,
+      "country": "Serbia",
+      "city": "Šumadijski okrug"
+    },
+    {
+      "slug": "dj-hyperdrive",
+      "name": "DJ Hyperdrive",
+      "spotifyId": "4SpabttFpFvc0lqr5gYPen",
+      "tracks": 6,
+      "sets": 5,
+      "country": "International",
+      "city": "International"
+    },
+    {
+      "slug": "mischluft",
+      "name": "MISCHLUFT",
+      "spotifyId": "6IPWduBm255hSxmAcNoHjF",
+      "tracks": 6,
+      "sets": 2,
+      "country": "International",
+      "city": "International"
+    },
+    {
+      "slug": "xrtn",
+      "name": "XRTN",
+      "spotifyId": "5oXWx1ZjiyWTt4fhjUQgKR",
+      "tracks": 6,
+      "sets": 4,
+      "country": "Netherlands",
+      "city": "Netherlands"
+    },
+    {
+      "slug": "kas-st",
+      "name": "KAS:ST",
+      "spotifyId": "7orlzf5LTqSnCzURkZFebN",
+      "tracks": 2,
+      "sets": 0,
+      "country": "Spain",
+      "city": "Paris"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Onlynumbers",
+      "reason": "already in catalog (onlynumbers)"
+    }
+  ],
+  "failed": [
+    {
+      "name": "Otta",
+      "reason": "no owned Spotify tracks found — Spotify identity unconfirmed (likely same-named namesake)"
+    },
+    {
+      "name": "KUSS",
+      "reason": "no owned Spotify tracks found — Spotify identity unconfirmed (likely same-named namesake)"
+    },
+    {
+      "name": "Jazzy",
+      "reason": "no owned Spotify tracks found — Spotify identity unconfirmed (likely same-named namesake)"
+    }
+  ],
+  "errored": [],
+  "totals": {
+    "artists": 21,
+    "tracks": 115,
+    "sets": 77,
+    "hashesAdded": 0
+  },
+  "setsByVenue": {
+    "HÖR Berlin": 30,
+    "Verknipt": 29,
+    "Boiler Room": 12,
+    "Gotec": 3,
+    "Intercell": 3
+  }
+}

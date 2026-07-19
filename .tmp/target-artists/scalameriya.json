@@ -1,0 +1,100 @@
+{
+  "slug": "scalameriya",
+  "name": "Scalameriya",
+  "spotifyName": "Scalameriya",
+  "spotifyId": "2YMcVZW7930T6vyQikJJpG",
+  "spotifyUrl": "https://open.spotify.com/artist/2YMcVZW7930T6vyQikJJpG",
+  "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733b75ae6edc297d5648e4691f",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab67616d0000b2733b75ae6edc297d5648e4691f",
+    "https://i.scdn.co/image/ab67616d00001e023b75ae6edc297d5648e4691f",
+    "https://i.scdn.co/image/ab67616d000048513b75ae6edc297d5648e4691f"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Serbia",
+  "city": "Šumadijski okrug",
+  "activeSince": 2020,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Vicious Remedy",
+      "spotifyTrackId": "4P29grgTgbQR8quJe7dGRa",
+      "year": 2020,
+      "duration": "4:46",
+      "album": "Blueprint for Disaster - EP"
+    },
+    {
+      "title": "Eidolon",
+      "spotifyTrackId": "0A2tTieG79Vuau776zvwbj",
+      "year": 2020,
+      "duration": "4:50",
+      "album": "47024"
+    },
+    {
+      "title": "Incorruptible Essence",
+      "spotifyTrackId": "1A42L7BXZ1S38RuMIqW4Hy",
+      "year": 2025,
+      "duration": "4:46",
+      "album": "Incorruptible Essence"
+    },
+    {
+      "title": "Red X",
+      "spotifyTrackId": "0xV9jM8sCOipcBIfmwA9N6",
+      "year": 2020,
+      "duration": "4:50",
+      "album": "47024"
+    },
+    {
+      "title": "Havoc & Despair",
+      "spotifyTrackId": "1JYfOalcQ4eZGsko68xoYx",
+      "year": 2020,
+      "duration": "4:51",
+      "album": "5Y"
+    },
+    {
+      "title": "Tainted Voltage",
+      "spotifyTrackId": "6pMZjO8JIKRNXUK3KZDrpq",
+      "year": 2020,
+      "duration": "4:49",
+      "album": "47024"
+    }
+  ],
+  "trackHashes": {
+    "4P29grgTgbQR8quJe7dGRa": "ab67616d00001e02de2b8dc6611b9474c55b53f0",
+    "0A2tTieG79Vuau776zvwbj": "ab67616d00001e02dae3029f54def1e3b3311ba1",
+    "1A42L7BXZ1S38RuMIqW4Hy": "ab67616d00001e02f08986cc0e753fa0efbe0d77",
+    "0xV9jM8sCOipcBIfmwA9N6": "ab67616d00001e02dae3029f54def1e3b3311ba1",
+    "1JYfOalcQ4eZGsko68xoYx": "ab67616d00001e02ea3a8fd65e88254ffad80e8a",
+    "6pMZjO8JIKRNXUK3KZDrpq": "ab67616d00001e02dae3029f54def1e3b3311ba1"
+  },
+  "sets": [
+    {
+      "title": "Scalameriya at Intercell x Perc Trax | ADE 2019 - FULL SET",
+      "venue": "Intercell",
+      "year": 2019,
+      "youtubeId": "F6U-iO13v9I"
+    },
+    {
+      "title": "Scalameriya | HÖR - Oct 7 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "WsiNfC_Cqh8"
+    },
+    {
+      "title": "Scalameriya | HÖR - Sep 1 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "xj6GpwDfoqw"
+    }
+  ]
+}

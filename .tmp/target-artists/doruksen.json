@@ -1,0 +1,94 @@
+{
+  "slug": "doruksen",
+  "name": "Doruksen",
+  "spotifyName": "Doruksen",
+  "spotifyId": "4QualaVaoF8vYnpJ5o8Pw6",
+  "spotifyUrl": "https://open.spotify.com/artist/4QualaVaoF8vYnpJ5o8Pw6",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb135ef357dd5ee4bab2bec45b",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb135ef357dd5ee4bab2bec45b",
+    "https://i.scdn.co/image/ab67616100005174135ef357dd5ee4bab2bec45b",
+    "https://i.scdn.co/image/ab6761610000f178135ef357dd5ee4bab2bec45b"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "International",
+  "city": "International",
+  "activeSince": 2023,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Intoxicated - Slowed",
+      "spotifyTrackId": "0guiaw0dYGlpoZZP7QjGqS",
+      "year": 2024,
+      "duration": "2:14",
+      "album": "Intoxicated (Slowed)"
+    },
+    {
+      "title": "Intoxicated",
+      "spotifyTrackId": "78ZNkSEFDhlzT2t5jBCiGH",
+      "year": 2023,
+      "duration": "5:09",
+      "album": "Intoxicated"
+    },
+    {
+      "title": "Intoxicated - Super Slowed",
+      "spotifyTrackId": "4NRag0LK7yH7FOTwA1BeFN",
+      "year": 2024,
+      "duration": "7:09",
+      "album": "Intoxicated (Super Slowed + Sped Up)"
+    },
+    {
+      "title": "ACIDONK",
+      "spotifyTrackId": "0f2QhCFJ1cDbbdLiHq0zWH",
+      "year": 2025,
+      "duration": "3:30",
+      "album": "ACIDONK"
+    },
+    {
+      "title": "GET ME WET EAT MY ACID",
+      "spotifyTrackId": "2MynoTr7fzhGaeIxcoVKXY",
+      "year": 2026,
+      "duration": "3:38",
+      "album": "GET ME WET EAT MY ACID"
+    },
+    {
+      "title": "Intoxicated - Sped Up",
+      "spotifyTrackId": "7ax3cpUgjJ0DTtMmi37jgL",
+      "year": 2024,
+      "duration": "4:32",
+      "album": "Intoxicated (Super Slowed + Sped Up)"
+    }
+  ],
+  "trackHashes": {
+    "0guiaw0dYGlpoZZP7QjGqS": "ab67616d00001e02e5357e00c5071794778a3736",
+    "78ZNkSEFDhlzT2t5jBCiGH": "ab67616d00001e020f0af8145a93134fb14e7a89",
+    "4NRag0LK7yH7FOTwA1BeFN": "ab67616d00001e02f8b20f579c55c4f0c7f3bd4d",
+    "0f2QhCFJ1cDbbdLiHq0zWH": "ab67616d00001e02ff92f8d2eb0808899ca8bc63",
+    "2MynoTr7fzhGaeIxcoVKXY": "ab67616d00001e023205dce5db1a4cbd2f1f17ae",
+    "7ax3cpUgjJ0DTtMmi37jgL": "ab67616d00001e02f8b20f579c55c4f0c7f3bd4d"
+  },
+  "sets": [
+    {
+      "title": "Doruksen | Opening Set @ Verknipt ADE 2023  | Thursday",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "wI6ziVUpGMw"
+    },
+    {
+      "title": "Doruksen @ Verknipt Easter Special 09-04-2023 | AFAS Live, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "cqMtE_pRjhA"
+    }
+  ]
+}

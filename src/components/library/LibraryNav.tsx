@@ -9,7 +9,6 @@ const links = [
   { href: "/library/playlists", label: "My Playlists" },
   { href: "/library/artists", label: "Saved Artists" },
   { href: "/library/sets", label: "Saved Sets" },
-  { href: "/library/tracks", label: "Liked Tracks" },
   { href: "/library/history", label: "History" },
 ];
 

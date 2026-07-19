@@ -26,7 +26,7 @@ export function WeeklyDiscoveriesMagazine({
       <HomeSection
         title="Weekly discoveries"
         subtitle="Editorial picks — emerging voices, essential tracks, and sets to study."
-        href="/discover"
+        href="/artists"
         variant="accent"
       >
         <div className="grid gap-8 lg:grid-cols-12">

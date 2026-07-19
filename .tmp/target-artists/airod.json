@@ -1,0 +1,112 @@
+{
+  "slug": "airod",
+  "name": "AIROD",
+  "spotifyName": "AIROD",
+  "spotifyId": "3oPI0nOC7MHooFy5qDsFrv",
+  "spotifyUrl": "https://open.spotify.com/artist/3oPI0nOC7MHooFy5qDsFrv",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebd217957e7e7b7a64ccd03814",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5ebd217957e7e7b7a64ccd03814",
+    "https://i.scdn.co/image/ab67616100005174d217957e7e7b7a64ccd03814",
+    "https://i.scdn.co/image/ab6761610000f178d217957e7e7b7a64ccd03814"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [
+    "hard techno",
+    "techno",
+    "hard techno",
+    "techno"
+  ],
+  "genres": [
+    "hard-techno",
+    "peak-time-techno"
+  ],
+  "country": "France",
+  "city": "France",
+  "activeSince": 2020,
+  "labels": [],
+  "bpmRange": [
+    145,
+    160
+  ],
+  "tracks": [
+    {
+      "title": "Adrenaline",
+      "spotifyTrackId": "5xbzKTayrK9VmxS7gTh855",
+      "year": 2020,
+      "duration": "6:51",
+      "album": "Exhale VA001"
+    },
+    {
+      "title": "I Don't Care",
+      "spotifyTrackId": "6yWDU0Ub2Nag405x8xumFh",
+      "year": 2026,
+      "duration": "3:12",
+      "album": "I Don't Care"
+    },
+    {
+      "title": "World of Strobe",
+      "spotifyTrackId": "65jeoBbEsU8O4XC0gk74mQ",
+      "year": 2020,
+      "duration": "6:17",
+      "album": "World of Strobe"
+    },
+    {
+      "title": "Zoo - Rave Edit",
+      "spotifyTrackId": "2KPEjEtjSdOOzcSliuXjna",
+      "year": 2024,
+      "duration": "3:12",
+      "album": "Zoo (Rave Edit)"
+    },
+    {
+      "title": "Real Shit",
+      "spotifyTrackId": "4C2XQe0oKPUXpwTyoEdMJT",
+      "year": 2025,
+      "duration": "2:22",
+      "album": "Real Shit"
+    },
+    {
+      "title": "New World",
+      "spotifyTrackId": "2Z7h9njDERgdNsN6BcGfBP",
+      "year": 2025,
+      "duration": "3:08",
+      "album": "New World"
+    }
+  ],
+  "trackHashes": {
+    "5xbzKTayrK9VmxS7gTh855": "ab67616d00001e0273b04f0daa2c209a71e64bc3",
+    "6yWDU0Ub2Nag405x8xumFh": "ab67616d00001e0209ce2f33d1d7ae676fcaab12",
+    "65jeoBbEsU8O4XC0gk74mQ": "ab67616d00001e0264a8a7f7f7c4959fe3f6ccaa",
+    "2KPEjEtjSdOOzcSliuXjna": "ab67616d00001e02b6e328a40fd6eb8b80aef7c5",
+    "4C2XQe0oKPUXpwTyoEdMJT": "ab67616d00001e0216ce9b986a2700916e608922",
+    "2Z7h9njDERgdNsN6BcGfBP": "ab67616d00001e023ffa62c84b9a51651549809c"
+  },
+  "sets": [
+    {
+      "title": "AIROD at Intercell x SNTS Invites | ADE 2021 - FULL SET",
+      "venue": "Intercell",
+      "year": 2021,
+      "youtubeId": "RtzcxawLvcc"
+    },
+    {
+      "title": "AIROD @ Verknipt Festival 2021",
+      "venue": "Verknipt",
+      "year": 2021,
+      "youtubeId": "cbnWXWicJoc"
+    },
+    {
+      "title": "AIROD | HÖR - April 22 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "9MVODozbGYc"
+    },
+    {
+      "title": "Airod | Boiler Room: Cologne",
+      "venue": "Boiler Room",
+      "year": 2024,
+      "youtubeId": "0Mj8VhimBPI"
+    }
+  ]
+}

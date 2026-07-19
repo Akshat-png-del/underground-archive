@@ -1,6 +1,25 @@
 {
   "slug": "basswell",
   "tracks": [],
-  "sets": [],
-  "updatedAt": "2026-06-28T01:38:53.600Z"
+  "sets": [
+    {
+      "title": "Basswell @ Verknipt ArenA | Johan Cruijff ArenA, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "55miLP4LTu8"
+    },
+    {
+      "title": "Basswell @ Verknipt Festival 2023 Day 1 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "Vkw-6s_BQp0"
+    },
+    {
+      "title": "Basswell @ Verknipt Festival 2022 | Ponton",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "IGb_xepNPtI"
+    }
+  ],
+  "updatedAt": "2026-07-18T01:29:25.489Z"
 }

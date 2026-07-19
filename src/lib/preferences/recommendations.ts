@@ -29,34 +29,64 @@ export function getTodaysDiscovery(prefs: UserPreferences): DailyDiscovery {
   const verified = artists.filter((a) => a.curationTier === 1);
   const ranked = [...verified].sort((a, b) => scoreArtist(b, prefs) - scoreArtist(a, prefs));
   const idx = halfDayIndex();
-  const artist = ranked[idx % ranked.length] ?? verified[0] ?? artists[0];
+  const allSets = getDisplaySets();
+  const allTracks = getDisplayTracks();
 
-  const sets = getDisplaySets().filter((s) => s.artistSlug === artist.slug);
-  const allSets = sets.length ? sets : getDisplaySets();
-  const set = allSets[(idx + 1) % allSets.length];
+  for (let offset = 0; offset < ranked.length; offset++) {
+    const artist = ranked[(idx + offset) % ranked.length]!;
+    const sets = allSets.filter((s) => s.artistSlug === artist.slug);
+    const tracks = allTracks.filter((t) => t.artistSlug === artist.slug);
+    if (sets.length === 0 || tracks.length === 0) continue;
+    return {
+      artist,
+      set: sets[(idx + 1) % sets.length]!,
+      track: tracks[(idx + 2) % tracks.length]!,
+    };
+  }
 
-  const tracks = getDisplayTracks().filter((t) => t.artistSlug === artist.slug);
-  const allTracks = tracks.length ? tracks : getDisplayTracks();
-  const track = allTracks[(idx + 2) % allTracks.length];
-
-  return { artist, set, track };
+  const artist = ranked[idx % ranked.length] ?? verified[0] ?? artists[0]!;
+  // Last resort still requires same-artist pairing when possible.
+  const sets = allSets.filter((s) => s.artistSlug === artist.slug);
+  const tracks = allTracks.filter((t) => t.artistSlug === artist.slug);
+  if (sets.length > 0 && tracks.length > 0) {
+    return { artist, set: sets[0]!, track: tracks[0]! };
+  }
+  const any = ranked.find((a) => {
+    const s = allSets.some((x) => x.artistSlug === a.slug);
+    const t = allTracks.some((x) => x.artistSlug === a.slug);
+    return s && t;
+  })!;
+  return {
+    artist: any,
+    set: allSets.find((s) => s.artistSlug === any.slug)!,
+    track: allTracks.find((t) => t.artistSlug === any.slug)!,
+  };
 }
 
 /** Deterministic SSR / first-paint snapshot — top-ranked artist, first set/track. */
 export function getTodaysDiscoveryStatic(prefs: UserPreferences): DailyDiscovery {
   const verified = artists.filter((a) => a.curationTier === 1);
   const ranked = [...verified].sort((a, b) => scoreArtist(b, prefs) - scoreArtist(a, prefs));
-  const artist = ranked[0] ?? verified[0] ?? artists[0];
+  const allSets = getDisplaySets();
+  const allTracks = getDisplayTracks();
 
-  const sets = getDisplaySets().filter((s) => s.artistSlug === artist.slug);
-  const allSets = sets.length ? sets : getDisplaySets();
-  const set = allSets[0];
+  for (const artist of ranked) {
+    const sets = allSets.filter((s) => s.artistSlug === artist.slug);
+    const tracks = allTracks.filter((t) => t.artistSlug === artist.slug);
+    if (sets.length === 0 || tracks.length === 0) continue;
+    return { artist, set: sets[0]!, track: tracks[0]! };
+  }
 
-  const tracks = getDisplayTracks().filter((t) => t.artistSlug === artist.slug);
-  const allTracks = tracks.length ? tracks : getDisplayTracks();
-  const track = allTracks[0];
-
-  return { artist, set, track };
+  const any = ranked.find((a) => {
+    const s = allSets.some((x) => x.artistSlug === a.slug);
+    const t = allTracks.some((x) => x.artistSlug === a.slug);
+    return s && t;
+  }) ?? ranked[0] ?? verified[0] ?? artists[0]!;
+  return {
+    artist: any,
+    set: allSets.find((s) => s.artistSlug === any.slug) ?? allSets[0]!,
+    track: allTracks.find((t) => t.artistSlug === any.slug) ?? allTracks[0]!,
+  };
 }
 
 export function getRecommendationsForArtist(seedSlug: string, limit = 6): Artist[] {

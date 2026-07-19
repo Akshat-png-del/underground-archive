@@ -1,0 +1,62 @@
+{
+  "slug": "mischluft",
+  "tracks": [
+    {
+      "title": "Call Me Babe",
+      "spotifyTrackId": "4PFkJXTUZVEsKIZ01n4rev",
+      "year": 2024,
+      "duration": "2:44",
+      "album": "Call Me Babe"
+    },
+    {
+      "title": "LEFT2RIGHT",
+      "spotifyTrackId": "2uuZwmdEGSexiZ0swDMd1C",
+      "year": 2026,
+      "duration": "3:31",
+      "album": "LEFT2RIGHT"
+    },
+    {
+      "title": "Entertain Me",
+      "spotifyTrackId": "6v2N2miIqFLuOLbyFNeAns",
+      "year": 2024,
+      "duration": "2:50",
+      "album": "Entertain Me"
+    },
+    {
+      "title": "Burnin",
+      "spotifyTrackId": "1S19oeo1Ih10983dcfUeNj",
+      "year": 2023,
+      "duration": "4:02",
+      "album": "SINDEX VA 006 - Rave"
+    },
+    {
+      "title": "Side To Side",
+      "spotifyTrackId": "0bRzCl937W9PlTCknGfcW8",
+      "year": 2025,
+      "duration": "2:28",
+      "album": "Side To Side"
+    },
+    {
+      "title": "Lights Out",
+      "spotifyTrackId": "0CtEQErgyA7Jp4Jb3LGC7S",
+      "year": 2024,
+      "duration": "2:33",
+      "album": "Lights Out"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Mischluft at Intercell Outdoor: Bad Boombox pres. Hot Meal 2024",
+      "venue": "Intercell",
+      "year": 2024,
+      "youtubeId": "LjeYDZ5kO8I"
+    },
+    {
+      "title": "mischluft | Boiler Room: Ghent",
+      "venue": "Boiler Room",
+      "year": 2024,
+      "youtubeId": "_xR-kppeKY8"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.250Z"
+}

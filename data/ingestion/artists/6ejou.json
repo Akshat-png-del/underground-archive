@@ -1,0 +1,35 @@
+{
+  "slug": "6ejou",
+  "name": "6EJOU",
+  "updatedAt": "2026-07-18T02:41:23.245Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.245Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.245Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "1k0U51DXyjFk4YnLZUIMP9",
+    "name": "6EJOU",
+    "url": "https://open.spotify.com/artist/1k0U51DXyjFk4YnLZUIMP9",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb367c10765d27ae48fa714f0f",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb367c10765d27ae48fa714f0f",
+      "https://i.scdn.co/image/ab67616100005174367c10765d27ae48fa714f0f",
+      "https://i.scdn.co/image/ab6761610000f178367c10765d27ae48fa714f0f"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb367c10765d27ae48fa714f0f",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/1k0U51DXyjFk4YnLZUIMP9"
+  }
+}

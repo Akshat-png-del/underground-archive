@@ -1,0 +1,35 @@
+{
+  "slug": "scalameriya",
+  "name": "Scalameriya",
+  "updatedAt": "2026-07-18T02:41:23.249Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.249Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.249Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "2YMcVZW7930T6vyQikJJpG",
+    "name": "Scalameriya",
+    "url": "https://open.spotify.com/artist/2YMcVZW7930T6vyQikJJpG",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733b75ae6edc297d5648e4691f",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab67616d0000b2733b75ae6edc297d5648e4691f",
+      "https://i.scdn.co/image/ab67616d00001e023b75ae6edc297d5648e4691f",
+      "https://i.scdn.co/image/ab67616d000048513b75ae6edc297d5648e4691f"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2733b75ae6edc297d5648e4691f",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/2YMcVZW7930T6vyQikJJpG"
+  }
+}

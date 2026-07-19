@@ -37,9 +37,11 @@ function Section({
 function ReleaseCard({
   release,
   genres,
+  artistSlug,
 }: {
   release: ReturnType<typeof getLatestReleasesByArtist>[number];
   genres: Artist["genres"];
+  artistSlug: string;
 }) {
   const item = playbackItemFromRelease(release);
   const snapshot = useFinalPlaybackSnapshot();
@@ -62,7 +64,14 @@ function ReleaseCard({
       aria-label={`Play ${release.title}`}
     >
       <div className="relative h-14 w-14 shrink-0 overflow-hidden">
-        <TrackArtwork coverArt={release.coverArt} genres={genres} alt="" fill sizes="56px" />
+        <TrackArtwork
+          coverArt={release.coverArt}
+          genres={genres}
+          artistSlug={artistSlug}
+          alt=""
+          fill
+          sizes="56px"
+        />
       </div>
       <div className="min-w-0 flex-1">
         <p className="truncate font-medium text-foreground">{release.title}</p>
@@ -123,7 +132,7 @@ export function ArtistMusicSection({ artist }: { artist: Artist }) {
         <Section title="Latest releases" id="releases">
           <div className="grid gap-3 sm:grid-cols-2">
             {latestReleases.map((r) => (
-              <ReleaseCard key={r.id} release={r} genres={artist.genres} />
+              <ReleaseCard key={r.id} release={r} genres={artist.genres} artistSlug={artist.slug} />
             ))}
           </div>
         </Section>

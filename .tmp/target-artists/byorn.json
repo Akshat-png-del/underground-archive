@@ -1,0 +1,94 @@
+{
+  "slug": "byorn",
+  "name": "BYORN",
+  "spotifyName": "BYORN",
+  "spotifyId": "6PNduxfJ9CVW1bVXUR16AD",
+  "spotifyUrl": "https://open.spotify.com/artist/6PNduxfJ9CVW1bVXUR16AD",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9bc6b85c36fb9f7e26b379ac",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb9bc6b85c36fb9f7e26b379ac",
+    "https://i.scdn.co/image/ab676161000051749bc6b85c36fb9f7e26b379ac",
+    "https://i.scdn.co/image/ab6761610000f1789bc6b85c36fb9f7e26b379ac"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "International",
+  "city": "International",
+  "activeSince": 2023,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "2 LOUD",
+      "spotifyTrackId": "6kxx5snJ8o2MG9FuCJuGAQ",
+      "year": 2024,
+      "duration": "5:03",
+      "album": "2 LOUD"
+    },
+    {
+      "title": "Shivaya - Remix",
+      "spotifyTrackId": "3IGStl3M5BrxGyD01kZJ7Q",
+      "year": 2024,
+      "duration": "3:22",
+      "album": "Shivaya (Remix)"
+    },
+    {
+      "title": "Adagio For Strings - VIP Remix",
+      "spotifyTrackId": "1s7lyEUGYwWEyTHRjMHSjd",
+      "year": 2024,
+      "duration": "3:10",
+      "album": "Adagio For Strings (VIP Remix)"
+    },
+    {
+      "title": "Adagio For Strings",
+      "spotifyTrackId": "7xCiyNgdqxoPELJBL3XrQ6",
+      "year": 2024,
+      "duration": "6:00",
+      "album": "Adagio For Strings"
+    },
+    {
+      "title": "Ekstasis",
+      "spotifyTrackId": "7hhwIYLc95FXPb75uvb0r3",
+      "year": 2023,
+      "duration": "6:04",
+      "album": "Ekstasis"
+    },
+    {
+      "title": "Ekstasis - NOVAH Remix",
+      "spotifyTrackId": "60Edu22TFpIQ7E97oTVTfS",
+      "year": 2023,
+      "duration": "6:08",
+      "album": "Ekstasis"
+    }
+  ],
+  "trackHashes": {
+    "6kxx5snJ8o2MG9FuCJuGAQ": "ab67616d00001e024b6b1fb08b2ab0a76a6872cd",
+    "3IGStl3M5BrxGyD01kZJ7Q": "ab67616d00001e02bd84c0795bd2da7d01883bd5",
+    "1s7lyEUGYwWEyTHRjMHSjd": "ab67616d00001e021dee6354f76c70fcb33be181",
+    "7xCiyNgdqxoPELJBL3XrQ6": "ab67616d00001e0209a61b9ab8b4bde3637feab4",
+    "7hhwIYLc95FXPb75uvb0r3": "ab67616d00001e028090c9b8fdcd41ce455dd606",
+    "60Edu22TFpIQ7E97oTVTfS": "ab67616d00001e028090c9b8fdcd41ce455dd606"
+  },
+  "sets": [
+    {
+      "title": "Dangerous Goods - BYØRN | HÖR - June 20 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "__cm9SX0p0k"
+    },
+    {
+      "title": "BYØRN | HÖR ON TOUR Belgrade - 25 October / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "WjupqH4M6gY"
+    }
+  ]
+}

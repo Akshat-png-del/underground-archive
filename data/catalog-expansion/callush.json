@@ -1,0 +1,80 @@
+{
+  "slug": "callush",
+  "tracks": [
+    {
+      "title": "Delicious",
+      "spotifyTrackId": "4qnpoEABYnPBTvT7KZ8wX0",
+      "year": 2026,
+      "duration": "4:13",
+      "album": "Delicious"
+    },
+    {
+      "title": "Gift",
+      "spotifyTrackId": "3bvOyNnelGch53UYVOLT9Y",
+      "year": 2025,
+      "duration": "4:06",
+      "album": "Gift"
+    },
+    {
+      "title": "Never Fade",
+      "spotifyTrackId": "0fA2UKkDh9juIiVFEJtito",
+      "year": 2025,
+      "duration": "4:23",
+      "album": "She Needs Fun"
+    },
+    {
+      "title": "Your Eyes",
+      "spotifyTrackId": "3MaRoUXpgul9lUQ1fYSdMT",
+      "year": 2025,
+      "duration": "4:53",
+      "album": "Your Eyes"
+    },
+    {
+      "title": "No Fingerprints",
+      "spotifyTrackId": "1r40qBFl8oonFytZ5Ouvg4",
+      "year": 2025,
+      "duration": "5:16",
+      "album": "She Needs Fun"
+    },
+    {
+      "title": "I Don't Care",
+      "spotifyTrackId": "4JY3dJ5Yl8WoFALO6i7Bsc",
+      "year": 2024,
+      "duration": "5:09",
+      "album": "I Don't Care"
+    }
+  ],
+  "sets": [
+    {
+      "title": "CALLUSH | Boiler Floor - Gotec Club | 2 H Schranz Set",
+      "venue": "Gotec",
+      "year": 2026,
+      "youtubeId": "vr7581nrjdQ"
+    },
+    {
+      "title": "CALLUSH | HÖR ON TOUR Munich - 21November / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "BhvLi4LnMP0"
+    },
+    {
+      "title": "Driller x Riot Tapes - Callush | HÖR - October 8 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "4M2pWb3u9JY"
+    },
+    {
+      "title": "Brvtal Vision - Callush / December 15 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "tXq7rdszMb4"
+    },
+    {
+      "title": "elevenfive - Callush | HÖR - May 11 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "fTz5dxNmM0Y"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.244Z"
+}

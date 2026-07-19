@@ -1,0 +1,49 @@
+{
+  "slug": "jazzy",
+  "name": "Jazzy",
+  "spotifyName": "Jazzy",
+  "spotifyId": "7zAAwgV5Wqmvpb4GzvlRkP",
+  "spotifyUrl": "https://open.spotify.com/artist/7zAAwgV5Wqmvpb4GzvlRkP",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb64e029d1466b4e8d38eec59c",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb64e029d1466b4e8d38eec59c",
+    "https://i.scdn.co/image/ab6761610000517464e029d1466b4e8d38eec59c",
+    "https://i.scdn.co/image/ab6761610000f17864e029d1466b4e8d38eec59c"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Ireland",
+  "city": "Crumlin",
+  "activeSince": 1996,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [],
+  "trackHashes": {},
+  "sets": [
+    {
+      "title": "JAZZY b2b JOWI @ Verknipt Festival 2025 Day 1 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2025,
+      "youtubeId": "pQXS6cZxaAo"
+    },
+    {
+      "title": "Jazzy @ Verknipt Festival 2024 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "R07oELe1aUA"
+    },
+    {
+      "title": "Jazzy @ Verknipt Kingsday 2024 | Hembrugterrein, Zaandam",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "R48J7RAYJbw"
+    }
+  ]
+}

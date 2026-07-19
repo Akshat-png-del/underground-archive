@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import type { ArchiveSet } from "@/types/library";
-import { setCategoryLabels } from "@/content/sets";
 import { genreLabels } from "@/content/artists";
 import { Button } from "@/components/ui/Button";
 import { useLibrary } from "@/context/LibraryContext";
@@ -16,11 +15,10 @@ export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
   const { toggleSaveSet, isSetSaved } = useLibrary();
   const saved = isSetSaved(set.id);
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
-  const category = setCategoryLabels[set.category];
 
   return (
     <div className="set-watch-metadata mt-6 sm:mt-8">
-      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent">{category}</p>
+      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent">{set.event}</p>
       <h1 className="mt-2 font-serif text-3xl leading-tight text-foreground sm:text-4xl lg:text-5xl">
         {set.title}
       </h1>
@@ -60,7 +58,7 @@ export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
       </dl>
 
       <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-light sm:text-base">
-        {set.event} performance by {set.artistName} — {set.location}. Archived from {category}.
+        {set.event} performance by {set.artistName} — {set.location}.
       </p>
 
       <div className="mt-6 flex flex-wrap items-center gap-2">

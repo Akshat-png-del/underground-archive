@@ -51,7 +51,14 @@ export function resolveLibraryCoverArt(
     if (!track) return "";
     const fromTrack = firstVerifiedSpotifyArt(track.coverArt);
     if (fromTrack) return fromTrack;
-    // Fall through artist priority when track has no Spotify cover
+    // Verified artist portrait/hero when track has no Spotify cover
+    const artist = getArtist(track.artistSlug);
+    if (artist) {
+      const portrait = resolveHeroImage(artist);
+      if (portrait && !isPlaceholderArtwork(portrait) && !isGenericArtworkFallback(portrait)) {
+        return portrait;
+      }
+    }
     return resolveArtistLibraryArt(track.artistSlug);
   }
 

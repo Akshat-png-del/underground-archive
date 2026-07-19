@@ -1,4 +1,4 @@
-import { getSetsByArtist } from "@/content/sets";
+import { getSetsByArtist, getSet } from "@/content/sets";
 import { catalogReleases, getTracksByArtist } from "@/content/tracks";
 import type { Artist, ListeningPathStep } from "@/types";
 import { releaseId, slugify, trackId } from "@/lib/music";
@@ -13,44 +13,41 @@ function normalizeTitle(title: string): string {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-function titlesMatch(stepTitle: string, candidate: string): boolean {
-  const a = normalizeTitle(stepTitle);
-  const b = normalizeTitle(candidate);
-  if (!a || !b) return false;
-  if (a === b || a.includes(b) || b.includes(a)) return true;
-
-  const wordsA = a.split(" ").filter((w) => w.length > 2);
-  const wordsB = new Set(b.split(" ").filter((w) => w.length > 2));
-  if (wordsA.length === 0 || wordsB.size === 0) return false;
-
-  const overlap = wordsA.filter((w) => wordsB.has(w)).length;
-  const minWords = Math.min(wordsA.length, wordsB.size);
-  return overlap >= Math.ceil(minWords * 0.6);
+/** Exact normalized title match only — never fuzzy-substitute a different performance. */
+function titlesEqual(a: string, b: string): boolean {
+  const na = normalizeTitle(a);
+  const nb = normalizeTitle(b);
+  return !!na && !!nb && na === nb;
 }
 
 export function resolveListeningPathHref(artist: Artist, step: ListeningPathStep): string {
   const artistHref = `/artists/${artist.slug}`;
 
   if (step.type === "track") {
-    const catalogTrack = getTracksByArtist(artist.slug).find((t) => titlesMatch(step.title, t.title));
+    const catalogTrack = getTracksByArtist(artist.slug).find((t) => titlesEqual(step.title, t.title));
     if (catalogTrack) return `${artistHref}#track-${catalogTrack.id}`;
 
-    const track = artist.topTracks.find((t) => titlesMatch(step.title, t.title));
+    const track = artist.topTracks.find((t) => titlesEqual(step.title, t.title));
     if (track) return `${artistHref}#track-${trackId(artist.slug, track.title)}`;
 
     return `${artistHref}#top-tracks`;
   }
 
   if (step.type === "set") {
-    const archiveSet = getSetsByArtist(artist.slug).find((s) => titlesMatch(step.title, s.title));
+    const archiveSet = getSetsByArtist(artist.slug).find((s) => titlesEqual(step.title, s.title));
     if (archiveSet) return `/sets/${archiveSet.slug}`;
 
-    const essential = artist.essentialSets.find((s) => titlesMatch(step.title, s.title));
-    if (essential) return `/sets/${slugify(artist.slug, essential.title)}`;
+    const bySlug = getSet(slugify(artist.slug, step.title));
+    if (bySlug && bySlug.artistSlug === artist.slug) return `/sets/${bySlug.slug}`;
 
-    const firstSet = getSetsByArtist(artist.slug)[0];
-    if (firstSet) return `/sets/${firstSet.slug}`;
+    const essential = artist.essentialSets.find((s) => titlesEqual(step.title, s.title));
+    if (essential) {
+      const slug = slugify(artist.slug, essential.title);
+      const matched = getSet(slug);
+      if (matched && matched.artistSlug === artist.slug) return `/sets/${matched.slug}`;
+    }
 
+    // No verified match — stay on the artist page rather than open a different set.
     return `${artistHref}#essential-sets`;
   }
 
@@ -60,7 +57,7 @@ export function resolveListeningPathHref(artist: Artist, step: ListeningPathStep
         ? artist.albums
         : [...artist.eps, ...artist.albums, ...artist.singles];
 
-    const release = pool.find((r) => titlesMatch(step.title, r.title));
+    const release = pool.find((r) => titlesEqual(step.title, r.title));
     if (release) {
       const type = artist.albums.some((a) => a.title === release.title)
         ? "album"
@@ -81,38 +78,41 @@ export function resolveListeningPathPlaybackItem(
   step: ListeningPathStep,
 ): PlaybackItem | null {
   if (step.type === "track") {
-    const catalogTrack = getTracksByArtist(artist.slug).find((t) => titlesMatch(step.title, t.title));
+    const catalogTrack = getTracksByArtist(artist.slug).find((t) => titlesEqual(step.title, t.title));
     if (catalogTrack) return playbackItemFromTrack(catalogTrack);
 
-    const track = artist.topTracks.find((t) => titlesMatch(step.title, t.title));
+    const track = artist.topTracks.find((t) => titlesEqual(step.title, t.title));
     if (track) {
       const id = trackId(artist.slug, track.title);
       const fromCatalog = getTracksByArtist(artist.slug).find((t) => t.id === id);
       if (fromCatalog) return playbackItemFromTrack(fromCatalog);
     }
 
-    const first = getTracksByArtist(artist.slug)[0];
-    return first ? playbackItemFromTrack(first) : null;
+    // Never play a substitute track under a different title.
+    return null;
   }
 
   if (step.type === "set") {
-    const archiveSet = getSetsByArtist(artist.slug).find((s) => titlesMatch(step.title, s.title));
+    const archiveSet = getSetsByArtist(artist.slug).find((s) => titlesEqual(step.title, s.title));
     if (archiveSet) return playbackItemFromSet(archiveSet);
 
-    const essential = artist.essentialSets.find((s) => titlesMatch(step.title, s.title));
+    const bySlug = getSet(slugify(artist.slug, step.title));
+    if (bySlug && bySlug.artistSlug === artist.slug) return playbackItemFromSet(bySlug);
+
+    const essential = artist.essentialSets.find((s) => titlesEqual(step.title, s.title));
     if (essential?.youtubeId) {
       const slug = slugify(artist.slug, essential.title);
       const matched = getSetsByArtist(artist.slug).find((s) => s.slug === slug);
       if (matched) return playbackItemFromSet(matched);
     }
 
-    const firstSet = getSetsByArtist(artist.slug)[0];
-    return firstSet ? playbackItemFromSet(firstSet) : null;
+    // Never play a different set under this step's title.
+    return null;
   }
 
   if (step.type === "ep" || step.type === "album") {
     const catalogRelease = catalogReleases.find(
-      (r) => r.artistSlug === artist.slug && titlesMatch(step.title, r.title),
+      (r) => r.artistSlug === artist.slug && titlesEqual(step.title, r.title),
     );
     if (catalogRelease) return playbackItemFromRelease(catalogRelease);
 
@@ -120,7 +120,7 @@ export function resolveListeningPathPlaybackItem(
       step.type === "album"
         ? artist.albums
         : [...artist.eps, ...artist.albums, ...artist.singles];
-    const release = pool.find((r) => titlesMatch(step.title, r.title));
+    const release = pool.find((r) => titlesEqual(step.title, r.title));
     if (release) {
       const type = artist.albums.some((a) => a.title === release.title)
         ? "album"

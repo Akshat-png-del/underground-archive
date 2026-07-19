@@ -16,22 +16,36 @@ export default function GenresPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <h1 className="font-serif text-3xl text-foreground sm:text-4xl">Genres</h1>
-      <p className="mt-3 text-muted-light">Browse the archive by sound.</p>
+      <p className="mt-3 text-muted-light">
+        Browse the archive by sound. Each genre links to a full guide, its essential artists, and
+        verified sets.{" "}
+        <Link href="/guides" className="text-accent hover:underline">
+          See all guides →
+        </Link>
+      </p>
 
       <div className="mt-10 space-y-8">
         {genres.map((slug) => {
           const count = getArtistsByGenre(slug).length;
           if (count === 0) return null;
           return (
-            <Link
-              key={slug}
-              href={`/genres/${slug}`}
-              className="interactive-row block border border-border p-6"
-            >
-              <h2 className="font-serif text-2xl text-foreground">{genreLabels[slug]}</h2>
-              <p className="mt-2 text-sm text-muted-light">{genreDescriptions[slug]}</p>
-              <p className="mt-3 text-xs text-muted">{count} artists</p>
-            </Link>
+            <div key={slug} className="border border-border p-6">
+              <Link href={`/genres/${slug}`} className="group block">
+                <h2 className="font-serif text-2xl text-foreground group-hover:text-accent">
+                  {genreLabels[slug]}
+                </h2>
+                <p className="mt-2 text-sm text-muted-light">{genreDescriptions[slug]}</p>
+              </Link>
+              <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs">
+                <span className="text-muted">{count} artists</span>
+                <Link href={`/genres/${slug}`} className="text-accent hover:underline">
+                  Guide →
+                </Link>
+                <Link href={`/artists/genre/${slug}`} className="text-accent hover:underline">
+                  Artists →
+                </Link>
+              </div>
+            </div>
           );
         })}
       </div>

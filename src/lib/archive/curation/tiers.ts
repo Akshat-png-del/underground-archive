@@ -91,6 +91,28 @@ const TIER_2_SLUGS = [
   "jks",
   "rikhter",
   "somewhen",
+  // Verified targeted new-artist ingest (Spotify tracks + official sets)
+  "byorn",
+  "kuko",
+  "lessss",
+  "luciid",
+  "doruksen",
+  "kander",
+  "callush",
+  "krl-mx",
+  "6ejou",
+  "airod",
+  "fatima-hajji",
+  "fernanda-martins",
+  "snts",
+  "tommy-four-seven",
+  "headless-horseman",
+  "inhalt-der-nacht",
+  "scalameriya",
+  "dj-hyperdrive",
+  "mischluft",
+  "xrtn",
+  "kas-st",
 ] as const;
 
 const TIER_1 = new Set<string>(TIER_1_SLUGS);

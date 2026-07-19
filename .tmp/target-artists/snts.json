@@ -1,0 +1,100 @@
+{
+  "slug": "snts",
+  "name": "SNTS",
+  "spotifyName": "Snts",
+  "spotifyId": "6Unmr1mmDxRqZY7jkSQOcg",
+  "spotifyUrl": "https://open.spotify.com/artist/6Unmr1mmDxRqZY7jkSQOcg",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebcc421418e31dcacad8d07cd4",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5ebcc421418e31dcacad8d07cd4",
+    "https://i.scdn.co/image/ab67616100005174cc421418e31dcacad8d07cd4",
+    "https://i.scdn.co/image/ab6761610000f178cc421418e31dcacad8d07cd4"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Germany",
+  "city": "Germany",
+  "activeSince": 2015,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Ego Death",
+      "spotifyTrackId": "27Ms4EoHwYDGN7InNZ3uCN",
+      "year": 2020,
+      "duration": "5:17",
+      "album": "The Unfinished Fight Against Humanity LP"
+    },
+    {
+      "title": "An Era Of Absurdity - 999999999 Remix",
+      "spotifyTrackId": "1N35WIY1Cv1stMMZJ70Y85",
+      "year": 2021,
+      "duration": "4:56",
+      "album": "The Unfinished Fight Against Humanity Remixed EP"
+    },
+    {
+      "title": "Lethal Storm",
+      "spotifyTrackId": "2Z6O0Y8e8BhivM3VxBoSGY",
+      "year": 2022,
+      "duration": "5:03",
+      "album": "YOU WON'T DEFEAT ME EP (SNTS016)"
+    },
+    {
+      "title": "ES19.2",
+      "spotifyTrackId": "5RNcvwTTFgJiGlDSXKTnbi",
+      "year": 2015,
+      "duration": "6:04",
+      "album": "SNTS"
+    },
+    {
+      "title": "Unexpected Allies",
+      "spotifyTrackId": "0A63LWEDkRfsmPj5HgOmsP",
+      "year": 2022,
+      "duration": "5:10",
+      "album": "YOU WON'T DEFEAT ME EP (SNTS016)"
+    },
+    {
+      "title": "Figures in the Mist",
+      "spotifyTrackId": "1Pa3qZHdwqiO95eZik8L02",
+      "year": 2017,
+      "duration": "6:45",
+      "album": "Across Another Dimension EP"
+    }
+  ],
+  "trackHashes": {
+    "27Ms4EoHwYDGN7InNZ3uCN": "ab67616d00001e024350c1d074bd1aa75ddf9667",
+    "1N35WIY1Cv1stMMZJ70Y85": "ab67616d00001e02f762e167082be2cf1dae8d25",
+    "2Z6O0Y8e8BhivM3VxBoSGY": "ab67616d00001e029e3f10d3194b06ac575e1d0d",
+    "5RNcvwTTFgJiGlDSXKTnbi": "ab67616d00001e025df024fe492bec6a4890ebce",
+    "0A63LWEDkRfsmPj5HgOmsP": "ab67616d00001e029e3f10d3194b06ac575e1d0d",
+    "1Pa3qZHdwqiO95eZik8L02": "ab67616d00001e02ce9f15f90ae74d81b12e355c"
+  },
+  "sets": [
+    {
+      "title": "SNTS Boiler Room Berlin Live Set",
+      "venue": "Boiler Room",
+      "year": 2015,
+      "youtubeId": "_UYEOeyRm4E"
+    },
+    {
+      "title": "SNTS | Boiler Room x Kompass",
+      "venue": "Boiler Room",
+      "year": 2019,
+      "youtubeId": "Vk7Qr6I4nfk"
+    },
+    {
+      "title": "SNTS | Boiler Room x HEX Barcelona DJ Set",
+      "venue": "Boiler Room",
+      "year": 2020,
+      "youtubeId": "_ijElMxRT0I"
+    }
+  ]
+}

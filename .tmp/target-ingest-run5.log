@@ -1,0 +1,95 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+npm warn exec The following package was not found and will be installed: tsx@4.23.1
+◇ injected env (2) from .env.local // tip: ⌘ suppress logs { quiet: true }
+Loaded 674 cached official event sets
+
+▶ BYORN
+  [byorn] cache hit (6 tracks)
+
+▶ KUKO
+  [kuko] cache hit (3 tracks)
+
+▶ Lessss
+  [lessss] cache hit (6 tracks)
+
+▶ Luciid
+  [luciid] cache hit (6 tracks)
+
+▶ Doruksen
+  [doruksen] cache hit (6 tracks)
+
+▶ Kander
+  [kander] cache hit (2 tracks)
+
+▶ Callush
+  [callush] cache hit (6 tracks)
+
+▶ KRL MX
+  [krl-mx] cache hit (6 tracks)
+
+▶ 6EJOU
+  [6ejou] cache hit (6 tracks)
+
+▶ AIROD
+  [airod] cache hit (6 tracks)
+
+▶ Fatima Hajji
+  [fatima-hajji] cache hit (6 tracks)
+
+▶ Fernanda Martins
+  [fernanda-martins] cache hit (6 tracks)
+
+▶ Otta
+  [otta] cache hit (0 tracks)
+  ✗ not verified: no owned Spotify tracks found — Spotify identity unconfirmed (likely same-named namesake)
+
+▶ SNTS
+  [snts] cache hit (6 tracks)
+
+▶ Tommy Four Seven
+  [tommy-four-seven] cache hit (6 tracks)
+
+▶ Headless Horseman
+  [headless-horseman] cache hit (6 tracks)
+
+▶ Inhalt der Nacht
+  [inhalt-der-nacht] cache hit (6 tracks)
+
+▶ Scalameriya
+  [scalameriya] cache hit (6 tracks)
+
+▶ DJ Hyperdrive
+  [dj-hyperdrive] cache hit (6 tracks)
+
+▶ MISCHLUFT
+  [mischluft] cache hit (6 tracks)
+
+▶ Onlynumbers
+  ⤳ skipped: already in catalog (onlynumbers)
+
+▶ XRTN
+  [xrtn] cache hit (6 tracks)
+
+▶ KUSS
+  [kuss] cache hit (0 tracks)
+  ✗ not verified: no owned Spotify tracks found — Spotify identity unconfirmed (likely same-named namesake)
+
+▶ Jazzy
+  [jazzy] cache hit (0 tracks)
+  ✗ not verified: no owned Spotify tracks found — Spotify identity unconfirmed (likely same-named namesake)
+
+▶ KAS:ST
+  [kas-st] cache hit (2 tracks)
+
+=== DONE ===
+Added: 21 · tracks: 115 · sets: 77 · covers: +8
+Skipped (existing): 1 · Not verified: 3 · Errored: 0
+Sets by venue: {
+  'HÖR Berlin': 30,
+  Verknipt: 29,
+  'Boiler Room': 12,
+  Gotec: 3,
+  Intercell: 3
+}
+Result → /Users/akshat/Projects/vitalforge/.tmp/target-artists/result.json
+Seeds → /Users/akshat/Projects/vitalforge/src/content/artists/target-artists-seeds.ts

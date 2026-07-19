@@ -34,12 +34,6 @@
   ],
   "sets": [
     {
-      "title": "Boiler Room x Teletech Festival 2023",
-      "venue": "Teletech",
-      "year": 2023,
-      "youtubeId": "6nhPuJIjnWI"
-    },
-    {
       "title": "Nico Moreno | Boiler Room: Denver",
       "venue": "Boiler Room",
       "year": 2026,
@@ -50,7 +44,37 @@
       "venue": "Boiler Room",
       "year": 2026,
       "youtubeId": "H9InjufBxdQ"
+    },
+    {
+      "title": "Nico Moreno @ Verknipt Easter Special 08-04-2023 | AFAS Live, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "_Y68XesqJS4"
+    },
+    {
+      "title": "Nico Moreno @ Verknipt Festival 2022 | Hangar",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "Q8Wh1sSCZXg"
+    },
+    {
+      "title": "Nico Moreno @ Verknipt Kingsday Festival | Warehouse 1",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "jgl_4EO6dZs"
+    },
+    {
+      "title": "Nico Moreno @ Verknipt ADE 2021 | Day 2",
+      "venue": "Verknipt",
+      "year": 2021,
+      "youtubeId": "430veXgfs2c"
+    },
+    {
+      "title": "Boiler Room x Teletech Festival 2023",
+      "venue": "Teletech",
+      "year": 2023,
+      "youtubeId": "6nhPuJIjnWI"
     }
   ],
-  "updatedAt": "2026-06-28T01:34:19.947Z"
+  "updatedAt": "2026-07-18T01:42:41.679Z"
 }

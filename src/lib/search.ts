@@ -5,6 +5,7 @@ import { archiveSets } from "@/content/sets";
 import type { SearchResult } from "@/types/library";
 import { artistSearchFields, artistSuggestFields, artistToSearchResult } from "@/lib/search/artists";
 import { bestFuzzyScore } from "@/lib/search/fuzzy";
+import { resolveTrackArtwork } from "@/lib/music/track-artwork";
 
 export { suggestArtists, groupArtistsAlphabetically, getArtistSortLetter } from "@/lib/search/artists";
 export type { ArtistLetterGroup } from "@/lib/search/artists";
@@ -38,13 +39,17 @@ export function searchAll(query: string, limit = 24): SearchResult[] {
   for (const track of catalogTracks) {
     const score = bestFuzzyScore(q, [track.title, track.artist]);
     if (score > 0) {
+      const art = resolveTrackArtwork({
+        coverArt: track.coverArt,
+        artistSlug: track.artistSlug,
+      });
       results.push({
         type: "track",
         id: track.id,
         title: track.title,
         subtitle: track.artist,
         href: `/artists/${track.artistSlug}`,
-        image: track.coverArt,
+        image: art.src || undefined,
         score,
       });
     }

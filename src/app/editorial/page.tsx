@@ -71,19 +71,6 @@ export default function EditorialPage() {
             <div key={item.slug} id={item.slug} className="border border-border p-5 scroll-mt-20">
               <dt className="font-serif text-lg text-foreground">{item.term}</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted-light">{item.definition}</dd>
-              {item.relatedSlugs && item.relatedSlugs.length > 0 && (
-                <dd className="mt-3 flex flex-wrap gap-2">
-                  {item.relatedSlugs.map((s) => {
-                    const related = glossaryTerms.find((t) => t.slug === s);
-                    if (!related) return null;
-                    return (
-                      <a key={s} href={`#${s}`} className="text-xs text-accent hover:underline">
-                        {related.term}
-                      </a>
-                    );
-                  })}
-                </dd>
-              )}
             </div>
           ))}
         </dl>

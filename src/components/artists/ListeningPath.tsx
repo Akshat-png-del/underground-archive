@@ -1,10 +1,7 @@
 "use client";
 
 import type { Artist } from "@/types";
-import {
-  resolveListeningPathHref,
-  resolveListeningPathPlaybackItem,
-} from "@/lib/artists/listening-path";
+import { resolveListeningPathPlaybackItem } from "@/lib/artists/listening-path";
 import { browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import {
   useCardPlayback,

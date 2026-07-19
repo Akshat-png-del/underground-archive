@@ -201,7 +201,7 @@ function buildLayout(rotationIndex: number): HomepageExposureLayout {
     featured[0] ??
     all[0]!;
 
-  const discoveryArtist =
+  let discoveryArtist =
     budget.pickArtists(featured, 1, "major", rotationIndex + 3)[0] ??
     budget.pickArtists(all, 1, "major", rotationIndex + 3)[0] ??
     artistOfWeek;
@@ -231,6 +231,79 @@ function buildLayout(rotationIndex: number): HomepageExposureLayout {
     }
   }
 
+  // Discovery set + track (major) — must match discovery artist; claim before carousel sets.
+  function pickOwnedSet(slug: string, seed: number): ArchiveSet | undefined {
+    const owned = allSets.filter((s) => s.artistSlug === slug);
+    if (owned.length === 0) return undefined;
+    for (const s of rotate(owned, hashSeed(seed) % owned.length)) {
+      if (budget.claimSet(s)) return s;
+    }
+    return undefined;
+  }
+  function pickOwnedTrack(slug: string, seed: number): CatalogTrack | undefined {
+    const owned = getDisplayTracks().filter((t) => t.artistSlug === slug);
+    if (owned.length === 0) return undefined;
+    for (const t of rotate(owned, hashSeed(seed) % owned.length)) {
+      if (budget.claimTrack(t.id)) return t;
+    }
+    return undefined;
+  }
+
+  let discoverySet = pickOwnedSet(discoveryArtist.slug, rotationIndex + 111);
+  let discoveryTrack = pickOwnedTrack(discoveryArtist.slug, rotationIndex + 127);
+
+  if (!discoverySet || !discoveryTrack) {
+    const pool = rotate(
+      featured.filter((a) => a.slug !== artistOfWeek.slug && a.slug !== discoveryArtist.slug),
+      hashSeed(rotationIndex + 131) % Math.max(featured.length, 1),
+    );
+    for (const candidate of [...pool, ...featured, ...all]) {
+      if (candidate.slug === artistOfWeek.slug) continue;
+      if (candidate.slug !== discoveryArtist.slug && !budget.artistAllowed(candidate.slug, "major")) {
+        continue;
+      }
+      const set = pickOwnedSet(candidate.slug, rotationIndex + 111);
+      const track = pickOwnedTrack(candidate.slug, rotationIndex + 127);
+      if (!set || !track) continue;
+      if (candidate.slug !== discoveryArtist.slug && !budget.claimArtist(candidate.slug, "major")) {
+        continue;
+      }
+      discoveryArtist = candidate;
+      discoverySet = set;
+      discoveryTrack = track;
+      break;
+    }
+  }
+
+  // Final invariant — never ship a mismatched trio.
+  if (
+    !discoverySet ||
+    !discoveryTrack ||
+    discoverySet.artistSlug !== discoveryArtist.slug ||
+    discoveryTrack.artistSlug !== discoveryArtist.slug
+  ) {
+    const set =
+      allSets.find((s) => {
+        if (s.artistSlug === artistOfWeek.slug) return false;
+        if (budget.sets.has(s.id)) return false;
+        return getDisplayTracks().some((t) => t.artistSlug === s.artistSlug && !budget.tracks.has(t.id));
+      }) ??
+      allSets.find((s) => getDisplayTracks().some((t) => t.artistSlug === s.artistSlug)) ??
+      allSets[0]!;
+    discoveryArtist =
+      featured.find((a) => a.slug === set.artistSlug) ??
+      all.find((a) => a.slug === set.artistSlug) ??
+      discoveryArtist;
+    discoverySet = set;
+    budget.claimSet(set);
+    budget.claimArtist(discoveryArtist.slug, "major");
+    const ownedTracks = getDisplayTracks().filter((t) => t.artistSlug === discoveryArtist.slug);
+    discoveryTrack = ownedTracks.find((t) => budget.claimTrack(t.id)) ?? ownedTracks[0]!;
+    if (discoveryTrack && !budget.tracks.has(discoveryTrack.id)) {
+      budget.claimTrack(discoveryTrack.id);
+    }
+  }
+
   // --- Carousel / multi-artist majors (each section is one major surface) ---
   const trendingViewed = budget.pickArtists(featured, 6, "major", rotationIndex + 11);
   const trendingSaved = budget.pickArtists(featured, 6, "major", rotationIndex + 19);
@@ -245,45 +318,6 @@ function buildLayout(rotationIndex: number): HomepageExposureLayout {
 
   // --- Tracks ---
   const weeklyTracks = budget.pickTracks(getDisplayTracks(), 3, rotationIndex + 97);
-
-  // Discovery track + set for discovery artist (must stay unique on the page)
-  const discoverySets = allSets.filter((s) => s.artistSlug === discoveryArtist.slug);
-  let discoverySet: ArchiveSet | undefined;
-  for (const s of rotate(discoverySets, hashSeed(rotationIndex + 111) % Math.max(discoverySets.length, 1))) {
-    if (budget.claimSet(s)) {
-      discoverySet = s;
-      break;
-    }
-  }
-  if (!discoverySet) {
-    for (const s of rotate(allSets, hashSeed(rotationIndex + 113) % Math.max(allSets.length, 1))) {
-      if (s.artistSlug === artistOfWeek.slug) continue;
-      if (budget.claimSet(s)) {
-        discoverySet = s;
-        break;
-      }
-    }
-  }
-  discoverySet = discoverySet ?? essentialSet;
-
-  const discoveryTrackPool = getDisplayTracks().filter((t) => t.artistSlug === discoveryArtist.slug);
-  let discoveryTrack: CatalogTrack | undefined;
-  for (const t of rotate(discoveryTrackPool, hashSeed(rotationIndex + 127) % Math.max(discoveryTrackPool.length, 1))) {
-    if (budget.claimTrack(t.id)) {
-      discoveryTrack = t;
-      break;
-    }
-  }
-  if (!discoveryTrack) {
-    for (const t of getDisplayTracks()) {
-      if (budget.claimTrack(t.id)) {
-        discoveryTrack = t;
-        break;
-      }
-    }
-  }
-  discoveryTrack = discoveryTrack ?? getDisplayTracks()[0]!;
-
   // Releases — unique artists, carousel-level
   const releasePool = all
     .filter((a) => a.curationTier === 1)

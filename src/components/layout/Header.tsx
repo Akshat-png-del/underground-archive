@@ -1,17 +1,40 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { Suspense, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ArrowLeft, Menu, X } from "lucide-react";
 import { siteConfig, navLinks } from "@/config/site";
 import { SearchBar } from "@/components/search/SearchBar";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const showBack = pathname !== "/";
+
+  function handleBack() {
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      router.back();
+      return;
+    }
+    router.push("/");
+  }
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background">
-      <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4">
+      <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 sm:gap-4">
+        {showBack && (
+          <button
+            type="button"
+            onClick={handleBack}
+            className="interactive-ghost -ml-1.5 shrink-0 p-2 text-muted-light transition-colors hover:text-foreground"
+            aria-label="Go back"
+          >
+            <ArrowLeft className="h-5 w-5" strokeWidth={1.75} />
+          </button>
+        )}
+
         <Link href="/" className="shrink-0 font-serif text-lg text-foreground hover:text-accent">
           {siteConfig.shortName}
         </Link>

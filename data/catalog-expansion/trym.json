@@ -53,12 +53,6 @@
   ],
   "sets": [
     {
-      "title": "Boiler Room Manchester — Teletech",
-      "venue": "Teletech",
-      "year": 2024,
-      "youtubeId": "8SCM_YeNOos"
-    },
-    {
       "title": "TRYM | @UnrealGermany x BOOTSHAUS 2024",
       "venue": "Unreal",
       "year": 2024,
@@ -99,7 +93,19 @@
       "venue": "HÖR Berlin",
       "year": 2021,
       "youtubeId": "Er7GjSb5mHU"
+    },
+    {
+      "title": "Trym @ Verknipt Festival 2021 | Saturday",
+      "venue": "Verknipt",
+      "year": 2021,
+      "youtubeId": "5-INgZPKq10"
+    },
+    {
+      "title": "Boiler Room Manchester — Teletech",
+      "venue": "Teletech",
+      "year": 2024,
+      "youtubeId": "8SCM_YeNOos"
     }
   ],
-  "updatedAt": "2026-07-18T00:56:11.285Z"
+  "updatedAt": "2026-07-18T01:42:41.711Z"
 }

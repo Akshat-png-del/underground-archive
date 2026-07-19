@@ -1,5 +1,4 @@
 import type { Genre } from "@/types";
-import { getGenreArtwork } from "@/lib/archive/genre-artwork";
 import syncedHashes from "./track-cover-hashes.json";
 
 /** Spotify track/album ID → i.scdn.co image hash */
@@ -65,10 +64,11 @@ export function trackCover(
   spotifyUrl: string,
   options?: { youtubeId?: string; hash?: string; genre?: Genre }
 ): string {
+  void options?.youtubeId;
+  void options?.genre;
   if (options?.hash) return scdn(options.hash);
   const id = spotifyId(spotifyUrl);
   if (id && COVER_HASHES[id]) return scdn(COVER_HASHES[id]);
-  // Prefer empty/fallback over mismatched YouTube stills or guessed covers.
-  // Genre SVG is a last-resort UI placeholder — not claimed as official artwork.
-  return options?.genre ? getGenreArtwork(options.genre) : "/images/genres/techno.svg";
+  // Empty — UI falls back to verified artist portrait. Never genre placeholders.
+  return "";
 }

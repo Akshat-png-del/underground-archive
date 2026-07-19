@@ -1,0 +1,98 @@
+{
+  "slug": "6ejou",
+  "tracks": [
+    {
+      "title": "05:46",
+      "spotifyTrackId": "5XrClyp4MY1oyx2qDx9S8U",
+      "year": 2026,
+      "duration": "5:46",
+      "album": "05:46"
+    },
+    {
+      "title": "Bad Vibes",
+      "spotifyTrackId": "1T4acWX1Ra6I4tg6FXGjX8",
+      "year": 2020,
+      "duration": "4:11",
+      "album": "Bad Vibes"
+    },
+    {
+      "title": "Amor Sin Vida",
+      "spotifyTrackId": "2fDca0FfU7zgNKrmMmNfXE",
+      "year": 2026,
+      "duration": "4:24",
+      "album": "Amor Sin Vida"
+    },
+    {
+      "title": "nuit noir",
+      "spotifyTrackId": "7HokFnRQVay5fuT1aZzlq2",
+      "year": 2026,
+      "duration": "3:54",
+      "album": "nuit noir"
+    },
+    {
+      "title": "O FORTUNA",
+      "spotifyTrackId": "4sjpqDVERhsIu8pIJJUjes",
+      "year": 2023,
+      "duration": "3:22",
+      "album": "O FORTUNA"
+    },
+    {
+      "title": "i don't belong here",
+      "spotifyTrackId": "3tZZI4K37Y2KDHcVCEgToG",
+      "year": 2026,
+      "duration": "3:18",
+      "album": "i don't belong here"
+    }
+  ],
+  "sets": [
+    {
+      "title": "6EJOU b2b MYU:SA @ Verknipt Festival 2025 Day 1 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2025,
+      "youtubeId": "U1I2Mbenpf0"
+    },
+    {
+      "title": "6EJOU @ Verknipt Ziggo Dome 2025 | Ziggo Dome, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2025,
+      "youtubeId": "8uLgWiG36Rc"
+    },
+    {
+      "title": "6EJOU @ Verknipt Festival 2024 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "m9jGOjluv4s"
+    },
+    {
+      "title": "6EJOU @ Verknipt ArenA | Johan Cruijff ArenA, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "S0ck1OXtUEM"
+    },
+    {
+      "title": "6ejou @ Verknipt Germany Day 1 | Turbinenhalle, Oberhausen",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "avcEnqyfPO4"
+    },
+    {
+      "title": "6EJOU | Hybrid Live @ Verknipt ADE 2023  | Thursday",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "jfxwXGVOOgE"
+    },
+    {
+      "title": "6EJOU @ Verknipt Festival 2023 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "iSiu-5nvcsQ"
+    },
+    {
+      "title": "The Hunters LIVE (6ejou and BSLS) @ Verknipt Easter Special 09-04-2023 | AFAS Live, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "AqHeXyAimRE"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.244Z"
+}

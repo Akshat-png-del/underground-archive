@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { artists, getArtist, genreLabels } from "@/content/artists";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { musicianSchema, breadcrumbSchema } from "@/lib/seo/jsonld";
+import { musicianSchema, breadcrumbSchema, faqPageSchema } from "@/lib/seo/jsonld";
+import { artistSameAs, buildArtistFaqs } from "@/lib/seo/artist-seo";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArtistPageContent } from "@/components/artists/ArtistPageContent";
+import { ArtistSeoSection } from "@/components/seo/ArtistSeoSection";
 import { RecordView } from "@/components/library/RecordView";
 
 export function generateStaticParams() {
@@ -29,7 +31,12 @@ export async function generateMetadata({
     title: `${artist.name} — Artist Profile`,
     description: bioPreview.slice(0, 160),
     path: `/artists/${slug}`,
+    ogImage: artist.portrait || artist.image?.url,
+    type: "profile",
     keywords: [
+      artist.name,
+      `${artist.name} sets`,
+      `${artist.name} tracks`,
       ...artist.genres.map((g) => genreLabels[g] || g),
       ...artist.moodTags,
       artist.scene,
@@ -48,6 +55,11 @@ export default async function ArtistPage({
   if (!artist) notFound();
 
   const bioDescription = Object.values(artist.editorialBio).join(" ");
+  const faqs = buildArtistFaqs(artist);
+  const verifiedTracks = artist.topTracks
+    .filter((t) => t.spotifyUrl || t.youtubeUrl)
+    .slice(0, 10)
+    .map((t) => ({ name: t.title, url: t.spotifyUrl ?? t.youtubeUrl, duration: t.duration }));
 
   return (
     <>
@@ -60,15 +72,19 @@ export default async function ArtistPage({
             image: artist.portrait,
             genres: artist.genres.map((g) => genreLabels[g] || g),
             origin: `${artist.city}, ${artist.country}`,
+            sameAs: artistSameAs(artist),
+            tracks: verifiedTracks,
           }),
           breadcrumbSchema([
             { name: "Artists", path: "/artists" },
             { name: artist.name, path: `/artists/${slug}` },
           ]),
+          faqPageSchema(faqs),
         ]}
       />
       <RecordView type="artist" refId={slug} />
       <ArtistPageContent artist={artist} />
+      <ArtistSeoSection artist={artist} faqs={faqs} />
     </>
   );
 }

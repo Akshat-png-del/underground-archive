@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { archiveSets } from "@/content/sets";
+import { archiveSets, getVisibleSetCollections } from "@/content/sets";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { SetsArchiveBrowser } from "@/components/sets/SetsArchiveBrowser";
+import { BestSetsSelect } from "@/components/sets/BestSetsSelect";
 
 export const metadata: Metadata = buildMetadata({
   title: "Essential Sets",
@@ -11,14 +12,11 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default function SetsPage() {
+  const collections = getVisibleSetCollections(archiveSets);
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <h1 className="font-serif text-3xl text-foreground sm:text-4xl">Essential Sets</h1>
-      <p className="mt-3 max-w-2xl text-muted-light">
-        A premium archive of verified long-form performances — organized by institution, festival,
-        and warehouse culture. Every set is at least 10 minutes and mapped to one primary collection.
-      </p>
-
+      <BestSetsSelect collections={collections} />
       <SetsArchiveBrowser sets={archiveSets} />
     </div>
   );

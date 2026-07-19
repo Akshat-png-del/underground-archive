@@ -1,0 +1,35 @@
+{
+  "slug": "doruksen",
+  "name": "Doruksen",
+  "updatedAt": "2026-07-18T02:41:23.243Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.243Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.243Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "4QualaVaoF8vYnpJ5o8Pw6",
+    "name": "Doruksen",
+    "url": "https://open.spotify.com/artist/4QualaVaoF8vYnpJ5o8Pw6",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb135ef357dd5ee4bab2bec45b",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb135ef357dd5ee4bab2bec45b",
+      "https://i.scdn.co/image/ab67616100005174135ef357dd5ee4bab2bec45b",
+      "https://i.scdn.co/image/ab6761610000f178135ef357dd5ee4bab2bec45b"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb135ef357dd5ee4bab2bec45b",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4QualaVaoF8vYnpJ5o8Pw6"
+  }
+}

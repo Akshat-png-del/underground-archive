@@ -1,0 +1,35 @@
+{
+  "slug": "tommy-four-seven",
+  "name": "Tommy Four Seven",
+  "updatedAt": "2026-07-18T02:41:23.248Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.248Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.248Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "3AxgXLivpM1GoOVMjMgsId",
+    "name": "Tommy Four Seven",
+    "url": "https://open.spotify.com/artist/3AxgXLivpM1GoOVMjMgsId",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb247165685990e551a1009026",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb247165685990e551a1009026",
+      "https://i.scdn.co/image/ab67616100005174247165685990e551a1009026",
+      "https://i.scdn.co/image/ab6761610000f178247165685990e551a1009026"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb247165685990e551a1009026",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3AxgXLivpM1GoOVMjMgsId"
+  }
+}

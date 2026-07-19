@@ -1,0 +1,35 @@
+{
+  "slug": "dj-hyperdrive",
+  "name": "DJ Hyperdrive",
+  "updatedAt": "2026-07-18T02:41:23.250Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.250Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.250Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "4SpabttFpFvc0lqr5gYPen",
+    "name": "DJ Hyperdrive",
+    "url": "https://open.spotify.com/artist/4SpabttFpFvc0lqr5gYPen",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebdc02ec9aa3967e9d97f3e9b6",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5ebdc02ec9aa3967e9d97f3e9b6",
+      "https://i.scdn.co/image/ab67616100005174dc02ec9aa3967e9d97f3e9b6",
+      "https://i.scdn.co/image/ab6761610000f178dc02ec9aa3967e9d97f3e9b6"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5ebdc02ec9aa3967e9d97f3e9b6",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/4SpabttFpFvc0lqr5gYPen"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "lessss",
+  "name": "Lessss",
+  "spotifyName": "LESSSS",
+  "spotifyId": "5Os2nUALInDs7MyexVNwrm",
+  "spotifyUrl": "https://open.spotify.com/artist/5Os2nUALInDs7MyexVNwrm",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb47cda055bd48bb7843f14ed5",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb47cda055bd48bb7843f14ed5",
+    "https://i.scdn.co/image/ab6761610000517447cda055bd48bb7843f14ed5",
+    "https://i.scdn.co/image/ab6761610000f17847cda055bd48bb7843f14ed5"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "France",
+  "city": "France",
+  "activeSince": 2024,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "DIRTY CONTROL",
+      "spotifyTrackId": "6K4UtzCid2GM04QJEwAnEC",
+      "year": 2026,
+      "duration": "3:08",
+      "album": "DIRTY CONTROL"
+    },
+    {
+      "title": "DRONE - LESSSS EDIT",
+      "spotifyTrackId": "0Ns77ZocJgmY9dSHGesXij",
+      "year": 2025,
+      "duration": "2:52",
+      "album": "DRONE (LESSSS EDIT)"
+    },
+    {
+      "title": "93 HARDCORE",
+      "spotifyTrackId": "3UtnR0fp7kn6hZC2sMr55q",
+      "year": 2024,
+      "duration": "5:47",
+      "album": "93 HARDCORE"
+    },
+    {
+      "title": "YOUNG & ALIVE - Ikkhi Remix",
+      "spotifyTrackId": "0hn0p5ZYtzHtgANLzwuvxQ",
+      "year": 2024,
+      "duration": "5:58",
+      "album": "GENESIS EXTENDED"
+    },
+    {
+      "title": "DIE HARD",
+      "spotifyTrackId": "2CEvEc1dbW1FRaKaAdqb79",
+      "year": 2026,
+      "duration": "2:48",
+      "album": "cross/øver"
+    },
+    {
+      "title": "DIE HARD - ALL STARS",
+      "spotifyTrackId": "1f4HgDRXf812FD10cGrfiW",
+      "year": 2026,
+      "duration": "2:42",
+      "album": "DIE HARD - ALL STARS"
+    }
+  ],
+  "trackHashes": {
+    "6K4UtzCid2GM04QJEwAnEC": "ab67616d00001e028bbe61b9a7d64ef9f334b60f",
+    "0Ns77ZocJgmY9dSHGesXij": "ab67616d00001e025897b6157fc76fa4c7e78280",
+    "3UtnR0fp7kn6hZC2sMr55q": "ab67616d00001e0293a6d52a5b799155cd2ccdf9",
+    "0hn0p5ZYtzHtgANLzwuvxQ": "ab67616d00001e026d421aeae9508f66fb119d28",
+    "2CEvEc1dbW1FRaKaAdqb79": "ab67616d00001e02adad7a5f725578a4bb830b7b",
+    "1f4HgDRXf812FD10cGrfiW": "ab67616d00001e0267cc379d7ad26ff3e900f85b"
+  },
+  "sets": [
+    {
+      "title": "Lessss @ Verknipt Festival 2023 Day 1 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "uikExzIDhPI"
+    },
+    {
+      "title": "Lessss @ Wonderland Festival Indoor - The Dark Side",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "n84T0NEYRw8"
+    },
+    {
+      "title": "Carbon - Lessss | HÖR - February 11 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "XvCah-L3Ph8"
+    },
+    {
+      "title": "LESSSS | Boiler Room x Teletech Festival 2023",
+      "venue": "Boiler Room",
+      "year": 2023,
+      "youtubeId": "2JVU9xqTGrg"
+    }
+  ]
+}

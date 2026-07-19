@@ -1,0 +1,92 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+npm warn exec The following package was not found and will be installed: tsx@4.23.1
+◇ injected env (2) from .env.local // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+Loaded 674 cached official event sets
+
+▶ BYORN
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ KUKO
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ Lessss
+  [lessss] LESSSS · 0 tracks · France/France · since 2016
+
+▶ Luciid
+  [luciid] Luciid · 0 tracks · Ireland/Monaghan · since 2016
+
+▶ Doruksen
+  [doruksen] Doruksen · 0 tracks · Unknown/Unknown · since 2016
+
+▶ Kander
+  [kander] Kander · 0 tracks · United States/Kansas City · since 2016
+
+▶ Callush
+  [callush] Callush · 0 tracks · Germany/Germany · since 2016
+
+▶ KRL MX
+  ✗ not verified: Spotify artist has no portrait image
+
+▶ 6EJOU
+  [6ejou] 6EJOU · 0 tracks · France/Lyon · since 2016
+
+▶ AIROD
+  [airod] AIROD · 0 tracks · France/France · since 2016
+
+▶ Fatima Hajji
+  [fatima-hajji] Fatima Hajji · 0 tracks · Spain/Spain · since 2016
+
+▶ Fernanda Martins
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ Otta
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ SNTS
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ Tommy Four Seven
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ Headless Horseman
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ Inhalt der Nacht
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ Scalameriya
+  [scalameriya] Scalameriya · 0 tracks · Serbia/Šumadijski okrug · since 2016
+
+▶ DJ Hyperdrive
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ MISCHLUFT
+  [mischluft] mischluft · 0 tracks · Unknown/Unknown · since 2016
+
+▶ Onlynumbers
+  ⤳ skipped: already in catalog (onlynumbers)
+
+▶ XRTN
+  [xrtn] XRTN · 0 tracks · Netherlands/Netherlands · since 2016
+
+▶ KUSS
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+▶ Jazzy
+  [jazzy] Jazzy · 0 tracks · Ireland/Crumlin · since 1996
+
+▶ KAS:ST
+  ✗ not verified: ambiguous Spotify identity (no techno genres, not in verified lineups, followers=0)
+
+=== DONE ===
+Added: 12 · tracks: 0 · sets: 53 · covers: +0
+Skipped (existing): 1 · Not verified: 12
+Sets by venue: {
+  Verknipt: 29,
+  'HÖR Berlin': 12,
+  'Boiler Room': 7,
+  Gotec: 2,
+  Intercell: 3
+}
+Result → /Users/akshat/Projects/vitalforge/.tmp/target-artists/result.json
+Seeds → /Users/akshat/Projects/vitalforge/src/content/artists/target-artists-seeds.ts

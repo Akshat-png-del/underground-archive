@@ -1,0 +1,62 @@
+{
+  "slug": "luciid",
+  "tracks": [
+    {
+      "title": "Bye Bye - NOVAH Remix",
+      "spotifyTrackId": "4L4wse303O7RrIPxGGdtQP",
+      "year": 2025,
+      "duration": "3:49",
+      "album": "Bye Bye (NOVAH Remix)"
+    },
+    {
+      "title": "Bye Bye",
+      "spotifyTrackId": "6OeE8CehRJaqiD8soZpAgq",
+      "year": 2025,
+      "duration": "4:54",
+      "album": "Bye Bye"
+    },
+    {
+      "title": "Era Of Us",
+      "spotifyTrackId": "0R3XlYjV56sa0d8t9Exx38",
+      "year": 2024,
+      "duration": "4:32",
+      "album": "Era Of Us"
+    },
+    {
+      "title": "Pray",
+      "spotifyTrackId": "0jZWk8BNIlh437TaB88Gka",
+      "year": 2026,
+      "duration": "4:32",
+      "album": "REELUV"
+    },
+    {
+      "title": "Nothing To Lose (Schranz Mix)",
+      "spotifyTrackId": "2yM7qIZHia1spqwO4lxQE4",
+      "year": 2026,
+      "duration": "4:50",
+      "album": "REELUV"
+    },
+    {
+      "title": "Bunker Buster",
+      "spotifyTrackId": "4lJBjtEABOhrdv7NzBD0KW",
+      "year": 2024,
+      "duration": "5:43",
+      "album": "Bunker Buster"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Luciid | Main Floor - Gotec Club | 2 H Schranz set",
+      "venue": "Gotec",
+      "year": 2026,
+      "youtubeId": "7JkGB_cRlcE"
+    },
+    {
+      "title": "Luciid | HÖR ON TOUR Budapest - 25 April / 2026",
+      "venue": "HÖR Berlin",
+      "year": 2026,
+      "youtubeId": "S1nhPNezbLw"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.242Z"
+}

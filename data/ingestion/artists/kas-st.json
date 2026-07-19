@@ -1,0 +1,35 @@
+{
+  "slug": "kas-st",
+  "name": "KAS:ST",
+  "updatedAt": "2026-07-18T02:41:23.251Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.251Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.251Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "7orlzf5LTqSnCzURkZFebN",
+    "name": "KAS:ST",
+    "url": "https://open.spotify.com/artist/7orlzf5LTqSnCzURkZFebN",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebd31231e66c6ad0dad52c8721",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5ebd31231e66c6ad0dad52c8721",
+      "https://i.scdn.co/image/ab67616100005174d31231e66c6ad0dad52c8721",
+      "https://i.scdn.co/image/ab6761610000f178d31231e66c6ad0dad52c8721"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5ebd31231e66c6ad0dad52c8721",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7orlzf5LTqSnCzURkZFebN"
+  }
+}

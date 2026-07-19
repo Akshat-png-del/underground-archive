@@ -1,0 +1,92 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+npm warn exec The following package was not found and will be installed: tsx@4.23.1
+◇ injected env (2) from .env.local // tip: ◈ secrets for agents [www.dotenvx.com]
+Loaded 674 cached official event sets
+
+▶ BYORN
+  ✗ not verified: unverifiable techno identity (Spotify "BYORN" followers=0, genres=[], not in verified lineups)
+
+▶ KUKO
+  ✗ not verified: unverifiable techno identity (Spotify "KUKO" followers=0, genres=[], not in verified lineups)
+
+▶ Lessss
+  [lessss] LESSSS · 6 tracks · France/France · since 2024
+
+▶ Luciid
+  [luciid] Luciid · 6 tracks · Ireland/Monaghan · since 2024
+
+▶ Doruksen
+  [doruksen] Doruksen · 6 tracks · Unknown/Unknown · since 2023
+
+▶ Kander
+  [kander] Kander · 2 tracks · United States/Kansas City · since 2025
+
+▶ Callush
+  [callush] Callush · 6 tracks · Germany/Germany · since 2024
+
+▶ KRL MX
+  ✗ not verified: Spotify artist has no portrait image
+
+▶ 6EJOU
+  [6ejou] 6EJOU · 6 tracks · France/Lyon · since 2020
+
+▶ AIROD
+  [airod] AIROD · 6 tracks · France/France · since 2020
+
+▶ Fatima Hajji
+  [fatima-hajji] Fatima Hajji · 6 tracks · Spain/Spain · since 2016
+
+▶ Fernanda Martins
+  ✗ not verified: unverifiable techno identity (Spotify "Fernanda Martins" followers=0, genres=[], not in verified lineups)
+
+▶ Otta
+  ✗ not verified: unverifiable techno identity (Spotify "OTTA" followers=0, genres=[], not in verified lineups)
+
+▶ SNTS
+  ✗ not verified: unverifiable techno identity (Spotify "Snts" followers=0, genres=[], not in verified lineups)
+
+▶ Tommy Four Seven
+  ✗ not verified: unverifiable techno identity (Spotify "Tommy Four Seven" followers=0, genres=[], not in verified lineups)
+
+▶ Headless Horseman
+  ✗ not verified: unverifiable techno identity (Spotify "Headless Horseman" followers=0, genres=[], not in verified lineups)
+
+▶ Inhalt der Nacht
+  ✗ not verified: unverifiable techno identity (Spotify "Inhalt Der Nacht" followers=0, genres=[], not in verified lineups)
+
+▶ Scalameriya
+  [scalameriya] Scalameriya · 6 tracks · Serbia/Šumadijski okrug · since 2020
+
+▶ DJ Hyperdrive
+  ✗ not verified: unverifiable techno identity (Spotify "DJ Hyperdrive" followers=0, genres=[], not in verified lineups)
+
+▶ MISCHLUFT
+  [mischluft] mischluft · 6 tracks · Unknown/Unknown · since 2023
+
+▶ Onlynumbers
+  ⤳ skipped: already in catalog (onlynumbers)
+
+▶ XRTN
+  [xrtn] XRTN · 6 tracks · Netherlands/Netherlands · since 2022
+
+▶ KUSS
+  ✗ not verified: unverifiable techno identity (Spotify "KUSS" followers=0, genres=[], not in verified lineups)
+
+▶ Jazzy
+  [jazzy] Jazzy · 0 tracks · Ireland/Crumlin · since 1996
+
+▶ KAS:ST
+  ✗ not verified: unverifiable techno identity (Spotify "KAS:ST" followers=0, genres=[], not in verified lineups)
+
+=== DONE ===
+Added: 12 · tracks: 62 · sets: 53 · covers: +56
+Skipped (existing): 1 · Not verified: 12
+Sets by venue: {
+  Verknipt: 29,
+  'HÖR Berlin': 12,
+  'Boiler Room': 7,
+  Gotec: 2,
+  Intercell: 3
+}
+Result → /Users/akshat/Projects/vitalforge/.tmp/target-artists/result.json
+Seeds → /Users/akshat/Projects/vitalforge/src/content/artists/target-artists-seeds.ts

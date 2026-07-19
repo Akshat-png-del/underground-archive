@@ -1,0 +1,80 @@
+{
+  "slug": "dj-hyperdrive",
+  "tracks": [
+    {
+      "title": "Metropolis - Yasmin Regisford Remix",
+      "spotifyTrackId": "13sHF44kjVLmx8K0KfPYx8",
+      "year": 2026,
+      "duration": "5:59",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Mindfreak - KTK Remix",
+      "spotifyTrackId": "409iD1Ky8pL3okTFwdw9e1",
+      "year": 2026,
+      "duration": "4:49",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Metropolis",
+      "spotifyTrackId": "5Bb9m8RkHzFEoaoadnuHCG",
+      "year": 2026,
+      "duration": "5:41",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Mindfreak",
+      "spotifyTrackId": "6srhA2UEkWXU4ROatrUVG9",
+      "year": 2026,
+      "duration": "5:00",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Hydronaut",
+      "spotifyTrackId": "46Jy0tdd9WyBtEV4m0W5yf",
+      "year": 2025,
+      "duration": "4:53",
+      "album": "BCCT003 | Curated by DJ Hyperdrive"
+    },
+    {
+      "title": "Signal: Awakening",
+      "spotifyTrackId": "6ZgfTSbhk29f7m4HDqVCmh",
+      "year": 2026,
+      "duration": "5:42",
+      "album": "BCCX026"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Live From Earth Klub - DJ Hyperdrive | HÖR - Feb 9 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "yfYMS5JM8eA"
+    },
+    {
+      "title": "Distinkt - DJ Hyperdrive | HÖR - May 5 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "eupWkyq6qj0"
+    },
+    {
+      "title": "CRUDE - DJ Hyperdrive / January 19 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "pFTR-yugL5M"
+    },
+    {
+      "title": "DJ Hyperdrive | Boiler Room x Glitch Festival 2023",
+      "venue": "Boiler Room",
+      "year": 2023,
+      "youtubeId": "vlSAH-1mia8"
+    },
+    {
+      "title": "DJ Hyperdrive | Low Heat: Floorgasm",
+      "venue": "Boiler Room",
+      "year": 2020,
+      "youtubeId": "z69-O6cBqiE"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.250Z"
+}

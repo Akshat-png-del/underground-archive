@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import type { ArchiveSet } from "@/types/library";
-import { setCategoryLabels } from "@/content/sets";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { setThumbnailUrl } from "@/lib/music/set-display";
 import { getMoreSetsByArtist, getRelatedSets } from "@/lib/sets/related-sets";
@@ -28,7 +27,7 @@ function RelatedSetLink({ set }: { set: ArchiveSet }) {
       </div>
       <div className="min-w-0 flex-1 py-0.5">
         <p className="font-mono text-[10px] uppercase tracking-wider text-accent">
-          {setCategoryLabels[set.category]}
+          {set.event}
         </p>
         <p className="mt-1 truncate font-medium text-foreground">{set.title}</p>
         <p className="truncate text-sm text-muted">{set.artistName}</p>

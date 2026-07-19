@@ -82,8 +82,8 @@ export function preferRenderablePortraitUrl(
 ): string {
   const remote = getRemotePortraitCandidates(artist)[0];
 
+  // Editorially researched local portraits beat remote Spotify/YouTube identity.
   if (isLocalResearchedPortraitPath(resolvedPortrait)) {
-    if (remote) return remote;
     return resolvedPortrait;
   }
 

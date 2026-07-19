@@ -1,0 +1,74 @@
+{
+  "slug": "lessss",
+  "tracks": [
+    {
+      "title": "DIRTY CONTROL",
+      "spotifyTrackId": "6K4UtzCid2GM04QJEwAnEC",
+      "year": 2026,
+      "duration": "3:08",
+      "album": "DIRTY CONTROL"
+    },
+    {
+      "title": "DRONE - LESSSS EDIT",
+      "spotifyTrackId": "0Ns77ZocJgmY9dSHGesXij",
+      "year": 2025,
+      "duration": "2:52",
+      "album": "DRONE (LESSSS EDIT)"
+    },
+    {
+      "title": "93 HARDCORE",
+      "spotifyTrackId": "3UtnR0fp7kn6hZC2sMr55q",
+      "year": 2024,
+      "duration": "5:47",
+      "album": "93 HARDCORE"
+    },
+    {
+      "title": "YOUNG & ALIVE - Ikkhi Remix",
+      "spotifyTrackId": "0hn0p5ZYtzHtgANLzwuvxQ",
+      "year": 2024,
+      "duration": "5:58",
+      "album": "GENESIS EXTENDED"
+    },
+    {
+      "title": "DIE HARD",
+      "spotifyTrackId": "2CEvEc1dbW1FRaKaAdqb79",
+      "year": 2026,
+      "duration": "2:48",
+      "album": "cross/øver"
+    },
+    {
+      "title": "DIE HARD - ALL STARS",
+      "spotifyTrackId": "1f4HgDRXf812FD10cGrfiW",
+      "year": 2026,
+      "duration": "2:42",
+      "album": "DIE HARD - ALL STARS"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Lessss @ Verknipt Festival 2023 Day 1 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "uikExzIDhPI"
+    },
+    {
+      "title": "Lessss @ Wonderland Festival Indoor - The Dark Side",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "n84T0NEYRw8"
+    },
+    {
+      "title": "Carbon - Lessss | HÖR - February 11 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "XvCah-L3Ph8"
+    },
+    {
+      "title": "LESSSS | Boiler Room x Teletech Festival 2023",
+      "venue": "Boiler Room",
+      "year": 2023,
+      "youtubeId": "2JVU9xqTGrg"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.242Z"
+}

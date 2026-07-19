@@ -1,0 +1,62 @@
+{
+  "slug": "doruksen",
+  "tracks": [
+    {
+      "title": "Intoxicated - Slowed",
+      "spotifyTrackId": "0guiaw0dYGlpoZZP7QjGqS",
+      "year": 2024,
+      "duration": "2:14",
+      "album": "Intoxicated (Slowed)"
+    },
+    {
+      "title": "Intoxicated",
+      "spotifyTrackId": "78ZNkSEFDhlzT2t5jBCiGH",
+      "year": 2023,
+      "duration": "5:09",
+      "album": "Intoxicated"
+    },
+    {
+      "title": "Intoxicated - Super Slowed",
+      "spotifyTrackId": "4NRag0LK7yH7FOTwA1BeFN",
+      "year": 2024,
+      "duration": "7:09",
+      "album": "Intoxicated (Super Slowed + Sped Up)"
+    },
+    {
+      "title": "ACIDONK",
+      "spotifyTrackId": "0f2QhCFJ1cDbbdLiHq0zWH",
+      "year": 2025,
+      "duration": "3:30",
+      "album": "ACIDONK"
+    },
+    {
+      "title": "GET ME WET EAT MY ACID",
+      "spotifyTrackId": "2MynoTr7fzhGaeIxcoVKXY",
+      "year": 2026,
+      "duration": "3:38",
+      "album": "GET ME WET EAT MY ACID"
+    },
+    {
+      "title": "Intoxicated - Sped Up",
+      "spotifyTrackId": "7ax3cpUgjJ0DTtMmi37jgL",
+      "year": 2024,
+      "duration": "4:32",
+      "album": "Intoxicated (Super Slowed + Sped Up)"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Doruksen | Opening Set @ Verknipt ADE 2023  | Thursday",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "wI6ziVUpGMw"
+    },
+    {
+      "title": "Doruksen @ Verknipt Easter Special 09-04-2023 | AFAS Live, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "cqMtE_pRjhA"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.243Z"
+}

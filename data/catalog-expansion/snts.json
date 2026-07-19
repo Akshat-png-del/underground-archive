@@ -1,0 +1,68 @@
+{
+  "slug": "snts",
+  "tracks": [
+    {
+      "title": "Ego Death",
+      "spotifyTrackId": "27Ms4EoHwYDGN7InNZ3uCN",
+      "year": 2020,
+      "duration": "5:17",
+      "album": "The Unfinished Fight Against Humanity LP"
+    },
+    {
+      "title": "An Era Of Absurdity - 999999999 Remix",
+      "spotifyTrackId": "1N35WIY1Cv1stMMZJ70Y85",
+      "year": 2021,
+      "duration": "4:56",
+      "album": "The Unfinished Fight Against Humanity Remixed EP"
+    },
+    {
+      "title": "Lethal Storm",
+      "spotifyTrackId": "2Z6O0Y8e8BhivM3VxBoSGY",
+      "year": 2022,
+      "duration": "5:03",
+      "album": "YOU WON'T DEFEAT ME EP (SNTS016)"
+    },
+    {
+      "title": "ES19.2",
+      "spotifyTrackId": "5RNcvwTTFgJiGlDSXKTnbi",
+      "year": 2015,
+      "duration": "6:04",
+      "album": "SNTS"
+    },
+    {
+      "title": "Unexpected Allies",
+      "spotifyTrackId": "0A63LWEDkRfsmPj5HgOmsP",
+      "year": 2022,
+      "duration": "5:10",
+      "album": "YOU WON'T DEFEAT ME EP (SNTS016)"
+    },
+    {
+      "title": "Figures in the Mist",
+      "spotifyTrackId": "1Pa3qZHdwqiO95eZik8L02",
+      "year": 2017,
+      "duration": "6:45",
+      "album": "Across Another Dimension EP"
+    }
+  ],
+  "sets": [
+    {
+      "title": "SNTS Boiler Room Berlin Live Set",
+      "venue": "Boiler Room",
+      "year": 2015,
+      "youtubeId": "_UYEOeyRm4E"
+    },
+    {
+      "title": "SNTS | Boiler Room x Kompass",
+      "venue": "Boiler Room",
+      "year": 2019,
+      "youtubeId": "Vk7Qr6I4nfk"
+    },
+    {
+      "title": "SNTS | Boiler Room x HEX Barcelona DJ Set",
+      "venue": "Boiler Room",
+      "year": 2020,
+      "youtubeId": "_ijElMxRT0I"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.247Z"
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "fatima-hajji",
+  "tracks": [
+    {
+      "title": "Desespera",
+      "spotifyTrackId": "1SpXr3vWKOTYfV8BNeNTP7",
+      "year": 2025,
+      "duration": "5:26",
+      "album": "Desespera"
+    },
+    {
+      "title": "Tarzan",
+      "spotifyTrackId": "5CcHRD3ZKH814SVELKD1Es",
+      "year": 2026,
+      "duration": "5:25",
+      "album": "Tarzan"
+    },
+    {
+      "title": "I Just Wanna Rave",
+      "spotifyTrackId": "67S1W4XLWFC4onYLlg0az8",
+      "year": 2026,
+      "duration": "5:59",
+      "album": "I Just Wanna Rave"
+    },
+    {
+      "title": "Interdimensional Portal",
+      "spotifyTrackId": "0RGq3BAWmOUoRNntkTUoGH",
+      "year": 2026,
+      "duration": "5:33",
+      "album": "Interdimensional Portal"
+    },
+    {
+      "title": "New Place",
+      "spotifyTrackId": "1FuxbTMzZhhwqT31uBQFKV",
+      "year": 2016,
+      "duration": "5:11",
+      "album": "New Place"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Fatima Hajji @ Verknipt ADE 2023 | Sunday",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "MDnKGak2dJg"
+    },
+    {
+      "title": "Fatima Hajji @ Verknipt Festival 2023 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "_HGnRXHLQbY"
+    },
+    {
+      "title": "Fatima Hajji @ Verknipt X Free Your Mind NYE | Ziggo Dome",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "iPx1Hy6CM-Y"
+    },
+    {
+      "title": "Fatima Hajji @ Verknipt ADE 2022 | Day 5",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "heCUlEnLhv4"
+    },
+    {
+      "title": "Fatima Hajji @ Verknipt Festival 2022 | Hangar",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "063F0K6Fzpw"
+    },
+    {
+      "title": "Fatima Hajji @ Verknipt Kingsday Festival | Iglo",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "iHeKj4TSAQ0"
+    },
+    {
+      "title": "Fatima Hajji @ Verknipt Festival 2021",
+      "venue": "Verknipt",
+      "year": 2021,
+      "youtubeId": "2A6-wMJ7vww"
+    },
+    {
+      "title": "Fatima Hajji @ Verknipt Festival 2019",
+      "venue": "Verknipt",
+      "year": 2019,
+      "youtubeId": "9tor1jRRsWQ"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.245Z"
+}

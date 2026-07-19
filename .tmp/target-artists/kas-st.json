@@ -1,0 +1,52 @@
+{
+  "slug": "kas-st",
+  "name": "KAS:ST",
+  "spotifyName": "KAS:ST",
+  "spotifyId": "7orlzf5LTqSnCzURkZFebN",
+  "spotifyUrl": "https://open.spotify.com/artist/7orlzf5LTqSnCzURkZFebN",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebd31231e66c6ad0dad52c8721",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5ebd31231e66c6ad0dad52c8721",
+    "https://i.scdn.co/image/ab67616100005174d31231e66c6ad0dad52c8721",
+    "https://i.scdn.co/image/ab6761610000f178d31231e66c6ad0dad52c8721"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Spain",
+  "city": "Paris",
+  "activeSince": 2016,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Are We Truly Free?",
+      "spotifyTrackId": "1Bkckgr1RGncOvWDn5Ar3h",
+      "year": 2024,
+      "duration": "3:36",
+      "album": "Are We Truly Free?"
+    },
+    {
+      "title": "Hell on Earth",
+      "spotifyTrackId": "0c5nIZsdOZOaaFE0OQuoyU",
+      "year": 2019,
+      "duration": "6:28",
+      "album": "Road to Nowhere"
+    }
+  ],
+  "trackHashes": {
+    "1Bkckgr1RGncOvWDn5Ar3h": "ab67616d00001e02f1e4d90fff9cb5ff1112c38e",
+    "0c5nIZsdOZOaaFE0OQuoyU": "ab67616d00001e0232e6c3e39d0f28fa86ce721a"
+  },
+  "sets": [],
+  "mbTags": [
+    "techno",
+    "techno"
+  ]
+}

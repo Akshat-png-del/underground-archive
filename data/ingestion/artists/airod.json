@@ -1,0 +1,35 @@
+{
+  "slug": "airod",
+  "name": "AIROD",
+  "updatedAt": "2026-07-18T02:41:23.245Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.245Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.245Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "3oPI0nOC7MHooFy5qDsFrv",
+    "name": "AIROD",
+    "url": "https://open.spotify.com/artist/3oPI0nOC7MHooFy5qDsFrv",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebd217957e7e7b7a64ccd03814",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5ebd217957e7e7b7a64ccd03814",
+      "https://i.scdn.co/image/ab67616100005174d217957e7e7b7a64ccd03814",
+      "https://i.scdn.co/image/ab6761610000f178d217957e7e7b7a64ccd03814"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5ebd217957e7e7b7a64ccd03814",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3oPI0nOC7MHooFy5qDsFrv"
+  }
+}

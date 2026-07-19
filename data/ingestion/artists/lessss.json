@@ -1,0 +1,35 @@
+{
+  "slug": "lessss",
+  "name": "Lessss",
+  "updatedAt": "2026-07-18T02:41:23.242Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.242Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.242Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "5Os2nUALInDs7MyexVNwrm",
+    "name": "LESSSS",
+    "url": "https://open.spotify.com/artist/5Os2nUALInDs7MyexVNwrm",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb47cda055bd48bb7843f14ed5",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb47cda055bd48bb7843f14ed5",
+      "https://i.scdn.co/image/ab6761610000517447cda055bd48bb7843f14ed5",
+      "https://i.scdn.co/image/ab6761610000f17847cda055bd48bb7843f14ed5"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb47cda055bd48bb7843f14ed5",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/5Os2nUALInDs7MyexVNwrm"
+  }
+}

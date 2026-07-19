@@ -1,4 +1,6 @@
 import type { Genre } from "@/types";
+import { getArtist } from "@/content/artists";
+import { resolvePortrait, resolveHeroImage } from "@/lib/archive/verification";
 import { FALLBACK_IMAGE } from "@/lib/archive/schema";
 import { IMAGE_FALLBACK } from "@/lib/images";
 
@@ -16,20 +18,40 @@ export function isGenericArtworkFallback(url?: string | null): boolean {
   return false;
 }
 
+/** Verified artist portrait/hero — never genre SVGs or invented placeholders. */
+export function resolveVerifiedArtistArtForTrack(artistSlug?: string | null): string {
+  if (!artistSlug) return "";
+  const artist = getArtist(artistSlug);
+  if (!artist) return "";
+
+  const portrait = resolvePortrait(artist)?.trim();
+  if (portrait && !isGenericArtworkFallback(portrait)) return portrait;
+
+  const hero = resolveHeroImage(artist)?.trim();
+  if (hero && !isGenericArtworkFallback(hero)) return hero;
+
+  return "";
+}
+
 /**
- * Verified Spotify artwork only — never genre SVGs or invent placeholders.
- * Empty `src` means the UI should hide the artwork surface gracefully.
+ * Verified Spotify artwork first; otherwise verified artist portrait/hero.
+ * Never invents covers or uses genre placeholders.
  */
 export function resolveTrackArtwork(options: {
   coverArt?: string | null;
   genres?: Genre[];
+  artistSlug?: string | null;
 }): { src: string; fallbacks: string[]; fallbackSrc: string } {
   void options.genres;
   const raw = options.coverArt?.trim();
   const hasRealArt = !!raw && !isGenericArtworkFallback(raw);
+  if (hasRealArt) {
+    return { src: raw, fallbacks: [], fallbackSrc: "" };
+  }
 
+  const artistArt = resolveVerifiedArtistArtForTrack(options.artistSlug);
   return {
-    src: hasRealArt ? raw : "",
+    src: artistArt,
     fallbacks: [],
     fallbackSrc: "",
   };

@@ -60,8 +60,8 @@
   ],
   "sets": [
     {
-      "title": "Ansome (LIVE) | H\u00d6R - Jul 8 / 2023",
-      "venue": "H\u00d6R Berlin",
+      "title": "Ansome (LIVE) | HÖR - Jul 8 / 2023",
+      "venue": "HÖR Berlin",
       "year": 2023,
       "youtubeId": "EP1-bDBBwEg"
     },
@@ -70,7 +70,13 @@
       "venue": "Intercell",
       "year": 2019,
       "youtubeId": "ZFOHvXHttuE"
+    },
+    {
+      "title": "Ansome [acid live] at Intercell - Acid Night 2020 - FULL SET",
+      "venue": "Intercell",
+      "year": 2020,
+      "youtubeId": "F4p42Fc78WI"
     }
   ],
-  "updatedAt": "2026-07-18T00:54:11.283Z"
+  "updatedAt": "2026-07-18T01:31:31.651Z"
 }

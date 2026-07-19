@@ -1,0 +1,92 @@
+{
+  "slug": "krl-mx",
+  "tracks": [
+    {
+      "title": "Tropical Boost",
+      "spotifyTrackId": "3MfaiftNQipH4r99RGymxc",
+      "year": 2023,
+      "duration": "4:36",
+      "album": "Tropical Boost"
+    },
+    {
+      "title": "Holy Gucci - Clair Remix",
+      "spotifyTrackId": "5xrVpvItGKWMsTtkZgof8P",
+      "year": 2021,
+      "duration": "6:09",
+      "album": "Shifter Pro"
+    },
+    {
+      "title": "<3",
+      "spotifyTrackId": "1DC6Q9Y8s4SrcwEMm7PVnZ",
+      "year": 2023,
+      "duration": "5:13",
+      "album": "<3"
+    },
+    {
+      "title": "Summertime Sadness",
+      "spotifyTrackId": "0MABo0JcpbjJFaF4LGETkH",
+      "year": 2026,
+      "duration": "3:12",
+      "album": "Summertime Sadness"
+    },
+    {
+      "title": "LEFTLOVERS",
+      "spotifyTrackId": "0DM8bfkXGLOQBQ5XFCDKfW",
+      "year": 2022,
+      "duration": "7:04",
+      "album": "Manifesto 666"
+    },
+    {
+      "title": "Monica Makes Boyz Cry",
+      "spotifyTrackId": "4yXsCIdddK2GLh42Xa4q5E",
+      "year": 2021,
+      "duration": "5:50",
+      "album": "Shifter Pro"
+    }
+  ],
+  "sets": [
+    {
+      "title": "KRL MX | Main Floor - Gotec Club | 2 H Hard Set",
+      "venue": "Gotec",
+      "year": 2025,
+      "youtubeId": "8KzQm7G9Nho"
+    },
+    {
+      "title": "KRL MX @ Verknipt Germany Day 1 | Turbinenhalle, Oberhausen",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "aXDknjTX2MA"
+    },
+    {
+      "title": "KRL MX @ Verknipt x Blackworks ADE 2023 | Saturday",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "6-8zWD7yL6c"
+    },
+    {
+      "title": "KRL MX @ Verknipt ADE 2022",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "X-S9Vr0Vy70"
+    },
+    {
+      "title": "Raise Agency - KRL MX | HÖR - Jun 7 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "g6ta8-91df8"
+    },
+    {
+      "title": "KRL MX | HÖR - May 1 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "3vZglthb6_k"
+    },
+    {
+      "title": "KRL MX | HÖR x Sennheiser Amsterdam Pop-up - October 21 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "cClJDV1ix1A"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.244Z"
+}

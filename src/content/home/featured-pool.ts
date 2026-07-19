@@ -50,6 +50,28 @@ export const CURATED_FEATURED_SLUGS = [
   "victor-ruiz",
   "anfisa-letyago",
   "funk-tribu",
+  // Verified targeted new-artist ingest — exposure budget spreads across sections
+  "airod",
+  "fatima-hajji",
+  "fernanda-martins",
+  "snts",
+  "tommy-four-seven",
+  "headless-horseman",
+  "inhalt-der-nacht",
+  "scalameriya",
+  "kas-st",
+  "6ejou",
+  "krl-mx",
+  "callush",
+  "luciid",
+  "lessss",
+  "kander",
+  "xrtn",
+  "dj-hyperdrive",
+  "mischluft",
+  "byorn",
+  "kuko",
+  "doruksen",
 ] as const;
 
 const catalogSlugs = new Set(artists.map((a) => a.slug));

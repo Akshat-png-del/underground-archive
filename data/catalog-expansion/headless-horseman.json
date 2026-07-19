@@ -1,0 +1,68 @@
+{
+  "slug": "headless-horseman",
+  "tracks": [
+    {
+      "title": "Drown",
+      "spotifyTrackId": "2L8sH2ZtiDTwnJXk2Rsw45",
+      "year": 2026,
+      "duration": "5:24",
+      "album": "HDL013"
+    },
+    {
+      "title": "Disconnection",
+      "spotifyTrackId": "7ixVC1RWkHiuQbLeK2qR6u",
+      "year": 2020,
+      "duration": "4:51",
+      "album": "Unity"
+    },
+    {
+      "title": "Widow 's Peak",
+      "spotifyTrackId": "5Xu0Aji9EMYPS3nge5PvwM",
+      "year": 2017,
+      "duration": "5:41",
+      "album": "47009"
+    },
+    {
+      "title": "Ether - Headless Horseman Remix",
+      "spotifyTrackId": "7AybwQUaM0xuKEBtcJmYvv",
+      "year": 2017,
+      "duration": "6:30",
+      "album": "Ether"
+    },
+    {
+      "title": "Graveyard - Perc Remix",
+      "spotifyTrackId": "4Lz9LblXYv8G486068bsDE",
+      "year": 2013,
+      "duration": "7:05",
+      "album": "Headless Horseman 002"
+    },
+    {
+      "title": "Magnetic",
+      "spotifyTrackId": "2ttktE7w6Wr8pMQwrlTDpv",
+      "year": 2026,
+      "duration": "5:28",
+      "album": "HDL013"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Headless Horseman (LIVE) / January 28 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "VweOKEIM9RU"
+    },
+    {
+      "title": "Headless Horseman / Live / Superbooth home edition 2020",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "wK-N_zgITiQ"
+    },
+    {
+      "title": "Headless Horseman Boiler Room Berlin Live Set",
+      "venue": "Boiler Room",
+      "year": 2014,
+      "youtubeId": "aeUmTKGICPw"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.248Z"
+}

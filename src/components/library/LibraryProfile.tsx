@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
 import { LibraryArtwork } from "@/components/library/LibraryArtwork";
-import { TodaysDiscovery, PreferencesSummary } from "@/components/home/TodaysDiscovery";
+import { TodaysDiscovery } from "@/components/home/TodaysDiscovery";
 import {
   hydrateHistoryEntry,
   hydrateRecentlyViewedEntry,
@@ -57,19 +57,7 @@ export function LibraryProfile() {
             onChange={(e) => updateProfile({ displayName: e.target.value })}
           />
         </div>
-        <div>
-          <label className="text-sm text-muted">Bio</label>
-          <textarea
-            className="mt-1 w-full border border-border bg-background px-3 py-2 text-sm text-foreground"
-            rows={3}
-            value={profile.bio}
-            onChange={(e) => updateProfile({ bio: e.target.value })}
-            placeholder="What sounds define your archive?"
-          />
-        </div>
       </div>
-
-      <PreferencesSummary />
 
       <section className="mt-12">
         <TodaysDiscovery compact />

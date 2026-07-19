@@ -58,26 +58,28 @@ export function HomeSection({
         : "border-t border-border";
 
   return (
-    <section className={`px-4 py-16 sm:py-20 ${bg}`}>
+    <section className={`px-4 py-20 sm:py-28 ${bg}`}>
       <div className="mx-auto max-w-6xl">
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3">
           <div>
             {badge && (
-              <span className="mb-2 inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
-                <span className="live-pulse h-1.5 w-1.5 rounded-full bg-accent" />
+              <span className="mb-3 inline-flex items-center font-mono text-[10px] uppercase tracking-[0.25em] text-muted">
                 {badge}
               </span>
             )}
-            <h2 className="font-serif text-3xl text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-tight">{title}</h2>
-            {subtitle && <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-light">{subtitle}</p>}
+            <h2 className="font-serif text-3xl text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">{title}</h2>
+            {subtitle && <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-light">{subtitle}</p>}
           </div>
           {href && (
-            <Link href={href} className="text-sm text-accent hover:underline">
+            <Link
+              href={href}
+              className="shrink-0 font-mono text-xs uppercase tracking-[0.15em] text-muted-light transition-colors hover:text-accent"
+            >
               {linkLabel}
             </Link>
           )}
         </div>
-        <div className="mt-10">{children}</div>
+        <div className="mt-12">{children}</div>
       </div>
     </section>
   );

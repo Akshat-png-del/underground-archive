@@ -6,6 +6,7 @@ import {
   useRef,
   useState,
   type ChangeEvent,
+  type CSSProperties,
   type KeyboardEvent,
   type PointerEvent,
 } from "react";
@@ -340,6 +341,7 @@ export function PlaybackSeekBar({
       aria-valuemax={durationLabel}
       aria-valuenow={sliderValue}
       className={seekInputClass}
+      style={{ "--sb-fill": `${max > 0 ? Math.min(100, (sliderValue / max) * 100) : 0}%` } as CSSProperties}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onInput={handlePreviewMove}

@@ -40,29 +40,71 @@
   ],
   "sets": [
     {
-      "title": "Boiler Room Manchester \u2014 Teletech",
-      "venue": "Teletech",
-      "year": 2024,
-      "youtubeId": "LoJ4tq4K4Wk"
-    },
-    {
       "title": "Boiler Room Denver",
       "venue": "Boiler Room",
       "year": 2023,
       "youtubeId": "TlqineUUptE"
     },
     {
-      "title": "Intercell x Elektra \u2014 ADE 2024",
+      "title": "Charlie Sparks B2B Parfait @ Verknipt X Free Your Mind NYE | Ziggo Dome",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "CzZkopUV5PQ"
+    },
+    {
+      "title": "Charlie Sparks @ Verknipt ADE 2022 | Day 2",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "qYOql7FmceY"
+    },
+    {
+      "title": "Charlie Sparks b2b Parfait @ Verknipt ADE 2022 | Day 1",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "8m4nozZ0d78"
+    },
+    {
+      "title": "Charlie Sparks @ Verknipt Festival 2022 | Ponton",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "H6ifq-9FZnk"
+    },
+    {
+      "title": "Charlie Sparks @ Verknipt 10 Years",
+      "venue": "Verknipt",
+      "year": 2022,
+      "youtubeId": "1rrNjWvRbB8"
+    },
+    {
+      "title": "Charlie Sparks @ Verknipt ADE 2021 | Day 1",
+      "venue": "Verknipt",
+      "year": 2021,
+      "youtubeId": "bBfPAA7Aisw"
+    },
+    {
+      "title": "Charlie Sparks | Boiler Floor - Gotec Club | 2 H Hard Dance Set",
+      "venue": "Gotec",
+      "year": 2025,
+      "youtubeId": "GjSuAazq2kk"
+    },
+    {
+      "title": "Charlie Sparks at Intercell x Charlie Sparks pres. Elektra | ADE 2024",
       "venue": "Intercell",
       "year": 2024,
       "youtubeId": "pJjLnZq4QgM"
     },
     {
-      "title": "Intercell b2b Parfait \u2014 ADE 2023",
+      "title": "Charlie Sparks b2b Parfait [3h set] at Intercell x Charlie Sparks & Parfait Invite | ADE 2023",
       "venue": "Intercell",
       "year": 2023,
       "youtubeId": "2_KrHmNdCms"
+    },
+    {
+      "title": "Boiler Room Manchester — Teletech",
+      "venue": "Teletech",
+      "year": 2024,
+      "youtubeId": "LoJ4tq4K4Wk"
     }
   ],
-  "updatedAt": "2026-07-17T02:38:00.161Z"
+  "updatedAt": "2026-07-18T01:42:41.634Z"
 }

@@ -9,7 +9,7 @@ import {
   type MouseEvent,
 } from "react";
 import { usePathname } from "next/navigation";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Pause, Play, SkipBack, SkipForward } from "lucide-react";
 import type { PlaybackItem } from "@/lib/music/playback";
 import { resolvePlaybackExperience } from "@/lib/music/playback-experience";
 import { registerPlayerShell } from "@/lib/music/player-controller";
@@ -234,9 +234,7 @@ function AudioTransportControls({
         aria-label="Previous"
         aria-disabled={!canGoPrevious || undefined}
       >
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M6 6v12h2V6H6zm3.5 6l8.5 6V6l-8.5 6z" />
-        </svg>
+        <SkipBack aria-hidden />
       </button>
 
       <button
@@ -248,9 +246,7 @@ function AudioTransportControls({
         aria-label="Play"
         aria-hidden={isPlaying}
       >
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M8 5v14l11-7z" />
-        </svg>
+        <Play aria-hidden />
       </button>
 
       <button
@@ -262,9 +258,7 @@ function AudioTransportControls({
         aria-label="Pause"
         aria-hidden={!isPlaying}
       >
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M6 5h4v14H6V5zm8 0h4v14h-4V5z" />
-        </svg>
+        <Pause aria-hidden />
       </button>
 
       <button
@@ -275,9 +269,7 @@ function AudioTransportControls({
         aria-label="Next"
         aria-disabled={!canGoNext || undefined}
       >
-        <svg viewBox="0 0 24 24" aria-hidden>
-          <path d="M6 6v12l8.5-6L6 6zm9 0v12h2V6h-2z" />
-        </svg>
+        <SkipForward aria-hidden />
       </button>
     </div>
   );

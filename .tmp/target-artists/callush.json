@@ -1,0 +1,112 @@
+{
+  "slug": "callush",
+  "name": "Callush",
+  "spotifyName": "Callush",
+  "spotifyId": "7mD8JtA3uI7BI0CoGdKcid",
+  "spotifyUrl": "https://open.spotify.com/artist/7mD8JtA3uI7BI0CoGdKcid",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb0648f4bb056031ab96e53753",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb0648f4bb056031ab96e53753",
+    "https://i.scdn.co/image/ab676161000051740648f4bb056031ab96e53753",
+    "https://i.scdn.co/image/ab6761610000f1780648f4bb056031ab96e53753"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Germany",
+  "city": "Germany",
+  "activeSince": 2024,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Delicious",
+      "spotifyTrackId": "4qnpoEABYnPBTvT7KZ8wX0",
+      "year": 2026,
+      "duration": "4:13",
+      "album": "Delicious"
+    },
+    {
+      "title": "Gift",
+      "spotifyTrackId": "3bvOyNnelGch53UYVOLT9Y",
+      "year": 2025,
+      "duration": "4:06",
+      "album": "Gift"
+    },
+    {
+      "title": "Never Fade",
+      "spotifyTrackId": "0fA2UKkDh9juIiVFEJtito",
+      "year": 2025,
+      "duration": "4:23",
+      "album": "She Needs Fun"
+    },
+    {
+      "title": "Your Eyes",
+      "spotifyTrackId": "3MaRoUXpgul9lUQ1fYSdMT",
+      "year": 2025,
+      "duration": "4:53",
+      "album": "Your Eyes"
+    },
+    {
+      "title": "No Fingerprints",
+      "spotifyTrackId": "1r40qBFl8oonFytZ5Ouvg4",
+      "year": 2025,
+      "duration": "5:16",
+      "album": "She Needs Fun"
+    },
+    {
+      "title": "I Don't Care",
+      "spotifyTrackId": "4JY3dJ5Yl8WoFALO6i7Bsc",
+      "year": 2024,
+      "duration": "5:09",
+      "album": "I Don't Care"
+    }
+  ],
+  "trackHashes": {
+    "4qnpoEABYnPBTvT7KZ8wX0": "ab67616d00001e021ab3c72a1722107acf402dca",
+    "3bvOyNnelGch53UYVOLT9Y": "ab67616d00001e02304c3a1b1a31eb2b3dbd7f7b",
+    "0fA2UKkDh9juIiVFEJtito": "ab67616d00001e027ba3feea69748e93cbe2b419",
+    "3MaRoUXpgul9lUQ1fYSdMT": "ab67616d00001e02f69ebf76f38f4abf5c46bc32",
+    "1r40qBFl8oonFytZ5Ouvg4": "ab67616d00001e027ba3feea69748e93cbe2b419",
+    "4JY3dJ5Yl8WoFALO6i7Bsc": "ab67616d00001e02d7028edd5ca4f9fc2eec245d"
+  },
+  "sets": [
+    {
+      "title": "CALLUSH | Boiler Floor - Gotec Club | 2 H Schranz Set",
+      "venue": "Gotec",
+      "year": 2026,
+      "youtubeId": "vr7581nrjdQ"
+    },
+    {
+      "title": "CALLUSH | HÖR ON TOUR Munich - 21November / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "BhvLi4LnMP0"
+    },
+    {
+      "title": "Driller x Riot Tapes - Callush | HÖR - October 8 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "4M2pWb3u9JY"
+    },
+    {
+      "title": "Brvtal Vision - Callush / December 15 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "tXq7rdszMb4"
+    },
+    {
+      "title": "elevenfive - Callush | HÖR - May 11 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "fTz5dxNmM0Y"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "luciid",
+  "name": "Luciid",
+  "spotifyName": "Luciid",
+  "spotifyId": "3YMs2NjzmU8oc5muj4LxgL",
+  "spotifyUrl": "https://open.spotify.com/artist/3YMs2NjzmU8oc5muj4LxgL",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb0986f4048f45e354255758f1",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb0986f4048f45e354255758f1",
+    "https://i.scdn.co/image/ab676161000051740986f4048f45e354255758f1",
+    "https://i.scdn.co/image/ab6761610000f1780986f4048f45e354255758f1"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [
+    "dark techno",
+    "techno",
+    "techno"
+  ],
+  "genres": [
+    "dark-techno",
+    "peak-time-techno"
+  ],
+  "country": "Ireland",
+  "city": "Monaghan",
+  "activeSince": 2024,
+  "labels": [],
+  "bpmRange": [
+    130,
+    145
+  ],
+  "tracks": [
+    {
+      "title": "Bye Bye - NOVAH Remix",
+      "spotifyTrackId": "4L4wse303O7RrIPxGGdtQP",
+      "year": 2025,
+      "duration": "3:49",
+      "album": "Bye Bye (NOVAH Remix)"
+    },
+    {
+      "title": "Bye Bye",
+      "spotifyTrackId": "6OeE8CehRJaqiD8soZpAgq",
+      "year": 2025,
+      "duration": "4:54",
+      "album": "Bye Bye"
+    },
+    {
+      "title": "Era Of Us",
+      "spotifyTrackId": "0R3XlYjV56sa0d8t9Exx38",
+      "year": 2024,
+      "duration": "4:32",
+      "album": "Era Of Us"
+    },
+    {
+      "title": "Pray",
+      "spotifyTrackId": "0jZWk8BNIlh437TaB88Gka",
+      "year": 2026,
+      "duration": "4:32",
+      "album": "REELUV"
+    },
+    {
+      "title": "Nothing To Lose (Schranz Mix)",
+      "spotifyTrackId": "2yM7qIZHia1spqwO4lxQE4",
+      "year": 2026,
+      "duration": "4:50",
+      "album": "REELUV"
+    },
+    {
+      "title": "Bunker Buster",
+      "spotifyTrackId": "4lJBjtEABOhrdv7NzBD0KW",
+      "year": 2024,
+      "duration": "5:43",
+      "album": "Bunker Buster"
+    }
+  ],
+  "trackHashes": {
+    "4L4wse303O7RrIPxGGdtQP": "ab67616d00001e02fe046174c300ef91f075063e",
+    "6OeE8CehRJaqiD8soZpAgq": "ab67616d00001e02094fe64067f23435d7540f0b",
+    "0R3XlYjV56sa0d8t9Exx38": "ab67616d00001e02a400e8bce33efe6663740a10",
+    "0jZWk8BNIlh437TaB88Gka": "ab67616d00001e028bef8509972e44ef04b44a55",
+    "2yM7qIZHia1spqwO4lxQE4": "ab67616d00001e028bef8509972e44ef04b44a55",
+    "4lJBjtEABOhrdv7NzBD0KW": "ab67616d00001e023c7f773b2af5701bbcd7b7ae"
+  },
+  "sets": [
+    {
+      "title": "Luciid | Main Floor - Gotec Club | 2 H Schranz set",
+      "venue": "Gotec",
+      "year": 2026,
+      "youtubeId": "7JkGB_cRlcE"
+    },
+    {
+      "title": "Luciid | HÖR ON TOUR Budapest - 25 April / 2026",
+      "venue": "HÖR Berlin",
+      "year": 2026,
+      "youtubeId": "S1nhPNezbLw"
+    }
+  ]
+}

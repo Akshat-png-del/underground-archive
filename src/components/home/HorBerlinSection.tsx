@@ -21,7 +21,7 @@ export function HorBerlinSection({ initialSets }: Props) {
 
   return (
     <FadeInSection>
-      <HomeSection title="HÖR Berlin" href="/sets" linkLabel="All sets" variant="surface">
+      <HomeSection title="HÖR Berlin" badge="Live Archive" href="/sets" linkLabel="Archive" variant="surface">
         <HomeCarousel>
           {sets.map((set, i) => (
             <CarouselItem key={set.id}>

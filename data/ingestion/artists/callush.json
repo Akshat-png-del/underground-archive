@@ -1,0 +1,35 @@
+{
+  "slug": "callush",
+  "name": "Callush",
+  "updatedAt": "2026-07-18T02:41:23.244Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.244Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.244Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "7mD8JtA3uI7BI0CoGdKcid",
+    "name": "Callush",
+    "url": "https://open.spotify.com/artist/7mD8JtA3uI7BI0CoGdKcid",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb0648f4bb056031ab96e53753",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb0648f4bb056031ab96e53753",
+      "https://i.scdn.co/image/ab676161000051740648f4bb056031ab96e53753",
+      "https://i.scdn.co/image/ab6761610000f1780648f4bb056031ab96e53753"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb0648f4bb056031ab96e53753",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/7mD8JtA3uI7BI0CoGdKcid"
+  }
+}

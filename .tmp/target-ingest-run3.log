@@ -1,0 +1,96 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+npm warn exec The following package was not found and will be installed: tsx@4.23.1
+◇ injected env (2) from .env.local // tip: ⌘ override existing { override: true }
+Loaded 674 cached official event sets
+
+▶ BYORN
+  [byorn] BYORN · 6 tracks · Unknown/Unknown · since 2023
+
+▶ KUKO
+  [kuko] KUKO · 3 tracks · Japan/Japan · since 2024
+
+▶ Lessss
+  [lessss] LESSSS · 6 tracks · France/France · since 2024
+
+▶ Luciid
+  [luciid] Luciid · 6 tracks · Ireland/Monaghan · since 2024
+
+▶ Doruksen
+  [doruksen] Doruksen · 6 tracks · Unknown/Unknown · since 2023
+
+▶ Kander
+  [kander] Kander · 2 tracks · United States/Kansas City · since 2025
+
+▶ Callush
+  [callush] Callush · 6 tracks · Germany/Germany · since 2024
+
+▶ KRL MX
+  [krl-mx] Krl Mx · 6 tracks · France/France · since 2021
+
+▶ 6EJOU
+  [6ejou] 6EJOU · 6 tracks · France/Lyon · since 2020
+
+▶ AIROD
+  [airod] AIROD · 6 tracks · France/France · since 2020
+
+▶ Fatima Hajji
+  [fatima-hajji] Fatima Hajji · 6 tracks · Spain/Spain · since 2016
+
+▶ Fernanda Martins
+  [fernanda-martins] Fernanda Martins · 6 tracks · Spain/Brazil · since 2015
+  ✗ not verified: unverifiable techno identity (Spotify "Fernanda Martins" genres=[], no verified techno set found)
+
+▶ Otta
+  [otta] OTTA · 0 tracks · United Kingdom/London · since 1997
+
+▶ SNTS
+  [snts] Snts · 6 tracks · Germany/Germany · since 2015
+
+▶ Tommy Four Seven
+  [tommy-four-seven] Tommy Four Seven · 6 tracks · Germany/United Kingdom · since 2009
+
+▶ Headless Horseman
+  [headless-horseman] Headless Horseman · 6 tracks · Germany/Berlin · since 2013
+
+▶ Inhalt der Nacht
+  [inhalt-der-nacht] Inhalt Der Nacht · 6 tracks · Germany/Germany · since 2018
+
+▶ Scalameriya
+  [scalameriya] Scalameriya · 6 tracks · Serbia/Šumadijski okrug · since 2020
+
+▶ DJ Hyperdrive
+  [dj-hyperdrive] DJ Hyperdrive · 6 tracks · Unknown/Unknown · since 2025
+
+▶ MISCHLUFT
+  [mischluft] mischluft · 6 tracks · Unknown/Unknown · since 2023
+
+▶ Onlynumbers
+  ⤳ skipped: already in catalog (onlynumbers)
+
+▶ XRTN
+  [xrtn] XRTN · 6 tracks · Netherlands/Netherlands · since 2022
+  ! YouTube quota exhausted — skipping remaining live searches
+
+▶ KUSS
+  [kuss] KUSS · 0 tracks · France/Paris · since 2016
+  ✗ not verified: no verified tracks or sets found
+
+▶ Jazzy
+  [jazzy] Jazzy · 0 tracks · Ireland/Crumlin · since 1996
+
+▶ KAS:ST
+  [kas-st] KAS:ST · 2 tracks · Spain/Paris · since 2016
+  ✗ not verified: unverifiable techno identity (Spotify "KAS:ST" genres=[], no verified techno set found)
+
+=== DONE ===
+Added: 21 · tracks: 107 · sets: 82 · covers: +45
+Skipped (existing): 1 · Not verified: 3
+Sets by venue: {
+  'HÖR Berlin': 30,
+  Verknipt: 32,
+  'Boiler Room': 14,
+  Gotec: 3,
+  Intercell: 3
+}
+Result → /Users/akshat/Projects/vitalforge/.tmp/target-artists/result.json
+Seeds → /Users/akshat/Projects/vitalforge/src/content/artists/target-artists-seeds.ts

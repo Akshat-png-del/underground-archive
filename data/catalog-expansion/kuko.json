@@ -1,0 +1,35 @@
+{
+  "slug": "kuko",
+  "tracks": [
+    {
+      "title": "Catharsis",
+      "spotifyTrackId": "0fW4McH0CZO94g0L8sJCE2",
+      "year": 2026,
+      "duration": "3:46",
+      "album": "Catharsis"
+    },
+    {
+      "title": "Die Tonight",
+      "spotifyTrackId": "4y4NBmnV3QWygYpjLNDWOw",
+      "year": 2025,
+      "duration": "3:47",
+      "album": "Die Tonight"
+    },
+    {
+      "title": "Voicemail",
+      "spotifyTrackId": "5TK1e0ZrePHxtPs1yS5Pcy",
+      "year": 2024,
+      "duration": "6:12",
+      "album": "Voicemail"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Adrenaline - KUKO | HÖR - October 29 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "AOzdoA35oY0"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.241Z"
+}

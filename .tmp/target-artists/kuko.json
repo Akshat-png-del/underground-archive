@@ -1,0 +1,64 @@
+{
+  "slug": "kuko",
+  "name": "KUKO",
+  "spotifyName": "KUKO",
+  "spotifyId": "4sCQPElBVBfJNFGydeWwnU",
+  "spotifyUrl": "https://open.spotify.com/artist/4sCQPElBVBfJNFGydeWwnU",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eba876b7d4b4699f0a3b7b89ac",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eba876b7d4b4699f0a3b7b89ac",
+    "https://i.scdn.co/image/ab67616100005174a876b7d4b4699f0a3b7b89ac",
+    "https://i.scdn.co/image/ab6761610000f178a876b7d4b4699f0a3b7b89ac"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Japan",
+  "city": "Japan",
+  "activeSince": 2024,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Catharsis",
+      "spotifyTrackId": "0fW4McH0CZO94g0L8sJCE2",
+      "year": 2026,
+      "duration": "3:46",
+      "album": "Catharsis"
+    },
+    {
+      "title": "Die Tonight",
+      "spotifyTrackId": "4y4NBmnV3QWygYpjLNDWOw",
+      "year": 2025,
+      "duration": "3:47",
+      "album": "Die Tonight"
+    },
+    {
+      "title": "Voicemail",
+      "spotifyTrackId": "5TK1e0ZrePHxtPs1yS5Pcy",
+      "year": 2024,
+      "duration": "6:12",
+      "album": "Voicemail"
+    }
+  ],
+  "trackHashes": {
+    "0fW4McH0CZO94g0L8sJCE2": "ab67616d00001e02d8a76eaf0eddc28a45a6dc7e",
+    "4y4NBmnV3QWygYpjLNDWOw": "ab67616d00001e029401001c2c3c25e919b7bc64",
+    "5TK1e0ZrePHxtPs1yS5Pcy": "ab67616d00001e02e42363fba239d3eed1507b54"
+  },
+  "sets": [
+    {
+      "title": "Adrenaline - KUKO | HÖR - October 29 / 2024",
+      "venue": "HÖR Berlin",
+      "year": 2024,
+      "youtubeId": "AOzdoA35oY0"
+    }
+  ]
+}

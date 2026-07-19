@@ -1,0 +1,115 @@
+{
+  "slug": "inhalt-der-nacht",
+  "name": "Inhalt der Nacht",
+  "spotifyName": "Inhalt Der Nacht",
+  "spotifyId": "0rCDBsRMdD2jIAnAf6kbaL",
+  "spotifyUrl": "https://open.spotify.com/artist/0rCDBsRMdD2jIAnAf6kbaL",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb48bd200b908447bad09b8837",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb48bd200b908447bad09b8837",
+    "https://i.scdn.co/image/ab6761610000517448bd200b908447bad09b8837",
+    "https://i.scdn.co/image/ab6761610000f17848bd200b908447bad09b8837"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [
+    "techno",
+    "techno"
+  ],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Germany",
+  "city": "Germany",
+  "activeSince": 2018,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Fleischleben",
+      "spotifyTrackId": "2LE3RFy2dMAsDuInOTFu2u",
+      "year": 2020,
+      "duration": "8:04",
+      "album": "Fleischleben EP"
+    },
+    {
+      "title": "Das Gift",
+      "spotifyTrackId": "0NiTV6CShCCRjvy3grv8LN",
+      "year": 2020,
+      "duration": "8:41",
+      "album": "Die dritte Defension EP"
+    },
+    {
+      "title": "Dosis",
+      "spotifyTrackId": "46b09xLBljdav3EfWH909F",
+      "year": 2018,
+      "duration": "7:06",
+      "album": "The World Of Monnom Black"
+    },
+    {
+      "title": "Die Liebe",
+      "spotifyTrackId": "12mJb0uSofmtzTcqbad1bk",
+      "year": 2020,
+      "duration": "5:57",
+      "album": "Die dritte Defension EP"
+    },
+    {
+      "title": "Die Angst",
+      "spotifyTrackId": "5Y1wxlzOn26L6ctjYMdFhb",
+      "year": 2020,
+      "duration": "4:47",
+      "album": "Die dritte Defension EP"
+    },
+    {
+      "title": "Gier Frisst Seele",
+      "spotifyTrackId": "1XClcdN2q5VJs9ePz9m7Hk",
+      "year": 2021,
+      "duration": "7:48",
+      "album": "Bis Das Blut Gefriert"
+    }
+  ],
+  "trackHashes": {
+    "2LE3RFy2dMAsDuInOTFu2u": "ab67616d00001e02e74f111f60506716244a97ad",
+    "0NiTV6CShCCRjvy3grv8LN": "ab67616d00001e0258de2c90108b72f27051163b",
+    "46b09xLBljdav3EfWH909F": "ab67616d00001e02899dfb394cfa9008bb8f74f1",
+    "12mJb0uSofmtzTcqbad1bk": "ab67616d00001e0258de2c90108b72f27051163b",
+    "5Y1wxlzOn26L6ctjYMdFhb": "ab67616d00001e0258de2c90108b72f27051163b",
+    "1XClcdN2q5VJs9ePz9m7Hk": "ab67616d00001e0281cef93d5a50ba8707d60fb9"
+  },
+  "sets": [
+    {
+      "title": "Griessmuehle - Inhalt der Nacht / December 31 / 1pm-2pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "7iUTl4xQnT4"
+    },
+    {
+      "title": "Lebendig - Inhalt Der Nacht B2B Tham / October 20 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "Db45-GaiFjM"
+    },
+    {
+      "title": "Lebendig Showcase - Inhalt Der Nacht / March 11 / 6pm-7pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "T8JHRnc33Q0"
+    },
+    {
+      "title": "Lebendig - Inhalt Der Nacht / April 17 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "I78SHgdYXqM"
+    },
+    {
+      "title": "Lebendig - Inhalt Der Nacht / January 9 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "q_HiKZY_vM8"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "xrtn",
+  "tracks": [
+    {
+      "title": "Journey Into Sound",
+      "spotifyTrackId": "4ciW76Qp5VMDNpXu7U3IeU",
+      "year": 2026,
+      "duration": "4:09",
+      "album": "Journey Into Sound"
+    },
+    {
+      "title": "That's The Way",
+      "spotifyTrackId": "7orf3RcYQbwLzb4uY3N9Tm",
+      "year": 2025,
+      "duration": "4:06",
+      "album": "That's The Way"
+    },
+    {
+      "title": "It's My Beat",
+      "spotifyTrackId": "5Q70EWz2ZBoxMbaPRe7jvV",
+      "year": 2022,
+      "duration": "5:19",
+      "album": "It's My Beat"
+    },
+    {
+      "title": "Dominate",
+      "spotifyTrackId": "2u0Noof0bQDGqs6n7oaYj6",
+      "year": 2023,
+      "duration": "5:03",
+      "album": "Dominate"
+    },
+    {
+      "title": "Hit The Floor",
+      "spotifyTrackId": "31pWDlRc1upAwZtoVZZjp0",
+      "year": 2022,
+      "duration": "5:39",
+      "album": "Hit The Floor"
+    },
+    {
+      "title": "Exterminate",
+      "spotifyTrackId": "0iZlaTd7WszPv2XXRDjxjA",
+      "year": 2022,
+      "duration": "5:12",
+      "album": "Exterminate"
+    }
+  ],
+  "sets": [
+    {
+      "title": "XRTN @ Verknipt Festival 2025 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2025,
+      "youtubeId": "JuCwupcjXtw"
+    },
+    {
+      "title": "Aphøtic b3b NYCO b3b XRTN - Opening set @ Verknipt ArenA 2025 | World's biggest 360° rave",
+      "venue": "Verknipt",
+      "year": 2025,
+      "youtubeId": "OD_Z5P7bfG8"
+    },
+    {
+      "title": "XRTN @ Verknipt Kingsday 2024 | Hembrugterrein, Zaandam",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "cLHMT3OatEs"
+    },
+    {
+      "title": "XRTN @ Verknipt Festival 2023 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "LJT1IuevkoI"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.251Z"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "kander",
+  "tracks": [
+    {
+      "title": "Higher State",
+      "spotifyTrackId": "6rPCbRKOxkxtMly0YbCtLn",
+      "year": 2026,
+      "duration": "3:50",
+      "album": "Higher State"
+    },
+    {
+      "title": "Rules of the Dance",
+      "spotifyTrackId": "0FoisMbB6Y8ayGi8tt8aZw",
+      "year": 2025,
+      "duration": "4:42",
+      "album": "Rules of the Dance"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Kander @ Verknipt Festival 2023 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2023,
+      "youtubeId": "Rp6069sY5BU"
+    },
+    {
+      "title": "Kander | HÖR - October 8 / 2025",
+      "venue": "HÖR Berlin",
+      "year": 2025,
+      "youtubeId": "RVsTMrhZAcw"
+    },
+    {
+      "title": "Driller - THANDER (THAM & Kander)  | HÖR - March 12 / 2026",
+      "venue": "HÖR Berlin",
+      "year": 2026,
+      "youtubeId": "npfGhFCaL0A"
+    },
+    {
+      "title": "Kander | Boiler Room Manchester: Teletech",
+      "venue": "Boiler Room",
+      "year": 2022,
+      "youtubeId": "fa06uuZeVwo"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.243Z"
+}

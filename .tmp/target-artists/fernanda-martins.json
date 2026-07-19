@@ -1,0 +1,81 @@
+{
+  "slug": "fernanda-martins",
+  "name": "Fernanda Martins",
+  "spotifyName": "Fernanda Martins",
+  "spotifyId": "52MgoD4ydR3spsWVir9naX",
+  "spotifyUrl": "https://open.spotify.com/artist/52MgoD4ydR3spsWVir9naX",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9d954bf49e945aede3348227",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb9d954bf49e945aede3348227",
+    "https://i.scdn.co/image/ab676161000051749d954bf49e945aede3348227",
+    "https://i.scdn.co/image/ab6761610000f1789d954bf49e945aede3348227"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "Spain",
+  "city": "Brazil",
+  "activeSince": 2015,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Rampant",
+      "spotifyTrackId": "1vHnk2PXmyPtPT2Dw8fmAy",
+      "year": 2018,
+      "duration": "6:09",
+      "album": "Rampant"
+    },
+    {
+      "title": "Trinity - Fernanda Martins Remix",
+      "spotifyTrackId": "4bOfCFJkvAg3iXPi0cyOG3",
+      "year": 2024,
+      "duration": "5:38",
+      "album": "Trinity (Fernanda Martins Remix)"
+    },
+    {
+      "title": "Nothing Fancy - Fernanda Martins Remix",
+      "spotifyTrackId": "526xkQdAzOiTmvIBHXMIMn",
+      "year": 2018,
+      "duration": "6:45",
+      "album": "Nothing Fancy"
+    },
+    {
+      "title": "Resonate - Lukas, Fernanda Martins Remix",
+      "spotifyTrackId": "5F2ktpwjNSRC1u5AeyWqVH",
+      "year": 2025,
+      "duration": "6:42",
+      "album": "Ego Disco"
+    },
+    {
+      "title": "Scheme - Fernanda Martins Remix",
+      "spotifyTrackId": "7FJdjrCCO2PJXLr5QsEOHh",
+      "year": 2020,
+      "duration": "6:09",
+      "album": "N3URON"
+    },
+    {
+      "title": "Definition of Hard Techno - Lukas & Fernanda Martins Remix",
+      "spotifyTrackId": "3FhsfO5j8cD3a0xgHCAn9q",
+      "year": 2015,
+      "duration": "6:47",
+      "album": "Definition of Hard Techno"
+    }
+  ],
+  "trackHashes": {
+    "1vHnk2PXmyPtPT2Dw8fmAy": "ab67616d00001e02a499df4a7164ea22a34ef85e",
+    "4bOfCFJkvAg3iXPi0cyOG3": "ab67616d00001e0290f51db9598a6ddfbf597c35",
+    "526xkQdAzOiTmvIBHXMIMn": "ab67616d00001e0234db98fd1266e68d9fb96cb3",
+    "5F2ktpwjNSRC1u5AeyWqVH": "ab67616d00001e0251dec8914fb3be8c10194cf7",
+    "7FJdjrCCO2PJXLr5QsEOHh": "ab67616d00001e02eea127e08b8e8f8f7a04ed8b",
+    "3FhsfO5j8cD3a0xgHCAn9q": "ab67616d00001e024fcd94f65fe3c91a0b2930ef"
+  },
+  "sets": []
+}

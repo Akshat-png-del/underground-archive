@@ -1,0 +1,35 @@
+{
+  "slug": "krl-mx",
+  "name": "KRL MX",
+  "updatedAt": "2026-07-18T02:41:23.244Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.244Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.244Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "49e9A9elFAUS9sCDMTyiWC",
+    "name": "Krl Mx",
+    "url": "https://open.spotify.com/artist/49e9A9elFAUS9sCDMTyiWC",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb99c6ba6bad9ac37142cb8567",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb99c6ba6bad9ac37142cb8567",
+      "https://i.scdn.co/image/ab6761610000517499c6ba6bad9ac37142cb8567",
+      "https://i.scdn.co/image/ab6761610000f17899c6ba6bad9ac37142cb8567"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb99c6ba6bad9ac37142cb8567",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/49e9A9elFAUS9sCDMTyiWC"
+  }
+}

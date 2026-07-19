@@ -1,0 +1,111 @@
+{
+  "slug": "dj-hyperdrive",
+  "name": "DJ Hyperdrive",
+  "spotifyName": "DJ Hyperdrive",
+  "spotifyId": "4SpabttFpFvc0lqr5gYPen",
+  "spotifyUrl": "https://open.spotify.com/artist/4SpabttFpFvc0lqr5gYPen",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebdc02ec9aa3967e9d97f3e9b6",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5ebdc02ec9aa3967e9d97f3e9b6",
+    "https://i.scdn.co/image/ab67616100005174dc02ec9aa3967e9d97f3e9b6",
+    "https://i.scdn.co/image/ab6761610000f178dc02ec9aa3967e9d97f3e9b6"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "International",
+  "city": "International",
+  "activeSince": 2025,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [
+    {
+      "title": "Metropolis - Yasmin Regisford Remix",
+      "spotifyTrackId": "13sHF44kjVLmx8K0KfPYx8",
+      "year": 2026,
+      "duration": "5:59",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Mindfreak - KTK Remix",
+      "spotifyTrackId": "409iD1Ky8pL3okTFwdw9e1",
+      "year": 2026,
+      "duration": "4:49",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Metropolis",
+      "spotifyTrackId": "5Bb9m8RkHzFEoaoadnuHCG",
+      "year": 2026,
+      "duration": "5:41",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Mindfreak",
+      "spotifyTrackId": "6srhA2UEkWXU4ROatrUVG9",
+      "year": 2026,
+      "duration": "5:00",
+      "album": "BCCX026"
+    },
+    {
+      "title": "Hydronaut",
+      "spotifyTrackId": "46Jy0tdd9WyBtEV4m0W5yf",
+      "year": 2025,
+      "duration": "4:53",
+      "album": "BCCT003 | Curated by DJ Hyperdrive"
+    },
+    {
+      "title": "Signal: Awakening",
+      "spotifyTrackId": "6ZgfTSbhk29f7m4HDqVCmh",
+      "year": 2026,
+      "duration": "5:42",
+      "album": "BCCX026"
+    }
+  ],
+  "trackHashes": {
+    "13sHF44kjVLmx8K0KfPYx8": "ab67616d00001e0238dc0059772f82a7e906dd6c",
+    "409iD1Ky8pL3okTFwdw9e1": "ab67616d00001e0238dc0059772f82a7e906dd6c",
+    "5Bb9m8RkHzFEoaoadnuHCG": "ab67616d00001e0238dc0059772f82a7e906dd6c",
+    "6srhA2UEkWXU4ROatrUVG9": "ab67616d00001e0238dc0059772f82a7e906dd6c",
+    "46Jy0tdd9WyBtEV4m0W5yf": "ab67616d00001e0252cabfd1579bfa3d7fe2012c",
+    "6ZgfTSbhk29f7m4HDqVCmh": "ab67616d00001e0238dc0059772f82a7e906dd6c"
+  },
+  "sets": [
+    {
+      "title": "Live From Earth Klub - DJ Hyperdrive | HÖR - Feb 9 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "yfYMS5JM8eA"
+    },
+    {
+      "title": "Distinkt - DJ Hyperdrive | HÖR - May 5 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "eupWkyq6qj0"
+    },
+    {
+      "title": "CRUDE - DJ Hyperdrive / January 19 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "pFTR-yugL5M"
+    },
+    {
+      "title": "DJ Hyperdrive | Boiler Room x Glitch Festival 2023",
+      "venue": "Boiler Room",
+      "year": 2023,
+      "youtubeId": "vlSAH-1mia8"
+    },
+    {
+      "title": "DJ Hyperdrive | Low Heat: Floorgasm",
+      "venue": "Boiler Room",
+      "year": 2020,
+      "youtubeId": "z69-O6cBqiE"
+    }
+  ]
+}

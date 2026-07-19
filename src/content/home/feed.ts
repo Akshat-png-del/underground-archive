@@ -1,3 +1,4 @@
+import { artists } from "@/content/artists";
 import { getDisplaySets } from "@/content/sets";
 import { getDisplayTracks, sortCatalogTracksDeterministic } from "@/content/tracks";
 import { getPublicPlaylists } from "@/lib/library/store";
@@ -8,6 +9,7 @@ import {
   getHomepageExposureLayout,
   getHomepageExposureLayoutStatic,
 } from "@/content/home/exposure-budget";
+import { CURATED_FEATURED_SLUGS } from "@/content/home/featured-pool";
 import { fiveMinuteIndex } from "@/content/home/rotation";
 
 export function getArtistOfWeek(): Artist {
@@ -168,8 +170,30 @@ export function getRecentlyAddedTracks(limit = 6) {
   return [...layout.weeklyTracks, ...rest].slice(0, limit);
 }
 
-export function getRisingArtists(limit = 4): Artist[] {
-  return getHomepageExposureLayout().communityDiscussed.slice(0, limit);
+/** Rising underground — trending momentum, excluding household curated names. */
+export function getRisingArtists(limit = 6): Artist[] {
+  const famous = new Set(CURATED_FEATURED_SLUGS);
+  const rising = artists.filter((a) => !famous.has(a.slug) && a.trending);
+  const pool =
+    rising.length > 0 ? rising : artists.filter((a) => !famous.has(a.slug));
+  if (pool.length === 0) return [];
+  const rot = fiveMinuteIndex();
+  const start = rot % pool.length;
+  return [...pool.slice(start), ...pool.slice(0, start)].slice(0, limit);
+}
+
+/** Lower-profile artists — not curated-featured and not marked trending. */
+export function getUnderratedArtists(limit = 6): Artist[] {
+  const featured = new Set(CURATED_FEATURED_SLUGS);
+  const pool = artists.filter((a) => !featured.has(a.slug) && !a.trending);
+  if (pool.length === 0) return artists.slice(0, limit);
+  const rot = fiveMinuteIndex();
+  const start = rot % pool.length;
+  return [...pool.slice(start), ...pool.slice(0, start)].slice(0, limit);
+}
+
+export function getUnderratedArtistsStatic(limit = 6): Artist[] {
+  return getUnderratedArtists(limit);
 }
 
 export function getHomepageDiscovery() {

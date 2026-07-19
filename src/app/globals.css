@@ -1,19 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050505;
-  --foreground: #e8e8e8;
-  --surface: #0d0d0d;
-  --surface-elevated: #141414;
-  --border: #1f1f1f;
-  --border-subtle: #161616;
+  --background: #080808;
+  --foreground: #f5f5f5;
+  --surface: #101010;
+  --surface-elevated: #1a1a1a;
+  --border: #242424;
+  --border-subtle: #141414;
   --muted: #6b6b6b;
-  --muted-light: #9a9a9a;
-  --accent: #c8ff00;
-  --accent-dim: #8ab300;
-  --accent-glow: rgba(200, 255, 0, 0.08);
-  --danger: #ff2d2d;
-  --grain-opacity: 0.04;
+  --muted-light: #a7a7a7;
+  --accent: #a61e1e;
+  --accent-dim: #c62828;
+  --accent-glow: rgba(166, 30, 30, 0.1);
+  --on-accent: #f5f5f5;
+  --danger: #c0392b;
+  --success: #7fb069;
+  --warning: #d4a017;
+  --grain-opacity: 0.03;
+  --card: #141414;
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @theme inline {
@@ -29,6 +35,9 @@
   --color-accent-dim: var(--accent-dim);
   --color-accent-glow: var(--accent-glow);
   --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-card: var(--card);
   --font-sans: var(--font-space-grotesk);
   --font-serif: var(--font-instrument-serif);
   --font-mono: var(--font-ibm-plex-mono);
@@ -70,7 +79,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: var(--background);
+  color: var(--on-accent);
 }
 
 /* Grain overlay utility */
@@ -89,10 +98,11 @@ body {
   font-family: var(--font-serif), Georgia, serif;
   font-size: 1.75rem;
   font-weight: 400;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2.75rem;
+  margin-bottom: 1.15rem;
   color: var(--foreground);
   letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .prose-archive h3 {
@@ -100,15 +110,15 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  letter-spacing: 0.14em;
+  margin-top: 2.25rem;
+  margin-bottom: 0.85rem;
   color: var(--accent);
 }
 
 .prose-archive p {
-  margin-bottom: 1.25rem;
-  line-height: 1.8;
+  margin-bottom: 1.35rem;
+  line-height: 1.85;
   color: var(--muted-light);
   font-size: 1.05rem;
   overflow-wrap: break-word;
@@ -119,61 +129,53 @@ body {
   overflow-wrap: break-word;
 }
 
-/* Animations */
+/* Animations — restrained, premium easing */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(16px); }
+  from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes glitch {
-  0%, 100% { transform: translate(0); }
-  20% { transform: translate(-2px, 1px); }
-  40% { transform: translate(2px, -1px); }
-  60% { transform: translate(-1px, -1px); }
-  80% { transform: translate(1px, 1px); }
-}
-
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.7; }
 }
 
 .animate-fade-up {
-  animation: fade-up 0.6s ease-out forwards;
+  animation: fade-up 0.55s var(--ease-premium) forwards;
 }
 
 .hover-glitch:hover {
-  animation: glitch 0.3s ease-in-out;
+  opacity: 0.92;
 }
 
 .ambient-glow {
-  background: radial-gradient(ellipse at 50% 0%, var(--accent-glow) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 0%, var(--accent-glow) 0%, transparent 58%);
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--background); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
 
 .hover-glow {
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: box-shadow 0.35s var(--ease-premium), border-color 0.3s ease;
 }
 .hover-glow:hover {
-  box-shadow: 0 0 30px rgba(200, 255, 0, 0.08);
+  box-shadow: var(--shadow-soft);
 }
 
 .reveal-section {
-  animation: fade-up 0.7s ease-out forwards;
+  animation: fade-up 0.65s var(--ease-premium) forwards;
 }
 
 @keyframes live-pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.35; transform: scale(0.8); }
+  50% { opacity: 0.4; transform: scale(0.92); }
 }
 
 .live-pulse {
-  animation: live-pulse 1.4s ease-in-out infinite;
+  animation: live-pulse 1.6s var(--ease-premium) infinite;
 }
 
 @keyframes ticker-scroll {
@@ -182,44 +184,50 @@ body {
 }
 
 .ticker-track {
-  animation: ticker-scroll 36s linear infinite;
+  animation: ticker-scroll 40s linear infinite;
 }
 
 .card-editorial {
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.25s ease, opacity 0.25s ease;
+  background-color: var(--card);
+  transition:
+    transform 0.4s var(--ease-premium),
+    box-shadow 0.4s var(--ease-premium),
+    border-color 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .card-editorial:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
 }
 
 .image-zoom {
-  transition: transform 0.5s ease;
+  transition: transform 0.55s var(--ease-premium);
 }
 
 .group:hover .image-zoom {
-  transform: scale(1.04);
+  transform: scale(1.025);
 }
 
 /* Clickable list rows, search hits, library items */
 .interactive-row {
   cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
 }
 
 .interactive-row:hover {
-  border-color: var(--accent);
-  background-color: color-mix(in srgb, var(--surface) 65%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+  background-color: color-mix(in srgb, var(--surface) 70%, transparent);
 }
 
 /* Filter chips, onboarding toggles, discover presets */
 .chip-selectable {
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.25s ease, color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .chip-selectable:hover {
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
   color: var(--foreground);
 }
 
@@ -233,12 +241,12 @@ body {
 /* Icon / ghost control buttons */
 .interactive-ghost {
   cursor: pointer;
-  transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+  transition: color 0.25s ease, opacity 0.25s ease, background-color 0.25s ease;
 }
 
 .interactive-ghost:hover {
   color: var(--foreground);
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -381,6 +389,18 @@ body:has([data-set-watch-page]) main {
   flex-shrink: 0;
   margin-top: auto;
   pointer-events: auto;
+  border-top: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface) 82%, transparent) 0%,
+      color-mix(in srgb, var(--surface) 96%, #000 4%) 100%
+    );
+  -webkit-backdrop-filter: blur(24px) saturate(1.35);
+  backdrop-filter: blur(24px) saturate(1.35);
+  box-shadow:
+    0 -1px 0 0 rgba(255, 255, 255, 0.04) inset,
+    0 -18px 48px -12px rgba(0, 0, 0, 0.55);
 }
 
 /* ── Spotify bar layout (sb-*) ───────────────────────────────────────────── */
@@ -392,38 +412,56 @@ body:has([data-set-watch-page]) main {
   position: relative;
   gap: 12px;
   min-height: 5.625rem;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1.25rem;
   color: #fff;
 }
 
 .spotify-player-bar .sb-left {
   position: absolute;
-  left: 1rem;
+  left: 1.25rem;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   min-width: 0;
-  width: min(30%, 18rem);
+  width: min(30%, 20rem);
 }
 
 .spotify-player-bar .sb-artwork {
   width: 3.5rem;
   height: 3.5rem;
   flex-shrink: 0;
-  border-radius: 6px;
-  background: #2a2a2a;
-  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--surface-elevated) 80%, #000 20%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.06) inset,
+    0 6px 18px -6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.spotify-player-bar .sb-artwork :where(img) {
+  border-radius: inherit;
+}
+
+.spotify-player-bar .sb-left:hover .sb-artwork {
+  transform: scale(1.04);
 }
 
 .spotify-player-bar .sb-title {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   color: #fff;
+  line-height: 1.25;
 }
 
 .spotify-player-bar .sb-artist {
   font-size: 12px;
-  color: #b3b3b3;
+  font-weight: 450;
+  color: color-mix(in srgb, #fff 62%, transparent);
+  line-height: 1.35;
+  margin-top: 1px;
 }
 
 .spotify-player-bar .sb-center {
@@ -442,46 +480,92 @@ body:has([data-set-watch-page]) main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 .spotify-player-bar .sb-btn {
   background: transparent;
   border: none;
   cursor: pointer;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  border-radius: 50%;
+  border-radius: 9999px;
+  color: color-mix(in srgb, #fff 72%, transparent);
   touch-action: manipulation;
+  transition:
+    transform 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.18s ease,
+    background-color 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .spotify-player-bar .sb-btn svg {
-  width: 22px;
-  height: 22px;
-  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  stroke: currentColor;
   pointer-events: none;
-  transition:
-    transform 0.15s ease,
-    fill 0.15s ease;
+  transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.spotify-player-bar .sb-btn:hover svg {
-  transform: scale(1.1);
-  fill: var(--accent);
+/* Secondary controls (prev / next): ghost buttons that lift on hover */
+.spotify-player-bar .sb-btn:not(.sb-play):not(.sb-pause):hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.spotify-player-bar .sb-btn:not(.sb-play):not(.sb-pause):active {
+  transform: translateY(0) scale(0.9);
+}
+
+.spotify-player-bar .sb-btn:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--surface),
+    0 0 0 4px color-mix(in srgb, var(--accent) 70%, transparent);
 }
 
 .spotify-player-bar .sb-btn--muted {
-  opacity: 0.4;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Primary play / pause: solid circle, Spotify-style */
+.spotify-player-bar .sb-btn.sb-play,
+.spotify-player-bar .sb-btn.sb-pause {
+  width: 44px;
+  height: 44px;
+  color: #0a0a0a;
+  background: #fff;
+  box-shadow: 0 6px 18px -6px rgba(0, 0, 0, 0.65);
+}
+
+.spotify-player-bar .sb-btn.sb-play:hover,
+.spotify-player-bar .sb-btn.sb-pause:hover {
+  transform: scale(1.07);
+  background: #fff;
+  box-shadow: 0 10px 26px -8px rgba(0, 0, 0, 0.7);
+}
+
+.spotify-player-bar .sb-btn.sb-play:active,
+.spotify-player-bar .sb-btn.sb-pause:active {
+  transform: scale(0.94);
 }
 
 .spotify-player-bar .sb-btn.sb-play svg,
 .spotify-player-bar .sb-btn.sb-pause svg {
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
+}
+
+/* nudge the play triangle to optical center */
+.spotify-player-bar .sb-btn.sb-play svg {
+  margin-left: 2px;
 }
 
 .spotify-player-bar .sb-seek {
@@ -489,65 +573,136 @@ body:has([data-set-watch-page]) main {
   max-width: 37.5rem;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .spotify-player-bar .sb-time {
   font-size: 11px;
+  font-weight: 500;
   font-variant-numeric: tabular-nums;
-  color: #b3b3b3;
-  min-width: 2.5rem;
+  color: color-mix(in srgb, #fff 55%, transparent);
+  min-width: 2.75rem;
   flex-shrink: 0;
+  transition: color 0.18s ease;
+}
+
+.spotify-player-bar .sb-seek:hover .sb-time {
+  color: color-mix(in srgb, #fff 78%, transparent);
 }
 
 .spotify-player-bar .sb-time:last-child {
   text-align: right;
 }
 
+/* Premium progress slider — filled track via derived --sb-fill, thumb reveals on hover */
 .spotify-player-bar .sb-slider {
+  --sb-track: rgba(255, 255, 255, 0.16);
+  --sb-fill-color: #fff;
   flex: 1;
   appearance: none;
-  height: 4px;
-  min-height: 12px;
-  background: #404040;
-  border-radius: 2px;
+  -webkit-appearance: none;
+  height: 6px;
+  min-height: 18px;
+  background: transparent;
+  border-radius: 9999px;
   outline: none;
   cursor: pointer;
 }
 
+.spotify-player-bar .sb-slider:hover {
+  --sb-fill-color: var(--accent);
+}
+
 .spotify-player-bar .sb-slider::-webkit-slider-runnable-track {
-  height: 4px;
-  border-radius: 2px;
-  background: #404040;
+  height: 6px;
+  border-radius: 9999px;
+  background:
+    linear-gradient(
+      to right,
+      var(--sb-fill-color) 0%,
+      var(--sb-fill-color) var(--sb-fill, 0%),
+      var(--sb-track) var(--sb-fill, 0%),
+      var(--sb-track) 100%
+    );
+  transition: background-color 0.18s ease;
 }
 
 .spotify-player-bar .sb-slider::-webkit-slider-thumb {
   appearance: none;
-  width: 12px;
-  height: 12px;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
   margin-top: -4px;
-  background: var(--accent);
+  background: #fff;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  transform: scale(0);
+  transition: transform 0.16s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spotify-player-bar .sb-slider:hover::-webkit-slider-thumb,
+.spotify-player-bar .sb-slider:focus-visible::-webkit-slider-thumb,
+.spotify-player-bar .sb-slider:active::-webkit-slider-thumb {
+  transform: scale(1);
+}
+
+.spotify-player-bar .sb-slider:active::-webkit-slider-thumb {
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.45),
+    0 0 0 6px color-mix(in srgb, var(--accent) 22%, transparent);
 }
 
 .spotify-player-bar .sb-slider::-moz-range-track {
-  height: 4px;
-  border-radius: 2px;
-  background: #404040;
+  height: 6px;
+  border-radius: 9999px;
+  background: var(--sb-track);
+}
+
+.spotify-player-bar .sb-slider::-moz-range-progress {
+  height: 6px;
+  border-radius: 9999px;
+  background: var(--sb-fill-color);
 }
 
 .spotify-player-bar .sb-slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
-  background: var(--accent);
+  width: 14px;
+  height: 14px;
+  background: #fff;
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  transform: scale(0);
+  transition: transform 0.16s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spotify-player-bar .sb-slider:hover::-moz-range-thumb,
+.spotify-player-bar .sb-slider:focus-visible::-moz-range-thumb,
+.spotify-player-bar .sb-slider:active::-moz-range-thumb {
+  transform: scale(1);
+}
+
+.spotify-player-bar .sb-slider:focus-visible {
+  outline: none;
 }
 
 .spotify-player-bar .hidden {
   display: none;
+}
+
+/* Expand / collapse toggle — slim premium grab strip */
+.spotify-player-toggle {
+  border-top-color: color-mix(in srgb, var(--border) 65%, transparent) !important;
+}
+
+.spotify-player-toggle svg {
+  opacity: 0.65;
+  transition: opacity 0.18s ease;
+}
+
+.spotify-player-toggle:hover svg {
+  opacity: 1;
 }
 
 @media (max-width: 767px) {

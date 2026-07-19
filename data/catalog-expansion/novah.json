@@ -1,6 +1,13 @@
 {
   "slug": "novah",
   "tracks": [],
-  "sets": [],
-  "updatedAt": "2026-07-17T02:38:00.170Z"
+  "sets": [
+    {
+      "title": "Novah | Boiler - Gotec Club | 1 1/2 h Hard-Hitting Techno Set",
+      "venue": "Gotec",
+      "year": 2025,
+      "youtubeId": "Z-FU5x6sAcA"
+    }
+  ],
+  "updatedAt": "2026-07-18T01:31:31.664Z"
 }

@@ -1,0 +1,35 @@
+{
+  "slug": "kander",
+  "name": "Kander",
+  "updatedAt": "2026-07-18T02:41:23.244Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.244Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.244Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "3gSVZTpmVW2JKzngOCDXkd",
+    "name": "Kander",
+    "url": "https://open.spotify.com/artist/3gSVZTpmVW2JKzngOCDXkd",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb381a19c364a83f0e2e0372a1",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb381a19c364a83f0e2e0372a1",
+      "https://i.scdn.co/image/ab67616100005174381a19c364a83f0e2e0372a1",
+      "https://i.scdn.co/image/ab6761610000f178381a19c364a83f0e2e0372a1"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb381a19c364a83f0e2e0372a1",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/3gSVZTpmVW2JKzngOCDXkd"
+  }
+}

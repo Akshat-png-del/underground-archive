@@ -3,14 +3,10 @@ import type { Artist } from "@/types";
 import { genreLabels, getArtist } from "@/content/artists";
 import { resolvePortrait, resolvePortraitFallbacksForDisplay, resolveHeroImage, resolveHeroFallbacks } from "@/lib/archive/verification";
 import { SafeImage } from "@/components/ui/SafeImage";
-import { Button } from "@/components/ui/Button";
 import { CareerTimeline } from "./CareerTimeline";
 import { ArtistCard } from "./ArtistCard";
 import { ArtistMusicSection } from "./ArtistMusicSection";
 import { ArtistSaveButton } from "./ArtistSaveButton";
-import { ArtistFollowButton } from "./ArtistFollowButton";
-import { getRecommendationsForArtist, getArtistRecommendationLabel } from "@/lib/preferences/recommendations";
-import { RecommendationStrip } from "@/components/discovery/RecommendationStrip";
 import { ListeningPath } from "./ListeningPath";
 import { ArtistProfilePortrait } from "./ArtistProfilePortrait";
 
@@ -34,7 +30,6 @@ export function ArtistPageContent({ artist }: Props) {
     .filter((a): a is Artist => !!a)
     .slice(0, 6);
 
-  const { externalLinks: links } = artist;
   const portraitSrc = resolvePortrait(artist);
   const portraitFallbacks = resolvePortraitFallbacksForDisplay(artist);
   const heroSrc = resolveHeroImage(artist);
@@ -83,23 +78,7 @@ export function ArtistPageContent({ artist }: Props) {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            {links.instagram && (
-              <a href={links.instagram} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="sm">Follow on Instagram</Button>
-              </a>
-            )}
-            {links.residentAdvisor && (
-              <a href={links.residentAdvisor} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="sm">Resident Advisor</Button>
-              </a>
-            )}
-            {links.soundcloud && (
-              <a href={links.soundcloud} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="sm">SoundCloud</Button>
-              </a>
-            )}
             <ArtistSaveButton slug={artist.slug} />
-            <ArtistFollowButton slug={artist.slug} />
           </div>
         </div>
       </section>
@@ -148,32 +127,6 @@ export function ArtistPageContent({ artist }: Props) {
                   for related artists.
                 </p>
               )}
-            </Section>
-
-            <RecommendationStrip
-              title={getArtistRecommendationLabel(artist.name)}
-              artists={getRecommendationsForArtist(artist.slug)}
-              href={`/discover?genre=${artist.genres[0]}`}
-            />
-
-            <Section title="Community">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="border border-border p-5">
-                  <p className="text-3xl font-serif text-accent">{artist.essentialSets.length}</p>
-                  <p className="text-sm text-muted">Essential sets archived</p>
-                </div>
-                <div className="border border-border p-5">
-                  <p className="text-3xl font-serif text-accent">{artist.similarArtists.length}</p>
-                  <p className="text-sm text-muted">Similar artists to explore</p>
-                </div>
-              </div>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <ArtistSaveButton slug={artist.slug} />
-                <ArtistFollowButton slug={artist.slug} />
-                <Link href="/library/playlists">
-                  <Button variant="outline" size="sm">Browse community playlists</Button>
-                </Link>
-              </div>
             </Section>
           </div>
 

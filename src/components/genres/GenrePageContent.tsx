@@ -18,12 +18,17 @@ import { ArtistGrid } from "@/components/artists/ArtistGrid";
 import { SetRow } from "@/components/music/SetRow";
 import { TrackRow } from "@/components/music/TrackRow";
 import { playbackItemFromSet, playbackItemFromTrack } from "@/lib/music/playback";
+import { FaqSection, type FaqItem } from "@/components/seo/FaqSection";
+import { getComparisonGuides } from "@/content/hubs";
 
 interface Props {
   slug: string;
+  artistHubCount?: number;
+  setCount?: number;
+  faqs?: FaqItem[];
 }
 
-export function GenrePageContent({ slug }: Props) {
+export function GenrePageContent({ slug, artistHubCount, setCount, faqs }: Props) {
   const name = genreLabels[slug];
   const guide = getGenreGuide(slug);
   const artists = getGenreEssentialArtists(slug);
@@ -33,6 +38,7 @@ export function GenrePageContent({ slug }: Props) {
   const setBrowseQueue = sets.map(playbackItemFromSet);
   const articles = getGenreRelatedArticles(slug);
   const moodLabels = getGenreMoodLabels(slug);
+  const comparisons = getComparisonGuides().filter((g) => g.a === slug || g.b === slug);
 
   if (!name) return null;
 
@@ -49,6 +55,34 @@ export function GenrePageContent({ slug }: Props) {
           ))}
         </div>
       )}
+
+      <div className="mt-6 flex flex-wrap gap-3 text-sm">
+        {(artistHubCount ?? 0) > 0 && (
+          <Link
+            href={`/artists/genre/${slug}`}
+            className="chip-selectable border border-border px-4 py-2 text-muted-light"
+          >
+            All {name} artists{artistHubCount ? ` (${artistHubCount})` : ""} →
+          </Link>
+        )}
+        {(setCount ?? 0) > 0 && (
+          <Link
+            href={`#essential-sets`}
+            className="chip-selectable border border-border px-4 py-2 text-muted-light"
+          >
+            {name} sets →
+          </Link>
+        )}
+        {comparisons.map((c) => (
+          <Link
+            key={c.slug}
+            href={`/guides/${c.slug}`}
+            className="chip-selectable border border-border px-4 py-2 text-muted-light"
+          >
+            {genreLabels[c.a]} vs {genreLabels[c.b]} →
+          </Link>
+        ))}
+      </div>
 
       {guide && (
         <>
@@ -170,7 +204,7 @@ export function GenrePageContent({ slug }: Props) {
       )}
 
       {sets.length > 0 && (
-        <section className="mt-12 border-t border-border pt-10">
+        <section id="essential-sets" className="mt-12 border-t border-border pt-10">
           <h2 className="font-serif text-2xl text-foreground">Essential sets</h2>
           <div className="mt-6 grid min-w-0 gap-4 sm:grid-cols-2">
             {sets.map((set, i) => (
@@ -203,10 +237,12 @@ export function GenrePageContent({ slug }: Props) {
         </section>
       )}
 
+      {faqs && faqs.length > 0 && <FaqSection items={faqs} title={`${name} — FAQ`} />}
+
       <RecommendationStrip
         title={getGenreRecommendationLabel(slug as Genre)}
         artists={getRecommendationsForGenre(slug as Genre)}
-        href={`/genres/${slug}`}
+        href={`/artists/genre/${slug}`}
       />
     </>
   );

@@ -1,0 +1,35 @@
+{
+  "slug": "fatima-hajji",
+  "name": "Fatima Hajji",
+  "updatedAt": "2026-07-18T02:41:23.246Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.246Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.246Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "6jZSXmTCxZhFfYELtp78Ci",
+    "name": "Fatima Hajji",
+    "url": "https://open.spotify.com/artist/6jZSXmTCxZhFfYELtp78Ci",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb850c3f78377380daf2b0ac9c",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb850c3f78377380daf2b0ac9c",
+      "https://i.scdn.co/image/ab67616100005174850c3f78377380daf2b0ac9c",
+      "https://i.scdn.co/image/ab6761610000f178850c3f78377380daf2b0ac9c"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb850c3f78377380daf2b0ac9c",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/6jZSXmTCxZhFfYELtp78Ci"
+  }
+}

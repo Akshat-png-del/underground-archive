@@ -1,7 +1,6 @@
 "use client";
 
 import type { ArchiveSet } from "@/types/library";
-import { setCategoryLabels } from "@/content/sets";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { playbackItemFromSet } from "@/lib/music/playback";
 import { setThumbnailUrl } from "@/lib/music/set-display";
@@ -24,7 +23,6 @@ export function SetEditorialCard({ set }: SetEditorialCardProps) {
   const playing = playbackItemPlaying(snapshot, "set", set.id);
   const { handleCardPointerDown } = useCardPlayback(item, "set", set.id, undefined, set.slug);
   const year = set.date?.slice(0, 4) ?? "—";
-  const collection = setCategoryLabels[set.category];
 
   return (
     <article
@@ -53,7 +51,7 @@ export function SetEditorialCard({ set }: SetEditorialCardProps) {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
-            {collection}
+            {set.event}
           </p>
           <h2 className="mt-2 font-serif text-2xl leading-tight text-foreground sm:text-3xl">
             {set.artistName}
@@ -61,20 +59,15 @@ export function SetEditorialCard({ set }: SetEditorialCardProps) {
           <p className="mt-1 line-clamp-2 text-sm text-muted-light sm:text-base">{set.title}</p>
         </div>
         {playing && (
-          <span className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full border border-white/20 bg-black/50 px-2.5 py-1 text-[10px] uppercase tracking-wider text-accent backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent live-pulse" />
+          <span className="absolute right-4 top-4 flex items-center rounded-full border border-white/20 bg-black/50 px-2.5 py-1 text-[10px] uppercase tracking-wider text-accent backdrop-blur-sm">
             Playing
           </span>
         )}
       </div>
-      <div className="grid grid-cols-2 gap-3 border-t border-border px-5 py-4 text-xs sm:grid-cols-4 sm:px-6">
+      <div className="grid grid-cols-2 gap-3 border-t border-border px-5 py-4 text-xs sm:grid-cols-3 sm:px-6">
         <div>
           <p className="text-muted">Event</p>
           <p className="mt-0.5 truncate font-medium text-foreground">{set.event}</p>
-        </div>
-        <div>
-          <p className="text-muted">Collection</p>
-          <p className="mt-0.5 truncate font-medium text-foreground">{collection}</p>
         </div>
         <div>
           <p className="text-muted">Duration</p>

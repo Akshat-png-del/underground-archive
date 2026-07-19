@@ -39,11 +39,9 @@ export function EssentialSetOfDayHero({ set }: Props) {
   return (
     <FadeInSection>
       <HomeSection
-        title="Essential set of the day"
-        subtitle="One performance worth your full attention."
-        badge="Today"
+        title="Today's Selection"
         href={`/sets/${set.slug}`}
-        linkLabel="Full set page"
+        linkLabel="View set"
         variant="surface"
       >
         <div
@@ -95,7 +93,6 @@ export function EssentialSetOfDayHero({ set }: Props) {
                   View artist
                 </Button>
               </Link>
-              <p className="text-xs text-muted">Tap poster to play in bottom player</p>
             </div>
           </div>
         </div>

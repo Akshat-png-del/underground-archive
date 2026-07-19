@@ -15,7 +15,7 @@ export function CareerTimeline({ events }: CareerTimelineProps) {
             className="relative pl-8 animate-fade-up"
             style={{ animationDelay: `${i * 80}ms` }}
           >
-            <span className="absolute left-0 top-1.5 h-2 w-2 -translate-x-[3.5px] bg-accent shadow-[0_0_8px_rgba(200,255,0,0.5)]" />
+            <span className="absolute left-0 top-1.5 h-2 w-2 -translate-x-[3.5px] bg-accent shadow-[0_0_8px_rgba(166,30,30,0.45)]" />
             <p className="font-mono text-sm text-accent">{item.year}</p>
             <p className="mt-1 text-muted-light leading-relaxed">{item.event}</p>
           </div>

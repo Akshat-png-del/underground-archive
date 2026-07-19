@@ -10,22 +10,24 @@ import { cn } from "@/lib/utils";
 type TrackArtworkProps = Omit<ImageProps, "src" | "alt"> & {
   coverArt?: string | null;
   genres?: Genre[];
+  artistSlug?: string | null;
   alt?: string;
   wrapperClassName?: string;
 };
 
-/** Track/release artwork — verified Spotify covers only; empty surface when missing. */
+/** Track/release artwork — Spotify cover, else verified artist portrait. */
 export const TrackArtwork = memo(function TrackArtwork({
   coverArt,
   genres,
+  artistSlug,
   alt = "",
   className,
   wrapperClassName,
   ...props
 }: TrackArtworkProps) {
   const resolved = useMemo(
-    () => resolveTrackArtwork({ coverArt, genres }),
-    [coverArt, genres],
+    () => resolveTrackArtwork({ coverArt, genres, artistSlug }),
+    [coverArt, genres, artistSlug],
   );
 
   return (

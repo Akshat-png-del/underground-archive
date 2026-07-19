@@ -1,0 +1,30 @@
+{
+  "slug": "kuss",
+  "name": "KUSS",
+  "spotifyName": "KUSS",
+  "spotifyId": "0NsnEUL9qY2SpkmrZipI7a",
+  "spotifyUrl": "https://open.spotify.com/artist/0NsnEUL9qY2SpkmrZipI7a",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb6a973f84c7f6f771f999f31b",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb6a973f84c7f6f771f999f31b",
+    "https://i.scdn.co/image/ab676161000051746a973f84c7f6f771f999f31b",
+    "https://i.scdn.co/image/ab6761610000f1786a973f84c7f6f771f999f31b"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "France",
+  "city": "Paris",
+  "activeSince": 2016,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [],
+  "trackHashes": {},
+  "sets": []
+}

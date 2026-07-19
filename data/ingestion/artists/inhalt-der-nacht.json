@@ -1,0 +1,35 @@
+{
+  "slug": "inhalt-der-nacht",
+  "name": "Inhalt der Nacht",
+  "updatedAt": "2026-07-18T02:41:23.249Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.249Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.249Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "0rCDBsRMdD2jIAnAf6kbaL",
+    "name": "Inhalt Der Nacht",
+    "url": "https://open.spotify.com/artist/0rCDBsRMdD2jIAnAf6kbaL",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb48bd200b908447bad09b8837",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb48bd200b908447bad09b8837",
+      "https://i.scdn.co/image/ab6761610000517448bd200b908447bad09b8837",
+      "https://i.scdn.co/image/ab6761610000f17848bd200b908447bad09b8837"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb48bd200b908447bad09b8837",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/0rCDBsRMdD2jIAnAf6kbaL"
+  }
+}

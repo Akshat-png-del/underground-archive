@@ -5,7 +5,8 @@ export const siteConfig = {
   description:
     "Hard techno, schranz, industrial techno, EBM, and darkwave — artist profiles, essential sets, and editorial discovery.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ogImage: "/og-default.jpg",
+  // Branded default social card, generated at /opengraph-image (see src/app/opengraph-image.tsx).
+  ogImage: "/opengraph-image",
   locale: "en_US",
   editorialEmail: "archive@underground.archive",
 } as const;
@@ -17,6 +18,6 @@ export const navLinks = [
   { href: "/artists", label: "Artists" },
   { href: "/sets", label: "Sets" },
   { href: "/genres", label: "Genres" },
-  { href: "/discover", label: "Discover" },
+  { href: "/guides", label: "Guides" },
   { href: "/editorial", label: "Archive" },
 ] as const;

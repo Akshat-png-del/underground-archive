@@ -58,18 +58,6 @@
       "youtubeId": "GLMUDJGxwJc"
     },
     {
-      "title": "Verknipt ArenA Amsterdam",
-      "venue": "Verknipt",
-      "year": 2025,
-      "youtubeId": "mQY5D0lNuJ4"
-    },
-    {
-      "title": "DYEN b2b FANTASM @ Verknipt ArenA",
-      "venue": "Verknipt",
-      "year": 2025,
-      "youtubeId": "1_P5LzX5vwE"
-    },
-    {
       "title": "Rotterdam Rave — All Night Long",
       "venue": "Rotterdam Rave",
       "year": 2025,
@@ -80,7 +68,25 @@
       "venue": "Unreal",
       "year": 2025,
       "youtubeId": "-r1jD4jnhA0"
+    },
+    {
+      "title": "Fantasm @ Verknipt Festival 2024 Day 2 | Strijkviertelplas, Utrecht",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "FfRLvaB_lws"
+    },
+    {
+      "title": "Fantasm @ Verknipt Kingsday 2024 | Hembrugterrein, Zaandam",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "yEoiWEQOBjg"
+    },
+    {
+      "title": "Fantasm @ Verknipt ArenA | Johan Cruijff ArenA, Amsterdam",
+      "venue": "Verknipt",
+      "year": 2024,
+      "youtubeId": "mQY5D0lNuJ4"
     }
   ],
-  "updatedAt": "2026-06-28T01:33:00.573Z"
+  "updatedAt": "2026-07-18T01:39:03.212Z"
 }

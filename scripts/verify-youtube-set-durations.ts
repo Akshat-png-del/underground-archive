@@ -12,6 +12,7 @@ import { coreArtists } from "../src/content/artists/data";
 import { catalogArtists } from "../src/content/artists/catalog";
 import { bulkCatalogArtists } from "../src/content/artists/catalog-bulk";
 import { expansionCatalogArtists } from "../src/content/artists/catalog-expansion";
+import { targetArtistCatalogArtists } from "../src/content/artists/target-artists-seeds";
 import { getYoutubeApiKey } from "../src/lib/ingestion/config";
 import { fetchJson } from "../src/lib/ingestion/http";
 import { hasValidYoutubeId } from "../src/lib/catalog/apply-authenticity";
@@ -69,6 +70,7 @@ async function main() {
     ...catalogArtists,
     ...bulkCatalogArtists,
     ...expansionCatalogArtists,
+    ...targetArtistCatalogArtists,
   ]
     .map(applyIngestedMetadata)
     .map(applyCatalogExpansion)

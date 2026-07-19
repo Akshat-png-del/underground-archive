@@ -17,7 +17,7 @@ export default function CommunityPage() {
       </p>
       <div className="mt-8 flex justify-center gap-3">
         <Link href="/artists"><Button>Browse artists</Button></Link>
-        <Link href="/discover"><Button variant="outline">Discover</Button></Link>
+        <Link href="/sets"><Button variant="outline">Browse sets</Button></Link>
       </div>
     </div>
   );

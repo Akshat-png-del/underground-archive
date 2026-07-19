@@ -1,0 +1,44 @@
+{
+  "slug": "otta",
+  "name": "Otta",
+  "spotifyName": "OTTA",
+  "spotifyId": "4NMvzpqVsDCC0Cte4GTG3d",
+  "spotifyUrl": "https://open.spotify.com/artist/4NMvzpqVsDCC0Cte4GTG3d",
+  "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb3b336cc710e5aee525d39519",
+  "imageUrls": [
+    "https://i.scdn.co/image/ab6761610000e5eb3b336cc710e5aee525d39519",
+    "https://i.scdn.co/image/ab676161000051743b336cc710e5aee525d39519",
+    "https://i.scdn.co/image/ab6761610000f1783b336cc710e5aee525d39519"
+  ],
+  "followers": 0,
+  "popularity": 0,
+  "spotifyGenres": [],
+  "mbTags": [],
+  "genres": [
+    "peak-time-techno"
+  ],
+  "country": "United Kingdom",
+  "city": "London",
+  "activeSince": 1997,
+  "labels": [],
+  "bpmRange": [
+    138,
+    150
+  ],
+  "tracks": [],
+  "trackHashes": {},
+  "sets": [
+    {
+      "title": "ØTTA | Boiler Room x Glitch Festival 2025",
+      "venue": "Boiler Room",
+      "year": 2025,
+      "youtubeId": "oK9nX___MF4"
+    },
+    {
+      "title": "ØTTA | Boiler Room Manchester: Teletech",
+      "venue": "Boiler Room",
+      "year": 2022,
+      "youtubeId": "odRRJEEG9iQ"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "fernanda-martins",
+  "name": "Fernanda Martins",
+  "updatedAt": "2026-07-18T02:41:23.247Z",
+  "sources": {
+    "spotify": {
+      "syncedAt": "2026-07-18T02:41:23.247Z",
+      "status": "ok"
+    },
+    "musicbrainz": {
+      "syncedAt": "2026-07-18T02:41:23.247Z",
+      "status": "ok"
+    }
+  },
+  "spotify": {
+    "artistId": "52MgoD4ydR3spsWVir9naX",
+    "name": "Fernanda Martins",
+    "url": "https://open.spotify.com/artist/52MgoD4ydR3spsWVir9naX",
+    "genres": [],
+    "followers": 0,
+    "popularity": 0,
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb9d954bf49e945aede3348227",
+    "imageUrls": [
+      "https://i.scdn.co/image/ab6761610000e5eb9d954bf49e945aede3348227",
+      "https://i.scdn.co/image/ab676161000051749d954bf49e945aede3348227",
+      "https://i.scdn.co/image/ab6761610000f1789d954bf49e945aede3348227"
+    ],
+    "relatedArtists": []
+  },
+  "resolvedImage": {
+    "url": "https://i.scdn.co/image/ab6761610000e5eb9d954bf49e945aede3348227",
+    "source": "spotify",
+    "sourceUrl": "https://open.spotify.com/artist/52MgoD4ydR3spsWVir9naX"
+  }
+}

@@ -57,7 +57,14 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
         <span className="w-6 shrink-0 text-center font-mono text-xs text-muted">{index + 1}</span>
       )}
       <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-sm bg-background">
-        <TrackArtwork coverArt={track.coverArt} genres={genres} alt="" fill sizes="48px" />
+        <TrackArtwork
+          coverArt={track.coverArt}
+          genres={genres}
+          artistSlug={track.artistSlug}
+          alt=""
+          fill
+          sizes="48px"
+        />
       </div>
       <div className="min-w-0 flex-1">
         <p className="truncate text-sm font-medium text-foreground">{track.artist}</p>

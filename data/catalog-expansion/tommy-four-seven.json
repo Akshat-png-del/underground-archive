@@ -1,0 +1,80 @@
+{
+  "slug": "tommy-four-seven",
+  "tracks": [
+    {
+      "title": "OX1",
+      "spotifyTrackId": "2ad04RkIBe69ZjJUyFdFlg",
+      "year": 2014,
+      "duration": "7:12",
+      "album": "OX"
+    },
+    {
+      "title": "Ratu",
+      "spotifyTrackId": "6xtqEUksZAgkCQGY5YyssW",
+      "year": 2011,
+      "duration": "7:58",
+      "album": "Primate"
+    },
+    {
+      "title": "Sevals - Terence Fixmer Remix",
+      "spotifyTrackId": "5RaVm2Y9MPoMepFA0S3tQp",
+      "year": 2011,
+      "duration": "8:00",
+      "album": "Primate Remixed"
+    },
+    {
+      "title": "UUU",
+      "spotifyTrackId": "2ZYYbaSILhg4XdvncqeCNL",
+      "year": 2016,
+      "duration": "4:41",
+      "album": "47007"
+    },
+    {
+      "title": "OX1 - Oscar Mulero Remix",
+      "spotifyTrackId": "6fO21bTewuudyPH40vPHSd",
+      "year": 2014,
+      "duration": "6:39",
+      "album": "OX"
+    },
+    {
+      "title": "Surma - Speed J Remix",
+      "spotifyTrackId": "30rqyQQ6hfeqL6gkEM7uxK",
+      "year": 2009,
+      "duration": "10:51",
+      "album": "Surma"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Tommy Four Seven | HÖR - May 24 / 2023",
+      "venue": "HÖR Berlin",
+      "year": 2023,
+      "youtubeId": "GheRQu38N-c"
+    },
+    {
+      "title": "Samurai Music - Tommy Four Seven / January 15 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "l0q9SHhjLRg"
+    },
+    {
+      "title": "Tommy Four Seven | HÖR - Jul 21 / 2022",
+      "venue": "HÖR Berlin",
+      "year": 2022,
+      "youtubeId": "3FwtdGQDoTg"
+    },
+    {
+      "title": "TOMMY FOUR SEVEN | Boiler Room x Kompass",
+      "venue": "Boiler Room",
+      "year": 2019,
+      "youtubeId": "3uJL-JuYvls"
+    },
+    {
+      "title": "Tommy Four Seven | Boiler Room Prague",
+      "venue": "Boiler Room",
+      "year": 2018,
+      "youtubeId": "tfrZCnhooGo"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.247Z"
+}

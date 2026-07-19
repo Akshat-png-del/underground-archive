@@ -45,13 +45,13 @@ export function HomeHero({ initial }: { initial: HomeHeroData }) {
         </Link>
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/92 to-background/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(200,255,0,0.12),transparent_55%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(166,30,30,0.1),transparent_55%)]" />
       </div>
 
       <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:py-28 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
-            Featured · The Underground Archive
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted">
+            Featured Artist
           </p>
           <h1 className="mt-4 font-serif text-5xl leading-[1.05] text-foreground sm:text-6xl lg:text-7xl">
             {artist.name}
@@ -71,23 +71,23 @@ export function HomeHero({ initial }: { initial: HomeHeroData }) {
           </div>
           <div className="mt-9 flex flex-wrap gap-3">
             <Link href={`/artists/${artist.slug}`}>
-              <Button size="lg">Explore profile</Button>
+              <Button size="lg">Explore</Button>
             </Link>
-            <Link href="/discover">
+            <Link href="/artists">
               <Button variant="outline" size="lg">
-                Start discovering
+                Artists
               </Button>
             </Link>
           </div>
         </div>
 
         <div className="rounded-sm border border-border/60 bg-background/60 p-4 backdrop-blur-sm sm:p-5">
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Featured set</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Latest Set</p>
           <div className="mt-3">
             <SetRow set={set} meta={`${set.duration ?? "—"} · ${set.event}`} />
           </div>
           <div className="my-4 h-px bg-border/60" />
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Featured track</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Selected Track</p>
           <div className="mt-3">
             <TrackRow track={track} />
           </div>

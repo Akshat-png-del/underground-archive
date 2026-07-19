@@ -1,0 +1,80 @@
+{
+  "slug": "inhalt-der-nacht",
+  "tracks": [
+    {
+      "title": "Fleischleben",
+      "spotifyTrackId": "2LE3RFy2dMAsDuInOTFu2u",
+      "year": 2020,
+      "duration": "8:04",
+      "album": "Fleischleben EP"
+    },
+    {
+      "title": "Das Gift",
+      "spotifyTrackId": "0NiTV6CShCCRjvy3grv8LN",
+      "year": 2020,
+      "duration": "8:41",
+      "album": "Die dritte Defension EP"
+    },
+    {
+      "title": "Dosis",
+      "spotifyTrackId": "46b09xLBljdav3EfWH909F",
+      "year": 2018,
+      "duration": "7:06",
+      "album": "The World Of Monnom Black"
+    },
+    {
+      "title": "Die Liebe",
+      "spotifyTrackId": "12mJb0uSofmtzTcqbad1bk",
+      "year": 2020,
+      "duration": "5:57",
+      "album": "Die dritte Defension EP"
+    },
+    {
+      "title": "Die Angst",
+      "spotifyTrackId": "5Y1wxlzOn26L6ctjYMdFhb",
+      "year": 2020,
+      "duration": "4:47",
+      "album": "Die dritte Defension EP"
+    },
+    {
+      "title": "Gier Frisst Seele",
+      "spotifyTrackId": "1XClcdN2q5VJs9ePz9m7Hk",
+      "year": 2021,
+      "duration": "7:48",
+      "album": "Bis Das Blut Gefriert"
+    }
+  ],
+  "sets": [
+    {
+      "title": "Griessmuehle - Inhalt der Nacht / December 31 / 1pm-2pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "7iUTl4xQnT4"
+    },
+    {
+      "title": "Lebendig - Inhalt Der Nacht B2B Tham / October 20 / 4pm-5pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "Db45-GaiFjM"
+    },
+    {
+      "title": "Lebendig Showcase - Inhalt Der Nacht / March 11 / 6pm-7pm",
+      "venue": "HÖR Berlin",
+      "year": 2020,
+      "youtubeId": "T8JHRnc33Q0"
+    },
+    {
+      "title": "Lebendig - Inhalt Der Nacht / April 17 / 8pm-9pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "I78SHgdYXqM"
+    },
+    {
+      "title": "Lebendig - Inhalt Der Nacht / January 9 / 9pm-10pm",
+      "venue": "HÖR Berlin",
+      "year": 2021,
+      "youtubeId": "q_HiKZY_vM8"
+    }
+  ],
+  "updatedAt": "2026-07-18T02:41:23.249Z"
+}

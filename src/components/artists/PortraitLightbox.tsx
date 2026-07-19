@@ -53,7 +53,7 @@ export function PortraitLightbox({ portrait, onClose }: PortraitLightboxProps) {
         </button>
 
         <div
-          className="overflow-hidden rounded-2xl border border-border/50 bg-surface shadow-[0_24px_80px_rgba(0,0,0,0.55),0_0_48px_rgba(200,255,0,0.12)] ring-1 ring-accent/15"
+          className="overflow-hidden rounded-2xl border border-border/50 bg-surface shadow-[0_24px_80px_rgba(0,0,0,0.55),0_0_40px_rgba(166,30,30,0.1)] ring-1 ring-accent/15"
         >
           <div className="flex w-full items-center justify-center bg-background">
             <SafeImage

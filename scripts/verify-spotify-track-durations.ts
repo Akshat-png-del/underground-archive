@@ -20,8 +20,10 @@ import { coreArtists } from "../src/content/artists/data";
 import { catalogArtists } from "../src/content/artists/catalog";
 import { bulkCatalogArtists } from "../src/content/artists/catalog-bulk";
 import { expansionCatalogArtists } from "../src/content/artists/catalog-expansion";
+import { targetArtistCatalogArtists } from "../src/content/artists/target-artists-seeds";
 import { getSpotifyCredentials } from "../src/lib/ingestion/config";
 import { isValidSpotifyTrackId } from "../src/lib/archive/pipeline/validate";
+import { SPOTIFY_VERIFIED_DURATIONS } from "../src/lib/catalog/spotify-verified-durations";
 
 const OUT_PATH = "src/lib/catalog/spotify-verified-durations.ts";
 
@@ -64,9 +66,19 @@ async function fetchOneTrackDuration(
   id: string,
   token: string,
 ): Promise<{ ms: number; display: string } | null> {
-  const res = await fetch(`https://api.spotify.com/v1/tracks/${id}`, {
+  let res = await fetch(`https://api.spotify.com/v1/tracks/${id}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
+  // Honor rate limiting instead of dropping the track.
+  for (let attempt = 0; res.status === 429 && attempt < 6; attempt++) {
+    const retryAfter = parseInt(res.headers.get("retry-after") ?? "", 10);
+    const wait = Number.isFinite(retryAfter) ? (retryAfter + 1) * 1000 : 3000 * (attempt + 1);
+    console.warn(`  429 for ${id} — waiting ${wait}ms`);
+    await new Promise((r) => setTimeout(r, wait));
+    res = await fetch(`https://api.spotify.com/v1/tracks/${id}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+  }
   if (res.status === 404) return null;
   if (!res.ok) {
     const text = await res.text();
@@ -92,6 +104,7 @@ async function main() {
       ...catalogArtists,
       ...bulkCatalogArtists,
       ...expansionCatalogArtists,
+      ...targetArtistCatalogArtists,
     ]
       .map(applyIngestedMetadata)
       .map(applyCatalogExpansion)
@@ -106,15 +119,21 @@ async function main() {
     ),
   ].sort();
 
-  console.log(`Fetching durations for ${ids.length} Spotify track IDs (single-track API)…`);
+  // Merge-safe: preserve already-verified durations, only fetch IDs we don't have
+  // yet. This avoids dropping existing durations if the API rate-limits mid-run.
+  const verified: Record<string, { ms: number; display: string }> = { ...SPOTIFY_VERIFIED_DURATIONS };
+  const toFetch = ids.filter((id) => !verified[id]);
+
+  console.log(
+    `Catalog track IDs: ${ids.length} · already verified: ${ids.length - toFetch.length} · fetching: ${toFetch.length}`,
+  );
 
   const token = await getAccessToken(creds.clientId, creds.clientSecret);
-  const verified: Record<string, { ms: number; display: string }> = {};
   const invalid: string[] = [];
   const unresolved: string[] = [];
 
-  for (let i = 0; i < ids.length; i++) {
-    const id = ids[i]!;
+  for (let i = 0; i < toFetch.length; i++) {
+    const id = toFetch[i]!;
     if (!isValidSpotifyTrackId(id)) {
       invalid.push(id);
       continue;
@@ -135,7 +154,7 @@ async function main() {
       }
     }
     if ((i + 1) % 25 === 0) {
-      console.log(`  …${i + 1}/${ids.length}`);
+      console.log(`  …${i + 1}/${toFetch.length}`);
     }
     await new Promise((r) => setTimeout(r, 50));
   }
