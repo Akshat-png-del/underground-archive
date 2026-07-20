@@ -34,5 +34,5 @@ export const mediaEngineEvents = new MediaEngineEventBus();
 
 /** @internal Reset between contract tests. */
 export function __resetMediaEngineEventsForTests(): void {
-  (mediaEngineEvents as { listeners: Set<MediaEngineEventListener> }).listeners = new Set();
+  (mediaEngineEvents as unknown as { listeners: Set<MediaEngineEventListener> }).listeners = new Set();
 }

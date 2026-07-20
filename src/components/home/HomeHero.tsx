@@ -70,14 +70,12 @@ export function HomeHero({ initial }: { initial: HomeHeroData }) {
             ))}
           </div>
           <div className="mt-9 flex flex-wrap gap-3">
-            <Link href={`/artists/${artist.slug}`}>
-              <Button size="lg">Explore</Button>
-            </Link>
-            <Link href="/artists">
-              <Button variant="outline" size="lg">
-                Artists
-              </Button>
-            </Link>
+            <Button size="lg" href={`/artists/${artist.slug}`}>
+              Explore
+            </Button>
+            <Button variant="outline" size="lg" href="/artists">
+              Artists
+            </Button>
           </div>
         </div>
 

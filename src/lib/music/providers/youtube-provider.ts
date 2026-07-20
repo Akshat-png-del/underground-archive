@@ -237,7 +237,7 @@ export class YouTubeProvider implements PlaybackProvider {
       throw new Error("YouTubeProvider.startPlayback: provider not ready");
     }
 
-    logProviderPlay(this.kind, this.activeRefId ?? undefined);
+    logProviderPlay(this.kind, this.activeRefId ?? "");
     this.player.playVideo();
     this.syncFromPlayer();
     this.startTick();
@@ -291,7 +291,7 @@ export class YouTubeProvider implements PlaybackProvider {
 
   resume(): void {
     if (!this.isReady) return;
-    logProviderPlay(this.kind);
+    logProviderPlay(this.kind, this.activeRefId ?? "");
     playPausePipelineTrace({
       fn: "YoutubeProvider.resume",
       phase: "ENTER",

@@ -115,7 +115,7 @@ export function SearchResults({ initialQuery }: { initialQuery: string }) {
   const playableBrowseQueue = useMemo(
     () =>
       results
-        .filter((r) => r.type === "track" || r.type === "set")
+        .filter((r): r is typeof r & { type: "track" | "set" } => r.type === "track" || r.type === "set")
         .map((r) => playbackItemFromRef(r.type, r.id))
         .filter((item): item is PlaybackItem => !!item),
     [results],

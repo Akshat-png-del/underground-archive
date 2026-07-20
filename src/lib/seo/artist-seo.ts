@@ -23,19 +23,6 @@ export function buildArtistFaqs(artist: Artist): FaqItem[] {
     },
   ];
 
-  const platforms: string[] = [];
-  if (artist.externalLinks.spotify) platforms.push("Spotify");
-  if (artist.externalLinks.soundcloud) platforms.push("SoundCloud");
-  const listenParts: string[] = [];
-  if (platforms.length) listenParts.push(toSentenceList(platforms));
-  if (sets.length) listenParts.push(`${sets.length} verified set${sets.length === 1 ? "" : "s"} in the archive`);
-  if (listenParts.length) {
-    faqs.push({
-      question: `Where can I listen to ${artist.name}?`,
-      answer: `You can listen to ${artist.name} via ${toSentenceList(listenParts)}.`,
-    });
-  }
-
   if (sets.length) {
     const top = sets.slice(0, 3).map((s) => `${s.title} (${s.event})`);
     faqs.push({

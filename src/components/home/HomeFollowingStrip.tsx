@@ -41,9 +41,9 @@ export function HomeFollowingStrip() {
             You have {savedArtists.length} saved artists. Follow artists from their profile pages to see them here.
           </p>
         )}
-        <Link href="/library/playlists" className="mt-6 inline-block">
-          <Button variant="outline" size="sm">Manage playlists</Button>
-        </Link>
+        <Button variant="outline" size="sm" href="/library/playlists" className="mt-6">
+          Manage playlists
+        </Button>
       </div>
     </section>
   );

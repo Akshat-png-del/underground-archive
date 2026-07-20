@@ -99,7 +99,7 @@ export function ArtistMusicSection({ artist }: { artist: Artist }) {
   const sets = getSetsByArtist(artist.slug);
   const trackBrowseQueue = useMemo(() => topTracks.map(playbackItemFromTrack), [topTracks]);
   const setBrowseQueue = useMemo(
-    () => sets.map((set) => playbackItemFromSet(archiveSetToEssential(set))),
+    () => sets.map((set) => playbackItemFromSet(set)),
     [sets],
   );
 

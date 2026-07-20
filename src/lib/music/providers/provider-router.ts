@@ -36,6 +36,7 @@ import {
 import { syncAuditRecord } from "@/lib/music/playback-sync-audit";
 import { volumePipelineTrace } from "@/lib/music/volume-pipeline-trace";
 import { queuePipelineTrace } from "@/lib/music/queue-pipeline-trace";
+import { playbackDebugError } from "@/lib/music/playback-debug";
 
 function kindForItem(item: PlaybackItem): ProviderKind | "none" {
   const resolved = resolvePlaybackSource(item);

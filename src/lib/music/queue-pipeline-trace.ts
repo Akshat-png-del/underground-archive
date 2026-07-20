@@ -52,6 +52,7 @@ export type QueueTraceDetail = {
   pendingPlay?: boolean | null;
   providerKind?: string | null;
   duplicatePlay?: boolean | null;
+  currentTime?: number | null;
   note?: string;
   extra?: Record<string, unknown>;
 };
@@ -75,6 +76,7 @@ export function queueTraceInstallWindowSample(): void {
       next: () => void;
       prev: () => void;
       advanceOnEnd: () => void;
+      seekToStart: () => void;
       playTrackAt: (index: number) => void;
     };
   };
@@ -169,7 +171,7 @@ export function queueTraceInstallWindowSample(): void {
       const { mediaSessionController } =
         require("@/lib/music/media-session-controller") as typeof import("@/lib/music/media-session-controller");
       const { usePlaybackStore } =
-        require("@/stores/playback-store") as typeof import("@/lib/music/playback-store");
+        require("@/stores/playback-store") as typeof import("@/stores/playback-store");
       const store = usePlaybackStore.getState();
       const item = store.queue?.[index];
       if (!item) return;

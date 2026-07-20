@@ -172,7 +172,7 @@ export function getRecentlyAddedTracks(limit = 6) {
 
 /** Rising underground — trending momentum, excluding household curated names. */
 export function getRisingArtists(limit = 6): Artist[] {
-  const famous = new Set(CURATED_FEATURED_SLUGS);
+  const famous = new Set<string>(CURATED_FEATURED_SLUGS);
   const rising = artists.filter((a) => !famous.has(a.slug) && a.trending);
   const pool =
     rising.length > 0 ? rising : artists.filter((a) => !famous.has(a.slug));
@@ -184,7 +184,7 @@ export function getRisingArtists(limit = 6): Artist[] {
 
 /** Lower-profile artists — not curated-featured and not marked trending. */
 export function getUnderratedArtists(limit = 6): Artist[] {
-  const featured = new Set(CURATED_FEATURED_SLUGS);
+  const featured = new Set<string>(CURATED_FEATURED_SLUGS);
   const pool = artists.filter((a) => !featured.has(a.slug) && !a.trending);
   if (pool.length === 0) return artists.slice(0, limit);
   const rot = fiveMinuteIndex();

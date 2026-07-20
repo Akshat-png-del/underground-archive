@@ -251,7 +251,7 @@ export class AudioProvider implements PlaybackProvider {
     }
 
     const generation = this.activeGeneration;
-    logProviderPlay(this.kind);
+    logProviderPlay(this.kind, "");
     try {
       await this.audio.play();
       if (this.isStale(generation)) {
@@ -296,7 +296,7 @@ export class AudioProvider implements PlaybackProvider {
 
   resume(): void {
     if (!this.isReady || !this.audio) return;
-    logProviderPlay(this.kind);
+    logProviderPlay(this.kind, "");
     playPausePipelineTrace({
       fn: "AudioProvider.resume",
       phase: "ENTER",

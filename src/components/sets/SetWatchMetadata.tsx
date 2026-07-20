@@ -65,11 +65,9 @@ export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
         <Button size="sm" variant="outline" onClick={() => toggleSaveSet(set.id)}>
           {saved ? "Saved" : "Save set"}
         </Button>
-        <Link href={`/artists/${set.artistSlug}`}>
-          <Button size="sm" variant="ghost">
-            View artist
-          </Button>
-        </Link>
+        <Button size="sm" variant="ghost" href={`/artists/${set.artistSlug}`}>
+          View artist
+        </Button>
       </div>
     </div>
   );

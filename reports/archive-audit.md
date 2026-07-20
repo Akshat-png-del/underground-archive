@@ -1,12 +1,12 @@
 # Archive authenticity audit
-Generated: 2026-07-18T01:17:46.823Z
+Generated: 2026-07-20T00:29:52.310Z
 
 ## Summary
-- Artists: 79 (40 tier 1, 33 tier 2, 6 tier 3)
-- Status: 40 verified, 33 partial, 6 unverified
-- Sets: 279 (169 verified)
-- Tracks: 450 (270 verified)
-- Suspicious profiles: 33
+- Artists: 105 (40 tier 1, 59 tier 2, 6 tier 3)
+- Status: 40 verified, 59 partial, 6 unverified
+- Sets: 456 (210 verified)
+- Tracks: 564 (270 verified)
+- Suspicious profiles: 59
 - Broken profiles: 0
 - Research registry: 11 artists with editorial records
 
@@ -28,18 +28,23 @@ Generated: 2026-07-18T01:17:46.823Z
 - Arkus P (arkus-p) [Tier 1 — fully curated]
   … and 25 more
 
-## Suspicious (33)
+## Suspicious (59)
 - Shlømo (shlomo) [Tier 2 — extended]
 - Azyr (azyr) [Tier 2 — extended]
 - Nico Moreno (nico-moreno) [Tier 2 — extended]
+- Basswell (basswell) [Tier 2 — extended]
 - CARV (carv) [Tier 2 — extended]
 - Clara Cuvé (clara-cuve) [Tier 2 — extended]
 - Patrick Mason (patrick-mason) [Tier 2 — extended]
 - Adrian Mills (adrian-mills) [Tier 2 — extended]
 - Cera Khin (cera-khin) [Tier 2 — extended]
 - CLOUDY (cloudy) [Tier 2 — extended]
+- Luca Agnelli (luca-agnelli) [Tier 2 — extended]
 - Lee Ann Roberts (lee-ann-roberts) [Tier 2 — extended]
+- Køzløv (kozlov) [Tier 2 — extended]
+- Onlynumbers (onlynumbers) [Tier 2 — extended]
 - WINSON (winson) [Tier 2 — extended]
+- NOVAH (novah) [Tier 2 — extended]
 - Alarico (alarico) [Tier 2 — extended]
 - VNTM (vntm) [Tier 2 — extended]
 - JKS (jks) [Tier 2 — extended]
@@ -54,12 +59,7 @@ Generated: 2026-07-18T01:17:46.823Z
 - Obscure Shape (obscure-shape) [Tier 2 — extended]
 - Rrose (rrose) [Tier 2 — extended]
 - Blawan (blawan) [Tier 2 — extended]
-- Lucy (lucy) [Tier 2 — extended]
-- Kangding Ray (kangding-ray) [Tier 2 — extended]
-- Victor Ruiz (victor-ruiz) [Tier 2 — extended]
-- Josh Wink (josh-wink) [Tier 2 — extended]
-- Ansome (ansome) [Tier 2 — extended]
-  … and 3 more
+  … and 29 more
 
 ## Broken (0)
 

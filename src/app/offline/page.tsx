@@ -1,5 +1,12 @@
-import Link from "next/link";
+import { buildMetadata } from "@/lib/seo/metadata";
 import { Button } from "@/components/ui/Button";
+
+export const metadata = buildMetadata({
+  title: "Offline",
+  description: "You're offline. Reconnect to continue discovering underground culture.",
+  path: "/offline",
+  noIndex: true,
+});
 
 export default function OfflinePage() {
   return (
@@ -8,9 +15,9 @@ export default function OfflinePage() {
       <p className="mt-3 text-muted">
         You&apos;re offline. Reconnect to continue discovering underground culture.
       </p>
-      <Link href="/" className="mt-6 inline-block">
-        <Button>Go Home</Button>
-      </Link>
+      <div className="mt-6 inline-block">
+        <Button href="/">Go Home</Button>
+      </div>
     </div>
   );
 }

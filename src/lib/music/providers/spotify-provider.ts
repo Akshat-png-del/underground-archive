@@ -479,7 +479,7 @@ export class SpotifyProvider implements PlaybackProvider {
     }
 
     spotifySeekAudit("SpotifyProvider", "COMMAND", { command: "startPlayback", refId: this.activeRefId });
-    logProviderPlay(this.kind, this.activeRefId ?? undefined);
+    logProviderPlay(this.kind, this.activeRefId ?? "");
     const controller = this.controller ?? this.host.getController();
     if (controller) {
       try {
@@ -525,7 +525,7 @@ export class SpotifyProvider implements PlaybackProvider {
   resume(): void {
     if (!this.isReady) return;
     spotifySeekAudit("SpotifyProvider", "COMMAND", { command: "resume", refId: this.activeRefId });
-    logProviderPlay(this.kind);
+    logProviderPlay(this.kind, this.activeRefId ?? "");
     playPausePipelineTrace({
       fn: "SpotifyProvider.resume",
       phase: "ENTER",

@@ -104,6 +104,14 @@ class ExposureBudget {
     return true;
   }
 
+  hasSet(id: string): boolean {
+    return this.sets.has(id);
+  }
+
+  hasTrack(id: string): boolean {
+    return this.tracks.has(id);
+  }
+
   pickArtists(
     pool: Artist[],
     count: number,
@@ -220,7 +228,7 @@ function buildLayout(rotationIndex: number): HomepageExposureLayout {
       break;
     }
   }
-  if (!budget.sets.has(essentialSet.id)) {
+  if (!budget.hasSet(essentialSet.id)) {
     // fallback: claim whatever works
     for (const s of essentialCandidates) {
       if (budget.claimSet(s)) {
@@ -285,8 +293,8 @@ function buildLayout(rotationIndex: number): HomepageExposureLayout {
     const set =
       allSets.find((s) => {
         if (s.artistSlug === artistOfWeek.slug) return false;
-        if (budget.sets.has(s.id)) return false;
-        return getDisplayTracks().some((t) => t.artistSlug === s.artistSlug && !budget.tracks.has(t.id));
+        if (budget.hasSet(s.id)) return false;
+        return getDisplayTracks().some((t) => t.artistSlug === s.artistSlug && !budget.hasTrack(t.id));
       }) ??
       allSets.find((s) => getDisplayTracks().some((t) => t.artistSlug === s.artistSlug)) ??
       allSets[0]!;
@@ -299,7 +307,7 @@ function buildLayout(rotationIndex: number): HomepageExposureLayout {
     budget.claimArtist(discoveryArtist.slug, "major");
     const ownedTracks = getDisplayTracks().filter((t) => t.artistSlug === discoveryArtist.slug);
     discoveryTrack = ownedTracks.find((t) => budget.claimTrack(t.id)) ?? ownedTracks[0]!;
-    if (discoveryTrack && !budget.tracks.has(discoveryTrack.id)) {
+    if (discoveryTrack && !budget.hasTrack(discoveryTrack.id)) {
       budget.claimTrack(discoveryTrack.id);
     }
   }

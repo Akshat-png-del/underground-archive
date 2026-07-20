@@ -20,7 +20,11 @@ export type PlaybackDebugStep =
   | "SEEK"
   | "QUEUE"
   | "RACE"
-  | "LISTENER";
+  | "LISTENER"
+  | "UI"
+  | "SESSION"
+  | "BINDING"
+  | "ACTION";
 
 const STORAGE_KEY = "vf:playback-debug";
 

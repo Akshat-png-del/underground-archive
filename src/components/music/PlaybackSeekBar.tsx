@@ -7,6 +7,7 @@ import {
   useState,
   type ChangeEvent,
   type CSSProperties,
+  type FormEvent,
   type KeyboardEvent,
   type PointerEvent,
 } from "react";
@@ -129,12 +130,12 @@ export function PlaybackSeekBar({
     listenerGenRef.current = gen;
     const onPointerEnd = (ev: Event) => {
       seekPipelineTraceBlock("PlaybackSeekBar.windowPointerEnd", {
-        listenerGen: gen,
-        eventType: ev.type,
-        isTrusted: (ev as PointerEvent).isTrusted,
-        pointerId: (ev as PointerEvent).pointerId ?? null,
-        target: (ev.target as HTMLElement | null)?.tagName ?? null,
         ...dragStateSnapshot(draggingRef, previewRef, pointerIdRef, listenerGenRef, snapshot, sliderValue),
+        eventType: ev.type,
+        isTrusted: ev.isTrusted,
+        pointerId: "pointerId" in ev ? Number((ev as { pointerId: number }).pointerId) : null,
+        target: (ev.target as HTMLElement | null)?.tagName ?? null,
+        listenerGen: gen,
       });
       seekPipelineTrace("PlaybackSeekBar.onPointerEnd", "INVOKE", {
         next: "commitDragSeek",
@@ -160,6 +161,7 @@ export function PlaybackSeekBar({
 
   const handlePointerDown = (e: PointerEvent<HTMLInputElement>) => {
     seekPipelineTrace("PlaybackSeekBar.handlePointerDown", "ENTER", {
+      ...dragStateSnapshot(draggingRef, previewRef, pointerIdRef, listenerGenRef, snapshot, sliderValue),
       eventType: "react.pointerdown",
       pointerId: e.pointerId,
       pointerType: e.pointerType,
@@ -168,7 +170,6 @@ export function PlaybackSeekBar({
       defaultPrevented: e.defaultPrevented,
       value: Number(e.currentTarget.value),
       canSeek,
-      ...dragStateSnapshot(draggingRef, previewRef, pointerIdRef, listenerGenRef, snapshot, sliderValue),
     });
     e.stopPropagation();
     seekPipelineTrace("PlaybackSeekBar.handlePointerDown", "BRANCH", {
@@ -233,10 +234,11 @@ export function PlaybackSeekBar({
     seekPipelineTrace("PlaybackSeekBar.handlePointerMove", "EXIT", { previewRef: next });
   };
 
-  const handlePreviewMove = (e: ChangeEvent<HTMLInputElement>) => {
+  const handlePreviewMove = (e: ChangeEvent<HTMLInputElement> | FormEvent<HTMLInputElement>) => {
+    const inputValue = Number((e.target as HTMLInputElement).value);
     seekPipelineTrace("PlaybackSeekBar.handlePreviewMove", "ENTER", {
       eventType: e.type === "input" ? "react.input" : "react.change",
-      value: Number(e.target.value),
+      value: inputValue,
       dragging: draggingRef.current,
     });
     e.stopPropagation();
@@ -248,7 +250,7 @@ export function PlaybackSeekBar({
       });
       return;
     }
-    const next = Number(e.target.value);
+    const next = inputValue;
     previewRef.current = next;
     seekPipelineTrace("PlaybackSeekBar.handlePreviewMove", "INVOKE", {
       next: "mediaSessionController.updateSeek",
@@ -264,8 +266,8 @@ export function PlaybackSeekBar({
     if (!el) return;
 
     const logNative = (eventType: string) => (ev: Event) => {
-      const pe = ev as PointerEvent;
-      const me = ev as MouseEvent;
+      const pe = ev as unknown as globalThis.PointerEvent;
+      const me = ev as unknown as MouseEvent;
       seekPipelineTrace("PlaybackSeekBar.nativeEvent", "NATIVE", {
         eventType,
         isTrusted: ev.isTrusted,

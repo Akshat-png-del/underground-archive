@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import type { ArchiveSet } from "@/types/library";
 import { genreLabels } from "@/content/artists";
 import { SafeImage } from "@/components/ui/SafeImage";
@@ -88,11 +87,9 @@ export function EssentialSetOfDayHero({ set }: Props) {
             </dl>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               {active && <PlayingIndicator playing={playing} />}
-              <Link href={`/artists/${set.artistSlug}`}>
-                <Button variant="outline" size="sm">
-                  View artist
-                </Button>
-              </Link>
+              <Button variant="outline" size="sm" href={`/artists/${set.artistSlug}`}>
+                View artist
+              </Button>
             </div>
           </div>
         </div>

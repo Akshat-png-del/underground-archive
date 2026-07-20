@@ -1,7 +1,7 @@
 import blocklist from "../../../data/playback-blocklist.json";
 
-const youtubeBlocked = new Set(blocklist.youtubeIds ?? []);
-const spotifyBlocked = new Set(blocklist.spotifyTrackIds ?? []);
+const youtubeBlocked = new Set<string>(blocklist.youtubeIds ?? []);
+const spotifyBlocked = new Set<string>(blocklist.spotifyTrackIds ?? []);
 
 export function isBlockedYoutubeId(id: string | null | undefined): boolean {
   if (!id) return false;

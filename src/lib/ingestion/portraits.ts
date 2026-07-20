@@ -32,7 +32,7 @@ export function getPortraitContext(slug: string, name: string): PortraitContext 
     spotifyArtistId: raw?.spotifyArtistId,
     residentAdvisor:
       raw?.externalLinks?.residentAdvisor ?? research?.residentAdvisor?.url,
-    website: research?.website?.url ?? raw?.externalLinks?.website,
+    website: research?.website?.url ?? (raw?.externalLinks as { website?: string } | undefined)?.website,
     youtube: raw?.externalLinks?.youtube ?? research?.youtube?.url,
   };
 }

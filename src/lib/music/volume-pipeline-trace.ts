@@ -87,7 +87,14 @@ export function volumePipelineTrace(detail: VolumeTraceDetail): void {
 
 export function volumeTraceInstallWindowSample(): void {
   if (typeof window === "undefined") return;
-  const w = window as Window & { __volumeTraceSample?: (label?: string) => Record<string, unknown> };
+  const w = window as Window & {
+    __volumeTraceSample?: (label?: string) => Record<string, unknown>;
+    __volumeAudit?: {
+      setVolume: (volume: number) => void;
+      toggleMute: () => void;
+      playPreview: () => void;
+    };
+  };
   w.__volumeTraceSample = (label = "sample") => {
     try {
       const { mediaSessionController } =
@@ -107,7 +114,9 @@ export function volumeTraceInstallWindowSample(): void {
       const snapshot = __getCommittedPlaybackSnapshotForAudit();
       const dom = readDomAudio();
       const slider = document.querySelector(".player-volume-slider") as HTMLInputElement | null;
-      const routerKind = (globalPlayerEngine as { router?: { getActiveKind?: () => string | null } }).router?.getActiveKind?.() ?? null;
+      const routerKind =
+        (globalPlayerEngine as unknown as { router?: { getActiveKind?: () => string | null } }).router
+          ?.getActiveKind?.() ?? null;
 
       const sample = {
         label,
@@ -160,7 +169,9 @@ export function volumeTraceInstallWindowSample(): void {
       mediaSessionController.play({
         type: "track",
         refId: "volume-audit::preview-test",
+        label: "Volume Audit Preview",
         title: "Volume Audit Preview",
+        subtitle: "Audit",
         previewUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
       });
     },

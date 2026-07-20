@@ -1,13 +1,231 @@
 # Track artwork audit
 
-Generated: 2026-07-16T23:48:19.741Z
+Generated: 2026-07-20T00:13:47.033Z
 
 ## Summary
 
 | Metric | Count |
 | --- | --- |
-| Catalog tracks | 259 |
+| Catalog tracks | 564 |
 | Catalog releases | 0 |
-| Issues | 0 |
+| Issues | 217 |
 
-_All track cards have Spotify or genre placeholder artwork._
+## Issues
+
+- **hadone** — Euphoria (track): missing-spotify-hash ``
+- **hadone** — Break Your Toys (track): missing-spotify-hash ``
+- **hadone** — Stand Too Close (track): missing-spotify-hash ``
+- **hadone** — Lead Mysteries (track): missing-spotify-hash ``
+- **perc** — Can You Imagine? (track): missing-spotify-hash ``
+- **perc** — Milk Snatcher's Return (track): missing-spotify-hash ``
+- **perc** — Static (track): missing-spotify-hash ``
+- **perc** — Heartbeat Popper (track): missing-spotify-hash ``
+- **perc** — Cold Snap (track): missing-spotify-hash ``
+- **perc** — Imperial Leather (track): missing-spotify-hash ``
+- **perc** — UK Style (track): missing-spotify-hash ``
+- **perc** — Full Goblin (track): missing-spotify-hash ``
+- **ancient-methods** — Knights & Bishops (track): missing-spotify-hash ``
+- **ancient-methods** — A German Love (track): missing-spotify-hash ``
+- **ancient-methods** — Am-5 A1 (track): missing-spotify-hash ``
+- **ancient-methods** — I Am Your New King (track): missing-spotify-hash ``
+- **ancient-methods** — Burning Heretic - Cycles Of Absolute Truths Mix by Ancient Methods (track): missing-spotify-hash ``
+- **ancient-methods** — Justification Unknown - Ancient Methods Remix (track): missing-spotify-hash ``
+- **ancient-methods** — Dämmerung der Parhelia - Ancient Methods Interpretation (track): missing-spotify-hash ``
+- **ancient-methods** — Deluge - Ancient Methods Remix (track): missing-spotify-hash ``
+- **adam-x** — Breathe It In (track): missing-spotify-hash ``
+- **adam-x** — Subterranean Caverns (track): missing-spotify-hash ``
+- **adam-x** — Psychic Vulture (track): missing-spotify-hash ``
+- **adam-x** — Caged Animal (track): missing-spotify-hash ``
+- **adam-x** — Buckle Up (track): missing-spotify-hash ``
+- **adam-x** — Corrupt Pigs (track): missing-spotify-hash ``
+- **adam-x** — Human Replacements (track): missing-spotify-hash ``
+- **adam-x** — Subliminal Messages (track): missing-spotify-hash ``
+- **phase-fatale** — Velvet Imprints (track): missing-spotify-hash ``
+- **phase-fatale** — Reverse Fall (track): missing-spotify-hash ``
+- **phase-fatale** — Immobile Symmetry (track): missing-spotify-hash ``
+- **phase-fatale** — Machina (Ft. Mariana Saldaña) - Soft Crash Remix (track): missing-spotify-hash ``
+- **phase-fatale** — Off Desire (track): missing-spotify-hash ``
+- **phase-fatale** — Guts (track): missing-spotify-hash ``
+- **phase-fatale** — Desertion - Phase Fatale Remix (track): missing-spotify-hash ``
+- **phase-fatale** — Desecrating Vows - Original Mix (track): missing-spotify-hash ``
+- **helena-hauff** — C45p (track): missing-spotify-hash ``
+- **helena-hauff** — Tripartite Pact (track): missing-spotify-hash ``
+- **helena-hauff** — Continuez Mon Enfant Vous Serez Traité En Conséquence (track): missing-spotify-hash ``
+- **helena-hauff** — Dreams in Colour (track): missing-spotify-hash ``
+- **helena-hauff** — Silver Sand & Boxes of Mould (track): missing-spotify-hash ``
+- **helena-hauff** — The Smell Of Suds And Steel (track): missing-spotify-hash ``
+- **helena-hauff** — Sworn to Secrecy Part II (track): missing-spotify-hash ``
+- **rebekah** — Cry Baby (track): missing-spotify-hash ``
+- **rebekah** — Loading Main Frame (track): missing-spotify-hash ``
+- **rebekah** — Industrial Mind (track): missing-spotify-hash ``
+- **rebekah** — Biggest Baddest Mother (track): missing-spotify-hash ``
+- **rebekah** — Echoes (track): missing-spotify-hash ``
+- **rebekah** — Back in Black (track): missing-spotify-hash ``
+- **rebekah** — AI4U (track): missing-spotify-hash ``
+- **rebekah** — Show Me What You Got (track): missing-spotify-hash ``
+- **klangkuenstler** — Sonne Geht Auf (track): missing-spotify-hash ``
+- **klangkuenstler** — Die Welt Brennt (track): missing-spotify-hash ``
+- **klangkuenstler** — Untergang (track): missing-spotify-hash ``
+- **parfait** — Can You Feel (track): missing-spotify-hash ``
+- **funk-tribu** — Azul (track): missing-spotify-hash ``
+- **funk-tribu** — I Got It For You (track): missing-spotify-hash ``
+- **funk-tribu** — Viento (track): missing-spotify-hash ``
+- **funk-tribu** — where are you taking me? (mente) (track): missing-spotify-hash ``
+- **funk-tribu** — reborn (alma) (track): missing-spotify-hash ``
+- **funk-tribu** — Under the Moon (track): missing-spotify-hash ``
+- **funk-tribu** — All Of It (track): missing-spotify-hash ``
+- **alignment** — Attack (track): missing-spotify-hash ``
+- **alignment** — Close Your Eyes (track): missing-spotify-hash ``
+- **alignment** — Mystical Energy (track): missing-spotify-hash ``
+- **alignment** — Proton (track): missing-spotify-hash ``
+- **alignment** — I Am Alignment (track): missing-spotify-hash ``
+- **alignment** — Hidden Frequencies (track): missing-spotify-hash ``
+- **alignment** — The Darkness Of This Night (track): missing-spotify-hash ``
+- **alignment** — Brazilian Pulse (track): missing-spotify-hash ``
+- **shlomo** — Dam Dam Dam (track): missing-spotify-hash ``
+- **shlomo** — Welcome Back Devil (track): missing-spotify-hash ``
+- **shlomo** — Lights Up (track): missing-spotify-hash ``
+- **shlomo** — Hadal Zone - Original (track): missing-spotify-hash ``
+- **shlomo** — Mercurial Skin - Original (track): missing-spotify-hash ``
+- **shlomo** — Maara - Original (track): missing-spotify-hash ``
+- **shlomo** — Napalm - Original (track): missing-spotify-hash ``
+- **patrick-mason** — The Feast of Love (Version for Baritone & Orchestra) (track): missing-spotify-hash ``
+- **patrick-mason** — No. 1, On a Screen (track): missing-spotify-hash ``
+- **patrick-mason** — No. 2, The Odalisque (track): missing-spotify-hash ``
+- **patrick-mason** — No. 3, Highwaymen (track): missing-spotify-hash ``
+- **patrick-mason** — No. 4, To a Young Gentleman (track): missing-spotify-hash ``
+- **adrian-mills** — GROOVEARCADE 2004 (track): missing-spotify-hash ``
+- **adrian-mills** — SOLO - Adrián Mills Remix (track): missing-spotify-hash ``
+- **adrian-mills** — ORGASM - ADRIÁN MILLS & SELECTA REMIX (track): missing-spotify-hash ``
+- **adrian-mills** — Dumm Gehen (track): missing-spotify-hash ``
+- **adrian-mills** — FUTURO (INTRO) (track): missing-spotify-hash ``
+- **adrian-mills** — RENACER (track): missing-spotify-hash ``
+- **lee-ann-roberts** — Sabie Sunset - The Rocketman Remix (track): missing-spotify-hash ``
+- **lee-ann-roberts** — TAKE CONTROL (track): missing-spotify-hash ``
+- **lee-ann-roberts** — What's A Girl To Do - Lee Ann Roberts Remix (track): missing-spotify-hash ``
+- **lee-ann-roberts** — Energy - Lee Ann Roberts Remix (track): missing-spotify-hash ``
+- **lee-ann-roberts** — Keep Moving (track): missing-spotify-hash ``
+- **winson** — Save The World (track): missing-spotify-hash ``
+- **winson** — Joker (track): missing-spotify-hash ``
+- **winson** — Back the F up (track): missing-spotify-hash ``
+- **winson** — Transcend (track): missing-spotify-hash ``
+- **alarico** — Solace (track): missing-spotify-hash ``
+- **alarico** — Iruka (track): missing-spotify-hash ``
+- **alarico** — Dawn (track): missing-spotify-hash ``
+- **alarico** — Drops of You (track): missing-spotify-hash ``
+- **alarico** — Skin (track): missing-spotify-hash ``
+- **alarico** — I Love You 2 (track): missing-spotify-hash ``
+- **alarico** — Caresses After Lies (track): missing-spotify-hash ``
+- **alarico** — Shook Ones (track): missing-spotify-hash ``
+- **jks** — L'Orologio (track): missing-spotify-hash ``
+- **jks** — Charm (track): missing-spotify-hash ``
+- **jks** — Venom Rush (track): missing-spotify-hash ``
+- **jks** — Temples (track): missing-spotify-hash ``
+- **jks** — Crush On You (track): missing-spotify-hash ``
+- **jks** — Venom Rush - A Strange Wedding Remix (track): missing-spotify-hash ``
+- **jks** — Temples - Aloka Remix (track): missing-spotify-hash ``
+- **jks** — Crush On You - Olympe4000 Remix (track): missing-spotify-hash ``
+- **somewhen** — CWWDBI (track): missing-spotify-hash ``
+- **somewhen** — Promise (track): missing-spotify-hash ``
+- **somewhen** — Fever Dream (track): missing-spotify-hash ``
+- **somewhen** — Bricks (track): missing-spotify-hash ``
+- **somewhen** — CH4N2O (track): missing-spotify-hash ``
+- **somewhen** — Somewhen - 437p (track): missing-spotify-hash ``
+- **stranger** — 555 (track): missing-spotify-hash ``
+- **stranger** — Kaha Ja Rahe Hum (track): missing-spotify-hash ``
+- **stranger** — Heart Talk 2 (track): missing-spotify-hash ``
+- **stranger** — Toota Tara (track): missing-spotify-hash ``
+- **stranger** — Break Down (track): missing-spotify-hash ``
+- **stranger** — Fuck All the Pain (track): missing-spotify-hash ``
+- **stranger** — Bumble Story (track): missing-spotify-hash ``
+- **stranger** — Strange Life (track): missing-spotify-hash ``
+- **cleric** — Only time is ours (track): missing-spotify-hash ``
+- **cleric** — Milk of the poppy (track): missing-spotify-hash ``
+- **cleric** — Blitz - Original mix (track): missing-spotify-hash ``
+- **cleric** — Redacted (track): missing-spotify-hash ``
+- **cleric** — Illogical Behaviour - Cleric Remix (track): missing-spotify-hash ``
+- **cleric** — Validation Machine (track): missing-spotify-hash ``
+- **cleric** — Menai Bridge [Locked Groove] (track): missing-spotify-hash ``
+- **cleric** — Validation Machine [Second Dose] (track): missing-spotify-hash ``
+- **petduo** — Timeslice - SveTec Remix - 2026 Edit (track): missing-spotify-hash ``
+- **petduo** — Hypersonic (track): missing-spotify-hash ``
+- **petduo** — Believe The Noise (track): missing-spotify-hash ``
+- **petduo** — Aggressive Delights - Original Mix (track): missing-spotify-hash ``
+- **petduo** — Sexual Harassment - PETDuo Remix (track): missing-spotify-hash ``
+- **petduo** — Freak (track): missing-spotify-hash ``
+- **obscure-shape** — I WISH I DIDN'T LOVE YOU SO (track): missing-spotify-hash ``
+- **obscure-shape** — TILL I DIE (track): missing-spotify-hash ``
+- **obscure-shape** — You and Me (track): missing-spotify-hash ``
+- **obscure-shape** — Turbulence (track): missing-spotify-hash ``
+- **obscure-shape** — Mana - Traumer "Stop" Remix - Edit (track): missing-spotify-hash ``
+- **obscure-shape** — Pegasus (track): missing-spotify-hash ``
+- **obscure-shape** — Dancer in the Dark (track): missing-spotify-hash ``
+- **blawan** — Under Belly (track): missing-spotify-hash ``
+- **blawan** — What You Do with What You Have (track): missing-spotify-hash ``
+- **blawan** — 993 (track): missing-spotify-hash ``
+- **blawan** — NOS (track): missing-spotify-hash ``
+- **blawan** — Thistle (track): missing-spotify-hash ``
+- **blawan** — Bloom - Blawan Rmx (track): missing-spotify-hash ``
+- **part-time-killer** — Like A Phoenix (track): missing-spotify-hash ``
+- **part-time-killer** — D.I.C.T.A.T.O.R (track): missing-spotify-hash ``
+- **part-time-killer** — Pressure Is On (track): missing-spotify-hash ``
+- **part-time-killer** — Human Syntax Error (track): missing-spotify-hash ``
+- **part-time-killer** — Kill Your Feelings (track): missing-spotify-hash ``
+- **part-time-killer** — Destined For Nothing (track): missing-spotify-hash ``
+- **part-time-killer** — Long Johns (track): missing-spotify-hash ``
+- **part-time-killer** — System Is Using You (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 1 (Daddyʼs Girl) (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 2 (Do I Pass) (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 3 (Walking on Moirai) (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 4 -5 (Lament Ceremony - Looping Projection of You) (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 6 (Resentment) (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 7 - 8 (Is This All We Can Do - Unsound Mind) (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 9 (Nervous Burial) (track): missing-spotify-hash ``
+- **lucy** — Wanton Witch 10 (The Beautiful Trauma of Being) (track): missing-spotify-hash ``
+- **ansome** — Tin (track): missing-spotify-hash ``
+- **ansome** — Mans Head - Original Mix (track): missing-spotify-hash ``
+- **ansome** — Copper (track): missing-spotify-hash ``
+- **ansome** — Pedal to the Metal (track): missing-spotify-hash ``
+- **ansome** — With You (track): missing-spotify-hash ``
+- **ansome** — Clodgy - Original Mix (track): missing-spotify-hash ``
+- **ansome** — Coldharbour (track): missing-spotify-hash ``
+- **dave-the-drummer** — Groove Merchant (track): missing-spotify-hash ``
+- **dave-the-drummer** — Hydraulix 09 A (track): missing-spotify-hash ``
+- **dave-the-drummer** — One Night In Hackney - Dynamo City's "Sunday Night In Hackney" Mix (track): missing-spotify-hash ``
+- **dave-the-drummer** — Blackness (track): missing-spotify-hash ``
+- **dave-the-drummer** — Hydrogen (track): missing-spotify-hash ``
+- **dave-the-drummer** — Next Level (track): missing-spotify-hash ``
+- **dave-the-drummer** — Looking Back (track): missing-spotify-hash ``
+- **dave-the-drummer** — Good Session (track): missing-spotify-hash ``
+- **randomer** — Bring (track): missing-spotify-hash ``
+- **randomer** — Smokin (track): missing-spotify-hash ``
+- **randomer** — Curtains (track): missing-spotify-hash ``
+- **randomer** — Universe Of 90's Techno Parties - Randomer Remix (track): missing-spotify-hash ``
+- **hector-oaks** — No Hay Mañana (track): missing-spotify-hash ``
+- **hector-oaks** — Chasing Highs (track): missing-spotify-hash ``
+- **hector-oaks** — WELCOME TO NINGUNA PARTE (track): missing-spotify-hash ``
+- **hector-oaks** — We Met Under The Strobe Light (track): missing-spotify-hash ``
+- **hector-oaks** — Intro (track): missing-spotify-hash ``
+- **norbak** — Quadro - Phil Berg Remix (track): missing-spotify-hash ``
+- **norbak** — Adeus - Marcal Remix (track): missing-spotify-hash ``
+- **norbak** — Norma (track): missing-spotify-hash ``
+- **norbak** — Malta 6AM (track): missing-spotify-hash ``
+- **norbak** — Sonho (track): missing-spotify-hash ``
+- **norbak** — Anjos - Nørbak Remix (track): missing-spotify-hash ``
+- **norbak** — Suave - Johm Remix (track): missing-spotify-hash ``
+- **lft** — Knebelfreunde (track): missing-spotify-hash ``
+- **lft** — Die Infektion (track): missing-spotify-hash ``
+- **lft** — Die Geldmaschine (track): missing-spotify-hash ``
+- **lft** — Broken101 (track): missing-spotify-hash ``
+- **lft** — Waste Your Facelift (track): missing-spotify-hash ``
+- **lft** — Free Cigarettes (track): missing-spotify-hash ``
+- **lft** — Going In Circles (track): missing-spotify-hash ``
+- **lft** — Totengräber (track): missing-spotify-hash ``
+- **mcr-t** — My Barn My Rules (track): missing-spotify-hash ``
+- **mcr-t** — Gib Ein Fick (track): missing-spotify-hash ``
+- **mcr-t** — Anal OG (track): missing-spotify-hash ``
+- **mcr-t** — Slut Commandments (track): missing-spotify-hash ``
+- **mcr-t** — My Little White Pony (track): missing-spotify-hash ``
+- **mcr-t** — Lollipops & Limousines (track): missing-spotify-hash ``
+- **mcr-t** — Buurman Uit Berlijn (track): missing-spotify-hash ``
+- **mcr-t** — POGO (track): missing-spotify-hash ``

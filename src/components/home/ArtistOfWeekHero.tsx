@@ -43,14 +43,12 @@ export function ArtistOfWeekHero({ artist }: { artist: Artist }) {
           ))}
         </div>
         <div className="mt-9 flex flex-wrap gap-3">
-          <Link href={`/artists/${artist.slug}`}>
-            <Button size="lg">Explore</Button>
-          </Link>
-          <Link href={`/artists?genre=${artist.genres[0]}`}>
-            <Button variant="outline" size="lg">
-              Similar sound
-            </Button>
-          </Link>
+          <Button size="lg" href={`/artists/${artist.slug}`}>
+            Explore
+          </Button>
+          <Button variant="outline" size="lg" href={`/artists?genre=${artist.genres[0]}`}>
+            Similar sound
+          </Button>
         </div>
       </div>
     </section>

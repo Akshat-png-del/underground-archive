@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { Button } from "@/components/ui/Button";
 
@@ -16,8 +15,10 @@ export default function CommunityPage() {
         Profiles, ratings, and discussions are coming soon. Explore artists and sets in the meantime.
       </p>
       <div className="mt-8 flex justify-center gap-3">
-        <Link href="/artists"><Button>Browse artists</Button></Link>
-        <Link href="/sets"><Button variant="outline">Browse sets</Button></Link>
+        <Button href="/artists">Browse artists</Button>
+        <Button variant="outline" href="/sets">
+          Browse sets
+        </Button>
       </div>
     </div>
   );

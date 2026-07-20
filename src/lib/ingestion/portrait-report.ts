@@ -5,7 +5,6 @@ import { isProtectedPortrait } from "./portraits";
 import { isSuspiciousPortraitUrl } from "@/lib/archive/images/validate";
 import { getVerifiedImageRecord } from "@/content/artists/images/verified";
 import { namesMatch } from "@/lib/archive/pipeline/validate";
-import { isProtectedPortrait } from "./portraits";
 import type { IngestedPortraitSource } from "./types";
 
 export interface PortraitSyncReport {

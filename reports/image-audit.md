@@ -1,16 +1,19 @@
 # Artist image authenticity audit
-Generated: 2026-07-18T01:18:02.109Z
+Generated: 2026-07-20T00:29:52.751Z
 
 ## Summary
-- Artists: 79
-- Verified photography: 21
-- Editorial / genre portraits (display-ready): 58
+- Artists: 105
+- Verified photography: 22
+- Editorial / genre portraits (display-ready): 83
 - Suspicious assignments: 0
 - Broken URLs: 0
 - Duplicate verified URLs: 0
 - Visual coverage: 100%
 
-## Verified images (21)
+## Verified images (22)
+- Sara Landry (sara-landry) [Tier 1]
+  - URL: /images/portraits/researched/sara-landry.jpg
+  - Source: festival-press
 - Sven Wittekind (sven-wittekind) [Tier 1]
   - URL: /images/portraits/researched/sven-wittekind.jpg
   - Source: spotify
@@ -75,10 +78,7 @@ Generated: 2026-07-18T01:18:02.109Z
   - URL: /images/portraits/researched/mcr-t.jpg
   - Source: spotify
 
-## Editorial portraits (unverified) (58)
-- Sara Landry (sara-landry) [Tier 1]
-  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174708646b1b7df2b176f8a585f
-  - Source: spotify
+## Editorial portraits (unverified) (83)
 - I Hate Models (i-hate-models) [Tier 1]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051741a0d54ab853f86eba713585b
   - Source: spotify
@@ -187,6 +187,9 @@ Generated: 2026-07-18T01:18:02.109Z
 - Nico Moreno (nico-moreno) [Tier 2]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051748c5d723ac5272f29ff00a849
   - Source: spotify
+- Basswell (basswell) [Tier 2]
+  - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616100005174d2252b4fd1c61a763716ccd5
+  - Source: spotify
 - CARV (carv) [Tier 2]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab676161000051743840f1b0069575ad6091f43e
   - Source: spotify
@@ -196,7 +199,7 @@ Generated: 2026-07-18T01:18:02.109Z
 - Patrick Mason (patrick-mason) [Tier 2]
   - URL: https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0259f0ffa461c2cc533656616e
   - Source: spotify
-  … and 18 more
+  … and 43 more
 
 ## Suspicious assignments (0)
 
