@@ -28,7 +28,7 @@ export function HorBerlinSection({ initialSets }: Props) {
               <SetRow
                 set={set}
                 variant="card"
-                meta={`${set.duration ?? "—"} · ${set.date.slice(0, 4)}`}
+                meta={set.date.slice(0, 4)}
                 browseQueue={browseQueue}
                 browseIndex={i}
               />

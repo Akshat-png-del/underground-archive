@@ -82,7 +82,7 @@ export function HomeHero({ initial }: { initial: HomeHeroData }) {
         <div className="rounded-sm border border-border/60 bg-background/60 p-4 backdrop-blur-sm sm:p-5">
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Latest Set</p>
           <div className="mt-3">
-            <SetRow set={set} meta={`${set.duration ?? "—"} · ${set.event}`} />
+            <SetRow set={set} meta={set.event} />
           </div>
           <div className="my-4 h-px bg-border/60" />
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Selected Track</p>
