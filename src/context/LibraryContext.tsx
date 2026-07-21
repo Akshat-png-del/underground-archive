@@ -34,6 +34,7 @@ import { getSet } from "@/content/sets";
 import { getArtist } from "@/content/artists";
 import { setThumbnailUrl } from "@/lib/music/set-display";
 import { uid } from "@/lib/music";
+import { useAuth } from "@/context/AuthContext";
 
 interface LibraryContextValue extends UserLibraryState {
   ready: boolean;
@@ -103,6 +104,7 @@ function resolveHistoryMeta(
 }
 
 export function LibraryProvider({ children }: { children: ReactNode }) {
+  const { user } = useAuth();
   const [state, setState] = useState<UserLibraryState>(createDefaultState);
   const [ready, setReady] = useState(false);
 
@@ -141,8 +143,11 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
         description: data.description ?? "",
         coverImage: data.coverImage ?? "",
         isPublic: data.isPublic ?? false,
-        creatorId: state.profile.id,
-        creatorName: state.profile.displayName,
+        creatorId: user?.uid ?? state.profile.id,
+        creatorName:
+          user?.displayName?.trim() ||
+          user?.email ||
+          state.profile.displayName,
         items: [],
         likeCount: 0,
         createdAt: now,
@@ -151,7 +156,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
       mutate((prev) => ({ ...prev, playlists: [playlist, ...prev.playlists] }));
       return playlist;
     },
-    [mutate, state.profile.displayName, state.profile.id]
+    [mutate, state.profile.displayName, state.profile.id, user]
   );
 
   const updatePlaylist = useCallback(
@@ -247,8 +252,11 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
         ...source,
         id: `playlist-${uid()}`,
         title: `${source.title} (copy)`,
-        creatorId: state.profile.id,
-        creatorName: state.profile.displayName,
+        creatorId: user?.uid ?? state.profile.id,
+        creatorName:
+          user?.displayName?.trim() ||
+          user?.email ||
+          state.profile.displayName,
         likeCount: 0,
         createdAt: now,
         updatedAt: now,
@@ -257,7 +265,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
       mutate((prev) => ({ ...prev, playlists: [copy, ...prev.playlists] }));
       return copy;
     },
-    [mutate, state.playlists, state.profile.displayName, state.profile.id]
+    [mutate, state.playlists, state.profile.displayName, state.profile.id, user]
   );
 
   const toggleInList = (key: keyof UserLibraryState, id: string) => {

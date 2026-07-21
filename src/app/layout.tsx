@@ -49,6 +49,7 @@ export const metadata: Metadata = {
     ],
   }),
   metadataBase: new URL(siteConfig.url),
+  manifest: "/manifest.webmanifest",
 };
 
 export const viewport = {

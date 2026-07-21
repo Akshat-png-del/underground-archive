@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Check } from "lucide-react";
 import {
   getPlaylistById,
   isSeedPlaylist,
@@ -11,14 +12,31 @@ import {
   resolvePlaylistItem,
   useLibrary,
 } from "@/context/LibraryContext";
-import { parseDuration, formatTotalDuration } from "@/lib/music";
+import { useAuth } from "@/context/AuthContext";
 import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import { Button } from "@/components/ui/Button";
 import { MusicActions } from "@/components/music/MusicActions";
+import { TrackRow } from "@/components/music/TrackRow";
+import { SetRow } from "@/components/music/SetRow";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { useCardPlayback, playbackItemActive, playbackItemPlaying } from "@/lib/music/use-card-playback";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
+import { catalogTracks } from "@/content/tracks";
+import { archiveSets } from "@/content/sets";
+import { getArtist } from "@/content/artists";
+
+const HARD_TECHNO_TRACKS = catalogTracks
+  .filter((track) => getArtist(track.artistSlug)?.genres.includes("hard-techno"))
+  .slice(0, 4);
+
+const HARD_TECHNO_SETS = archiveSets
+  .filter((set) => set.genres.includes("hard-techno"))
+  .slice(0, 3);
+
+const HARD_TECHNO_PLAYLIST_ART = HARD_TECHNO_SETS
+  .map((set) => set.thumbnail)
+  .filter((thumbnail): thumbnail is string => Boolean(thumbnail));
 
 interface Props {
   playlistId: string;
@@ -77,8 +95,8 @@ function PlaylistItemRow({
         if (!playbackItem) return;
         handleCardPointerDown(e);
       }}
-      className={`flex w-full min-w-0 max-w-full cursor-pointer touch-manipulation items-center gap-3 border p-3 sm:gap-4 ${
-        active ? "border-accent bg-surface" : "border-border"
+      className={`flex w-full min-w-0 max-w-full cursor-pointer touch-manipulation items-center gap-3 rounded-sm px-2 py-3 transition-colors sm:gap-4 sm:px-3 ${
+        active ? "bg-surface" : "hover:bg-surface/60"
       } ${dragId === item.id ? "opacity-50" : ""}`}
       role="button"
       tabIndex={0}
@@ -101,6 +119,15 @@ function PlaylistItemRow({
         </Link>
       </div>
       <div className="flex items-center gap-2" onPointerDown={stopCardPointerDown}>
+        {playbackType === "track" ? (
+          <span
+            className="rounded-sm p-2 text-accent"
+            aria-label={`${item.title} added to playlist`}
+            title="Added to playlist"
+          >
+            <Check className="h-4 w-4" />
+          </span>
+        ) : null}
         <MusicActions
           type={playbackType}
           refId={item.refId}
@@ -108,12 +135,14 @@ function PlaylistItemRow({
           spotifyUrl={"spotifyUrl" in item ? item.spotifyUrl : undefined}
           youtubeId={"youtubeId" in item ? item.youtubeId : undefined}
           compact
+          collectionActions={false}
         />
         {isOwner && (
           <Button
             size="sm"
             variant="ghost"
             onClick={() => removeFromPlaylist(playlistId, item.id)}
+            aria-label={`Remove ${item.title} from playlist`}
           >
             Remove
           </Button>
@@ -125,15 +154,13 @@ function PlaylistItemRow({
 
 export function PlaylistPageContent({ playlistId }: Props) {
   const router = useRouter();
+  const { user } = useAuth();
   const {
     playlists,
     updatePlaylist,
     deletePlaylist,
     removeFromPlaylist,
     reorderPlaylistItems,
-    copyPlaylist,
-    toggleLikePlaylist,
-    isPlaylistLiked,
     profile,
   } = useLibrary();
 
@@ -157,10 +184,6 @@ export function PlaylistPageContent({ playlistId }: Props) {
     [playlist?.items],
   );
 
-  const totalSeconds = useMemo(
-    () => resolved.reduce((sum, item) => sum + parseDuration(item.duration), 0),
-    [resolved],
-  );
   const browseQueue = useMemo(
     () =>
       resolved
@@ -173,8 +196,17 @@ export function PlaylistPageContent({ playlistId }: Props) {
     return <p className="text-muted">Playlist not found.</p>;
   }
 
-  const isOwner = playlist.creatorId === profile.id && !isSeedPlaylist(playlist.id);
-  const liked = isPlaylistLiked(playlist.id);
+  const isOwner =
+    !isSeedPlaylist(playlist.id) &&
+    (playlist.creatorId === profile.id || playlist.creatorId === user?.uid);
+  const creatorLabel =
+    isOwner && user
+      ? user.displayName?.trim() || user.email || playlist.creatorName
+      : playlist.creatorName;
+  const artworkIndex = [...playlist.id].reduce((sum, character) => sum + character.charCodeAt(0), 0);
+  const playlistArtwork =
+    HARD_TECHNO_PLAYLIST_ART[artworkIndex % HARD_TECHNO_PLAYLIST_ART.length] ??
+    HARD_TECHNO_SETS[0]?.thumbnail;
 
   const saveEdit = () => {
     if (!isOwner) return;
@@ -199,7 +231,13 @@ export function PlaylistPageContent({ playlistId }: Props) {
     <div>
       <div className="flex flex-col gap-8 sm:flex-row">
         <div className="relative h-48 w-48 shrink-0 border border-border">
-          <LibraryArtwork src={playlist.coverImage} alt="" fill sizes="192px" />
+          <LibraryArtwork
+            src={playlistArtwork}
+            alt=""
+            fill
+            sizes="192px"
+            className="object-cover"
+          />
         </div>
         <div className="flex-1">
           {editing ? (
@@ -223,59 +261,62 @@ export function PlaylistPageContent({ playlistId }: Props) {
           ) : (
             <>
               <p className="text-sm text-muted">
-                {playlist.isPublic ? "Public playlist" : "Private playlist"} · by {playlist.creatorName}
+                {playlist.isPublic ? "Public playlist" : "Private playlist"} · by {creatorLabel}
               </p>
               <h1 className="mt-1 font-serif text-3xl text-foreground sm:text-4xl">{playlist.title}</h1>
               {playlist.description && (
                 <p className="mt-3 text-muted-light">{playlist.description}</p>
               )}
-              <p className="mt-4 text-sm text-muted">
-                {resolved.length} tracks · {formatTotalDuration(totalSeconds)} · {playlist.likeCount + (liked ? 1 : 0)} likes
-              </p>
             </>
           )}
 
-          <div className="mt-6 flex flex-wrap gap-2">
-            <Button size="sm" variant="outline" onClick={() => toggleLikePlaylist(playlist.id)}>
-              {liked ? "Liked" : "Like"}
-            </Button>
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={() => {
-                const copy = copyPlaylist(playlist.id);
-                if (copy) router.push(`/playlists/${copy.id}`);
-              }}
-            >
-              Copy playlist
-            </Button>
-            {isOwner && !editing && (
-              <>
-                <Button size="sm" variant="outline" onClick={() => setEditing(true)}>Edit</Button>
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  onClick={() => {
-                    if (confirm("Delete this playlist?")) {
-                      deletePlaylist(playlist.id);
-                      router.push("/library/playlists");
-                    }
-                  }}
-                >
-                  Delete
-                </Button>
-              </>
-            )}
-          </div>
+          {isOwner && !editing && (
+            <div className="mt-6 flex flex-wrap gap-2">
+              <Button size="sm" variant="outline" onClick={() => setEditing(true)}>Edit</Button>
+              <Button
+                size="sm"
+                variant="ghost"
+                onClick={() => {
+                  if (confirm("Delete this playlist?")) {
+                    deletePlaylist(playlist.id);
+                    router.push("/library/playlists");
+                  }
+                }}
+              >
+                Delete
+              </Button>
+            </div>
+          )}
         </div>
       </div>
 
       <div className="mt-12">
         <h2 className="font-serif text-xl text-foreground">Tracks</h2>
         {resolved.length === 0 ? (
-          <p className="mt-4 text-muted">No items yet. Save tracks or sets from artist pages.</p>
+          <>
+            <div className="mt-6 rounded-sm border border-dashed border-border px-6 py-10 text-center">
+              <p className="text-foreground">This playlist is empty</p>
+              <p className="mt-1 text-sm text-muted">Add tracks or sets while browsing the archive.</p>
+            </div>
+            <section className="mt-10">
+              <h3 className="font-serif text-lg text-foreground">Suggested tracks</h3>
+              <ol className="mt-4 divide-y divide-border/60">
+                {HARD_TECHNO_TRACKS.map((track, index) => (
+                  <TrackRow key={track.id} track={track} index={index} />
+                ))}
+              </ol>
+            </section>
+            <section className="mt-10">
+              <h3 className="font-serif text-lg text-foreground">Suggested sets</h3>
+              <div className="mt-4 divide-y divide-border/60">
+                {HARD_TECHNO_SETS.map((set) => (
+                  <SetRow key={set.id} set={set} />
+                ))}
+              </div>
+            </section>
+          </>
         ) : (
-          <ul className="mt-6 space-y-2">
+          <ul className="mt-6 divide-y divide-border/60">
             {resolved.map((item, i) => (
               <PlaylistItemRow
                 key={item.id}

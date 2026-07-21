@@ -6,6 +6,7 @@ import { Suspense, useState } from "react";
 import { ArrowLeft, Menu, X } from "lucide-react";
 import { siteConfig, navLinks } from "@/config/site";
 import { SearchBar } from "@/components/search/SearchBar";
+import { AuthControls } from "@/components/auth/AuthControls";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -58,9 +59,13 @@ export function Header() {
           <Link href="/library" className="text-sm text-muted-light hover:text-foreground transition-colors">
             Library
           </Link>
+          <AuthControls />
         </nav>
 
         <div className="ml-auto flex items-center gap-2 md:ml-0">
+          <div className="hidden sm:block lg:hidden">
+            <AuthControls />
+          </div>
           <Link
             href="/library"
             className="text-sm text-muted-light hover:text-accent lg:hidden"
@@ -100,6 +105,9 @@ export function Header() {
           >
             Library
           </Link>
+          <div className="py-3 sm:hidden">
+            <AuthControls onNavigate={() => setOpen(false)} />
+          </div>
         </nav>
       )}
     </header>

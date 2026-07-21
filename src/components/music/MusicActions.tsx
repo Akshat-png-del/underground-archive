@@ -20,6 +20,7 @@ interface MusicActionsProps {
   youtubeUrl?: string;
   youtubeId?: string;
   compact?: boolean;
+  collectionActions?: boolean;
 }
 
 export function MusicActions({
@@ -30,16 +31,18 @@ export function MusicActions({
   youtubeUrl,
   youtubeId,
   compact,
+  collectionActions = true,
 }: MusicActionsProps) {
   const router = useRouter();
   const { openAddToPlaylist } = usePlaylistModal();
-  const { toggleLikeTrack, toggleLikeSet, isTrackLiked, isSetLiked } = useLibrary();
+  const { toggleLikeTrack, toggleLikeSet, isTrackLiked, isSetLiked, isSetSaved } = useLibrary();
   const snapshot = useFinalPlaybackSnapshot();
   const active =
     snapshot.activeTrack?.type === type && snapshot.activeTrack?.refId === refId;
   const playing = active && snapshot.isPlaying;
 
   const liked = type === "track" ? isTrackLiked(refId) : type === "set" ? isSetLiked(refId) : false;
+  const showPlaylistAction = collectionActions && !(type === "set" && isSetSaved(refId));
 
   const item = playbackItemFromMusicActions({
     type,
@@ -101,11 +104,13 @@ export function MusicActions({
         >
           {type === "set" ? <Play className="h-4 w-4" /> : playing ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
         </Button>
-        <Button size="sm" variant="ghost" onClick={handlePlaylist} aria-label="Save to playlist">
-          <ListPlus className="h-4 w-4" />
-        </Button>
-        {(type === "track" || type === "set") && (
-          <Button size="sm" variant="ghost" onClick={handleLike} aria-label="Like">
+        {showPlaylistAction && (
+          <Button size="sm" variant="ghost" onClick={handlePlaylist} aria-label="Add to playlist">
+            <ListPlus className="h-4 w-4" />
+          </Button>
+        )}
+        {collectionActions && (type === "track" || type === "set") && (
+          <Button size="sm" variant="ghost" onClick={handleLike} aria-label={liked ? "Unlike" : "Like"}>
             <Heart className={`h-4 w-4 ${liked ? "fill-accent text-accent" : ""}`} />
           </Button>
         )}
@@ -125,10 +130,12 @@ export function MusicActions({
       >
         {playLabel}
       </Button>
-      <Button size="sm" variant="outline" onClick={handlePlaylist}>
-        Save to playlist
-      </Button>
-      {(type === "track" || type === "set") && (
+      {showPlaylistAction && (
+        <Button size="sm" variant="outline" onClick={handlePlaylist}>
+          Add to playlist
+        </Button>
+      )}
+      {collectionActions && (type === "track" || type === "set") && (
         <Button size="sm" variant="outline" onClick={handleLike}>
           {liked ? "Liked" : "Like"}
         </Button>

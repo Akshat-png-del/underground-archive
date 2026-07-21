@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Check, ListPlus } from "lucide-react";
 import type { CatalogTrack } from "@/types/library";
 import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
@@ -15,6 +16,8 @@ import {
 } from "@/lib/music/use-card-playback";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { formatPlaybackElapsedSubline } from "@/lib/music/playback-elapsed-display";
+import { usePlaylistModal } from "@/components/library/PlaylistModal";
+import { useLibrary } from "@/context/LibraryContext";
 
 interface TrackRowProps {
   track: CatalogTrack;
@@ -23,7 +26,12 @@ interface TrackRowProps {
 }
 
 export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
+  const { openAddToPlaylist } = usePlaylistModal();
+  const { playlists } = useLibrary();
   const id = track.id || trackId(track.artistSlug, track.title);
+  const addedToPlaylist = playlists.some((playlist) =>
+    playlist.items.some((playlistItem) => playlistItem.type === "track" && playlistItem.refId === id),
+  );
   const genres = getArtist(track.artistSlug)?.genres;
   const item = playbackItemFromTrack(track);
   const browse = browseQueue ? browseContextAt(browseQueue, item, index) : undefined;
@@ -79,13 +87,40 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
       </div>
       <div className="flex shrink-0 flex-col items-end gap-1">
         {active && <PlayingIndicator playing={playing} compact />}
-        <Link
-          href={`/artists/${track.artistSlug}`}
-          className="text-[10px] uppercase tracking-wider text-muted opacity-0 transition-opacity group-hover:opacity-100 hover:text-accent"
-          onPointerDown={stopCardPointerDown}
-        >
-          Artist
-        </Link>
+        <div className="flex items-center gap-1" onPointerDown={stopCardPointerDown}>
+          <Link
+            href={`/artists/${track.artistSlug}`}
+            className="rounded-sm px-2 py-1 text-[10px] uppercase tracking-wider text-muted transition-colors hover:bg-surface hover:text-accent focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+          >
+            Artist
+          </Link>
+          {addedToPlaylist ? (
+            <span
+              className="rounded-sm p-2 text-accent"
+              aria-label={`${track.title} added to playlist`}
+              title="Added to playlist"
+            >
+              <Check className="h-4 w-4" />
+            </span>
+          ) : (
+            <button
+              type="button"
+              className="rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+              aria-label={`Add ${track.title} to playlist`}
+              title="Add to playlist"
+              onClick={(event) => {
+                event.stopPropagation();
+                openAddToPlaylist({
+                  type: "track",
+                  refId: id,
+                  label: `${track.title} — ${track.artist}`,
+                });
+              }}
+            >
+              <ListPlus className="h-4 w-4" />
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

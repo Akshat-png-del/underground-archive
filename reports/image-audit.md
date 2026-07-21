@@ -1,5 +1,5 @@
 # Artist image authenticity audit
-Generated: 2026-07-21T02:30:58.341Z
+Generated: 2026-07-21T04:14:26.984Z
 
 ## Summary
 - Artists: 105

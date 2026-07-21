@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "/library", label: "Profile" },
+  { href: "/library", label: "Overview" },
   { href: "/library/playlists", label: "My Playlists" },
   { href: "/library/artists", label: "Saved Artists" },
   { href: "/library/sets", label: "Saved Sets" },
@@ -16,16 +16,20 @@ export function LibraryNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-wrap gap-2 border-b border-border pb-4 sm:flex-col sm:border-b-0 sm:border-r sm:pr-6 sm:pb-0">
+    <nav
+      className="flex gap-1 overflow-x-auto border-b border-border/70 pb-3 lg:w-44 lg:shrink-0 lg:flex-col lg:overflow-visible lg:border-b-0 lg:pb-0 lg:pr-6"
+      aria-label="Library"
+    >
       {links.map((link) => (
         <Link
           key={link.href}
           href={link.href}
+          aria-current={pathname === link.href ? "page" : undefined}
           className={cn(
-            "interactive-row px-3 py-2 text-sm",
+            "shrink-0 rounded-sm px-3 py-2.5 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent",
             pathname === link.href
-              ? "border border-border bg-surface text-accent"
-              : "text-muted-light hover:text-foreground"
+              ? "bg-surface-elevated font-medium text-foreground"
+              : "text-muted-light hover:bg-surface/60 hover:text-foreground"
           )}
         >
           {link.label}

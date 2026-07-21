@@ -29,6 +29,7 @@ export function LibraryHistory() {
       <div>
         <h1 className="font-serif text-3xl text-foreground">History</h1>
         <p className="mt-2 text-muted-light">Recently played tracks and sets</p>
+        <p className="mt-10 text-sm text-muted" role="status">Loading listening history…</p>
       </div>
     );
   }
@@ -38,9 +39,12 @@ export function LibraryHistory() {
       <h1 className="font-serif text-3xl text-foreground">History</h1>
       <p className="mt-2 text-muted-light">Recently played tracks and sets</p>
       {entries.length === 0 ? (
-        <p className="mt-12 text-muted">Your listening history will appear here.</p>
+        <div className="mt-10 rounded-sm border border-dashed border-border px-6 py-10 text-center">
+          <p className="text-foreground">Nothing played yet</p>
+          <p className="mt-1 text-sm text-muted">Your listening history will appear here.</p>
+        </div>
       ) : (
-        <ul className="mt-10 space-y-2">
+        <ul className="mt-8 divide-y divide-border/60">
           {entries.map((h, i) => (
             <li key={h.id}>
               <HistoryPlayRow
