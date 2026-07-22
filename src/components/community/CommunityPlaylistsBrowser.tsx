@@ -1,8 +1,6 @@
-"use client";
-
 import Link from "next/link";
 import { getCommunityPlaylists } from "@/content/home/feed";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { PlaylistCover } from "@/components/library/PlaylistCover";
 import { formatLocaleNumber } from "@/lib/format";
 
 /** Full community playlist index — same catalog as homepage Community section. */
@@ -23,7 +21,7 @@ export function CommunityPlaylistsBrowser() {
             className="card-editorial group block border border-border bg-surface p-4 hover-glow"
           >
             <div className="relative mb-4 aspect-square overflow-hidden">
-              <SafeImage src={p.coverImage} alt="" fill sizes="33vw" className="image-zoom" />
+              <PlaylistCover playlist={p} fill sizes="33vw" className="image-zoom" />
             </div>
             <p className="font-serif text-lg text-foreground group-hover:text-accent">{p.title}</p>
             <p className="mt-1 text-sm text-muted">{p.creatorName}</p>

@@ -177,22 +177,69 @@ export function hydrateRecentlyViewedEntry(
   return { ...entry, title, subtitle, coverArt, href };
 }
 
+/**
+ * Ordered cover candidates for a playlist.
+ * Dedicated atmospheric coverImage wins; track album art is fallback only
+ * when no dedicated hero exists (never preferred over playlist heroes).
+ */
+export function playlistCoverCandidates(playlist: Playlist): string[] {
+  const dedicated: string[] = [];
+  const fallbacks: string[] = [];
+
+  const push = (bucket: string[], url?: string | null) => {
+    if (!url || isPlaceholderArtwork(url)) return;
+    const trimmed = url.trim();
+    if (dedicated.includes(trimmed) || fallbacks.includes(trimmed) || bucket.includes(trimmed)) {
+      return;
+    }
+    bucket.push(trimmed);
+  };
+
+  const stored = playlist.coverImage?.trim();
+  if (stored && !isPlaceholderArtwork(stored)) {
+    // Local playlist heroes and any non-Spotify dedicated cover take priority.
+    const isSpotifyAlbumArt =
+      stored.includes("scdn.co") || stored.includes("spotifycdn.com");
+    if (!isSpotifyAlbumArt) {
+      push(dedicated, stored);
+    } else {
+      push(fallbacks, stored);
+    }
+  }
+
+  for (const item of playlist.items) {
+    if (!libraryRefExists(item.type, item.refId)) continue;
+    if (item.type === "track") {
+      push(fallbacks, firstVerifiedSpotifyArt(getTrack(item.refId)?.coverArt));
+    } else if (item.type === "release") {
+      push(fallbacks, firstVerifiedSpotifyArt(getRelease(item.refId)?.coverArt));
+    } else if (item.type === "set") {
+      push(fallbacks, resolveLibraryCoverArt("set", item.refId));
+    }
+  }
+
+  // Prefer dedicated atmospheric heroes; only use catalog art if none exist.
+  return dedicated.length > 0 ? dedicated : fallbacks;
+}
+
+/** Primary display cover — first valid candidate, or empty when none exist. */
+export function resolvePlaylistCoverImage(playlist: Playlist): string {
+  return playlistCoverCandidates(playlist)[0] ?? "";
+}
+
+/** Ensure coverImage is a real artwork URL when items have cover art. */
+export function hydratePlaylistCover(playlist: Playlist): Playlist {
+  const coverImage = resolvePlaylistCoverImage(playlist);
+  if (coverImage === (playlist.coverImage ?? "").trim()) return playlist;
+  return { ...playlist, coverImage };
+}
+
 function prunePlaylist(playlist: Playlist): Playlist {
   const items = playlist.items.filter((item) => libraryRefExists(item.type, item.refId));
-  const coverFromItem = items
-    .map((item) => resolveLibraryCoverArt(item.type, item.refId))
-    .find((url) => url && !isPlaceholderArtwork(url));
-
-  const coverImage =
-    !isPlaceholderArtwork(playlist.coverImage)
-      ? playlist.coverImage
-      : coverFromItem ?? "";
-
-  return {
+  return hydratePlaylistCover({
     ...playlist,
     items: items.map((item, order) => ({ ...item, order })),
-    coverImage,
-  };
+  });
 }
 
 /** Drop orphan saved/liked/history refs and refresh artwork from the live catalog. */

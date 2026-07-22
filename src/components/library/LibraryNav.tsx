@@ -7,8 +7,9 @@ import { cn } from "@/lib/utils";
 const links = [
   { href: "/library", label: "Overview" },
   { href: "/library/playlists", label: "My Playlists" },
+  { href: "/library/tracks", label: "Tracks" },
+  { href: "/library/sets", label: "Sets" },
   { href: "/library/artists", label: "Saved Artists" },
-  { href: "/library/sets", label: "Saved Sets" },
   { href: "/library/history", label: "History" },
 ];
 

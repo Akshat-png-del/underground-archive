@@ -7,6 +7,7 @@ import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/Button";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { useSignInModal } from "@/components/auth/SignInModal";
+import { useRequireLibraryAuth } from "@/hooks/useRequireLibraryAuth";
 import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
 import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import {
@@ -16,7 +17,15 @@ import {
 import { playbackItemFromRef } from "@/lib/music/playback";
 
 export function LibraryProfile() {
-  const { ready, history, playlists, recentlyViewed } = useLibrary();
+  const {
+    ready,
+    history,
+    playlists,
+    recentlyViewed,
+    likedTracks,
+    savedSets,
+    savedArtists,
+  } = useLibrary();
   const {
     available: authAvailable,
     ready: authReady,
@@ -24,6 +33,7 @@ export function LibraryProfile() {
   } = useAuth();
   const { openCreatePlaylist } = usePlaylistModal();
   const { openSignIn } = useSignInModal();
+  const requireAuth = useRequireLibraryAuth();
 
   const viewed = useMemo(
     () =>
@@ -66,7 +76,15 @@ export function LibraryProfile() {
           <h1 className="font-serif text-3xl text-foreground">Your Library</h1>
           <p className="mt-2 text-muted-light">Playlists, saved music, and recent listening.</p>
         </div>
-        <Button size="sm" onClick={openCreatePlaylist}>Create playlist</Button>
+        <Button
+          size="sm"
+          onClick={() => {
+            if (!requireAuth()) return;
+            openCreatePlaylist();
+          }}
+        >
+          Create playlist
+        </Button>
       </div>
 
       {authAvailable && authReady && !user ? (
@@ -74,7 +92,7 @@ export function LibraryProfile() {
           <div>
             <h2 className="font-serif text-xl text-foreground">Keep your library with you</h2>
             <p className="mt-1 max-w-xl text-sm text-muted-light">
-              Sign in to access your profile and keep your account available across sessions.
+              Sign in to create playlists, like tracks, and save sets to your library.
             </p>
           </div>
           <div className="shrink-0">
@@ -98,7 +116,18 @@ export function LibraryProfile() {
       ) : null}
 
       <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 border-b border-border/60 pb-7 text-sm text-muted">
-        <span><strong className="font-medium text-foreground">{playlists.length}</strong> playlists</span>
+        <Link href="/library/playlists" className="hover:text-foreground">
+          <strong className="font-medium text-foreground">{playlists.length}</strong> playlists
+        </Link>
+        <Link href="/library/tracks" className="hover:text-foreground">
+          <strong className="font-medium text-foreground">{likedTracks.length}</strong> liked tracks
+        </Link>
+        <Link href="/library/sets" className="hover:text-foreground">
+          <strong className="font-medium text-foreground">{savedSets.length}</strong> saved sets
+        </Link>
+        <Link href="/library/artists" className="hover:text-foreground">
+          <strong className="font-medium text-foreground">{savedArtists.length}</strong> artists
+        </Link>
         <span><strong className="font-medium text-foreground">{history.length}</strong> recent plays</span>
         <Link
           href="/library/history"

@@ -2,7 +2,6 @@ import type { Genre } from "@/types";
 import { artists, genreLabels, moodLabels } from "@/content/artists";
 import { catalogTracks, sortCatalogTracksDeterministic } from "@/content/tracks";
 import { archiveSets } from "@/content/sets";
-import { getArticlesBySlugs } from "@/content/editorial";
 
 export interface GenreTimelineEvent {
   year: number;
@@ -394,12 +393,6 @@ export function getGenreEssentialTracks(slug: string, limit = 15) {
 
 export function getGenreEssentialSets(slug: string, limit = 10) {
   return archiveSets.filter((s) => s.genres.includes(slug as Genre)).slice(0, limit);
-}
-
-export function getGenreRelatedArticles(slug: string) {
-  const guide = guides[slug];
-  if (!guide) return [];
-  return getArticlesBySlugs(guide.relatedArticleSlugs);
 }
 
 export function getAllGenreGuides() {

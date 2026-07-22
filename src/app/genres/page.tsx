@@ -16,12 +16,7 @@ export default function GenresPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <h1 className="font-serif text-3xl text-foreground sm:text-4xl">Genres</h1>
       <p className="mt-3 text-muted-light">
-        Browse the archive by sound. Each genre links to its essential artists, verified sets, and
-        related reading in the{" "}
-        <Link href="/editorial" className="text-accent hover:underline">
-          Cultural Knowledge
-        </Link>{" "}
-        archive.
+        Browse by sound. Each genre links to its essential artists and verified sets.
       </p>
 
       <div className="mt-10 space-y-8">

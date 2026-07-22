@@ -12,6 +12,20 @@ import { isValidSpotifyTrackId } from "../src/lib/archive/pipeline/validate";
 import type { CatalogTrack } from "../src/types/library";
 import type { Genre } from "../src/types";
 
+/** Dedicated atmospheric heroes — never album art or artist portraits. */
+const PLAYLIST_HERO_ART: Record<string, string> = {
+  "EBM Underground": "/images/playlists/ebm-underground.png",
+  "Acid Assault": "/images/playlists/acid-assault.png",
+  "Schranz Reloaded": "/images/playlists/schranz-reloaded.png",
+  Afterhours: "/images/playlists/afterhours.png",
+  "Darkwave Nights": "/images/playlists/darkwave-nights.png",
+  "Industrial Darkness": "/images/playlists/industrial-darkness.png",
+  "Peak Time Chaos": "/images/playlists/peak-time-chaos.png",
+  "Warehouse Energy": "/images/playlists/warehouse-energy.png",
+  "Hard Techno Essentials": "/images/playlists/hard-techno-essentials.png",
+  "Underground Archive Essentials": "/images/playlists/underground-archive-essentials.png",
+};
+
 const PLAYLIST_SPECS: Array<{
   id: string;
   title: string;
@@ -442,7 +456,10 @@ const playlists = PLAYLIST_SPECS.map((spec) => {
 
   return {
     ...spec,
-    coverImage: tracks[0]?.coverArt ?? "",
+    coverImage:
+      PLAYLIST_HERO_ART[spec.title] ??
+      tracks.map((t) => t.coverArt).find((art) => !!art?.trim()) ??
+      "",
     isPublic: true,
     items: tracks.map((t, order) => ({
       id: stableItemId(spec.id, t.id, order),
@@ -453,6 +470,15 @@ const playlists = PLAYLIST_SPECS.map((spec) => {
     })),
   };
 });
+
+for (const playlist of playlists) {
+  if (!playlist.coverImage?.trim()) {
+    throw new Error(`${playlist.title}: missing coverImage — every seed playlist needs hero artwork`);
+  }
+  if (!playlist.coverImage.startsWith("/images/playlists/")) {
+    throw new Error(`${playlist.title}: coverImage must be atmospheric playlist hero under /images/playlists/`);
+  }
+}
 
 // Overlap report — each pair should stay well below 30% shared tracks.
 const idSets = playlists.map((p) => ({

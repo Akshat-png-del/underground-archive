@@ -10,7 +10,7 @@ import {
 import { ArtistCard } from "@/components/artists/ArtistCard";
 import { SetRow } from "@/components/music/SetRow";
 import { playbackItemFromSet } from "@/lib/music/playback";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { PlaylistCover } from "@/components/library/PlaylistCover";
 import { SocialBadge } from "@/components/ui/SocialBadge";
 import { FadeInSection } from "@/components/ui/FadeInSection";
 import { HomeSection } from "@/components/home/HomeSection";
@@ -55,7 +55,7 @@ export function CommunityFavoritesHub({
                 <li key={p.id}>
                   <Link href={`/playlists/${p.id}`} className="card-editorial flex gap-3 border border-border p-3 hover-glow">
                     <div className="relative h-14 w-14 shrink-0 overflow-hidden">
-                      <SafeImage src={p.coverImage} alt="" fill sizes="56px" />
+                      <PlaylistCover playlist={p} fill sizes="56px" />
                     </div>
                     <div>
                       <p className="text-sm font-medium text-foreground">{p.title}</p>

@@ -84,23 +84,21 @@ function SafeImageInner({
 
   const [index, setIndex] = useState(0);
   const [loaded, setLoaded] = useState(showImmediately);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     setIndex(0);
+    setFailed(false);
     const next = chain[0] ?? "";
     setLoaded(!!priority || (!!next && isImageWarm(next)));
   }, [chainKey, priority]);
 
-  const imgSrc = chain[Math.min(index, chain.length - 1)];
+  const exhausted = failed || chain.length === 0 || index >= chain.length;
+  const imgSrc = exhausted ? undefined : chain[index];
   const atLastFallback = index >= chain.length - 1;
 
   if (!imgSrc) {
-    return (
-      <div
-        className={cn("relative overflow-hidden bg-surface", wrapperClassName, fill && "h-full w-full")}
-        aria-hidden
-      />
-    );
+    return null;
   }
 
   const useNative = isSvgOrLocal(imgSrc);
@@ -124,7 +122,7 @@ function SafeImageInner({
       setLoaded(false);
       return;
     }
-    setLoaded(true);
+    setFailed(true);
     onError?.(e);
   };
 

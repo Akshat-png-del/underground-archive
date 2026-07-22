@@ -11,6 +11,7 @@ import { playbackItemFromMusicActions } from "@/lib/music/playback";
 import { handlePlaybackSurfaceClick } from "@/lib/music/playback-actions";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { resolveSetWatchSlug, setWatchPath } from "@/lib/sets/set-watch-navigation";
+import { useRequireLibraryAuth } from "@/hooks/useRequireLibraryAuth";
 
 interface MusicActionsProps {
   type: LibraryItemType;
@@ -34,15 +35,22 @@ export function MusicActions({
   collectionActions = true,
 }: MusicActionsProps) {
   const router = useRouter();
+  const requireAuth = useRequireLibraryAuth();
   const { openAddToPlaylist } = usePlaylistModal();
-  const { toggleLikeTrack, toggleLikeSet, isTrackLiked, isSetLiked, isSetSaved } = useLibrary();
+  const {
+    toggleLikeTrack,
+    toggleSaveSet,
+    isTrackLiked,
+    isSetSaved,
+  } = useLibrary();
   const snapshot = useFinalPlaybackSnapshot();
   const active =
     snapshot.activeTrack?.type === type && snapshot.activeTrack?.refId === refId;
   const playing = active && snapshot.isPlaying;
 
-  const liked = type === "track" ? isTrackLiked(refId) : type === "set" ? isSetLiked(refId) : false;
-  const showPlaylistAction = collectionActions && !(type === "set" && isSetSaved(refId));
+  const liked = type === "track" ? isTrackLiked(refId) : type === "set" ? isSetSaved(refId) : false;
+  // Tracks → playlists; Sets stay independent (save only, never add to playlist).
+  const showPlaylistAction = collectionActions && type === "track";
 
   const item = playbackItemFromMusicActions({
     type,
@@ -67,8 +75,9 @@ export function MusicActions({
 
   const handleLike = (e: MouseEvent) => {
     e.stopPropagation();
+    if (!requireAuth()) return;
     if (type === "track") toggleLikeTrack(refId);
-    if (type === "set") toggleLikeSet(refId);
+    if (type === "set") toggleSaveSet(refId);
   };
 
   const handleShare = async (e: MouseEvent) => {
@@ -88,6 +97,10 @@ export function MusicActions({
 
   const playLabel = type === "set" ? "Watch" : playing ? "Pause" : "Play";
   const playAria = type === "set" ? "Watch set" : playing ? "Pause" : "Play";
+  const likeLabel =
+    type === "set" ? (liked ? "Unsave set" : "Save set") : liked ? "Unlike" : "Like";
+  const likeButtonLabel =
+    type === "set" ? (liked ? "Saved" : "Save") : liked ? "Liked" : "Like";
 
   if (compact) {
     return (
@@ -110,7 +123,7 @@ export function MusicActions({
           </Button>
         )}
         {collectionActions && (type === "track" || type === "set") && (
-          <Button size="sm" variant="ghost" onClick={handleLike} aria-label={liked ? "Unlike" : "Like"}>
+          <Button size="sm" variant="ghost" onClick={handleLike} aria-label={likeLabel}>
             <Heart className={`h-4 w-4 ${liked ? "fill-accent text-accent" : ""}`} />
           </Button>
         )}
@@ -137,7 +150,7 @@ export function MusicActions({
       )}
       {collectionActions && (type === "track" || type === "set") && (
         <Button size="sm" variant="outline" onClick={handleLike}>
-          {liked ? "Liked" : "Like"}
+          {likeButtonLabel}
         </Button>
       )}
       <Button size="sm" variant="ghost" onClick={handleShare} aria-label="Share">

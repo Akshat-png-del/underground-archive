@@ -109,7 +109,10 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setState(pruneAndHydrateLibraryState(loadLibraryState()));
+    const loaded = pruneAndHydrateLibraryState(loadLibraryState());
+    // Merge legacy likedSets into savedSets (single Sets collection).
+    const savedSets = [...new Set([...loaded.savedSets, ...loaded.likedSets])];
+    setState({ ...loaded, savedSets, likedSets: [] });
     setReady(true);
   }, []);
 
@@ -181,6 +184,8 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
   const addToPlaylist = useCallback(
     (playlistId: string, type: LibraryItemType, refId: string) => {
       if (isSeedPlaylist(playlistId)) return;
+      // Keep Sets independent — playlists are Spotify audio tracks only.
+      if (type === "set") return;
       const item: PlaylistItem = {
         id: uid(),
         type,
@@ -276,6 +281,24 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
     });
   };
 
+  const toggleSavedSet = useCallback(
+    (setId: string) => {
+      mutate((prev) => {
+        const saved =
+          prev.savedSets.includes(setId) || prev.likedSets.includes(setId);
+        if (saved) {
+          return {
+            ...prev,
+            savedSets: prev.savedSets.filter((id) => id !== setId),
+            likedSets: prev.likedSets.filter((id) => id !== setId),
+          };
+        }
+        return { ...prev, savedSets: [...prev.savedSets, setId] };
+      });
+    },
+    [mutate],
+  );
+
   const recordPlay = useCallback(
     (type: LibraryItemType, refId: string) => {
       const meta = resolveHistoryMeta(type, refId);
@@ -362,18 +385,21 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
       copyPlaylist,
       toggleSaveArtist: (slug) => toggleInList("savedArtists", slug),
       toggleFollowArtist: (slug) => toggleInList("followedArtists", slug),
-      toggleSaveSet: (setId) => toggleInList("savedSets", setId),
+      toggleSaveSet: toggleSavedSet,
       toggleLikeTrack: (trackId) => toggleInList("likedTracks", trackId),
-      toggleLikeSet: (setId) => toggleInList("likedSets", setId),
+      // Alias: set "like" is the same collection as saved Sets.
+      toggleLikeSet: toggleSavedSet,
       toggleLikePlaylist: (playlistId) => toggleInList("likedPlaylists", playlistId),
       toggleFollow: (userId) => toggleInList("following", userId),
       recordPlay,
       recordView,
       isArtistSaved: (slug) => state.savedArtists.includes(slug),
       isArtistFollowed: (slug) => state.followedArtists.includes(slug),
-      isSetSaved: (setId) => state.savedSets.includes(setId),
+      isSetSaved: (setId) =>
+        state.savedSets.includes(setId) || state.likedSets.includes(setId),
       isTrackLiked: (trackId) => state.likedTracks.includes(trackId),
-      isSetLiked: (setId) => state.likedSets.includes(setId),
+      isSetLiked: (setId) =>
+        state.savedSets.includes(setId) || state.likedSets.includes(setId),
       isPlaylistLiked: (playlistId) => state.likedPlaylists.includes(playlistId),
       isFollowing: (userId) => state.following.includes(userId),
     }),
@@ -388,6 +414,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
       removeFromPlaylist,
       reorderPlaylistItems,
       copyPlaylist,
+      toggleSavedSet,
       recordPlay,
       recordView,
     ]

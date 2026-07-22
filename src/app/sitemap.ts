@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { artists, genreLabels } from "@/content/artists";
-import { articles } from "@/content/editorial";
 import { getVisibleSetCollections, mixtapeSets } from "@/content/sets";
 import {
   getGenreHubSlugs,
@@ -12,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
   const now = new Date();
 
-  const staticPages = ["/", "/artists", "/genres", "/sets", "/editorial", "/community"].map(
+  const staticPages = ["/", "/artists", "/genres", "/sets", "/community"].map(
     (path) => ({
       url: `${base}${path}`,
       lastModified: now,
@@ -62,13 +61,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mixtapeSets.map((s) => ({
       url: `${base}/sets/${s.slug}`,
       lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
-    // Editorial
-    ...articles.map((a) => ({
-      url: `${base}/editorial/${a.slug}`,
-      lastModified: new Date(a.publishedAt),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

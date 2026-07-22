@@ -1,5 +1,4 @@
 import { artists, genreLabels } from "@/content/artists";
-import { articles } from "@/content/editorial";
 import { catalogTracks } from "@/content/tracks";
 import { archiveSets } from "@/content/sets";
 import type { SearchResult } from "@/types/library";
@@ -79,21 +78,6 @@ export function searchAll(query: string, limit = 24): SearchResult[] {
         title: label,
         subtitle: "Genre",
         href: `/genres/${slug}`,
-        score,
-      });
-    }
-  }
-
-  for (const article of articles) {
-    const score = bestFuzzyScore(q, [article.title, article.excerpt]);
-    if (score > 0) {
-      results.push({
-        type: "editorial",
-        id: article.slug,
-        title: article.title,
-        subtitle: article.excerpt.slice(0, 80),
-        href: `/editorial/${article.slug}`,
-        image: article.heroImage,
         score,
       });
     }

@@ -4,8 +4,8 @@ import { LibrarySavedSets } from "@/components/library/LibrarySavedSets";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Saved Sets",
-  description: "Your saved live sets and performances.",
+  title: "Sets",
+  description: "Saved DJ sets and the full sets catalog in your library.",
   path: "/library/sets",
 });
 

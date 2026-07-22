@@ -4,8 +4,8 @@ import { LibraryLikedTracks } from "@/components/library/LibraryLikedTracks";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Liked Tracks",
-  description: "Tracks you have liked across the archive.",
+  title: "Tracks",
+  description: "Liked tracks and the full Spotify catalog in your library.",
   path: "/library/tracks",
 });
 

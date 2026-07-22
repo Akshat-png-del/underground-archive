@@ -24,5 +24,4 @@ export const navLinks = [
   { href: "/artists", label: "Artists" },
   { href: "/sets", label: "Mixtapes" },
   { href: "/genres", label: "Genres" },
-  { href: "/editorial", label: "Archive" },
 ] as const;

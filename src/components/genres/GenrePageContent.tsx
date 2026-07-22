@@ -4,7 +4,6 @@ import {
   getGenreEssentialArtists,
   getGenreEssentialTracks,
   getGenreEssentialSets,
-  getGenreRelatedArticles,
   getGenreMoodLabels,
 } from "@/content/genres";
 import { genreLabels, genreDescriptions } from "@/content/artists";
@@ -35,7 +34,6 @@ export function GenrePageContent({ slug, artistHubCount, setCount, faqs }: Props
   const sets = getGenreEssentialSets(slug, 10);
   const trackBrowseQueue = tracks.map(playbackItemFromTrack);
   const setBrowseQueue = sets.map(playbackItemFromSet);
-  const articles = getGenreRelatedArticles(slug);
   const moodLabels = getGenreMoodLabels(slug);
 
   if (!name) return null;
@@ -206,21 +204,6 @@ export function GenrePageContent({ slug, artistHubCount, setCount, faqs }: Props
                   browseIndex={i}
                 />
               </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {articles.length > 0 && (
-        <section className="mt-12 border-t border-border pt-10">
-          <h2 className="font-serif text-2xl text-foreground">Related reading</h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            {articles.map((a) => (
-              <Link key={a.slug} href={`/editorial/${a.slug}`} className="interactive-row group border border-border p-4">
-                <p className="text-xs uppercase tracking-wider text-accent">{a.category.replace(/-/g, " ")}</p>
-                <p className="mt-2 font-serif text-lg text-foreground group-hover:text-accent">{a.title}</p>
-                <p className="mt-2 text-sm text-muted-light line-clamp-2">{a.excerpt}</p>
-              </Link>
             ))}
           </div>
         </section>

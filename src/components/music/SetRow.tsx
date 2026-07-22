@@ -1,7 +1,7 @@
 "use client";
 
 import { memo } from "react";
-import { Check, ListPlus } from "lucide-react";
+import { Bookmark } from "lucide-react";
 import type { ArchiveSet } from "@/types/library";
 import { genreLabels } from "@/content/artists";
 import { SafeImage } from "@/components/ui/SafeImage";
@@ -16,7 +16,7 @@ import {
 } from "@/lib/music/use-card-playback";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { useLibrary } from "@/context/LibraryContext";
-import { usePlaylistModal } from "@/components/library/PlaylistModal";
+import { useRequireLibraryAuth } from "@/hooks/useRequireLibraryAuth";
 
 interface SetRowProps {
   set: ArchiveSet;
@@ -33,13 +33,9 @@ export const SetRow = memo(function SetRow({
   browseQueue,
   browseIndex,
 }: SetRowProps) {
-  const { isSetSaved, playlists } = useLibrary();
-  const { openAddToPlaylist } = usePlaylistModal();
-  const addedToPlaylist = playlists.some((playlist) =>
-    playlist.items.some(
-      (playlistItem) => playlistItem.type === "set" && playlistItem.refId === set.id,
-    ),
-  );
+  const { isSetSaved, toggleSaveSet } = useLibrary();
+  const requireAuth = useRequireLibraryAuth();
+  const saved = isSetSaved(set.id);
   const item = playbackItemFromSet(set);
   const browse = browseQueue
     ? browseContextAt(browseQueue, item, browseIndex)
@@ -99,34 +95,20 @@ export const SetRow = memo(function SetRow({
           <PlayingIndicator playing={playing} compact />
         </div>
       )}
-      {addedToPlaylist ? (
-        <span
-          className="shrink-0 rounded-sm p-2 text-accent"
-          aria-label={`${set.title} added to playlist`}
-          title="Added to playlist"
-          onPointerDown={stopCardPointerDown}
-        >
-          <Check className="h-4 w-4" />
-        </span>
-      ) : !isSetSaved(set.id) ? (
-        <button
-          type="button"
-          className="shrink-0 rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
-          aria-label={`Add ${set.title} to playlist`}
-          title="Add to playlist"
-          onPointerDown={stopCardPointerDown}
-          onClick={(event) => {
-            event.stopPropagation();
-            openAddToPlaylist({
-              type: "set",
-              refId: set.id,
-              label: `${set.title} — ${set.artistName}`,
-            });
-          }}
-        >
-          <ListPlus className="h-4 w-4" />
-        </button>
-      ) : null}
+      <button
+        type="button"
+        className="shrink-0 rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+        aria-label={saved ? `Unsave ${set.title}` : `Save ${set.title}`}
+        title={saved ? "Saved" : "Save set"}
+        onPointerDown={stopCardPointerDown}
+        onClick={(event) => {
+          event.stopPropagation();
+          if (!requireAuth()) return;
+          toggleSaveSet(set.id);
+        }}
+      >
+        <Bookmark className={`h-4 w-4 ${saved ? "fill-accent text-accent" : ""}`} />
+      </button>
     </>
   );
 

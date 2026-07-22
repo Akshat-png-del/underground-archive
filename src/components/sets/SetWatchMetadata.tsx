@@ -5,6 +5,7 @@ import type { ArchiveSet } from "@/types/library";
 import { genreLabels } from "@/content/artists";
 import { Button } from "@/components/ui/Button";
 import { useLibrary } from "@/context/LibraryContext";
+import { useRequireLibraryAuth } from "@/hooks/useRequireLibraryAuth";
 
 interface SetWatchMetadataProps {
   set: ArchiveSet;
@@ -13,6 +14,7 @@ interface SetWatchMetadataProps {
 
 export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
   const { toggleSaveSet, isSetSaved } = useLibrary();
+  const requireAuth = useRequireLibraryAuth();
   const saved = isSetSaved(set.id);
   const genre = set.genres[0] ? genreLabels[set.genres[0]] : "Techno";
 
@@ -62,7 +64,14 @@ export function SetWatchMetadata({ set, displayDate }: SetWatchMetadataProps) {
       </p>
 
       <div className="mt-6 flex flex-wrap items-center gap-2">
-        <Button size="sm" variant="outline" onClick={() => toggleSaveSet(set.id)}>
+        <Button
+          size="sm"
+          variant="outline"
+          onClick={() => {
+            if (!requireAuth()) return;
+            toggleSaveSet(set.id);
+          }}
+        >
           {saved ? "Saved" : "Save set"}
         </Button>
         <Button size="sm" variant="ghost" href={`/artists/${set.artistSlug}`}>

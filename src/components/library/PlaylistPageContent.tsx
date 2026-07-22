@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Check } from "lucide-react";
 import {
   getPlaylistById,
   isSeedPlaylist,
@@ -14,6 +13,7 @@ import {
 } from "@/context/LibraryContext";
 import { useAuth } from "@/context/AuthContext";
 import { LibraryArtwork } from "@/components/library/LibraryArtwork";
+import { PlaylistCover } from "@/components/library/PlaylistCover";
 import { Button } from "@/components/ui/Button";
 import { MusicActions } from "@/components/music/MusicActions";
 import { TrackRow } from "@/components/music/TrackRow";
@@ -25,6 +25,7 @@ import { resolveSetWatchSlug } from "@/lib/sets/set-watch-navigation";
 import { catalogTracks } from "@/content/tracks";
 import { archiveSets } from "@/content/sets";
 import { getArtist } from "@/content/artists";
+import { useRequireLibraryAuth } from "@/hooks/useRequireLibraryAuth";
 
 const HARD_TECHNO_TRACKS = catalogTracks
   .filter((track) => getArtist(track.artistSlug)?.genres.includes("hard-techno"))
@@ -33,10 +34,6 @@ const HARD_TECHNO_TRACKS = catalogTracks
 const HARD_TECHNO_SETS = archiveSets
   .filter((set) => set.genres.includes("hard-techno"))
   .slice(0, 3);
-
-const HARD_TECHNO_PLAYLIST_ART = HARD_TECHNO_SETS
-  .map((set) => set.thumbnail)
-  .filter((thumbnail): thumbnail is string => Boolean(thumbnail));
 
 interface Props {
   playlistId: string;
@@ -84,6 +81,7 @@ function PlaylistItemRow({
     browse,
     setSlug,
   );
+  const requireAuth = useRequireLibraryAuth();
 
   return (
     <li
@@ -119,15 +117,6 @@ function PlaylistItemRow({
         </Link>
       </div>
       <div className="flex items-center gap-2" onPointerDown={stopCardPointerDown}>
-        {playbackType === "track" ? (
-          <span
-            className="rounded-sm p-2 text-accent"
-            aria-label={`${item.title} added to playlist`}
-            title="Added to playlist"
-          >
-            <Check className="h-4 w-4" />
-          </span>
-        ) : null}
         <MusicActions
           type={playbackType}
           refId={item.refId}
@@ -135,13 +124,15 @@ function PlaylistItemRow({
           spotifyUrl={"spotifyUrl" in item ? item.spotifyUrl : undefined}
           youtubeId={"youtubeId" in item ? item.youtubeId : undefined}
           compact
-          collectionActions={false}
         />
         {isOwner && (
           <Button
             size="sm"
             variant="ghost"
-            onClick={() => removeFromPlaylist(playlistId, item.id)}
+            onClick={() => {
+              if (!requireAuth()) return;
+              removeFromPlaylist(playlistId, item.id);
+            }}
             aria-label={`Remove ${item.title} from playlist`}
           >
             Remove
@@ -155,6 +146,7 @@ function PlaylistItemRow({
 export function PlaylistPageContent({ playlistId }: Props) {
   const router = useRouter();
   const { user } = useAuth();
+  const requireAuth = useRequireLibraryAuth();
   const {
     playlists,
     updatePlaylist,
@@ -205,19 +197,17 @@ export function PlaylistPageContent({ playlistId }: Props) {
     isOwner && user
       ? user.displayName?.trim() || user.email || playlist.creatorName
       : playlist.creatorName;
-  const artworkIndex = [...playlist.id].reduce((sum, character) => sum + character.charCodeAt(0), 0);
-  const playlistArtwork =
-    HARD_TECHNO_PLAYLIST_ART[artworkIndex % HARD_TECHNO_PLAYLIST_ART.length] ??
-    HARD_TECHNO_SETS[0]?.thumbnail;
 
   const saveEdit = () => {
     if (!isOwner) return;
+    if (!requireAuth()) return;
     updatePlaylist(playlist.id, { title, description });
     setEditing(false);
   };
 
   const onDrop = (targetId: string) => {
     if (!dragId || !isOwner || dragId === targetId) return;
+    if (!requireAuth()) return;
     const ids = resolved.map((r) => r.id);
     const from = ids.indexOf(dragId);
     const to = ids.indexOf(targetId);
@@ -232,14 +222,8 @@ export function PlaylistPageContent({ playlistId }: Props) {
   return (
     <div>
       <div className="flex flex-col gap-8 sm:flex-row">
-        <div className="relative h-48 w-48 shrink-0 border border-border">
-          <LibraryArtwork
-            src={playlistArtwork}
-            alt=""
-            fill
-            sizes="192px"
-            className="object-cover"
-          />
+        <div className="relative h-48 w-48 shrink-0 overflow-hidden border border-border">
+          <PlaylistCover playlist={playlist} fill sizes="192px" className="object-cover" />
         </div>
         <div className="flex-1">
           {editing ? (
@@ -278,11 +262,21 @@ export function PlaylistPageContent({ playlistId }: Props) {
 
           {isOwner && !editing && (
             <div className="mt-6 flex flex-wrap gap-2">
-              <Button size="sm" variant="outline" onClick={() => setEditing(true)}>Edit</Button>
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={() => {
+                  if (!requireAuth()) return;
+                  setEditing(true);
+                }}
+              >
+                Edit
+              </Button>
               <Button
                 size="sm"
                 variant="ghost"
                 onClick={() => {
+                  if (!requireAuth()) return;
                   if (confirm("Delete this playlist?")) {
                     deletePlaylist(playlist.id);
                     router.push("/library/playlists");
@@ -302,7 +296,7 @@ export function PlaylistPageContent({ playlistId }: Props) {
           <>
             <div className="mt-6 rounded-sm border border-dashed border-border px-6 py-10 text-center">
               <p className="text-foreground">This playlist is empty</p>
-              <p className="mt-1 text-sm text-muted">Add tracks or sets while browsing the archive.</p>
+              <p className="mt-1 text-sm text-muted">Add Spotify tracks while browsing the library.</p>
             </div>
             <section className="mt-10">
               <h3 className="font-serif text-lg text-foreground">Suggested tracks</h3>

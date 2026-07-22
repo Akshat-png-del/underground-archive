@@ -1,6 +1,7 @@
 import type { Playlist, UserLibraryState, UserProfile } from "@/types/library";
 import { uid } from "@/lib/music";
 import { SEED_PLAYLISTS } from "@/lib/library/seed-playlists.generated";
+import { hydratePlaylistCover } from "@/lib/library/resolve-display";
 
 /** Bumped to invalidate stale localStorage that overrode seed playlists with thin mocks. */
 const STORAGE_KEY = "underground-archive-library-v2";
@@ -79,10 +80,10 @@ export function getPublicPlaylists(userPlaylists: Playlist[]): Playlist[] {
   const byId = new Map<string, Playlist>();
   for (const p of userPlaylists) {
     if (!p.isPublic || isSeedPlaylist(p.id)) continue;
-    byId.set(p.id, p);
+    byId.set(p.id, hydratePlaylistCover(p));
   }
   for (const p of SEED_PLAYLISTS) {
-    byId.set(p.id, p);
+    byId.set(p.id, hydratePlaylistCover(p));
   }
   return [...byId.values()].sort(
     (a, b) => b.likeCount - a.likeCount || b.updatedAt.localeCompare(a.updatedAt),
@@ -91,9 +92,11 @@ export function getPublicPlaylists(userPlaylists: Playlist[]): Playlist[] {
 
 export function getPlaylistById(id: string, userPlaylists: Playlist[]): Playlist | undefined {
   if (isSeedPlaylist(id)) {
-    return SEED_PLAYLISTS.find((p) => p.id === id);
+    const seed = SEED_PLAYLISTS.find((p) => p.id === id);
+    return seed ? hydratePlaylistCover(seed) : undefined;
   }
-  return userPlaylists.find((p) => p.id === id);
+  const user = userPlaylists.find((p) => p.id === id);
+  return user ? hydratePlaylistCover(user) : undefined;
 }
 
 export function isSeedPlaylist(id: string): boolean {

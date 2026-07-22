@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Check, ListPlus } from "lucide-react";
+import { ListPlus } from "lucide-react";
 import type { CatalogTrack } from "@/types/library";
 import { TrackArtwork } from "@/components/music/TrackArtwork";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
@@ -17,7 +17,6 @@ import {
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { formatPlaybackElapsedSubline } from "@/lib/music/playback-elapsed-display";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
-import { useLibrary } from "@/context/LibraryContext";
 
 interface TrackRowProps {
   track: CatalogTrack;
@@ -27,11 +26,7 @@ interface TrackRowProps {
 
 export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
   const { openAddToPlaylist } = usePlaylistModal();
-  const { playlists } = useLibrary();
   const id = track.id || trackId(track.artistSlug, track.title);
-  const addedToPlaylist = playlists.some((playlist) =>
-    playlist.items.some((playlistItem) => playlistItem.type === "track" && playlistItem.refId === id),
-  );
   const genres = getArtist(track.artistSlug)?.genres;
   const item = playbackItemFromTrack(track);
   const browse = browseQueue ? browseContextAt(browseQueue, item, index) : undefined;
@@ -94,32 +89,22 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
           >
             Artist
           </Link>
-          {addedToPlaylist ? (
-            <span
-              className="rounded-sm p-2 text-accent"
-              aria-label={`${track.title} added to playlist`}
-              title="Added to playlist"
-            >
-              <Check className="h-4 w-4" />
-            </span>
-          ) : (
-            <button
-              type="button"
-              className="rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
-              aria-label={`Add ${track.title} to playlist`}
-              title="Add to playlist"
-              onClick={(event) => {
-                event.stopPropagation();
-                openAddToPlaylist({
-                  type: "track",
-                  refId: id,
-                  label: `${track.title} — ${track.artist}`,
-                });
-              }}
-            >
-              <ListPlus className="h-4 w-4" />
-            </button>
-          )}
+          <button
+            type="button"
+            className="rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+            aria-label={`Add ${track.title} to playlist`}
+            title="Add to playlist"
+            onClick={(event) => {
+              event.stopPropagation();
+              openAddToPlaylist({
+                type: "track",
+                refId: id,
+                label: `${track.title} — ${track.artist}`,
+              });
+            }}
+          >
+            <ListPlus className="h-4 w-4" />
+          </button>
         </div>
       </div>
     </div>

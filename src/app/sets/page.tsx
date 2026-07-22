@@ -18,10 +18,6 @@ export default function SetsPage() {
       <h1 className="font-serif text-3xl text-foreground sm:text-4xl">
         Mixtapes &amp; DJ Sets
       </h1>
-      <p className="mt-3 max-w-2xl text-muted-light">
-        Long-form mixes and live recordings, kept separate from Spotify audio playlists. Every
-        performance has a verified source and API-confirmed duration of at least 10 minutes.
-      </p>
       <BestSetsSelect collections={collections} />
       <SetsArchiveBrowser sets={mixtapeSets} />
     </div>

@@ -8,7 +8,7 @@ import { archiveSets } from "@/content/sets";
 import { playbackItemFromRef, playbackItemFromSet, playbackItemFromTrack } from "@/lib/music/playback";
 import { SetRow } from "@/components/music/SetRow";
 import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
-import { SafeImage } from "@/components/ui/SafeImage";
+import { PlaylistCover } from "@/components/library/PlaylistCover";
 import { TrackRow } from "@/components/music/TrackRow";
 import { ArtistCard } from "@/components/artists/ArtistCard";
 
@@ -67,7 +67,7 @@ export function HomeRetentionSections() {
             {trendingPlaylists.map((p) => (
               <Link key={p.id} href={`/playlists/${p.id}`} className="interactive-row border border-border p-4">
                 <div className="relative mb-3 aspect-square w-full">
-                  <SafeImage src={p.coverImage} alt="" fill sizes="25vw" />
+                  <PlaylistCover playlist={p} fill sizes="25vw" />
                 </div>
                 <p className="font-medium text-foreground">{p.title}</p>
                 <p className="text-xs text-muted">{p.creatorName} · {p.likeCount} likes</p>
