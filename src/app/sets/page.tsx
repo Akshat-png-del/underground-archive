@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { getVisibleSetCollections, mixtapeSets } from "@/content/sets";
+import {
+  getCollectionCounts,
+  getVisibleSetCollections,
+  mixtapeSets,
+} from "@/content/sets";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { SetsArchiveBrowser } from "@/components/sets/SetsArchiveBrowser";
 import { BestSetsSelect } from "@/components/sets/BestSetsSelect";
@@ -12,7 +16,10 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default function SetsPage() {
-  const collections = getVisibleSetCollections(mixtapeSets);
+  const counts = getCollectionCounts();
+  const collections = getVisibleSetCollections(mixtapeSets).filter(
+    (category) => counts[category] > 6,
+  );
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <h1 className="font-serif text-3xl text-foreground sm:text-4xl">
