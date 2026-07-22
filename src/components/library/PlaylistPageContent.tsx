@@ -124,6 +124,7 @@ function PlaylistItemRow({
           spotifyUrl={"spotifyUrl" in item ? item.spotifyUrl : undefined}
           youtubeId={"youtubeId" in item ? item.youtubeId : undefined}
           compact
+          showLike={false}
         />
         {isOwner && (
           <Button

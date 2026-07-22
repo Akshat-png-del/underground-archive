@@ -22,6 +22,8 @@ interface MusicActionsProps {
   youtubeId?: string;
   compact?: boolean;
   collectionActions?: boolean;
+  /** When false, hides like/save (heart). Defaults to true. */
+  showLike?: boolean;
 }
 
 export function MusicActions({
@@ -33,6 +35,7 @@ export function MusicActions({
   youtubeId,
   compact,
   collectionActions = true,
+  showLike = true,
 }: MusicActionsProps) {
   const router = useRouter();
   const requireAuth = useRequireLibraryAuth();
@@ -122,7 +125,7 @@ export function MusicActions({
             <ListPlus className="h-4 w-4" />
           </Button>
         )}
-        {collectionActions && (type === "track" || type === "set") && (
+        {showLike && collectionActions && (type === "track" || type === "set") && (
           <Button size="sm" variant="ghost" onClick={handleLike} aria-label={likeLabel}>
             <Heart className={`h-4 w-4 ${liked ? "fill-accent text-accent" : ""}`} />
           </Button>
@@ -148,7 +151,7 @@ export function MusicActions({
           Add to playlist
         </Button>
       )}
-      {collectionActions && (type === "track" || type === "set") && (
+      {showLike && collectionActions && (type === "track" || type === "set") && (
         <Button size="sm" variant="outline" onClick={handleLike}>
           {likeButtonLabel}
         </Button>
