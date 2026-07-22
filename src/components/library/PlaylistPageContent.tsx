@@ -27,10 +27,6 @@ import { archiveSets } from "@/content/sets";
 import { getArtist } from "@/content/artists";
 import { useRequireLibraryAuth } from "@/hooks/useRequireLibraryAuth";
 
-const HARD_TECHNO_TRACKS = catalogTracks
-  .filter((track) => getArtist(track.artistSlug)?.genres.includes("hard-techno"))
-  .slice(0, 4);
-
 const HARD_TECHNO_SETS = archiveSets
   .filter((set) => set.genres.includes("hard-techno"))
   .slice(0, 3);
@@ -43,7 +39,7 @@ function PlaylistItemRow({
   item,
   index,
   browseQueue,
-  isOwner,
+  canEditTracks,
   playlistId,
   dragId,
   setDragId,
@@ -53,7 +49,7 @@ function PlaylistItemRow({
   item: NonNullable<ReturnType<typeof resolvePlaylistItem>>;
   index: number;
   browseQueue: PlaybackItem[];
-  isOwner: boolean;
+  canEditTracks: boolean;
   playlistId: string;
   dragId: string | null;
   setDragId: (id: string | null) => void;
@@ -85,7 +81,7 @@ function PlaylistItemRow({
 
   return (
     <li
-      draggable={isOwner}
+      draggable={canEditTracks}
       onDragStart={() => setDragId(item.id)}
       onDragOver={(e) => e.preventDefault()}
       onDrop={() => onDrop(item.id)}
@@ -101,7 +97,7 @@ function PlaylistItemRow({
       aria-label={playing ? `Pause ${item.title}` : `Play ${item.title}`}
     >
       <span className="w-6 text-sm text-muted">{index + 1}</span>
-      {isOwner && <span className="cursor-grab text-muted">⋮⋮</span>}
+      {canEditTracks && <span className="cursor-grab text-muted">⋮⋮</span>}
       <div className="relative h-12 w-12 shrink-0 overflow-hidden">
         <LibraryArtwork src={item.coverArt} alt="" fill sizes="48px" />
       </div>
@@ -126,7 +122,7 @@ function PlaylistItemRow({
           compact
           showLike={false}
         />
-        {isOwner && (
+        {canEditTracks && (
           <Button
             size="sm"
             variant="ghost"
@@ -150,7 +146,6 @@ export function PlaylistPageContent({ playlistId }: Props) {
   const requireAuth = useRequireLibraryAuth();
   const {
     playlists,
-    updatePlaylist,
     deletePlaylist,
     removeFromPlaylist,
     reorderPlaylistItems,
@@ -163,8 +158,6 @@ export function PlaylistPageContent({ playlistId }: Props) {
   );
 
   const [editing, setEditing] = useState(false);
-  const [title, setTitle] = useState(playlist?.title ?? "");
-  const [description, setDescription] = useState(playlist?.description ?? "");
   const [dragId, setDragId] = useState<string | null>(null);
 
   const resolved = useMemo(
@@ -187,6 +180,38 @@ export function PlaylistPageContent({ playlistId }: Props) {
     [resolved],
   );
 
+  const relatedTracks = useMemo(() => {
+    const inPlaylist = new Set(
+      resolved.filter((row) => row.type === "track").map((row) => row.refId),
+    );
+    const artistSlugs = new Set(resolved.map((row) => row.artistSlug));
+    const sameArtist = catalogTracks.filter(
+      (track) => artistSlugs.has(track.artistSlug) && !inPlaylist.has(track.id),
+    );
+    const hardTechno = catalogTracks.filter(
+      (track) =>
+        !inPlaylist.has(track.id) &&
+        getArtist(track.artistSlug)?.genres.includes("hard-techno"),
+    );
+    const seen = new Set<string>();
+    const merged = [];
+    for (const track of [...sameArtist, ...hardTechno]) {
+      if (seen.has(track.id)) continue;
+      seen.add(track.id);
+      merged.push(track);
+      if (merged.length >= 8) break;
+    }
+    return merged;
+  }, [resolved]);
+
+  const relatedBrowseQueue = useMemo(
+    () =>
+      relatedTracks
+        .map((track) => playbackItemFromRef("track", track.id))
+        .filter((item): item is PlaybackItem => !!item),
+    [relatedTracks],
+  );
+
   if (!playlist) {
     return <p className="text-muted">Playlist not found.</p>;
   }
@@ -194,20 +219,14 @@ export function PlaylistPageContent({ playlistId }: Props) {
   const isOwner =
     !isSeedPlaylist(playlist.id) &&
     (playlist.creatorId === profile.id || playlist.creatorId === user?.uid);
+  const canEditTracks = isOwner && editing;
   const creatorLabel =
     isOwner && user
       ? user.displayName?.trim() || user.email || playlist.creatorName
       : playlist.creatorName;
 
-  const saveEdit = () => {
-    if (!isOwner) return;
-    if (!requireAuth()) return;
-    updatePlaylist(playlist.id, { title, description });
-    setEditing(false);
-  };
-
   const onDrop = (targetId: string) => {
-    if (!dragId || !isOwner || dragId === targetId) return;
+    if (!dragId || !canEditTracks || dragId === targetId) return;
     if (!requireAuth()) return;
     const ids = resolved.map((r) => r.id);
     const from = ids.indexOf(dragId);
@@ -227,51 +246,30 @@ export function PlaylistPageContent({ playlistId }: Props) {
           <PlaylistCover playlist={playlist} fill sizes="192px" className="object-cover" />
         </div>
         <div className="flex-1">
-          {editing ? (
-            <div className="space-y-3">
-              <input
-                className="w-full border border-border bg-background px-3 py-2 font-serif text-2xl text-foreground"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-              />
-              <textarea
-                className="w-full border border-border bg-background px-3 py-2 text-sm text-foreground"
-                rows={3}
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              />
-              <div className="flex gap-2">
-                <Button size="sm" onClick={saveEdit}>Save</Button>
-                <Button size="sm" variant="outline" onClick={() => setEditing(false)}>Cancel</Button>
-              </div>
-            </div>
-          ) : (
-            <>
-              <p className="text-sm text-muted">
-                {playlist.isPublic ? "Public playlist" : "Private playlist"} · by {creatorLabel}
-                {playlist.likeCount > 0 ? ` · ${playlist.likeCount} likes` : ""}
-              </p>
-              <h1 className="mt-1 font-serif text-3xl text-foreground sm:text-4xl">{playlist.title}</h1>
-              {playlist.description && (
-                <p className="mt-3 text-muted-light">{playlist.description}</p>
-              )}
-              <p className="mt-2 font-mono text-xs text-muted-light">
-                {resolved.length} tracks
-              </p>
-            </>
+          <p className="text-sm text-muted">
+            {playlist.isPublic ? "Public playlist" : "Private playlist"} · by {creatorLabel}
+            {playlist.likeCount > 0 ? ` · ${playlist.likeCount} likes` : ""}
+          </p>
+          <h1 className="mt-1 font-serif text-3xl text-foreground sm:text-4xl">{playlist.title}</h1>
+          {playlist.description && (
+            <p className="mt-3 text-muted-light">{playlist.description}</p>
           )}
+          <p className="mt-2 font-mono text-xs text-muted-light">
+            {resolved.length} tracks
+            {editing ? " · editing tracks" : ""}
+          </p>
 
-          {isOwner && !editing && (
+          {isOwner && (
             <div className="mt-6 flex flex-wrap gap-2">
               <Button
                 size="sm"
                 variant="outline"
                 onClick={() => {
                   if (!requireAuth()) return;
-                  setEditing(true);
+                  setEditing((value) => !value);
                 }}
               >
-                Edit
+                {editing ? "Done" : "Edit"}
               </Button>
               <Button
                 size="sm"
@@ -294,28 +292,14 @@ export function PlaylistPageContent({ playlistId }: Props) {
       <div className="mt-12">
         <h2 className="font-serif text-xl text-foreground">Tracks</h2>
         {resolved.length === 0 ? (
-          <>
-            <div className="mt-6 rounded-sm border border-dashed border-border px-6 py-10 text-center">
-              <p className="text-foreground">This playlist is empty</p>
-              <p className="mt-1 text-sm text-muted">Add Spotify tracks while browsing the library.</p>
-            </div>
-            <section className="mt-10">
-              <h3 className="font-serif text-lg text-foreground">Suggested tracks</h3>
-              <ol className="mt-4 divide-y divide-border/60">
-                {HARD_TECHNO_TRACKS.map((track, index) => (
-                  <TrackRow key={track.id} track={track} index={index} />
-                ))}
-              </ol>
-            </section>
-            <section className="mt-10">
-              <h3 className="font-serif text-lg text-foreground">Suggested sets</h3>
-              <div className="mt-4 divide-y divide-border/60">
-                {HARD_TECHNO_SETS.map((set) => (
-                  <SetRow key={set.id} set={set} />
-                ))}
-              </div>
-            </section>
-          </>
+          <div className="mt-6 rounded-sm border border-dashed border-border px-6 py-10 text-center">
+            <p className="text-foreground">This playlist is empty</p>
+            <p className="mt-1 text-sm text-muted">
+              {editing
+                ? "Add tracks from Related tracks below."
+                : "Add Spotify tracks while browsing, or tap Edit to manage tracks."}
+            </p>
+          </div>
         ) : (
           <ul className="mt-6 divide-y divide-border/60">
             {resolved.map((item, i) => (
@@ -324,7 +308,7 @@ export function PlaylistPageContent({ playlistId }: Props) {
                 item={item}
                 index={i}
                 browseQueue={browseQueue}
-                isOwner={isOwner}
+                canEditTracks={canEditTracks}
                 playlistId={playlist.id}
                 dragId={dragId}
                 setDragId={setDragId}
@@ -333,6 +317,33 @@ export function PlaylistPageContent({ playlistId }: Props) {
               />
             ))}
           </ul>
+        )}
+
+        {relatedTracks.length > 0 && (
+          <section className="mt-10">
+            <h3 className="font-serif text-lg text-foreground">Related tracks</h3>
+            <ol className="mt-4 divide-y divide-border/60">
+              {relatedTracks.map((track, index) => (
+                <TrackRow
+                  key={track.id}
+                  track={track}
+                  index={index}
+                  browseQueue={relatedBrowseQueue}
+                />
+              ))}
+            </ol>
+          </section>
+        )}
+
+        {resolved.length === 0 && (
+          <section className="mt-10">
+            <h3 className="font-serif text-lg text-foreground">Suggested sets</h3>
+            <div className="mt-4 divide-y divide-border/60">
+              {HARD_TECHNO_SETS.map((set) => (
+                <SetRow key={set.id} set={set} />
+              ))}
+            </div>
+          </section>
         )}
       </div>
     </div>

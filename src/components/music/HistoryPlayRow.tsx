@@ -1,11 +1,13 @@
 "use client";
 
 import { useMemo } from "react";
-import { ListPlus } from "lucide-react";
+import { Bookmark, ListPlus } from "lucide-react";
 import type { PlayHistoryEntry } from "@/types/library";
 import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
+import { useLibrary } from "@/context/LibraryContext";
+import { useRequireLibraryAuth } from "@/hooks/useRequireLibraryAuth";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
 import {
@@ -74,6 +76,9 @@ function HistoryPlayRowInner({
   const active = playbackItemActive(snapshot, entry.type, entry.refId);
   const playing = playbackItemPlaying(snapshot, entry.type, entry.refId);
   const { openAddToPlaylist } = usePlaylistModal();
+  const { isSetSaved, toggleSaveSet } = useLibrary();
+  const requireAuth = useRequireLibraryAuth();
+  const saved = entry.type === "set" ? isSetSaved(entry.refId) : false;
   const { handleCardPointerDown, stopCardPointerDown } = useCardPlayback(
     item,
     entry.type,
@@ -120,6 +125,22 @@ function HistoryPlayRowInner({
           }}
         >
           <ListPlus className="h-4 w-4 text-accent" />
+        </button>
+      ) : null}
+      {entry.type === "set" ? (
+        <button
+          type="button"
+          className="shrink-0 rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+          aria-label={saved ? `Unsave ${entry.title}` : `Save ${entry.title}`}
+          title={saved ? "Saved" : "Save set"}
+          onPointerDown={stopCardPointerDown}
+          onClick={(event) => {
+            event.stopPropagation();
+            if (!requireAuth()) return;
+            toggleSaveSet(entry.refId);
+          }}
+        >
+          <Bookmark className={`h-4 w-4 text-accent ${saved ? "fill-accent" : ""}`} />
         </button>
       ) : null}
       {trailing && <div onPointerDown={stopCardPointerDown}>{trailing}</div>}
