@@ -2,18 +2,17 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 import { artists, genreLabels } from "@/content/artists";
 import { articles } from "@/content/editorial";
-import { archiveSets, getVisibleSetCollections } from "@/content/sets";
+import { getVisibleSetCollections, mixtapeSets } from "@/content/sets";
 import {
   getGenreHubSlugs,
   getSimilarHubSlugs,
-  getComparisonGuides,
 } from "@/content/hubs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
   const now = new Date();
 
-  const staticPages = ["/", "/artists", "/genres", "/guides", "/sets", "/editorial", "/community"].map(
+  const staticPages = ["/", "/artists", "/genres", "/sets", "/editorial", "/community"].map(
     (path) => ({
       url: `${base}${path}`,
       lastModified: now,
@@ -31,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
-    // Genre guides
+    // Genre pages
     ...Object.keys(genreLabels).map((slug) => ({
       url: `${base}/genres/${slug}`,
       lastModified: now,
@@ -53,22 +52,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     })),
     // Set / festival collection archives (e.g. Best HÖR Berlin Sets)
-    ...getVisibleSetCollections(archiveSets).map((category) => ({
+    ...getVisibleSetCollections(mixtapeSets).map((category) => ({
       url: `${base}/sets/collections/${category}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
     // Individual sets
-    ...archiveSets.map((s) => ({
+    ...mixtapeSets.map((s) => ({
       url: `${base}/sets/${s.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
-    // Comparison guides
-    ...getComparisonGuides().map((g) => ({
-      url: `${base}/guides/${g.slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.6,
@@ -78,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/editorial/${a.slug}`,
       lastModified: new Date(a.publishedAt),
       changeFrequency: "monthly" as const,
-      priority: 0.7,
+      priority: 0.6,
     })),
   ];
 }

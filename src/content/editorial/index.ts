@@ -9,7 +9,7 @@ export const articles: EditorialArticle[] = [
     title: "What Is Schranz?",
     excerpt:
       "The relentless loop-driven techno subgenre that Germany gave the world — and why it's experiencing a global revival.",
-    category: "genre-guides",
+    category: "cultural-essays",
     heroImage: thumb("E4lxtEzoQ3c"),
     author: "Archive Editorial",
     publishedAt: "2025-03-15",
@@ -85,7 +85,7 @@ Berlin's model — warehouse spaces, extended hours, sound-first philosophy — 
     slug: "what-is-hard-techno",
     title: "What Is Hard Techno?",
     excerpt: "A guide to the fastest-growing sound in underground electronic music.",
-    category: "beginner-guides",
+    category: "cultural-essays",
     heroImage: thumb("EIQlDpgAY5Y"),
     author: "Archive Editorial",
     publishedAt: "2025-04-01",
@@ -109,7 +109,7 @@ Start with a Boiler Room set, then dive into essential EPs. The archive has list
     title: "Best Hard Techno Artists in 2026",
     excerpt:
       "The artists defining warehouse culture right now — from festival headliners to underground architects reshaping the sound.",
-    category: "genre-guides",
+    category: "cultural-essays",
     heroImage: thumb("EIQlDpgAY5Y"),
     author: "Archive Editorial",
     publishedAt: "2026-01-08",
@@ -184,7 +184,7 @@ Browse our industrial techno genre page, explore artist timelines, and follow la
     title: "Hard Techno vs Industrial Techno",
     excerpt:
       "Two overlapping worlds — same warehouses, different priorities. A guide to understanding the distinction.",
-    category: "genre-guides",
+    category: "cultural-essays",
     heroImage: thumb("8CT6HxYA0cg"),
     author: "Archive Editorial",
     publishedAt: "2026-02-10",
@@ -232,7 +232,7 @@ Filter artists by label on discover pages, save your favorites during onboarding
     title: "Beginner's Guide to Hard Techno",
     excerpt:
       "New to warehouse energy? Start here — BPM ranges, essential artists, and your first listening path.",
-    category: "beginner-guides",
+    category: "cultural-essays",
     heroImage: thumb("EIQlDpgAY5Y"),
     author: "Archive Editorial",
     publishedAt: "2026-03-01",
@@ -282,7 +282,7 @@ Boiler Room broadcasts, Teletech collectives, and festival headliners bring hard
     slug: "understanding-ebm",
     title: "Understanding EBM",
     excerpt: "Electronic Body Music — from Belgian militancy to Boy Harsher's modern club anthems.",
-    category: "genre-guides",
+    category: "cultural-essays",
     heroImage: thumb("8CT6HxYA0cg"),
     author: "Archive Editorial",
     publishedAt: "2026-03-12",
@@ -378,7 +378,7 @@ Hard techno sounds like warehouses because it was forged in them. See the Termin
     slug: "essential-listening-hard-techno",
     title: "Essential Hard Techno Listening Guide",
     excerpt: "A structured path through artists, sets, and tracks for newcomers and veterans alike.",
-    category: "listening-guides",
+    category: "cultural-essays",
     heroImage: thumb("EIQlDpgAY5Y"),
     author: "Archive Editorial",
     publishedAt: "2026-03-22",
@@ -390,7 +390,7 @@ Sara Landry essential set. Kobosil Boiler Room. I Hate Models top tracks.
 Regal Madrid set. Chris Liebing catalog. Schranz genre page.
 
 ## Week 3: Industrial depth
-Paula Temple listening path. Mord label artists. Industrial techno genre guide.
+Paula Temple listening path. Mord label artists. Industrial techno genre page.
 
 ## Week 4: Build your library
 Save artists, save sets, create a playlist. Follow recommendations from similar artist graphs.`,
@@ -412,32 +412,26 @@ export function getArticlesBySlugs(slugs: string[]): EditorialArticle[] {
 }
 
 export const categoryLabels: Record<EditorialArticle["category"], string> = {
-  "genre-guides": "Genre Guides",
   "scene-histories": "Scene Histories",
   "artist-essays": "Artist Essays",
   "label-histories": "Label Histories",
   "club-histories": "Club Histories",
   "essential-sets": "Essential Sets",
-  "listening-guides": "Listening Guides",
-  "beginner-guides": "Beginner Guides",
   "cultural-essays": "Cultural Essays",
   interviews: "Interviews",
   "scene-reports": "Scene Reports",
   "music-analysis": "Music Analysis",
   "culture-essays": "Culture Essays",
   "artist-spotlights": "Artist Spotlights",
-  guides: "Guides",
 };
 
+/** Public archive browse categories. */
 export const archiveCategories = [
-  "genre-guides",
   "scene-histories",
   "artist-essays",
   "label-histories",
   "club-histories",
   "essential-sets",
-  "listening-guides",
-  "beginner-guides",
   "cultural-essays",
 ] as const;
 

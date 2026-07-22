@@ -63,7 +63,7 @@ export function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2 md:ml-0">
-          <div className="hidden sm:block lg:hidden">
+          <div className="lg:hidden">
             <AuthControls />
           </div>
           <Link
@@ -105,9 +105,6 @@ export function Header() {
           >
             Library
           </Link>
-          <div className="py-3 sm:hidden">
-            <AuthControls onNavigate={() => setOpen(false)} />
-          </div>
         </nav>
       )}
     </header>

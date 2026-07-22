@@ -19,7 +19,6 @@ import { SetRow } from "@/components/music/SetRow";
 import { TrackRow } from "@/components/music/TrackRow";
 import { playbackItemFromSet, playbackItemFromTrack } from "@/lib/music/playback";
 import { FaqSection, type FaqItem } from "@/components/seo/FaqSection";
-import { getComparisonGuides } from "@/content/hubs";
 
 interface Props {
   slug: string;
@@ -38,7 +37,6 @@ export function GenrePageContent({ slug, artistHubCount, setCount, faqs }: Props
   const setBrowseQueue = sets.map(playbackItemFromSet);
   const articles = getGenreRelatedArticles(slug);
   const moodLabels = getGenreMoodLabels(slug);
-  const comparisons = getComparisonGuides().filter((g) => g.a === slug || g.b === slug);
 
   if (!name) return null;
 
@@ -73,15 +71,6 @@ export function GenrePageContent({ slug, artistHubCount, setCount, faqs }: Props
             {name} sets →
           </Link>
         )}
-        {comparisons.map((c) => (
-          <Link
-            key={c.slug}
-            href={`/guides/${c.slug}`}
-            className="chip-selectable border border-border px-4 py-2 text-muted-light"
-          >
-            {genreLabels[c.a]} vs {genreLabels[c.b]} →
-          </Link>
-        ))}
       </div>
 
       {guide && (
@@ -224,7 +213,7 @@ export function GenrePageContent({ slug, artistHubCount, setCount, faqs }: Props
 
       {articles.length > 0 && (
         <section className="mt-12 border-t border-border pt-10">
-          <h2 className="font-serif text-2xl text-foreground">Archive guides</h2>
+          <h2 className="font-serif text-2xl text-foreground">Related reading</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {articles.map((a) => (
               <Link key={a.slug} href={`/editorial/${a.slug}`} className="interactive-row group border border-border p-4">

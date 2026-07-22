@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { LogOut } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
+import { useSignInModal } from "@/components/auth/SignInModal";
 
 const ACCOUNT_LINKS = [
   { href: "/library", label: "Library" },
@@ -12,9 +13,9 @@ const ACCOUNT_LINKS = [
 ] as const;
 
 export function AuthControls({ onNavigate }: { onNavigate?: () => void }) {
-  const { available, ready, user, signInWithGoogle, signOut } = useAuth();
+  const { user, signOut } = useAuth();
+  const { openSignIn } = useSignInModal();
   const [open, setOpen] = useState(false);
-  const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const rootRef = useRef<HTMLDivElement>(null);
   const menuId = useId();
@@ -39,23 +40,6 @@ export function AuthControls({ onNavigate }: { onNavigate?: () => void }) {
     };
   }, [close, open]);
 
-  if (!available) return null;
-  if (!ready) {
-    return <span className="h-8 w-20 animate-pulse rounded-sm bg-surface" aria-label="Loading account" />;
-  }
-
-  const handleSignIn = async () => {
-    setPending(true);
-    setError(null);
-    try {
-      await signInWithGoogle();
-    } catch {
-      setError("Sign in failed. Try again.");
-    } finally {
-      setPending(false);
-    }
-  };
-
   const handleSignOut = async () => {
     setError(null);
     close();
@@ -66,22 +50,20 @@ export function AuthControls({ onNavigate }: { onNavigate?: () => void }) {
     }
   };
 
+  // Always expose Sign In while logged out — never hide behind a loading placeholder.
   if (!user) {
     return (
       <div className="relative">
         <button
           type="button"
-          onClick={() => void handleSignIn()}
-          disabled={pending}
-          className="rounded-sm px-2 py-1.5 text-sm text-muted-light transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent disabled:opacity-50"
+          onClick={() => {
+            onNavigate?.();
+            openSignIn();
+          }}
+          className="rounded-sm px-2 py-1.5 text-sm text-muted-light transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
         >
-          {pending ? "Signing in…" : "Sign in with Google"}
+          Sign In
         </button>
-        {error ? (
-          <p className="absolute right-0 top-full z-50 mt-2 whitespace-nowrap text-xs text-muted" role="alert">
-            {error}
-          </p>
-        ) : null}
       </div>
     );
   }

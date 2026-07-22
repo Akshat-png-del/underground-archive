@@ -53,7 +53,7 @@ export default function OpengraphImage() {
         </div>
 
         <div style={{ display: "flex", fontSize: 24, color: "#8a857d", letterSpacing: 2 }}>
-          Artist profiles · Verified sets · Genre guides
+          Artist profiles · Verified sets · Mixtapes
         </div>
       </div>
     ),

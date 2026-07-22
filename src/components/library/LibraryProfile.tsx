@@ -1,11 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
 import { useLibrary } from "@/context/LibraryContext";
 import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/Button";
 import { usePlaylistModal } from "@/components/library/PlaylistModal";
+import { useSignInModal } from "@/components/auth/SignInModal";
 import { HistoryPlayRow } from "@/components/music/HistoryPlayRow";
 import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import {
@@ -20,11 +21,9 @@ export function LibraryProfile() {
     available: authAvailable,
     ready: authReady,
     user,
-    signInWithGoogle,
   } = useAuth();
   const { openCreatePlaylist } = usePlaylistModal();
-  const [signingIn, setSigningIn] = useState(false);
-  const [authError, setAuthError] = useState<string | null>(null);
+  const { openSignIn } = useSignInModal();
 
   const viewed = useMemo(
     () =>
@@ -58,18 +57,6 @@ export function LibraryProfile() {
     );
   }
 
-  const handleSignIn = async () => {
-    setSigningIn(true);
-    setAuthError(null);
-    try {
-      await signInWithGoogle();
-    } catch {
-      setAuthError("Sign in failed. Try again.");
-    } finally {
-      setSigningIn(false);
-    }
-  };
-
   const userLabel = user?.displayName?.trim() || user?.email || "";
 
   return (
@@ -91,15 +78,9 @@ export function LibraryProfile() {
             </p>
           </div>
           <div className="shrink-0">
-            <Button
-              size="sm"
-              variant="secondary"
-              disabled={signingIn}
-              onClick={() => void handleSignIn()}
-            >
-              {signingIn ? "Signing in…" : "Sign in with Google"}
+            <Button size="sm" variant="secondary" onClick={openSignIn}>
+              Sign In
             </Button>
-            {authError ? <p className="mt-2 text-xs text-muted" role="alert">{authError}</p> : null}
           </div>
         </section>
       ) : null}
@@ -111,7 +92,7 @@ export function LibraryProfile() {
             {user.email && user.email !== userLabel ? (
               <p className="mt-0.5 truncate text-sm text-muted">{user.email}</p>
             ) : null}
-            <p className="mt-1 text-xs text-muted">Signed in with Google</p>
+            <p className="mt-1 text-xs text-muted">Signed in</p>
           </div>
         </section>
       ) : null}

@@ -179,9 +179,11 @@ export function PlaylistPageContent({ playlistId }: Props) {
       (playlist?.items ?? [])
         .slice()
         .sort((a, b) => a.order - b.order)
+        // Seed playlists are Spotify audio tracks only — never surface set/video rows.
+        .filter((item) => !(isSeedPlaylist(playlistId) && item.type !== "track"))
         .map(resolvePlaylistItem)
         .filter((i): i is NonNullable<typeof i> => !!i),
-    [playlist?.items],
+    [playlist?.items, playlistId],
   );
 
   const browseQueue = useMemo(
@@ -262,11 +264,15 @@ export function PlaylistPageContent({ playlistId }: Props) {
             <>
               <p className="text-sm text-muted">
                 {playlist.isPublic ? "Public playlist" : "Private playlist"} · by {creatorLabel}
+                {playlist.likeCount > 0 ? ` · ${playlist.likeCount} likes` : ""}
               </p>
               <h1 className="mt-1 font-serif text-3xl text-foreground sm:text-4xl">{playlist.title}</h1>
               {playlist.description && (
                 <p className="mt-3 text-muted-light">{playlist.description}</p>
               )}
+              <p className="mt-2 font-mono text-xs text-muted-light">
+                {resolved.length} tracks
+              </p>
             </>
           )}
 

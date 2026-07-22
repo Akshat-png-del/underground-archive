@@ -28,8 +28,8 @@ export async function generateMetadata({
   if (!name) return {};
   const guide = getGenreGuide(slug);
   return buildMetadata({
-    title: `${name} — Guide, Artists & Sets`,
-    description: guide?.seoIntro ?? `Discover ${name} artists, sets, and archive guides.`,
+    title: `${name} — Artists & Sets`,
+    description: guide?.seoIntro ?? `Discover ${name} artists and verified sets in the archive.`,
     path: `/genres/${slug}`,
     keywords: [
       name,
@@ -94,7 +94,7 @@ export default async function GenrePage({
         data={[
           breadcrumbSchema(breadcrumb),
           collectionPageSchema({
-            name: `${name} — Guide, Artists & Sets`,
+            name: `${name} — Artists & Sets`,
             description: getGenreGuide(slug)?.seoIntro ?? genreDescriptions[slug] ?? name,
             path,
             items: getGenreEssentialArtists(slug, 12).map((a) => ({

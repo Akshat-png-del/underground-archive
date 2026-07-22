@@ -1,5 +1,5 @@
 # Archive authenticity audit
-Generated: 2026-07-21T04:14:26.614Z
+Generated: 2026-07-21T06:29:41.221Z
 
 ## Summary
 - Artists: 105 (40 tier 1, 59 tier 2, 6 tier 3)

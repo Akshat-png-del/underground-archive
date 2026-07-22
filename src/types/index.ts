@@ -178,21 +178,17 @@ export interface Artist {
 }
 
 export type ArchiveCategory =
-  | "genre-guides"
   | "scene-histories"
   | "artist-essays"
   | "label-histories"
   | "club-histories"
   | "essential-sets"
-  | "listening-guides"
-  | "beginner-guides"
   | "cultural-essays"
   | "interviews"
   | "scene-reports"
   | "music-analysis"
   | "culture-essays"
-  | "artist-spotlights"
-  | "guides";
+  | "artist-spotlights";
 
 export interface EditorialArticle {
   slug: string;

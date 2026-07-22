@@ -124,13 +124,20 @@ export function getTrendingSavedArtistsStatic(): Artist[] {
 }
 
 export function getCommunityPlaylists() {
-  const featured = ["Warehouse Energy Playlist", "Industrial Darkness", "Peak Time Chaos", "Schranz Gym Playlist"];
+  const featured = [
+    "Warehouse Energy",
+    "Industrial Darkness",
+    "Peak Time Chaos",
+    "Hard Techno Essentials",
+    "Underground Archive Essentials",
+    "Schranz Reloaded",
+  ];
   const sorted = getPublicPlaylists([]);
   const highlighted = featured
     .map((title) => sorted.find((p) => p.title === title))
     .filter(Boolean) as typeof sorted;
   const rest = sorted.filter((p) => !featured.includes(p.title));
-  return [...highlighted, ...rest].slice(0, 8);
+  return [...highlighted, ...rest];
 }
 
 export function getCommunityFavorites() {

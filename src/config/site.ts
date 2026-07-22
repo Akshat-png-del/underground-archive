@@ -22,8 +22,7 @@ export type SiteConfig = typeof siteConfig;
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/artists", label: "Artists" },
-  { href: "/sets", label: "Sets" },
+  { href: "/sets", label: "Mixtapes" },
   { href: "/genres", label: "Genres" },
-  { href: "/guides", label: "Guides" },
   { href: "/editorial", label: "Archive" },
 ] as const;

@@ -25,7 +25,7 @@ export function CommunityFavoritesHub({
   initialArtists?: Artist[];
   initialSets?: ArchiveSet[];
 }) {
-  const playlists = getMostLikedPlaylists(3);
+  const playlists = getMostLikedPlaylists(24);
   const artists = useHomepageRotationRefresh(
     () => getMostDiscussedArtists(4),
     initialArtists ?? getMostDiscussedArtists(4),
@@ -41,7 +41,7 @@ export function CommunityFavoritesHub({
       <HomeSection
         title="Community favorites"
         subtitle="Most liked playlists, most saved sets, and artists driving conversation."
-        href="/library/playlists"
+        href="/community"
         variant="surface"
       >
         <div className="grid gap-10 lg:grid-cols-3">

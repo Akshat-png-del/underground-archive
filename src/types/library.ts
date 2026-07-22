@@ -61,6 +61,8 @@ export interface ArchiveSet {
   energy?: number;
   location: string;
   thumbnail: string;
+  /** Editorial summary derived from verified artist, event, year, and genre metadata. */
+  description?: string;
 }
 
 export type LibraryItemType = "track" | "set" | "release";

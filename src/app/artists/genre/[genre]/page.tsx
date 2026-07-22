@@ -127,7 +127,7 @@ export default async function GenreArtistsHub({
 
       <div className="mt-6 flex flex-wrap gap-3 text-sm">
         <Link href={`/genres/${genre}`} className="chip-selectable border border-border px-4 py-2 text-muted-light">
-          {name} genre guide →
+          Explore {name} →
         </Link>
         {setCount > 0 && (
           <Link

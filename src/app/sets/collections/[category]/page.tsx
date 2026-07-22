@@ -3,9 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { SetCategory } from "@/types/library";
 import {
-  archiveSets,
   getSetsByCategory,
   getVisibleSetCollections,
+  mixtapeSets,
   setCategoryLabels,
   setCollectionDescriptions,
 } from "@/content/sets";
@@ -23,7 +23,7 @@ import { FaqSection, type FaqItem } from "@/components/seo/FaqSection";
 import { SetsDirectoryGrid } from "@/components/sets/SetsDirectoryGrid";
 
 export function generateStaticParams() {
-  return getVisibleSetCollections(archiveSets).map((category) => ({ category }));
+  return getVisibleSetCollections(mixtapeSets).map((category) => ({ category }));
 }
 
 function resolve(category: string) {
@@ -72,7 +72,7 @@ export default async function SetCollectionHub({
 
   const path = `/sets/collections/${category}`;
   const artistNames = [...new Set(sets.map((s) => s.artistName))];
-  const otherCollections = getVisibleSetCollections(archiveSets).filter(
+  const otherCollections = getVisibleSetCollections(mixtapeSets).filter(
     (c) => c !== category,
   );
 

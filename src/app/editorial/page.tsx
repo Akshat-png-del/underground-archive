@@ -9,7 +9,7 @@ import { SafeImage } from "@/components/ui/SafeImage";
 export const metadata: Metadata = buildMetadata({
   title: "Cultural Archive",
   description:
-    "Genre guides, scene histories, artist essays, label and club histories, listening guides, cultural essays, and underground terminology.",
+    "Scene histories, artist essays, label and club histories, cultural essays, and underground terminology.",
   path: "/editorial",
 });
 
@@ -21,8 +21,29 @@ export default function EditorialPage() {
       <SectionLabel>Archive</SectionLabel>
       <h1 className="mt-2 font-serif text-4xl text-foreground sm:text-5xl">Cultural Knowledge</h1>
       <p className="mt-4 max-w-2xl text-muted-light">
-        Professionally researched guides spanning genre history, scene reports, club culture, listening paths, and underground terminology.
+        Scene histories, listening paths, label and club context, and underground terminology —
+        organized so you can move from a genre page into deeper reading without leaving the archive.
       </p>
+      <div className="mt-6 grid gap-4 border border-border/70 bg-surface/30 p-5 sm:grid-cols-3">
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-accent">Start here</p>
+          <p className="mt-2 text-sm text-muted-light">
+            Pick a featured essay, then browse categories for genre history, clubs, and culture.
+          </p>
+        </div>
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-accent">Connect to sound</p>
+          <p className="mt-2 text-sm text-muted-light">
+            Genre pages and artist profiles link back here when related reading exists.
+          </p>
+        </div>
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-widest text-accent">Terminology</p>
+          <p className="mt-2 text-sm text-muted-light">
+            Use the glossary below when a scene term needs a precise, archive-backed definition.
+          </p>
+        </div>
+      </div>
 
       {featured.length > 0 && (
         <div className="mt-12">

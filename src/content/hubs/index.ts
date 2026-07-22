@@ -1,8 +1,6 @@
 import type { Genre } from "@/types";
 import type { Artist } from "@/types";
 import { artists, genreLabels, getArtist, getArtistsByGenre } from "@/content/artists";
-import { getGenreGuide } from "@/content/genres";
-import { articles } from "@/content/editorial";
 
 /** Join a list into readable prose: "A, B and C". */
 export function toSentenceList(items: string[]): string {
@@ -59,45 +57,3 @@ export function getSimilarHubSlugs(): string[] {
     .map((a) => a.slug);
 }
 
-/* -------------------------------------------------------------------------- */
-/* Genre comparison guides ("Difference between X and Y")                     */
-/* -------------------------------------------------------------------------- */
-
-export interface ComparisonGuide {
-  slug: string;
-  a: Genre;
-  b: Genre;
-}
-
-/** Curated, meaningful genre pairs. Skips any pair already covered by editorial. */
-const COMPARISON_PAIRS: [Genre, Genre][] = [
-  ["hard-techno", "schranz"],
-  ["industrial-techno", "dark-techno"],
-  ["schranz", "industrial-techno"],
-  ["peak-time-techno", "hard-techno"],
-  ["acid-techno", "hard-techno"],
-  ["hardgroove", "hard-techno"],
-  ["ebm", "industrial-ebm"],
-  ["ebm", "darkwave"],
-  ["darkwave", "post-punk"],
-  ["hypnotic-techno", "dark-techno"],
-];
-
-function editorialCoversPair(a: Genre, b: Genre): boolean {
-  const slugs = articles.map((art) => art.slug);
-  return (
-    slugs.includes(`${a}-vs-${b}`) ||
-    slugs.includes(`${b}-vs-${a}`) ||
-    slugs.includes(`${a.replace("-techno", "")}-vs-${b}`)
-  );
-}
-
-export function getComparisonGuides(): ComparisonGuide[] {
-  return COMPARISON_PAIRS.filter(
-    ([a, b]) => getGenreGuide(a) && getGenreGuide(b) && !editorialCoversPair(a, b),
-  ).map(([a, b]) => ({ slug: `${a}-vs-${b}`, a, b }));
-}
-
-export function getComparisonGuide(slug: string): ComparisonGuide | undefined {
-  return getComparisonGuides().find((g) => g.slug === slug);
-}

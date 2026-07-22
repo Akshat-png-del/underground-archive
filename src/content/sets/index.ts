@@ -7,7 +7,7 @@ import { setId, slugify } from "@/lib/music";
 import { ytThumb } from "@/lib/images";
 import {
   inferSetCollection,
-  setCategoryLabels,
+  durationToMinutes,
   SET_COLLECTION_ORDER,
 } from "@/content/sets/collections";
 
@@ -65,6 +65,10 @@ function buildSet(
     energy,
     location: inferLocation(set.venue, artistCity),
     thumbnail: ytThumb(set.youtubeId, "hq"),
+    description: `${artistName} at ${set.venue} (${set.year}) — a verified long-form ${genres
+      .slice(0, 2)
+      .map((genre) => genre.replace(/-/g, " "))
+      .join(" / ")} performance.`,
   };
 }
 
@@ -117,8 +121,16 @@ export const archiveSets: ArchiveSet[] = dedupeByYoutubeId(
   ),
 );
 
+/**
+ * Dedicated mixtape / DJ-set inventory.
+ * Every entry has a verified public YouTube source and API duration of at least 10 minutes.
+ */
+export const mixtapeSets: ArchiveSet[] = archiveSets.filter(
+  (set) => set.verified && (durationToMinutes(set.duration) ?? 0) >= 10,
+);
+
 export function getVerifiedSets(): ArchiveSet[] {
-  return archiveSets.filter((s) => s.verified);
+  return mixtapeSets;
 }
 
 /** All displayable sets — default for UI (not gated on verified metadata). */
@@ -131,7 +143,7 @@ export function getSet(idOrSlug: string): ArchiveSet | undefined {
 }
 
 export function getSetsByCategory(category: SetCategory): ArchiveSet[] {
-  return archiveSets.filter((s) => s.category === category);
+  return mixtapeSets.filter((s) => s.category === category);
 }
 
 /**
@@ -189,7 +201,7 @@ export function getCollectionCounts(): Record<SetCategory, number> {
     SetCategory,
     number
   >;
-  for (const set of archiveSets) {
+  for (const set of mixtapeSets) {
     counts[set.category] = (counts[set.category] ?? 0) + 1;
   }
   return counts;
