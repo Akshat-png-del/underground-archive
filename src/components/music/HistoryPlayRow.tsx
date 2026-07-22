@@ -1,9 +1,11 @@
 "use client";
 
 import { useMemo } from "react";
+import { ListPlus } from "lucide-react";
 import type { PlayHistoryEntry } from "@/types/library";
 import { LibraryArtwork } from "@/components/library/LibraryArtwork";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
+import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
 import {
@@ -71,6 +73,7 @@ function HistoryPlayRowInner({
   const snapshot = useFinalPlaybackSnapshot();
   const active = playbackItemActive(snapshot, entry.type, entry.refId);
   const playing = playbackItemPlaying(snapshot, entry.type, entry.refId);
+  const { openAddToPlaylist } = usePlaylistModal();
   const { handleCardPointerDown, stopCardPointerDown } = useCardPlayback(
     item,
     entry.type,
@@ -98,6 +101,27 @@ function HistoryPlayRowInner({
         ) : null}
       </div>
       {active && <PlayingIndicator playing={playing} compact />}
+      {entry.type === "track" ? (
+        <button
+          type="button"
+          className="shrink-0 rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+          aria-label={`Add ${entry.title} to playlist`}
+          title="Add to playlist"
+          onPointerDown={stopCardPointerDown}
+          onClick={(event) => {
+            event.stopPropagation();
+            openAddToPlaylist({
+              type: "track",
+              refId: entry.refId,
+              label: entry.subtitle
+                ? `${entry.title} — ${entry.subtitle}`
+                : entry.title,
+            });
+          }}
+        >
+          <ListPlus className="h-4 w-4 text-accent" />
+        </button>
+      ) : null}
       {trailing && <div onPointerDown={stopCardPointerDown}>{trailing}</div>}
     </div>
   );
