@@ -3,11 +3,13 @@
 import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { ListPlus } from "lucide-react";
 import { searchAll } from "@/lib/search";
 import { SearchBar } from "@/components/search/SearchBar";
 import { ArtistAlphabetBrowse } from "@/components/search/ArtistAlphabetBrowse";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { PlayingIndicator } from "@/components/music/PlayingIndicator";
+import { usePlaylistModal } from "@/components/library/PlaylistModal";
 import { playbackItemFromRef, browseContextAt, type PlaybackItem } from "@/lib/music/playback";
 import { playableSurfaceClass } from "@/lib/music/playable-surface";
 import {
@@ -53,7 +55,8 @@ function PlayableSearchResultInner({
   const snapshot = useFinalPlaybackSnapshot();
   const active = playbackItemActive(snapshot, result.type as "track" | "set", result.id);
   const playing = playbackItemPlaying(snapshot, result.type as "track" | "set", result.id);
-  const { handleCardPointerDown } = useCardPlayback(
+  const { openAddToPlaylist } = usePlaylistModal();
+  const { handleCardPointerDown, stopCardPointerDown } = useCardPlayback(
     item,
     result.type as "track" | "set",
     result.id,
@@ -79,6 +82,27 @@ function PlayableSearchResultInner({
         <p className="truncate text-sm text-muted">{result.subtitle}</p>
       </div>
       {active && <PlayingIndicator playing={playing} compact />}
+      {result.type === "track" ? (
+        <button
+          type="button"
+          className="shrink-0 rounded-sm p-2 text-accent transition-colors hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+          aria-label={`Add ${result.title} to playlist`}
+          title="Add to playlist"
+          onPointerDown={stopCardPointerDown}
+          onClick={(event) => {
+            event.stopPropagation();
+            openAddToPlaylist({
+              type: "track",
+              refId: result.id,
+              label: result.subtitle
+                ? `${result.title} — ${result.subtitle}`
+                : result.title,
+            });
+          }}
+        >
+          <ListPlus className="h-4 w-4" />
+        </button>
+      ) : null}
     </div>
   );
 }

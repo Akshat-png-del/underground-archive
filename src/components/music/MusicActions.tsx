@@ -52,8 +52,8 @@ export function MusicActions({
   const playing = active && snapshot.isPlaying;
 
   const liked = type === "track" ? isTrackLiked(refId) : type === "set" ? isSetSaved(refId) : false;
-  // Tracks → playlists; Sets stay independent (save only, never add to playlist).
-  const showPlaylistAction = collectionActions && type === "track";
+  // Tracks → playlists always; Sets stay independent (save only, never add to playlist).
+  const showPlaylistAction = type === "track";
 
   const item = playbackItemFromMusicActions({
     type,
@@ -121,7 +121,13 @@ export function MusicActions({
           {type === "set" ? <Play className="h-4 w-4" /> : playing ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
         </Button>
         {showPlaylistAction && (
-          <Button size="sm" variant="ghost" onClick={handlePlaylist} aria-label="Add to playlist">
+          <Button
+            size="sm"
+            variant="ghost"
+            onClick={handlePlaylist}
+            aria-label="Add to playlist"
+            className="text-accent hover:bg-accent/10 hover:text-accent"
+          >
             <ListPlus className="h-4 w-4" />
           </Button>
         )}

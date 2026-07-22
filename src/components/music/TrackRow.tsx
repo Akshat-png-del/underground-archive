@@ -103,7 +103,7 @@ export function TrackRow({ track, index, browseQueue }: TrackRowProps) {
               });
             }}
           >
-            <ListPlus className="h-4 w-4" />
+            <ListPlus className="h-4 w-4 text-accent" />
           </button>
         </div>
       </div>
