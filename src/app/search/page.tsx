@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
   title: "Search",
-  description: "Search artists, tracks, sets, genres, and editorial.",
+  description: "Search artists, tracks, sets, and genres.",
   path: "/search",
 });
 

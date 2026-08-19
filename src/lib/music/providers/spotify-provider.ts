@@ -38,6 +38,7 @@ const EMBED_HEIGHT = 152;
 const ROOT_ID = "vitalforge-playback-root";
 const MOUNT_LAYOUT_TIMEOUT_MS = 5000;
 const EMBED_READY_TIMEOUT_MS = 15000;
+const PLAYBACK_CONFIRM_TIMEOUT_MS = EMBED_READY_TIMEOUT_MS;
 
 export class SpotifyProvider implements PlaybackProvider {
   readonly kind = "spotify" as const;
@@ -54,6 +55,7 @@ export class SpotifyProvider implements PlaybackProvider {
   private activeRefId: string | null = null;
   private readonly readyGate = new ProviderReadyGate();
   private mountPromise: Promise<SpotifyEmbedController> | null = null;
+  private playbackConfirmTimer: ReturnType<typeof setTimeout> | null = null;
 
   get isReady(): boolean {
     return this.readyGate.isReady;
@@ -143,12 +145,32 @@ export class SpotifyProvider implements PlaybackProvider {
     this.onUpdate = null;
   }
 
+  private clearPlaybackConfirmation(): void {
+    if (!this.playbackConfirmTimer) return;
+    clearTimeout(this.playbackConfirmTimer);
+    this.playbackConfirmTimer = null;
+  }
+
+  private expectPlaybackConfirmation(command: "play" | "resume"): void {
+    this.clearPlaybackConfirmation();
+    this.playbackConfirmTimer = setTimeout(() => {
+      this.playbackConfirmTimer = null;
+      if (this.state.isPlaying) return;
+      this.patch({
+        isPlaying: false,
+        isLoading: false,
+        error: `Spotify ${command} was not confirmed`,
+      }, "playback_confirmation_timeout");
+    }, PLAYBACK_CONFIRM_TIMEOUT_MS);
+  }
+
   private bindController(generation: number, controller: SpotifyEmbedController): void {
     this.clearListeners();
     this.controller = controller;
 
     this.onStarted = (payload) => {
       if (this.isStale(generation)) return;
+      this.clearPlaybackConfirmation();
       const fields = spotifyPlaybackFields(payload?.data);
       spotifySeekAudit("SpotifyProvider", "PLAYBACK_STARTED", {
         position: fields.positionSeconds,
@@ -208,6 +230,7 @@ export class SpotifyProvider implements PlaybackProvider {
       if (fields.isPaused !== null) {
         partial.isPlaying = !fields.isPaused;
         partial.isLoading = fields.isBuffering === true;
+        if (!fields.isPaused) this.clearPlaybackConfirmation();
         playPausePipelineTrace({
           fn: "SpotifyProvider.onUpdate",
           phase: "playback_update",
@@ -480,16 +503,25 @@ export class SpotifyProvider implements PlaybackProvider {
 
     spotifySeekAudit("SpotifyProvider", "COMMAND", { command: "startPlayback", refId: this.activeRefId });
     logProviderPlay(this.kind, this.activeRefId ?? "");
+    this.patch({ isLoading: true, error: null }, "start_playback");
     const controller = this.controller ?? this.host.getController();
+    let accepted = false;
     if (controller) {
       try {
         controller.play();
+        accepted = true;
       } catch {
-        this.host.playIfReady();
+        accepted = this.host.playIfReady();
       }
-      return;
+    } else {
+      accepted = this.host.playIfReady();
     }
-    this.host.playIfReady();
+    if (!accepted) {
+      const message = "Spotify play command was rejected";
+      this.patch({ isPlaying: false, isLoading: false, error: message }, "start_playback_rejected");
+      throw new Error(message);
+    }
+    this.expectPlaybackConfirmation("play");
   }
 
   async play(request: ProviderPlayRequest): Promise<void> {
@@ -523,7 +555,14 @@ export class SpotifyProvider implements PlaybackProvider {
   }
 
   resume(): void {
-    if (!this.isReady) return;
+    if (!this.isReady) {
+      this.patch({
+        isPlaying: false,
+        isLoading: false,
+        error: "Spotify resume unavailable",
+      }, "resume_not_ready");
+      return;
+    }
     spotifySeekAudit("SpotifyProvider", "COMMAND", { command: "resume", refId: this.activeRefId });
     logProviderPlay(this.kind, this.activeRefId ?? "");
     playPausePipelineTrace({
@@ -535,7 +574,15 @@ export class SpotifyProvider implements PlaybackProvider {
       activeTrack: this.activeRefId,
     });
     this.patch({ isLoading: true, error: null });
-    this.host.resumeIfReady();
+    if (!this.host.resumeIfReady()) {
+      this.patch({
+        isPlaying: false,
+        isLoading: false,
+        error: "Spotify resume command was rejected",
+      }, "resume_rejected");
+      return;
+    }
+    this.expectPlaybackConfirmation("resume");
     playPausePipelineTrace({
       fn: "SpotifyProvider.resume",
       phase: "EXIT",
@@ -546,6 +593,7 @@ export class SpotifyProvider implements PlaybackProvider {
   }
 
   stop(): void {
+    this.clearPlaybackConfirmation();
     spotifySeekAudit("SpotifyProvider", "COMMAND", { command: "stop", refId: this.activeRefId });
     this.bumpGeneration();
     this.clearListeners();
@@ -607,12 +655,19 @@ export class SpotifyProvider implements PlaybackProvider {
         ? (typeof performance !== "undefined" ? performance.now() : Date.now()) - lastSdk.at
         : null,
     });
-    this.patch({ currentTime: target }, "seek_optimistic_patch");
     seekPipelineTrace("SpotifyProvider.seek", "INVOKE", {
       next: "host.seekIfReady",
       targetSeconds: seekSeconds,
     });
-    this.host.seekIfReady(seekSeconds);
+    if (!this.host.seekIfReady(seekSeconds)) {
+      this.patch({
+        isPlaying: false,
+        isLoading: false,
+        error: "Spotify seek command was rejected",
+      }, "seek_rejected");
+      return;
+    }
+    this.patch({ currentTime: target }, "seek_optimistic_patch");
     const afterImmediate = {
       position: this.state.currentTime,
       duration: this.state.duration,

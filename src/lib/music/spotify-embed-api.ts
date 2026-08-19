@@ -248,25 +248,27 @@ export class SpotifyEmbedHost {
     }
   }
 
-  resumeIfReady(): void {
-    if (!this.isEmbedReady() || !this.controller) return;
+  resumeIfReady(): boolean {
+    if (!this.isEmbedReady() || !this.controller) return false;
     try {
       this.controller.resume();
+      return true;
     } catch {
-      // ignore
+      return false;
     }
   }
 
-  playIfReady(): void {
-    if (!this.isEmbedReady() || !this.controller) return;
+  playIfReady(): boolean {
+    if (!this.isEmbedReady() || !this.controller) return false;
     try {
       this.controller.play();
+      return true;
     } catch {
-      // ignore
+      return false;
     }
   }
 
-  seekIfReady(positionSeconds: number): void {
+  seekIfReady(positionSeconds: number): boolean {
     const seekSeconds = Math.max(0, Math.round(positionSeconds));
     const sdkReady = this.isEmbedReady();
     const hostExists = !!this.host;
@@ -290,7 +292,7 @@ export class SpotifyEmbedHost {
         sdkReady,
         controllerExists,
       });
-      return;
+      return false;
     }
     try {
       spotifySeekAudit("SpotifyEmbedHost", "HOST_SEEK", {
@@ -310,6 +312,7 @@ export class SpotifyEmbedHost {
         rejected: false,
         exception: null,
       });
+      return true;
     } catch (err) {
       spotifySeekAudit("SpotifyEmbedHost", "HOST_SEEK", {
         phase: "controller_seek_threw",
@@ -319,6 +322,7 @@ export class SpotifyEmbedHost {
         rejected: true,
         exception: err instanceof Error ? err.message : String(err),
       });
+      return false;
     }
   }
 

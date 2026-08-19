@@ -82,6 +82,11 @@ export function useCardPlayback(
 
       const origin = { pointerId: e.pointerId, x: e.clientX, y: e.clientY };
       pendingPressRef.current = origin;
+      try {
+        e.currentTarget.setPointerCapture(e.pointerId);
+      } catch {
+        // Pointer capture is unavailable for some detached mobile event targets.
+      }
 
       const finishPress = (ev: PointerEvent) => {
         if (pendingPressRef.current?.pointerId !== ev.pointerId) return;

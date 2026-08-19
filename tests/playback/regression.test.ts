@@ -246,6 +246,7 @@ describe("playback regression", () => {
         initializePlaybackEngine();
       });
       assert.equal(usePlaybackStore.getState().currentTrack?.refId, item.refId);
+      assert.equal(usePlaybackStore.getState().isPlaying, false);
     });
   });
 });

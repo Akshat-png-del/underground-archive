@@ -1,7 +1,7 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState } from "react";
-import { reapplyPlaybackEmbedLayout } from "@/stores/playback-store";
+import { useCallback, useLayoutEffect, useRef, useState } from "react";
+import { flushPendingPlayback, reapplyPlaybackEmbedLayout } from "@/stores/playback-store";
 import { useFinalPlaybackSnapshot } from "@/lib/music/use-final-playback-snapshot";
 import { usePersistentPlaybackDock } from "@/components/music/use-persistent-playback-dock";
 import { registerPlaybackMediaAnchor } from "@/lib/music/playback-media-anchor-registry";
@@ -20,6 +20,12 @@ export function PlaybackEngineMount() {
   const experience = usePlaybackExperience();
   const [clientMounted, setClientMounted] = useState(false);
   const [, syncSetWatchDock] = useState(0);
+  const setCanvasRef = useCallback((node: HTMLDivElement | null) => {
+    canvasRef.current = node;
+    if (!node?.isConnected || isSetWatchDockActive()) return;
+    registerPlaybackMediaAnchor(node);
+    flushPendingPlayback();
+  }, []);
 
   useLayoutEffect(() => {
     setClientMounted(true);
@@ -66,7 +72,7 @@ export function PlaybackEngineMount() {
     <div className="playback-engine-mount" data-playback-engine-mount aria-hidden>
       <div
         id="media-engine-canvas"
-        ref={canvasRef}
+        ref={setCanvasRef}
         data-player-embed-host
         data-playback-persistent-mount
         className="playback-canvas h-full w-full overflow-hidden"

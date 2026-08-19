@@ -368,6 +368,7 @@ class MediaSessionController {
   private transportIntent: "playing" | "paused" = "paused";
   private hadTrackBefore = false;
   private lastAudibleVolume = 0.8;
+  private lifecycleListenersAttached = false;
 
   // ── Seek settle caches ──────────────────────────────────────────────────────
 
@@ -514,7 +515,45 @@ class MediaSessionController {
 
   private ensureBridge(): void {
     this.attachEngineListener();
+    this.attachLifecycleListeners();
     ensurePlaybackEngineReady();
+  }
+
+  /**
+   * Mobile browsers can pause an embed or media element while backgrounded.
+   * Reconcile the existing engine snapshot on return; never auto-resume here.
+   */
+  private attachLifecycleListeners(): void {
+    if (
+      this.lifecycleListenersAttached ||
+      typeof document === "undefined" ||
+      typeof document.addEventListener !== "function" ||
+      typeof window === "undefined" ||
+      typeof window.addEventListener !== "function"
+    ) {
+      return;
+    }
+    this.lifecycleListenersAttached = true;
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) this.onEngineSnapshot(globalPlayerEngine.getSnapshot());
+    });
+    window.addEventListener("pageshow", () => {
+      this.onEngineSnapshot(globalPlayerEngine.getSnapshot());
+    });
+  }
+
+  /** Provider state wins once a requested command has stopped loading. */
+  private reconcileProviderPause(snapshot: PlayerEngineState): void {
+    if (
+      this.transportIntent !== "playing" ||
+      !snapshot.currentTrack ||
+      snapshot.currentTrack.type === "set" ||
+      snapshot.isPlaying ||
+      (snapshot.isLoading && !snapshot.error)
+    ) {
+      return;
+    }
+    this.transportIntent = "paused";
   }
 
   private applyVolumeToEngine(): boolean {
@@ -551,6 +590,7 @@ class MediaSessionController {
   }
 
   private onEngineSnapshot(snapshot: PlayerEngineState): void {
+    this.reconcileProviderPause(snapshot);
     const sessionTrack = this.transport.activeTrack;
     const engineTrack = snapshot.currentTrack;
     const trackChanged = engineTrack?.refId !== sessionTrack?.refId;

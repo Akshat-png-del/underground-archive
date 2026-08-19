@@ -80,6 +80,11 @@ export function ensurePlaybackEngineReady(): void {
   }
 }
 
+/** Flushes an existing pre-mount play request once the media anchor is connected. */
+export function flushPendingPlayback(): void {
+  getController().flushPendingPlay();
+}
+
 function attachEngineStoreBridge(): void {
   if (storeBridgeAttached) return;
   storeBridgeAttached = true;
@@ -217,38 +222,23 @@ export function initializePlaybackEngine(): void {
       );
       const found = queue.findIndex((entry) => isSamePlaybackItem(entry, current));
       const queueIndex = found >= 0 ? found : Math.max(0, queue.length - 1);
-      if (persisted.isPlaying) {
-        playbackDebugLog("MOUNT", "resuming persisted playback", current.refId);
-        hydrationPipelineTrace({
-          fn: "restorePersistedSession",
-          phase: "resume_play",
-          persisted: {
-            activeTrack: current.refId,
-            queueLength: queue.length,
-            queueIndex,
-            currentTime: persisted.position,
-            isPlaying: true,
-          },
-        });
-        controller.play(current, {
-          browse: { queue, queueIndex },
-          resumePosition: persisted.position,
-        });
-        usePlaybackStore.setState({ hydrated: true });
-      } else {
-        hydrationPipelineTrace({
-          fn: "restorePersistedSession",
-          phase: "hydrate_paused",
-          persisted: {
-            activeTrack: current.refId,
-            queueLength: queue.length,
-            queueIndex,
-            currentTime: persisted.position,
-            isPlaying: false,
-          },
-        });
-        controller.hydratePausedSession(current, persisted.position, queue, queueIndex);
-      }
+      hydrationPipelineTrace({
+        fn: "restorePersistedSession",
+        phase: "hydrate_paused",
+        persisted: {
+          activeTrack: current.refId,
+          queueLength: queue.length,
+          queueIndex,
+          currentTime: persisted.position,
+          isPlaying: false,
+        },
+        extra: persisted.isPlaying
+          ? { reason: "defer persisted resume until a user gesture" }
+          : undefined,
+      });
+      // Mobile autoplay policies can reject a cold-load resume. Restore the
+      // session and position, but require the next explicit transport action.
+      controller.hydratePausedSession(current, persisted.position, queue, queueIndex);
       hydrationTraceMarkFinish("initializePlaybackEngine", { note: "restored from persistence" });
       return;
     }

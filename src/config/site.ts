@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Archive",
   tagline: "Discover underground electronic music",
   description:
-    "Hard techno, schranz, industrial techno, EBM, and darkwave — artist profiles, essential sets, and editorial discovery.",
+    "Hard techno, schranz, industrial techno, EBM, and darkwave — artist profiles, essential sets, and underground discovery.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ||
     (process.env.NODE_ENV === "production"
